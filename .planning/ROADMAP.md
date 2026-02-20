@@ -33,12 +33,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The locale switcher routes between `/ro/` and `/en/` and preserves the current page slug in both directions
   4. A test GSAP animation initialized via `useGSAP()` runs without console errors and cleans up on unmount
   5. Brand color tokens (Electric Violet, Cobalt Blue, Electric Mint, Black) are available as CSS custom properties and render correctly in a test component
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Next.js 16 scaffold with TypeScript strict, TailwindCSS 4, and shadcn/ui (new-york style, Tailwind v4 guide)
-- [ ] 01-02: next-intl 4.x bilingual routing with `setRequestLocale` + `generateStaticParams` verified static
-- [ ] 01-03: Custom fonts via `next/font/local`, brand tokens in `globals.css @theme`, GSAP centralized in `lib/gsap.ts`
+- [ ] 01-01-PLAN.md — Next.js 16 scaffold with TypeScript strict, TailwindCSS 4, and shadcn/ui (new-york style)
+- [ ] 01-02-PLAN.md — next-intl bilingual routing (RO/EN) with static rendering and LocaleSwitcher
+- [ ] 01-03-PLAN.md — Custom fonts, brand tokens, centralized GSAP, responsive Container
 
 ### Phase 2: Design System
 **Goal**: The visual language is fully specified via the `/design` skill orchestrator, and shared layout components (Header, Footer, animation wrappers, custom cursor) are built from the generated specs — so every page phase can assemble sections without designing from scratch.
