@@ -8,28 +8,41 @@ interface TextRevealProps {
   readonly className?: string;
   /** HTML element to render. Default: 'div' */
   readonly as?: ElementType;
-  /** Delay between each character in seconds. Default: 0.025 */
+  /** Split variant: 'char' for character-level, 'word' for word-level stagger. Default: 'char' */
+  readonly variant?: 'char' | 'word';
+  /** Trigger mode: 'scroll' for ScrollTrigger, 'load' for immediate on mount. Default: 'scroll' */
+  readonly trigger?: 'scroll' | 'load';
+  /** Delay between each unit in seconds. Default: 0.025 for chars, 0.08 for words */
   readonly stagger?: number;
   /** Animation duration in seconds. Default: 0.5 */
   readonly duration?: number;
-  /** ScrollTrigger start position. Default: 'top 85%' */
+  /** ScrollTrigger start position (only used when trigger='scroll'). Default: 'top 85%' */
   readonly triggerStart?: string;
 }
 
+const DEFAULT_STAGGER_CHAR = 0.025;
+const DEFAULT_STAGGER_WORD = 0.08;
+
 /**
- * SplitText character-level stagger animation wrapper.
- * Splits text into characters and animates them on scroll.
- * Wrapped in prefers-reduced-motion check — falls back to simple fade.
+ * SplitText stagger animation wrapper.
+ * Supports character-level and word-level split variants.
+ * Supports scroll-triggered and load-triggered animation modes.
+ * Wrapped in prefers-reduced-motion check -- falls back to instant reveal.
  */
 export function TextReveal({
   children,
   className,
   as: Tag = 'div',
-  stagger = 0.025,
+  variant = 'char',
+  trigger = 'scroll',
+  stagger,
   duration = 0.5,
   triggerStart = 'top 85%',
 }: TextRevealProps): React.JSX.Element {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const resolvedStagger =
+    stagger ?? (variant === 'word' ? DEFAULT_STAGGER_WORD : DEFAULT_STAGGER_CHAR);
 
   useGSAP(
     () => {
@@ -37,29 +50,37 @@ export function TextReveal({
 
       const mm = gsap.matchMedia();
 
-      // Only animate when user has no reduced-motion preference
       mm.add('(prefers-reduced-motion: no-preference)', () => {
+        const splitType = variant === 'word' ? 'words' : 'chars';
+
         SplitText.create(containerRef.current!, {
-          type: 'chars',
+          type: splitType,
           autoSplit: true,
           onSplit(self) {
-            gsap.from(self.chars, {
+            const targets = variant === 'word' ? self.words : self.chars;
+
+            const animationConfig: gsap.TweenVars = {
               y: '130%',
               opacity: 0,
               duration,
-              stagger,
+              stagger: resolvedStagger,
               ease: 'power1.inOut',
-              scrollTrigger: {
+            };
+
+            // Only add ScrollTrigger when trigger mode is 'scroll'
+            if (trigger === 'scroll') {
+              animationConfig.scrollTrigger = {
                 trigger: containerRef.current,
                 start: triggerStart,
                 toggleActions: 'play none none none',
-              },
-            });
+              };
+            }
+
+            gsap.from(targets, animationConfig);
           },
         });
 
         return () => {
-          // Cleanup: kill ScrollTriggers scoped to this element
           ScrollTrigger.getAll()
             .filter((st) => st.trigger === containerRef.current)
             .forEach((st) => st.kill());
