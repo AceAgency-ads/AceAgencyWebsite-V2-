@@ -104,7 +104,7 @@ Each task was committed atomically:
 1. **Task 1: Scaffold Next.js 16 with TypeScript strict mode and TailwindCSS 4** - `614a85b` (feat)
 2. **Task 2: Initialize shadcn/ui with new-york style and add base components** - `973e544` (feat)
 
-**Plan metadata:** (to be added after this commit)
+**Plan metadata:** `cf89400` (docs: complete project scaffold plan)
 
 ## Files Created/Modified
 
