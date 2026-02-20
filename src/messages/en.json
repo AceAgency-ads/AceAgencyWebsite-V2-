@@ -39,21 +39,119 @@
     "instagram": "Instagram",
     "facebook": "Facebook"
   },
-  "HomePage": {
-    "title": "AceAgency",
-    "subtitle": "Premium digital agency from Bucharest",
+  "home": {
     "hero": {
-      "badge": "Digital Marketing Agency",
-      "heading": "We grow brands through strategy and design",
-      "subheading": "AceAgency combines creativity and technology to generate real results.",
-      "cta": "Get Started"
+      "overline": "WEB . ADS . AI . MEDIA",
+      "headline": "Full-Service Digital Agency in Bucharest",
+      "subheading": "We transform your vision into measurable digital results. Web. Ads. AI. Media.",
+      "cta": {
+        "primary": "Discover Our Services",
+        "secondary": "Contact Us"
+      }
     },
-    "colors": {
-      "heading": "AceAgency Color Palette"
+    "services": {
+      "overline": "SERVICES",
+      "heading": "Complete Solutions for Your Business",
+      "description": "From web development to paid advertising, from artificial intelligence to media production — we cover everything you need.",
+      "items": {
+        "0": {
+          "title": "Web Development",
+          "description": "High-performance, responsive, and SEO-optimized websites and web applications"
+        },
+        "1": {
+          "title": "Google Ads",
+          "description": "Google Ads campaigns optimized for maximum ROI and minimum cost per conversion"
+        },
+        "2": {
+          "title": "Facebook & Instagram Ads",
+          "description": "Social media advertising strategies with precise targeting"
+        },
+        "3": {
+          "title": "TikTok Ads",
+          "description": "Creative TikTok advertising for the next generation audience"
+        },
+        "4": {
+          "title": "SEO Optimization",
+          "description": "Organic Google positioning through advanced SEO strategies"
+        },
+        "5": {
+          "title": "Marketing Consulting",
+          "description": "Personalized digital strategy based on data and experience"
+        }
+      },
+      "cta": "View all services"
     },
-    "animation": {
-      "heading": "GSAP Animations",
-      "description": "This section uses ScrollReveal with GSAP ScrollTrigger. Scroll down to see the animation."
+    "stats": {
+      "overline": "RESULTS",
+      "heading": "Proven Performance",
+      "items": {
+        "0": { "value": "150", "suffix": "+", "label": "Projects Delivered" },
+        "1": { "value": "50", "suffix": "+", "label": "Happy Clients" },
+        "2": { "value": "98", "suffix": "%", "label": "Retention Rate" },
+        "3": { "value": "5", "suffix": "yrs", "label": "Experience" }
+      }
+    },
+    "about": {
+      "overline": "ABOUT US",
+      "heading": "Discipline. Vision. Results.",
+      "description": "We are a team of professionals who believe every brand deserves an exceptional digital presence. From strategy to execution, from idea to result.",
+      "cta": "Learn more"
+    },
+    "testimonials": {
+      "overline": "TESTIMONIALS",
+      "heading": "What Our Clients Say",
+      "items": {
+        "0": {
+          "quote": "AceAgency completely transformed our online presence. The results exceeded expectations.",
+          "author": "Maria Popescu",
+          "company": "TechStart SRL",
+          "rating": "5"
+        },
+        "1": {
+          "quote": "Professionalism, creativity, and measurable results. Highly recommended.",
+          "author": "Alexandru Ionescu",
+          "company": "Digital Commerce",
+          "rating": "5"
+        },
+        "2": {
+          "quote": "The AceAgency team understands business needs and delivers solutions that work.",
+          "author": "Elena Dumitrescu",
+          "company": "StartUp Hub",
+          "rating": "5"
+        },
+        "3": {
+          "quote": "Google Ads campaigns generated a 340% ROI in the first 3 months.",
+          "author": "Andrei Gheorghe",
+          "company": "E-Shop Romania",
+          "rating": "5"
+        },
+        "4": {
+          "quote": "The website created by AceAgency is the best digital investment we have made.",
+          "author": "Ioana Marinescu",
+          "company": "Beauty Brand",
+          "rating": "5"
+        },
+        "5": {
+          "quote": "Excellent support and transparent communication throughout the entire project.",
+          "author": "Mihai Stanescu",
+          "company": "Logistics Pro",
+          "rating": "5"
+        }
+      }
+    },
+    "cta": {
+      "heading": "Ready to Grow Digital?",
+      "description": "Let's discuss how we can transform your business into a digital success.",
+      "primary": "Schedule a Consultation",
+      "secondary": "View Portfolio"
+    },
+    "newsletter": {
+      "overline": "NEWSLETTER",
+      "heading": "Stay Updated",
+      "description": "Receive digital marketing tips, case studies, and news directly in your inbox.",
+      "placeholder": "Your email address",
+      "submit": "Subscribe",
+      "success": "Thank you! You have successfully subscribed."
     }
   }
 }

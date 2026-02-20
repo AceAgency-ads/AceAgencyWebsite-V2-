@@ -39,21 +39,119 @@
     "instagram": "Instagram",
     "facebook": "Facebook"
   },
-  "HomePage": {
-    "title": "AceAgency",
-    "subtitle": "Agentie digitala premium din Bucuresti",
+  "home": {
     "hero": {
-      "badge": "Agentie de Marketing Digital",
-      "heading": "Crestem branduri prin strategie si design",
-      "subheading": "AceAgency combina creativitate si tehnologie pentru a genera rezultate reale.",
-      "cta": "Incepe acum"
+      "overline": "WEB . ADS . AI . MEDIA",
+      "headline": "Agentie Digitala Full-Service din Bucuresti",
+      "subheading": "Transformam viziunea ta in rezultate digitale masurabile. Web. Ads. AI. Media.",
+      "cta": {
+        "primary": "Descopera Serviciile",
+        "secondary": "Contacteaza-ne"
+      }
     },
-    "colors": {
-      "heading": "Paleta de Culori AceAgency"
+    "services": {
+      "overline": "SERVICII",
+      "heading": "Solutii Complete pentru Afacerea Ta",
+      "description": "De la dezvoltare web la publicitate platita, de la inteligenta artificiala la productie media — acoperim tot ce ai nevoie.",
+      "items": {
+        "0": {
+          "title": "Dezvoltare Web",
+          "description": "Site-uri si aplicatii web performante, responsive si optimizate SEO"
+        },
+        "1": {
+          "title": "Google Ads",
+          "description": "Campanii Google Ads optimizate pentru ROI maxim si cost pe conversie minim"
+        },
+        "2": {
+          "title": "Facebook & Instagram Ads",
+          "description": "Strategii de publicitate pe social media cu targetare precisa"
+        },
+        "3": {
+          "title": "TikTok Ads",
+          "description": "Publicitate creativa pe TikTok pentru audienta noua generatie"
+        },
+        "4": {
+          "title": "Optimizare SEO",
+          "description": "Pozitionare organica in Google prin strategii SEO avansate"
+        },
+        "5": {
+          "title": "Consultanta Marketing",
+          "description": "Strategie digitala personalizata bazata pe date si experienta"
+        }
+      },
+      "cta": "Vezi toate serviciile"
     },
-    "animation": {
-      "heading": "Animatii cu GSAP",
-      "description": "Aceasta sectiune utilizeaza ScrollReveal cu GSAP ScrollTrigger. Scroll in jos pentru a vedea animatia."
+    "stats": {
+      "overline": "REZULTATE",
+      "heading": "Performanta Dovedita",
+      "items": {
+        "0": { "value": "150", "suffix": "+", "label": "Proiecte Livrate" },
+        "1": { "value": "50", "suffix": "+", "label": "Clienti Multumiti" },
+        "2": { "value": "98", "suffix": "%", "label": "Rata de Retentie" },
+        "3": { "value": "5", "suffix": "ani", "label": "Experienta" }
+      }
+    },
+    "about": {
+      "overline": "DESPRE NOI",
+      "heading": "Disciplina. Viziune. Rezultate.",
+      "description": "Suntem o echipa de profesionisti care crede ca fiecare brand merita o prezenta digitala de exceptie. De la strategie la executie, de la idee la rezultat.",
+      "cta": "Afla mai multe"
+    },
+    "testimonials": {
+      "overline": "TESTIMONIALE",
+      "heading": "Ce Spun Clientii Nostri",
+      "items": {
+        "0": {
+          "quote": "AceAgency a transformat complet prezenta noastra online. Rezultatele au depasit asteptarile.",
+          "author": "Maria Popescu",
+          "company": "TechStart SRL",
+          "rating": "5"
+        },
+        "1": {
+          "quote": "Profesionalism, creativitate si rezultate masurabile. Recomand cu incredere.",
+          "author": "Alexandru Ionescu",
+          "company": "Digital Commerce",
+          "rating": "5"
+        },
+        "2": {
+          "quote": "Echipa AceAgency intelege nevoile de business si livreaza solutii care functioneaza.",
+          "author": "Elena Dumitrescu",
+          "company": "StartUp Hub",
+          "rating": "5"
+        },
+        "3": {
+          "quote": "Campaniile Google Ads au generat un ROI de 340% in primele 3 luni.",
+          "author": "Andrei Gheorghe",
+          "company": "E-Shop Romania",
+          "rating": "5"
+        },
+        "4": {
+          "quote": "Site-ul creat de AceAgency este cel mai bun investiment digital pe care l-am facut.",
+          "author": "Ioana Marinescu",
+          "company": "Beauty Brand",
+          "rating": "5"
+        },
+        "5": {
+          "quote": "Suport excelent si comunicare transparenta pe tot parcursul proiectului.",
+          "author": "Mihai Stanescu",
+          "company": "Logistics Pro",
+          "rating": "5"
+        }
+      }
+    },
+    "cta": {
+      "heading": "Gata sa Cresti Digital?",
+      "description": "Hai sa discutam despre cum putem transforma afacerea ta intr-un succes digital.",
+      "primary": "Programeaza o Consultatie",
+      "secondary": "Vezi Portofoliul"
+    },
+    "newsletter": {
+      "overline": "NEWSLETTER",
+      "heading": "Ramai la Curent",
+      "description": "Primeste sfaturi de marketing digital, studii de caz si noutati direct in inbox.",
+      "placeholder": "Adresa ta de email",
+      "submit": "Aboneaza-te",
+      "success": "Multumim! Te-ai abonat cu succes."
     }
   }
 }
