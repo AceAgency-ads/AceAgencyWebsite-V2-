@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 ## Current Position
 
 Phase: 1 of 8 (Foundation)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-02-20 — Completed 01-01-PLAN.md (Project Scaffold)
+Last activity: 2026-02-20 — Completed 01-02-PLAN.md (next-intl Bilingual Routing)
 
-Progress: [█░░░░░░░░░] 4% (1/24 plans estimated)
+Progress: [██░░░░░░░░] 8% (2/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 30 min
+- Total plans completed: 2
+- Average duration: 16 min
 - Total execution time: 0.5 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1/3 | 30 min | 30 min |
+| 01-foundation | 2/3 | 32 min | 16 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (30 min)
-- Trend: Baseline established
+- Last 5 plans: 01-01 (30 min), 01-02 (2 min)
+- Trend: Fast execution on infrastructure tasks
 
 *Updated after each plan completion*
 
@@ -49,6 +49,10 @@ Recent decisions affecting current work:
 - [01-01]: `turbopack.root: __dirname` set in next.config.ts — workspace has multiple package-lock.json files in parent dirs; this silences Next.js workspace root detection warning.
 - [01-01]: `noUncheckedIndexedAccess` + `noImplicitOverride` added to tsconfig beyond basic strict — maximum type safety per CLAUDE.md requirements.
 - [01-01]: shadcn/ui new-york style with neutral base and CSS variables — defaults selected match project requirements.
+- [01-02]: `proxy.ts` used instead of `middleware.ts` — Next.js 16 renamed the middleware file.
+- [01-02]: `localePrefix: 'always'` ensures `/` redirects to `/ro/` (default locale).
+- [01-02]: Inner component pattern required for `useTranslations` — page is async (for await params), hook must be in sync child component.
+- [01-02]: Root `src/app/layout.tsx` kept as minimal pass-through — `[locale]/layout.tsx` owns html/body/providers.
 
 ### Pending Todos
 
@@ -62,6 +66,6 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-Last session: 2026-02-20T16:58:00Z
-Stopped at: Completed 01-01-PLAN.md (Next.js scaffold + shadcn/ui)
+Last session: 2026-02-20T16:37:51Z
+Stopped at: Completed 01-02-PLAN.md (next-intl bilingual routing + LocaleSwitcher)
 Resume file: None
