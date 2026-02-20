@@ -12,7 +12,7 @@ Build a premium corporate website for AceAgency (aceagency.ro) that serves as bo
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Scaffold the project with all critical infrastructure wired correctly from day one
+- [x] **Phase 1: Foundation** - Scaffold the project with all critical infrastructure wired correctly from day one
 - [ ] **Phase 2: Design System** - Run `/design` skill (6-phase orchestrator) to generate complete visual language, then build shared layout components from the output
 - [ ] **Phase 3: Flagship Pages** - Build Homepage and About to addifico.com visual quality with full animations — using `/frontend-design` against `design-system/pages/`
 - [ ] **Phase 4: Service Pages** - Build Services index and all 6 individual service sub-pages using `/frontend-design` per page spec
@@ -36,9 +36,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Next.js 16 scaffold with TypeScript strict, TailwindCSS 4, and shadcn/ui (new-york style)
-- [ ] 01-02-PLAN.md — next-intl bilingual routing (RO/EN) with static rendering and LocaleSwitcher
-- [ ] 01-03-PLAN.md — Custom fonts, brand tokens, centralized GSAP, responsive Container
+- [x] 01-01-PLAN.md — Next.js 16 scaffold with TypeScript strict, TailwindCSS 4, and shadcn/ui (new-york style)
+- [x] 01-02-PLAN.md — next-intl bilingual routing (RO/EN) with static rendering and LocaleSwitcher
+- [x] 01-03-PLAN.md — Custom fonts, brand tokens, centralized GSAP, responsive Container
 
 ### Phase 2: Design System
 **Goal**: The visual language is fully specified via the `/design` skill orchestrator, and shared layout components (Header, Footer, animation wrappers, custom cursor) are built from the generated specs — so every page phase can assemble sections without designing from scratch.
@@ -185,7 +185,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 3/3 | Complete | 2026-02-20 |
 | 2. Design System | 0/3 | Not started | - |
 | 3. Flagship Pages | 0/3 | Not started | - |
 | 4. Service Pages | 0/3 | Not started | - |
