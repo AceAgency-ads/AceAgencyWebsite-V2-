@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 3 — Flagship Pages (Next)
+**Current focus:** Phase 3 — Flagship Pages (In Progress)
 
 ## Current Position
 
 Phase: 3 of 8 (Flagship Pages)
-Plan: 0 of 3 in current phase
-Status: Phase 2 complete — ready for Phase 3
-Last activity: 2026-02-20 — Phase 2 complete (gap fixed: Header CTA gradient inline)
+Plan: 1 of 3 in current phase
+Status: In progress — Plan 01 complete, Plans 02-03 remaining
+Last activity: 2026-02-21 — Completed 03-01-PLAN.md (Hero + Services + Foundation Components)
 
-Progress: [██████░░░░] 25% (6/24 plans estimated)
+Progress: [███████░░░] 29% (7/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
+- Total plans completed: 6
 - Average duration: ~10 min (auto tasks only)
-- Total execution time: ~0.9 hours
+- Total execution time: ~1.0 hours
 
 **By Phase:**
 
@@ -29,9 +29,10 @@ Progress: [██████░░░░] 25% (6/24 plans estimated)
 |-------|-------|-------|----------|
 | 01-foundation | 3/3 | 37 min | 12 min |
 | 02-design-system | 3/3 | interactive + 4 min | — |
+| 03-flagship-pages | 1/3 | 8 min | 8 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-03 (5 min), 02-01 (interactive), 02-02 (4 min), 02-03 (interactive checkpoint)
+- Last 5 plans: 02-01 (interactive), 02-02 (4 min), 02-03 (interactive checkpoint), 03-01 (8 min)
 - Trend: Fast execution on component tasks; user-driven design decisions during verification checkpoints
 
 *Updated after each plan completion*
@@ -72,6 +73,11 @@ Recent decisions affecting current work:
 - [02-03]: CustomCursor removed by user after implementation — system cursor preferred; component deleted, body class stripped from globals.css.
 - [02-03]: Color palette canonicalized — Electric Violet (#650CBE), Cobalt Blue (#4500D0), Electric Mint (#66F3A6) stripped from codebase; Burgundy (#56151A) / Black (#262523) / Grey (#D9D9D9) / White is the only palette.
 - [02-03]: Phase 2 fully verified — Header, Footer, MenuOverlay, TextReveal approved by user on desktop and mobile.
+- [03-01]: tokens.css imported into globals.css — brings data-theme section theming CSS selectors into project cascade.
+- [03-01]: SectionWrapper uses data-theme attribute — dark/light/burgundy section theming via CSS custom properties.
+- [03-01]: TextReveal extended with variant=word and trigger=load — hero kinetic typography uses word-level stagger on mount.
+- [03-01]: Service items keyed by numeric index (0-5) in i18n — array-like access pattern for translation keys.
+- [03-01]: All 7 homepage section i18n keys pre-populated — includes Plan 02 stubs for stats, about, testimonials, cta, newsletter.
 
 ### Pending Todos
 
@@ -85,6 +91,6 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-Last session: 2026-02-20
-Stopped at: Phase 2 complete, gap fixed, ready for Phase 3 (Flagship Pages)
+Last session: 2026-02-21
+Stopped at: Completed 03-01-PLAN.md (Hero + Services + Foundation Components)
 Resume file: None
