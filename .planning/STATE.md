@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 ## Current Position
 
 Phase: 3 of 8 (Flagship Pages)
-Plan: 1 of 3 in current phase
-Status: In progress — Plan 01 complete, Plans 02-03 remaining
-Last activity: 2026-02-21 — Completed 03-01-PLAN.md (Hero + Services + Foundation Components)
+Plan: 2 of 3 in current phase
+Status: In progress — Plans 01-02 complete, Plan 03 remaining
+Last activity: 2026-02-21 — Completed 03-02-PLAN.md (Homepage Stats, About, Testimonials, CTA, Newsletter)
 
-Progress: [███████░░░] 29% (7/24 plans estimated)
+Progress: [████████░░] 33% (8/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: ~10 min (auto tasks only)
-- Total execution time: ~1.0 hours
+- Total plans completed: 8
+- Average duration: ~8 min (auto tasks only)
+- Total execution time: ~1.1 hours
 
 **By Phase:**
 
@@ -29,11 +29,11 @@ Progress: [███████░░░] 29% (7/24 plans estimated)
 |-------|-------|-------|----------|
 | 01-foundation | 3/3 | 37 min | 12 min |
 | 02-design-system | 3/3 | interactive + 4 min | — |
-| 03-flagship-pages | 1/3 | 8 min | 8 min |
+| 03-flagship-pages | 2/3 | 10 min | 5 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-01 (interactive), 02-02 (4 min), 02-03 (interactive checkpoint), 03-01 (8 min)
-- Trend: Fast execution on component tasks; user-driven design decisions during verification checkpoints
+- Last 5 plans: 02-02 (4 min), 02-03 (interactive checkpoint), 03-01 (8 min), 03-02 (2 min)
+- Trend: Accelerating on component tasks as patterns stabilize; reusable section components speed up development
 
 *Updated after each plan completion*
 
@@ -78,6 +78,11 @@ Recent decisions affecting current work:
 - [03-01]: TextReveal extended with variant=word and trigger=load — hero kinetic typography uses word-level stagger on mount.
 - [03-01]: Service items keyed by numeric index (0-5) in i18n — array-like access pattern for translation keys.
 - [03-01]: All 7 homepage section i18n keys pre-populated — includes Plan 02 stubs for stats, about, testimonials, cta, newsletter.
+- [03-02]: CTASection accepts namespace prop for reuse on About page with different i18n namespace.
+- [03-02]: Portfolio CTA button disabled (aria-disabled, pointer-events-none, opacity-50) since Portfolio is V2.
+- [03-02]: Newsletter form UI-only with e.preventDefault() — server action wiring deferred to Phase 5.
+- [03-02]: First 2 testimonial cards span 2 rows (lg:row-span-2) for bento visual variety.
+- [03-02]: AboutPreview logo float animation uses GSAP yoyo with prefers-reduced-motion media query check.
 
 ### Pending Todos
 
@@ -92,5 +97,5 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-21
-Stopped at: Completed 03-01-PLAN.md (Hero + Services + Foundation Components)
+Stopped at: Completed 03-02-PLAN.md (Homepage Stats, About, Testimonials, CTA, Newsletter)
 Resume file: None
