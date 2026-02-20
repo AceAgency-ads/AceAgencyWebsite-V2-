@@ -1,6 +1,25 @@
 {
   "HomePage": {
     "title": "AceAgency",
-    "subtitle": "Agentie digitala premium din Bucuresti"
+    "subtitle": "Agentie digitala premium din Bucuresti",
+    "hero": {
+      "badge": "Agentie de Marketing Digital",
+      "heading": "Crestem branduri prin strategie si design",
+      "subheading": "AceAgency combina creativitate si tehnologie pentru a genera rezultate reale.",
+      "cta": "Incepe acum"
+    },
+    "colors": {
+      "heading": "Paleta de Culori AceAgency",
+      "electricViolet": "Electric Violet",
+      "cobaltBlue": "Cobalt Blue",
+      "electricMint": "Electric Mint",
+      "black": "Black",
+      "grey": "Grey",
+      "burgundy": "Burgundy"
+    },
+    "animation": {
+      "heading": "Animatii cu GSAP",
+      "description": "Aceasta sectiune utilizeaza ScrollReveal cu GSAP ScrollTrigger. Scroll in jos pentru a vedea animatia."
+    }
   }
 }

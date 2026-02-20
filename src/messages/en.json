@@ -1,6 +1,25 @@
 {
   "HomePage": {
     "title": "AceAgency",
-    "subtitle": "Premium digital agency from Bucharest"
+    "subtitle": "Premium digital agency from Bucharest",
+    "hero": {
+      "badge": "Digital Marketing Agency",
+      "heading": "We grow brands through strategy and design",
+      "subheading": "AceAgency combines creativity and technology to generate real results.",
+      "cta": "Get Started"
+    },
+    "colors": {
+      "heading": "AceAgency Color Palette",
+      "electricViolet": "Electric Violet",
+      "cobaltBlue": "Cobalt Blue",
+      "electricMint": "Electric Mint",
+      "black": "Black",
+      "grey": "Grey",
+      "burgundy": "Burgundy"
+    },
+    "animation": {
+      "heading": "GSAP Animations",
+      "description": "This section uses ScrollReveal with GSAP ScrollTrigger. Scroll down to see the animation."
+    }
   }
 }
