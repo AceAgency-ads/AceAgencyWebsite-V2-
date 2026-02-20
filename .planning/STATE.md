@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 3 — Flagship Pages (In Progress)
+**Current focus:** Phase 3 — Flagship Pages (Complete)
 
 ## Current Position
 
 Phase: 3 of 8 (Flagship Pages)
-Plan: 2 of 3 in current phase
-Status: In progress — Plans 01-02 complete, Plan 03 remaining
-Last activity: 2026-02-21 — Completed 03-02-PLAN.md (Homepage Stats, About, Testimonials, CTA, Newsletter)
+Plan: 3 of 3 in current phase
+Status: Phase complete — all 3 plans executed
+Last activity: 2026-02-21 — Completed 03-03-PLAN.md (About Page - Despre Noi)
 
-Progress: [████████░░] 33% (8/24 plans estimated)
+Progress: [█████████░] 38% (9/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 9
 - Average duration: ~8 min (auto tasks only)
-- Total execution time: ~1.1 hours
+- Total execution time: ~1.2 hours
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [████████░░] 33% (8/24 plans estimated)
 |-------|-------|-------|----------|
 | 01-foundation | 3/3 | 37 min | 12 min |
 | 02-design-system | 3/3 | interactive + 4 min | — |
-| 03-flagship-pages | 2/3 | 10 min | 5 min |
+| 03-flagship-pages | 3/3 | 14 min | 5 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (4 min), 02-03 (interactive checkpoint), 03-01 (8 min), 03-02 (2 min)
+- Last 5 plans: 02-03 (interactive checkpoint), 03-01 (8 min), 03-02 (2 min), 03-03 (4 min)
 - Trend: Accelerating on component tasks as patterns stabilize; reusable section components speed up development
 
 *Updated after each plan completion*
@@ -83,6 +83,9 @@ Recent decisions affecting current work:
 - [03-02]: Newsletter form UI-only with e.preventDefault() — server action wiring deferred to Phase 5.
 - [03-02]: First 2 testimonial cards span 2 rows (lg:row-span-2) for bento visual variety.
 - [03-02]: AboutPreview logo float animation uses GSAP yoyo with prefers-reduced-motion media query check.
+- [03-03]: CTASection enhanced with secondaryHref prop — enables secondary button with link for About page (/servicii) while homepage keeps disabled Portfolio button.
+- [03-03]: About page uses fragment wrapper instead of <main> to prevent nested landmarks (layout already provides <main>).
+- [03-03]: StorySection visual column hidden on mobile (geometry + timeline too complex for narrow screens).
 
 ### Pending Todos
 
@@ -97,5 +100,5 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-21
-Stopped at: Completed 03-02-PLAN.md (Homepage Stats, About, Testimonials, CTA, Newsletter)
+Stopped at: Completed 03-03-PLAN.md (About Page - Despre Noi) — Phase 3 complete
 Resume file: None
