@@ -151,6 +151,7 @@
       "description": "Receive digital marketing tips, case studies, and news directly in your inbox.",
       "placeholder": "Your email address",
       "submit": "Subscribe",
+      "gdpr": "I agree to the processing of personal data",
       "success": "Thank you! You have successfully subscribed."
     }
   }

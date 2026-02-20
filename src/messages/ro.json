@@ -151,6 +151,7 @@
       "description": "Primeste sfaturi de marketing digital, studii de caz si noutati direct in inbox.",
       "placeholder": "Adresa ta de email",
       "submit": "Aboneaza-te",
+      "gdpr": "Sunt de acord cu prelucrarea datelor personale",
       "success": "Multumim! Te-ai abonat cu succes."
     }
   }
