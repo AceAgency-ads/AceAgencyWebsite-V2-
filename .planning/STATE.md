@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 ## Current Position
 
 Phase: 1 of 8 (Foundation)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-02-20 — Roadmap created, STATE.md initialized
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-02-20 — Completed 01-01-PLAN.md (Project Scaffold)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 4% (1/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: — min
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 30 min
+- Total execution time: 0.5 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-foundation | 1/3 | 30 min | 30 min |
 
 **Recent Trend:**
-- Last 5 plans: —
-- Trend: —
+- Last 5 plans: 01-01 (30 min)
+- Trend: Baseline established
 
 *Updated after each plan completion*
 
@@ -46,10 +46,13 @@ Recent decisions affecting current work:
 - [Init]: Design-first build order — Homepage and About before service pages. Design IS the proof of capability.
 - [Init]: No CMS in V1 — all content in `messages/ro.json` and `messages/en.json`.
 - [Init]: GSAP SplitText requires Club GSAP license — evaluate at Phase 2/3; fall back to Framer Motion `staggerChildren` for character-level text animation if unlicensed.
+- [01-01]: `turbopack.root: __dirname` set in next.config.ts — workspace has multiple package-lock.json files in parent dirs; this silences Next.js workspace root detection warning.
+- [01-01]: `noUncheckedIndexedAccess` + `noImplicitOverride` added to tsconfig beyond basic strict — maximum type safety per CLAUDE.md requirements.
+- [01-01]: shadcn/ui new-york style with neutral base and CSS variables — defaults selected match project requirements.
 
 ### Pending Todos
 
-None yet.
+- Install Cal.com embed and test React 19 peer dep compatibility (Phase 5 / contact page)
 
 ### Blockers/Concerns
 
@@ -59,6 +62,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-20
-Stopped at: Roadmap and STATE.md created. No plans written yet. Next step: `/gsd:plan-phase 1`
+Last session: 2026-02-20T16:58:00Z
+Stopped at: Completed 01-01-PLAN.md (Next.js scaffold + shadcn/ui)
 Resume file: None
