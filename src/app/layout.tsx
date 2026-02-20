@@ -1,15 +1,10 @@
-import type { Metadata } from 'next';
-import '@/styles/globals.css';
-
-export const metadata: Metadata = {
-  title: 'AceAgency',
-  description: 'Premium digital agency from Bucharest',
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }): React.JSX.Element {
-  return (
-    <html lang="ro">
-      <body>{children}</body>
-    </html>
-  );
+// Root layout - minimal shell.
+// The [locale]/layout.tsx handles all locale-aware rendering.
+// This file exists only because Next.js App Router requires a root layout.
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}): React.JSX.Element {
+  return children as React.JSX.Element;
 }
