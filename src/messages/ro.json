@@ -49,13 +49,7 @@
       "cta": "Incepe acum"
     },
     "colors": {
-      "heading": "Paleta de Culori AceAgency",
-      "electricViolet": "Electric Violet",
-      "cobaltBlue": "Cobalt Blue",
-      "electricMint": "Electric Mint",
-      "black": "Black",
-      "grey": "Grey",
-      "burgundy": "Burgundy"
+      "heading": "Paleta de Culori AceAgency"
     },
     "animation": {
       "heading": "Animatii cu GSAP",

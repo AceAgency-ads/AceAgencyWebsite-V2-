@@ -49,13 +49,7 @@
       "cta": "Get Started"
     },
     "colors": {
-      "heading": "AceAgency Color Palette",
-      "electricViolet": "Electric Violet",
-      "cobaltBlue": "Cobalt Blue",
-      "electricMint": "Electric Mint",
-      "black": "Black",
-      "grey": "Grey",
-      "burgundy": "Burgundy"
+      "heading": "AceAgency Color Palette"
     },
     "animation": {
       "heading": "GSAP Animations",

@@ -8,64 +8,60 @@
    AceAgency Brand — Raw CSS Variables
    ============================================================ */
 :root {
-  /* Brand Colors */
-  --color-electric-violet: #650CBE;
-  --color-cobalt-blue: #4500D0;
-  --color-electric-mint: #66F3A6;
+  /* Brand Colors — Burgundy / Black / Grey */
+  --color-burgundy: #56151A;
+  --color-burgundy-light: #7A2025;
   --color-black: #262523;
   --color-white: #FFFFFF;
   --color-grey: #D9D9D9;
-  --color-burgundy: #56151A;
 
-  /* shadcn/ui semantic tokens — mapped to brand palette (oklch) */
-  --background: oklch(0.145 0 0);            /* #262523 dark background */
+  /* shadcn/ui semantic tokens — mapped to Burgundy palette (oklch) */
+  --background: oklch(0.19 0.005 80);        /* #262523 Black */
   --foreground: oklch(0.985 0 0);            /* near-white text */
-  --card: oklch(0.2 0 0);
+  --card: oklch(0.22 0.005 80);             /* dark-elevated */
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.2 0 0);
+  --popover: oklch(0.22 0.005 80);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.44 0.21 292);           /* ~#650CBE Electric Violet */
+  --primary: oklch(0.30 0.10 25);           /* #56151A Burgundy */
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.35 0.25 270);         /* ~#4500D0 Cobalt Blue */
+  --secondary: oklch(0.38 0.10 25);         /* Burgundy light */
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.88 0.17 155);            /* ~#66F3A6 Electric Mint */
-  --accent-foreground: oklch(0.145 0 0);
+  --accent: oklch(0.88 0 0);               /* #D9D9D9 Grey */
+  --accent-foreground: oklch(0.19 0.005 80);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.44 0.21 292);
+  --border: oklch(0.28 0.005 80);           /* dark-border */
+  --input: oklch(0.28 0.005 80);
+  --ring: oklch(0.30 0.10 25);             /* Burgundy focus ring */
   --radius: 0.5rem;
 
-  /* Chart and sidebar tokens (shadcn defaults) */
+  /* Chart and sidebar tokens */
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.44 0.21 292);
+  --sidebar-primary: oklch(0.30 0.10 25);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.44 0.21 292);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar-border: oklch(0.28 0.005 80);
+  --sidebar-ring: oklch(0.30 0.10 25);
+  --chart-1: oklch(0.30 0.10 25);
+  --chart-2: oklch(0.38 0.10 25);
+  --chart-3: oklch(0.88 0 0);
+  --chart-4: oklch(0.45 0 0);
+  --chart-5: oklch(0.65 0 0);
 }
 
 /* ============================================================
    Tailwind @theme inline — Expose tokens to utility generation
    ============================================================ */
 @theme inline {
-  /* Brand color utilities: bg-electric-violet, text-cobalt-blue, etc. */
-  --color-electric-violet: var(--color-electric-violet);
-  --color-cobalt-blue: var(--color-cobalt-blue);
-  --color-electric-mint: var(--color-electric-mint);
+  /* Brand color utilities: bg-burgundy, text-grey, etc. */
+  --color-burgundy: var(--color-burgundy);
+  --color-burgundy-light: var(--color-burgundy-light);
   --color-black: var(--color-black);
   --color-white: var(--color-white);
   --color-grey: var(--color-grey);
-  --color-burgundy: var(--color-burgundy);
 
   /* shadcn semantic color utilities */
   --color-background: var(--background);
@@ -150,19 +146,6 @@
   h6 {
     font-family: var(--font-heading, ui-sans-serif, system-ui, sans-serif);
     line-height: 1.2;
-  }
-}
-
-/* ============================================================
-   Custom Cursor — Hide default cursor on desktop when active
-   ============================================================ */
-@media (hover: hover) {
-  body.custom-cursor-active {
-    cursor: none;
-  }
-  body.custom-cursor-active a,
-  body.custom-cursor-active button {
-    cursor: none;
   }
 }
 
