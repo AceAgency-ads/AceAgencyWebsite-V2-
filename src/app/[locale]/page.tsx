@@ -1,6 +1,11 @@
 import { setRequestLocale } from 'next-intl/server';
 import { HeroSection } from '@/components/sections/home/HeroSection';
 import { ServicesPreview } from '@/components/sections/home/ServicesPreview';
+import { StatsSection } from '@/components/sections/home/StatsSection';
+import { AboutPreview } from '@/components/sections/home/AboutPreview';
+import { Testimonials } from '@/components/sections/home/Testimonials';
+import { CTASection } from '@/components/sections/home/CTASection';
+import { Newsletter } from '@/components/sections/home/Newsletter';
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;
@@ -16,7 +21,11 @@ export default async function HomePage({
     <main>
       <HeroSection />
       <ServicesPreview />
-      {/* Plan 02 will add: StatsSection, AboutPreview, Testimonials, CTASection, Newsletter */}
+      <StatsSection />
+      <AboutPreview />
+      <Testimonials />
+      <CTASection />
+      <Newsletter />
     </main>
   );
 }
