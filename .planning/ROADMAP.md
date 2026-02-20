@@ -13,7 +13,7 @@ Build a premium corporate website for AceAgency (aceagency.ro) that serves as bo
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Scaffold the project with all critical infrastructure wired correctly from day one
-- [ ] **Phase 2: Design System** - Run `/design` skill (6-phase orchestrator) to generate complete visual language, then build shared layout components from the output
+- [x] **Phase 2: Design System** - Run `/design` skill (6-phase orchestrator) to generate complete visual language, then build shared layout components from the output
 - [ ] **Phase 3: Flagship Pages** - Build Homepage and About to addifico.com visual quality with full animations — using `/frontend-design` against `design-system/pages/`
 - [ ] **Phase 4: Service Pages** - Build Services index and all 6 individual service sub-pages using `/frontend-design` per page spec
 - [ ] **Phase 5: Contact and Lead Capture** - Build Contact page with form, Cal.com booking, newsletter, and maps using `/frontend-design`
@@ -66,7 +66,7 @@ The page specs in `design-system/pages/*.md` are the input consumed by `/fronten
 Plans:
 - [x] 02-01-PLAN.md — Run `/design` skill (full 6-phase orchestrator) to generate complete visual language and page specs
 - [x] 02-02-PLAN.md — Build Header (scroll hide/show, fullscreen MenuOverlay with SplitText, locale switcher), Footer (social links, divisions, newsletter UI), and TextReveal animation wrapper
-- [ ] 02-03-PLAN.md — Build CustomCursor component (mix-blend-mode difference, desktop only) and wire into layout; final visual verification checkpoint
+- [x] 02-03-PLAN.md — Color palette cleanup (Burgundy/Black/Grey only), CustomCursor removed per user decision, final visual verification
 
 ### Phase 3: Flagship Pages
 **Goal**: The Homepage and About page are complete with addifico.com-level visual quality — animations are the primary differentiator. Kinetic typography, scroll-triggered reveals, parallax depth, dark/light section transitions, bento grids, and hover micro-interactions prove design capability before any other pages are built.
@@ -186,7 +186,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete    | 2026-02-20 |
-| 2. Design System | 1/3 | In Progress | - |
+| 2. Design System | 3/3 | Complete    | 2026-02-20 |
 | 3. Flagship Pages | 0/3 | Not started | - |
 | 4. Service Pages | 0/3 | Not started | - |
 | 5. Contact and Lead Capture | 0/2 | Not started | - |
