@@ -12,22 +12,22 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **FNDN-01**: Project scaffolded with Next.js 16, TailwindCSS 4, shadcn/ui, TypeScript strict mode
 - [ ] **FNDN-02**: next-intl configured with [locale] routing (RO primary, EN secondary) with static rendering
 - [ ] **FNDN-03**: Custom fonts loaded via next/font/local (Glacial Indifference, Red Hat Display, Inter) with size-adjust fallbacks
-- [ ] **FNDN-04**: Design system generated via `/design` skill (tokens, components, pages specs)
+- [ ] **FNDN-04**: Design system generated via `/design` skill — 6-phase orchestrator producing `design-system/MASTER.md`, `tokens.css`, `components.md`, `moodboard.md`, and page specs in `design-system/pages/*.md`
 - [ ] **FNDN-05**: GSAP + Motion animation infrastructure with SSR-safe patterns (useGSAP hook, LazyMotion, "use client" isolation)
 - [ ] **FNDN-06**: Responsive layout system (320px to 2560px, mobile-first, 48x48px tap targets)
 
 ### Pages
 
-- [ ] **PAGE-01**: Homepage with hero, services preview, stats/track record, testimonials, CTA sections, newsletter signup — designed via `/frontend-design`, inspired by addifico.com
-- [ ] **PAGE-02**: About page (Despre noi) with agency story, values, mission, vision — designed via `/frontend-design`
-- [ ] **PAGE-03**: Services index page with overview linking to all 6 service sub-pages — designed via `/frontend-design`
+- [ ] **PAGE-01**: Homepage with hero, services preview, stats/track record, testimonials, CTA sections, newsletter signup — implemented via `/frontend-design` against `design-system/pages/home.md`, inspired by addifico.com
+- [ ] **PAGE-02**: About page (Despre noi) with agency story, values, mission, vision — implemented via `/frontend-design` against `design-system/pages/despre-noi.md`
+- [ ] **PAGE-03**: Services index page with overview linking to all 6 service sub-pages — implemented via `/frontend-design` against `design-system/pages/servicii.md`
 - [ ] **PAGE-04**: Google Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-05**: Facebook Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-06**: TikTok Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-07**: SEO service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-08**: Email Marketing service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-09**: Consultanta Marketing service page with structured content, benefits, process, FAQ, CTA
-- [ ] **PAGE-10**: Contact page with form, Google Maps embed, Cal.com booking widget — designed via `/frontend-design`
+- [ ] **PAGE-10**: Contact page with form, Google Maps embed, Cal.com booking widget — implemented via `/frontend-design` against `design-system/pages/contact.md`
 - [ ] **PAGE-11**: FAQ page (/intrebari-frecvente) with FAQPage schema markup
 - [ ] **PAGE-12**: Privacy policy page (/politica-confidentialitate) in RO and EN
 - [ ] **PAGE-13**: Cookie policy page (/politica-cookies) in RO and EN
@@ -120,13 +120,64 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (To be populated by roadmapper) | | |
+| FNDN-01 | Phase 1 | Pending |
+| FNDN-02 | Phase 1 | Pending |
+| FNDN-03 | Phase 1 | Pending |
+| FNDN-05 | Phase 1 | Pending |
+| FNDN-06 | Phase 1 | Pending |
+| FNDN-04 | Phase 2 | Pending |
+| DSGN-01 | Phase 2 | Pending |
+| DSGN-05 | Phase 2 | Pending |
+| DSGN-10 | Phase 2 | Pending |
+| FUNC-04 | Phase 2 | Pending |
+| FUNC-05 | Phase 2 | Pending |
+| PAGE-01 | Phase 3 | Pending |
+| PAGE-02 | Phase 3 | Pending |
+| DSGN-02 | Phase 3 | Pending |
+| DSGN-03 | Phase 3 | Pending |
+| DSGN-04 | Phase 3 | Pending |
+| DSGN-06 | Phase 3 | Pending |
+| DSGN-07 | Phase 3 | Pending |
+| DSGN-08 | Phase 3 | Pending |
+| DSGN-09 | Phase 3 | Pending |
+| PAGE-03 | Phase 4 | Pending |
+| PAGE-04 | Phase 4 | Pending |
+| PAGE-05 | Phase 4 | Pending |
+| PAGE-06 | Phase 4 | Pending |
+| PAGE-07 | Phase 4 | Pending |
+| PAGE-08 | Phase 4 | Pending |
+| PAGE-09 | Phase 4 | Pending |
+| PAGE-10 | Phase 5 | Pending |
+| FUNC-01 | Phase 5 | Pending |
+| FUNC-02 | Phase 5 | Pending |
+| FUNC-03 | Phase 5 | Pending |
+| FUNC-06 | Phase 5 | Pending |
+| PAGE-11 | Phase 6 | Pending |
+| PAGE-12 | Phase 6 | Pending |
+| PAGE-13 | Phase 6 | Pending |
+| PAGE-14 | Phase 6 | Pending |
+| CMPL-01 | Phase 6 | Pending |
+| CMPL-02 | Phase 6 | Pending |
+| SEO-01 | Phase 7 | Pending |
+| SEO-02 | Phase 7 | Pending |
+| SEO-03 | Phase 7 | Pending |
+| SEO-04 | Phase 7 | Pending |
+| SEO-05 | Phase 7 | Pending |
+| SEO-07 | Phase 7 | Pending |
+| SEO-08 | Phase 7 | Pending |
+| CMPL-03 | Phase 7 | Pending |
+| CMPL-08 | Phase 7 | Pending |
+| SEO-06 | Phase 8 | Pending |
+| CMPL-04 | Phase 8 | Pending |
+| CMPL-05 | Phase 8 | Pending |
+| CMPL-06 | Phase 8 | Pending |
+| CMPL-07 | Phase 8 | Pending |
 
 **Coverage:**
-- v1 requirements: 48 total
-- Mapped to phases: 0
-- Unmapped: 48
+- v1 requirements: 52 total
+- Mapped to phases: 52
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-20*
-*Last updated: 2026-02-20 after initial definition*
+*Last updated: 2026-02-20 — FNDN-04 moved from Phase 1 to Phase 2 (design system generation is a Phase 2 activity); page requirement descriptions updated to reference /frontend-design and design-system/pages/* specs*
