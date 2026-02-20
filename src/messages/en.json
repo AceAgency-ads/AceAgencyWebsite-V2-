@@ -1,4 +1,15 @@
 {
+  "header": {
+    "cta": "Contact us",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
   "HomePage": {
     "title": "AceAgency",
     "subtitle": "Premium digital agency from Bucharest",

@@ -1,4 +1,15 @@
 {
+  "header": {
+    "cta": "Contacteaza-ne",
+    "menuOpen": "Deschide meniul",
+    "menuClose": "Inchide meniul"
+  },
+  "navigation": {
+    "home": "Acasa",
+    "about": "Despre noi",
+    "services": "Servicii",
+    "contact": "Contact"
+  },
   "HomePage": {
     "title": "AceAgency",
     "subtitle": "Agentie digitala premium din Bucuresti",
