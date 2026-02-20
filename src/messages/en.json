@@ -10,6 +10,35 @@
     "services": "Services",
     "contact": "Contact"
   },
+  "footer": {
+    "tagline": "Your digital marketing agency from Bucharest",
+    "address": "Bucharest, Romania",
+    "phone": "+40 XXX XXX XXX",
+    "email": "contact@aceagency.ro",
+    "newsletter": {
+      "title": "Newsletter",
+      "placeholder": "Your email address",
+      "submit": "Subscribe",
+      "gdpr": "I agree to the processing of personal data"
+    },
+    "copyright": "\u00a9 2026 AceAgency. All rights reserved.",
+    "divisions": {
+      "web": "AceWeb",
+      "ads": "AceAds",
+      "ai": "AceAI",
+      "media": "AceMedia"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
   "HomePage": {
     "title": "AceAgency",
     "subtitle": "Premium digital agency from Bucharest",

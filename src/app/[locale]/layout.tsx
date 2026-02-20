@@ -5,7 +5,8 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
-import { LocaleSwitcher } from '@/components/layout/LocaleSwitcher';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 import '@/styles/globals.css';
 
 const glacialIndifference = localFont({
@@ -72,10 +73,9 @@ export default async function LocaleLayout({
     >
       <body>
         <NextIntlClientProvider>
-          <header className="flex justify-end p-4">
-            <LocaleSwitcher />
-          </header>
-          {children}
+          <Header />
+          <main>{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

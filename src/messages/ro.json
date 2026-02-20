@@ -10,6 +10,35 @@
     "services": "Servicii",
     "contact": "Contact"
   },
+  "footer": {
+    "tagline": "Agentia ta de marketing digital din Bucuresti",
+    "address": "Bucuresti, Romania",
+    "phone": "+40 XXX XXX XXX",
+    "email": "contact@aceagency.ro",
+    "newsletter": {
+      "title": "Newsletter",
+      "placeholder": "Adresa ta de email",
+      "submit": "Aboneaza-te",
+      "gdpr": "Sunt de acord cu prelucrarea datelor personale"
+    },
+    "copyright": "\u00a9 2026 AceAgency. Toate drepturile rezervate.",
+    "divisions": {
+      "web": "AceWeb",
+      "ads": "AceAds",
+      "ai": "AceAI",
+      "media": "AceMedia"
+    },
+    "legal": {
+      "privacy": "Politica de confidentialitate",
+      "cookies": "Politica de cookie-uri",
+      "terms": "Termeni si conditii"
+    }
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
   "HomePage": {
     "title": "AceAgency",
     "subtitle": "Agentie digitala premium din Bucuresti",

@@ -152,3 +152,25 @@
     line-height: 1.2;
   }
 }
+
+/* ============================================================
+   Custom Cursor — Hide default cursor on desktop when active
+   ============================================================ */
+@media (hover: hover) {
+  body.custom-cursor-active {
+    cursor: none;
+  }
+  body.custom-cursor-active a,
+  body.custom-cursor-active button {
+    cursor: none;
+  }
+}
+
+/* ============================================================
+   Header — Glass morphism on scroll
+   ============================================================ */
+.header-scrolled {
+  background-color: oklch(0.19 0.005 80 / 0.80);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
