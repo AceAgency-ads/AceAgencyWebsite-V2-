@@ -123,7 +123,7 @@ export function Header(): React.JSX.Element {
             href="/contact"
             locale={locale}
             className="hidden items-center rounded-md px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 sm:inline-flex"
-            style={{ background: 'var(--ds-gradient-brand-primary)' }}
+            style={{ background: 'linear-gradient(135deg, #56151A, #3D0F13)' }}
           >
             {t('cta')}
           </Link>
