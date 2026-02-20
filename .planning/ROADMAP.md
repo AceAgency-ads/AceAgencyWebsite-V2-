@@ -64,7 +64,7 @@ The page specs in `design-system/pages/*.md` are the input consumed by `/fronten
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Run `/design` skill (full 6-phase orchestrator) to generate complete visual language and page specs
+- [x] 02-01-PLAN.md — Run `/design` skill (full 6-phase orchestrator) to generate complete visual language and page specs
 - [ ] 02-02-PLAN.md — Build Header (scroll hide/show, fullscreen MenuOverlay with SplitText, locale switcher), Footer (social links, divisions, newsletter UI), and TextReveal animation wrapper
 - [ ] 02-03-PLAN.md — Build CustomCursor component (mix-blend-mode difference, desktop only) and wire into layout; final visual verification checkpoint
 
@@ -186,7 +186,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete    | 2026-02-20 |
-| 2. Design System | 0/3 | Not started | - |
+| 2. Design System | 1/3 | In Progress | - |
 | 3. Flagship Pages | 0/3 | Not started | - |
 | 4. Service Pages | 0/3 | Not started | - |
 | 5. Contact and Lead Capture | 0/2 | Not started | - |
