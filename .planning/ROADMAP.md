@@ -65,7 +65,7 @@ The page specs in `design-system/pages/*.md` are the input consumed by `/fronten
 
 Plans:
 - [x] 02-01-PLAN.md — Run `/design` skill (full 6-phase orchestrator) to generate complete visual language and page specs
-- [ ] 02-02-PLAN.md — Build Header (scroll hide/show, fullscreen MenuOverlay with SplitText, locale switcher), Footer (social links, divisions, newsletter UI), and TextReveal animation wrapper
+- [x] 02-02-PLAN.md — Build Header (scroll hide/show, fullscreen MenuOverlay with SplitText, locale switcher), Footer (social links, divisions, newsletter UI), and TextReveal animation wrapper
 - [ ] 02-03-PLAN.md — Build CustomCursor component (mix-blend-mode difference, desktop only) and wire into layout; final visual verification checkpoint
 
 ### Phase 3: Flagship Pages

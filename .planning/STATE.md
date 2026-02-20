@@ -10,29 +10,29 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 ## Current Position
 
 Phase: 2 of 8 (Design System)
-Plan: 1 of 3 in current phase
-Status: In progress — Plan 02-01 complete, Plans 02-02 and 02-03 remaining
-Last activity: 2026-02-20 — Completed 02-01-PLAN.md (Design System Generation via /design skill)
+Plan: 2 of 3 in current phase
+Status: In progress — Plans 02-01 and 02-02 complete, Plan 02-03 remaining
+Last activity: 2026-02-20 — Completed 02-02-PLAN.md (Header, Footer, TextReveal)
 
-Progress: [████░░░░░░] 17% (4/24 plans estimated)
+Progress: [█████░░░░░] 21% (5/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: ~12 min (auto tasks only)
-- Total execution time: ~0.8 hours
+- Total plans completed: 5
+- Average duration: ~10 min (auto tasks only)
+- Total execution time: ~0.9 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 3/3 | 37 min | 12 min |
-| 02-design-system | 1/3 | interactive | — |
+| 02-design-system | 2/3 | interactive + 4 min | — |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (30 min), 01-02 (2 min), 01-03 (5 min), 02-01 (interactive)
-- Trend: Fast execution on infrastructure tasks; design tasks require user interaction
+- Last 5 plans: 01-02 (2 min), 01-03 (5 min), 02-01 (interactive), 02-02 (4 min)
+- Trend: Fast execution on component tasks; SplitText confirmed available without license
 
 *Updated after each plan completion*
 
@@ -64,6 +64,11 @@ Recent decisions affecting current work:
 - [02-01]: Precision Elegance aesthetic direction chosen — geometric precision with premium warmth, aligned with addifico.com design sensibility.
 - [02-01]: Color palette revised to Burgundy (#56151A) / Black (#262523) / Grey (#D9D9D9) — user-directed change from Electric Violet/Cobalt/Mint.
 - [02-01]: 14 component patterns defined in components.md — reusable building blocks for all pages in Phases 3-5.
+- [02-02]: SplitText confirmed available in standard gsap@3.14.2 — no Club GSAP license required. Blocker resolved.
+- [02-02]: Header scroll hide/show uses ScrollTrigger direction detection with 60px threshold.
+- [02-02]: MenuOverlay uses timeline-ref pattern: GSAP timeline in useRef, play/reverse controlled by React isOpen state.
+- [02-02]: Glass morphism via CSS class toggle (.header-scrolled) — backdrop-blur-md on scroll past 50px.
+- [02-02]: Newsletter form UI-only — GDPR checkbox included, server action wiring deferred to Phase 5.
 
 ### Pending Todos
 
@@ -72,11 +77,11 @@ Recent decisions affecting current work:
 ### Blockers/Concerns
 
 - **Cal.com embed**: `@calcom/embed-react` v1.5.3 has open React 19 peer dep issue (GitHub #20814). Test at Phase 1 scaffolding; inline script fallback documented in Phase 5 plan.
-- **GSAP SplitText license**: Requires Club GSAP membership. Verify before using in Phase 3 hero animations. Framer Motion `staggerChildren` is the zero-cost alternative. Standard GSAP (useGSAP, ScrollTrigger) confirmed available without license.
+- ~~**GSAP SplitText license**: Requires Club GSAP membership.~~ **RESOLVED in 02-02**: SplitText ships with gsap@3.14.2 standard package. No license issue.
 - **GTM Consent Mode v2**: Wiring the exact `dataLayer.push` pattern to shadcn-cookie-consent's callback API needs hands-on testing in Phase 6. Block Phase 7 analytics work on this being verified.
 
 ## Session Continuity
 
 Last session: 2026-02-20
-Stopped at: Completed 02-01-PLAN.md (Design System Generation — /design skill, Precision Elegance, Burgundy/Black/Grey palette)
+Stopped at: Completed 02-02-PLAN.md (Header, Footer, TextReveal — SplitText confirmed available)
 Resume file: None
