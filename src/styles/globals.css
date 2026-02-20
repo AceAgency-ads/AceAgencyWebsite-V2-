@@ -4,68 +4,49 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ============================================================
+   AceAgency Brand — Raw CSS Variables
+   ============================================================ */
 :root {
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-}
+  /* Brand Colors */
+  --color-electric-violet: #650CBE;
+  --color-cobalt-blue: #4500D0;
+  --color-electric-mint: #66F3A6;
+  --color-black: #262523;
+  --color-white: #FFFFFF;
+  --color-grey: #D9D9D9;
+  --color-burgundy: #56151A;
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  /* shadcn/ui semantic tokens — mapped to brand palette (oklch) */
+  --background: oklch(0.145 0 0);            /* #262523 dark background */
+  --foreground: oklch(0.985 0 0);            /* near-white text */
+  --card: oklch(0.2 0 0);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: oklch(0.2 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
+  --primary: oklch(0.44 0.21 292);           /* ~#650CBE Electric Violet */
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.35 0.25 270);         /* ~#4500D0 Cobalt Blue */
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --accent: oklch(0.88 0.17 155);            /* ~#66F3A6 Electric Mint */
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.44 0.21 292);
+  --radius: 0.5rem;
+
+  /* Chart and sidebar tokens (shadcn defaults) */
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary: oklch(0.44 0.21 292);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.44 0.21 292);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -73,7 +54,20 @@
   --chart-5: oklch(0.645 0.246 16.439);
 }
 
+/* ============================================================
+   Tailwind @theme inline — Expose tokens to utility generation
+   ============================================================ */
 @theme inline {
+  /* Brand color utilities: bg-electric-violet, text-cobalt-blue, etc. */
+  --color-electric-violet: var(--color-electric-violet);
+  --color-cobalt-blue: var(--color-cobalt-blue);
+  --color-electric-mint: var(--color-electric-mint);
+  --color-black: var(--color-black);
+  --color-white: var(--color-white);
+  --color-grey: var(--color-grey);
+  --color-burgundy: var(--color-burgundy);
+
+  /* shadcn semantic color utilities */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -100,34 +94,61 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Radius utilities */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Font families */
+  --font-heading: var(--font-glacial);
+  --font-subheading: var(--font-red-hat);
+  --font-body: var(--font-inter);
+
+  /* Responsive breakpoints */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 2560px;
+
+  /* Tap target spacing (48px minimum per WCAG and project rules) */
+  --spacing-tap: 3rem;
 }
 
-* {
-  border-color: var(--border);
-  outline-color: var(--ring);
-}
-
-body {
-  background-color: var(--background);
-}
-
+/* ============================================================
+   Base Layer — Default element styles
+   ============================================================ */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body, ui-sans-serif, system-ui, sans-serif);
+    font-size: 16px; /* Minimum 16px per project rules */
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading, ui-sans-serif, system-ui, sans-serif);
+    line-height: 1.2;
   }
 }
