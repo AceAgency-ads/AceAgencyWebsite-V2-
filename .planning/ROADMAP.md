@@ -82,12 +82,12 @@ Plans:
   4. The testimonials section displays in a bento-grid tile layout with at least 5 testimonials visible without a carousel
   5. All homepage sections have scroll-triggered reveal animations and card-level hover micro-interactions; mobile PageSpeed score is 85 or above
   6. The About page renders the agency story, values, and mission/vision with the same visual language and animation patterns as the homepage
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: Run `/frontend-design` on `design-system/pages/home.md` — implement Homepage Hero (kinetic typography, GSAP stagger) and Services Preview (bento grid with hover micro-interactions)
-- [ ] 03-02: Implement Homepage Stats (scroll-triggered count-up via GSAP ScrollTrigger), Testimonials (bento tile layout), CTA, and Newsletter sections — all scroll-reveal animated
-- [ ] 03-03: Run `/frontend-design` on `design-system/pages/despre-noi.md` — implement About page (agency story, values, mission/vision) with matching animation patterns; bilingual content for both pages in `ro.json` + `en.json`
+- [ ] 03-01-PLAN.md — Foundation section components (SectionWrapper, SectionHeader, BentoGrid, CountUp, ParallaxLayer), TextReveal word variant, Homepage Hero + Services Preview with full i18n
+- [ ] 03-02-PLAN.md — Homepage Stats (CountUp), About Preview (AceAgency logo), Testimonials (bento grid), CTA (burgundy, reusable), Newsletter (form UI) — complete homepage
+- [ ] 03-03-PLAN.md — About page: Hero, Story (geometry + timeline), Values, Divisions, Mission/Vision, Why Choose Us, CTA (reused) — full bilingual content
 
 ### Phase 4: Service Pages
 **Goal**: All 7 service pages (index + 6 sub-pages) are live with structured content, service-specific CTAs, FAQ sections, and animations consistent with Phases 2–3 — these are the primary SEO surface for organic traffic.
