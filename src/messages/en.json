@@ -39,6 +39,72 @@
     "instagram": "Instagram",
     "facebook": "Facebook"
   },
+  "about": {
+    "hero": {
+      "overline": "ABOUT US",
+      "headline": "Discipline. Vision. Results.",
+      "subheading": "We are a team that believes every brand deserves an exceptional digital presence."
+    },
+    "story": {
+      "overline": "OUR STORY",
+      "heading": "From Passion to Performance",
+      "paragraphs": [
+        "AceAgency was born from the conviction that every business in Romania deserves a digital presence at European standards. We started as a small team with a big vision: to transform the way Romanian brands communicate online.",
+        "Over the years, we grew from a web design studio to a full-service digital agency. We invested in people, technology, and processes that allow us to consistently deliver at the highest level of quality.",
+        "Today, with four specialized divisions — AceWeb, AceAds, AceAI, and AceMedia — we offer integrated solutions covering the entire digital spectrum. Every project is an opportunity to prove that excellence in digital marketing means measurable results."
+      ]
+    },
+    "values": {
+      "overline": "OUR VALUES",
+      "heading": "The Principles That Guide Us",
+      "items": [
+        { "icon": "Target", "title": "Excellence", "description": "We dedicate ourselves to quality in every project, from concept to delivery" },
+        { "icon": "Shield", "title": "Integrity", "description": "Transparent and honest communication with every client and partner" },
+        { "icon": "Zap", "title": "Innovation", "description": "We adopt the latest technologies and strategies for superior results" },
+        { "icon": "Users", "title": "Collaboration", "description": "We work together with our clients as a united team" },
+        { "icon": "TrendingUp", "title": "Performance", "description": "Every action is measured and optimized for maximum results" },
+        { "icon": "Heart", "title": "Passion", "description": "We love what we do and it shows in every project delivered" }
+      ]
+    },
+    "divisions": {
+      "overline": "OUR DIVISIONS",
+      "heading": "Expertise Under One Roof",
+      "description": "Four specialized divisions, one single objective: the digital success of our clients.",
+      "items": [
+        { "icon": "Code", "name": "AceWeb", "focus": "Web Development", "description": "High-performance websites and web applications, from landing pages to complex platforms" },
+        { "icon": "Target", "name": "AceAds", "focus": "Digital Advertising", "description": "Google, Facebook, TikTok, and Instagram campaigns optimized for conversions" },
+        { "icon": "Brain", "name": "AceAI", "focus": "Artificial Intelligence", "description": "AI solutions for automation, chatbots, and predictive analytics" },
+        { "icon": "Camera", "name": "AceMedia", "focus": "Media Production", "description": "Video, photo, and graphic content for brands that want to stand out" }
+      ]
+    },
+    "mission": {
+      "overline": "OUR MISSION",
+      "heading": "Measurable Digital Results",
+      "description": "To help businesses in Romania grow through integrated, creative, and performance-oriented digital strategies. Every project is an opportunity to demonstrate that well-executed digital marketing generates real results."
+    },
+    "vision": {
+      "overline": "OUR VISION",
+      "heading": "Digital Leader in Romania",
+      "description": "To become the reference digital agency in Romania, recognized for excellence in design, advertising, and technological innovation. A strategic partner for brands that want to lead in the digital era."
+    },
+    "whyUs": {
+      "overline": "WHY CHOOSE US",
+      "heading": "The AceAgency Advantage",
+      "items": [
+        { "number": "01", "title": "Full-Service Digital", "description": "Web, Ads, AI, Media — everything under one roof, one coherent strategy" },
+        { "number": "02", "title": "Premium-Level Design", "description": "Every pixel matters. Design inspired by the best European agencies" },
+        { "number": "03", "title": "Measurable Results", "description": "We don't promise — we deliver. Every campaign comes with clear reports and KPIs" },
+        { "number": "04", "title": "Partnerships, Not Projects", "description": "We build long-term relationships based on trust and transparency" },
+        { "number": "05", "title": "Cutting-Edge Technology", "description": "We adopt the latest tools and platforms for competitive advantage" }
+      ]
+    },
+    "cta": {
+      "heading": "Let's Build Together",
+      "description": "Ready to transform your brand's digital presence? Our team is waiting for you.",
+      "primary": "Contact Us",
+      "secondary": "View Services"
+    }
+  },
   "home": {
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",

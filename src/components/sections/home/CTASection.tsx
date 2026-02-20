@@ -10,14 +10,17 @@ import { ScrollReveal } from '@/components/animations/ScrollReveal';
 interface CTASectionProps {
   /** i18n namespace for translations. Enables reuse on About page. Default: 'home' */
   readonly namespace?: string;
+  /** Link for the secondary CTA button. When provided, button is enabled. */
+  readonly secondaryHref?: string;
 }
 
 /**
  * Burgundy CTA section with TextReveal heading and dual action buttons.
  * Reusable across pages via namespace prop (default: 'home', About page can pass 'about').
- * Primary button links to /contact, secondary is disabled (Portfolio is V2).
+ * Primary button links to /contact, secondary is disabled by default (Portfolio is V2)
+ * unless secondaryHref is provided.
  */
-export function CTASection({ namespace = 'home' }: CTASectionProps): React.JSX.Element {
+export function CTASection({ namespace = 'home', secondaryHref }: CTASectionProps): React.JSX.Element {
   const t = useTranslations(namespace);
 
   return (
@@ -51,17 +54,28 @@ export function CTASection({ namespace = 'home' }: CTASectionProps): React.JSX.E
               <Link href="/contact">{t('cta.primary')}</Link>
             </Button>
 
-            {/* Secondary: ghost variant, disabled (Portfolio is V2) */}
-            <Button
-              variant="outline"
-              size="lg"
-              className="min-h-[3rem] border-white/30 px-8 text-white opacity-50"
-              aria-disabled="true"
-              tabIndex={-1}
-              style={{ pointerEvents: 'none' }}
-            >
-              {t('cta.secondary')}
-            </Button>
+            {/* Secondary: enabled with link when secondaryHref provided, disabled otherwise */}
+            {secondaryHref ? (
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="min-h-[3rem] border-white/30 px-8 text-white hover:bg-white/10 hover:text-white"
+              >
+                <Link href={secondaryHref}>{t('cta.secondary')}</Link>
+              </Button>
+            ) : (
+              <Button
+                variant="outline"
+                size="lg"
+                className="min-h-[3rem] border-white/30 px-8 text-white opacity-50"
+                aria-disabled="true"
+                tabIndex={-1}
+                style={{ pointerEvents: 'none' }}
+              >
+                {t('cta.secondary')}
+              </Button>
+            )}
           </div>
         </ScrollReveal>
       </div>

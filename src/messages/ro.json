@@ -39,6 +39,72 @@
     "instagram": "Instagram",
     "facebook": "Facebook"
   },
+  "about": {
+    "hero": {
+      "overline": "DESPRE NOI",
+      "headline": "Disciplina. Viziune. Rezultate.",
+      "subheading": "Suntem o echipa care crede ca fiecare brand merita o prezenta digitala de exceptie."
+    },
+    "story": {
+      "overline": "POVESTEA NOASTRA",
+      "heading": "De la Pasiune la Performanta",
+      "paragraphs": [
+        "AceAgency s-a nascut din convingerea ca fiecare afacere din Romania merita o prezenta digitala la standarde europene. Am pornit ca o echipa mica, cu o viziune mare: sa transformam modul in care brandurile romanesti comunica in mediul online.",
+        "Pe parcursul anilor, am crescut de la un studio de web design la o agentie digitala full-service. Am investit in oameni, tehnologie si procese care ne permit sa livram constant la cel mai inalt nivel de calitate.",
+        "Astazi, cu patru divizii specializate — AceWeb, AceAds, AceAI si AceMedia — oferim solutii integrate care acopera intregul spectru digital. Fiecare proiect este o oportunitate de a demonstra ca excelenta in marketing digital inseamna rezultate masurabile."
+      ]
+    },
+    "values": {
+      "overline": "VALORILE NOASTRE",
+      "heading": "Principiile Care Ne Ghideaza",
+      "items": [
+        { "icon": "Target", "title": "Excelenta", "description": "Ne dedicam calitatii in fiecare proiect, de la concept la livrare" },
+        { "icon": "Shield", "title": "Integritate", "description": "Comunicare transparenta si onesta cu fiecare client si partener" },
+        { "icon": "Zap", "title": "Inovatie", "description": "Adoptam cele mai noi tehnologii si strategii pentru rezultate superioare" },
+        { "icon": "Users", "title": "Colaborare", "description": "Lucram impreuna cu clientii nostri ca o echipa unita" },
+        { "icon": "TrendingUp", "title": "Performanta", "description": "Fiecare actiune este masurata si optimizata pentru rezultate maxime" },
+        { "icon": "Heart", "title": "Pasiune", "description": "Iubim ceea ce facem si asta se vede in fiecare proiect livrat" }
+      ]
+    },
+    "divisions": {
+      "overline": "DIVIZIILE NOASTRE",
+      "heading": "Expertiza Sub Un Singur Acoperis",
+      "description": "Patru divizii specializate, un singur obiectiv: succesul digital al clientilor nostri.",
+      "items": [
+        { "icon": "Code", "name": "AceWeb", "focus": "Dezvoltare Web", "description": "Site-uri si aplicatii web performante, de la landing pages la platforme complexe" },
+        { "icon": "Target", "name": "AceAds", "focus": "Publicitate Digitala", "description": "Campanii Google, Facebook, TikTok si Instagram optimizate pentru conversii" },
+        { "icon": "Brain", "name": "AceAI", "focus": "Inteligenta Artificiala", "description": "Solutii AI pentru automatizare, chatbots si analiza predictiva" },
+        { "icon": "Camera", "name": "AceMedia", "focus": "Productie Media", "description": "Continut video, foto si grafic pentru branduri care vor sa iasa in evidenta" }
+      ]
+    },
+    "mission": {
+      "overline": "MISIUNEA NOASTRA",
+      "heading": "Rezultate Digitale Masurabile",
+      "description": "Sa ajutam afacerile din Romania sa creasca prin strategii digitale integrate, creative si orientate catre performanta. Fiecare proiect este o oportunitate de a demonstra ca marketingul digital bine facut genereaza rezultate reale."
+    },
+    "vision": {
+      "overline": "VIZIUNEA NOASTRA",
+      "heading": "Lider in Digital din Romania",
+      "description": "Sa devenim agentia digitala de referinta din Romania, recunoscuta pentru excelenta in design, publicitate si inovatie tehnologica. Un partener strategic pentru branduri care vor sa conduca in era digitala."
+    },
+    "whyUs": {
+      "overline": "DE CE SA NE ALEGI",
+      "heading": "Avantajul AceAgency",
+      "items": [
+        { "number": "01", "title": "Full-Service Digital", "description": "Web, Ads, AI, Media — totul sub un singur acoperis, o singura strategie coerenta" },
+        { "number": "02", "title": "Design de Nivel Premium", "description": "Fiecare pixel conteaza. Design inspirat de cele mai bune agentii europene" },
+        { "number": "03", "title": "Rezultate Masurabile", "description": "Nu promitem — livram. Fiecare campanie vine cu rapoarte clare si KPI-uri" },
+        { "number": "04", "title": "Parteneriate, Nu Proiecte", "description": "Construim relatii pe termen lung bazate pe incredere si transparenta" },
+        { "number": "05", "title": "Tehnologie de Varf", "description": "Adoptam cele mai noi tools si platforme pentru avantaj competitiv" }
+      ]
+    },
+    "cta": {
+      "heading": "Hai sa Construim Impreuna",
+      "description": "Esti gata sa transformi prezenta digitala a brandului tau? Echipa noastra te asteapta.",
+      "primary": "Contacteaza-ne",
+      "secondary": "Vezi Serviciile"
+    }
+  },
   "home": {
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
