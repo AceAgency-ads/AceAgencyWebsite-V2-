@@ -14,15 +14,15 @@
 - Text: White, Inter SemiBold, body size
 - Padding: `12px 32px` (md), `8px 24px` (sm), `16px 40px` (lg)
 - Border-radius: `--ds-radius-default`
-- Hover: `brightness(1.1)`, `scale(1.02)`, `box-shadow: --ds-shadow-violet`
+- Hover: `brightness(1.1)`, `scale(1.02)`, `box-shadow: --ds-shadow-burgundy`
 - Active: `scale(0.98)`
 - Transition: `--ds-duration-fast` `--ds-ease-out`
 
 **Secondary (Outline)**
 - Background: transparent
-- Text: Electric Violet (dark theme: White)
-- Border: 1px Electric Violet (dark theme: White)
-- Hover: Fill Electric Violet, text White
+- Text: Burgundy (dark theme: White)
+- Border: 1px Burgundy (dark theme: White)
+- Hover: Fill Burgundy, text White
 - Active: `scale(0.98)`
 
 **Ghost**
@@ -31,9 +31,9 @@
 - Hover: `bg-white/10` (dark) or `bg-black/5` (light)
 
 **Accent**
-- Background: Electric Mint
+- Background: Grey #D9D9D9
 - Text: Black
-- Hover: `brightness(1.05)`
+- Hover: `brightness(0.95)`
 
 ### Sizes
 
@@ -47,7 +47,7 @@
 
 - **Disabled:** opacity 0.5, cursor not-allowed, no hover effects
 - **Loading:** spinner icon replacing text/icon, same dimensions
-- **Focus:** 2px ring Electric Violet with 2px offset
+- **Focus:** 2px ring Burgundy with 2px offset
 
 ### Icon Support
 
@@ -77,7 +77,7 @@
 - Border: 1px `--ds-color-dark-border` (dark) / 1px Grey (light)
 - Border-radius: `--ds-radius-lg`
 - Padding: `--ds-space-6`
-- Hover: `translateY(-4px)`, border-color transitions to `--ds-color-violet-light`
+- Hover: `translateY(-4px)`, border-color transitions to `--ds-color-burgundy-light`
 - Transition: `--ds-duration-normal` `--ds-ease-smooth`
 
 ### Glass Card
@@ -91,23 +91,23 @@
 
 - Background: `--ds-color-dark-elevated`
 - No border by default
-- Shadow: `--ds-shadow-violet` on hover
+- Shadow: `--ds-shadow-burgundy` on hover
 - Hover: `scale(1.02)`, glow intensifies
-- Icon at top: 48px, Electric Mint
+- Icon at top: 48px, Burgundy
 - Used for service previews on homepage
 
 ### Stat Card
 
 ```
 ┌─────────────────────┐
-│  150+               │  ← display-lg, bold, Electric Mint
+│  150+               │  ← display-lg, bold, Burgundy
 │  Proiecte Livrate   │  ← body-sm, muted
 └─────────────────────┘
 ```
 
 - Background: transparent or dark-elevated
 - Border: 1px dark-border (optional)
-- Number: `display-lg` size, Glacial Indifference Bold, Electric Mint or White
+- Number: `display-lg` size, Glacial Indifference Bold, Burgundy or White
 - Label: `body-sm`, muted text
 - Animation: CountUp on scroll trigger (GSAP)
 
@@ -131,7 +131,7 @@
 - Quote: `body-lg`, White
 - Author: `body-sm`, Inter SemiBold
 - Role: `caption`, muted
-- Stars: Electric Mint
+- Stars: Burgundy
 - Layout: Bento grid (varies sizes, not uniform)
 
 ---
@@ -166,7 +166,7 @@ Descriere text care        ← description (body-lg, muted, max-width 65ch)
 explica sectiunea.
 ```
 
-- Overline: `caption` size, uppercase, `letter-spacing: 0.12em`, Electric Mint (dark) or Electric Violet (light)
+- Overline: `caption` size, uppercase, `letter-spacing: 0.12em`, Grey (dark) or Burgundy (light)
 - Heading: `h2` size, `font-heading`, below overline with `space-2` gap
 - Description: `body-lg`, muted text, `max-width: 65ch`, below heading with `space-4` gap
 - Alignment: left (default), center (optional prop)
@@ -200,8 +200,8 @@ explica sectiunea.
 
 - Horizontal links, `body-sm` Inter Medium
 - Gap: `--ds-space-6`
-- Hover: Electric Violet color transition + dot indicator below
-- Active page: Electric Violet text + dot indicator visible
+- Hover: Burgundy color transition + dot indicator below
+- Active page: Burgundy text + dot indicator visible
 
 ### Mobile Hamburger
 
@@ -283,7 +283,7 @@ explica sectiunea.
 - Background: `--ds-color-black` (always dark)
 - Padding: `py-16 lg:py-24`
 - Grid: 4 columns on desktop, 2 on tablet, 1 on mobile
-- Links: `body-sm`, Grey, hover Electric Violet
+- Links: `body-sm`, Grey, hover Burgundy
 - Social icons: 24px, Grey, hover White with scale(1.1)
 - Newsletter: inline form (email input + submit button)
 - Bottom bar: border-top 1px dark-border, `py-6`, flex between social and copyright
@@ -357,7 +357,7 @@ Already implemented in Phase 1. Configuration per MASTER.md:
 ```
 
 - Two buttons side by side
-- Active locale: Electric Violet text (or White on dark), SemiBold
+- Active locale: Burgundy text (or White on dark), SemiBold
 - Inactive locale: muted text, Regular
 - Separator: `|` character in muted color
 - Size: `body-sm`
@@ -464,7 +464,7 @@ Horizontal row of social media icon buttons.
 | Facebook | Lucide `Facebook` | TBD |
 
 - Size: 24px icons in 40px touch targets
-- Color: Grey default, White on hover (footer), Electric Violet on hover (light sections)
+- Color: Grey default, White on hover (footer), Burgundy on hover (light sections)
 - Gap: `--ds-space-4`
 - Hover: `scale(1.1)` + color transition
 - `target="_blank"` + `rel="noopener noreferrer"` on all links

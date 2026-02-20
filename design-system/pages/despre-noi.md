@@ -37,7 +37,7 @@
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 7: CTA                    [violet]  │
+│  SECTION 7: CTA                    [burgundy]  │
 │                                              │
 ├──────────────────────────────────────────────┤
 │  [Footer]                                    │
@@ -76,7 +76,7 @@ o prezenta digitala de exceptie.
 
 ### Specifications
 
-- **Overline:** "DESPRE NOI" — overline style, Electric Mint
+- **Overline:** "DESPRE NOI" — overline style, Grey
 - **Headline:** `display-lg` size, Glacial Indifference Bold, White
   - Animation: Word-level stagger on scroll/load
 - **Subheading:** `subtitle`, Red Hat Display, Grey
@@ -135,7 +135,7 @@ o prezenta digitala de exceptie.
 
 ### Specifications
 
-- Default Card variant with icon (32px, Electric Mint), heading (h4), description (body-sm, muted)
+- Default Card variant with icon (32px, Grey), heading (h4), description (body-sm, muted)
 - Grid: 3 columns desktop, 2 tablet, 1 mobile
 - Animation: Cards stagger fade up, 80ms delay
 
@@ -163,9 +163,9 @@ o prezenta digitala de exceptie.
 
 ### Specifications
 
-- Feature Card variant: icon (48px, Electric Mint), division name (h3), focus area (body-sm, Electric Violet), description (body-sm, muted)
+- Feature Card variant: icon (48px, Grey), division name (h3), focus area (body-sm, Burgundy), description (body-sm, muted)
 - Grid: 4 columns desktop (equal width), 2x2 tablet, 1 mobile
-- Hover: Card lifts + violet glow shadow
+- Hover: Card lifts + burgundy glow shadow
 - Animation: Cards stagger fade up
 - Each card links to the respective services sub-page
 
@@ -192,7 +192,7 @@ o prezenta digitala de exceptie.
 
 - Two equal columns on desktop, stacked on mobile
 - Each column: Card-like container with light-muted background, padding `space-8`
-- Overline: Electric Violet
+- Overline: Burgundy
 - Heading: h3 size
 - Description: body-lg, muted
 - Divider between columns: 1px vertical border on desktop
@@ -222,7 +222,7 @@ o prezenta digitala de exceptie.
 
 ### Specifications
 
-- Layout: Numbered list with large number (display-lg, Electric Mint, opacity 0.3), title (h4, White), description (body, muted)
+- Layout: Numbered list with large number (display-lg, Grey, opacity 0.3), title (h4, White), description (body, muted)
 - Each item separated by bottom border (dark-border)
 - Padding: `space-6` vertical per item
 - Number: Left-aligned, large and faded as decorative element
@@ -233,7 +233,7 @@ o prezenta digitala de exceptie.
 
 ## Section 7: CTA
 
-**Theme:** violet
+**Theme:** burgundy
 **Layout:** Same as homepage CTA section
 
 ### Content

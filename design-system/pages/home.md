@@ -33,7 +33,7 @@
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 6: CTA                     [violet] │
+│  SECTION 6: CTA                     [burgundy] │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
@@ -76,7 +76,7 @@
 
 ### Specifications
 
-- **Overline:** "WEB . ADS . AI . MEDIA" — `overline` style, Electric Mint, letter-spacing 0.12em
+- **Overline:** "WEB . ADS . AI . MEDIA" — `overline` style, Grey, letter-spacing 0.12em
 - **Headline:** `display-xl` size, Glacial Indifference Bold, White
   - Animation: Character-level stagger (SplitText or word-level fallback)
   - Trigger: On page load
@@ -122,7 +122,7 @@
 
 ### Specifications
 
-- Each card: Feature Card component with icon (48px, Electric Mint), heading (h4), description (body-sm, muted), and link arrow
+- Each card: Feature Card component with icon (48px, Grey), heading (h4), description (body-sm, muted), and link arrow
 - Cards link to respective service pages
 - Grid: 3 columns on desktop (varied heights for bento feel), 2 on tablet, 1 on mobile
 - Animation: Cards fade up with 80ms stagger on scroll trigger
@@ -152,7 +152,7 @@
 ### Specifications
 
 - Each stat: CountUp animation triggered on scroll
-- Numbers: `display-lg`, Glacial Indifference Bold, Electric Violet
+- Numbers: `display-lg`, Glacial Indifference Bold, Burgundy
 - Labels: `body-sm`, muted text
 - Grid: 4 columns desktop, 2x2 tablet, 2x2 mobile
 - Dividers: Vertical 1px border between stats on desktop (optional)
@@ -220,8 +220,8 @@
 
 ## Section 6: CTA
 
-**Theme:** violet
-**Layout:** Centered content, full-width violet background
+**Theme:** burgundy
+**Layout:** Centered content, full-width burgundy background
 
 ### Content
 
@@ -238,10 +238,10 @@
 
 - Heading: `h2`, White, Glacial Indifference Bold
 - Description: `body-lg`, White with slight opacity (0.9)
-- Primary CTA: accent variant (Electric Mint bg, Black text) → `/contact`
+- Primary CTA: accent variant (Grey bg, Black text) → `/contact`
 - Secondary CTA: ghost variant (White border) → `/portofoliu` (or disabled if V2)
-- Background: `--ds-gradient-brand-primary` or solid Electric Violet
-- Optional: Subtle radial glow of Electric Mint at center
+- Background: `--ds-gradient-brand-primary` (Burgundy gradient) or solid Burgundy
+- Optional: Subtle radial glow of Burgundy-light at center
 - Padding: `py-24` desktop, `py-16` mobile
 - Animation: Heading TextReveal on scroll, buttons fade up
 
@@ -265,7 +265,7 @@
 - Form max-width: 480px, centered
 - Input: Email placeholder "Adresa ta de email"
 - Button: "Aboneaza-te" accent variant
-- Success: "Multumim! Te-ai abonat cu succes." in Electric Mint
+- Success: "Multumim! Te-ai abonat cu succes." in Burgundy
 - Animation: Section fades up on scroll
 
 ---

@@ -38,22 +38,22 @@ The primary visual inspiration for AceAgency's website. Key patterns to adapt:
 ### Dark Sections (Primary)
 The site is dark-dominant. Most content sections use the dark scheme:
 - Background: Rich near-black (#262523) — warm, not cold
-- Text: Clean white with grey for secondary content
-- Accents: Electric Mint (#66F3A6) for highlights, stats, overlines
+- Text: Clean white with grey (#D9D9D9) for secondary content
+- Accents: Grey (#D9D9D9) for overlines, Burgundy (#56151A) for interactive elements
 - Cards: Slightly elevated dark (#2D2C2A approximate) with subtle borders
 
 ### Light Sections (Contrast)
 Select sections (usually About, some CTAs) use light for visual rhythm:
 - Background: Pure white or off-white
 - Text: Near-black for contrast
-- Accents: Electric Violet (#650CBE) for links, buttons, overlines
+- Accents: Burgundy (#56151A) for links, buttons, overlines
 - Cards: White with light grey borders and subtle shadows
 
-### Violet Accent Sections
+### Burgundy Accent Sections
 Used sparingly (1-2 per page, typically CTA sections):
-- Background: Electric Violet gradient
+- Background: Burgundy gradient (#56151A → #3D0F13)
 - Text: White
-- Accent: Electric Mint for buttons, highlights
+- Accent: Grey for buttons, highlights
 - Creates urgency and focus for conversion moments
 
 ---
@@ -114,7 +114,7 @@ To maintain distinctiveness and avoid generic "AI-generated website" feel:
 
 - **NOT:** Template-looking with generic hero images and "Welcome to our website"
 - **NOT:** Using Poppins, Montserrat, or other overused web fonts
-- **NOT:** Blue-and-white SaaS aesthetic with rounded everything
+- **NOT:** Blue-and-white or purple SaaS aesthetic with rounded everything
 - **NOT:** Carousel-heavy (bento grids replace carousels)
 - **NOT:** Stock photo dependent (component-driven design)
 - **NOT:** Flat and lifeless (purposeful animations add character)

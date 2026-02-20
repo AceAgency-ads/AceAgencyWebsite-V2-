@@ -68,7 +68,7 @@ o consultatie gratuita. Raspundem in 24h.
 
 ### Specifications
 
-- **Overline:** "CONTACT" — Electric Mint
+- **Overline:** "CONTACT" — Grey
 - **Headline:** `display-lg`, Glacial Indifference Bold, White
 - **Subheading:** `subtitle`, Grey
 - Animation: Word stagger on headline, fade-up on subheading
@@ -123,7 +123,7 @@ o consultatie gratuita. Raspundem in 24h.
 - Validation: Zod schema, client-side + server-side
 - Submission: Server Action (`lib/actions/contact.ts`)
 - Email delivery: Resend API
-- Success state: Form replaced with success message + Electric Mint checkmark animation
+- Success state: Form replaced with success message + Grey checkmark animation
 - Error state: Field-level red borders + error messages below each field
 - Loading state: Button shows spinner, form disabled
 - Rate limiting: Max 3 submissions per IP per hour (server-side)
@@ -155,7 +155,7 @@ o consultatie gratuita. Raspundem in 24h.
 ### Contact Info Specifications
 
 - Card component (glass variant) with contact details
-- Each item: Lucide icon (24px, Electric Mint) + label (caption, muted) + value (body, White)
+- Each item: Lucide icon (24px, Grey) + label (caption, muted) + value (body, White)
 - Email: `mailto:` link
 - Phone: `tel:` link (GA4 `click_phone` event)
 - WhatsApp: Optional, `wa.me` link (GA4 `click_whatsapp` event)

@@ -13,7 +13,7 @@
 
 **Anti-AI signals (distinctiveness):**
 1. Custom font pairing: Glacial Indifference + Red Hat Display (not a common AI default)
-2. Non-standard color triad: Electric Violet + Cobalt Blue + Electric Mint
+2. Restrained monochrome palette with Burgundy accent — not the typical blue/purple/gradient AI look
 3. Asymmetric bento layouts (not cookie-cutter grids)
 4. Character-level kinetic typography on hero headlines
 5. Mix-blend-mode cursor interaction on desktop
@@ -28,21 +28,18 @@
 
 | Token | Hex | OKLCH | Usage |
 |-------|-----|-------|-------|
-| Electric Violet | `#650CBE` | `oklch(0.44 0.21 292)` | Primary actions, CTAs, links, primary gradients |
-| Cobalt Blue | `#4500D0` | `oklch(0.35 0.25 270)` | Secondary actions, hover states, gradient endpoints |
-| Electric Mint | `#66F3A6` | `oklch(0.88 0.17 155)` | Accent highlights, success states, badge backgrounds |
+| Burgundy | `#56151A` | `oklch(0.30 0.10 25)` | Primary actions, CTAs, links, accent highlights, brand signature |
 | Black | `#262523` | `oklch(0.19 0.005 80)` | Dark backgrounds, primary text on light |
 | White | `#FFFFFF` | `oklch(1.0 0 0)` | Light backgrounds, primary text on dark |
-| Grey | `#D9D9D9` | `oklch(0.88 0 0)` | Secondary text on dark, borders, muted elements |
-| Burgundy | `#56151A` | `oklch(0.30 0.10 25)` | Error states, destructive actions, highlight accents |
+| Grey | `#D9D9D9` | `oklch(0.88 0 0)` | Secondary text on dark, borders, muted elements, overlines on dark |
 
 ### Extended Palette
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| `violet-light` | `oklch(0.55 0.18 292)` | Violet hover / lighter variant |
-| `violet-glow` | `oklch(0.44 0.21 292 / 0.15)` | Glow effects, box shadows |
-| `mint-soft` | `oklch(0.88 0.17 155 / 0.10)` | Subtle mint background tint |
+| `burgundy-light` | `oklch(0.38 0.10 25)` | Burgundy hover / lighter variant |
+| `burgundy-glow` | `oklch(0.30 0.10 25 / 0.15)` | Glow effects, box shadows |
+| `burgundy-soft` | `oklch(0.30 0.10 25 / 0.10)` | Subtle burgundy background tint |
 | `dark-elevated` | `oklch(0.22 0.005 80)` | Card surfaces on dark background |
 | `dark-border` | `oklch(0.28 0.005 80)` | Borders on dark background |
 | `light-muted` | `oklch(0.97 0 0)` | Light section backgrounds (off-white) |
@@ -51,19 +48,19 @@
 
 | Name | Value | Usage |
 |------|-------|-------|
-| `brand-primary` | `linear-gradient(135deg, #650CBE, #4500D0)` | Primary CTA buttons, hero accents |
-| `brand-glow` | `radial-gradient(circle, oklch(0.44 0.21 292 / 0.20), transparent 70%)` | Background glow effects |
+| `brand-primary` | `linear-gradient(135deg, #56151A, #3D0F13)` | Primary CTA buttons, hero accents |
+| `brand-glow` | `radial-gradient(circle, oklch(0.30 0.10 25 / 0.20), transparent 70%)` | Background glow effects |
 | `dark-fade` | `linear-gradient(180deg, #262523 0%, #1a1918 100%)` | Dark section depth |
-| `mint-highlight` | `linear-gradient(90deg, #66F3A6, oklch(0.80 0.15 170))` | Accent underlines, progress bars |
+| `grey-highlight` | `linear-gradient(90deg, #D9D9D9, oklch(0.75 0 0))` | Accent underlines, progress bars |
 
 ### Section Color Schemes
 
 | Scheme | Background | Text | Accent | Border |
 |--------|-----------|------|--------|--------|
-| `dark` | Black #262523 | White #FFFFFF | Electric Mint | dark-border |
-| `light` | White #FFFFFF | Black #262523 | Electric Violet | Grey #D9D9D9 |
-| `light-muted` | light-muted | Black #262523 | Electric Violet | Grey #D9D9D9 |
-| `violet` | Electric Violet | White #FFFFFF | Electric Mint | violet-light |
+| `dark` | Black #262523 | White #FFFFFF | Grey #D9D9D9 | dark-border |
+| `light` | White #FFFFFF | Black #262523 | Burgundy #56151A | Grey #D9D9D9 |
+| `light-muted` | light-muted | Black #262523 | Burgundy #56151A | Grey #D9D9D9 |
+| `burgundy` | Burgundy #56151A | White #FFFFFF | Grey #D9D9D9 | burgundy-light |
 
 ---
 
@@ -213,9 +210,9 @@ Every full-width section follows this vertical padding pattern:
 | Variant | Background | Text | Border | Hover |
 |---------|-----------|------|--------|-------|
 | `primary` | brand-primary gradient | White | none | brightness(1.1), scale(1.02) |
-| `secondary` | transparent | Electric Violet | 1px Electric Violet | bg Electric Violet, text White |
+| `secondary` | transparent | Burgundy | 1px Burgundy | bg Burgundy, text White |
 | `ghost` | transparent | White/Black (contextual) | none | bg white/10 or black/5 |
-| `accent` | Electric Mint | Black | none | brightness(1.05) |
+| `accent` | Grey #D9D9D9 | Black | none | brightness(0.95) |
 
 - **Size:** `sm` (36px h), `md` (44px h), `lg` (52px h)
 - **Border radius:** `--radius` (0.5rem) default, `full` for pill buttons
@@ -225,15 +222,15 @@ Every full-width section follows this vertical padding pattern:
 
 | Variant | Background | Border | Shadow | Hover |
 |---------|-----------|--------|--------|-------|
-| `default` | dark-elevated | 1px dark-border | none | border violet-light, translateY(-4px) |
+| `default` | dark-elevated | 1px dark-border | none | border burgundy-light, translateY(-4px) |
 | `glass` | white/5 backdrop-blur-md | 1px white/10 | none | border white/20 |
-| `feature` | dark-elevated | none | violet-glow | scale(1.02), glow intensify |
+| `feature` | dark-elevated | none | burgundy-glow | scale(1.02), glow intensify |
 | `light` | White | 1px Grey | sm shadow | translateY(-4px), shadow-md |
 
 ### Section Headers
 
 Every section uses this pattern:
-1. **Overline** — uppercase, caption size, Electric Mint or Electric Violet, letter-spacing 0.12em
+1. **Overline** — uppercase, caption size, Grey (dark sections) or Burgundy (light sections), letter-spacing 0.12em
 2. **Heading** — h2 size, bold, below overline with space-2 gap
 3. **Description** — body-lg, muted text, max-width 65ch, below heading with space-4 gap
 
@@ -245,11 +242,11 @@ Every section uses this pattern:
 
 ### Form Elements
 
-- **Input:** 48px height, dark-elevated background, dark-border, focus: ring Electric Violet
+- **Input:** 48px height, dark-elevated background, dark-border, focus: ring Burgundy
 - **Textarea:** Same styling, min-height 120px
 - **Select:** Same styling with custom chevron icon
 - **Label:** caption size, Inter SemiBold, above input with space-1 gap
-- **Error:** caption size, Burgundy color, below input with space-1 gap
+- **Error:** caption size, red (#DC2626), below input with space-1 gap
 
 ---
 
@@ -258,7 +255,7 @@ Every section uses this pattern:
 - **Library:** Lucide React (primary), custom line-art SVGs for service icons
 - **Sizes:** `sm` (16px), `md` (20px), `lg` (24px), `xl` (32px), `2xl` (48px)
 - **Stroke width:** 1.5px (default), 1px (large sizes)
-- **Color:** Inherits current text color; accent icons use Electric Mint or Electric Violet
+- **Color:** Inherits current text color; accent icons use Grey (dark) or Burgundy (light)
 - **Service icons:** Custom line-art style, 48px canvas, 1.5px stroke, single-color (contextual)
 
 ### Service Icon Set
@@ -406,7 +403,7 @@ When `prefers-reduced-motion: reduce`:
 
 - **Standard:** WCAG 2.1 AA
 - **Color contrast:** Minimum 4.5:1 for body text, 3:1 for large text (18px+ bold or 24px+)
-- **Focus indicators:** 2px ring in Electric Violet on all interactive elements
+- **Focus indicators:** 2px ring in Burgundy on all interactive elements
 - **Keyboard navigation:** Full support for all interactive elements
 - **ARIA labels:** On icon-only buttons, decorative images marked `aria-hidden`
 - **Skip navigation:** "Skip to main content" link as first focusable element
