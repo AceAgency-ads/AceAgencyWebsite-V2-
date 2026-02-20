@@ -3,11 +3,12 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { SplitText } from 'gsap/SplitText';
 
 // Register plugins once — prevents duplicate registration and tree-shaking issues.
-// All components must import gsap, useGSAP, and ScrollTrigger from this module,
+// All components must import gsap, useGSAP, ScrollTrigger, and SplitText from this module,
 // never directly from 'gsap' or '@gsap/react'.
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
 // Global animation defaults — establishes consistent timing rhythm across all pages.
 gsap.defaults({
@@ -15,4 +16,4 @@ gsap.defaults({
   duration: 0.6,
 });
 
-export { gsap, useGSAP, ScrollTrigger };
+export { gsap, useGSAP, ScrollTrigger, SplitText };
