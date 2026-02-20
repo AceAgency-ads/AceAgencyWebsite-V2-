@@ -7,6 +7,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { CustomCursor } from '@/components/animations/CustomCursor';
 import '@/styles/globals.css';
 
 const glacialIndifference = localFont({
@@ -77,6 +78,7 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
+        <CustomCursor />
       </body>
     </html>
   );
