@@ -101,12 +101,12 @@ Plans:
   2. Each service sub-page has a distinct hero, a benefits/features section, a process section, a FAQ accordion, and a CTA — using the visual and animation patterns established in Phase 3 and specified in `design-system/pages/servicii-{slug}.md`
   3. All FAQ accordions on service pages expand and collapse correctly with keyboard navigation
   4. Bilingual content exists for every service page in `ro.json` and `en.json` with no missing translation keys
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: Run `/frontend-design` on `design-system/pages/servicii.md` — implement Services index page; build ServiceHero, ServiceFeatures, ServiceFaq, ServiceCta section components reusable across all 6 sub-pages
-- [ ] 04-02: Run `/frontend-design` for Google Ads, Facebook Ads, TikTok Ads service pages — implement with full bilingual content and shared section components
-- [ ] 04-03: Run `/frontend-design` for SEO, Email Marketing, Consultanta Marketing service pages — implement with full bilingual content
+- [ ] 04-01-PLAN.md — Services index page (hero, 7-card grid, process, why-choose-us, CTA), service registry, Breadcrumb component, 6 reusable Service* section components, dynamic [slug] route, Google Ads sub-page with full bilingual content
+- [ ] 04-02-PLAN.md — Facebook Ads, TikTok Ads, SEO service pages — bilingual i18n content for all 3 sub-pages
+- [ ] 04-03-PLAN.md — Email Marketing, Consultanta Marketing service pages — bilingual i18n content, complete Phase 4 verification
 
 ### Phase 5: Contact and Lead Capture
 **Goal**: Visitors can contact AceAgency, book a meeting, and subscribe to the newsletter — all lead-capture mechanisms are functional, validated, and deliverable via Resend.
