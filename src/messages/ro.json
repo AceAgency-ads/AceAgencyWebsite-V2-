@@ -353,13 +353,67 @@
       }
     },
     "seo": {
-      "meta": { "title": "Servicii SEO Romania | Optimizare SEO Profesionala", "description": "Servicii SEO profesionale pentru pozitionare organica in Google. Audit SEO, optimizare tehnica si de continut. AceAgency Bucuresti." },
-      "hero": { "overline": "SEO", "headline": "Optimizare SEO pentru Pozitionare in Top Google", "description": "Strategii SEO complete care cresc vizibilitatea organica a site-ului tau si aduc trafic calificat pe termen lung." },
-      "features": { "overline": "SERVICII SEO", "heading": "Solutii Complete de Optimizare SEO", "items": [{ "title": "Audit SEO Complet", "description": "Analiza completa a site-ului: tehnic, on-page, off-page si competitie." }, { "title": "SEO Tehnic", "description": "Optimizare viteza, Core Web Vitals, structura URL si indexare." }, { "title": "SEO On-Page", "description": "Optimizare continut, meta tags, heading-uri, imagini si linkuri interne." }, { "title": "SEO Off-Page", "description": "Strategii de link building si cresterea autoritatii domeniului." }, { "title": "SEO Local", "description": "Optimizare Google Business Profile si pozitionare in rezultatele locale." }, { "title": "Content Marketing", "description": "Strategie de continut SEO cu articole optimizate pe cuvinte cheie." }] },
-      "process": { "overline": "PROCESUL NOSTRU", "heading": "Cum Optimizam Site-ul Tau", "steps": [{ "title": "Audit & Analiza", "description": "Auditam complet site-ul, identificam problemele tehnice si oportunitatile de cuvinte cheie." }, { "title": "Strategie SEO", "description": "Construim o strategie SEO personalizata bazata pe datele auditului si obiectivele tale." }, { "title": "Implementare", "description": "Executam optimizarile tehnice, on-page si cream continut SEO-optimized." }, { "title": "Monitorizare & Raportare", "description": "Urmarim pozitiile, traficul organic si conversiile. Rapoarte lunare detaliate." }] },
-      "stats": { "overline": "REZULTATE", "heading": "Performanta Campaniilor SEO", "items": [{ "value": "250", "suffix": "%", "label": "Crestere Trafic Organic" }, { "value": "100", "suffix": "+", "label": "Cuvinte Cheie in Top 10" }, { "value": "40", "suffix": "+", "label": "Clienti SEO" }, { "value": "95", "suffix": "%", "label": "Rata Retentie Clienti" }] },
-      "faq": { "overline": "INTREBARI FRECVENTE", "heading": "Intrebari despre Serviciile SEO", "items": [{ "question": "Cat dureaza pana vad rezultate SEO?", "answer": "SEO este o investitie pe termen lung. Primele imbunatatiri se vad in 3-6 luni, iar rezultatele semnificative apar dupa 6-12 luni de optimizare continua." }, { "question": "Cat costa serviciile SEO?", "answer": "Preturile incep de la 500 EUR/luna pentru pachete de baza. Costul depinde de competitivitatea industriei si de starea actuala a site-ului." }, { "question": "Garantati pozitia 1 in Google?", "answer": "Nu garantam pozitii specifice — nimeni nu poate face asta corect. Garantam insa o strategie profesionala, optimizari constante si cresterea vizibilitatii organice." }] },
-      "cta": { "heading": "Creste Organic cu SEO", "description": "Programeaza un audit SEO gratuit si descopera potentialul site-ului tau.", "primary": "Solicita Audit SEO", "secondary": "Programeaza o Consultatie" }
+      "meta": {
+        "title": "Servicii SEO Romania | Optimizare SEO Profesionala - AceAgency",
+        "description": "Servicii SEO profesionale pentru pozitionare organica in Google. Audit SEO complet, optimizare tehnica si de continut. Solicita audit SEO gratuit!"
+      },
+      "hero": {
+        "overline": "OPTIMIZARE SEO",
+        "headline": "Servicii SEO Romania — Optimizare Profesionala pentru Pozitionare in Top Google",
+        "description": "Oferim servicii SEO complete care cresc vizibilitatea organica a site-ului tau in Google, aduc trafic calificat pe termen lung si transforma vizitatorii in clienti. De la audit SEO tehnic la strategii de continut si link building."
+      },
+      "features": {
+        "overline": "SERVICII SEO",
+        "heading": "Solutii Complete de Optimizare SEO pentru Afacerea Ta",
+        "items": [
+          { "title": "SEO Tehnic", "description": "Optimizam viteza site-ului, Core Web Vitals (LCP, INP, CLS), structura URL-urilor, sitemap XML, robots.txt si indexarea corecta in Google Search Console." },
+          { "title": "SEO On-Page", "description": "Optimizam continutul paginilor, titlurile si meta descrierile, ierarhia heading-urilor (H1-H6), imaginile cu alt text, linkurile interne si schema markup JSON-LD." },
+          { "title": "SEO Off-Page", "description": "Construim backlink-uri de calitate prin strategii de link building etice: guest posting, digital PR, parteneriate si mentiuni in publicatii relevante din industrie." },
+          { "title": "SEO Local", "description": "Optimizam Google Business Profile, gestionam recenziile, construim citatii NAP consistente si pozitionam afacerea ta in rezultatele locale din Google Maps." },
+          { "title": "Audit SEO Complet", "description": "Analizam in profunzime site-ul tau: performanta tehnica, structura continutului, profilul de backlink-uri, competitia si oportunitatile de cuvinte cheie neexploatate." },
+          { "title": "Content SEO", "description": "Dezvoltam o strategie de continut SEO cu articole optimizate pe cuvinte cheie, cluster topics si pillar pages care construiesc autoritate tematica in industria ta." }
+        ]
+      },
+      "process": {
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Optimizam Site-ul Tau pentru Google",
+        "steps": [
+          { "title": "Audit SEO Complet", "description": "Auditam complet site-ul: performanta tehnica, continut, backlink-uri si competitie. Identificam problemele critice si oportunitatile de cuvinte cheie cu cel mai mare potential." },
+          { "title": "Strategia de Cuvinte Cheie", "description": "Cercetam si selectam cuvintele cheie cu cel mai bun raport volum/competitie. Construim o harta de cuvinte cheie aliniata cu paginile site-ului si intentia de cautare." },
+          { "title": "Optimizare On-Page & Tehnica", "description": "Implementam optimizarile tehnice (viteza, Core Web Vitals, structura) si on-page (titluri, meta, heading-uri, continut, linkuri interne, schema markup)." },
+          { "title": "Link Building & Autoritate", "description": "Construim backlink-uri de calitate prin strategii etice de link building care cresc autoritatea domeniului si imbunatatesc pozitiile in Google." },
+          { "title": "Monitorizare & Raportare", "description": "Urmarim pozitiile, traficul organic, conversiile si Core Web Vitals. Rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare continua." }
+        ]
+      },
+      "stats": {
+        "overline": "REZULTATE",
+        "heading": "Performanta Serviciilor Noastre SEO",
+        "items": [
+          { "value": "300", "suffix": "%+", "label": "Crestere Trafic Organic" },
+          { "value": "500", "suffix": "+", "label": "Cuvinte Cheie in Top 10" },
+          { "value": "100", "suffix": "+", "label": "Proiecte SEO" },
+          { "value": "95", "suffix": "%", "label": "Rata de Retentie" }
+        ]
+      },
+      "faq": {
+        "overline": "INTREBARI FRECVENTE",
+        "heading": "Intrebari despre Serviciile de Optimizare SEO",
+        "items": [
+          { "question": "Cat costa serviciile de SEO?", "answer": "Preturile pentru servicii SEO incep de la 500 EUR/luna pentru pachete de baza care includ optimizare on-page si monitorizare. Pachetele complete cu audit tehnic, strategie de continut si link building pornesc de la 1.000 EUR/luna. Costul exact depinde de competitivitatea industriei, dimensiunea site-ului si obiectivele tale. Contacteaza-ne pentru o evaluare gratuita." },
+          { "question": "Cat dureaza sa vezi rezultate SEO?", "answer": "SEO este o investitie pe termen lung. Primele imbunatatiri de pozitii se observa de obicei in 3-4 luni, iar rezultatele semnificative — crestere consistenta de trafic organic si conversii — apar dupa 6-12 luni de optimizare continua. Aceasta variaza in functie de competitivitatea cuvintelor cheie si starea actuala a site-ului." },
+          { "question": "Ce include un audit SEO?", "answer": "Un audit SEO complet include: analiza tehnica (viteza, Core Web Vitals, indexare, mobile-friendliness), audit on-page (titluri, meta, heading-uri, continut, linkuri interne), audit off-page (profilul de backlink-uri, autoritatea domeniului), analiza competitiei si cercetare de cuvinte cheie. Livram un raport detaliat cu probleme prioritizate si plan de actiune." },
+          { "question": "Care este diferenta intre SEO On-Page si Off-Page?", "answer": "SEO On-Page se refera la optimizarile pe care le facem direct pe site-ul tau: continut, titluri, meta descrieri, heading-uri, imagini, linkuri interne si structura URL-urilor. SEO Off-Page se refera la actiunile din afara site-ului care construiesc autoritate: link building, guest posting, digital PR si mentiuni in publicatii relevante. Ambele sunt esentiale pentru pozitionare." },
+          { "question": "Faceti si SEO Local?", "answer": "Da, oferim servicii complete de SEO Local. Optimizam Google Business Profile, gestionam recenziile online, construim citatii NAP (Nume, Adresa, Telefon) consistente in directoare relevante si implementam schema markup LocalBusiness. SEO Local este esential pentru afacerile care servesc clienti intr-o zona geografica specifica — combinat cu campanii Google Ads locale, asiguram vizibilitate completa." },
+          { "question": "Cum masurati rezultatele SEO?", "answer": "Urmarim metrici clare: pozitii pentru cuvinte cheie target, trafic organic (Google Analytics + Search Console), rata de click (CTR), conversii din trafic organic, Core Web Vitals si autoritatea domeniului. Rapoartele lunare includ analiza performantei, comparatii cu lunile anterioare si recomandari de optimizare. Ai acces si la un dashboard in timp real." },
+          { "question": "De ce sa alegeti AceAgency pentru SEO?", "answer": "Combinam expertiza SEO tehnica cu intelegerea afacerilor din Romania. Avem peste 100 de proiecte SEO finalizate cu succes, o rata de retentie de 95% si o echipa dedicata care urmareste constant cele mai noi actualizari de algoritm Google. In plus, integram serviciile SEO cu campaniile Google Ads si Facebook Ads pentru o strategie digitala completa si coerenta." }
+        ]
+      },
+      "cta": {
+        "heading": "Creste Organic cu Servicii SEO Profesionale",
+        "description": "Programeaza un audit SEO gratuit si descopera cum putem imbunatati pozitionarea site-ului tau in Google pentru trafic organic calificat.",
+        "primary": "Solicita Audit SEO Gratuit",
+        "secondary": "Programeaza o Consultatie"
+      }
     },
     "emailMarketing": {
       "meta": {

@@ -353,13 +353,67 @@
       }
     },
     "seo": {
-      "meta": { "title": "SEO Services Romania | Professional SEO Optimization", "description": "Professional SEO services for organic Google positioning. SEO audit, technical and content optimization. AceAgency Bucharest." },
-      "hero": { "overline": "SEO", "headline": "SEO Optimization for Top Google Rankings", "description": "Complete SEO strategies that increase your website's organic visibility and bring qualified long-term traffic." },
-      "features": { "overline": "SEO SERVICES", "heading": "Complete SEO Optimization Solutions", "items": [{ "title": "Complete SEO Audit", "description": "Full website analysis: technical, on-page, off-page and competition." }, { "title": "Technical SEO", "description": "Speed optimization, Core Web Vitals, URL structure and indexing." }, { "title": "On-Page SEO", "description": "Content, meta tags, headings, images and internal links optimization." }, { "title": "Off-Page SEO", "description": "Link building strategies and domain authority growth." }, { "title": "Local SEO", "description": "Google Business Profile optimization and local search positioning." }, { "title": "Content Marketing", "description": "SEO content strategy with keyword-optimized articles." }] },
-      "process": { "overline": "OUR PROCESS", "heading": "How We Optimize Your Website", "steps": [{ "title": "Audit & Analysis", "description": "We fully audit the website, identify technical issues and keyword opportunities." }, { "title": "SEO Strategy", "description": "We build a personalized SEO strategy based on audit data and your goals." }, { "title": "Implementation", "description": "We execute technical and on-page optimizations and create SEO-optimized content." }, { "title": "Monitoring & Reporting", "description": "We track positions, organic traffic and conversions. Detailed monthly reports." }] },
-      "stats": { "overline": "RESULTS", "heading": "SEO Campaign Performance", "items": [{ "value": "250", "suffix": "%", "label": "Organic Traffic Growth" }, { "value": "100", "suffix": "+", "label": "Keywords in Top 10" }, { "value": "40", "suffix": "+", "label": "SEO Clients" }, { "value": "95", "suffix": "%", "label": "Client Retention Rate" }] },
-      "faq": { "overline": "FAQ", "heading": "Questions About SEO Services", "items": [{ "question": "How long until I see SEO results?", "answer": "SEO is a long-term investment. First improvements are visible in 3-6 months, with significant results after 6-12 months of continuous optimization." }, { "question": "How much do SEO services cost?", "answer": "Prices start from 500 EUR/month for basic packages. Cost depends on industry competitiveness and current website state." }, { "question": "Do you guarantee position 1 on Google?", "answer": "We don't guarantee specific positions — no one can do that correctly. However, we guarantee a professional strategy, constant optimizations and organic visibility growth." }] },
-      "cta": { "heading": "Grow Organically with SEO", "description": "Schedule a free SEO audit and discover your website's potential.", "primary": "Request SEO Audit", "secondary": "Schedule a Consultation" }
+      "meta": {
+        "title": "SEO Services Romania | Professional SEO Optimization - AceAgency",
+        "description": "Professional SEO services for organic Google positioning. Complete SEO audit, technical and content optimization. Request a free SEO audit today!"
+      },
+      "hero": {
+        "overline": "SEO OPTIMIZATION",
+        "headline": "SEO Services Romania — Professional Optimization for Top Google Rankings",
+        "description": "We provide complete SEO services that increase your website's organic visibility on Google, drive qualified long-term traffic and convert visitors into customers. From technical SEO audits to content strategies and link building."
+      },
+      "features": {
+        "overline": "SEO SERVICES",
+        "heading": "Complete SEO Optimization Solutions for Your Business",
+        "items": [
+          { "title": "Technical SEO", "description": "We optimize site speed, Core Web Vitals (LCP, INP, CLS), URL structure, XML sitemap, robots.txt and proper indexing in Google Search Console." },
+          { "title": "On-Page SEO", "description": "We optimize page content, titles and meta descriptions, heading hierarchy (H1-H6), images with alt text, internal links and JSON-LD schema markup." },
+          { "title": "Off-Page SEO", "description": "We build quality backlinks through ethical link building strategies: guest posting, digital PR, partnerships and mentions in relevant industry publications." },
+          { "title": "Local SEO", "description": "We optimize Google Business Profile, manage reviews, build consistent NAP citations and position your business in local Google Maps results." },
+          { "title": "Complete SEO Audit", "description": "We analyze your website in depth: technical performance, content structure, backlink profile, competition and untapped keyword opportunities." },
+          { "title": "SEO Content Strategy", "description": "We develop an SEO content strategy with keyword-optimized articles, cluster topics and pillar pages that build topical authority in your industry." }
+        ]
+      },
+      "process": {
+        "overline": "OUR PROCESS",
+        "heading": "How We Optimize Your Website for Google",
+        "steps": [
+          { "title": "Complete SEO Audit", "description": "We fully audit your website: technical performance, content, backlinks and competition. We identify critical issues and keyword opportunities with the highest potential." },
+          { "title": "Keyword Strategy", "description": "We research and select keywords with the best volume-to-competition ratio. We build a keyword map aligned with site pages and search intent." },
+          { "title": "On-Page & Technical Optimization", "description": "We implement technical optimizations (speed, Core Web Vitals, structure) and on-page improvements (titles, meta, headings, content, internal links, schema markup)." },
+          { "title": "Link Building & Authority", "description": "We build quality backlinks through ethical link building strategies that increase domain authority and improve Google rankings." },
+          { "title": "Monitoring & Reporting", "description": "We track rankings, organic traffic, conversions and Core Web Vitals. Detailed monthly reports with performance analysis and continuous optimization recommendations." }
+        ]
+      },
+      "stats": {
+        "overline": "RESULTS",
+        "heading": "Our SEO Services Performance",
+        "items": [
+          { "value": "300", "suffix": "%+", "label": "Organic Traffic Growth" },
+          { "value": "500", "suffix": "+", "label": "Keywords in Top 10" },
+          { "value": "100", "suffix": "+", "label": "SEO Projects" },
+          { "value": "95", "suffix": "%", "label": "Retention Rate" }
+        ]
+      },
+      "faq": {
+        "overline": "FAQ",
+        "heading": "Questions About SEO Optimization Services",
+        "items": [
+          { "question": "How much do SEO services cost?", "answer": "SEO service prices start from 500 EUR/month for basic packages that include on-page optimization and monitoring. Complete packages with technical audit, content strategy and link building start from 1,000 EUR/month. The exact cost depends on industry competitiveness, website size and your goals. Contact us for a free evaluation." },
+          { "question": "How long does it take to see SEO results?", "answer": "SEO is a long-term investment. First ranking improvements are typically observed in 3-4 months, while significant results — consistent organic traffic growth and conversions — appear after 6-12 months of continuous optimization. This varies depending on keyword competitiveness and your website's current state." },
+          { "question": "What does an SEO audit include?", "answer": "A complete SEO audit includes: technical analysis (speed, Core Web Vitals, indexing, mobile-friendliness), on-page audit (titles, meta, headings, content, internal links), off-page audit (backlink profile, domain authority), competition analysis and keyword research. We deliver a detailed report with prioritized issues and an action plan." },
+          { "question": "What is the difference between On-Page and Off-Page SEO?", "answer": "On-Page SEO refers to optimizations made directly on your website: content, titles, meta descriptions, headings, images, internal links and URL structure. Off-Page SEO refers to actions outside your website that build authority: link building, guest posting, digital PR and mentions in relevant publications. Both are essential for ranking." },
+          { "question": "Do you offer Local SEO?", "answer": "Yes, we offer complete Local SEO services. We optimize Google Business Profile, manage online reviews, build consistent NAP (Name, Address, Phone) citations in relevant directories and implement LocalBusiness schema markup. Local SEO is essential for businesses serving customers in a specific geographic area — combined with local Google Ads campaigns, we ensure complete visibility." },
+          { "question": "How do you measure SEO results?", "answer": "We track clear metrics: target keyword rankings, organic traffic (Google Analytics + Search Console), click-through rate (CTR), conversions from organic traffic, Core Web Vitals and domain authority. Monthly reports include performance analysis, month-over-month comparisons and optimization recommendations. You also have access to a real-time dashboard." },
+          { "question": "Why choose AceAgency for SEO?", "answer": "We combine technical SEO expertise with deep understanding of businesses in Romania. We have over 100 successfully completed SEO projects, a 95% retention rate and a dedicated team that constantly follows the latest Google algorithm updates. Additionally, we integrate SEO services with Google Ads and Facebook Ads campaigns for a complete and coherent digital strategy." }
+        ]
+      },
+      "cta": {
+        "heading": "Grow Organically with Professional SEO Services",
+        "description": "Schedule a free SEO audit and discover how we can improve your website's Google positioning for qualified organic traffic.",
+        "primary": "Request Free SEO Audit",
+        "secondary": "Schedule a Consultation"
+      }
     },
     "emailMarketing": {
       "meta": {
