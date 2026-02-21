@@ -20,8 +20,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **PAGE-01**: Homepage with hero, services preview, stats/track record, testimonials, CTA sections, newsletter signup — implemented via `/frontend-design` against `design-system/pages/home.md`, inspired by addifico.com
 - [ ] **PAGE-02**: About page (Despre noi) with agency story, values, mission, vision — implemented via `/frontend-design` against `design-system/pages/despre-noi.md`
-- [ ] **PAGE-03**: Services index page with overview linking to all 6 service sub-pages — implemented via `/frontend-design` against `design-system/pages/servicii.md`
-- [ ] **PAGE-04**: Google Ads service page with structured content, benefits, process, FAQ, CTA
+- [x] **PAGE-03**: Services index page with overview linking to all 6 service sub-pages — implemented via `/frontend-design` against `design-system/pages/servicii.md`
+- [x] **PAGE-04**: Google Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-05**: Facebook Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-06**: TikTok Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-07**: SEO service page with structured content, benefits, process, FAQ, CTA
@@ -140,8 +140,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DSGN-07 | Phase 3 | Pending |
 | DSGN-08 | Phase 3 | Pending |
 | DSGN-09 | Phase 3 | Pending |
-| PAGE-03 | Phase 4 | Pending |
-| PAGE-04 | Phase 4 | Pending |
+| PAGE-03 | Phase 4 | Complete |
+| PAGE-04 | Phase 4 | Complete |
 | PAGE-05 | Phase 4 | Pending |
 | PAGE-06 | Phase 4 | Pending |
 | PAGE-07 | Phase 4 | Pending |

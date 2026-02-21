@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 3 — Flagship Pages (Complete)
+**Current focus:** Phase 4 — Service Pages (In Progress)
 
 ## Current Position
 
-Phase: 3 of 8 (Flagship Pages)
-Plan: 3 of 3 in current phase
-Status: Phase complete — all 3 plans executed
-Last activity: 2026-02-21 — Completed 03-03-PLAN.md (About Page - Despre Noi)
+Phase: 4 of 8 (Service Pages)
+Plan: 1 of 3 in current phase
+Status: Plan 01 complete — services infrastructure built
+Last activity: 2026-02-21 — Completed 04-01-PLAN.md (Services index + sub-page infrastructure)
 
-Progress: [█████████░] 38% (9/24 plans estimated)
+Progress: [██████████░] 42% (10/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: ~8 min (auto tasks only)
-- Total execution time: ~1.2 hours
+- Total execution time: ~1.4 hours
 
 **By Phase:**
 
@@ -30,10 +30,11 @@ Progress: [█████████░] 38% (9/24 plans estimated)
 | 01-foundation | 3/3 | 37 min | 12 min |
 | 02-design-system | 3/3 | interactive + 4 min | — |
 | 03-flagship-pages | 3/3 | 14 min | 5 min |
+| 04-service-pages | 1/3 | 10 min | 10 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-03 (interactive checkpoint), 03-01 (8 min), 03-02 (2 min), 03-03 (4 min)
-- Trend: Accelerating on component tasks as patterns stabilize; reusable section components speed up development
+- Last 5 plans: 03-01 (8 min), 03-02 (2 min), 03-03 (4 min), 04-01 (10 min)
+- Trend: 04-01 slightly longer due to large i18n content creation (all 6 services bilingual) and server/client boundary fix
 
 *Updated after each plan completion*
 
@@ -86,6 +87,10 @@ Recent decisions affecting current work:
 - [03-03]: CTASection enhanced with secondaryHref prop — enables secondary button with link for About page (/servicii) while homepage keeps disabled Portfolio button.
 - [03-03]: About page uses fragment wrapper instead of <main> to prevent nested landmarks (layout already provides <main>).
 - [03-03]: StorySection visual column hidden on mobile (geometry + timeline too complex for narrow screens).
+- [04-01]: Service icon mapping separated into service-icons.ts — LucideIcon components can't cross server/client boundary; use iconName strings resolved client-side.
+- [04-01]: All 6 service i18n content added upfront — generateStaticParams generates all 6 slugs, so all need content to build. Plans 02/03 refine rather than create.
+- [04-01]: Breadcrumb is a server component — no 'use client' needed since links and JSON-LD are static.
+- [04-01]: Service sub-page template pattern: all 6 section components accept serviceKey prop, read from services.{serviceKey}.{section}.* i18n keys.
 
 ### Pending Todos
 
@@ -100,5 +105,5 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-21
-Stopped at: Completed 03-03-PLAN.md (About Page - Despre Noi) — Phase 3 complete
+Stopped at: Completed 04-01-PLAN.md (Services index + sub-page infrastructure)
 Resume file: None
