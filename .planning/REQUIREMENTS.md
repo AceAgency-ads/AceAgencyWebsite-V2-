@@ -25,8 +25,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **PAGE-05**: Facebook Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-06**: TikTok Ads service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-07**: SEO service page with structured content, benefits, process, FAQ, CTA
-- [ ] **PAGE-08**: Email Marketing service page with structured content, benefits, process, FAQ, CTA
-- [ ] **PAGE-09**: Consultanta Marketing service page with structured content, benefits, process, FAQ, CTA
+- [x] **PAGE-08**: Email Marketing service page with structured content, benefits, process, FAQ, CTA
+- [x] **PAGE-09**: Consultanta Marketing service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-10**: Contact page with form, Google Maps embed, Cal.com booking widget — implemented via `/frontend-design` against `design-system/pages/contact.md`
 - [ ] **PAGE-11**: FAQ page (/intrebari-frecvente) with FAQPage schema markup
 - [ ] **PAGE-12**: Privacy policy page (/politica-confidentialitate) in RO and EN
@@ -145,8 +145,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-05 | Phase 4 | Pending |
 | PAGE-06 | Phase 4 | Pending |
 | PAGE-07 | Phase 4 | Pending |
-| PAGE-08 | Phase 4 | Pending |
-| PAGE-09 | Phase 4 | Pending |
+| PAGE-08 | Phase 4 | Complete |
+| PAGE-09 | Phase 4 | Complete |
 | PAGE-10 | Phase 5 | Pending |
 | FUNC-01 | Phase 5 | Pending |
 | FUNC-02 | Phase 5 | Pending |
