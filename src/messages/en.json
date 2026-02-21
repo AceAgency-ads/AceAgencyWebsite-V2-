@@ -167,6 +167,112 @@
       "description": "Ready to transform your business's digital presence? Schedule a free consultation.",
       "primary": "Contact Us",
       "secondary": "Schedule a Meeting"
+    },
+    "googleAds": {
+      "meta": {
+        "title": "Google Ads Services | Google Ads Agency Romania",
+        "description": "Professional Google Ads campaigns with guaranteed ROI. Certified Google Ads agency from Bucharest. Contact AceAgency today!"
+      },
+      "hero": {
+        "overline": "GOOGLE ADS",
+        "headline": "Google Ads Campaigns That Drive Real Results",
+        "description": "We create and optimize Google Ads campaigns that bring new customers and maximize your return on advertising investment."
+      },
+      "features": {
+        "overline": "GOOGLE ADS SERVICES",
+        "heading": "Complete Google Advertising Solutions",
+        "items": [
+          { "title": "Search Ads", "description": "Search network campaigns that position you in front of customers actively looking for your services." },
+          { "title": "Display Ads", "description": "Visual banners across millions of Google partner websites to increase brand awareness." },
+          { "title": "Shopping Ads", "description": "Optimized Google Shopping campaigns for online stores with product feeds and dynamic remarketing." },
+          { "title": "YouTube Ads", "description": "Video advertising on YouTube with demographic and interest-based targeting for maximum engagement." },
+          { "title": "Performance Max", "description": "AI-powered automated campaigns that optimize across all Google channels simultaneously." },
+          { "title": "Remarketing", "description": "Recapture visitors who left your site through personalized ads across the entire Google network." }
+        ]
+      },
+      "process": {
+        "overline": "OUR PROCESS",
+        "heading": "How We Manage Your Google Ads Campaigns",
+        "steps": [
+          { "title": "Audit & Analysis", "description": "We analyze your existing account, competition and market opportunities to identify the most profitable keywords." },
+          { "title": "Strategy & Setup", "description": "We build campaign structure, create persuasive ads and set optimal targeting for your audience." },
+          { "title": "Continuous Optimization", "description": "We monitor performance daily, adjust bids and test ad variations for increasingly better results." },
+          { "title": "Reporting & Scaling", "description": "Transparent monthly reports with clear metrics and scaling recommendations for continuous business growth." }
+        ]
+      },
+      "stats": {
+        "overline": "RESULTS",
+        "heading": "Our Google Ads Campaign Performance",
+        "items": [
+          { "value": "340", "suffix": "%+", "label": "Average Campaign ROI" },
+          { "value": "150", "suffix": "+", "label": "Campaigns Managed" },
+          { "value": "50", "suffix": "+", "label": "Active Clients" },
+          { "value": "2", "suffix": "M+", "label": "Clicks Generated" }
+        ]
+      },
+      "faq": {
+        "overline": "FAQ",
+        "heading": "Questions About Google Ads Services",
+        "items": [
+          { "question": "How much do Google Ads services cost?", "answer": "The cost depends on industry, competition and objectives. The minimum recommended budget for Google Ads is 500 EUR/month, plus management fee. Contact us for a personalized offer." },
+          { "question": "How long until I see results?", "answer": "First results are usually visible within 2-4 weeks. Full campaign optimization requires 2-3 months for maximum performance, as we accumulate data and adjust strategy." },
+          { "question": "Which Google Ads campaign type is right for my business?", "answer": "It depends on your goals. Search campaigns are ideal for lead generation, Shopping for e-commerce, Display for brand awareness and YouTube for engagement. We recommend a personalized mix." },
+          { "question": "Do you have Google Ads certification?", "answer": "Yes, our team holds up-to-date Google Ads certifications for Search, Display, Video and Shopping. We stay current with the latest features and best practices." },
+          { "question": "What reports do I receive?", "answer": "You receive detailed monthly reports including: impressions, clicks, conversions, cost per conversion, ROI, keyword analysis and optimization recommendations. You also have access to a real-time dashboard." },
+          { "question": "Can I stop campaigns at any time?", "answer": "Yes, you have full control. Campaigns can be stopped, modified or scaled at any time. There are no mandatory long-term contracts — we work based on performance and trust." }
+        ]
+      },
+      "cta": {
+        "heading": "Grow Your Business with Google Ads",
+        "description": "Schedule a free consultation and discover how Google Ads campaigns can transform your business.",
+        "primary": "Request a Quote",
+        "secondary": "Schedule a Consultation"
+      }
+    },
+    "facebookAds": {
+      "meta": { "title": "Facebook Ads Services | Facebook Ads Agency", "description": "Professional Facebook and Instagram Ads campaigns. Precise targeting, creative ads and continuous optimization. AceAgency Bucharest." },
+      "hero": { "overline": "FACEBOOK ADS", "headline": "Facebook Ads Campaigns That Convert", "description": "Facebook and Instagram advertising strategies that generate leads and sales for your business." },
+      "features": { "overline": "SERVICES", "heading": "What We Offer in Facebook Ads", "items": [{ "title": "Facebook Feed Ads", "description": "Feed ads with demographic and interest-based targeting." }, { "title": "Instagram Ads", "description": "Visual campaigns on Instagram Stories, Reels and Feed." }, { "title": "Lead Generation", "description": "Lead forms directly within the Facebook platform." }, { "title": "Remarketing", "description": "Recapture visitors through Facebook pixel and custom audiences." }] },
+      "process": { "overline": "OUR PROCESS", "heading": "How We Manage Facebook Ads Campaigns", "steps": [{ "title": "Audience Analysis", "description": "We identify the ideal target audience using demographic and behavioral data." }, { "title": "Creative & Setup", "description": "We create persuasive visuals and copy, configure campaigns with optimal targeting." }, { "title": "Testing & Optimization", "description": "We A/B test ad variations and optimize for maximum conversions." }, { "title": "Reporting", "description": "Detailed reports with performance metrics and scaling recommendations." }] },
+      "stats": { "overline": "RESULTS", "heading": "Facebook Ads Performance", "items": [{ "value": "280", "suffix": "%", "label": "Average ROI" }, { "value": "100", "suffix": "+", "label": "Active Campaigns" }, { "value": "45", "suffix": "+", "label": "Clients" }, { "value": "5", "suffix": "M+", "label": "Monthly Reach" }] },
+      "faq": { "overline": "FAQ", "heading": "Questions About Facebook Ads", "items": [{ "question": "How much does Facebook advertising cost?", "answer": "The minimum recommended budget is 300 EUR/month. Cost per lead varies by industry, from 2-5 EUR for B2C to 10-30 EUR for B2B." }, { "question": "Facebook or Instagram Ads?", "answer": "We recommend both platforms for maximum coverage. Instagram is more effective for visual brands, Facebook for detailed targeting and lead generation." }, { "question": "How long until I see results?", "answer": "First results appear within 1-2 weeks. Optimal performance is reached after 4-6 weeks of continuous optimization." }] },
+      "cta": { "heading": "Grow with Facebook Ads", "description": "Schedule a free consultation for your Facebook and Instagram campaigns.", "primary": "Request a Quote", "secondary": "Schedule a Consultation" }
+    },
+    "tiktokAds": {
+      "meta": { "title": "TikTok Ads Services | TikTok Advertising Romania", "description": "Creative TikTok Ads campaigns for the next generation audience. Video advertising on TikTok with AceAgency Bucharest." },
+      "hero": { "overline": "TIKTOK ADS", "headline": "TikTok Advertising That Captures Attention", "description": "Creative and viral TikTok Ads campaigns that connect your brand with the next generation audience." },
+      "features": { "overline": "SERVICES", "heading": "What We Offer in TikTok Ads", "items": [{ "title": "In-Feed Ads", "description": "Native ads in the TikTok feed that integrate organically with content." }, { "title": "Branded Content", "description": "Collaborations with TikTok creators for authentic and viral content." }, { "title": "Spark Ads", "description": "Amplify high-performing organic posts with advertising budget." }, { "title": "Lead Generation", "description": "Native TikTok lead forms for quick conversions." }] },
+      "process": { "overline": "OUR PROCESS", "heading": "How We Create TikTok Ads Campaigns", "steps": [{ "title": "Research & Trends", "description": "We analyze TikTok trends and identify opportunities for your brand." }, { "title": "Video Creation", "description": "We produce authentic video content adapted to TikTok's format and audience." }, { "title": "Launch & Optimization", "description": "We launch campaigns with precise targeting and optimize in real-time." }, { "title": "Analysis & Scale", "description": "We report results and scale high-performing content." }] },
+      "stats": { "overline": "RESULTS", "heading": "TikTok Ads Performance", "items": [{ "value": "200", "suffix": "%", "label": "Engagement Rate" }, { "value": "50", "suffix": "+", "label": "TikTok Campaigns" }, { "value": "10", "suffix": "M+", "label": "Views Generated" }, { "value": "30", "suffix": "+", "label": "Clients" }] },
+      "faq": { "overline": "FAQ", "heading": "Questions About TikTok Ads", "items": [{ "question": "Are TikTok Ads right for my business?", "answer": "TikTok is ideal if your target audience is 18-45 years old. It works excellently for e-commerce, beauty, food, fitness and entertainment." }, { "question": "How much does TikTok advertising cost?", "answer": "The minimum recommended budget is 300 EUR/month. TikTok has lower cost per view than other platforms, with CPMs starting from 2-5 EUR." }, { "question": "Do you have TikTok Ads experience?", "answer": "Yes, we have been managing TikTok Ads campaigns for over 2 years, with proven results across multiple industries." }] },
+      "cta": { "heading": "Go Viral on TikTok", "description": "Discover how TikTok advertising can transform your business.", "primary": "Request a Quote", "secondary": "Schedule a Consultation" }
+    },
+    "seo": {
+      "meta": { "title": "SEO Services Romania | Professional SEO Optimization", "description": "Professional SEO services for organic Google positioning. SEO audit, technical and content optimization. AceAgency Bucharest." },
+      "hero": { "overline": "SEO", "headline": "SEO Optimization for Top Google Rankings", "description": "Complete SEO strategies that increase your website's organic visibility and bring qualified long-term traffic." },
+      "features": { "overline": "SEO SERVICES", "heading": "Complete SEO Optimization Solutions", "items": [{ "title": "Complete SEO Audit", "description": "Full website analysis: technical, on-page, off-page and competition." }, { "title": "Technical SEO", "description": "Speed optimization, Core Web Vitals, URL structure and indexing." }, { "title": "On-Page SEO", "description": "Content, meta tags, headings, images and internal links optimization." }, { "title": "Off-Page SEO", "description": "Link building strategies and domain authority growth." }, { "title": "Local SEO", "description": "Google Business Profile optimization and local search positioning." }, { "title": "Content Marketing", "description": "SEO content strategy with keyword-optimized articles." }] },
+      "process": { "overline": "OUR PROCESS", "heading": "How We Optimize Your Website", "steps": [{ "title": "Audit & Analysis", "description": "We fully audit the website, identify technical issues and keyword opportunities." }, { "title": "SEO Strategy", "description": "We build a personalized SEO strategy based on audit data and your goals." }, { "title": "Implementation", "description": "We execute technical and on-page optimizations and create SEO-optimized content." }, { "title": "Monitoring & Reporting", "description": "We track positions, organic traffic and conversions. Detailed monthly reports." }] },
+      "stats": { "overline": "RESULTS", "heading": "SEO Campaign Performance", "items": [{ "value": "250", "suffix": "%", "label": "Organic Traffic Growth" }, { "value": "100", "suffix": "+", "label": "Keywords in Top 10" }, { "value": "40", "suffix": "+", "label": "SEO Clients" }, { "value": "95", "suffix": "%", "label": "Client Retention Rate" }] },
+      "faq": { "overline": "FAQ", "heading": "Questions About SEO Services", "items": [{ "question": "How long until I see SEO results?", "answer": "SEO is a long-term investment. First improvements are visible in 3-6 months, with significant results after 6-12 months of continuous optimization." }, { "question": "How much do SEO services cost?", "answer": "Prices start from 500 EUR/month for basic packages. Cost depends on industry competitiveness and current website state." }, { "question": "Do you guarantee position 1 on Google?", "answer": "We don't guarantee specific positions — no one can do that correctly. However, we guarantee a professional strategy, constant optimizations and organic visibility growth." }] },
+      "cta": { "heading": "Grow Organically with SEO", "description": "Schedule a free SEO audit and discover your website's potential.", "primary": "Request SEO Audit", "secondary": "Schedule a Consultation" }
+    },
+    "emailMarketing": {
+      "meta": { "title": "Email Marketing Services | Email Campaigns", "description": "Professional email marketing campaigns. Automation, segmentation and personalized content. AceAgency Bucharest." },
+      "hero": { "overline": "EMAIL MARKETING", "headline": "Email Campaigns That Drive Conversions", "description": "Email marketing strategies that build relationships with your customers and generate repeat sales." },
+      "features": { "overline": "SERVICES", "heading": "What We Offer in Email Marketing", "items": [{ "title": "Email Automation", "description": "Automated welcome, nurture and re-engagement sequences." }, { "title": "Newsletter Design", "description": "Professional, responsive and on-brand email templates." }, { "title": "Advanced Segmentation", "description": "We segment audiences for personalized and relevant messages." }, { "title": "A/B Testing", "description": "We test subject lines, content and timing for maximum performance." }] },
+      "process": { "overline": "OUR PROCESS", "heading": "How We Create Effective Email Campaigns", "steps": [{ "title": "Audit & Strategy", "description": "We analyze your email list, open rates and define campaign objectives." }, { "title": "Design & Content", "description": "We create visual templates and write persuasive copy adapted to your audience." }, { "title": "Automation & Setup", "description": "We configure automated sequences and segment the list for maximum relevance." }, { "title": "Analysis & Optimization", "description": "We monitor metrics (open rate, CTR, conversions) and continuously optimize." }] },
+      "stats": { "overline": "RESULTS", "heading": "Email Marketing Performance", "items": [{ "value": "35", "suffix": "%", "label": "Average Open Rate" }, { "value": "8", "suffix": "%", "label": "Average CTR" }, { "value": "500", "suffix": "K+", "label": "Emails Sent/Month" }, { "value": "25", "suffix": "+", "label": "Active Clients" }] },
+      "faq": { "overline": "FAQ", "heading": "Questions About Email Marketing", "items": [{ "question": "Which email platforms do you use?", "answer": "We work with Mailchimp, Resend, SendGrid and other professional platforms. We choose the right platform based on your needs and budget." }, { "question": "How much does email marketing cost?", "answer": "Prices start from 300 EUR/month, depending on list size and automation complexity." }, { "question": "How often should I send emails?", "answer": "We recommend 1-4 emails per month for newsletters, with additional automated sequences. Optimal frequency depends on industry and audience." }] },
+      "cta": { "heading": "Grow with Email Marketing", "description": "Schedule a consultation and discover how email marketing can boost your sales.", "primary": "Request a Quote", "secondary": "Schedule a Consultation" }
+    },
+    "consultanta": {
+      "meta": { "title": "Digital Marketing Consulting Romania", "description": "Professional digital marketing consulting. Personalized strategy, digital audit and action plan. AceAgency Bucharest." },
+      "hero": { "overline": "CONSULTING", "headline": "Personalized Digital Marketing Consulting", "description": "We analyze your business and build a complete digital strategy that generates measurable results." },
+      "features": { "overline": "SERVICES", "heading": "What Our Consulting Includes", "items": [{ "title": "Complete Digital Audit", "description": "Full analysis of digital presence: website, social media, advertising and SEO." }, { "title": "Digital Strategy", "description": "Personalized strategic plan with objectives, channels and clear KPIs." }, { "title": "Competition Analysis", "description": "Detailed competitor study and market opportunity identification." }, { "title": "Action Plan", "description": "Detailed roadmap with prioritized actions, timeline and estimated budget." }] },
+      "process": { "overline": "OUR PROCESS", "heading": "How Consulting Works", "steps": [{ "title": "Discovery Call", "description": "We discuss your business, objectives and current challenges." }, { "title": "Audit & Analysis", "description": "We fully analyze digital presence, competition and opportunities." }, { "title": "Strategy & Presentation", "description": "We build and present the strategy with detailed recommendations." }, { "title": "Implementation & Support", "description": "We assist with implementation and provide ongoing support." }] },
+      "stats": { "overline": "RESULTS", "heading": "Marketing Consulting Impact", "items": [{ "value": "60", "suffix": "+", "label": "Strategies Delivered" }, { "value": "95", "suffix": "%", "label": "Client Satisfaction" }, { "value": "180", "suffix": "%", "label": "Average Revenue Growth" }, { "value": "30", "suffix": "+", "label": "Industries Covered" }] },
+      "faq": { "overline": "FAQ", "heading": "Questions About Marketing Consulting", "items": [{ "question": "How much does a consulting session cost?", "answer": "Consulting sessions start from 200 EUR/session. Complete strategy packages start from 1500 EUR." }, { "question": "How long does the consulting process take?", "answer": "A complete consulting project takes 2-4 weeks, from audit to final strategy delivery." }, { "question": "Do you also offer implementation?", "answer": "Yes, in addition to consulting we offer complete implementation services through AceWeb, AceAds and AceMedia divisions." }] },
+      "cta": { "heading": "Schedule a Consultation", "description": "Discover how a professional digital strategy can transform your business.", "primary": "Request a Consultation", "secondary": "Learn More" }
     }
   },
   "home": {

@@ -3,8 +3,9 @@
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { ArrowRight, Code } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
+import { getServiceIcon } from '@/lib/service-icons';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { SectionHeader } from '@/components/sections/SectionHeader';
 import { SpotlightCard } from '@/components/ui/SpotlightCard';
@@ -13,7 +14,7 @@ import { SERVICE_DEFINITIONS } from '@/lib/services';
 interface GridService {
   readonly slug: string;
   readonly i18nKey: string;
-  readonly icon: React.ElementType;
+  readonly iconName: string;
   readonly isIndex?: boolean;
 }
 
@@ -22,11 +23,11 @@ interface GridService {
  * Immutable array construction.
  */
 const GRID_SERVICES: readonly GridService[] = [
-  { slug: '', i18nKey: 'web', icon: Code, isIndex: true },
+  { slug: '', i18nKey: 'web', iconName: 'Code', isIndex: true },
   ...SERVICE_DEFINITIONS.map((s) => ({
     slug: s.slug,
     i18nKey: s.i18nKey,
-    icon: s.icon,
+    iconName: s.iconName,
   })),
 ] as const;
 
@@ -79,7 +80,7 @@ export function ServicesGrid(): React.JSX.Element {
         className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
       >
         {GRID_SERVICES.map((service, index) => {
-          const Icon = service.icon;
+          const Icon = getServiceIcon(service.iconName);
           const href = service.isIndex ? '/servicii' : `/servicii/${service.slug}`;
 
           return (

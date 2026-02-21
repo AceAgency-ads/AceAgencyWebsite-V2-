@@ -1,17 +1,13 @@
-import {
-  Target,
-  Share2,
-  Play,
-  Search,
-  Mail,
-  Lightbulb,
-  type LucideIcon,
-} from 'lucide-react';
+/**
+ * Service registry for all 6 AceAgency services.
+ * Serializable data only -- no React components (icon mapping is in service-icons.ts).
+ * Used by generateStaticParams, generateMetadata, and service page routing.
+ */
 
 export interface ServiceDefinition {
   readonly slug: string;
   readonly i18nKey: string;
-  readonly icon: LucideIcon;
+  readonly iconName: string;
 }
 
 /**
@@ -19,12 +15,12 @@ export interface ServiceDefinition {
  * Used by generateStaticParams, services grid, and dynamic sub-page routing.
  */
 export const SERVICE_DEFINITIONS: readonly ServiceDefinition[] = [
-  { slug: 'google-ads', i18nKey: 'googleAds', icon: Target },
-  { slug: 'facebook-ads', i18nKey: 'facebookAds', icon: Share2 },
-  { slug: 'tiktok-ads', i18nKey: 'tiktokAds', icon: Play },
-  { slug: 'seo', i18nKey: 'seo', icon: Search },
-  { slug: 'email-marketing', i18nKey: 'emailMarketing', icon: Mail },
-  { slug: 'consultanta-marketing', i18nKey: 'consultanta', icon: Lightbulb },
+  { slug: 'google-ads', i18nKey: 'googleAds', iconName: 'Target' },
+  { slug: 'facebook-ads', i18nKey: 'facebookAds', iconName: 'Share2' },
+  { slug: 'tiktok-ads', i18nKey: 'tiktokAds', iconName: 'Play' },
+  { slug: 'seo', i18nKey: 'seo', iconName: 'Search' },
+  { slug: 'email-marketing', i18nKey: 'emailMarketing', iconName: 'Mail' },
+  { slug: 'consultanta-marketing', i18nKey: 'consultanta', iconName: 'Lightbulb' },
 ] as const;
 
 /**
