@@ -257,13 +257,66 @@
       "cta": { "heading": "Grow Organically with SEO", "description": "Schedule a free SEO audit and discover your website's potential.", "primary": "Request SEO Audit", "secondary": "Schedule a Consultation" }
     },
     "emailMarketing": {
-      "meta": { "title": "Email Marketing Services | Email Campaigns", "description": "Professional email marketing campaigns. Automation, segmentation and personalized content. AceAgency Bucharest." },
-      "hero": { "overline": "EMAIL MARKETING", "headline": "Email Campaigns That Drive Conversions", "description": "Email marketing strategies that build relationships with your customers and generate repeat sales." },
-      "features": { "overline": "SERVICES", "heading": "What We Offer in Email Marketing", "items": [{ "title": "Email Automation", "description": "Automated welcome, nurture and re-engagement sequences." }, { "title": "Newsletter Design", "description": "Professional, responsive and on-brand email templates." }, { "title": "Advanced Segmentation", "description": "We segment audiences for personalized and relevant messages." }, { "title": "A/B Testing", "description": "We test subject lines, content and timing for maximum performance." }] },
-      "process": { "overline": "OUR PROCESS", "heading": "How We Create Effective Email Campaigns", "steps": [{ "title": "Audit & Strategy", "description": "We analyze your email list, open rates and define campaign objectives." }, { "title": "Design & Content", "description": "We create visual templates and write persuasive copy adapted to your audience." }, { "title": "Automation & Setup", "description": "We configure automated sequences and segment the list for maximum relevance." }, { "title": "Analysis & Optimization", "description": "We monitor metrics (open rate, CTR, conversions) and continuously optimize." }] },
-      "stats": { "overline": "RESULTS", "heading": "Email Marketing Performance", "items": [{ "value": "35", "suffix": "%", "label": "Average Open Rate" }, { "value": "8", "suffix": "%", "label": "Average CTR" }, { "value": "500", "suffix": "K+", "label": "Emails Sent/Month" }, { "value": "25", "suffix": "+", "label": "Active Clients" }] },
-      "faq": { "overline": "FAQ", "heading": "Questions About Email Marketing", "items": [{ "question": "Which email platforms do you use?", "answer": "We work with Mailchimp, Resend, SendGrid and other professional platforms. We choose the right platform based on your needs and budget." }, { "question": "How much does email marketing cost?", "answer": "Prices start from 300 EUR/month, depending on list size and automation complexity." }, { "question": "How often should I send emails?", "answer": "We recommend 1-4 emails per month for newsletters, with additional automated sequences. Optimal frequency depends on industry and audience." }] },
-      "cta": { "heading": "Grow with Email Marketing", "description": "Schedule a consultation and discover how email marketing can boost your sales.", "primary": "Request a Quote", "secondary": "Schedule a Consultation" }
+      "meta": {
+        "title": "Email Marketing Services | Email Campaigns - AceAgency",
+        "description": "Professional email marketing campaigns with advanced automation and segmentation. Newsletter, drip campaigns and detailed reporting. Request a free quote!"
+      },
+      "hero": {
+        "overline": "EMAIL MARKETING",
+        "headline": "Email Marketing Services That Drive Real Conversions",
+        "description": "We build personalized email marketing strategies that retain customers and generate repeat sales. Combined with Google Ads and Facebook Ads campaigns, email marketing becomes your most profitable digital channel."
+      },
+      "features": {
+        "overline": "EMAIL MARKETING SERVICES",
+        "heading": "Complete Email Marketing Solutions",
+        "items": [
+          { "title": "Personalized Email Campaigns", "description": "We create targeted email campaigns for specific segments, with relevant content that generates above-industry open rates and clicks." },
+          { "title": "Email Automation", "description": "Automated welcome, nurture, abandoned cart and re-engagement sequences that work around the clock for your business." },
+          { "title": "Newsletter Design & Management", "description": "Professional, responsive email templates aligned with your brand, delivered on a consistent editorial calendar." },
+          { "title": "Audience Segmentation", "description": "We segment your database by behavior, demographics and purchase history for ultra-relevant messaging." },
+          { "title": "A/B Testing & Optimization", "description": "We test subject lines, content, design and timing to maximize open rates and conversions for every campaign." },
+          { "title": "Reporting & Analytics", "description": "Detailed dashboards with performance metrics: open rate, CTR, conversions, revenue per email and trends over time." }
+        ]
+      },
+      "process": {
+        "overline": "OUR PROCESS",
+        "heading": "How We Create Successful Email Campaigns",
+        "steps": [
+          { "title": "Email Audit & Strategy", "description": "We analyze your existing list, open rates, segments and define an email strategy aligned with your business goals and active SEO campaigns." },
+          { "title": "Platform & List Setup", "description": "We configure the email marketing platform, import and clean lists, set up segments and basic automations." },
+          { "title": "Campaign & Automation Creation", "description": "We develop visual templates, write persuasive copy and build automated sequences that also integrate your Google Ads offers." },
+          { "title": "Monitoring & Optimization", "description": "We track each campaign's performance, continuously A/B test and optimize for ever-improving conversion rates." }
+        ]
+      },
+      "stats": {
+        "overline": "RESULTS",
+        "heading": "Our Email Campaign Performance",
+        "items": [
+          { "value": "45", "suffix": "%+", "label": "Average Open Rate" },
+          { "value": "500", "suffix": "K+", "label": "Emails Sent" },
+          { "value": "30", "suffix": "+", "label": "Active Automations" },
+          { "value": "12", "suffix": "x", "label": "Average ROI" }
+        ]
+      },
+      "faq": {
+        "overline": "FAQ",
+        "heading": "Questions About Email Marketing Services",
+        "items": [
+          { "question": "How much do email marketing services cost?", "answer": "Prices start from 300 EUR/month for basic packages including design, copywriting and sending. Packages with advanced automations start from 500 EUR/month. Contact us for a personalized quote." },
+          { "question": "Which email marketing platform do you use?", "answer": "We work with Mailchimp, Resend, SendGrid, ActiveCampaign and other professional platforms. We choose the right platform based on your needs, budget and required integrations." },
+          { "question": "How often should I send emails?", "answer": "We recommend 1-4 emails per month for newsletters, complemented by automated sequences (welcome, nurture, re-engagement). Optimal frequency depends on industry, audience and content type." },
+          { "question": "How do you build the subscriber list?", "answer": "We implement lead magnets, smart pop-ups, dedicated landing pages and optimized forms. Combined with Facebook Ads lead generation campaigns, list growth becomes accelerated and sustainable." },
+          { "question": "What open rate can I expect?", "answer": "The industry average is 20-25%. Our clients consistently achieve 35-45% rates thanks to advanced segmentation, A/B tested subjects and content personalized to each segment's interests." },
+          { "question": "Do you also design newsletters?", "answer": "Yes, we create professional, responsive email templates aligned with your brand's visual identity. Each template is optimized for all major email clients (Gmail, Outlook, Apple Mail)." },
+          { "question": "How do email automations help?", "answer": "Automations work 24/7: they send welcome emails to new subscribers, recover abandoned carts, re-activate inactive customers and nurture leads to conversion. The result: more sales with less manual effort." }
+        ]
+      },
+      "cta": {
+        "heading": "Boost Sales with Email Marketing",
+        "description": "Schedule a free consultation and discover how email campaigns can generate recurring revenue for your business.",
+        "primary": "Request a Quote",
+        "secondary": "Schedule a Consultation"
+      }
     },
     "consultanta": {
       "meta": { "title": "Digital Marketing Consulting Romania", "description": "Professional digital marketing consulting. Personalized strategy, digital audit and action plan. AceAgency Bucharest." },

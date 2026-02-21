@@ -257,13 +257,66 @@
       "cta": { "heading": "Creste Organic cu SEO", "description": "Programeaza un audit SEO gratuit si descopera potentialul site-ului tau.", "primary": "Solicita Audit SEO", "secondary": "Programeaza o Consultatie" }
     },
     "emailMarketing": {
-      "meta": { "title": "Servicii Email Marketing | Campanii Email", "description": "Campanii email marketing profesionale. Automatizare, segmentare si continut personalizat. AceAgency Bucuresti." },
-      "hero": { "overline": "EMAIL MARKETING", "headline": "Campanii Email care Genereaza Conversii", "description": "Strategii de email marketing care construiesc relatii cu clientii tai si genereaza vanzari repetate." },
-      "features": { "overline": "SERVICII", "heading": "Ce Oferim in Email Marketing", "items": [{ "title": "Automatizare Email", "description": "Secvente automatizate de welcome, nurture si re-engagement." }, { "title": "Newsletter Design", "description": "Template-uri email profesionale, responsive si pe brand." }, { "title": "Segmentare Avansata", "description": "Segmentam audienta pentru mesaje personalizate si relevante." }, { "title": "A/B Testing", "description": "Testam subject lines, continut si timing pentru performanta maxima." }] },
-      "process": { "overline": "PROCESUL NOSTRU", "heading": "Cum Cream Campanii Email Eficiente", "steps": [{ "title": "Audit & Strategie", "description": "Analizam lista de email, ratele de deschidere si definim obiectivele campaniei." }, { "title": "Design & Continut", "description": "Cream template-uri vizuale si scriem copy persuasiv, adaptat audientei." }, { "title": "Automatizare & Setup", "description": "Configuram secvente automatizate si segmentam lista pentru relevanta maxima." }, { "title": "Analiza & Optimizare", "description": "Monitorizam metrici (open rate, CTR, conversii) si optimizam continuu." }] },
-      "stats": { "overline": "REZULTATE", "heading": "Performanta Email Marketing", "items": [{ "value": "35", "suffix": "%", "label": "Rata Deschidere Medie" }, { "value": "8", "suffix": "%", "label": "CTR Mediu" }, { "value": "500", "suffix": "K+", "label": "Emailuri Trimise/Luna" }, { "value": "25", "suffix": "+", "label": "Clienti Activi" }] },
-      "faq": { "overline": "INTREBARI FRECVENTE", "heading": "Intrebari despre Email Marketing", "items": [{ "question": "Ce platforme email folositi?", "answer": "Lucram cu Mailchimp, Resend, SendGrid si alte platforme profesionale. Alegem platforma potrivita in functie de nevoile si bugetul tau." }, { "question": "Cat costa email marketing-ul?", "answer": "Preturile incep de la 300 EUR/luna, in functie de marimea listei si complexitatea automatizarilor." }, { "question": "Cat de des ar trebui sa trimit emailuri?", "answer": "Recomandam 1-4 emailuri pe luna pentru newsletter, cu secvente automatizate suplimentare. Frecventa optima depinde de industrie si audienta." }] },
-      "cta": { "heading": "Creste cu Email Marketing", "description": "Programeaza o consultatie si descopera cum email marketing-ul poate creste vanzarile.", "primary": "Solicita o Oferta", "secondary": "Programeaza o Consultatie" }
+      "meta": {
+        "title": "Servicii Email Marketing | Campanii Email - AceAgency",
+        "description": "Campanii email marketing profesionale cu automatizări avansate și segmentare. Newsletter, drip campaigns și raportare detaliată. Solicită ofertă gratuită!"
+      },
+      "hero": {
+        "overline": "EMAIL MARKETING",
+        "headline": "Servicii Email Marketing care Generează Conversii Reale",
+        "description": "Construim strategii de email marketing personalizate care fidelizează clienții și generează vânzări repetate. Combinat cu campanii Google Ads și Facebook Ads, email marketing-ul devine cel mai profitabil canal digital."
+      },
+      "features": {
+        "overline": "SERVICII EMAIL MARKETING",
+        "heading": "Soluții Complete de Email Marketing",
+        "items": [
+          { "title": "Campanii Email Personalizate", "description": "Creăm campanii email targetate pe segmente specifice, cu conținut relevant care generează deschideri și click-uri peste media industriei." },
+          { "title": "Automatizări Email", "description": "Secvențe automatizate de welcome, nurture, abandoned cart și re-engagement care lucrează non-stop pentru afacerea ta." },
+          { "title": "Newsletter Design & Management", "description": "Template-uri email profesionale, responsive și aliniate cu brandul tău, livrate pe un calendar editorial consistent." },
+          { "title": "Segmentare Audiență", "description": "Segmentăm baza de date pe comportament, demografie și istoricul achizițiilor pentru mesaje ultra-relevante." },
+          { "title": "A/B Testing & Optimizare", "description": "Testăm subject lines, conținut, design și timing pentru a maximiza rata de deschidere și conversiile fiecărei campanii." },
+          { "title": "Raportare & Analytics", "description": "Dashboard-uri detaliate cu metrici de performanță: open rate, CTR, conversii, revenue per email și tendințe în timp." }
+        ]
+      },
+      "process": {
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Creăm Campanii Email de Succes",
+        "steps": [
+          { "title": "Audit & Strategie Email", "description": "Analizăm lista existentă, ratele de deschidere, segmentele și definim o strategie email aliniată cu obiectivele de business și campaniile SEO active." },
+          { "title": "Setup Platformă & Liste", "description": "Configurăm platforma de email marketing, importăm și curățăm listele, setăm segmentele și automatizările de bază." },
+          { "title": "Creare Campanii & Automatizări", "description": "Dezvoltăm template-uri vizuale, scriem copy persuasiv și construim secvențe automatizate care integrează și ofertele din Google Ads." },
+          { "title": "Monitorizare & Optimizare", "description": "Urmărim performanța fiecărei campanii, testăm A/B continuu și optimizăm pentru rate de conversie tot mai bune." }
+        ]
+      },
+      "stats": {
+        "overline": "REZULTATE",
+        "heading": "Performanța Campaniilor Noastre Email",
+        "items": [
+          { "value": "45", "suffix": "%+", "label": "Open Rate Mediu" },
+          { "value": "500", "suffix": "K+", "label": "Emailuri Trimise" },
+          { "value": "30", "suffix": "+", "label": "Automatizări Active" },
+          { "value": "12", "suffix": "x", "label": "ROI Mediu" }
+        ]
+      },
+      "faq": {
+        "overline": "ÎNTREBĂRI FRECVENTE",
+        "heading": "Întrebări despre Serviciile de Email Marketing",
+        "items": [
+          { "question": "Cât costă serviciile de email marketing?",  "answer": "Prețurile încep de la 300 EUR/lună pentru pachete de bază care includ design, copywriting și trimitere. Pachetele cu automatizări avansate pornesc de la 500 EUR/lună. Contactează-ne pentru o ofertă personalizată." },
+          { "question": "Ce platformă de email marketing folosiți?", "answer": "Lucrăm cu Mailchimp, Resend, SendGrid, ActiveCampaign și alte platforme profesionale. Alegem platforma potrivită în funcție de nevoile, bugetul și integrările necesare pentru afacerea ta." },
+          { "question": "Cât de des ar trebui să trimit emailuri?", "answer": "Recomandăm 1-4 emailuri pe lună pentru newsletter, completate de secvențe automatizate (welcome, nurture, re-engagement). Frecvența optimă depinde de industrie, audiență și tipul de conținut." },
+          { "question": "Cum construiți lista de abonați?", "answer": "Implementăm lead magnets, pop-up-uri inteligente, landing pages dedicate și formulare optimizate. Combinat cu campanii Facebook Ads pentru lead generation, creșterea listei devine accelerată și sustenabilă." },
+          { "question": "Ce rată de deschidere pot aștepta?", "answer": "Media industriei este 20-25%. Clienții noștri obțin constant rate de 35-45% datorită segmentării avansate, subiectelor testate A/B și conținutului personalizat pe interesele fiecărui segment." },
+          { "question": "Faceți și design de newsletter?", "answer": "Da, creăm template-uri email profesionale, responsive și aliniate cu identitatea vizuală a brandului tău. Fiecare template este optimizat pentru toate clienții email majori (Gmail, Outlook, Apple Mail)." },
+          { "question": "Cum ajută automatizările email?", "answer": "Automatizările lucrează 24/7: trimit welcome emails noilor abonați, recuperează coșuri abandonate, re-activează clienții inactivi și nurturează lead-urile până la conversie. Rezultatul: mai multe vânzări cu mai puțin efort manual." }
+        ]
+      },
+      "cta": {
+        "heading": "Crește Vânzările cu Email Marketing",
+        "description": "Programează o consultație gratuită și descoperă cum campaniile email pot genera venituri recurente pentru afacerea ta.",
+        "primary": "Solicită o Ofertă",
+        "secondary": "Programează o Consultație"
+      }
     },
     "consultanta": {
       "meta": { "title": "Consultanta Marketing Digital Romania", "description": "Consultanta marketing digital profesionala. Strategie personalizata, audit digital si plan de actiune. AceAgency Bucuresti." },
