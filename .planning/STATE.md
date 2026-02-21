@@ -92,6 +92,9 @@ Recent decisions affecting current work:
 - [04-01]: All 6 service i18n content added upfront — generateStaticParams generates all 6 slugs, so all need content to build. Plans 02/03 refine rather than create.
 - [04-01]: Breadcrumb is a server component — no 'use client' needed since links and JSON-LD are static.
 - [04-01]: Service sub-page template pattern: all 6 section components accept serviceKey prop, read from services.{serviceKey}.{section}.* i18n keys.
+- [04-02]: SEO page FAQ answers are 3-5 sentences each (longer than other services) to demonstrate SEO expertise authority on the page that IS about SEO.
+- [04-02]: Facebook Ads overline changed to FACEBOOK & INSTAGRAM ADS to reflect dual-platform Meta advertising scope.
+- [04-02]: All service meta titles standardized to include " - AceAgency" suffix for consistent brand presence in SERPs.
 - [04-03]: Content refinement approach — Plan 01 added all 6 service stubs; Plan 03 expanded emailMarketing and consultanta to full spec (6 features, 7 FAQs, updated stats, diacritics, cross-service mentions).
 - [04-03]: SEO title tags aligned exactly with Specificatii-Tehnice-SEO document for Email Marketing and Consultanta pages.
 

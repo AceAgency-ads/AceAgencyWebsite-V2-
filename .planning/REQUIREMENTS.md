@@ -22,9 +22,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **PAGE-02**: About page (Despre noi) with agency story, values, mission, vision — implemented via `/frontend-design` against `design-system/pages/despre-noi.md`
 - [x] **PAGE-03**: Services index page with overview linking to all 6 service sub-pages — implemented via `/frontend-design` against `design-system/pages/servicii.md`
 - [x] **PAGE-04**: Google Ads service page with structured content, benefits, process, FAQ, CTA
-- [ ] **PAGE-05**: Facebook Ads service page with structured content, benefits, process, FAQ, CTA
-- [ ] **PAGE-06**: TikTok Ads service page with structured content, benefits, process, FAQ, CTA
-- [ ] **PAGE-07**: SEO service page with structured content, benefits, process, FAQ, CTA
+- [x] **PAGE-05**: Facebook Ads service page with structured content, benefits, process, FAQ, CTA
+- [x] **PAGE-06**: TikTok Ads service page with structured content, benefits, process, FAQ, CTA
+- [x] **PAGE-07**: SEO service page with structured content, benefits, process, FAQ, CTA
 - [x] **PAGE-08**: Email Marketing service page with structured content, benefits, process, FAQ, CTA
 - [x] **PAGE-09**: Consultanta Marketing service page with structured content, benefits, process, FAQ, CTA
 - [ ] **PAGE-10**: Contact page with form, Google Maps embed, Cal.com booking widget — implemented via `/frontend-design` against `design-system/pages/contact.md`
@@ -142,9 +142,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DSGN-09 | Phase 3 | Pending |
 | PAGE-03 | Phase 4 | Complete |
 | PAGE-04 | Phase 4 | Complete |
-| PAGE-05 | Phase 4 | Pending |
-| PAGE-06 | Phase 4 | Pending |
-| PAGE-07 | Phase 4 | Pending |
+| PAGE-05 | Phase 4 | Complete |
+| PAGE-06 | Phase 4 | Complete |
+| PAGE-07 | Phase 4 | Complete |
 | PAGE-08 | Phase 4 | Complete |
 | PAGE-09 | Phase 4 | Complete |
 | PAGE-10 | Phase 5 | Pending |
