@@ -105,10 +105,74 @@
       "secondary": "Vezi Serviciile"
     }
   },
+  "services": {
+    "breadcrumb": {
+      "home": "Acasa",
+      "services": "Servicii"
+    },
+    "index": {
+      "meta": {
+        "title": "Servicii Marketing Digital | AceAgency Bucuresti",
+        "description": "Servicii complete de marketing digital: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing si Consultanta. Contacteaza AceAgency!"
+      },
+      "hero": {
+        "overline": "SERVICII",
+        "headline": "Solutii Digitale Complete pentru Afacerea Ta",
+        "subheading": "De la publicitate platita la optimizare SEO, echipa noastra livreaza rezultate masurabile prin strategii digitale integrate."
+      },
+      "grid": {
+        "overline": "CE OFERIM",
+        "heading": "Servicii Specializate pentru Fiecare Nevoie",
+        "items": {
+          "0": { "title": "Dezvoltare Web", "division": "AceWeb", "description": "Site-uri si aplicatii web performante, responsive si optimizate SEO, de la landing pages la platforme complexe." },
+          "1": { "title": "Google Ads", "division": "AceAds", "description": "Campanii Google Ads optimizate pentru ROI maxim si cost pe conversie minim." },
+          "2": { "title": "Facebook & Instagram Ads", "division": "AceAds", "description": "Strategii de publicitate pe social media cu targetare precisa si creativa." },
+          "3": { "title": "TikTok Ads", "division": "AceAds", "description": "Publicitate creativa pe TikTok pentru audienta noua generatie." },
+          "4": { "title": "Optimizare SEO", "division": "AceWeb", "description": "Pozitionare organica in Google prin strategii SEO tehnice si de continut." },
+          "5": { "title": "Email Marketing", "division": "AceAds", "description": "Campanii email automatizate care genereaza conversii si fidelizeaza clientii." },
+          "6": { "title": "Consultanta Marketing", "division": "AceAgency", "description": "Strategie digitala personalizata bazata pe date, analiza si experienta." }
+        }
+      },
+      "process": {
+        "overline": "CUM LUCRAM",
+        "heading": "Procesul Nostru in 4 Pasi",
+        "description": "O abordare structurata care transforma obiectivele tale in rezultate concrete.",
+        "steps": {
+          "0": { "title": "Analiza & Strategie", "description": "Intelegem afacerea ta, publicul tinta si competitia pentru a construi o strategie personalizata." },
+          "1": { "title": "Design & Dezvoltare", "description": "Cream solutii vizuale si tehnice care reflecta brandul tau si convertesc vizitatorii." },
+          "2": { "title": "Implementare & Lansare", "description": "Lansam campaniile si proiectele cu testare riguroasa si monitorizare in timp real." },
+          "3": { "title": "Monitorizare & Optimizare", "description": "Analizam performanta continuu si optimizam pentru rezultate tot mai bune." }
+        }
+      },
+      "whyUs": {
+        "overline": "DE CE NOI",
+        "heading": "Partenerul Tau Digital de Incredere",
+        "stats": {
+          "0": { "value": "150", "suffix": "+", "label": "Proiecte Livrate" },
+          "1": { "value": "50", "suffix": "+", "label": "Clienti Activi" },
+          "2": { "value": "340", "suffix": "%", "label": "ROI Mediu" },
+          "3": { "value": "24", "suffix": "/7", "label": "Suport Dedicat" }
+        },
+        "differentiators": {
+          "0": { "title": "Echipa Dedicata", "description": "Fiecare client are un manager de cont dedicat si acces direct la specialisti." },
+          "1": { "title": "Rapoarte Transparente", "description": "Rapoarte lunare detaliate cu metrici clare si recomandari actionale." },
+          "2": { "title": "Strategii Personalizate", "description": "Nu aplicam solutii generice — fiecare strategie e construita pe obiectivele tale." },
+          "3": { "title": "Tehnologie de Varf", "description": "Folosim cele mai noi platforme si unelte pentru avantaj competitiv real." },
+          "4": { "title": "Rezultate Garantate", "description": "KPI-uri clare stabilite de la inceput, cu optimizare continua pentru performanta." }
+        }
+      }
+    },
+    "cta": {
+      "heading": "Hai sa Incepem un Proiect",
+      "description": "Esti gata sa transformi prezenta digitala a afacerii tale? Programeaza o consultatie gratuita.",
+      "primary": "Contacteaza-ne",
+      "secondary": "Programeaza o Intalnire"
+    }
+  },
   "home": {
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
-      "headline": "Agentie Digitala Full-Service din Bucuresti",
+      "headline": "Agentie Digitala <accent>Full-Service</accent> din Bucuresti",
       "subheading": "Transformam viziunea ta in rezultate digitale masurabile. Web. Ads. AI. Media.",
       "cta": {
         "primary": "Descopera Serviciile",
@@ -159,7 +223,7 @@
     },
     "about": {
       "overline": "DESPRE NOI",
-      "heading": "Disciplina. Viziune. Rezultate.",
+      "heading": "Disciplina. Viziune. <accent>Rezultate.</accent>",
       "description": "Suntem o echipa de profesionisti care crede ca fiecare brand merita o prezenta digitala de exceptie. De la strategie la executie, de la idee la rezultat.",
       "cta": "Afla mai multe"
     },

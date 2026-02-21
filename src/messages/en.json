@@ -105,10 +105,74 @@
       "secondary": "View Services"
     }
   },
+  "services": {
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services"
+    },
+    "index": {
+      "meta": {
+        "title": "Digital Marketing Services | AceAgency Bucharest",
+        "description": "Complete digital marketing services: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing and Consulting. Contact AceAgency today!"
+      },
+      "hero": {
+        "overline": "SERVICES",
+        "headline": "Complete Digital Solutions for Your Business",
+        "subheading": "From paid advertising to SEO optimization, our team delivers measurable results through integrated digital strategies."
+      },
+      "grid": {
+        "overline": "WHAT WE OFFER",
+        "heading": "Specialized Services for Every Need",
+        "items": {
+          "0": { "title": "Web Development", "division": "AceWeb", "description": "High-performance, responsive and SEO-optimized websites and web applications, from landing pages to complex platforms." },
+          "1": { "title": "Google Ads", "division": "AceAds", "description": "Google Ads campaigns optimized for maximum ROI and minimum cost per conversion." },
+          "2": { "title": "Facebook & Instagram Ads", "division": "AceAds", "description": "Social media advertising strategies with precise and creative targeting." },
+          "3": { "title": "TikTok Ads", "division": "AceAds", "description": "Creative TikTok advertising for the next generation audience." },
+          "4": { "title": "SEO Optimization", "division": "AceWeb", "description": "Organic Google positioning through technical and content SEO strategies." },
+          "5": { "title": "Email Marketing", "division": "AceAds", "description": "Automated email campaigns that generate conversions and build customer loyalty." },
+          "6": { "title": "Marketing Consulting", "division": "AceAgency", "description": "Personalized digital strategy based on data, analysis and experience." }
+        }
+      },
+      "process": {
+        "overline": "HOW WE WORK",
+        "heading": "Our 4-Step Process",
+        "description": "A structured approach that transforms your objectives into concrete results.",
+        "steps": {
+          "0": { "title": "Analysis & Strategy", "description": "We understand your business, target audience and competition to build a personalized strategy." },
+          "1": { "title": "Design & Development", "description": "We create visual and technical solutions that reflect your brand and convert visitors." },
+          "2": { "title": "Implementation & Launch", "description": "We launch campaigns and projects with rigorous testing and real-time monitoring." },
+          "3": { "title": "Monitoring & Optimization", "description": "We continuously analyze performance and optimize for increasingly better results." }
+        }
+      },
+      "whyUs": {
+        "overline": "WHY US",
+        "heading": "Your Trusted Digital Partner",
+        "stats": {
+          "0": { "value": "150", "suffix": "+", "label": "Projects Delivered" },
+          "1": { "value": "50", "suffix": "+", "label": "Active Clients" },
+          "2": { "value": "340", "suffix": "%", "label": "Average ROI" },
+          "3": { "value": "24", "suffix": "/7", "label": "Dedicated Support" }
+        },
+        "differentiators": {
+          "0": { "title": "Dedicated Team", "description": "Each client has a dedicated account manager and direct access to specialists." },
+          "1": { "title": "Transparent Reports", "description": "Detailed monthly reports with clear metrics and actionable recommendations." },
+          "2": { "title": "Custom Strategies", "description": "We don't apply generic solutions — every strategy is built around your goals." },
+          "3": { "title": "Cutting-Edge Technology", "description": "We use the latest platforms and tools for real competitive advantage." },
+          "4": { "title": "Guaranteed Results", "description": "Clear KPIs established from the start, with continuous optimization for performance." }
+        }
+      }
+    },
+    "cta": {
+      "heading": "Let's Start a Project",
+      "description": "Ready to transform your business's digital presence? Schedule a free consultation.",
+      "primary": "Contact Us",
+      "secondary": "Schedule a Meeting"
+    }
+  },
   "home": {
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
-      "headline": "Full-Service Digital Agency in Bucharest",
+      "headline": "<accent>Full-Service</accent> Digital Agency in Bucharest",
       "subheading": "We transform your vision into measurable digital results. Web. Ads. AI. Media.",
       "cta": {
         "primary": "Discover Our Services",
@@ -159,7 +223,7 @@
     },
     "about": {
       "overline": "ABOUT US",
-      "heading": "Discipline. Vision. Results.",
+      "heading": "Discipline. Vision. <accent>Results.</accent>",
       "description": "We are a team of professionals who believe every brand deserves an exceptional digital presence. From strategy to execution, from idea to result.",
       "cta": "Learn more"
     },
