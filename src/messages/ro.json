@@ -40,6 +40,15 @@
     "facebook": "Facebook"
   },
   "about": {
+    "breadcrumb": {
+      "home": "Acasa",
+      "about": "Despre Noi"
+    },
+    "heroTransition": {
+      "label": "CINE SUNTEM",
+      "heading": "Disciplina. Viziune. Rezultate.",
+      "description": "AceAgency este echipa de profesionisti din Bucuresti care transforma branduri prin strategii digitale integrate. Combinam creativitatea cu datele pentru a livra rezultate masurabile si crestere sustenabila."
+    },
     "hero": {
       "overline": "DESPRE NOI",
       "headline": "Disciplina. Viziune. Rezultate.",
@@ -111,6 +120,11 @@
       "services": "Servicii"
     },
     "index": {
+      "heroTransition": {
+        "label": "ABORDAREA NOASTRA",
+        "heading": "Solutii digitale complete pentru fiecare nevoie",
+        "description": "De la publicitate platita la optimizare SEO, de la email marketing la consultanta strategica — fiecare serviciu este construit pe date, experienta si rezultate concrete."
+      },
       "meta": {
         "title": "Servicii Marketing Digital | AceAgency Bucuresti",
         "description": "Servicii complete de marketing digital: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing si Consultanta. Contacteaza AceAgency!"
@@ -169,6 +183,11 @@
       "secondary": "Programeaza o Intalnire"
     },
     "googleAds": {
+      "heroTransition": {
+        "label": "GOOGLE ADS",
+        "heading": "Campanii care transforma click-uri in clienti",
+        "description": "Fiecare campanie Google Ads este construita pe date reale, optimizata zilnic si orientata catre un singur obiectiv: sa transforme bugetul tau de publicitate in clienti noi si crestere masurabile."
+      },
       "meta": {
         "title": "Servicii Google Ads | Agentie Google Ads Romania",
         "description": "Campanii Google Ads profesionale cu ROI garantat. Agentie certificata Google Ads din Bucuresti. Contacteaza AceAgency!"
@@ -230,6 +249,11 @@
       }
     },
     "facebookAds": {
+      "heroTransition": {
+        "label": "FACEBOOK & INSTAGRAM ADS",
+        "heading": "Publicitate sociala care genereaza conversii reale",
+        "description": "Cream strategii de publicitate pe Facebook si Instagram care conecteaza brandul tau cu audienta potrivita, genereaza lead-uri calificate si maximizeaza returnul fiecarui leu investit."
+      },
       "meta": {
         "title": "Servicii Facebook Ads | Agentie Facebook Ads - AceAgency",
         "description": "Campanii Facebook si Instagram Ads profesionale cu targetare precisa si ROI masurabil. Agentie publicitate Facebook Bucuresti. Solicita oferta!"
@@ -292,6 +316,11 @@
       }
     },
     "tiktokAds": {
+      "heroTransition": {
+        "label": "TIKTOK ADS",
+        "heading": "Continut viral care transforma audienta in clienti",
+        "description": "TikTok este platforma unde autenticitatea castiga. Cream campanii native care capteaza atentia in primele secunde si transforma vizualizarile in actiuni concrete pentru brandul tau."
+      },
       "meta": {
         "title": "Servicii TikTok Ads | Publicitate TikTok Romania - AceAgency",
         "description": "Campanii TikTok Ads creative si performante pentru audienta din Romania. Publicitate video TikTok cu rezultate masurabile. Solicita oferta!"
@@ -353,6 +382,11 @@
       }
     },
     "seo": {
+      "heroTransition": {
+        "label": "OPTIMIZARE SEO",
+        "heading": "Vizibilitate organica care aduce trafic calificat",
+        "description": "SEO nu inseamna doar pozitii in Google — inseamna trafic calificat, autoritate de domeniu si crestere organica pe termen lung. Construim strategii SEO complete care transforma cautarile in clienti."
+      },
       "meta": {
         "title": "Servicii SEO Romania | Optimizare SEO Profesionala - AceAgency",
         "description": "Servicii SEO profesionale pentru pozitionare organica in Google. Audit SEO complet, optimizare tehnica si de continut. Solicita audit SEO gratuit!"
@@ -416,6 +450,11 @@
       }
     },
     "emailMarketing": {
+      "heroTransition": {
+        "label": "EMAIL MARKETING",
+        "heading": "Comunicare directa care fidelizeaza si converteste",
+        "description": "Email marketing-ul ramane canalul cu cel mai mare ROI din marketing digital. Construim campanii personalizate si automatizari care lucreaza non-stop pentru a genera venituri recurente."
+      },
       "meta": {
         "title": "Servicii Email Marketing | Campanii Email - AceAgency",
         "description": "Campanii email marketing profesionale cu automatizări avansate și segmentare. Newsletter, drip campaigns și raportare detaliată. Solicită ofertă gratuită!"
@@ -478,6 +517,11 @@
       }
     },
     "consultanta": {
+      "heroTransition": {
+        "label": "CONSULTANTA MARKETING",
+        "heading": "Strategie digitala bazata pe date si experienta",
+        "description": "O strategie buna incepe cu o analiza profunda. Auditem prezenta ta digitala, identificam oportunitatile si construim un plan de actiune personalizat care integreaza toate canalele digitale."
+      },
       "meta": {
         "title": "Consultanță Marketing Digital Romania - AceAgency",
         "description": "Consultanță marketing digital profesională: audit complet, strategie personalizată și plan de acțiune. Programează o consultație gratuită cu AceAgency!"
@@ -541,6 +585,11 @@
     }
   },
   "home": {
+    "heroTransition": {
+      "label": "DE CE EXISTAM",
+      "heading": "Transformam viziunea ta in rezultate digitale masurabile",
+      "description": "Suntem o agentie digitala full-service din Bucuresti care combina web development, publicitate platita, inteligenta artificiala si productie media pentru a livra rezultate concrete si crestere sustenabila."
+    },
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
       "headline": "Agentie Digitala <accent>Full-Service</accent> din Bucuresti",

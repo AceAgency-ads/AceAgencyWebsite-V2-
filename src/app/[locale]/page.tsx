@@ -1,5 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { HeroSection } from '@/components/sections/home/HeroSection';
+import { HeroTransition } from '@/components/sections/HeroTransition';
 import { ServicesPreview } from '@/components/sections/home/ServicesPreview';
 import { StatsSection } from '@/components/sections/home/StatsSection';
 import { AboutPreview } from '@/components/sections/home/AboutPreview';
@@ -18,14 +19,15 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   return (
-    <main>
+    <>
       <HeroSection />
+      <HeroTransition namespace="home" i18nPrefix="heroTransition" />
       <ServicesPreview />
       <StatsSection />
       <AboutPreview />
       <Testimonials />
       <CTASection />
       <Newsletter />
-    </main>
+    </>
   );
 }

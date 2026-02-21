@@ -1,10 +1,11 @@
 'use client';
 
+import { useRef, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { Star } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { SectionHeader } from '@/components/sections/SectionHeader';
-import { BentoGrid } from '@/components/sections/BentoGrid';
+import { ScrollReveal } from '@/components/animations/ScrollReveal';
 
 /** Testimonial item shape from i18n. */
 interface TestimonialItem {
@@ -25,7 +26,7 @@ function StarRating({ rating }: { readonly rating: number }): React.JSX.Element 
         <Star
           key={i}
           size={16}
-          className={i < rating ? 'fill-amber-400 text-amber-400' : 'text-grey/30'}
+          className={i < rating ? 'fill-[#56151A] text-[#56151A]' : 'text-[#262523]/30'}
         />
       ))}
     </div>
@@ -33,55 +34,97 @@ function StarRating({ rating }: { readonly rating: number }): React.JSX.Element 
 }
 
 /**
- * Testimonials section with a bento grid layout.
- * Shows 6 testimonial cards with star ratings, hover interactions,
- * and stagger animation. First 2 cards span taller rows on desktop
- * for visual variety. Dark theme.
+ * Testimonials section — addifico style.
+ * Dark bg, large heading left-aligned, horizontal card carousel.
+ * Cards use off-white bg (#F5F5F5), rounded-3xl.
+ * Circular prev/next navigation buttons.
  */
 export function Testimonials(): React.JSX.Element {
   const t = useTranslations('home');
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = useCallback((direction: 'left' | 'right') => {
+    if (!scrollRef.current) return;
+    const cardWidth = scrollRef.current.firstElementChild?.clientWidth ?? 400;
+    const gap = 24;
+    const distance = cardWidth + gap;
+    scrollRef.current.scrollBy({
+      left: direction === 'left' ? -distance : distance,
+      behavior: 'smooth',
+    });
+  }, []);
 
   return (
     <SectionWrapper theme="dark" id="testimonials">
-      <SectionHeader
-        overline={t('testimonials.overline')}
-        heading={t('testimonials.heading')}
-        align="center"
-      />
+      <div className="flex items-end justify-between">
+        <SectionHeader
+          overline={t('testimonials.overline')}
+          heading={t('testimonials.heading')}
+          align="left"
+          className="mb-8 md:mb-10"
+        />
 
-      <BentoGrid columns={3}>
-        {TESTIMONIAL_KEYS.map((key, index) => {
+        {/* Navigation arrows — circular buttons */}
+        <ScrollReveal className="mb-8 flex gap-3 md:mb-10">
+          <button
+            type="button"
+            onClick={() => scroll('left')}
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-[#4a464380] bg-[#3a3836] text-[#D9D9D9] transition-colors hover:border-[#56151A] hover:text-[#56151A]"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft className="size-5" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scroll('right')}
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-[#4a464380] bg-[#3a3836] text-[#D9D9D9] transition-colors hover:border-[#56151A] hover:text-[#56151A]"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight className="size-5" />
+          </button>
+        </ScrollReveal>
+      </div>
+
+      {/* Horizontal scroll carousel */}
+      <div
+        ref={scrollRef}
+        className="-mx-2 flex snap-x snap-mandatory gap-6 overflow-x-auto px-2 pb-4 scrollbar-hide"
+        role="region"
+        aria-label="Testimonials carousel"
+      >
+        {TESTIMONIAL_KEYS.map((key) => {
           const item = t.raw(`testimonials.items.${key}`) as TestimonialItem;
-          // First 2 cards span 2 rows on desktop for bento variety
-          const isTall = index < 2;
 
           return (
-            <div
+            <article
               key={key}
               data-animate="card"
-              className={`flex flex-col justify-between rounded-xl border border-[var(--section-border)] bg-[var(--section-card-bg)] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--section-accent)] md:p-8 ${
-                isTall ? 'lg:row-span-2' : ''
-              }`}
+              className="w-[85vw] flex-shrink-0 snap-start rounded-3xl bg-[#F5F5F5] p-10 sm:w-[400px] md:p-12 lg:w-[468px]"
             >
+              {/* Decorative quote mark */}
+              <span className="mb-4 block select-none text-6xl font-bold leading-none text-[#56151A]/40">
+                &ldquo;
+              </span>
+
               {/* Quote */}
-              <p className="mb-6 text-sm italic text-[var(--section-text)] md:text-base">
+              <p className="mb-8 text-base text-[#262523] md:text-lg">
                 &ldquo;{item.quote}&rdquo;
               </p>
 
               {/* Author info + rating */}
               <div className="flex flex-col gap-2">
                 <StarRating rating={Number(item.rating)} />
-                <span className="text-sm font-semibold text-[var(--section-text)]">
+                <span className="text-sm font-semibold text-[#262523]">
                   {item.author}
                 </span>
-                <span className="text-xs text-[var(--section-text-muted)]">
+                <span className="text-xs text-[#666666]">
                   {item.company}
                 </span>
               </div>
-            </div>
+            </article>
           );
         })}
-      </BentoGrid>
+      </div>
     </SectionWrapper>
   );
 }

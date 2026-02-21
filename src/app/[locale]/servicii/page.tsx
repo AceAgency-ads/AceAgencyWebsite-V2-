@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Breadcrumb } from '@/components/sections/Breadcrumb';
 import { ServicesHero } from '@/components/sections/services/ServicesHero';
+import { HeroTransition } from '@/components/sections/HeroTransition';
 import { ServicesGrid } from '@/components/sections/services/ServicesGrid';
 import { ProcessSteps } from '@/components/sections/services/ProcessSteps';
 import { WhyChooseSection } from '@/components/sections/services/WhyChooseSection';
@@ -57,13 +57,13 @@ export default async function ServicesPage({
 
   return (
     <>
-      <Breadcrumb
-        items={[
+      <ServicesHero
+        breadcrumbItems={[
           { label: t('breadcrumb.home'), href: '/' },
           { label: t('breadcrumb.services') },
         ]}
       />
-      <ServicesHero />
+      <HeroTransition namespace="services" i18nPrefix="index.heroTransition" />
       <ServicesGrid />
       <ProcessSteps />
       <WhyChooseSection />

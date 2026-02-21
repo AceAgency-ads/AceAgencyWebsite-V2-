@@ -1,5 +1,6 @@
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { AboutHero } from '@/components/sections/about/AboutHero';
+import { HeroTransition } from '@/components/sections/HeroTransition';
 import { StorySection } from '@/components/sections/about/StorySection';
 import { ValuesSection } from '@/components/sections/about/ValuesSection';
 import { DivisionsSection } from '@/components/sections/about/DivisionsSection';
@@ -17,9 +18,17 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: 'about' });
+
   return (
     <>
-      <AboutHero />
+      <AboutHero
+        breadcrumbItems={[
+          { label: t('breadcrumb.home'), href: '/' },
+          { label: t('breadcrumb.about') },
+        ]}
+      />
+      <HeroTransition namespace="about" i18nPrefix="heroTransition" />
       <StorySection />
       <ValuesSection />
       <DivisionsSection />

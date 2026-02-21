@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { TextReveal } from '@/components/animations/TextReveal';
@@ -15,69 +16,75 @@ interface CTASectionProps {
 }
 
 /**
- * Burgundy CTA section with TextReveal heading and dual action buttons.
- * Reusable across pages via namespace prop (default: 'home', About page can pass 'about').
- * Primary button links to /contact, secondary is disabled by default (Portfolio is V2)
- * unless secondaryHref is provided.
+ * CTA section — addifico style.
+ * Light grey bg card (#EBEBEB), rounded-[36px], large heading,
+ * description, and burgundy accent CTA button.
  */
 export function CTASection({ namespace = 'home', secondaryHref }: CTASectionProps): React.JSX.Element {
   const t = useTranslations(namespace);
 
   return (
-    <SectionWrapper theme="burgundy" id="cta" className="py-24 md:py-32">
-      <div className="mx-auto max-w-2xl text-center">
-        {/* Heading with word-level TextReveal on scroll */}
-        <TextReveal
-          as="h2"
-          variant="word"
-          className="mb-6 text-3xl font-bold text-white md:text-4xl lg:text-5xl"
-        >
-          {t('cta.heading')}
-        </TextReveal>
-
-        {/* Description */}
-        <ScrollReveal>
-          <p className="mb-10 text-lg text-white/90">
-            {t('cta.description')}
-          </p>
-        </ScrollReveal>
-
-        {/* Dual CTAs */}
-        <ScrollReveal>
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            {/* Primary: accent variant (grey bg, black text) */}
-            <Button
-              asChild
-              size="lg"
-              className="min-h-[3rem] bg-grey px-8 font-semibold text-black hover:bg-grey/90"
+    <SectionWrapper theme="dark" id="cta" rounded={false}>
+      {/* Light grey card container */}
+      <div className="mx-auto max-w-4xl rounded-[36px] bg-[#EBEBEB] p-12 md:p-16">
+        <div className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+          {/* Left: heading */}
+          <div className="flex-1">
+            <TextReveal
+              as="h2"
+              variant="word"
+              className="text-3xl font-bold text-[#262523] md:text-4xl lg:text-5xl"
             >
-              <Link href="/contact">{t('cta.primary')}</Link>
-            </Button>
-
-            {/* Secondary: enabled with link when secondaryHref provided, disabled otherwise */}
-            {secondaryHref ? (
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="min-h-[3rem] border-white/30 px-8 text-white hover:bg-white/10 hover:text-white"
-              >
-                <Link href={secondaryHref}>{t('cta.secondary')}</Link>
-              </Button>
-            ) : (
-              <Button
-                variant="outline"
-                size="lg"
-                className="min-h-[3rem] border-white/30 px-8 text-white opacity-50"
-                aria-disabled="true"
-                tabIndex={-1}
-                style={{ pointerEvents: 'none' }}
-              >
-                {t('cta.secondary')}
-              </Button>
-            )}
+              {t('cta.heading')}
+            </TextReveal>
           </div>
-        </ScrollReveal>
+
+          {/* Right: description + CTAs */}
+          <div className="flex flex-1 flex-col gap-6">
+            <ScrollReveal>
+              <p className="text-lg text-[#262523]">
+                {t('cta.description')}
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Button
+                  asChild
+                  size="lg"
+                  className="min-h-[3rem] rounded-full bg-[#56151A] px-8 font-semibold text-white hover:bg-[#7A2025]"
+                >
+                  <Link href="/contact">
+                    {t('cta.primary')}
+                    <ArrowRight className="ml-2 size-4" />
+                  </Link>
+                </Button>
+
+                {secondaryHref ? (
+                  <Button
+                    asChild
+                    variant="outline"
+                    size="lg"
+                    className="min-h-[3rem] rounded-full border-[#262523]/30 px-8 text-[#262523] hover:bg-[#262523]/10"
+                  >
+                    <Link href={secondaryHref}>{t('cta.secondary')}</Link>
+                  </Button>
+                ) : (
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="min-h-[3rem] rounded-full border-[#262523]/30 px-8 text-[#262523] opacity-50"
+                    aria-disabled="true"
+                    tabIndex={-1}
+                    style={{ pointerEvents: 'none' }}
+                  >
+                    {t('cta.secondary')}
+                  </Button>
+                )}
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
       </div>
     </SectionWrapper>
   );

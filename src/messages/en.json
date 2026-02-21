@@ -40,6 +40,15 @@
     "facebook": "Facebook"
   },
   "about": {
+    "breadcrumb": {
+      "home": "Home",
+      "about": "About Us"
+    },
+    "heroTransition": {
+      "label": "WHO WE ARE",
+      "heading": "Discipline. Vision. Results.",
+      "description": "AceAgency is the team of professionals from Bucharest that transforms brands through integrated digital strategies. We combine creativity with data to deliver measurable results and sustainable growth."
+    },
     "hero": {
       "overline": "ABOUT US",
       "headline": "Discipline. Vision. Results.",
@@ -111,6 +120,11 @@
       "services": "Services"
     },
     "index": {
+      "heroTransition": {
+        "label": "OUR APPROACH",
+        "heading": "Complete digital solutions for every need",
+        "description": "From paid advertising to SEO optimization, from email marketing to strategic consulting — every service is built on data, experience and concrete results."
+      },
       "meta": {
         "title": "Digital Marketing Services | AceAgency Bucharest",
         "description": "Complete digital marketing services: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing and Consulting. Contact AceAgency today!"
@@ -169,6 +183,11 @@
       "secondary": "Schedule a Meeting"
     },
     "googleAds": {
+      "heroTransition": {
+        "label": "GOOGLE ADS",
+        "heading": "Campaigns that turn clicks into customers",
+        "description": "Every Google Ads campaign is built on real data, optimized daily and focused on a single goal: turning your advertising budget into new customers and measurable growth."
+      },
       "meta": {
         "title": "Google Ads Services | Google Ads Agency Romania",
         "description": "Professional Google Ads campaigns with guaranteed ROI. Certified Google Ads agency from Bucharest. Contact AceAgency today!"
@@ -230,6 +249,11 @@
       }
     },
     "facebookAds": {
+      "heroTransition": {
+        "label": "FACEBOOK & INSTAGRAM ADS",
+        "heading": "Social advertising that drives real conversions",
+        "description": "We create Facebook and Instagram advertising strategies that connect your brand with the right audience, generate qualified leads and maximize the return on every dollar invested."
+      },
       "meta": {
         "title": "Facebook Ads Services | Facebook Ads Agency - AceAgency",
         "description": "Professional Facebook and Instagram Ads campaigns with precise targeting and measurable ROI. Facebook advertising agency in Bucharest. Request a quote!"
@@ -292,6 +316,11 @@
       }
     },
     "tiktokAds": {
+      "heroTransition": {
+        "label": "TIKTOK ADS",
+        "heading": "Viral content that turns audiences into customers",
+        "description": "TikTok is the platform where authenticity wins. We create native campaigns that capture attention in the first seconds and turn views into concrete actions for your brand."
+      },
       "meta": {
         "title": "TikTok Ads Services | TikTok Advertising Romania - AceAgency",
         "description": "Creative and high-performing TikTok Ads campaigns for audiences in Romania. TikTok video advertising with measurable results. Request a quote!"
@@ -353,6 +382,11 @@
       }
     },
     "seo": {
+      "heroTransition": {
+        "label": "SEO OPTIMIZATION",
+        "heading": "Organic visibility that drives qualified traffic",
+        "description": "SEO is not just about Google rankings — it is about qualified traffic, domain authority and long-term organic growth. We build complete SEO strategies that turn searches into customers."
+      },
       "meta": {
         "title": "SEO Services Romania | Professional SEO Optimization - AceAgency",
         "description": "Professional SEO services for organic Google positioning. Complete SEO audit, technical and content optimization. Request a free SEO audit today!"
@@ -416,6 +450,11 @@
       }
     },
     "emailMarketing": {
+      "heroTransition": {
+        "label": "EMAIL MARKETING",
+        "heading": "Direct communication that retains and converts",
+        "description": "Email marketing remains the channel with the highest ROI in digital marketing. We build personalized campaigns and automations that work around the clock to generate recurring revenue."
+      },
       "meta": {
         "title": "Email Marketing Services | Email Campaigns - AceAgency",
         "description": "Professional email marketing campaigns with advanced automation and segmentation. Newsletter, drip campaigns and detailed reporting. Request a free quote!"
@@ -478,6 +517,11 @@
       }
     },
     "consultanta": {
+      "heroTransition": {
+        "label": "MARKETING CONSULTING",
+        "heading": "Digital strategy built on data and experience",
+        "description": "A good strategy starts with deep analysis. We audit your digital presence, identify opportunities and build a personalized action plan that integrates all digital channels."
+      },
       "meta": {
         "title": "Digital Marketing Consulting Romania - AceAgency",
         "description": "Professional digital marketing consulting: complete audit, personalized strategy and action plan. Schedule a free consultation with AceAgency!"
@@ -541,6 +585,11 @@
     }
   },
   "home": {
+    "heroTransition": {
+      "label": "WHY WE EXIST",
+      "heading": "We transform your vision into measurable digital results",
+      "description": "We are a full-service digital agency from Bucharest that combines web development, paid advertising, artificial intelligence and media production to deliver concrete results and sustainable growth."
+    },
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
       "headline": "<accent>Full-Service</accent> Digital Agency in Bucharest",

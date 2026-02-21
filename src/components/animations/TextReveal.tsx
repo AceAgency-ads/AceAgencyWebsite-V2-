@@ -56,6 +56,8 @@ export function TextReveal({
         SplitText.create(containerRef.current!, {
           type: splitType,
           autoSplit: true,
+          wordsClass: 'split-text-word',
+          charsClass: 'split-text-char',
           onSplit(self) {
             const targets = variant === 'word' ? self.words : self.chars;
 

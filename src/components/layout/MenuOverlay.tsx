@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { gsap, useGSAP, ScrollTrigger, SplitText } from '@/lib/gsap';
@@ -133,6 +134,15 @@ export function MenuOverlay({
       className="invisible fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#262523]"
       aria-hidden={!isOpen}
     >
+      {/* Logo */}
+      <Image
+        src="/ace-agency-logo.webp"
+        alt="AceAgency"
+        width={120}
+        height={38}
+        className="mb-8 h-10 w-auto"
+      />
+
       {/* Navigation links */}
       <nav ref={navLinksRef} className="flex flex-col items-center gap-6">
         {NAV_LINKS.map((link) => (
@@ -141,7 +151,7 @@ export function MenuOverlay({
             href={link.href}
             locale={locale}
             onClick={handleLinkClick}
-            className="nav-link font-heading text-4xl font-bold text-white transition-colors duration-200 hover:text-grey md:text-6xl"
+            className="nav-link font-heading text-4xl font-bold text-[#D9D9D9] transition-colors duration-200 hover:text-white md:text-6xl"
           >
             {t(link.key)}
           </Link>

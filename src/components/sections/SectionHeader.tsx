@@ -28,7 +28,7 @@ export function SectionHeader({
   return (
     <ScrollReveal
       className={cn(
-        'mb-10 md:mb-12',
+        'mb-12 md:mb-16',
         align === 'center' && 'text-center',
         className
       )}
@@ -41,7 +41,7 @@ export function SectionHeader({
           {overline}
         </span>
       )}
-      <HeadingTag className="text-3xl font-bold md:text-4xl lg:text-5xl">
+      <HeadingTag className="text-4xl font-bold md:text-5xl lg:text-6xl">
         {heading}
       </HeadingTag>
       {description && (

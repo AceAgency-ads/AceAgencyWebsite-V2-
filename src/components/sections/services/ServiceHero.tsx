@@ -6,10 +6,12 @@ import { gsap, useGSAP } from '@/lib/gsap';
 import { getServiceIcon } from '@/lib/service-icons';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { TextReveal } from '@/components/animations/TextReveal';
+import { Breadcrumb, type BreadcrumbItem } from '@/components/sections/Breadcrumb';
 
 interface ServiceHeroProps {
   readonly serviceKey: string;
   readonly iconName: string;
+  readonly breadcrumbItems?: readonly BreadcrumbItem[];
 }
 
 /**
@@ -17,7 +19,7 @@ interface ServiceHeroProps {
  * Renders the ONLY h1 on the sub-page with the primary keyword.
  * Follows AboutHero pattern with service icon decorative element.
  */
-export function ServiceHero({ serviceKey, iconName }: ServiceHeroProps): React.JSX.Element {
+export function ServiceHero({ serviceKey, iconName, breadcrumbItems }: ServiceHeroProps): React.JSX.Element {
   const Icon = getServiceIcon(iconName);
   const t = useTranslations('services');
   const overlineRef = useRef<HTMLSpanElement>(null);
@@ -74,6 +76,8 @@ export function ServiceHero({ serviceKey, iconName }: ServiceHeroProps): React.J
       />
 
       <div className="relative z-10 max-w-3xl">
+        {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}
+
         {/* Overline */}
         <span
           ref={overlineRef}

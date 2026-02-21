@@ -1,15 +1,17 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useCallback } from 'react';
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
 import { MenuOverlay } from '@/components/layout/MenuOverlay';
 
 /**
- * Fixed header bar with logo, hamburger toggle, and CTA button.
- * Hides on scroll down, reveals on scroll up via ScrollTrigger.
- * Transparent initially, gains glass-morphism backdrop after 50px scroll.
+ * Fixed header — addifico style.
+ * Logo left, "Get in touch" pill button right with burgundy accent.
+ * 2-line hamburger. Transparent initially, backdrop blur on scroll.
+ * Hides on scroll down, reveals on scroll up.
  */
 export function Header(): React.JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +24,6 @@ export function Header(): React.JSX.Element {
     () => {
       if (!headerRef.current) return;
 
-      // Create the hide/show tween (paused)
       hideAnimRef.current = gsap.to(headerRef.current, {
         yPercent: -100,
         duration: 0.3,
@@ -30,25 +31,20 @@ export function Header(): React.JSX.Element {
         paused: true,
       });
 
-      // ScrollTrigger for scroll direction detection
       ScrollTrigger.create({
         start: 'top -60',
         end: 'max',
         onUpdate(self) {
-          // Don't hide when menu overlay is open
           if (!hideAnimRef.current) return;
 
           if (self.direction === 1) {
-            // Scrolling down — hide header
             hideAnimRef.current.play();
           } else {
-            // Scrolling up — show header
             hideAnimRef.current.reverse();
           }
         },
       });
 
-      // Glass morphism on scroll past 50px
       ScrollTrigger.create({
         start: 'top -50',
         end: 'max',
@@ -57,24 +53,40 @@ export function Header(): React.JSX.Element {
           className: 'header-scrolled',
         },
       });
+
+      // Theme switching for light/accent sections
+      const themeSections = document.querySelectorAll(
+        '[data-theme="light"], [data-theme="light-muted"], [data-theme="accent"], [data-theme="burgundy"]'
+      );
+
+      themeSections.forEach((section) => {
+        ScrollTrigger.create({
+          trigger: section,
+          start: 'top 64px',
+          end: 'bottom 64px',
+          toggleClass: {
+            targets: headerRef.current!,
+            className: 'header-over-light',
+          },
+        });
+      });
     },
     { scope: headerRef }
   );
 
-  function handleToggle(): void {
+  const handleToggle = useCallback((): void => {
     setIsOpen((prev) => {
       const next = !prev;
-      // When opening menu, ensure header stays visible
       if (next && hideAnimRef.current) {
         hideAnimRef.current.reverse();
       }
       return next;
     });
-  }
+  }, []);
 
-  function handleClose(): void {
+  const handleClose = useCallback((): void => {
     setIsOpen(false);
-  }
+  }, []);
 
   return (
     <>
@@ -82,49 +94,51 @@ export function Header(): React.JSX.Element {
         ref={headerRef}
         className="fixed top-0 left-0 z-30 flex h-16 w-full items-center justify-between px-4 transition-colors duration-300 sm:px-6 lg:h-[72px] lg:px-8"
       >
-        {/* Logo — text placeholder (Glacial Indifference Bold) */}
+        {/* Logo */}
         <Link
           href="/"
           locale={locale}
-          className="font-heading text-xl font-bold tracking-tight text-white"
+          className="relative block"
           aria-label="AceAgency"
         >
-          ACE
+          <Image
+            src="/ace-agency-logo.webp"
+            alt="AceAgency"
+            width={100}
+            height={32}
+            priority
+            className="h-8 w-auto transition-all duration-300 [.header-over-light_&]:brightness-0"
+          />
         </Link>
 
         {/* Right section: hamburger + CTA */}
         <div className="flex items-center gap-3">
-          {/* Hamburger button */}
+          {/* 2-line hamburger */}
           <button
             onClick={handleToggle}
             aria-expanded={isOpen}
             aria-label={isOpen ? t('menuClose') : t('menuOpen')}
-            className="relative z-50 flex h-12 w-12 flex-col items-center justify-center gap-1.5"
+            className="relative z-50 flex h-12 w-12 flex-col items-center justify-center gap-2"
           >
             <span
-              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
-                isOpen ? 'translate-y-2 rotate-45' : ''
+              className={`block h-0.5 w-6 bg-[#D9D9D9] transition-all duration-300 [.header-over-light_&]:bg-[#262523] ${
+                isOpen ? 'translate-y-[5px] rotate-45' : ''
               }`}
             />
             <span
-              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
-                isOpen ? 'opacity-0' : ''
-              }`}
-            />
-            <span
-              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
-                isOpen ? '-translate-y-2 -rotate-45' : ''
+              className={`block h-0.5 w-6 bg-[#D9D9D9] transition-all duration-300 [.header-over-light_&]:bg-[#262523] ${
+                isOpen ? '-translate-y-[5px] -rotate-45' : ''
               }`}
             />
           </button>
 
-          {/* CTA button */}
+          {/* CTA pill button — burgundy accent with dot indicator */}
           <Link
             href="/contact"
             locale={locale}
-            className="hidden items-center rounded-md px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 sm:inline-flex"
-            style={{ background: 'linear-gradient(135deg, #56151A, #3D0F13)' }}
+            className="hidden items-center gap-2 rounded-full bg-[#56151A] px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A2025] sm:inline-flex"
           >
+            <span className="h-2 w-2 rounded-full bg-white" />
             {t('cta')}
           </Link>
         </div>

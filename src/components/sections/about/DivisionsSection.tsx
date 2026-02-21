@@ -61,7 +61,7 @@ export function DivisionsSection(): React.JSX.Element {
               key={index}
               href={href}
               data-animate="card"
-              className="group block rounded-xl border border-[var(--section-border)] bg-[var(--section-card-bg)] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--ds-shadow-burgundy)] md:p-8"
+              className="group block rounded-xl border border-[var(--section-border)] bg-[var(--section-card-bg)] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--ds-shadow-accent)] md:p-8"
             >
               {IconComponent && (
                 <IconComponent
@@ -73,7 +73,7 @@ export function DivisionsSection(): React.JSX.Element {
               <h3 className="mb-1 text-xl font-bold">{item.name}</h3>
               <p
                 className="mb-3 text-sm font-medium"
-                style={{ color: 'var(--ds-color-burgundy-light)' }}
+                style={{ color: 'var(--ds-color-accent-light)' }}
               >
                 {item.focus}
               </p>

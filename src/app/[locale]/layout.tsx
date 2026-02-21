@@ -7,6 +7,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { SmoothScroll } from '@/components/layout/SmoothScroll';
 
 import '@/styles/globals.css';
 
@@ -70,13 +71,15 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${glacialIndifference.variable} ${redHatDisplay.variable} ${inter.variable}`}
+      className={`lenis lenis-smooth ${glacialIndifference.variable} ${redHatDisplay.variable} ${inter.variable}`}
     >
       <body>
         <NextIntlClientProvider>
           <Header />
-          <main>{children}</main>
-          <Footer />
+          <SmoothScroll>
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
         </NextIntlClientProvider>
       </body>
     </html>

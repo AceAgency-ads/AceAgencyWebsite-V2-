@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { SERVICE_DEFINITIONS, getServiceBySlug } from '@/lib/services';
-import { Breadcrumb } from '@/components/sections/Breadcrumb';
 import { ServiceHero } from '@/components/sections/services/ServiceHero';
+import { HeroTransition } from '@/components/sections/HeroTransition';
 import { ServiceFeatures } from '@/components/sections/services/ServiceFeatures';
 import { ServiceProcess } from '@/components/sections/services/ServiceProcess';
 import { ServiceStats } from '@/components/sections/services/ServiceStats';
@@ -97,14 +97,16 @@ export default async function ServicePage({
 
   return (
     <>
-      <Breadcrumb
-        items={[
+      <ServiceHero
+        serviceKey={service.i18nKey}
+        iconName={service.iconName}
+        breadcrumbItems={[
           { label: t('breadcrumb.home'), href: '/' },
           { label: t('breadcrumb.services'), href: '/servicii' },
           { label: t(`${service.i18nKey}.hero.overline`) },
         ]}
       />
-      <ServiceHero serviceKey={service.i18nKey} iconName={service.iconName} />
+      <HeroTransition namespace="services" i18nPrefix={`${service.i18nKey}.heroTransition`} />
       <ServiceFeatures serviceKey={service.i18nKey} />
       <ServiceProcess serviceKey={service.i18nKey} />
       <ServiceStats serviceKey={service.i18nKey} />

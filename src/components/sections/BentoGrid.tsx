@@ -69,7 +69,7 @@ export function BentoGrid({
     <div
       ref={gridRef}
       className={cn(
-        'grid grid-cols-1 gap-6 sm:grid-cols-2',
+        'grid grid-cols-1 gap-8 sm:grid-cols-2',
         columnMap[columns],
         className
       )}

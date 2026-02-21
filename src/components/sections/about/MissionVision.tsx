@@ -83,7 +83,7 @@ export function MissionVision(): React.JSX.Element {
             className="mb-3 inline-block text-xs font-medium uppercase"
             style={{
               letterSpacing: '0.12em',
-              color: 'var(--ds-color-burgundy)',
+              color: 'var(--ds-color-accent)',
             }}
           >
             {t('mission.overline')}
@@ -103,7 +103,7 @@ export function MissionVision(): React.JSX.Element {
             className="mb-3 inline-block text-xs font-medium uppercase"
             style={{
               letterSpacing: '0.12em',
-              color: 'var(--ds-color-burgundy)',
+              color: 'var(--ds-color-accent)',
             }}
           >
             {t('vision.overline')}

@@ -5,13 +5,18 @@ import { useTranslations } from 'next-intl';
 import { gsap, useGSAP } from '@/lib/gsap';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { TextReveal } from '@/components/animations/TextReveal';
+import { Breadcrumb, type BreadcrumbItem } from '@/components/sections/Breadcrumb';
+
+interface AboutHeroProps {
+  readonly breadcrumbItems?: readonly BreadcrumbItem[];
+}
 
 /**
  * About page hero section with word-level TextReveal headline,
  * brand glow positioned top-right, and fade-up subheading.
  * Inner page hero — smaller padding than homepage.
  */
-export function AboutHero(): React.JSX.Element {
+export function AboutHero({ breadcrumbItems }: AboutHeroProps): React.JSX.Element {
   const t = useTranslations('about');
   const overlineRef = useRef<HTMLSpanElement>(null);
   const subheadingRef = useRef<HTMLParagraphElement>(null);
@@ -63,6 +68,8 @@ export function AboutHero(): React.JSX.Element {
 
       {/* Left-aligned content */}
       <div className="relative z-10 max-w-3xl">
+        {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}
+
         {/* Overline */}
         <span
           ref={overlineRef}
