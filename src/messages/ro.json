@@ -230,22 +230,127 @@
       }
     },
     "facebookAds": {
-      "meta": { "title": "Servicii Facebook Ads | Agentie Facebook Ads", "description": "Campanii Facebook si Instagram Ads profesionale. Targetare precisa, creatie publicitara si optimizare continua. AceAgency Bucuresti." },
-      "hero": { "overline": "FACEBOOK ADS", "headline": "Campanii Facebook Ads care Convertesc", "description": "Strategii de publicitate pe Facebook si Instagram care genereaza lead-uri si vanzari pentru afacerea ta." },
-      "features": { "overline": "SERVICII", "heading": "Ce Oferim in Facebook Ads", "items": [{ "title": "Facebook Feed Ads", "description": "Reclame in feed-ul Facebook cu targetare demografica si pe interese." }, { "title": "Instagram Ads", "description": "Campanii vizuale pe Instagram Stories, Reels si Feed." }, { "title": "Lead Generation", "description": "Formulare de lead-uri direct in platforma Facebook." }, { "title": "Remarketing", "description": "Recapturam vizitatorii prin pixelul Facebook si audienta custom." }] },
-      "process": { "overline": "PROCESUL NOSTRU", "heading": "Cum Gestionam Campaniile Facebook Ads", "steps": [{ "title": "Analiza Audientei", "description": "Identificam publicul tinta ideal folosind date demografice si comportamentale." }, { "title": "Creatie & Setup", "description": "Cream vizualuri si copy persuasiv, configuram campaniile cu targetare optimala." }, { "title": "Testare & Optimizare", "description": "Testam A/B variante de reclame si optimizam pentru conversii maxime." }, { "title": "Raportare", "description": "Rapoarte detaliate cu metrici de performanta si recomandari de scalare." }] },
-      "stats": { "overline": "REZULTATE", "heading": "Performanta in Facebook Ads", "items": [{ "value": "280", "suffix": "%", "label": "ROI Mediu" }, { "value": "100", "suffix": "+", "label": "Campanii Active" }, { "value": "45", "suffix": "+", "label": "Clienti" }, { "value": "5", "suffix": "M+", "label": "Reach Lunar" }] },
-      "faq": { "overline": "INTREBARI FRECVENTE", "heading": "Intrebari despre Facebook Ads", "items": [{ "question": "Cat costa publicitatea pe Facebook?", "answer": "Bugetul minim recomandat este de 300 EUR/luna. Costul per lead variaza in functie de industrie, de la 2-5 EUR pentru B2C la 10-30 EUR pentru B2B." }, { "question": "Facebook sau Instagram Ads?", "answer": "Recomandam ambele platforme pentru acoperire maxima. Instagram este mai eficient pentru branduri vizuale, Facebook pentru targetare detaliata si lead generation." }, { "question": "Cat dureaza pana vad rezultate?", "answer": "Primele rezultate apar in 1-2 saptamani. Performanta optima se atinge dupa 4-6 saptamani de optimizare continua." }] },
-      "cta": { "heading": "Creste cu Facebook Ads", "description": "Programeaza o consultatie gratuita pentru campaniile tale Facebook si Instagram.", "primary": "Solicita o Oferta", "secondary": "Programeaza o Consultatie" }
+      "meta": {
+        "title": "Servicii Facebook Ads | Agentie Facebook Ads - AceAgency",
+        "description": "Campanii Facebook si Instagram Ads profesionale cu targetare precisa si ROI masurabil. Agentie publicitate Facebook Bucuresti. Solicita oferta!"
+      },
+      "hero": {
+        "overline": "FACEBOOK & INSTAGRAM ADS",
+        "headline": "Campanii Facebook Ads care Genereaza Conversii Reale",
+        "description": "Cream strategii de publicitate pe Facebook si Instagram care aduc lead-uri calificate, cresc vanzarile si maximizeaza returnul investitiei tale in social media advertising."
+      },
+      "features": {
+        "overline": "SERVICII FACEBOOK ADS",
+        "heading": "Solutii Complete de Publicitate Facebook si Instagram",
+        "items": [
+          { "title": "Campanii de Awareness", "description": "Crestem notorietatea brandului tau prin campanii de reach si brand awareness targetate catre audienta ideala pe Facebook si Instagram." },
+          { "title": "Campanii de Trafic", "description": "Aducem vizitatori calificati pe site-ul tau prin reclame optimizate pentru click-uri si engagement pe ambele platforme." },
+          { "title": "Campanii de Conversie", "description": "Generam lead-uri si vanzari directe prin campanii optimizate cu Facebook Pixel si Conversions API pentru tracking precis." },
+          { "title": "Retargeting Avansat", "description": "Recapturam vizitatorii site-ului si utilizatorii care au interactionat cu brandul tau prin remarketing dinamic pe Facebook si Instagram." },
+          { "title": "Custom & Lookalike Audiences", "description": "Construim audiente personalizate si similare bazate pe datele clientilor tai existenti pentru a gasi noi clienti cu potential ridicat." },
+          { "title": "Optimizare Creativa", "description": "Testam si optimizam constant vizualuri, copy si formate publicitare — de la carusele la Reels — pentru performanta maxima." }
+        ]
+      },
+      "process": {
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Gestionam Campaniile Tale Facebook Ads",
+        "steps": [
+          { "title": "Audit Cont & Pixel Setup", "description": "Analizam contul existent, verificam configurarea Facebook Pixel si Conversions API, si identificam oportunitatile de imbunatatire." },
+          { "title": "Strategie de Audienta", "description": "Construim audienta ideala folosind date demografice, interese, comportamente si lookalike audiences bazate pe clientii tai existenti." },
+          { "title": "Creare Campanii & Ad Creatives", "description": "Dezvoltam structura campaniilor si cream vizualuri si copy persuasiv adaptat fiecarui segment de audienta si plasament." },
+          { "title": "Optimizare & Scalare", "description": "Monitorizam zilnic performanta, testam A/B variante de reclame si scalam campaniile profitabile pentru crestere continua." }
+        ]
+      },
+      "stats": {
+        "overline": "REZULTATE",
+        "heading": "Performanta Campaniilor Facebook & Instagram Ads",
+        "items": [
+          { "value": "2", "suffix": "M+", "label": "Reach Lunar" },
+          { "value": "50", "suffix": "K+", "label": "Conversii Generate" },
+          { "value": "200", "suffix": "+", "label": "Campanii Gestionate" },
+          { "value": "15", "suffix": "x", "label": "ROAS Mediu" }
+        ]
+      },
+      "faq": {
+        "overline": "INTREBARI FRECVENTE",
+        "heading": "Intrebari despre Facebook & Instagram Ads",
+        "items": [
+          { "question": "Cat costa publicitatea pe Facebook si Instagram?", "answer": "Bugetul minim recomandat pentru Facebook Ads este de 300 EUR/luna, plus taxa de management. Costul per lead variaza in functie de industrie: de la 2-5 EUR pentru B2C la 10-30 EUR pentru B2B. Contacteaza-ne pentru o estimare personalizata bazata pe obiectivele tale." },
+          { "question": "Cum functioneaza Facebook Pixel si de ce e important?", "answer": "Facebook Pixel este un cod de tracking instalat pe site-ul tau care monitorizeaza actiunile vizitatorilor. Este esential pentru optimizarea campaniilor, crearea de audiente custom si remarketing. Noi configuram si Conversions API pentru tracking precis chiar si cu restrictiile de confidentialitate actuale." },
+          { "question": "Ce tipuri de audienta targetam?", "answer": "Folosim audienta de baza (demografie, interese, comportamente), audienta custom (vizitatorii site-ului, lista de emailuri, interactiuni cu pagina) si audienta lookalike (persoane similare clientilor tai existenti). Combinatia acestora asigura acoperire maxima cu relevanta ridicata." },
+          { "question": "Facebook Ads sau Instagram Ads — care e mai bun?", "answer": "Depinde de obiectivele si audienta ta. Instagram exceleaza pentru branduri vizuale si audienta 18-35 ani, in timp ce Facebook ofera targetare mai detaliata si performanta mai buna pentru lead generation B2B. Recomandam o strategie cross-platform care utilizeaza ambele platforme pentru rezultate optime, combinata cu campanii Google Ads pentru acoperire completa." },
+          { "question": "Ce formate de reclame folositi?", "answer": "Utilizam toate formatele disponibile: imagini statice, carusele, video, Reels, Stories si colectii. Alegem formatul optim in functie de obiectivul campaniei si testam A/B pentru a identifica ce functioneaza cel mai bine pentru audienta ta specifica." },
+          { "question": "Cat dureaza pana vad rezultate?", "answer": "Primele rezultate apar in 1-2 saptamani de la lansare. Performanta optima se atinge dupa 4-6 saptamani de optimizare continua, pe masura ce algoritmul Meta invata si noi acumulam date suficiente pentru decizii informate." },
+          { "question": "Cum masurati succesul campaniilor?", "answer": "Urmarim KPI-uri clare: cost per lead, cost per conversie, ROAS, reach, frecventa si rata de click. Primesti rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare. Combinam datele din Facebook Ads cu Google Ads pentru o viziune completa cross-platform." }
+        ]
+      },
+      "cta": {
+        "heading": "Creste-ti Afacerea cu Facebook & Instagram Ads",
+        "description": "Programeaza o consultatie gratuita si descopera cum publicitatea pe Facebook si Instagram poate genera lead-uri si vanzari pentru afacerea ta.",
+        "primary": "Solicita o Oferta",
+        "secondary": "Programeaza un Call"
+      }
     },
     "tiktokAds": {
-      "meta": { "title": "Servicii TikTok Ads | Publicitate TikTok Romania", "description": "Campanii TikTok Ads creative pentru audienta noua generatie. Publicitate video pe TikTok cu AceAgency Bucuresti." },
-      "hero": { "overline": "TIKTOK ADS", "headline": "Publicitate TikTok care Capteaza Atentia", "description": "Campanii TikTok Ads creative si virale care conecteaza brandul tau cu audienta urmatoarei generatii." },
-      "features": { "overline": "SERVICII", "heading": "Ce Oferim in TikTok Ads", "items": [{ "title": "In-Feed Ads", "description": "Reclame native in feed-ul TikTok care se integreaza organic cu continutul." }, { "title": "Branded Content", "description": "Colaborari cu creatori TikTok pentru continut autentic si viral." }, { "title": "Spark Ads", "description": "Amplificam postarile organice performante cu buget publicitar." }, { "title": "Lead Generation", "description": "Formulare de lead-uri native TikTok pentru conversii rapide." }] },
-      "process": { "overline": "PROCESUL NOSTRU", "heading": "Cum Cream Campanii TikTok Ads", "steps": [{ "title": "Research & Trends", "description": "Analizam trendurile TikTok si identificam oportunitati pentru brandul tau." }, { "title": "Creatie Video", "description": "Producem continut video autentic adaptat formatului si audientei TikTok." }, { "title": "Lansare & Optimizare", "description": "Lansam campaniile cu targetare precisa si optimizam in timp real." }, { "title": "Analiza & Scale", "description": "Raportam rezultatele si scalam continutul performant." }] },
-      "stats": { "overline": "REZULTATE", "heading": "Performanta in TikTok Ads", "items": [{ "value": "200", "suffix": "%", "label": "Engagement Rate" }, { "value": "50", "suffix": "+", "label": "Campanii TikTok" }, { "value": "10", "suffix": "M+", "label": "Views Generate" }, { "value": "30", "suffix": "+", "label": "Clienti" }] },
-      "faq": { "overline": "INTREBARI FRECVENTE", "heading": "Intrebari despre TikTok Ads", "items": [{ "question": "TikTok Ads e potrivit pentru afacerea mea?", "answer": "TikTok este ideal daca publicul tau tinta are 18-45 ani. Functioneaza excelent pentru e-commerce, beauty, food, fitness si entertainment." }, { "question": "Cat costa publicitatea pe TikTok?", "answer": "Bugetul minim recomandat este de 300 EUR/luna. TikTok are costuri per view mai mici decat alte platforme, cu CPM-uri incepand de la 2-5 EUR." }, { "question": "Aveti experienta cu TikTok Ads?", "answer": "Da, gestionam campanii TikTok Ads de peste 2 ani, cu rezultate dovedite in multiple industrii." }] },
-      "cta": { "heading": "Devino Viral pe TikTok", "description": "Descopera cum publicitatea TikTok iti poate transforma afacerea.", "primary": "Solicita o Oferta", "secondary": "Programeaza o Consultatie" }
+      "meta": {
+        "title": "Servicii TikTok Ads | Publicitate TikTok Romania - AceAgency",
+        "description": "Campanii TikTok Ads creative si performante pentru audienta din Romania. Publicitate video TikTok cu rezultate masurabile. Solicita oferta!"
+      },
+      "hero": {
+        "overline": "TIKTOK ADS",
+        "headline": "Publicitate TikTok Ads care Capteaza Atentia si Genereaza Rezultate",
+        "description": "Cream campanii TikTok Ads creative si virale care conecteaza brandul tau cu audienta urmatoarei generatii din Romania. De la In-Feed Ads la Spark Ads, maximizam impactul fiecarei investitii."
+      },
+      "features": {
+        "overline": "SERVICII TIKTOK ADS",
+        "heading": "Formate Publicitare TikTok pentru Fiecare Obiectiv",
+        "items": [
+          { "title": "In-Feed Ads", "description": "Reclame native in feed-ul For You care se integreaza organic cu continutul si capteaza atentia utilizatorilor in mod natural." },
+          { "title": "TopView Ads", "description": "Reclame video full-screen care apar la deschiderea aplicatiei TikTok, oferind vizibilitate maxima si impact garantat pentru brandul tau." },
+          { "title": "Spark Ads", "description": "Amplificam postarile organice performante ale brandului sau ale creatorilor cu buget publicitar pentru reach si engagement extins." },
+          { "title": "Brand Effects", "description": "Efecte AR si filtre branduite pe TikTok care incurajeaza user-generated content si cresc interactiunea cu brandul tau." },
+          { "title": "TikTok Shopping", "description": "Integram catalogul de produse direct in TikTok pentru experienta de cumparaturi nativa, combinata cu campanii Facebook Ads pentru conversii cross-platform." },
+          { "title": "Targetare Audienta", "description": "Targetare avansata pe demografie, interese, comportament si audienta custom pentru a ajunge la utilizatorii cu cel mai mare potential de conversie." }
+        ]
+      },
+      "process": {
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Cream Campanii TikTok Ads de Succes",
+        "steps": [
+          { "title": "Analiza Audienta TikTok", "description": "Cercetam audienta ta tinta pe TikTok, analizam trendurile relevante si identificam oportunitatile specifice platformei pentru brandul tau." },
+          { "title": "Strategie & Creative Brief", "description": "Construim strategia campaniei si dezvoltam brief-ul creativ adaptat formatului si culturii TikTok, cu referinte la trenduri actuale." },
+          { "title": "Setup Campanie & Launch", "description": "Configuram campaniile in TikTok Ads Manager, setam targetarea si bugetul, si lansam cu monitorizare in timp real." },
+          { "title": "Monitorizare & Optimizare", "description": "Analizam performanta zilnic, testam variante de creative si optimizam pentru CPV si ROAS tot mai bune." }
+        ]
+      },
+      "stats": {
+        "overline": "REZULTATE",
+        "heading": "Performanta Campaniilor TikTok Ads",
+        "items": [
+          { "value": "500", "suffix": "K+", "label": "Views Lunare" },
+          { "value": "100", "suffix": "K+", "label": "Interactiuni" },
+          { "value": "50", "suffix": "+", "label": "Campanii TikTok" },
+          { "value": "8", "suffix": "x", "label": "ROAS Mediu" }
+        ]
+      },
+      "faq": {
+        "overline": "INTREBARI FRECVENTE",
+        "heading": "Intrebari despre Publicitatea TikTok Ads",
+        "items": [
+          { "question": "Cat costa publicitatea pe TikTok?", "answer": "Bugetul minim recomandat pentru TikTok Ads este de 300 EUR/luna, plus taxa de management. TikTok are costuri per view mai mici decat alte platforme, cu CPM-uri incepand de la 2-5 EUR. Costul final depinde de obiective, audienta si tipul de campanie ales." },
+          { "question": "Ce tip de continut functioneaza pe TikTok?", "answer": "Continutul autentic si nativ performeaza cel mai bine. Video-urile verticale de 15-60 secunde, cu hook puternic in primele 3 secunde, trend sounds si storytelling natural genereaza cele mai bune rezultate. Evitam reclamele clasice — pe TikTok, continutul trebuie sa se simta organic." },
+          { "question": "TikTok Ads e potrivit pentru afacerea mea?", "answer": "TikTok este ideal daca publicul tau tinta are 18-45 ani. Functioneaza excelent pentru e-commerce, beauty, food, fitness, fashion si entertainment. Insa chiar si brandurile B2B gasesc succes pe TikTok prin content educativ si thought leadership creativ." },
+          { "question": "Ce formate de reclame TikTok sunt disponibile?", "answer": "Principalele formate sunt: In-Feed Ads (reclame in feed), TopView (full-screen la deschidere), Spark Ads (amplificarea posturilor organice), Brand Effects (filtre AR) si TikTok Shopping (comert integrat). Fiecare format are avantaje specifice in functie de obiectivul campaniei." },
+          { "question": "Cat dureaza pana vad rezultate pe TikTok?", "answer": "Rezultatele initiale apar in primele 1-2 saptamani. Optimizarea completa necesita 3-4 saptamani pe masura ce algoritmul TikTok invata si noi identificam combinatiile de creative si audienta care performeaza cel mai bine." },
+          { "question": "TikTok Ads vs Instagram Reels — care e mai bun?", "answer": "TikTok exceleaza la reach organic si engagement cu audienta tanara (18-30 ani), in timp ce Instagram Reels beneficiaza de ecosistemul Meta si targetarea avansata. Recomandam o strategie multi-platform care include ambele, alaturi de campanii Google Ads pentru acoperire completa." }
+        ]
+      },
+      "cta": {
+        "heading": "Devino Viral pe TikTok cu AceAgency",
+        "description": "Programeaza o consultatie gratuita si descopera cum publicitatea TikTok poate genera vizibilitate si vanzari pentru afacerea ta.",
+        "primary": "Solicita o Oferta",
+        "secondary": "Programeaza un Call"
+      }
     },
     "seo": {
       "meta": { "title": "Servicii SEO Romania | Optimizare SEO Profesionala", "description": "Servicii SEO profesionale pentru pozitionare organica in Google. Audit SEO, optimizare tehnica si de continut. AceAgency Bucuresti." },
@@ -319,13 +424,66 @@
       }
     },
     "consultanta": {
-      "meta": { "title": "Consultanta Marketing Digital Romania", "description": "Consultanta marketing digital profesionala. Strategie personalizata, audit digital si plan de actiune. AceAgency Bucuresti." },
-      "hero": { "overline": "CONSULTANTA", "headline": "Consultanta Marketing Digital Personalizata", "description": "Analizam afacerea ta si construim o strategie digitala completa care genereaza rezultate masurabile." },
-      "features": { "overline": "SERVICII", "heading": "Ce Include Consultanta Noastra", "items": [{ "title": "Audit Digital Complet", "description": "Analiza completa a prezentei digitale: site, social media, publicitate si SEO." }, { "title": "Strategie Digitala", "description": "Plan strategic personalizat cu obiective, canale si KPI-uri clare." }, { "title": "Analiza Competitiei", "description": "Studiu detaliat al competitorilor si identificarea oportunitatilor de piata." }, { "title": "Plan de Actiune", "description": "Roadmap detaliat cu actiuni prioritizate, timeline si buget estimat." }] },
-      "process": { "overline": "PROCESUL NOSTRU", "heading": "Cum Functioneaza Consultanta", "steps": [{ "title": "Discovery Call", "description": "Discutam despre afacerea ta, obiective si provocarile actuale." }, { "title": "Audit & Analiza", "description": "Analizam complet prezenta digitala, competitia si oportunitatile." }, { "title": "Strategie & Prezentare", "description": "Construim si prezentam strategia cu recomandari detaliate." }, { "title": "Implementare & Support", "description": "Te asistam in implementare si oferim suport continuu." }] },
-      "stats": { "overline": "REZULTATE", "heading": "Impact Consultanta Marketing", "items": [{ "value": "60", "suffix": "+", "label": "Strategii Livrate" }, { "value": "95", "suffix": "%", "label": "Satisfactie Clienti" }, { "value": "180", "suffix": "%", "label": "Crestere Medie Revenue" }, { "value": "30", "suffix": "+", "label": "Industrii Acoperite" }] },
-      "faq": { "overline": "INTREBARI FRECVENTE", "heading": "Intrebari despre Consultanta Marketing", "items": [{ "question": "Cat costa o sesiune de consultanta?", "answer": "Sesiunile de consultanta incep de la 200 EUR/sesiune. Pachetele complete de strategie incep de la 1500 EUR." }, { "question": "Cat dureaza procesul de consultanta?", "answer": "Un proiect complet de consultanta dureaza 2-4 saptamani, de la audit la livrarea strategiei finale." }, { "question": "Oferiti si implementare?", "answer": "Da, pe langa consultanta oferim si servicii complete de implementare prin diviziile AceWeb, AceAds si AceMedia." }] },
-      "cta": { "heading": "Programeaza o Consultatie", "description": "Descopera cum o strategie digitala profesionala iti poate transforma afacerea.", "primary": "Solicita o Consultatie", "secondary": "Afla Mai Multe" }
+      "meta": {
+        "title": "Consultanță Marketing Digital Romania - AceAgency",
+        "description": "Consultanță marketing digital profesională: audit complet, strategie personalizată și plan de acțiune. Programează o consultație gratuită cu AceAgency!"
+      },
+      "hero": {
+        "overline": "CONSULTANȚĂ MARKETING",
+        "headline": "Consultanță Marketing Digital pentru Creștere Sustenabilă",
+        "description": "Analizăm afacerea ta în profunzime și construim o strategie digitală completă care integrează SEO, Google Ads, email marketing și social media pentru rezultate măsurabile pe termen lung."
+      },
+      "features": {
+        "overline": "SERVICII CONSULTANȚĂ",
+        "heading": "Ce Include Consultanța Noastră de Marketing",
+        "items": [
+          { "title": "Audit Marketing Digital", "description": "Analiză completă a prezenței digitale: site, SEO tehnic, campanii Google Ads, social media și email marketing — totul evaluat cu metrici concrete." },
+          { "title": "Strategie de Marketing", "description": "Plan strategic personalizat cu obiective SMART, canale prioritizate, KPI-uri clare și timeline de implementare." },
+          { "title": "Plan de Marketing Digital", "description": "Roadmap detaliat cu acțiuni prioritizate, buget estimat pe canal, calendar editorial și recomandări de conținut." },
+          { "title": "Analiză Competiție", "description": "Studiu detaliat al competitorilor direcți și indirecți, identificarea gap-urilor de piață și a oportunităților de poziționare." },
+          { "title": "Consultanță Branding & Poziționare", "description": "Definim identitatea de brand, propunerea unică de valoare și strategia de poziționare care te diferențiază pe piață." },
+          { "title": "Training Echipă", "description": "Workshop-uri practice pentru echipa ta pe teme de marketing digital, Google Ads, SEO, social media și email marketing." }
+        ]
+      },
+      "process": {
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Funcționează Consultanța de Marketing",
+        "steps": [
+          { "title": "Analiză Situație Curentă", "description": "Discutăm despre afacerea ta, analizăm prezența digitală existentă, campaniile active și identificăm provocările și oportunitățile." },
+          { "title": "Definire Obiective & KPI", "description": "Stabilim împreună obiective SMART, KPI-uri măsurabile și indicatorii de succes pentru fiecare canal digital." },
+          { "title": "Elaborare Strategie & Plan", "description": "Construim strategia digitală completă cu recomandări detaliate pentru SEO, publicitate plătită, email marketing și conținut." },
+          { "title": "Implementare & Monitorizare", "description": "Te asistăm în implementare prin echipele AceWeb, AceAds și AceMedia, și monitorizăm rezultatele pentru ajustări continue." }
+        ]
+      },
+      "stats": {
+        "overline": "REZULTATE",
+        "heading": "Impactul Consultanței Noastre de Marketing",
+        "items": [
+          { "value": "100", "suffix": "+", "label": "Strategii Livrate" },
+          { "value": "50", "suffix": "+", "label": "Clienți Consultați" },
+          { "value": "340", "suffix": "%", "label": "ROI Mediu" },
+          { "value": "98", "suffix": "%", "label": "Satisfacție Clienți" }
+        ]
+      },
+      "faq": {
+        "overline": "ÎNTREBĂRI FRECVENTE",
+        "heading": "Întrebări despre Consultanța de Marketing Digital",
+        "items": [
+          { "question": "Ce include o sesiune de consultanță marketing?", "answer": "O sesiune include analiza situației curente, discutarea obiectivelor de business, identificarea oportunităților digitale și recomandări acționabile. Prima sesiune de 30 minute este gratuită." },
+          { "question": "Cât costă consultanța de marketing digital?", "answer": "Sesiunile individuale încep de la 200 EUR. Pachetele complete de strategie (audit + plan + implementare) pornesc de la 1.500 EUR. Prețul depinde de complexitatea afacerii și de canalele digitale implicate." },
+          { "question": "Cât durează procesul de consultanță?", "answer": "Un proiect complet de consultanță durează 2-4 săptămâni, de la auditul inițial la livrarea strategiei finale. Consultanța continuă se face pe bază lunară cu sesiuni de follow-up." },
+          { "question": "Pentru cine este potrivită consultanța?", "answer": "Pentru orice afacere care vrea să crească digital: start-up-uri care au nevoie de direcție, afaceri mature care vor să optimizeze, sau companii care vor să intre pe canale noi (Google Ads, TikTok Ads, SEO)." },
+          { "question": "Ce rezultate pot aștepta după consultanță?", "answer": "Clienții noștri văd în medie o creștere de 340% ROI în primul an după implementarea strategiei. Rezultatele concrete depind de industrie, buget și viteza de implementare." },
+          { "question": "Oferiți și implementare, nu doar strategie?", "answer": "Da, AceAgency oferă servicii complete de implementare prin diviziile AceWeb (dezvoltare web), AceAds (Google Ads, Facebook Ads, TikTok Ads) și AceMedia (conținut video și grafic)." },
+          { "question": "Cum încep cu consultanța de marketing?", "answer": "Simplu: programează o consultație gratuită de 30 minute. Discutăm despre afacerea ta, identificăm provocările principale și propunem un plan de acțiune personalizat." }
+        ]
+      },
+      "cta": {
+        "heading": "Programează o Consultație Gratuită",
+        "description": "Descoperă cum o strategie digitală profesională îți poate transforma afacerea. Prima consultație de 30 minute este gratuită.",
+        "primary": "Solicită o Consultație",
+        "secondary": "Află Mai Multe"
+      }
     }
   },
   "home": {

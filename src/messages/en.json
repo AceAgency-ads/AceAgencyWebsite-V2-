@@ -319,13 +319,66 @@
       }
     },
     "consultanta": {
-      "meta": { "title": "Digital Marketing Consulting Romania", "description": "Professional digital marketing consulting. Personalized strategy, digital audit and action plan. AceAgency Bucharest." },
-      "hero": { "overline": "CONSULTING", "headline": "Personalized Digital Marketing Consulting", "description": "We analyze your business and build a complete digital strategy that generates measurable results." },
-      "features": { "overline": "SERVICES", "heading": "What Our Consulting Includes", "items": [{ "title": "Complete Digital Audit", "description": "Full analysis of digital presence: website, social media, advertising and SEO." }, { "title": "Digital Strategy", "description": "Personalized strategic plan with objectives, channels and clear KPIs." }, { "title": "Competition Analysis", "description": "Detailed competitor study and market opportunity identification." }, { "title": "Action Plan", "description": "Detailed roadmap with prioritized actions, timeline and estimated budget." }] },
-      "process": { "overline": "OUR PROCESS", "heading": "How Consulting Works", "steps": [{ "title": "Discovery Call", "description": "We discuss your business, objectives and current challenges." }, { "title": "Audit & Analysis", "description": "We fully analyze digital presence, competition and opportunities." }, { "title": "Strategy & Presentation", "description": "We build and present the strategy with detailed recommendations." }, { "title": "Implementation & Support", "description": "We assist with implementation and provide ongoing support." }] },
-      "stats": { "overline": "RESULTS", "heading": "Marketing Consulting Impact", "items": [{ "value": "60", "suffix": "+", "label": "Strategies Delivered" }, { "value": "95", "suffix": "%", "label": "Client Satisfaction" }, { "value": "180", "suffix": "%", "label": "Average Revenue Growth" }, { "value": "30", "suffix": "+", "label": "Industries Covered" }] },
-      "faq": { "overline": "FAQ", "heading": "Questions About Marketing Consulting", "items": [{ "question": "How much does a consulting session cost?", "answer": "Consulting sessions start from 200 EUR/session. Complete strategy packages start from 1500 EUR." }, { "question": "How long does the consulting process take?", "answer": "A complete consulting project takes 2-4 weeks, from audit to final strategy delivery." }, { "question": "Do you also offer implementation?", "answer": "Yes, in addition to consulting we offer complete implementation services through AceWeb, AceAds and AceMedia divisions." }] },
-      "cta": { "heading": "Schedule a Consultation", "description": "Discover how a professional digital strategy can transform your business.", "primary": "Request a Consultation", "secondary": "Learn More" }
+      "meta": {
+        "title": "Digital Marketing Consulting Romania - AceAgency",
+        "description": "Professional digital marketing consulting: complete audit, personalized strategy and action plan. Schedule a free consultation with AceAgency!"
+      },
+      "hero": {
+        "overline": "MARKETING CONSULTING",
+        "headline": "Digital Marketing Consulting for Sustainable Growth",
+        "description": "We analyze your business in depth and build a complete digital strategy integrating SEO, Google Ads, email marketing and social media for measurable long-term results."
+      },
+      "features": {
+        "overline": "CONSULTING SERVICES",
+        "heading": "What Our Marketing Consulting Includes",
+        "items": [
+          { "title": "Digital Marketing Audit", "description": "Complete analysis of your digital presence: website, technical SEO, Google Ads campaigns, social media and email marketing — all evaluated with concrete metrics." },
+          { "title": "Marketing Strategy Development", "description": "Personalized strategic plan with SMART objectives, prioritized channels, clear KPIs and implementation timeline." },
+          { "title": "Digital Marketing Plan", "description": "Detailed roadmap with prioritized actions, estimated budget per channel, editorial calendar and content recommendations." },
+          { "title": "Competitive Analysis", "description": "In-depth study of direct and indirect competitors, identifying market gaps and positioning opportunities." },
+          { "title": "Brand Positioning Consulting", "description": "We define your brand identity, unique value proposition and positioning strategy that differentiates you in the market." },
+          { "title": "Team Training & Workshops", "description": "Hands-on workshops for your team on digital marketing, Google Ads, SEO, social media and email marketing." }
+        ]
+      },
+      "process": {
+        "overline": "OUR PROCESS",
+        "heading": "How Marketing Consulting Works",
+        "steps": [
+          { "title": "Current Situation Analysis", "description": "We discuss your business, analyze your existing digital presence, active campaigns and identify challenges and opportunities." },
+          { "title": "Define Objectives & KPIs", "description": "Together we establish SMART objectives, measurable KPIs and success indicators for each digital channel." },
+          { "title": "Develop Strategy & Plan", "description": "We build the complete digital strategy with detailed recommendations for SEO, paid advertising, email marketing and content." },
+          { "title": "Implementation & Monitoring", "description": "We assist with implementation through AceWeb, AceAds and AceMedia teams, and monitor results for continuous adjustments." }
+        ]
+      },
+      "stats": {
+        "overline": "RESULTS",
+        "heading": "Our Marketing Consulting Impact",
+        "items": [
+          { "value": "100", "suffix": "+", "label": "Strategies Delivered" },
+          { "value": "50", "suffix": "+", "label": "Clients Consulted" },
+          { "value": "340", "suffix": "%", "label": "Average ROI" },
+          { "value": "98", "suffix": "%", "label": "Client Satisfaction" }
+        ]
+      },
+      "faq": {
+        "overline": "FAQ",
+        "heading": "Questions About Digital Marketing Consulting",
+        "items": [
+          { "question": "What does a marketing consulting session include?", "answer": "A session includes current situation analysis, business objectives discussion, digital opportunity identification and actionable recommendations. The first 30-minute session is free." },
+          { "question": "How much does digital marketing consulting cost?", "answer": "Individual sessions start from 200 EUR. Complete strategy packages (audit + plan + implementation) start from 1,500 EUR. Price depends on business complexity and digital channels involved." },
+          { "question": "How long does the consulting process take?", "answer": "A complete consulting project takes 2-4 weeks, from initial audit to final strategy delivery. Ongoing consulting is done on a monthly basis with follow-up sessions." },
+          { "question": "Who is consulting suitable for?", "answer": "For any business looking to grow digitally: startups that need direction, mature businesses looking to optimize, or companies wanting to enter new channels (Google Ads, TikTok Ads, SEO)." },
+          { "question": "What results can I expect after consulting?", "answer": "Our clients see an average 340% ROI growth in the first year after strategy implementation. Concrete results depend on industry, budget and implementation speed." },
+          { "question": "Do you offer implementation, not just strategy?", "answer": "Yes, AceAgency offers complete implementation services through AceWeb (web development), AceAds (Google Ads, Facebook Ads, TikTok Ads) and AceMedia (video and graphic content) divisions." },
+          { "question": "How do I start with marketing consulting?", "answer": "Simple: schedule a free 30-minute consultation. We discuss your business, identify the main challenges and propose a personalized action plan." }
+        ]
+      },
+      "cta": {
+        "heading": "Schedule a Free Consultation",
+        "description": "Discover how a professional digital strategy can transform your business. The first 30-minute consultation is free.",
+        "primary": "Request a Consultation",
+        "secondary": "Learn More"
+      }
     }
   },
   "home": {
