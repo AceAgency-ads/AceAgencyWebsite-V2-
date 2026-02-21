@@ -230,22 +230,127 @@
       }
     },
     "facebookAds": {
-      "meta": { "title": "Facebook Ads Services | Facebook Ads Agency", "description": "Professional Facebook and Instagram Ads campaigns. Precise targeting, creative ads and continuous optimization. AceAgency Bucharest." },
-      "hero": { "overline": "FACEBOOK ADS", "headline": "Facebook Ads Campaigns That Convert", "description": "Facebook and Instagram advertising strategies that generate leads and sales for your business." },
-      "features": { "overline": "SERVICES", "heading": "What We Offer in Facebook Ads", "items": [{ "title": "Facebook Feed Ads", "description": "Feed ads with demographic and interest-based targeting." }, { "title": "Instagram Ads", "description": "Visual campaigns on Instagram Stories, Reels and Feed." }, { "title": "Lead Generation", "description": "Lead forms directly within the Facebook platform." }, { "title": "Remarketing", "description": "Recapture visitors through Facebook pixel and custom audiences." }] },
-      "process": { "overline": "OUR PROCESS", "heading": "How We Manage Facebook Ads Campaigns", "steps": [{ "title": "Audience Analysis", "description": "We identify the ideal target audience using demographic and behavioral data." }, { "title": "Creative & Setup", "description": "We create persuasive visuals and copy, configure campaigns with optimal targeting." }, { "title": "Testing & Optimization", "description": "We A/B test ad variations and optimize for maximum conversions." }, { "title": "Reporting", "description": "Detailed reports with performance metrics and scaling recommendations." }] },
-      "stats": { "overline": "RESULTS", "heading": "Facebook Ads Performance", "items": [{ "value": "280", "suffix": "%", "label": "Average ROI" }, { "value": "100", "suffix": "+", "label": "Active Campaigns" }, { "value": "45", "suffix": "+", "label": "Clients" }, { "value": "5", "suffix": "M+", "label": "Monthly Reach" }] },
-      "faq": { "overline": "FAQ", "heading": "Questions About Facebook Ads", "items": [{ "question": "How much does Facebook advertising cost?", "answer": "The minimum recommended budget is 300 EUR/month. Cost per lead varies by industry, from 2-5 EUR for B2C to 10-30 EUR for B2B." }, { "question": "Facebook or Instagram Ads?", "answer": "We recommend both platforms for maximum coverage. Instagram is more effective for visual brands, Facebook for detailed targeting and lead generation." }, { "question": "How long until I see results?", "answer": "First results appear within 1-2 weeks. Optimal performance is reached after 4-6 weeks of continuous optimization." }] },
-      "cta": { "heading": "Grow with Facebook Ads", "description": "Schedule a free consultation for your Facebook and Instagram campaigns.", "primary": "Request a Quote", "secondary": "Schedule a Consultation" }
+      "meta": {
+        "title": "Facebook Ads Services | Facebook Ads Agency - AceAgency",
+        "description": "Professional Facebook and Instagram Ads campaigns with precise targeting and measurable ROI. Facebook advertising agency in Bucharest. Request a quote!"
+      },
+      "hero": {
+        "overline": "FACEBOOK & INSTAGRAM ADS",
+        "headline": "Facebook Ads Campaigns That Drive Real Conversions",
+        "description": "We create Facebook and Instagram advertising strategies that generate qualified leads, increase sales and maximize your return on social media advertising investment."
+      },
+      "features": {
+        "overline": "FACEBOOK ADS SERVICES",
+        "heading": "Complete Facebook and Instagram Advertising Solutions",
+        "items": [
+          { "title": "Awareness Campaigns", "description": "We grow your brand recognition through reach and brand awareness campaigns targeted at your ideal audience on Facebook and Instagram." },
+          { "title": "Traffic Campaigns", "description": "We drive qualified visitors to your website through ads optimized for clicks and engagement across both platforms." },
+          { "title": "Conversion Campaigns", "description": "We generate leads and direct sales through campaigns optimized with Facebook Pixel and Conversions API for precise tracking." },
+          { "title": "Advanced Retargeting", "description": "We recapture website visitors and users who interacted with your brand through dynamic remarketing on Facebook and Instagram." },
+          { "title": "Custom & Lookalike Audiences", "description": "We build custom and lookalike audiences based on your existing customer data to find new high-potential customers." },
+          { "title": "Creative Optimization", "description": "We constantly test and optimize visuals, copy and ad formats — from carousels to Reels — for maximum performance." }
+        ]
+      },
+      "process": {
+        "overline": "OUR PROCESS",
+        "heading": "How We Manage Your Facebook Ads Campaigns",
+        "steps": [
+          { "title": "Account Audit & Pixel Setup", "description": "We analyze your existing account, verify Facebook Pixel and Conversions API configuration, and identify improvement opportunities." },
+          { "title": "Audience Strategy", "description": "We build your ideal audience using demographics, interests, behaviors and lookalike audiences based on your existing customers." },
+          { "title": "Campaign Creation & Ad Creatives", "description": "We develop campaign structure and create persuasive visuals and copy tailored to each audience segment and placement." },
+          { "title": "Optimization & Scaling", "description": "We monitor performance daily, A/B test ad variations and scale profitable campaigns for continuous growth." }
+        ]
+      },
+      "stats": {
+        "overline": "RESULTS",
+        "heading": "Facebook & Instagram Ads Campaign Performance",
+        "items": [
+          { "value": "2", "suffix": "M+", "label": "Monthly Reach" },
+          { "value": "50", "suffix": "K+", "label": "Conversions Generated" },
+          { "value": "200", "suffix": "+", "label": "Campaigns Managed" },
+          { "value": "15", "suffix": "x", "label": "Average ROAS" }
+        ]
+      },
+      "faq": {
+        "overline": "FAQ",
+        "heading": "Questions About Facebook & Instagram Ads",
+        "items": [
+          { "question": "How much does Facebook and Instagram advertising cost?", "answer": "The minimum recommended budget for Facebook Ads is 300 EUR/month, plus management fee. Cost per lead varies by industry: from 2-5 EUR for B2C to 10-30 EUR for B2B. Contact us for a personalized estimate based on your goals." },
+          { "question": "How does Facebook Pixel work and why is it important?", "answer": "Facebook Pixel is a tracking code installed on your website that monitors visitor actions. It is essential for campaign optimization, custom audience creation and remarketing. We also configure Conversions API for precise tracking even with current privacy restrictions." },
+          { "question": "What types of audiences do you target?", "answer": "We use core audiences (demographics, interests, behaviors), custom audiences (website visitors, email lists, page interactions) and lookalike audiences (people similar to your existing customers). This combination ensures maximum reach with high relevance." },
+          { "question": "Facebook Ads or Instagram Ads — which is better?", "answer": "It depends on your goals and audience. Instagram excels for visual brands and 18-35 audiences, while Facebook offers more detailed targeting and better performance for B2B lead generation. We recommend a cross-platform strategy using both for optimal results, combined with Google Ads campaigns for complete coverage." },
+          { "question": "What ad formats do you use?", "answer": "We use all available formats: static images, carousels, video, Reels, Stories and collections. We choose the optimal format based on campaign objective and A/B test to identify what works best for your specific audience." },
+          { "question": "How long until I see results?", "answer": "First results appear within 1-2 weeks of launch. Optimal performance is reached after 4-6 weeks of continuous optimization, as Meta's algorithm learns and we accumulate enough data for informed decisions." },
+          { "question": "How do you measure campaign success?", "answer": "We track clear KPIs: cost per lead, cost per conversion, ROAS, reach, frequency and click-through rate. You receive detailed monthly reports with performance analysis and optimization recommendations. We combine Facebook Ads data with Google Ads for a complete cross-platform view." }
+        ]
+      },
+      "cta": {
+        "heading": "Grow Your Business with Facebook & Instagram Ads",
+        "description": "Schedule a free consultation and discover how Facebook and Instagram advertising can generate leads and sales for your business.",
+        "primary": "Request a Quote",
+        "secondary": "Schedule a Call"
+      }
     },
     "tiktokAds": {
-      "meta": { "title": "TikTok Ads Services | TikTok Advertising Romania", "description": "Creative TikTok Ads campaigns for the next generation audience. Video advertising on TikTok with AceAgency Bucharest." },
-      "hero": { "overline": "TIKTOK ADS", "headline": "TikTok Advertising That Captures Attention", "description": "Creative and viral TikTok Ads campaigns that connect your brand with the next generation audience." },
-      "features": { "overline": "SERVICES", "heading": "What We Offer in TikTok Ads", "items": [{ "title": "In-Feed Ads", "description": "Native ads in the TikTok feed that integrate organically with content." }, { "title": "Branded Content", "description": "Collaborations with TikTok creators for authentic and viral content." }, { "title": "Spark Ads", "description": "Amplify high-performing organic posts with advertising budget." }, { "title": "Lead Generation", "description": "Native TikTok lead forms for quick conversions." }] },
-      "process": { "overline": "OUR PROCESS", "heading": "How We Create TikTok Ads Campaigns", "steps": [{ "title": "Research & Trends", "description": "We analyze TikTok trends and identify opportunities for your brand." }, { "title": "Video Creation", "description": "We produce authentic video content adapted to TikTok's format and audience." }, { "title": "Launch & Optimization", "description": "We launch campaigns with precise targeting and optimize in real-time." }, { "title": "Analysis & Scale", "description": "We report results and scale high-performing content." }] },
-      "stats": { "overline": "RESULTS", "heading": "TikTok Ads Performance", "items": [{ "value": "200", "suffix": "%", "label": "Engagement Rate" }, { "value": "50", "suffix": "+", "label": "TikTok Campaigns" }, { "value": "10", "suffix": "M+", "label": "Views Generated" }, { "value": "30", "suffix": "+", "label": "Clients" }] },
-      "faq": { "overline": "FAQ", "heading": "Questions About TikTok Ads", "items": [{ "question": "Are TikTok Ads right for my business?", "answer": "TikTok is ideal if your target audience is 18-45 years old. It works excellently for e-commerce, beauty, food, fitness and entertainment." }, { "question": "How much does TikTok advertising cost?", "answer": "The minimum recommended budget is 300 EUR/month. TikTok has lower cost per view than other platforms, with CPMs starting from 2-5 EUR." }, { "question": "Do you have TikTok Ads experience?", "answer": "Yes, we have been managing TikTok Ads campaigns for over 2 years, with proven results across multiple industries." }] },
-      "cta": { "heading": "Go Viral on TikTok", "description": "Discover how TikTok advertising can transform your business.", "primary": "Request a Quote", "secondary": "Schedule a Consultation" }
+      "meta": {
+        "title": "TikTok Ads Services | TikTok Advertising Romania - AceAgency",
+        "description": "Creative and high-performing TikTok Ads campaigns for audiences in Romania. TikTok video advertising with measurable results. Request a quote!"
+      },
+      "hero": {
+        "overline": "TIKTOK ADS",
+        "headline": "TikTok Ads That Capture Attention and Drive Results",
+        "description": "We create creative and viral TikTok Ads campaigns that connect your brand with the next generation audience in Romania. From In-Feed Ads to Spark Ads, we maximize the impact of every investment."
+      },
+      "features": {
+        "overline": "TIKTOK ADS SERVICES",
+        "heading": "TikTok Ad Formats for Every Objective",
+        "items": [
+          { "title": "In-Feed Ads", "description": "Native ads in the For You feed that integrate organically with content and capture user attention naturally." },
+          { "title": "TopView Ads", "description": "Full-screen video ads that appear when opening the TikTok app, providing maximum visibility and guaranteed impact for your brand." },
+          { "title": "Spark Ads", "description": "We amplify high-performing organic posts from your brand or creators with advertising budget for extended reach and engagement." },
+          { "title": "Brand Effects", "description": "AR effects and branded filters on TikTok that encourage user-generated content and increase interaction with your brand." },
+          { "title": "TikTok Shopping", "description": "We integrate your product catalog directly into TikTok for a native shopping experience, combined with Facebook Ads campaigns for cross-platform conversions." },
+          { "title": "Audience Targeting", "description": "Advanced targeting by demographics, interests, behavior and custom audiences to reach users with the highest conversion potential." }
+        ]
+      },
+      "process": {
+        "overline": "OUR PROCESS",
+        "heading": "How We Create Successful TikTok Ads Campaigns",
+        "steps": [
+          { "title": "TikTok Audience Analysis", "description": "We research your target audience on TikTok, analyze relevant trends and identify platform-specific opportunities for your brand." },
+          { "title": "Strategy & Creative Brief", "description": "We build the campaign strategy and develop the creative brief adapted to TikTok's format and culture, referencing current trends." },
+          { "title": "Campaign Setup & Launch", "description": "We configure campaigns in TikTok Ads Manager, set targeting and budget, and launch with real-time monitoring." },
+          { "title": "Monitoring & Optimization", "description": "We analyze performance daily, test creative variations and optimize for continuously improving CPV and ROAS." }
+        ]
+      },
+      "stats": {
+        "overline": "RESULTS",
+        "heading": "TikTok Ads Campaign Performance",
+        "items": [
+          { "value": "500", "suffix": "K+", "label": "Monthly Views" },
+          { "value": "100", "suffix": "K+", "label": "Interactions" },
+          { "value": "50", "suffix": "+", "label": "TikTok Campaigns" },
+          { "value": "8", "suffix": "x", "label": "Average ROAS" }
+        ]
+      },
+      "faq": {
+        "overline": "FAQ",
+        "heading": "Questions About TikTok Ads",
+        "items": [
+          { "question": "How much does TikTok advertising cost?", "answer": "The minimum recommended budget for TikTok Ads is 300 EUR/month, plus management fee. TikTok has lower cost per view than other platforms, with CPMs starting from 2-5 EUR. Final cost depends on objectives, audience and chosen campaign type." },
+          { "question": "What type of content works on TikTok?", "answer": "Authentic, native content performs best. Vertical videos of 15-60 seconds with a strong hook in the first 3 seconds, trend sounds and natural storytelling generate the best results. We avoid classic ads — on TikTok, content needs to feel organic." },
+          { "question": "Are TikTok Ads right for my business?", "answer": "TikTok is ideal if your target audience is 18-45 years old. It works excellently for e-commerce, beauty, food, fitness, fashion and entertainment. However, even B2B brands find success on TikTok through educational content and creative thought leadership." },
+          { "question": "What TikTok ad formats are available?", "answer": "The main formats are: In-Feed Ads (feed ads), TopView (full-screen on app open), Spark Ads (amplifying organic posts), Brand Effects (AR filters) and TikTok Shopping (integrated commerce). Each format has specific advantages depending on campaign objective." },
+          { "question": "How long until I see results on TikTok?", "answer": "Initial results appear within the first 1-2 weeks. Full optimization takes 3-4 weeks as TikTok's algorithm learns and we identify the creative and audience combinations that perform best." },
+          { "question": "TikTok Ads vs Instagram Reels — which is better?", "answer": "TikTok excels at organic reach and engagement with younger audiences (18-30), while Instagram Reels benefits from Meta's ecosystem and advanced targeting. We recommend a multi-platform strategy that includes both, alongside Google Ads campaigns for complete coverage." }
+        ]
+      },
+      "cta": {
+        "heading": "Go Viral on TikTok with AceAgency",
+        "description": "Schedule a free consultation and discover how TikTok advertising can generate visibility and sales for your business.",
+        "primary": "Request a Quote",
+        "secondary": "Schedule a Call"
+      }
     },
     "seo": {
       "meta": { "title": "SEO Services Romania | Professional SEO Optimization", "description": "Professional SEO services for organic Google positioning. SEO audit, technical and content optimization. AceAgency Bucharest." },
