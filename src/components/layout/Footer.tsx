@@ -1,11 +1,13 @@
 'use client';
 
+import { useActionState } from 'react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Linkedin, Instagram, Facebook } from 'lucide-react';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 import { Container } from '@/components/layout/Container';
+import { submitNewsletter } from '@/lib/actions/newsletter';
 
 /** Division badge data */
 const DIVISIONS = ['web', 'ads', 'ai', 'media'] as const;
@@ -41,6 +43,10 @@ export function Footer(): React.JSX.Element {
   const t = useTranslations('footer');
   const tNav = useTranslations('navigation');
   const tSocial = useTranslations('social');
+  const [newsletterState, newsletterAction, newsletterPending] = useActionState(
+    submitNewsletter,
+    { success: false }
+  );
 
   return (
     <footer className="bg-[#262523] py-16 text-[#D9D9D9] lg:py-24">
@@ -120,36 +126,61 @@ export function Footer(): React.JSX.Element {
               <h3 className="font-heading text-sm font-bold uppercase tracking-[0.12em] text-[#a0a0a0]">
                 {t('newsletter.title')}
               </h3>
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-                className="flex flex-col gap-3"
-              >
-                <div className="flex">
+
+              {newsletterState.success ? (
+                <p className="text-sm text-[#66F3A6]">
+                  {t('newsletter.success')}
+                </p>
+              ) : (
+                <form
+                  action={newsletterAction}
+                  className="flex flex-col gap-3"
+                >
+                  {/* Honeypot — hidden from humans */}
                   <input
-                    type="email"
-                    placeholder={t('newsletter.placeholder')}
-                    required
-                    className="h-12 flex-1 rounded-l-md border border-[#4a464380] bg-[#3a3836] px-4 text-sm text-[#D9D9D9] placeholder:text-[#a0a0a0]/60 focus:outline-none focus:ring-1 focus:ring-[#56151A]"
-                    aria-label={t('newsletter.placeholder')}
+                    type="text"
+                    name="honeypot"
+                    autoComplete="off"
+                    tabIndex={-1}
+                    className="absolute left-[-9999px] h-0 w-0 opacity-0"
+                    aria-hidden="true"
                   />
-                  <button
-                    type="submit"
-                    className="h-12 rounded-r-md bg-[#56151A] px-4 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A2025]"
-                  >
-                    {t('newsletter.submit')}
-                  </button>
-                </div>
-                <label className="flex items-start gap-2 text-xs text-[#a0a0a0]/80">
-                  <input
-                    type="checkbox"
-                    required
-                    className="mt-0.5 h-4 w-4 rounded border-[#4a464380] bg-transparent accent-[#56151A]"
-                  />
-                  <span>{t('newsletter.gdpr')}</span>
-                </label>
-              </form>
+
+                  <div className="flex">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder={t('newsletter.placeholder')}
+                      required
+                      disabled={newsletterPending}
+                      className="h-12 flex-1 rounded-l-md border border-[#4a464380] bg-[#3a3836] px-4 text-sm text-[#D9D9D9] placeholder:text-[#a0a0a0]/60 focus:outline-none focus:ring-1 focus:ring-[#56151A] disabled:opacity-50"
+                      aria-label={t('newsletter.placeholder')}
+                    />
+                    <button
+                      type="submit"
+                      disabled={newsletterPending}
+                      className="h-12 rounded-r-md bg-[#56151A] px-4 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A2025] disabled:opacity-50"
+                    >
+                      {newsletterPending ? '...' : t('newsletter.submit')}
+                    </button>
+                  </div>
+
+                  {newsletterState.error && (
+                    <p className="text-xs text-red-400">
+                      {t('newsletter.error')}
+                    </p>
+                  )}
+
+                  <label className="flex items-start gap-2 text-xs text-[#a0a0a0]/80">
+                    <input
+                      type="checkbox"
+                      required
+                      className="mt-0.5 h-4 w-4 rounded border-[#4a464380] bg-transparent accent-[#56151A]"
+                    />
+                    <span>{t('newsletter.gdpr')}</span>
+                  </label>
+                </form>
+              )}
             </div>
 
             {/* Column 4: Social links */}

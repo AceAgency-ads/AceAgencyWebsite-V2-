@@ -5,6 +5,7 @@ import { ContactForm } from '@/components/sections/contact/ContactForm';
 import { ContactInfo } from '@/components/sections/contact/ContactInfo';
 import { GoogleMap } from '@/components/sections/contact/GoogleMap';
 import { ContactFAQ } from '@/components/sections/contact/ContactFAQ';
+import { BookingSection } from '@/components/sections/contact/BookingSection';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 
 interface ContactPageProps {
@@ -96,8 +97,7 @@ export default async function ContactPage({
 
       <GoogleMap />
 
-      {/* Booking section placeholder -- implemented in Plan 02 */}
-      <div id="booking-placeholder" />
+      <BookingSection />
 
       <ContactFAQ />
     </>

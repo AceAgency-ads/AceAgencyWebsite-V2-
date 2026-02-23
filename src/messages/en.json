@@ -19,7 +19,9 @@
       "title": "Newsletter",
       "placeholder": "Your email address",
       "submit": "Subscribe",
-      "gdpr": "I agree to the processing of personal data"
+      "gdpr": "I agree to the processing of personal data",
+      "success": "Thanks for subscribing!",
+      "error": "Something went wrong. Please try again."
     },
     "copyright": "\u00a9 2026 AceAgency. All rights reserved.",
     "divisions": {
