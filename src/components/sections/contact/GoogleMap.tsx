@@ -1,21 +1,46 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
+import * as CookieConsent from 'vanilla-cookieconsent';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 
 /**
  * Google Maps embed with dark styling via CSS filter.
- * Full-width section (no container rounding — map bleeds edge-to-edge).
- * Cookie consent gate placeholder for Phase 6.
+ * Full-width section (no container rounding -- map bleeds edge-to-edge).
+ * Gated behind functionality cookie consent via vanilla-cookieconsent.
  */
 export function GoogleMap(): React.JSX.Element {
-  // Phase 6: Wire cookie consent check here
-  // For now, always show the map
-  const consentGranted = true;
+  const t = useTranslations('contact');
+
+  const [consentGranted, setConsentGranted] = useState(() => {
+    try {
+      return CookieConsent.acceptedCategory('functionality');
+    } catch {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    const handleConsentChange = (): void => {
+      setConsentGranted(CookieConsent.acceptedCategory('functionality'));
+    };
+
+    window.addEventListener('cc:onChange', handleConsentChange);
+    window.addEventListener('cc:onConsent', handleConsentChange);
+
+    return () => {
+      window.removeEventListener('cc:onChange', handleConsentChange);
+      window.removeEventListener('cc:onConsent', handleConsentChange);
+    };
+  }, []);
 
   if (!consentGranted) {
     return (
       <SectionWrapper theme="dark" rounded={false}>
         <div className="flex h-[300px] items-center justify-center text-center md:h-[400px]">
           <p className="text-[var(--section-text-muted)]">
-            Accepta cookies functionale pentru a vedea harta
+            {t('map.cookieRequired')}
           </p>
         </div>
       </SectionWrapper>
