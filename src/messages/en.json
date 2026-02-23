@@ -808,6 +808,14 @@
         { "question": "How do you measure results?", "answer": "We use Google Analytics, Google Ads, Facebook Ads Manager and other platforms for detailed monthly reports with clear KPIs." },
         { "question": "Do you work with small businesses?", "answer": "Absolutely! We work with businesses of all sizes, from startups to large companies. Our solutions are scalable." }
       ]
+    },
+    "newsletter": {
+      "overline": "NEWSLETTER",
+      "heading": "Stay Up to Date",
+      "description": "Get digital marketing tips, case studies and news delivered straight to your inbox.",
+      "placeholder": "Your email address",
+      "submit": "Subscribe",
+      "success": "Thanks! You've successfully subscribed."
     }
   },
   "thankYou": {

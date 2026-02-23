@@ -808,6 +808,14 @@
         { "question": "Cum masurati rezultatele?", "answer": "Folosim Google Analytics, Google Ads, Facebook Ads Manager si alte platforme pentru rapoarte lunare detaliate cu KPI-uri clare." },
         { "question": "Lucrati cu companii mici?", "answer": "Absolut! Lucram cu afaceri de toate dimensiunile, de la startup-uri la companii mari. Solutiile noastre sunt scalabile." }
       ]
+    },
+    "newsletter": {
+      "overline": "NEWSLETTER",
+      "heading": "Ramai la Curent",
+      "description": "Primeste sfaturi de marketing digital, studii de caz si noutati direct in inbox.",
+      "placeholder": "Adresa ta de email",
+      "submit": "Aboneaza-te",
+      "success": "Multumim! Te-ai abonat cu succes."
     }
   },
   "thankYou": {

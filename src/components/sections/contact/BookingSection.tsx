@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import Cal from '@calcom/embed-react';
+import Cal, { getCalApi } from '@calcom/embed-react';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 
@@ -10,15 +10,27 @@ import { ScrollReveal } from '@/components/animations/ScrollReveal';
  * Cal.com inline booking embed for the Contact page.
  *
  * Renders inside a dark container to prevent white flash during Cal.com load
- * (see RESEARCH.md Pitfall 3). Uses NEXT_PUBLIC_CAL_LINK env var or falls
- * back to "aceagency/consultatie".
+ * (see RESEARCH.md Pitfall 3). Uses the aceads/30min cal link with dark theme
+ * and month_view layout.
  */
 export function BookingSection(): React.JSX.Element {
   const t = useTranslations('contact.booking');
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const calLink =
-    process.env.NEXT_PUBLIC_CAL_LINK ?? 'aceagency/consultatie';
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: '30min' });
+      cal('ui', {
+        theme: 'dark',
+        cssVarsPerTheme: {
+          light: { 'cal-brand': '#535353' },
+          dark: { 'cal-brand': '#290000' },
+        },
+        hideEventTypeDetails: false,
+        layout: 'month_view',
+      });
+    })();
+  }, []);
 
   return (
     <SectionWrapper theme="light" id="booking">
@@ -52,13 +64,14 @@ export function BookingSection(): React.JSX.Element {
           )}
 
           <Cal
-            calLink={calLink}
-            style={{ width: '100%', height: '100%', overflow: 'auto' }}
+            namespace="30min"
+            calLink="aceads/30min"
+            style={{ width: '100%', height: '100%', overflow: 'scroll' }}
             config={{
-              theme: 'dark' as const,
-              hideEventTypeDetails: 'false',
+              layout: 'month_view',
+              useSlotsViewOnSmallScreen: 'true',
+              theme: 'dark',
             }}
-            calOrigin="https://cal.com"
             onLoad={() => setIsLoaded(true)}
           />
         </div>

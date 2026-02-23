@@ -6,6 +6,7 @@ import { ContactInfo } from '@/components/sections/contact/ContactInfo';
 import { GoogleMap } from '@/components/sections/contact/GoogleMap';
 import { ContactFAQ } from '@/components/sections/contact/ContactFAQ';
 import { BookingSection } from '@/components/sections/contact/BookingSection';
+import { ContactNewsletter } from '@/components/sections/contact/ContactNewsletter';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 
 interface ContactPageProps {
@@ -98,6 +99,8 @@ export default async function ContactPage({
       <GoogleMap />
 
       <BookingSection />
+
+      <ContactNewsletter />
 
       <ContactFAQ />
     </>
