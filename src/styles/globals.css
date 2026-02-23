@@ -156,6 +156,28 @@
     font-family: var(--font-heading, ui-sans-serif, system-ui, sans-serif);
     line-height: 1.1;
   }
+
+  /* Prevent long words from overflowing containers */
+  h1, h2, h3, h4, h5, h6,
+  p, span {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /*
+   * GSAP SplitText classes — prevent mid-word line breaks.
+   * SplitText wraps each char in a <span> with display:inline-block.
+   * Without white-space:nowrap on word spans, browsers can wrap
+   * between character spans, breaking words at arbitrary points.
+   */
+  .split-text-char {
+    display: inline-block !important;
+  }
+
+  .split-text-word {
+    display: inline-block !important;
+    white-space: nowrap;
+  }
 }
 
 /* ============================================================
@@ -207,4 +229,33 @@ main > section + section {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* ============================================================
+   Cookie Consent Banner — Brand overrides for vanilla-cookieconsent
+   ============================================================ */
+:root {
+  --cc-bg: #262523;
+  --cc-text: #D9D9D9;
+  --cc-btn-primary-bg: #56151A;
+  --cc-btn-primary-text: #FFFFFF;
+  --cc-btn-primary-hover-bg: #7A2025;
+  --cc-btn-primary-hover-text: #FFFFFF;
+  --cc-btn-secondary-bg: #3a3836;
+  --cc-btn-secondary-text: #D9D9D9;
+  --cc-btn-secondary-hover-bg: #4a4643;
+  --cc-btn-secondary-hover-text: #FFFFFF;
+  --cc-toggle-on-bg: #56151A;
+  --cc-toggle-off-bg: #4a4643;
+  --cc-toggle-readonly-bg: #3a3836;
+  --cc-cookie-category-block-bg: #3a3836;
+  --cc-cookie-category-block-bg-hover: #4a4643;
+  --cc-overlay-bg: rgba(0, 0, 0, 0.65);
+  --cc-separator-border-color: #4a464380;
+  --cc-modal-border-radius: 0.5rem;
+}
+
+/* Ensure consent banner sits above header and other fixed elements */
+#cc-main {
+  z-index: 10000;
 }
