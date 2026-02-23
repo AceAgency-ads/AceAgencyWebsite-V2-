@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 Phase: 6 of 8 (Compliance and Legal) — COMPLETE
 Plan: 3 of 3 in current phase (all plans complete)
 Status: Phase 6 complete — GDPR cookie consent, legal pages, FAQ page all functional
-Last activity: 2026-02-23 — Completed 06-01-PLAN.md (GDPR cookie consent with GTM Consent Mode v2)
+Last activity: 2026-02-23 — Completed 06-02-PLAN.md (Legal pages: Privacy, Cookies, Terms)
 
 Progress: [███████████████░░] 63% (17/27 plans estimated)
 
@@ -42,6 +42,7 @@ Progress: [███████████████░░] 63% (17/27 plans
 | Phase 05 P02 | 4min | 2 tasks | 6 files |
 | Phase 06 P03 | 3min | 1 task | 4 files |
 | Phase 06 P01 | 5min | 2 tasks | 6 files |
+| Phase 06 P02 | 7min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -115,6 +116,8 @@ Recent decisions affecting current work:
 - [06-01]: updateGtagConsent uses lazy require() to avoid bundling vanilla-cookieconsent in server context.
 - [06-03]: FAQ page uses categorized structure (categories array with name + items) instead of flat list for better visual hierarchy.
 - [06-03]: Inline hero section created for FAQ page since LegalHero from Plan 02 not yet available (parallel execution).
+- [06-02]: LegalHero is server component (no animations) — legal pages prioritize content readability over visual effects.
+- [06-02]: LegalContent uses dynamic namespace prop to render privacy/cookies/terms from same reusable component.
 
 ### Pending Todos
 
@@ -129,5 +132,5 @@ None for Phase 6 Plan 03.
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 06-01-PLAN.md (GDPR cookie consent with GTM Consent Mode v2) — Phase 6 complete
+Stopped at: Completed 06-02-PLAN.md (Legal pages: Privacy, Cookies, Terms) — Phase 6 all plans complete
 Resume file: None

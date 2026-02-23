@@ -29,9 +29,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **PAGE-09**: Consultanta Marketing service page with structured content, benefits, process, FAQ, CTA
 - [x] **PAGE-10**: Contact page with form, Google Maps embed, Cal.com booking widget — implemented via `/frontend-design` against `design-system/pages/contact.md`
 - [x] **PAGE-11**: FAQ page (/intrebari-frecvente) with FAQPage schema markup
-- [ ] **PAGE-12**: Privacy policy page (/politica-confidentialitate) in RO and EN
-- [ ] **PAGE-13**: Cookie policy page (/politica-cookies) in RO and EN
-- [ ] **PAGE-14**: Terms of service page (/termeni-si-conditii) in RO and EN
+- [x] **PAGE-12**: Privacy policy page (/politica-confidentialitate) in RO and EN
+- [x] **PAGE-13**: Cookie policy page (/politica-cookies) in RO and EN
+- [x] **PAGE-14**: Terms of service page (/termeni-si-conditii) in RO and EN
 
 ### Design & Animations
 
@@ -153,9 +153,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FUNC-03 | Phase 5 | Complete |
 | FUNC-06 | Phase 5 | Complete |
 | PAGE-11 | Phase 6 | Complete |
-| PAGE-12 | Phase 6 | Pending |
-| PAGE-13 | Phase 6 | Pending |
-| PAGE-14 | Phase 6 | Pending |
+| PAGE-12 | Phase 6 | Complete |
+| PAGE-13 | Phase 6 | Complete |
+| PAGE-14 | Phase 6 | Complete |
 | CMPL-01 | Phase 6 | Complete |
 | CMPL-02 | Phase 6 | Complete |
 | SEO-01 | Phase 7 | Pending |
