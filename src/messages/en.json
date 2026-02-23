@@ -704,5 +704,113 @@
       "gdpr": "I agree to the processing of personal data",
       "success": "Thank you! You have successfully subscribed."
     }
+  },
+  "contact": {
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "meta": {
+      "title": "Contact | AceAgency - Digital Agency Bucharest",
+      "description": "Contact AceAgency for digital marketing services. Contact form, schedule a consultation, address and phone. We respond within 24 hours."
+    },
+    "hero": {
+      "overline": "CONTACT",
+      "headline": "Let's Talk About Your Project",
+      "subheading": "Fill out the form or schedule a free consultation. We respond within 24h."
+    },
+    "form": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "email@example.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+40 7XX XXX XXX"
+      },
+      "service": {
+        "label": "Service of Interest",
+        "placeholder": "Select a service",
+        "options": {
+          "web": "Web Development",
+          "google-ads": "Google Ads",
+          "facebook-ads": "Facebook & Instagram Ads",
+          "tiktok-ads": "TikTok Ads",
+          "seo": "SEO Optimization",
+          "email-marketing": "Email Marketing",
+          "consultanta": "Marketing Consulting",
+          "altele": "Other"
+        }
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Briefly describe your project or question..."
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": {
+        "title": "Message sent successfully!",
+        "description": "Thank you for your message. Our team will respond within 24 hours."
+      },
+      "error": {
+        "generic": "An error occurred while sending the message. Please try again."
+      },
+      "validation": {
+        "nameMinLength": "Name must be at least 2 characters",
+        "nameMaxLength": "Name can be at most 100 characters",
+        "emailRequired": "Email address is required",
+        "emailInvalid": "Email address is not valid",
+        "messageMinLength": "Message must be at least 10 characters",
+        "messageMaxLength": "Message can be at most 2000 characters",
+        "phoneInvalid": "Phone number is not valid (format: +40XXXXXXXXX or 0XXXXXXXXX)"
+      }
+    },
+    "info": {
+      "address": {
+        "label": "Address",
+        "value": "Bulevardul Aviatorilor 106, Bucharest"
+      },
+      "email": {
+        "label": "Email",
+        "value": "cretualin@aceagency.ro"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "0750 465 757"
+      },
+      "hours": {
+        "label": "Hours",
+        "value": "Monday - Friday, 09:00 - 18:00"
+      },
+      "social": "Social Media"
+    },
+    "map": {
+      "cookieRequired": "Accept functional cookies to view the map"
+    },
+    "booking": {
+      "overline": "SCHEDULE",
+      "heading": "Book a Free Consultation",
+      "description": "Choose an available slot and we'll discuss how we can help your business grow digitally."
+    },
+    "faq": {
+      "overline": "FAQ",
+      "heading": "Quick Answers",
+      "items": [
+        { "question": "How long does a web project take?", "answer": "Duration varies by complexity. A standard corporate website takes 4-6 weeks, a complex project 8-12 weeks." },
+        { "question": "What are the service costs?", "answer": "Each project is unique. We offer free consultation to evaluate needs and propose a personalized budget." },
+        { "question": "Do you offer post-launch support?", "answer": "Yes, we offer maintenance and post-launch support packages. We stand by our clients for the long term." },
+        { "question": "How do you measure results?", "answer": "We use Google Analytics, Google Ads, Facebook Ads Manager and other platforms for detailed monthly reports with clear KPIs." },
+        { "question": "Do you work with small businesses?", "answer": "Absolutely! We work with businesses of all sizes, from startups to large companies. Our solutions are scalable." }
+      ]
+    }
+  },
+  "thankYou": {
+    "heading": "Thank You!",
+    "description": "Your message has been sent successfully. Our team will respond within 24 hours.",
+    "backHome": "Back to homepage"
   }
 }

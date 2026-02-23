@@ -704,5 +704,113 @@
       "gdpr": "Sunt de acord cu prelucrarea datelor personale",
       "success": "Multumim! Te-ai abonat cu succes."
     }
+  },
+  "contact": {
+    "breadcrumb": {
+      "home": "Acasa",
+      "contact": "Contact"
+    },
+    "meta": {
+      "title": "Contact | AceAgency - Agentie Digitala Bucuresti",
+      "description": "Contacteaza AceAgency pentru servicii de marketing digital. Formular contact, programare consultatie, adresa si telefon. Raspundem in 24 de ore."
+    },
+    "hero": {
+      "overline": "CONTACT",
+      "headline": "Hai sa Vorbim despre Proiectul Tau",
+      "subheading": "Completeaza formularul sau programeaza o consultatie gratuita. Raspundem in 24h."
+    },
+    "form": {
+      "name": {
+        "label": "Nume Complet",
+        "placeholder": "Introdu numele tau"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "email@exemplu.ro"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+40 7XX XXX XXX"
+      },
+      "service": {
+        "label": "Serviciu de Interes",
+        "placeholder": "Selecteaza un serviciu",
+        "options": {
+          "web": "Dezvoltare Web",
+          "google-ads": "Google Ads",
+          "facebook-ads": "Facebook & Instagram Ads",
+          "tiktok-ads": "TikTok Ads",
+          "seo": "Optimizare SEO",
+          "email-marketing": "Email Marketing",
+          "consultanta": "Consultanta Marketing",
+          "altele": "Altele"
+        }
+      },
+      "message": {
+        "label": "Mesajul Tau",
+        "placeholder": "Descrie pe scurt proiectul sau intrebarea ta..."
+      },
+      "submit": "Trimite Mesajul",
+      "submitting": "Se trimite...",
+      "success": {
+        "title": "Mesaj trimis cu succes!",
+        "description": "Multumim pentru mesaj. Echipa noastra va raspunde in maxim 24 de ore."
+      },
+      "error": {
+        "generic": "A aparut o eroare la trimiterea mesajului. Te rugam sa incerci din nou."
+      },
+      "validation": {
+        "nameMinLength": "Numele trebuie sa aiba minim 2 caractere",
+        "nameMaxLength": "Numele poate avea maxim 100 de caractere",
+        "emailRequired": "Adresa de email este obligatorie",
+        "emailInvalid": "Adresa de email nu este valida",
+        "messageMinLength": "Mesajul trebuie sa aiba minim 10 caractere",
+        "messageMaxLength": "Mesajul poate avea maxim 2000 de caractere",
+        "phoneInvalid": "Numarul de telefon nu este valid (format: +40XXXXXXXXX sau 0XXXXXXXXX)"
+      }
+    },
+    "info": {
+      "address": {
+        "label": "Adresa",
+        "value": "Bulevardul Aviatorilor 106, Bucuresti"
+      },
+      "email": {
+        "label": "Email",
+        "value": "cretualin@aceagency.ro"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "0750 465 757"
+      },
+      "hours": {
+        "label": "Program",
+        "value": "Luni - Vineri, 09:00 - 18:00"
+      },
+      "social": "Social Media"
+    },
+    "map": {
+      "cookieRequired": "Accepta cookies functionale pentru a vedea harta"
+    },
+    "booking": {
+      "overline": "PROGRAMEAZA",
+      "heading": "Rezerva o Consultatie Gratuita",
+      "description": "Alege un slot disponibil si vom discuta despre cum putem ajuta afacerea ta sa creasca digital."
+    },
+    "faq": {
+      "overline": "INTREBARI FRECVENTE",
+      "heading": "Raspunsuri Rapide",
+      "items": [
+        { "question": "Cat dureaza un proiect web?", "answer": "Durata variaza in functie de complexitate. Un site corporate standard dureaza 4-6 saptamani, un proiect complex 8-12 saptamani." },
+        { "question": "Care sunt costurile serviciilor?", "answer": "Fiecare proiect este unic. Oferim consultatie gratuita pentru a evalua nevoile si a propune un buget personalizat." },
+        { "question": "Oferiti suport dupa lansare?", "answer": "Da, oferim pachete de mentenanta si suport post-lansare. Suntem alaturi de clientii nostri pe termen lung." },
+        { "question": "Cum masurati rezultatele?", "answer": "Folosim Google Analytics, Google Ads, Facebook Ads Manager si alte platforme pentru rapoarte lunare detaliate cu KPI-uri clare." },
+        { "question": "Lucrati cu companii mici?", "answer": "Absolut! Lucram cu afaceri de toate dimensiunile, de la startup-uri la companii mari. Solutiile noastre sunt scalabile." }
+      ]
+    }
+  },
+  "thankYou": {
+    "heading": "Multumim!",
+    "description": "Mesajul tau a fost trimis cu succes. Echipa noastra va raspunde in maxim 24 de ore.",
+    "backHome": "Inapoi la pagina principala"
   }
 }
