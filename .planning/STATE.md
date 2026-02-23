@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 4 — Service Pages (In Progress)
+**Current focus:** Phase 5 — Contact and Lead Capture (In Progress)
 
 ## Current Position
 
-Phase: 4 of 8 (Service Pages)
-Plan: 3 of 3 in current phase
-Status: Phase 4 complete — all 6 service sub-pages with full bilingual content
-Last activity: 2026-02-21 — Completed 04-03-PLAN.md (Email Marketing & Consultanta i18n content)
+Phase: 5 of 8 (Contact and Lead Capture)
+Plan: 1 of 2 in current phase
+Status: Plan 05-01 complete — contact page with form, info, map, FAQ, and i18n
+Last activity: 2026-02-23 — Completed 05-01-PLAN.md (Contact page & lead capture infrastructure)
 
-Progress: [████████████░] 50% (12/24 plans estimated)
+Progress: [█████████████░] 54% (13/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
+- Total plans completed: 13
 - Average duration: ~7 min (auto tasks only)
-- Total execution time: ~1.5 hours
+- Total execution time: ~1.6 hours
 
 **By Phase:**
 
@@ -31,13 +31,14 @@ Progress: [████████████░] 50% (12/24 plans estimated)
 | 02-design-system | 3/3 | interactive + 4 min | — |
 | 03-flagship-pages | 3/3 | 14 min | 5 min |
 | 04-service-pages | 3/3 | 18 min | 6 min |
+| 05-contact-lead | 1/2 | 5 min | 5 min |
 
 **Recent Trend:**
-- Last 5 plans: 03-03 (4 min), 04-01 (10 min), 04-02 (~4 min), 04-03 (4 min)
-- Trend: Phase 4 plans 02-03 fast (content refinement of existing stubs created in 04-01)
+- Last 5 plans: 04-01 (10 min), 04-02 (~4 min), 04-03 (4 min), 05-01 (5 min)
+- Trend: Phase 5 plan 01 fast despite large scope (16 files, contact page + infrastructure)
 
 *Updated after each plan completion*
-| Phase 04 P03 | 4min | 2 tasks | 2 files |
+| Phase 05 P01 | 5min | 2 tasks | 16 files |
 
 ## Accumulated Context
 
@@ -97,19 +98,25 @@ Recent decisions affecting current work:
 - [04-02]: All service meta titles standardized to include " - AceAgency" suffix for consistent brand presence in SERPs.
 - [04-03]: Content refinement approach — Plan 01 added all 6 service stubs; Plan 03 expanded emailMarketing and consultanta to full spec (6 features, 7 FAQs, updated stats, diacritics, cross-service mentions).
 - [04-03]: SEO title tags aligned exactly with Specificatii-Tehnice-SEO document for Email Marketing and Consultanta pages.
+- [05-01]: Resend dev mock logs to console when RESEND_API_KEY missing — prevents blocking local development.
+- [05-01]: On-blur validation parses full Zod schema then extracts field errors (avoids .pick() TypeScript issue).
+- [05-01]: Contact form uses useActionState with useEffect redirect to /multumim on success.
+- [05-01]: Google Maps iframe uses CSS filter (invert + grayscale + hue-rotate) for dark mode; consent gate placeholder for Phase 6.
+- [05-01]: @calcom/embed-react installed successfully — React 19 peer dep issue resolved.
 
 ### Pending Todos
 
-- Install Cal.com embed and test React 19 peer dep compatibility (Phase 5 / contact page)
+- Wire Cal.com BookingSection component in Plan 02
+- Wire newsletter Server Action to Footer newsletter form in Plan 02
 
 ### Blockers/Concerns
 
-- **Cal.com embed**: `@calcom/embed-react` v1.5.3 has open React 19 peer dep issue (GitHub #20814). Test at Phase 1 scaffolding; inline script fallback documented in Phase 5 plan.
+- ~~**Cal.com embed**: `@calcom/embed-react` v1.5.3 has open React 19 peer dep issue (GitHub #20814).~~ **RESOLVED in 05-01**: Package installs without issues with React 19.2.3.
 - ~~**GSAP SplitText license**: Requires Club GSAP membership.~~ **RESOLVED in 02-02**: SplitText ships with gsap@3.14.2 standard package. No license issue.
 - **GTM Consent Mode v2**: Wiring the exact `dataLayer.push` pattern to shadcn-cookie-consent's callback API needs hands-on testing in Phase 6. Block Phase 7 analytics work on this being verified.
 
 ## Session Continuity
 
-Last session: 2026-02-21
-Stopped at: Completed 04-03-PLAN.md (Email Marketing & Consultanta i18n content — Phase 4 complete)
+Last session: 2026-02-23
+Stopped at: Completed 05-01-PLAN.md (Contact page & lead capture infrastructure)
 Resume file: None
