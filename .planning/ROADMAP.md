@@ -121,11 +121,11 @@ Plans:
   3. The Cal.com booking widget renders on the contact page and allows selecting a meeting slot without navigating away
   4. The Google Maps embed shows the AceAgency office location on the contact page
   5. Submitting the newsletter form with a valid email shows a success state; the email is captured via Resend
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: Run `/frontend-design` on `design-system/pages/contact.md` — implement Contact page layout (ContactInfo, Google Maps embed); build Server Actions (`lib/actions/contact.ts`) with Zod validation, honeypot, and Resend delivery
-- [ ] 05-02: Cal.com booking embed (try `@calcom/embed-react`; fall back to inline script) and Newsletter Server Action (`lib/actions/newsletter.ts`)
+- [ ] 05-01-PLAN.md — Contact page layout (Hero, ContactForm, ContactInfo, GoogleMap, FAQ), Server Actions with Zod + Resend, thank-you page, full bilingual i18n
+- [ ] 05-02-PLAN.md — Cal.com booking embed (BookingSection) and Newsletter Server Action wired into Footer + visual verification
 
 ### Phase 6: Compliance and Legal
 **Goal**: The site meets Romanian/EU legal requirements — granular cookie consent banner, legal pages in both languages, and analytics gated behind consent — making the site legally launchable.
