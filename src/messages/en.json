@@ -979,5 +979,105 @@
         "content": "For any questions or requests related to personal data protection, you can contact us at:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757\n\nYou also have the right to file a complaint with the National Supervisory Authority for Personal Data Processing (ANSPDCP) — www.dataprotection.ro."
       }
     ]
+  },
+  "cookies": {
+    "meta": {
+      "title": "Cookie Policy - AceAgency",
+      "description": "AceAgency Cookie Policy. Learn what cookies we use, why and how you can manage them. GDPR and ePrivacy Directive compliant."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Cookie Policy"
+    },
+    "hero": {
+      "heading": "Cookie Policy"
+    },
+    "lastUpdated": "Last updated: February 23, 2026",
+    "sections": [
+      {
+        "heading": "1. What Are Cookies",
+        "content": "Cookies are small text files stored on your device (computer, phone, tablet) when you visit a website. They allow the site to remember information about your visit, such as language preferences or other settings, making navigation easier and future visits more efficient.\n\nCookies do not contain directly identifiable personal information and cannot access other data on your device."
+      },
+      {
+        "heading": "2. Cookies Used on aceagency.ro",
+        "content": "We use the following categories of cookies:\n\nNecessary Cookies: Essential for the website to function. Include session cookies, consent preferences and security. Cannot be disabled. Duration: session or up to 1 year.\n\nAnalytics Cookies: Help us understand how visitors navigate the site by collecting anonymous data (pages visited, visit duration, traffic source). Provider: Google Analytics. Duration: up to 26 months.\n\nMarketing Cookies: Allow display of relevant ads on other platforms. Providers: Google Ads, Facebook Pixel. Duration: up to 2 years.\n\nFunctional Cookies: Enable additional features such as Google Maps integration, Cal.com scheduling widget and content personalization. Duration: session or up to 1 year."
+      },
+      {
+        "heading": "3. Third-Party Cookies",
+        "content": "In addition to our own cookies, our website may load cookies from third parties:\n\nGoogle Analytics (analytics.google.com): Collects anonymous data about website traffic. Cookies: _ga, _ga_*, _gid. Privacy policy: https://policies.google.com/privacy\n\nGoogle Maps (maps.google.com): Enables the interactive map on the contact page. Requires acceptance of functional cookies.\n\nCal.com (cal.com): Meeting scheduling widget. May set its own session cookies. Privacy policy: https://cal.com/privacy"
+      },
+      {
+        "heading": "4. Managing Cookies",
+        "content": "You can manage your cookie preferences in two ways:\n\nConsent Banner: On your first visit to the site, a cookie banner will appear allowing you to accept or reject each category of cookies (analytics, marketing, functional). You can change your preferences at any time by accessing the cookie settings in the website footer.\n\nBrowser Settings: Most browsers allow you to control cookies through their settings. You can block all cookies or only third-party cookies. Note that blocking certain cookies may affect website functionality.\n\nChrome: Settings > Privacy and security > Cookies\nFirefox: Settings > Privacy & Security > Cookies\nSafari: Preferences > Privacy > Cookies\nEdge: Settings > Cookies and site permissions"
+      },
+      {
+        "heading": "5. Storage Duration",
+        "content": "Necessary cookies: session (deleted when browser closes) or up to 1 year for consent preferences.\n\nAnalytics cookies (_ga): 2 years from last interaction. _gid: 24 hours.\n\nMarketing cookies: up to 2 years, depending on provider.\n\nFunctional cookies: session or up to 1 year."
+      },
+      {
+        "heading": "6. Cookie Policy Changes",
+        "content": "We reserve the right to update this cookie policy periodically, especially when adding new features or integrating new services. The date of the last update is displayed at the top of this page.\n\nSignificant changes will be communicated through the cookie banner, which will request your consent again."
+      },
+      {
+        "heading": "7. Contact",
+        "content": "For questions about the use of cookies on our website, you can contact us at:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757"
+      }
+    ]
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms and Conditions - AceAgency",
+      "description": "AceAgency Terms and Conditions. Information about services, rights, obligations and data protection."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Terms and Conditions"
+    },
+    "hero": {
+      "heading": "Terms and Conditions"
+    },
+    "lastUpdated": "Last updated: February 23, 2026",
+    "sections": [
+      {
+        "heading": "1. Acceptance of Terms",
+        "content": "By accessing and using the aceagency.ro website, operated by AceAgency located at Bulevardul Aviatorilor 106, Bucharest, Romania, you fully accept these terms and conditions of use.\n\nIf you do not agree with any of these terms, please do not use our website. Continued browsing of the site constitutes implicit acceptance of the terms presented."
+      },
+      {
+        "heading": "2. Description of Services",
+        "content": "AceAgency offers digital marketing services through its four divisions:\n\nAceWeb: web development, design and website maintenance.\nAceAds: paid advertising on Google Ads, Facebook Ads, Instagram Ads and TikTok Ads.\nAceAI: artificial intelligence solutions for marketing.\nAceMedia: video, photo and graphic content production.\n\nInformation presented on the website is for informational purposes and does not constitute a binding offer. Specific terms for each service are established through individual contracts."
+      },
+      {
+        "heading": "3. Intellectual Property",
+        "content": "All content on the aceagency.ro website — including text, images, graphic elements, logos, icons, fonts, source code and overall design — is protected by copyright and intellectual property legislation.\n\nAceAgency owns or holds licenses for all materials published on the website. Reproduction, distribution, modification or commercial use of any content from the site without prior written consent from AceAgency is prohibited."
+      },
+      {
+        "heading": "4. Limitation of Liability",
+        "content": "AceAgency makes reasonable efforts to keep information on the website accurate and up-to-date, but does not guarantee its accuracy, completeness or timeliness.\n\nThe website is provided \"as is.\" AceAgency is not liable for:\n\nDirect or indirect losses resulting from the use or inability to use the website.\n\nTechnical errors, service interruptions or security issues caused by third parties.\n\nContent of third-party websites linked from our site."
+      },
+      {
+        "heading": "5. User Obligations",
+        "content": "By using the website, you agree to:\n\nNot use the website for illegal or fraudulent purposes.\n\nNot attempt to gain unauthorized access to our systems.\n\nNot transmit malicious content (viruses, malware, spam).\n\nProvide accurate and complete information when filling out forms on the site.\n\nRespect AceAgency's intellectual property rights."
+      },
+      {
+        "heading": "6. Personal Data Protection",
+        "content": "Processing of your personal data is done in accordance with the General Data Protection Regulation (GDPR) and applicable Romanian legislation.\n\nFor detailed information about how we collect, use and protect your personal data, please see our Privacy Policy.\n\nFor information about cookies and tracking technologies used, see our Cookie Policy."
+      },
+      {
+        "heading": "7. Governing Law and Jurisdiction",
+        "content": "These terms and conditions are governed by Romanian law. Any dispute arising from or in connection with the use of the website shall be subject to the exclusive jurisdiction of the competent courts in Bucharest, Romania.\n\nIf any provision of these terms is declared null or unenforceable, the remaining provisions shall remain in force."
+      },
+      {
+        "heading": "8. Modification of Terms",
+        "content": "AceAgency reserves the right to modify these terms and conditions at any time. Changes take effect upon publication on this page.\n\nWe recommend checking this page periodically. Continued use of the website after publication of changes constitutes acceptance of the new terms."
+      },
+      {
+        "heading": "9. Dispute Resolution",
+        "content": "In case of any disagreement or dispute related to our services or the use of the website, parties will first attempt amicable resolution through direct negotiations.\n\nIf an amicable solution is not reached within 30 days, the dispute will be resolved by the competent courts in Bucharest, Romania, in accordance with current Romanian legislation."
+      },
+      {
+        "heading": "10. Contact",
+        "content": "For any questions or clarifications regarding these terms and conditions, you can contact us at:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757"
+      }
+    ]
   }
 }

@@ -68,8 +68,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Compliance & Infrastructure
 
-- [ ] **CMPL-01**: Cookie consent banner with granular GDPR consent (analytics, marketing, functional)
-- [ ] **CMPL-02**: GA4 + GTM loading gated behind cookie consent (GTM Consent Mode v2)
+- [x] **CMPL-01**: Cookie consent banner with granular GDPR consent (analytics, marketing, functional)
+- [x] **CMPL-02**: GA4 + GTM loading gated behind cookie consent (GTM Consent Mode v2)
 - [ ] **CMPL-03**: Vercel Analytics integration
 - [ ] **CMPL-04**: WCAG 2.1 AA accessibility (semantic HTML, heading hierarchy, alt text, keyboard navigation)
 - [ ] **CMPL-05**: Security headers (HSTS, X-Content-Type-Options, X-Frame-Options)
@@ -156,8 +156,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-12 | Phase 6 | Pending |
 | PAGE-13 | Phase 6 | Pending |
 | PAGE-14 | Phase 6 | Pending |
-| CMPL-01 | Phase 6 | Pending |
-| CMPL-02 | Phase 6 | Pending |
+| CMPL-01 | Phase 6 | Complete |
+| CMPL-02 | Phase 6 | Complete |
 | SEO-01 | Phase 7 | Pending |
 | SEO-02 | Phase 7 | Pending |
 | SEO-03 | Phase 7 | Pending |

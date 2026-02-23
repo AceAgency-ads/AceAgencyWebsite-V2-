@@ -9,10 +9,10 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 
 ## Current Position
 
-Phase: 6 of 8 (Compliance and Legal) — IN PROGRESS
-Plan: 3 of 3 in current phase (06-03 complete)
-Status: 06-03 FAQ page complete — standalone FAQ with 15 Q&A pairs, accordion UI, JSON-LD schema
-Last activity: 2026-02-23 — Completed 06-03-PLAN.md (FAQ page with bilingual content)
+Phase: 6 of 8 (Compliance and Legal) — COMPLETE
+Plan: 3 of 3 in current phase (all plans complete)
+Status: Phase 6 complete — GDPR cookie consent, legal pages, FAQ page all functional
+Last activity: 2026-02-23 — Completed 06-01-PLAN.md (GDPR cookie consent with GTM Consent Mode v2)
 
 Progress: [███████████████░░] 63% (17/27 plans estimated)
 
@@ -41,6 +41,7 @@ Progress: [███████████████░░] 63% (17/27 plans
 | Phase 05 P01 | 5min | 2 tasks | 16 files |
 | Phase 05 P02 | 4min | 2 tasks | 6 files |
 | Phase 06 P03 | 3min | 1 task | 4 files |
+| Phase 06 P01 | 5min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -108,6 +109,10 @@ Recent decisions affecting current work:
 - [05-02]: Cal.com embed uses @calcom/embed-react with dark theme and NEXT_PUBLIC_CAL_LINK env var for configurability.
 - [05-02]: Footer newsletter wired with useActionState(submitNewsletter) replacing e.preventDefault() stub from Phase 2/3.
 - [05-02]: BookingSection container uses bg-[#262523] dark background to prevent white flash during Cal.com embed loading.
+- [06-01]: vanilla-cookieconsent v3 chosen over shadcn-cookie-consent for granular GDPR category support and built-in GTM Consent Mode v2 integration.
+- [06-01]: GTM consent default script uses next/script beforeInteractive strategy to execute before GTM container.
+- [06-01]: Google Maps gated behind functionality category (not analytics) since Maps embeds functional cookies.
+- [06-01]: updateGtagConsent uses lazy require() to avoid bundling vanilla-cookieconsent in server context.
 - [06-03]: FAQ page uses categorized structure (categories array with name + items) instead of flat list for better visual hierarchy.
 - [06-03]: Inline hero section created for FAQ page since LegalHero from Plan 02 not yet available (parallel execution).
 
@@ -119,10 +124,10 @@ None for Phase 6 Plan 03.
 
 - ~~**Cal.com embed**: `@calcom/embed-react` v1.5.3 has open React 19 peer dep issue (GitHub #20814).~~ **RESOLVED in 05-01**: Package installs without issues with React 19.2.3.
 - ~~**GSAP SplitText license**: Requires Club GSAP membership.~~ **RESOLVED in 02-02**: SplitText ships with gsap@3.14.2 standard package. No license issue.
-- **GTM Consent Mode v2**: Wiring the exact `dataLayer.push` pattern to shadcn-cookie-consent's callback API needs hands-on testing in Phase 6. Block Phase 7 analytics work on this being verified.
+- ~~**GTM Consent Mode v2**: Wiring the exact `dataLayer.push` pattern to shadcn-cookie-consent's callback API needs hands-on testing in Phase 6.~~ **RESOLVED in 06-01**: vanilla-cookieconsent v3 callbacks wire to gtag('consent', 'update') via updateGtagConsent(). Default all denied, update on consent. Needs production GTM ID env var for full verification.
 
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 06-03-PLAN.md (FAQ page with bilingual content)
+Stopped at: Completed 06-01-PLAN.md (GDPR cookie consent with GTM Consent Mode v2) — Phase 6 complete
 Resume file: None

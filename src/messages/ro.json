@@ -979,5 +979,105 @@
         "content": "Pentru orice intrebari sau solicitari legate de protectia datelor personale, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757\n\nDe asemenea, aveti dreptul de a depune o plangere la Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP) — www.dataprotection.ro."
       }
     ]
+  },
+  "cookies": {
+    "meta": {
+      "title": "Politica de Cookies - AceAgency",
+      "description": "Politica de cookies AceAgency. Afla ce cookies folosim, de ce si cum le poti gestiona. Conform GDPR si Directiva ePrivacy."
+    },
+    "breadcrumb": {
+      "home": "Acasa",
+      "current": "Politica de Cookies"
+    },
+    "hero": {
+      "heading": "Politica de Cookies"
+    },
+    "lastUpdated": "Ultima actualizare: 23 februarie 2026",
+    "sections": [
+      {
+        "heading": "1. Ce Sunt Cookies",
+        "content": "Cookies sunt fisiere text de mici dimensiuni stocate pe dispozitivul dumneavoastra (computer, telefon, tableta) atunci cand vizitati un website. Acestea permit site-ului sa retina informatii despre vizita dumneavoastra, cum ar fi preferintele de limba sau alte setari, facilitand astfel navigarea si facand vizitele viitoare mai eficiente.\n\nCookies nu contin informatii personale identificabile in mod direct si nu pot accesa alte date de pe dispozitivul dumneavoastra."
+      },
+      {
+        "heading": "2. Cookies Utilizate pe aceagency.ro",
+        "content": "Folosim urmatoarele categorii de cookies:\n\nCookies Necesare: Esentiale pentru functionarea site-ului. Includ cookies de sesiune, preferinte de consimtamant si securitate. Nu pot fi dezactivate. Durata: sesiune sau pana la 1 an.\n\nCookies de Analytics: Ne ajuta sa intelegem cum navigheaza vizitatorii pe site prin colectarea de date anonime (pagini vizitate, durata vizitei, sursa de trafic). Furnizor: Google Analytics. Durata: pana la 26 de luni.\n\nCookies de Marketing: Permit afisarea de reclame relevante pe alte platforme. Furnizori: Google Ads, Facebook Pixel. Durata: pana la 2 ani.\n\nCookies Functionale: Permit functionalitati suplimentare precum integrarea hartii Google Maps, widget-ul de programari Cal.com si personalizarea continutului. Durata: sesiune sau pana la 1 an."
+      },
+      {
+        "heading": "3. Cookies de la Terti",
+        "content": "Pe langa cookies proprii, site-ul nostru poate incarca cookies de la terti:\n\nGoogle Analytics (analytics.google.com): Colecteaza date anonime despre traficul pe site. Cookies: _ga, _ga_*, _gid. Politica de confidentialitate: https://policies.google.com/privacy\n\nGoogle Maps (maps.google.com): Activeaza harta interactiva de pe pagina de contact. Necesita acceptarea cookies functionale.\n\nCal.com (cal.com): Widget de programare intalniri. Poate seta cookies de sesiune proprii. Politica de confidentialitate: https://cal.com/privacy"
+      },
+      {
+        "heading": "4. Gestionarea Cookies",
+        "content": "Puteti gestiona preferintele de cookies in doua moduri:\n\nBannerul de consimtamant: La prima vizita pe site, va aparea un banner de cookies care va permite sa acceptati sau sa refuzati fiecare categorie de cookies (analytics, marketing, functionale). Puteti modifica preferintele oricand accesand setarile de cookies din footer-ul site-ului.\n\nSetarile browserului: Majoritatea browserelor va permit sa controlati cookies prin setari. Puteti bloca toate cookies sau doar pe cele de la terti. Retineti ca blocarea anumitor cookies poate afecta functionarea site-ului.\n\nChrome: Setari > Confidentialitate si securitate > Cookies\nFirefox: Setari > Viata privata si securitate > Cookies\nSafari: Preferinte > Confidentialitate > Cookies\nEdge: Setari > Cookies si permisiuni site"
+      },
+      {
+        "heading": "5. Durata de Stocare",
+        "content": "Cookies necesare: sesiune (sterse la inchiderea browserului) sau pana la 1 an pentru preferintele de consimtamant.\n\nCookies de analytics (_ga): 2 ani de la ultima interactiune. _gid: 24 de ore.\n\nCookies de marketing: pana la 2 ani, in functie de furnizor.\n\nCookies functionale: sesiune sau pana la 1 an."
+      },
+      {
+        "heading": "6. Modificari ale Politicii de Cookies",
+        "content": "Ne rezervam dreptul de a actualiza aceasta politica de cookies periodic, in special cand adaugam noi functionalitati sau integram servicii noi. Data ultimei actualizari este afisata in partea de sus a acestei pagini.\n\nModificarile semnificative vor fi comunicate prin intermediul bannerului de cookies, care va solicita din nou consimtamantul dumneavoastra."
+      },
+      {
+        "heading": "7. Contact",
+        "content": "Pentru intrebari legate de utilizarea cookies pe site-ul nostru, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
+      }
+    ]
+  },
+  "terms": {
+    "meta": {
+      "title": "Termeni si Conditii - AceAgency",
+      "description": "Termenii si conditiile de utilizare a site-ului AceAgency. Informatii despre servicii, drepturi, obligatii si protectia datelor."
+    },
+    "breadcrumb": {
+      "home": "Acasa",
+      "current": "Termeni si Conditii"
+    },
+    "hero": {
+      "heading": "Termeni si Conditii"
+    },
+    "lastUpdated": "Ultima actualizare: 23 februarie 2026",
+    "sections": [
+      {
+        "heading": "1. Acceptarea Termenilor",
+        "content": "Prin accesarea si utilizarea site-ului aceagency.ro, operati de AceAgency cu sediul in Bulevardul Aviatorilor 106, Bucuresti, Romania, acceptati in totalitate acesti termeni si conditii de utilizare.\n\nDaca nu sunteti de acord cu oricare dintre acesti termeni, va rugam sa nu utilizati site-ul nostru. Continuarea navigarii pe site echivaleaza cu acceptarea implicita a termenilor prezentati."
+      },
+      {
+        "heading": "2. Descrierea Serviciilor",
+        "content": "AceAgency ofera servicii de marketing digital prin cele patru divizii ale sale:\n\nAceWeb: dezvoltare web, design si mentenanta site-uri.\nAceAds: publicitate platita pe Google Ads, Facebook Ads, Instagram Ads si TikTok Ads.\nAceAI: solutii de inteligenta artificiala pentru marketing.\nAceMedia: productie de continut video, foto si grafic.\n\nInformatiile prezentate pe site au caracter informativ si nu constituie o oferta ferma. Termenii specifici fiecarui serviciu sunt stabiliti prin contract individual."
+      },
+      {
+        "heading": "3. Proprietate Intelectuala",
+        "content": "Intregul continut al site-ului aceagency.ro — inclusiv texte, imagini, elemente grafice, logo-uri, iconuri, fonturi, cod sursa si designul general — este protejat de legislatia privind drepturile de autor si proprietatea intelectuala.\n\nAceAgency detine sau are licenta pentru toate materialele publicate pe site. Reproducerea, distribuirea, modificarea sau utilizarea in scopuri comerciale a oricarui continut de pe site fara acordul prealabil scris al AceAgency este interzisa."
+      },
+      {
+        "heading": "4. Limitarea Raspunderii",
+        "content": "AceAgency depune eforturi rezonabile pentru a mentine informatiile de pe site corecte si actualizate, insa nu garanteaza exactitatea, completitudinea sau actualitatea acestora.\n\nSite-ul este furnizat \"asa cum este\" (as is). AceAgency nu este responsabila pentru:\n\nPierderile directe sau indirecte rezultate din utilizarea sau imposibilitatea de a utiliza site-ul.\n\nErori tehnice, intreruperi ale serviciului sau probleme de securitate cauzate de terti.\n\nContinutul site-urilor terte catre care exista link-uri pe site-ul nostru."
+      },
+      {
+        "heading": "5. Obligatiile Utilizatorilor",
+        "content": "Prin utilizarea site-ului, va angajati sa:\n\nNu utilizati site-ul in scopuri ilegale sau frauduloase.\n\nNu incercati sa obtineti acces neautorizat la sistemele noastre.\n\nNu transmiteti continut malitios (virusi, malware, spam).\n\nFurnizati informatii corecte si complete atunci cand completati formularele de pe site.\n\nRespectati drepturile de proprietate intelectuala ale AceAgency."
+      },
+      {
+        "heading": "6. Protectia Datelor Personale",
+        "content": "Prelucrarea datelor dumneavoastra personale se face in conformitate cu Regulamentul General privind Protectia Datelor (GDPR) si legislatia romana aplicabila.\n\nPentru informatii detaliate despre modul in care colectam, utilizam si protejam datele dumneavoastra personale, va rugam sa consultati Politica de Confidentialitate.\n\nPentru informatii despre cookies si tehnologiile de tracking utilizate, consultati Politica de Cookies."
+      },
+      {
+        "heading": "7. Legea Aplicabila si Jurisdictia",
+        "content": "Acesti termeni si conditii sunt guvernati de legislatia romana. Orice litigiu rezultat din sau in legatura cu utilizarea site-ului va fi supus jurisdictiei exclusive a instantelor competente din Bucuresti, Romania.\n\nIn cazul in care orice prevedere din acesti termeni este declarata nula sau neaplicabila, celelalte prevederi raman in vigoare."
+      },
+      {
+        "heading": "8. Modificarea Termenilor",
+        "content": "AceAgency isi rezerva dreptul de a modifica acesti termeni si conditii in orice moment. Modificarile intra in vigoare la data publicarii pe aceasta pagina.\n\nVa recomandam sa verificati periodic aceasta pagina. Utilizarea continua a site-ului dupa publicarea modificarilor constituie acceptarea noilor termeni."
+      },
+      {
+        "heading": "9. Rezolvarea Disputelor",
+        "content": "In cazul oricarui dezacord sau disputa legata de serviciile noastre sau de utilizarea site-ului, partile vor incerca mai intai rezolvarea amiabila prin negocieri directe.\n\nDaca nu se ajunge la o solutie amiabila in termen de 30 de zile, disputa va fi solutionata de instantele competente din Bucuresti, Romania, conform legislatiei romane in vigoare."
+      },
+      {
+        "heading": "10. Contact",
+        "content": "Pentru orice intrebari sau clarificari legate de acesti termeni si conditii, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
+      }
+    ]
   }
 }
