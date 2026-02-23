@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 5 — Contact and Lead Capture (Complete)
+**Current focus:** Phase 6 — Compliance and Legal (In Progress)
 
 ## Current Position
 
-Phase: 5 of 8 (Contact and Lead Capture) — COMPLETE
-Plan: 2 of 2 in current phase (all plans complete)
-Status: Phase 5 complete — all lead-capture mechanisms functional (form, booking, newsletter, map)
-Last activity: 2026-02-23 — Completed 05-02-PLAN.md (Cal.com booking embed & newsletter wiring)
+Phase: 6 of 8 (Compliance and Legal) — IN PROGRESS
+Plan: 3 of 3 in current phase (06-03 complete)
+Status: 06-03 FAQ page complete — standalone FAQ with 15 Q&A pairs, accordion UI, JSON-LD schema
+Last activity: 2026-02-23 — Completed 06-03-PLAN.md (FAQ page with bilingual content)
 
-Progress: [██████████████░] 58% (14/24 plans estimated)
+Progress: [███████████████░░] 63% (17/27 plans estimated)
 
 ## Performance Metrics
 
@@ -40,6 +40,7 @@ Progress: [██████████████░] 58% (14/24 plans estim
 *Updated after each plan completion*
 | Phase 05 P01 | 5min | 2 tasks | 16 files |
 | Phase 05 P02 | 4min | 2 tasks | 6 files |
+| Phase 06 P03 | 3min | 1 task | 4 files |
 
 ## Accumulated Context
 
@@ -107,10 +108,12 @@ Recent decisions affecting current work:
 - [05-02]: Cal.com embed uses @calcom/embed-react with dark theme and NEXT_PUBLIC_CAL_LINK env var for configurability.
 - [05-02]: Footer newsletter wired with useActionState(submitNewsletter) replacing e.preventDefault() stub from Phase 2/3.
 - [05-02]: BookingSection container uses bg-[#262523] dark background to prevent white flash during Cal.com embed loading.
+- [06-03]: FAQ page uses categorized structure (categories array with name + items) instead of flat list for better visual hierarchy.
+- [06-03]: Inline hero section created for FAQ page since LegalHero from Plan 02 not yet available (parallel execution).
 
 ### Pending Todos
 
-None for Phase 5.
+None for Phase 6 Plan 03.
 
 ### Blockers/Concerns
 
@@ -121,5 +124,5 @@ None for Phase 5.
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 05-02-PLAN.md (Cal.com booking embed & newsletter wiring) — Phase 5 complete
+Stopped at: Completed 06-03-PLAN.md (FAQ page with bilingual content)
 Resume file: None
