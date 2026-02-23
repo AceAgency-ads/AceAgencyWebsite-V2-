@@ -49,8 +49,8 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Functionality
 
 - [x] **FUNC-01**: Contact form with Zod validation, honeypot anti-spam, email delivery via Resend (Server Action)
-- [ ] **FUNC-02**: Newsletter signup with email collection via Resend and GDPR opt-in checkbox
-- [ ] **FUNC-03**: Cal.com booking embed on contact page (with React 19 fallback if needed)
+- [x] **FUNC-02**: Newsletter signup with email collection via Resend and GDPR opt-in checkbox
+- [x] **FUNC-03**: Cal.com booking embed on contact page (with React 19 fallback if needed)
 - [ ] **FUNC-04**: Locale switcher (RO/EN) in navigation header
 - [ ] **FUNC-05**: Social media links in footer (LinkedIn, Instagram, Facebook)
 - [x] **FUNC-06**: Google Maps embed on contact page
@@ -149,8 +149,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-09 | Phase 4 | Complete |
 | PAGE-10 | Phase 5 | Complete |
 | FUNC-01 | Phase 5 | Complete |
-| FUNC-02 | Phase 5 | Pending |
-| FUNC-03 | Phase 5 | Pending |
+| FUNC-02 | Phase 5 | Complete |
+| FUNC-03 | Phase 5 | Complete |
 | FUNC-06 | Phase 5 | Complete |
 | PAGE-11 | Phase 6 | Pending |
 | PAGE-12 | Phase 6 | Pending |

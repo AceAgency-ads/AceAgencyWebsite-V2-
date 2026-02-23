@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 5 — Contact and Lead Capture (In Progress)
+**Current focus:** Phase 5 — Contact and Lead Capture (Complete)
 
 ## Current Position
 
-Phase: 5 of 8 (Contact and Lead Capture)
-Plan: 1 of 2 in current phase
-Status: Plan 05-01 complete — contact page with form, info, map, FAQ, and i18n
-Last activity: 2026-02-23 — Completed 05-01-PLAN.md (Contact page & lead capture infrastructure)
+Phase: 5 of 8 (Contact and Lead Capture) — COMPLETE
+Plan: 2 of 2 in current phase (all plans complete)
+Status: Phase 5 complete — all lead-capture mechanisms functional (form, booking, newsletter, map)
+Last activity: 2026-02-23 — Completed 05-02-PLAN.md (Cal.com booking embed & newsletter wiring)
 
-Progress: [█████████████░] 54% (13/24 plans estimated)
+Progress: [██████████████░] 58% (14/24 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
+- Total plans completed: 14
 - Average duration: ~7 min (auto tasks only)
-- Total execution time: ~1.6 hours
+- Total execution time: ~1.7 hours
 
 **By Phase:**
 
@@ -31,14 +31,15 @@ Progress: [█████████████░] 54% (13/24 plans estimate
 | 02-design-system | 3/3 | interactive + 4 min | — |
 | 03-flagship-pages | 3/3 | 14 min | 5 min |
 | 04-service-pages | 3/3 | 18 min | 6 min |
-| 05-contact-lead | 1/2 | 5 min | 5 min |
+| 05-contact-lead | 2/2 | 9 min | 5 min |
 
 **Recent Trend:**
-- Last 5 plans: 04-01 (10 min), 04-02 (~4 min), 04-03 (4 min), 05-01 (5 min)
-- Trend: Phase 5 plan 01 fast despite large scope (16 files, contact page + infrastructure)
+- Last 5 plans: 04-02 (~4 min), 04-03 (4 min), 05-01 (5 min), 05-02 (4 min)
+- Trend: Consistent 4-5 min per plan in Phases 4-5
 
 *Updated after each plan completion*
 | Phase 05 P01 | 5min | 2 tasks | 16 files |
+| Phase 05 P02 | 4min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -103,11 +104,13 @@ Recent decisions affecting current work:
 - [05-01]: Contact form uses useActionState with useEffect redirect to /multumim on success.
 - [05-01]: Google Maps iframe uses CSS filter (invert + grayscale + hue-rotate) for dark mode; consent gate placeholder for Phase 6.
 - [05-01]: @calcom/embed-react installed successfully — React 19 peer dep issue resolved.
+- [05-02]: Cal.com embed uses @calcom/embed-react with dark theme and NEXT_PUBLIC_CAL_LINK env var for configurability.
+- [05-02]: Footer newsletter wired with useActionState(submitNewsletter) replacing e.preventDefault() stub from Phase 2/3.
+- [05-02]: BookingSection container uses bg-[#262523] dark background to prevent white flash during Cal.com embed loading.
 
 ### Pending Todos
 
-- Wire Cal.com BookingSection component in Plan 02
-- Wire newsletter Server Action to Footer newsletter form in Plan 02
+None for Phase 5.
 
 ### Blockers/Concerns
 
@@ -118,5 +121,5 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 05-01-PLAN.md (Contact page & lead capture infrastructure)
+Stopped at: Completed 05-02-PLAN.md (Cal.com booking embed & newsletter wiring) — Phase 5 complete
 Resume file: None
