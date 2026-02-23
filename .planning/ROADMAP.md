@@ -136,12 +136,12 @@ Plans:
   2. When cookie consent has not been granted, no GA4 or GTM events fire (verifiable via browser network tab and GTM preview mode)
   3. The Privacy Policy, Cookie Policy, and Terms of Service pages render complete bilingual content in both `/ro/` and `/en/` locales
   4. The FAQ page at `/intrebari-frecvente` renders with accordion-style questions and answers in both languages
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 06-01: GDPR cookie consent banner (shadcn-cookie-consent) with granular consent state and GTM Consent Mode v2 gating
-- [ ] 06-02: Privacy Policy, Cookie Policy, and Terms of Service pages with full bilingual content
-- [ ] 06-03: FAQ page (`/intrebari-frecvente`) with bilingual content and FAQPage schema scaffold
+- [ ] 06-01-PLAN.md — GDPR cookie consent banner (vanilla-cookieconsent v3) with granular consent categories, GTM Consent Mode v2 gating, and Google Maps consent wiring
+- [ ] 06-02-PLAN.md — Privacy Policy, Cookie Policy, and Terms of Service pages with reusable LegalContent component and full bilingual content
+- [ ] 06-03-PLAN.md — FAQ page (`/intrebari-frecvente`) with 12-15 Q&A pairs, shadcn Accordion, FAQPage JSON-LD schema, and bilingual content
 
 ### Phase 7: SEO and Analytics
 **Goal**: Every page has complete metadata, JSON-LD schema, hreflang, Open Graph tags, and analytics tracking — the site is fully indexed and measured from day one.
