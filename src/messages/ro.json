@@ -822,5 +822,162 @@
     "heading": "Multumim!",
     "description": "Mesajul tau a fost trimis cu succes. Echipa noastra va raspunde in maxim 24 de ore.",
     "backHome": "Inapoi la pagina principala"
+  },
+  "faq": {
+    "meta": {
+      "title": "Intrebari Frecvente - AceAgency",
+      "description": "Gaseste raspunsuri la cele mai frecvente intrebari despre serviciile AceAgency. Afla despre proces, preturi si colaborare."
+    },
+    "breadcrumb": {
+      "home": "Acasa",
+      "current": "Intrebari Frecvente"
+    },
+    "hero": {
+      "overline": "FAQ",
+      "heading": "Intrebari Frecvente",
+      "description": "Raspunsuri la cele mai importante intrebari despre serviciile noastre de marketing digital, procesul de colaborare si echipa AceAgency."
+    },
+    "categories": [
+      {
+        "name": "Despre AceAgency",
+        "items": [
+          {
+            "question": "Ce este AceAgency?",
+            "answer": "AceAgency este o agentie de marketing digital cu sediul in Bucuresti, Romania. Oferim servicii complete de promovare online prin cele patru divizii ale noastre: AceWeb (dezvoltare web), AceAds (publicitate platita), AceAI (inteligenta artificiala in marketing) si AceMedia (continut media). Echipa noastra combina expertiza tehnica cu creativitatea pentru a livra rezultate masurabile."
+          },
+          {
+            "question": "Ce servicii oferiti?",
+            "answer": "Oferim o gama completa de servicii de marketing digital: Google Ads, Facebook si Instagram Ads, TikTok Ads, SEO (optimizare pentru motoare de cautare), email marketing si consultanta de marketing. Fiecare serviciu poate fi contractat individual sau ca parte a unei strategii integrate. Viziteaza pagina noastra de servicii pentru detalii complete despre fiecare solutie."
+          },
+          {
+            "question": "In ce locatii operati?",
+            "answer": "Sediul nostru este in Bucuresti, pe Bulevardul Aviatorilor 106, dar lucram cu clienti din toata Romania si din strainatate. Majoritatea colaborarilor se desfasoara online, ceea ce ne permite sa oferim aceeasi calitate a serviciilor indiferent de locatia clientului. Programam intalniri fizice sau video in functie de preferintele dumneavoastra."
+          },
+          {
+            "question": "Care este experienta echipei AceAgency?",
+            "answer": "Echipa noastra este formata din specialisti cu experienta in marketing digital, publicitate platita, SEO, dezvoltare web si strategie de continut. Fiecare membru al echipei este certificat in platformele cu care lucreaza (Google Ads, Meta, TikTok) si participa constant la programe de formare pentru a ramane la curent cu cele mai noi tendinte din industrie."
+          }
+        ]
+      },
+      {
+        "name": "Proces si Colaborare",
+        "items": [
+          {
+            "question": "Cum incepe o colaborare cu AceAgency?",
+            "answer": "Procesul incepe cu o consultatie gratuita in care analizam nevoile si obiectivele afacerii dumneavoastra. Completati formularul de contact sau programati o intalnire online, iar echipa noastra va reveni cu o propunere personalizata in maxim 48 de ore. Dupa acceptarea propunerii, stabilim strategia, KPI-urile si incepem implementarea."
+          },
+          {
+            "question": "Cat dureaza un proiect tipic?",
+            "answer": "Durata variaza in functie de complexitate. O campanie Google Ads sau Facebook Ads poate fi functionala in 5-7 zile lucratoare. Un proiect SEO necesita de obicei 3-6 luni pentru rezultate vizibile. Dezvoltarea unui website dureaza intre 4 si 12 saptamani. La inceputul fiecarei colaborari, stabilim un calendar clar cu etape si termene."
+          },
+          {
+            "question": "Cum comunicam pe parcursul proiectului?",
+            "answer": "Comunicarea este prioritara pentru noi. Fiecare client primeste un manager de cont dedicat, disponibil prin email, telefon si WhatsApp. Organizam intalniri saptamanale sau bilingvale de status, iar toate materialele si rapoartele sunt accesibile intr-un spatiu de lucru partajat. Raspundem la orice solicitare in maxim 24 de ore."
+          },
+          {
+            "question": "Oferiti rapoarte de performanta?",
+            "answer": "Da, transparenta este unul dintre principiile noastre fundamentale. Oferim rapoarte lunare detaliate cu metrici relevante: trafic, conversii, cost per achizitie, ROI si alte KPI-uri stabilite la inceputul colaborarii. Rapoartele includ analiza rezultatelor, recomandari de optimizare si planul de actiune pentru luna urmatoare."
+          }
+        ]
+      },
+      {
+        "name": "Preturi si Contracte",
+        "items": [
+          {
+            "question": "Cat costa serviciile AceAgency?",
+            "answer": "Preturile variaza in functie de serviciu, complexitate si bugetul de publicitate. Oferim pachete personalizate pentru fiecare client, pornind de la nevoile si obiectivele specifice ale afacerii. Contactati-ne pentru o oferta gratuita si fara obligatii — echipa noastra va pregati o propunere adaptata bugetului dumneavoastra."
+          },
+          {
+            "question": "Exista contracte pe termen lung?",
+            "answer": "Oferim flexibilitate contractuala. Pentru servicii de publicitate si SEO, recomandam un angajament minim de 3 luni pentru a permite optimizarea si obtinerea de rezultate semnificative. Pentru proiecte de dezvoltare web, contractul acopera durata proiectului. Nu avem clauze de reziliere penalizante — dorim ca clientii sa ramana prin rezultate, nu prin obligatii contractuale."
+          },
+          {
+            "question": "Ce metode de plata acceptati?",
+            "answer": "Acceptam transfer bancar, card de credit si plata prin factura fiscala. Facturarea se face lunar, iar termenul standard de plata este de 14 zile de la emiterea facturii. Pentru proiecte mai mari, oferim optiunea de plata in rate, cu un avans la inceputul colaborarii."
+          },
+          {
+            "question": "Oferiti garantii pentru rezultate?",
+            "answer": "In marketingul digital, rezultatele depind de multi factori, inclusiv piata, competitia si bugetul alocat. Nu promitem rezultate garantate, dar ne angajam sa aplicam cele mai bune practici si sa optimizam constant campaniile pentru performanta maxima. Transparenta rapoartelor noastre va permite sa vedeti exact ce rezultate obtinem si ce actiuni luam."
+          }
+        ]
+      },
+      {
+        "name": "Suport si Contact",
+        "items": [
+          {
+            "question": "Cum va pot contacta?",
+            "answer": "Ne puteti contacta prin mai multe canale: completati formularul de pe pagina de contact, trimiteti un email la cretualin@aceagency.ro, sunati la +40 750 465 757 sau programati o intalnire online direct pe site-ul nostru. Sediul nostru din Bucuresti este deschis de luni pana vineri, intre orele 9:00 si 18:00."
+          },
+          {
+            "question": "Cat de repede raspundeti la solicitari?",
+            "answer": "Ne propunem sa raspundem la toate solicitarile in maxim 24 de ore lucratoare. Pentru urgente, va recomandam sa ne contactati telefonic. Clientii existenti au acces prioritar prin managerul de cont dedicat, care este disponibil in timpul programului de lucru pentru orice intrebare sau nevoie."
+          },
+          {
+            "question": "Oferiti consultanta gratuita?",
+            "answer": "Da, prima consultatie este intotdeauna gratuita si fara obligatii. In cadrul acesteia, discutam despre obiectivele afacerii dumneavoastra, analizam prezenta online actuala si identificam oportunitatile de crestere. Programati o consultatie prin pagina de contact sau prin calendarul de intalniri disponibil pe site."
+          }
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politica de Confidentialitate - AceAgency",
+      "description": "Politica de confidentialitate AceAgency. Afla cum colectam, folosim si protejam datele tale personale conform GDPR."
+    },
+    "breadcrumb": {
+      "home": "Acasa",
+      "current": "Politica de Confidentialitate"
+    },
+    "hero": {
+      "heading": "Politica de Confidentialitate"
+    },
+    "lastUpdated": "Ultima actualizare: 23 februarie 2026",
+    "sections": [
+      {
+        "heading": "1. Introducere",
+        "content": "AceAgency, cu sediul in Bulevardul Aviatorilor 106, Bucuresti, Romania, se angajeaza sa protejeze confidentialitatea datelor dumneavoastra personale. Aceasta politica descrie modul in care colectam, utilizam, stocam si protejam informatiile dumneavoastra personale.\n\nAceasta politica se aplica tuturor vizitatorilor site-ului aceagency.ro si tuturor persoanelor care interactioneaza cu serviciile noastre. Va rugam sa cititi cu atentie acest document pentru a intelege practicile noastre privind datele personale."
+      },
+      {
+        "heading": "2. Date Personale Colectate",
+        "content": "Colectam urmatoarele categorii de date personale:\n\nDate furnizate direct de dumneavoastra: nume complet, adresa de email, numar de telefon, mesajul transmis prin formularul de contact, adresa de email pentru abonarea la newsletter.\n\nDate colectate automat: adresa IP, tipul de browser si dispozitiv, paginile vizitate, durata vizitei, sursa de trafic. Aceste date sunt colectate prin cookies si tehnologii similare (consultati Politica de Cookies pentru detalii)."
+      },
+      {
+        "heading": "3. Scopul Prelucrarii Datelor",
+        "content": "Prelucram datele dumneavoastra personale in urmatoarele scopuri:\n\nRaspunsul la solicitarile trimise prin formularul de contact si programarea consultatiilor.\n\nTrimiterea newsletter-ului cu informatii de marketing digital, studii de caz si noutati ale agentiei (doar cu consimtamantul dumneavoastra explicit).\n\nAnaliza traficului pe site pentru imbunatatirea experientei utilizatorilor si a performantei website-ului.\n\nIndeplinirea obligatiilor legale si contractuale."
+      },
+      {
+        "heading": "4. Temeiuri Legale pentru Prelucrare",
+        "content": "Prelucram datele dumneavoastra pe baza urmatoarelor temeiuri legale, conform Regulamentului General privind Protectia Datelor (GDPR), Articolul 6:\n\nConsimtamant (Art. 6 alin. 1 lit. a): pentru trimiterea newsletter-ului si utilizarea cookies de marketing si analytics.\n\nInteresul legitim (Art. 6 alin. 1 lit. f): pentru analiza traficului, imbunatatirea serviciilor si comunicarea in legatura cu solicitarile dumneavoastra.\n\nExecutarea unui contract sau masuri precontractuale (Art. 6 alin. 1 lit. b): pentru procesarea cererilor de oferta si furnizarea serviciilor solicitate."
+      },
+      {
+        "heading": "5. Partajarea Datelor cu Terti",
+        "content": "Nu vindem datele dumneavoastra personale catre terti. Putem partaja datele cu urmatoarele categorii de furnizori de servicii:\n\nFurnizori de hosting si infrastructura (Vercel) pentru functionarea website-ului.\n\nFurnizori de servicii email (Resend) pentru trimiterea mesajelor si newsletter-ului.\n\nGoogle Analytics pentru analiza traficului pe site.\n\nCal.com pentru programarea consultatiilor.\n\nToti furnizorii nostri respecta standardele GDPR si au semnat acorduri de prelucrare a datelor (DPA)."
+      },
+      {
+        "heading": "6. Drepturile Dumneavoastra",
+        "content": "Conform GDPR (Articolele 15-22), aveti urmatoarele drepturi:\n\nDreptul de acces (Art. 15): puteti solicita o copie a datelor personale pe care le detinem despre dumneavoastra.\n\nDreptul la rectificare (Art. 16): puteti solicita corectarea datelor incorecte sau incomplete.\n\nDreptul la stergere (Art. 17): puteti solicita stergerea datelor personale in anumite circumstante.\n\nDreptul la portabilitatea datelor (Art. 20): puteti solicita transferul datelor catre un alt operator.\n\nDreptul la opozitie (Art. 21): puteti va opune prelucrarii datelor in scopuri de marketing direct.\n\nDreptul de a retrage consimtamantul: puteti retrage oricand consimtamantul acordat, fara a afecta legalitatea prelucrarii anterioare.\n\nPentru exercitarea oricarui drept, contactati-ne la cretualin@aceagency.ro. Vom raspunde in termen de 30 de zile."
+      },
+      {
+        "heading": "7. Cookies",
+        "content": "Website-ul nostru utilizeaza cookies pentru functionare, analiza si marketing. Pentru informatii detaliate despre tipurile de cookies utilizate si modul de gestionare, va rugam sa consultati Politica de Cookies."
+      },
+      {
+        "heading": "8. Securitatea Datelor",
+        "content": "Implementam masuri tehnice si organizatorice adecvate pentru protejarea datelor dumneavoastra personale impotriva accesului neautorizat, pierderii, distrugerii sau modificarii. Aceste masuri includ criptarea datelor in tranzit (HTTPS/TLS), controlul accesului la sistemele noastre si revizuirea periodica a practicilor de securitate.\n\nCu toate acestea, niciun sistem de transmitere sau stocare electronica nu este 100% sigur. In cazul unei incalcari a securitatii datelor, vom notifica autoritatile competente si persoanele afectate conform cerintelor legale."
+      },
+      {
+        "heading": "9. Perioada de Stocare",
+        "content": "Stocam datele dumneavoastra personale doar pe perioada necesara indeplinirii scopurilor pentru care au fost colectate:\n\nDatele din formularul de contact: 2 ani de la ultima interactiune.\n\nDatele de newsletter: pana la dezabonare.\n\nDatele de analytics: 26 de luni (conform setarilor Google Analytics).\n\nDupa expirarea perioadei de stocare, datele sunt sterse sau anonimizate."
+      },
+      {
+        "heading": "10. Modificari ale Politicii",
+        "content": "Ne rezervam dreptul de a actualiza aceasta politica de confidentialitate periodic. Orice modificare semnificativa va fi comunicata prin publicarea versiunii actualizate pe aceasta pagina, cu indicarea datei ultimei actualizari.\n\nVa recomandam sa verificati periodic aceasta pagina pentru a fi informati cu privire la eventualele modificari."
+      },
+      {
+        "heading": "11. Contact",
+        "content": "Pentru orice intrebari sau solicitari legate de protectia datelor personale, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757\n\nDe asemenea, aveti dreptul de a depune o plangere la Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP) — www.dataprotection.ro."
+      }
+    ]
   }
 }
