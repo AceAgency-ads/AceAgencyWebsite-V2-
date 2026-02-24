@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { generatePageMetadata } from '@/lib/seo/metadata';
 import { LegalHero } from '@/components/sections/legal/LegalHero';
 import { LegalContent } from '@/components/sections/legal/LegalContent';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
@@ -14,34 +15,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'privacy' });
 
-  const title = t('meta.title');
-  const description = t('meta.description');
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `https://aceagency.ro/${locale}/politica-confidentialitate`,
-      languages: {
-        ro: 'https://aceagency.ro/ro/politica-confidentialitate',
-        en: 'https://aceagency.ro/en/politica-confidentialitate',
-        'x-default': 'https://aceagency.ro/ro/politica-confidentialitate',
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: `https://aceagency.ro/${locale}/politica-confidentialitate`,
-      siteName: 'AceAgency',
-      locale: locale === 'ro' ? 'ro_RO' : 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-    },
-  };
+  return generatePageMetadata({
+    title: t('meta.title'),
+    description: t('meta.description'),
+    path: 'politica-confidentialitate',
+    locale,
+  });
 }
 
 export default async function PrivacyPolicyPage({

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { generatePageMetadata } from '@/lib/seo/metadata';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { Breadcrumb } from '@/components/sections/Breadcrumb';
 import { FAQPageContent } from '@/components/sections/faq/FAQPageContent';
@@ -14,34 +15,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'faq' });
 
-  const title = t('meta.title');
-  const description = t('meta.description');
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `https://aceagency.ro/${locale}/intrebari-frecvente`,
-      languages: {
-        ro: 'https://aceagency.ro/ro/intrebari-frecvente',
-        en: 'https://aceagency.ro/en/intrebari-frecvente',
-        'x-default': 'https://aceagency.ro/ro/intrebari-frecvente',
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: `https://aceagency.ro/${locale}/intrebari-frecvente`,
-      siteName: 'AceAgency',
-      locale: locale === 'ro' ? 'ro_RO' : 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-    },
-  };
+  return generatePageMetadata({
+    title: t('meta.title'),
+    description: t('meta.description'),
+    path: 'intrebari-frecvente',
+    locale,
+  });
 }
 
 export default async function FAQPage({

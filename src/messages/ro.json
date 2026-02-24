@@ -42,6 +42,10 @@
     "facebook": "Facebook"
   },
   "about": {
+    "meta": {
+      "title": "Despre Noi - Agentie Marketing Premium - AceAgency",
+      "description": "Descopera echipa AceAgency - agentie de marketing digital din Bucuresti. Misiunea, valorile si povestea noastra."
+    },
     "breadcrumb": {
       "home": "Acasa",
       "about": "Despre Noi"
@@ -587,6 +591,10 @@
     }
   },
   "home": {
+    "meta": {
+      "title": "Agentie Marketing Digital Bucuresti - AceAgency",
+      "description": "AceAgency - agentie de marketing digital din Bucuresti. Servicii Google Ads, Facebook Ads, SEO, Email Marketing. Contacteaza-ne!"
+    },
     "heroTransition": {
       "label": "DE CE EXISTAM",
       "heading": "Transformam viziunea ta in rezultate digitale masurabile",

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { generatePageMetadata } from '@/lib/seo/metadata';
 import { CheckCircle } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
@@ -14,11 +15,13 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'thankYou' });
 
-  return {
+  return generatePageMetadata({
     title: t('heading') + ' | AceAgency',
     description: t('description'),
-    robots: { index: false, follow: false },
-  };
+    path: 'multumim',
+    locale,
+    noIndex: true,
+  });
 }
 
 export default async function ThankYouPage({

@@ -42,6 +42,10 @@
     "facebook": "Facebook"
   },
   "about": {
+    "meta": {
+      "title": "About Us - Premium Marketing Agency - AceAgency",
+      "description": "Discover the AceAgency team - digital marketing agency from Bucharest. Our mission, values, and story."
+    },
     "breadcrumb": {
       "home": "Home",
       "about": "About Us"
@@ -587,6 +591,10 @@
     }
   },
   "home": {
+    "meta": {
+      "title": "Digital Marketing Agency Bucharest - AceAgency",
+      "description": "AceAgency - digital marketing agency from Bucharest. Google Ads, Facebook Ads, SEO, Email Marketing services. Contact us today!"
+    },
     "heroTransition": {
       "label": "WHY WE EXIST",
       "heading": "We transform your vision into measurable digital results",
