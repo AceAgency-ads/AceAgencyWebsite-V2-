@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 6 — Compliance and Legal (In Progress)
+**Current focus:** Phase 7 — SEO and Analytics (In Progress)
 
 ## Current Position
 
-Phase: 6 of 8 (Compliance and Legal) — COMPLETE
-Plan: 3 of 3 in current phase (all plans complete)
-Status: Phase 6 complete — GDPR cookie consent, legal pages, FAQ page all functional
-Last activity: 2026-02-23 — Completed 06-02-PLAN.md (Legal pages: Privacy, Cookies, Terms)
+Phase: 7 of 8 (SEO and Analytics) — IN PROGRESS
+Plan: 2 of 3 in current phase
+Status: JSON-LD structured data complete — centralized schema builders, all pages injected
+Last activity: 2026-02-24 — Completed 07-02-PLAN.md (JSON-LD Schema Markup)
 
-Progress: [███████████████░░] 63% (17/27 plans estimated)
+Progress: [████████████████░░] 67% (18/27 plans estimated)
 
 ## Performance Metrics
 
@@ -43,6 +43,8 @@ Progress: [███████████████░░] 63% (17/27 plans
 | Phase 06 P03 | 3min | 1 task | 4 files |
 | Phase 06 P01 | 5min | 2 tasks | 6 files |
 | Phase 06 P02 | 7min | 2 tasks | 7 files |
+| Phase 07 P02 | 4min | 2 tasks | 8 files |
+| Phase 07 P01 | 5min | 2 tasks | 14 files |
 
 ## Accumulated Context
 
@@ -118,6 +120,9 @@ Recent decisions affecting current work:
 - [06-03]: Inline hero section created for FAQ page since LegalHero from Plan 02 not yet available (parallel execution).
 - [06-02]: LegalHero is server component (no animations) — legal pages prioritize content readability over visual effects.
 - [06-02]: LegalContent uses dynamic namespace prop to render privacy/cookies/terms from same reusable component.
+- [07-02]: Breadcrumb component kept as-is for BreadcrumbList JSON-LD -- already renders correctly via JSX script tag, no duplication needed.
+- [07-02]: metadata.other['script:ld+json'] completely removed -- renders as <meta> not <script>, breaking structured data.
+- [07-02]: JSON-LD via JSX pattern: Always use <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: renderJsonLd(schema) }} />.
 
 ### Pending Todos
 
@@ -131,6 +136,6 @@ None for Phase 6 Plan 03.
 
 ## Session Continuity
 
-Last session: 2026-02-23
-Stopped at: Completed 06-02-PLAN.md (Legal pages: Privacy, Cookies, Terms) — Phase 6 all plans complete
+Last session: 2026-02-24
+Stopped at: Completed 07-02-PLAN.md (JSON-LD Schema Markup)
 Resume file: None
