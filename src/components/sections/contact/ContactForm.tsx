@@ -7,6 +7,7 @@ import { Loader2 } from 'lucide-react';
 import { submitContactForm, type ContactFormState } from '@/lib/actions/contact';
 import { contactFormSchema } from '@/lib/validations/contact-schema';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
+import { trackEvent } from '@/lib/analytics';
 
 const SERVICE_OPTIONS = [
   'web',
@@ -31,9 +32,10 @@ export function ContactForm(): React.JSX.Element {
   const [state, formAction, pending] = useActionState(submitContactForm, initialState);
   const [clientErrors, setClientErrors] = useState<Record<string, string>>({});
 
-  // Redirect on success
+  // Track generate_lead event and redirect on success
   useEffect(() => {
     if (state.success) {
+      trackEvent('generate_lead', { event_category: 'contact', event_label: 'contact_form' });
       router.push('/multumim');
     }
   }, [state.success, router]);
