@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { generatePageMetadata } from '@/lib/seo/metadata';
+import { SITE_URL } from '@/lib/seo/constants';
 import { SERVICE_DEFINITIONS, getServiceBySlug } from '@/lib/services';
 import { ServiceHero } from '@/components/sections/services/ServiceHero';
 import { HeroTransition } from '@/components/sections/HeroTransition';
@@ -9,6 +11,7 @@ import { ServiceProcess } from '@/components/sections/services/ServiceProcess';
 import { ServiceStats } from '@/components/sections/services/ServiceStats';
 import { ServiceFAQ } from '@/components/sections/services/ServiceFAQ';
 import { ServiceCTA } from '@/components/sections/services/ServiceCTA';
+import { serviceSchema, renderJsonLd } from '@/lib/seo/schemas';
 
 interface ServicePageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -24,8 +27,8 @@ export function generateStaticParams(): { slug: string }[] {
 
 /**
  * Generate SEO metadata for each service sub-page.
- * Includes title, description, canonical, hreflang, OG, Twitter Card,
- * and Service JSON-LD schema.
+ * Includes title, description, canonical, hreflang, OG, Twitter Card.
+ * JSON-LD schema is rendered via JSX script tags in the page component.
  */
 export async function generateMetadata({
   params,
@@ -35,53 +38,13 @@ export async function generateMetadata({
   if (!service) return {};
 
   const t = await getTranslations({ locale, namespace: 'services' });
-  const title = t(`${service.i18nKey}.meta.title`);
-  const description = t(`${service.i18nKey}.meta.description`);
 
-  const serviceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: title,
-    description,
-    provider: {
-      '@type': 'Organization',
-      name: 'AceAgency',
-      url: 'https://aceagency.ro',
-    },
-    areaServed: {
-      '@type': 'Country',
-      name: 'Romania',
-    },
-  };
-
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `https://aceagency.ro/${locale}/servicii/${slug}`,
-      languages: {
-        ro: `https://aceagency.ro/ro/servicii/${slug}`,
-        en: `https://aceagency.ro/en/servicii/${slug}`,
-        'x-default': `https://aceagency.ro/ro/servicii/${slug}`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: `https://aceagency.ro/${locale}/servicii/${slug}`,
-      siteName: 'AceAgency',
-      locale: locale === 'ro' ? 'ro_RO' : 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-    },
-    other: {
-      'script:ld+json': JSON.stringify(serviceSchema),
-    },
-  };
+  return generatePageMetadata({
+    title: t(`${service.i18nKey}.meta.title`),
+    description: t(`${service.i18nKey}.meta.description`),
+    path: `servicii/${slug}`,
+    locale,
+  });
 }
 
 export default async function ServicePage({
@@ -97,6 +60,18 @@ export default async function ServicePage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: renderJsonLd(
+            serviceSchema({
+              name: t(`${service.i18nKey}.meta.title`),
+              description: t(`${service.i18nKey}.meta.description`),
+              url: `${SITE_URL}/${locale}/servicii/${slug}`,
+            }),
+          ),
+        }}
+      />
       <ServiceHero
         serviceKey={service.i18nKey}
         iconName={service.iconName}

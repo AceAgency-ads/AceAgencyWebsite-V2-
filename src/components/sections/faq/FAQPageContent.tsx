@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
+import { faqSchema, renderJsonLd } from '@/lib/seo/schemas';
 
 interface FAQItem {
   readonly question: string;
@@ -32,24 +33,11 @@ export function FAQPageContent(): React.JSX.Element {
   // Flatten all items for JSON-LD schema
   const allItems = categories.flatMap((category) => category.items);
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: allItems.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  };
-
   return (
     <SectionWrapper theme="light" id="faq-content">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: renderJsonLd(faqSchema(allItems)) }}
       />
 
       {categories.map((category, categoryIndex) => (

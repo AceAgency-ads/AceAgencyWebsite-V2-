@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/accordion';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { SectionHeader } from '@/components/sections/SectionHeader';
+import { faqSchema, renderJsonLd } from '@/lib/seo/schemas';
 
 interface ServiceFAQProps {
   readonly serviceKey: string;
@@ -27,24 +28,11 @@ export function ServiceFAQ({ serviceKey }: ServiceFAQProps): React.JSX.Element {
     answer: string;
   }>;
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqItems.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  };
-
   return (
     <SectionWrapper theme="light" id="faq">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: renderJsonLd(faqSchema(faqItems)) }}
       />
 
       <SectionHeader
