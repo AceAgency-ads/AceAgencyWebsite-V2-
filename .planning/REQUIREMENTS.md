@@ -63,19 +63,19 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-04**: hreflang tags (ro, en, x-default) via generateMetadata alternates
 - [x] **SEO-05**: Breadcrumbs on all pages except homepage
 - [ ] **SEO-06**: Core Web Vitals compliance (LCP <2.5s, INP <200ms, CLS <0.1, PageSpeed 90+ mobile)
-- [ ] **SEO-07**: Sitemap.xml and robots.txt
+- [x] **SEO-07**: Sitemap.xml and robots.txt
 - [x] **SEO-08**: Internal linking (min 3-5 internal links per page)
 
 ### Compliance & Infrastructure
 
 - [x] **CMPL-01**: Cookie consent banner with granular GDPR consent (analytics, marketing, functional)
 - [x] **CMPL-02**: GA4 + GTM loading gated behind cookie consent (GTM Consent Mode v2)
-- [ ] **CMPL-03**: Vercel Analytics integration
+- [x] **CMPL-03**: Vercel Analytics integration
 - [ ] **CMPL-04**: WCAG 2.1 AA accessibility (semantic HTML, heading hierarchy, alt text, keyboard navigation)
 - [ ] **CMPL-05**: Security headers (HSTS, X-Content-Type-Options, X-Frame-Options)
 - [ ] **CMPL-06**: HTTPS with 301 redirects from HTTP, non-www redirect
 - [ ] **CMPL-07**: Custom 404 page
-- [ ] **CMPL-08**: GA4 event tracking (generate_lead, click_phone, click_whatsapp, scroll_depth)
+- [x] **CMPL-08**: GA4 event tracking (generate_lead, click_phone, click_whatsapp, scroll_depth)
 
 ## v2 Requirements
 
@@ -163,10 +163,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-03 | Phase 7 | Complete |
 | SEO-04 | Phase 7 | Complete |
 | SEO-05 | Phase 7 | Complete |
-| SEO-07 | Phase 7 | Pending |
+| SEO-07 | Phase 7 | Complete |
 | SEO-08 | Phase 7 | Complete |
-| CMPL-03 | Phase 7 | Pending |
-| CMPL-08 | Phase 7 | Pending |
+| CMPL-03 | Phase 7 | Complete |
+| CMPL-08 | Phase 7 | Complete |
 | SEO-06 | Phase 8 | Pending |
 | CMPL-04 | Phase 8 | Pending |
 | CMPL-05 | Phase 8 | Pending |
