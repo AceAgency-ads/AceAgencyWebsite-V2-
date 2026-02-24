@@ -9,6 +9,7 @@ import { routing } from '@/i18n/routing';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { SmoothScroll } from '@/components/layout/SmoothScroll';
+import { Analytics } from '@vercel/analytics/next';
 import { CookieConsentBanner } from '@/components/layout/CookieConsent';
 import { GTM_CONSENT_DEFAULT_SCRIPT } from '@/lib/gtm';
 
@@ -106,6 +107,7 @@ export default async function LocaleLayout({
           </SmoothScroll>
           <CookieConsentBanner locale={locale} />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
