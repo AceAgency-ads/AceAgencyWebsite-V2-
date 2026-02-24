@@ -154,12 +154,12 @@ Plans:
   4. `sitemap.xml` returns HTTP 200 and lists all pages; `robots.txt` returns HTTP 200 and does not block Googlebot
   5. Vercel Analytics is tracking pageviews; GA4 fires a `page_view` event after cookie consent is granted (verifiable in GA4 DebugView)
   6. GA4 `generate_lead` event fires when the contact form submits successfully
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 07-01: `lib/seo/metadata.ts` factory (generateMetadata with hreflang, Open Graph, Twitter Card, canonical) applied to all pages
-- [ ] 07-02: `lib/seo/schemas.ts` JSON-LD builders (Organization, LocalBusiness, Service, FAQ, BreadcrumbList) injected into all pages
-- [ ] 07-03: `app/sitemap.ts`, `app/robots.ts`, Vercel Analytics integration, GA4 + GTM via `next/script`, and `generate_lead` event tracking on contact form
+- [ ] 07-01-PLAN.md — Metadata factory (generatePageMetadata with hreflang, OG, Twitter Card, canonical) applied to all 10 pages, missing i18n meta keys for Home/About, internal link audit
+- [ ] 07-02-PLAN.md — JSON-LD schema builders (Organization, LocalBusiness, Service, FAQ, BreadcrumbList) injected into all pages via JSX script tags, replacing broken metadata.other approach
+- [ ] 07-03-PLAN.md — sitemap.ts, robots.ts, @vercel/analytics integration, trackEvent() utility, generate_lead GA4 event on contact form
 
 ### Phase 8: Polish and Launch
 **Goal**: The site is verified against every launch-blocking criterion — mobile PageSpeed 90+, WCAG 2.1 AA, security headers, reduced motion support, bilingual content completeness — and is ready to go live at aceagency.ro.
