@@ -58,13 +58,13 @@ Requirements for initial release. Each maps to roadmap phases.
 ### SEO & Analytics
 
 - [x] **SEO-01**: Schema markup JSON-LD on all pages (Organization, LocalBusiness, Service, FAQ, BreadcrumbList)
-- [ ] **SEO-02**: Title tags (max 60 chars, keyword first), meta descriptions (max 155 chars, CTA), canonical URLs on every page
-- [ ] **SEO-03**: Open Graph + Twitter Card tags on every page
-- [ ] **SEO-04**: hreflang tags (ro, en, x-default) via generateMetadata alternates
+- [x] **SEO-02**: Title tags (max 60 chars, keyword first), meta descriptions (max 155 chars, CTA), canonical URLs on every page
+- [x] **SEO-03**: Open Graph + Twitter Card tags on every page
+- [x] **SEO-04**: hreflang tags (ro, en, x-default) via generateMetadata alternates
 - [x] **SEO-05**: Breadcrumbs on all pages except homepage
 - [ ] **SEO-06**: Core Web Vitals compliance (LCP <2.5s, INP <200ms, CLS <0.1, PageSpeed 90+ mobile)
 - [ ] **SEO-07**: Sitemap.xml and robots.txt
-- [ ] **SEO-08**: Internal linking (min 3-5 internal links per page)
+- [x] **SEO-08**: Internal linking (min 3-5 internal links per page)
 
 ### Compliance & Infrastructure
 
@@ -159,12 +159,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CMPL-01 | Phase 6 | Complete |
 | CMPL-02 | Phase 6 | Complete |
 | SEO-01 | Phase 7 | Complete |
-| SEO-02 | Phase 7 | Pending |
-| SEO-03 | Phase 7 | Pending |
-| SEO-04 | Phase 7 | Pending |
+| SEO-02 | Phase 7 | Complete |
+| SEO-03 | Phase 7 | Complete |
+| SEO-04 | Phase 7 | Complete |
 | SEO-05 | Phase 7 | Complete |
 | SEO-07 | Phase 7 | Pending |
-| SEO-08 | Phase 7 | Pending |
+| SEO-08 | Phase 7 | Complete |
 | CMPL-03 | Phase 7 | Pending |
 | CMPL-08 | Phase 7 | Pending |
 | SEO-06 | Phase 8 | Pending |

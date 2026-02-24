@@ -11,8 +11,8 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 
 Phase: 7 of 8 (SEO and Analytics) — IN PROGRESS
 Plan: 2 of 3 in current phase
-Status: JSON-LD structured data complete — centralized schema builders, all pages injected
-Last activity: 2026-02-24 — Completed 07-02-PLAN.md (JSON-LD Schema Markup)
+Status: SEO metadata factory and JSON-LD structured data complete — Plans 01 and 02 done
+Last activity: 2026-02-24 — Completed 07-01-PLAN.md (SEO Metadata) and 07-02-PLAN.md (JSON-LD Schema Markup)
 
 Progress: [████████████████░░] 67% (18/27 plans estimated)
 
@@ -120,6 +120,9 @@ Recent decisions affecting current work:
 - [06-03]: Inline hero section created for FAQ page since LegalHero from Plan 02 not yet available (parallel execution).
 - [06-02]: LegalHero is server component (no animations) — legal pages prioritize content readability over visual effects.
 - [06-02]: LegalContent uses dynamic namespace prop to render privacy/cookies/terms from same reusable component.
+- [07-01]: generatePageMetadata() factory centralizes all SEO metadata — eliminates 40+ lines of boilerplate per page.
+- [07-01]: SITE_URL constant in src/lib/seo/constants.ts eliminates all hardcoded URLs from page files.
+- [07-01]: Homepage path uses empty string '' producing canonical https://aceagency.ro/ro (no trailing slash).
 - [07-02]: Breadcrumb component kept as-is for BreadcrumbList JSON-LD -- already renders correctly via JSX script tag, no duplication needed.
 - [07-02]: metadata.other['script:ld+json'] completely removed -- renders as <meta> not <script>, breaking structured data.
 - [07-02]: JSON-LD via JSX pattern: Always use <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: renderJsonLd(schema) }} />.
@@ -137,5 +140,5 @@ None for Phase 6 Plan 03.
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 07-02-PLAN.md (JSON-LD Schema Markup)
+Stopped at: Completed 07-01-PLAN.md (SEO Metadata) and 07-02-PLAN.md (JSON-LD Schema Markup)
 Resume file: None
