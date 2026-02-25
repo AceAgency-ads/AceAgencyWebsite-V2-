@@ -72,9 +72,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **CMPL-02**: GA4 + GTM loading gated behind cookie consent (GTM Consent Mode v2)
 - [x] **CMPL-03**: Vercel Analytics integration
 - [x] **CMPL-04**: WCAG 2.1 AA accessibility (semantic HTML, heading hierarchy, alt text, keyboard navigation)
-- [ ] **CMPL-05**: Security headers (HSTS, X-Content-Type-Options, X-Frame-Options)
-- [ ] **CMPL-06**: HTTPS with 301 redirects from HTTP, non-www redirect
-- [ ] **CMPL-07**: Custom 404 page
+- [x] **CMPL-05**: Security headers (HSTS, X-Content-Type-Options, X-Frame-Options)
+- [x] **CMPL-06**: HTTPS with 301 redirects from HTTP, non-www redirect
+- [x] **CMPL-07**: Custom 404 page
 - [x] **CMPL-08**: GA4 event tracking (generate_lead, click_phone, click_whatsapp, scroll_depth)
 
 ## v2 Requirements
@@ -169,9 +169,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CMPL-08 | Phase 7 | Complete |
 | SEO-06 | Phase 8 | Complete |
 | CMPL-04 | Phase 8 | Complete |
-| CMPL-05 | Phase 8 | Pending |
-| CMPL-06 | Phase 8 | Pending |
-| CMPL-07 | Phase 8 | Pending |
+| CMPL-05 | Phase 8 | Complete |
+| CMPL-06 | Phase 8 | Complete |
+| CMPL-07 | Phase 8 | Complete |
 
 **Coverage:**
 - v1 requirements: 52 total

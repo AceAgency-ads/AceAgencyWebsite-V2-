@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-20)
 ## Current Position
 
 Phase: 8 of 8 (Polish and Launch)
-Plan: 1 of 3 in current phase (08-01 complete)
-Status: Reduced-motion accessibility retrofit complete for all animation components
-Last activity: 2026-02-25 — Completed 08-01-PLAN.md (Reduced-Motion Accessibility)
+Plan: 2 of 3 in current phase (08-02 complete)
+Status: Security headers and branded 404 pages complete
+Last activity: 2026-02-25 — Completed 08-02-PLAN.md (Security Headers & 404 Pages)
 
-Progress: [████████████████████░] 74% (20/27 plans estimated)
+Progress: [█████████████████████░] 78% (21/27 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 16
+- Total plans completed: 17
 - Average duration: ~7 min (auto tasks only)
 - Total execution time: ~1.7 hours
 
@@ -47,6 +47,7 @@ Progress: [████████████████████░] 74% 
 | Phase 07 P01 | 5min | 2 tasks | 14 files |
 | Phase 07 P03 | 2min | 2 tasks | 5 files |
 | Phase 08 P01 | 2min | 2 tasks | 7 files |
+| Phase 08 P02 | 3min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -132,10 +133,14 @@ Recent decisions affecting current work:
 - [07-03]: Analytics component placed outside NextIntlClientProvider as sibling in body for reliability.
 - [08-01]: gsap.matchMedia reduced-motion wrapping pattern standardized across all animation components.
 - [08-01]: SmoothScroll uses early-return pattern (skip Lenis entirely) rather than matchMedia wrapper.
+- [08-02]: CSP header deferred — too complex with GTM, Cal.com, Google Maps, Analytics, and fonts.
+- [08-02]: HTTPS/non-www redirects handled by Vercel infrastructure — no custom code needed (CMPL-06).
+- [08-02]: Global fallback 404 uses inline styles — renders outside any layout so Tailwind unavailable.
+- [08-02]: Dual 404 pattern: [locale]/not-found.tsx for programmatic notFound(), root not-found.tsx for truly unknown URLs.
 
 ### Pending Todos
 
-None for Phase 8 Plan 01.
+None for Phase 8 Plan 02.
 
 ### Blockers/Concerns
 
@@ -146,5 +151,5 @@ None for Phase 8 Plan 01.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 08-01-PLAN.md (Reduced-Motion Accessibility)
+Stopped at: Completed 08-02-PLAN.md (Security Headers & 404 Pages)
 Resume file: None
