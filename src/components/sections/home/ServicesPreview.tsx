@@ -4,15 +4,14 @@ import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import {
   Code,
-  Target,
-  Share2,
-  Play,
   Search,
   Lightbulb,
   ArrowRight,
   ArrowUpRight,
   type LucideIcon,
 } from 'lucide-react';
+import { FaGoogle, FaFacebookF, FaTiktok } from 'react-icons/fa6';
+import { type IconType } from 'react-icons';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
 import { Link } from '@/i18n/navigation';
 import { Button } from '@/components/ui/button';
@@ -21,18 +20,19 @@ import { SectionHeader } from '@/components/sections/SectionHeader';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 
 interface ServiceDefinition {
-  readonly icon: LucideIcon;
+  readonly icon: LucideIcon | IconType;
+  readonly iconKind: 'lucide' | 'react-icons';
   readonly key: string;
   readonly href: string;
 }
 
 const SERVICES: readonly ServiceDefinition[] = [
-  { icon: Code, key: '0', href: '/servicii' },
-  { icon: Target, key: '1', href: '/servicii/google-ads' },
-  { icon: Share2, key: '2', href: '/servicii/facebook-ads' },
-  { icon: Play, key: '3', href: '/servicii/tiktok-ads' },
-  { icon: Search, key: '4', href: '/servicii/seo' },
-  { icon: Lightbulb, key: '5', href: '/servicii/consultanta-marketing' },
+  { icon: Code, iconKind: 'lucide', key: '0', href: '/servicii' },
+  { icon: FaGoogle, iconKind: 'react-icons', key: '1', href: '/servicii/google-ads' },
+  { icon: FaFacebookF, iconKind: 'react-icons', key: '2', href: '/servicii/facebook-ads' },
+  { icon: FaTiktok, iconKind: 'react-icons', key: '3', href: '/servicii/tiktok-ads' },
+  { icon: Search, iconKind: 'lucide', key: '4', href: '/servicii/seo' },
+  { icon: Lightbulb, iconKind: 'lucide', key: '5', href: '/servicii/consultanta-marketing' },
 ] as const;
 
 /**
@@ -92,7 +92,7 @@ export function ServicesPreview(): React.JSX.Element {
           ref={cardRowRef}
           className="-mx-2 flex gap-5 overflow-x-auto px-2 pb-4 snap-x snap-mandatory scrollbar-hide lg:overflow-visible lg:snap-none lg:pb-0 lg:will-change-transform"
         >
-          {SERVICES.map(({ icon: Icon, key, href }) => (
+          {SERVICES.map(({ icon: Icon, iconKind, key, href }) => (
             <Link
               key={key}
               href={href}
@@ -101,20 +101,24 @@ export function ServicesPreview(): React.JSX.Element {
             >
               {/* Top row: icon left, arrow right */}
               <div className="flex items-start justify-between">
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-[#56151A]/20 bg-[#56151A]/10">
-                  <Icon
-                    className="size-8 text-[#56151A]"
-                    strokeWidth={1.5}
-                  />
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-[#56151A] bg-[#56151A]">
+                  {iconKind === 'lucide' ? (
+                    <Icon
+                      className="size-8 text-white"
+                      strokeWidth={1.5}
+                    />
+                  ) : (
+                    <Icon size={28} className="text-white" />
+                  )}
                 </div>
                 <ArrowUpRight className="size-5 text-[var(--section-text-muted)] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#56151A]" />
               </div>
 
               {/* Title + description at bottom */}
               <div>
-                <h4 className="text-lg font-semibold text-[var(--section-text)] md:text-xl">
+                <h3 className="text-lg font-semibold text-[var(--section-text)] md:text-xl">
                   {t(`services.items.${key}.title`)}
-                </h4>
+                </h3>
                 {/* Description slides in on hover */}
                 <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-300 group-hover:mt-2 group-hover:max-h-20 group-hover:opacity-100">
                   <p className="text-sm text-[var(--section-text-muted)]">

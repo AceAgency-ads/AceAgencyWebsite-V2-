@@ -21,7 +21,7 @@ const TESTIMONIAL_KEYS = ['0', '1', '2', '3', '4', '5'] as const;
 /** Star rating component. Renders filled stars up to the rating count. */
 function StarRating({ rating }: { readonly rating: number }): React.JSX.Element {
   return (
-    <div className="flex gap-1" aria-label={`${rating} out of 5 stars`}>
+    <div className="flex gap-1" role="img" aria-label={`${rating} out of 5 stars`}>
       {Array.from({ length: 5 }, (_, i) => (
         <Star
           key={i}
@@ -91,6 +91,7 @@ export function Testimonials(): React.JSX.Element {
         className="-mx-2 flex snap-x snap-mandatory gap-6 overflow-x-auto px-2 pb-4 scrollbar-hide"
         role="region"
         aria-label="Testimonials carousel"
+        tabIndex={0}
       >
         {TESTIMONIAL_KEYS.map((key) => {
           const item = t.raw(`testimonials.items.${key}`) as TestimonialItem;

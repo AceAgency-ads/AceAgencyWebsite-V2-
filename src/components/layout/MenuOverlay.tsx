@@ -133,6 +133,7 @@ export function MenuOverlay({
       ref={overlayRef}
       className="invisible fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#262523]"
       aria-hidden={!isOpen}
+      inert={!isOpen ? true : undefined}
     >
       {/* Logo */}
       <Image

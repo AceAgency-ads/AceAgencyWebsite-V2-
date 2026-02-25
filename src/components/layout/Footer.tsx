@@ -107,7 +107,7 @@ export function Footer(): React.JSX.Element {
               <h3 className="font-heading text-sm font-bold uppercase tracking-[0.12em] text-[#a0a0a0]">
                 {tNav('home').charAt(0).toUpperCase() + tNav('home').slice(1) === tNav('home') ? 'Pagini' : 'Pages'}
               </h3>
-              <nav className="flex flex-col gap-2">
+              <nav aria-label="Footer navigation" className="flex flex-col gap-2">
                 {NAV_LINKS.map((link) => (
                   <Link
                     key={link.key}
@@ -211,7 +211,7 @@ export function Footer(): React.JSX.Element {
           <div className="border-t border-[#4a464380] pt-6">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <p className="text-xs text-[#a0a0a0]">{t('copyright')}</p>
-              <nav className="flex gap-4">
+              <nav aria-label="Legal links" className="flex gap-4">
                 {LEGAL_LINKS.map((link) => (
                   <Link
                     key={link.key}
