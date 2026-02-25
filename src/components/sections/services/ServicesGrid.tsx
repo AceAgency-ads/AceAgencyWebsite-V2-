@@ -46,24 +46,33 @@ export function ServicesGrid(): React.JSX.Element {
       const cards = gridRef.current.querySelectorAll('[data-card]');
       if (cards.length === 0) return;
 
-      gsap.from(cards, {
-        y: 40,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.08,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: gridRef.current,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
-        },
+      const mm = gsap.matchMedia();
+
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        gsap.from(cards, {
+          y: 40,
+          opacity: 0,
+          duration: 0.6,
+          stagger: 0.08,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: gridRef.current,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        });
+
+        return () => {
+          ScrollTrigger.getAll()
+            .filter((st) => st.trigger === gridRef.current)
+            .forEach((st) => st.kill());
+        };
       });
 
-      return () => {
-        ScrollTrigger.getAll()
-          .filter((st) => st.trigger === gridRef.current)
-          .forEach((st) => st.kill());
-      };
+      // Reduced motion: make all cards immediately visible
+      mm.add('(prefers-reduced-motion: reduce)', () => {
+        gsap.set(cards, { opacity: 1, y: 0 });
+      });
     },
     { scope: gridRef }
   );
@@ -80,7 +89,7 @@ export function ServicesGrid(): React.JSX.Element {
         className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
       >
         {GRID_SERVICES.map((service, index) => {
-          const Icon = getServiceIcon(service.iconName);
+          const { icon: Icon, kind: iconKind } = getServiceIcon(service.iconName);
           const href = service.isIndex ? '/servicii' : `/servicii/${service.slug}`;
 
           return (
@@ -96,10 +105,17 @@ export function ServicesGrid(): React.JSX.Element {
                 className="h-full rounded-2xl border border-white/10 bg-white/5 p-8 transition-transform duration-300 group-hover:-translate-y-1"
               >
                 {/* Icon */}
-                <Icon
-                  className="mb-4 size-12 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#56151A]"
-                  strokeWidth={1.5}
-                />
+                {iconKind === 'lucide' ? (
+                  <Icon
+                    className="mb-4 size-12 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#56151A]"
+                    strokeWidth={1.5}
+                  />
+                ) : (
+                  <Icon
+                    className="mb-4 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#56151A]"
+                    size={48}
+                  />
+                )}
 
                 {/* Service name */}
                 <h3 className="mb-2 text-xl font-bold">

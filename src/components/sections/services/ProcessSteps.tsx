@@ -36,24 +36,33 @@ export function ProcessSteps(): React.JSX.Element {
       const steps = stepsRef.current.querySelectorAll('[data-step]');
       if (steps.length === 0) return;
 
-      gsap.from(steps, {
-        x: -40,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.15,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: stepsRef.current,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
-        },
+      const mm = gsap.matchMedia();
+
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        gsap.from(steps, {
+          x: -40,
+          opacity: 0,
+          duration: 0.6,
+          stagger: 0.15,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: stepsRef.current,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        });
+
+        return () => {
+          ScrollTrigger.getAll()
+            .filter((st) => st.trigger === stepsRef.current)
+            .forEach((st) => st.kill());
+        };
       });
 
-      return () => {
-        ScrollTrigger.getAll()
-          .filter((st) => st.trigger === stepsRef.current)
-          .forEach((st) => st.kill());
-      };
+      // Reduced motion: make all process steps immediately visible
+      mm.add('(prefers-reduced-motion: reduce)', () => {
+        gsap.set(steps, { opacity: 1, x: 0 });
+      });
     },
     { scope: stepsRef }
   );

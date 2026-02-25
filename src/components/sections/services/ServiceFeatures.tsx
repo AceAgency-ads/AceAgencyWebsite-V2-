@@ -53,24 +53,33 @@ export function ServiceFeatures({ serviceKey }: ServiceFeaturesProps): React.JSX
       const cards = gridRef.current.querySelectorAll('[data-feature]');
       if (cards.length === 0) return;
 
-      gsap.from(cards, {
-        y: 40,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.08,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: gridRef.current,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
-        },
+      const mm = gsap.matchMedia();
+
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        gsap.from(cards, {
+          y: 40,
+          opacity: 0,
+          duration: 0.6,
+          stagger: 0.08,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: gridRef.current,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        });
+
+        return () => {
+          ScrollTrigger.getAll()
+            .filter((st) => st.trigger === gridRef.current)
+            .forEach((st) => st.kill());
+        };
       });
 
-      return () => {
-        ScrollTrigger.getAll()
-          .filter((st) => st.trigger === gridRef.current)
-          .forEach((st) => st.kill());
-      };
+      // Reduced motion: make all feature cards immediately visible
+      mm.add('(prefers-reduced-motion: reduce)', () => {
+        gsap.set(cards, { opacity: 1, y: 0 });
+      });
     },
     { scope: gridRef }
   );

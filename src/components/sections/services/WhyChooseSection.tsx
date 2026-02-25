@@ -26,24 +26,33 @@ export function WhyChooseSection(): React.JSX.Element {
       const items = diffRef.current.querySelectorAll('[data-diff]');
       if (items.length === 0) return;
 
-      gsap.from(items, {
-        y: 30,
-        opacity: 0,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: diffRef.current,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
-        },
+      const mm = gsap.matchMedia();
+
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        gsap.from(items, {
+          y: 30,
+          opacity: 0,
+          duration: 0.5,
+          stagger: 0.1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: diffRef.current,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        });
+
+        return () => {
+          ScrollTrigger.getAll()
+            .filter((st) => st.trigger === diffRef.current)
+            .forEach((st) => st.kill());
+        };
       });
 
-      return () => {
-        ScrollTrigger.getAll()
-          .filter((st) => st.trigger === diffRef.current)
-          .forEach((st) => st.kill());
-      };
+      // Reduced motion: make all differentiator items immediately visible
+      mm.add('(prefers-reduced-motion: reduce)', () => {
+        gsap.set(items, { opacity: 1, y: 0 });
+      });
     },
     { scope: diffRef }
   );
