@@ -51,11 +51,12 @@ export function TextReveal({
       const mm = gsap.matchMedia();
 
       mm.add('(prefers-reduced-motion: no-preference)', () => {
-        const splitType = variant === 'word' ? 'words' : 'chars';
+        const splitType = variant === 'word' ? 'words' : 'words,chars';
 
         SplitText.create(containerRef.current!, {
           type: splitType,
           autoSplit: true,
+          aria: 'auto',
           wordsClass: 'split-text-word',
           charsClass: 'split-text-char',
           onSplit(self) {

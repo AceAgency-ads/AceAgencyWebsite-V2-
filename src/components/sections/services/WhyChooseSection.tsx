@@ -75,7 +75,7 @@ export function WhyChooseSection(): React.JSX.Element {
               <CountUp
                 end={Number(t(`index.whyUs.stats.${i}.value`))}
                 suffix={t(`index.whyUs.stats.${i}.suffix`)}
-                className="text-4xl font-bold text-[#56151A] md:text-5xl"
+                className="text-4xl font-bold text-white md:text-5xl"
               />
               <p className="mt-2 text-sm text-[var(--section-text-muted)]">
                 {t(`index.whyUs.stats.${i}.label`)}

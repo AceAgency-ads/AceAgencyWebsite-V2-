@@ -36,15 +36,17 @@ export function ScrubReveal({
       if (!containerRef.current) return;
 
       const isWord = variant === 'word';
-      const splitType = isWord ? 'words' : 'chars';
       const staggerAmount = isWord ? 0.06 : 0.03;
 
       const mm = gsap.matchMedia();
 
       mm.add('(prefers-reduced-motion: no-preference)', () => {
         SplitText.create(containerRef.current!, {
-          type: splitType,
+          type: isWord ? 'words' : 'words,chars',
           autoSplit: true,
+          aria: 'auto',
+          wordsClass: 'split-text-word',
+          charsClass: 'split-text-char',
           onSplit(self) {
             const targets = isWord ? self.words : self.chars;
 
@@ -76,7 +78,7 @@ export function ScrubReveal({
   );
 
   return (
-    <Tag ref={containerRef} className={className}>
+    <Tag ref={containerRef} className={className} role="group">
       {children}
     </Tag>
   );

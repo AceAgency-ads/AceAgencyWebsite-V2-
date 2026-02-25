@@ -38,7 +38,7 @@ export function ServiceStats({ serviceKey }: ServiceStatsProps): React.JSX.Eleme
             <CountUp
               end={Number(item.value)}
               suffix={item.suffix}
-              className="text-4xl font-bold text-[#56151A] md:text-5xl"
+              className="text-4xl font-bold text-white md:text-5xl"
             />
             <p className="mt-3 text-sm text-[var(--section-text-muted)]">
               {item.label}
