@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-02-20)
 
 **Core value:** A visually stunning, design-first website that positions AceAgency as a premium digital agency — the design IS the proof of capability.
-**Current focus:** Phase 7 — SEO and Analytics (COMPLETE)
+**Current focus:** Phase 8 — Polish and Launch
 
 ## Current Position
 
-Phase: 7 of 8 (SEO and Analytics) — COMPLETE
-Plan: 3 of 3 in current phase (all done)
-Status: All SEO infrastructure complete — metadata factory, JSON-LD, sitemap, robots, analytics, event tracking
-Last activity: 2026-02-24 — Completed 07-03-PLAN.md (Sitemap, Robots, Analytics)
+Phase: 8 of 8 (Polish and Launch)
+Plan: 1 of 3 in current phase (08-01 complete)
+Status: Reduced-motion accessibility retrofit complete for all animation components
+Last activity: 2026-02-25 — Completed 08-01-PLAN.md (Reduced-Motion Accessibility)
 
-Progress: [███████████████████░] 70% (19/27 plans estimated)
+Progress: [████████████████████░] 74% (20/27 plans estimated)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 15
+- Total plans completed: 16
 - Average duration: ~7 min (auto tasks only)
 - Total execution time: ~1.7 hours
 
@@ -46,6 +46,7 @@ Progress: [███████████████████░] 70% (19
 | Phase 07 P02 | 4min | 2 tasks | 8 files |
 | Phase 07 P01 | 5min | 2 tasks | 14 files |
 | Phase 07 P03 | 2min | 2 tasks | 5 files |
+| Phase 08 P01 | 2min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -129,10 +130,12 @@ Recent decisions affecting current work:
 - [07-02]: JSON-LD via JSX pattern: Always use <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: renderJsonLd(schema) }} />.
 - [07-03]: Reused Window.dataLayer type augmentation from gtm.ts instead of duplicate declaration in analytics.ts.
 - [07-03]: Analytics component placed outside NextIntlClientProvider as sibling in body for reliability.
+- [08-01]: gsap.matchMedia reduced-motion wrapping pattern standardized across all animation components.
+- [08-01]: SmoothScroll uses early-return pattern (skip Lenis entirely) rather than matchMedia wrapper.
 
 ### Pending Todos
 
-None for Phase 7.
+None for Phase 8 Plan 01.
 
 ### Blockers/Concerns
 
@@ -142,6 +145,6 @@ None for Phase 7.
 
 ## Session Continuity
 
-Last session: 2026-02-24
-Stopped at: Completed 07-03-PLAN.md (Sitemap, Robots, Analytics) — Phase 7 complete
+Last session: 2026-02-25
+Stopped at: Completed 08-01-PLAN.md (Reduced-Motion Accessibility)
 Resume file: None
