@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 5: Contact and Lead Capture** - Build Contact page with form, Cal.com booking, newsletter, and maps using `/frontend-design`
 - [ ] **Phase 6: Compliance and Legal** - Build legal pages and wire GDPR cookie consent banner
 - [x] **Phase 7: SEO and Analytics** - Apply metadata, schema markup, hreflang, sitemap, analytics tracking (completed 2026-02-24)
-- [ ] **Phase 8: Polish and Launch** - Performance audit, accessibility verification, security headers, launch gate
+- [x] **Phase 8: Polish and Launch** - Performance audit, accessibility verification, security headers, launch gate
 
 ## Phase Details
 
@@ -174,9 +174,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 08-01-PLAN.md — Reduced-motion retrofit for ScrollReveal, SmoothScroll, and 5 service section components (WCAG 2.1 AA + performance foundation)
-- [ ] 08-02-PLAN.md — Security headers in next.config.ts, branded bilingual 404 page, Vercel HTTPS/redirect documentation
-- [ ] 08-03-PLAN.md — Production audits (Lighthouse, axe-core, security headers, i18n) with regression fixes and human verification
+- [x] 08-01-PLAN.md — Reduced-motion retrofit for ScrollReveal, SmoothScroll, and 5 service section components (WCAG 2.1 AA + performance foundation)
+- [x] 08-02-PLAN.md — Security headers in next.config.ts, branded bilingual 404 page, Vercel HTTPS/redirect documentation
+- [x] 08-03-PLAN.md — Production audits (Lighthouse, axe-core, security headers, i18n) with regression fixes and human verification
 
 ## Progress
 
@@ -192,4 +192,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 5. Contact and Lead Capture | 2/2 | Complete    | 2026-02-23 |
 | 6. Compliance and Legal | 0/3 | Not started | - |
 | 7. SEO and Analytics | 0/3 | Complete    | 2026-02-24 |
-| 8. Polish and Launch | 0/3 | Not started | - |
+| 8. Polish and Launch | 3/3 | Complete    | 2026-02-25 |
