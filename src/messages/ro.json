@@ -1087,5 +1087,11 @@
         "content": "Pentru orice intrebari sau clarificari legate de acesti termeni si conditii, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
       }
     ]
+  },
+  "notFound": {
+    "title": "404",
+    "heading": "Pagina nu a fost gasita",
+    "description": "Ne pare rau, pagina pe care o cauti nu exista sau a fost mutata.",
+    "backHome": "Inapoi acasa"
   }
 }
