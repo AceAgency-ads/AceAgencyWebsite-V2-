@@ -1,16 +1,45 @@
-export default function GlobalNotFound() {
+import { headers } from 'next/headers';
+
+const translations = {
+  en: {
+    title: '404 - Page not found | AceAgency',
+    heading: 'Page not found',
+    description:
+      "Sorry, the page you're looking for doesn't exist or has been moved.",
+    backHome: 'Back to home',
+    homeHref: '/en/',
+  },
+  ro: {
+    title: '404 - Pagina nu a fost gasita | AceAgency',
+    heading: 'Pagina nu a fost gasita',
+    description:
+      'Ne pare rau, pagina pe care o cauti nu exista sau a fost mutata.',
+    backHome: 'Inapoi acasa',
+    homeHref: '/ro/',
+  },
+} as const;
+
+export default async function GlobalNotFound() {
+  const headersList = await headers();
+  // next-intl middleware sets this header; fall back to referer path detection
+  const intlLocale = headersList.get('x-next-intl-locale');
+  const referer = headersList.get('referer') ?? '';
+  const locale = intlLocale === 'en' || referer.includes('/en/') || referer.includes('/en?') ? 'en' : 'ro';
+  const t = translations[locale];
+
   return (
-    <html lang="ro">
+    <html lang={locale}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>404 - Pagina nu a fost gasita | AceAgency</title>
+        <title>{t.title}</title>
       </head>
       <body
         style={{
           margin: 0,
           padding: '1.5rem',
-          fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+          fontFamily:
+            'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
           backgroundColor: '#262523',
           color: '#ffffff',
           display: 'flex',
@@ -39,7 +68,7 @@ export default function GlobalNotFound() {
               fontWeight: 700,
             }}
           >
-            Pagina nu a fost gasita
+            {t.heading}
           </h2>
           <p
             style={{
@@ -49,10 +78,10 @@ export default function GlobalNotFound() {
               lineHeight: 1.6,
             }}
           >
-            Ne pare rau, pagina pe care o cauti nu exista sau a fost mutata.
+            {t.description}
           </p>
           <a
-            href="/ro/"
+            href={t.homeHref}
             style={{
               display: 'inline-block',
               marginTop: '2rem',
@@ -65,7 +94,7 @@ export default function GlobalNotFound() {
               fontWeight: 600,
             }}
           >
-            Inapoi acasa
+            {t.backHome}
           </a>
         </div>
       </body>
