@@ -27,28 +27,43 @@ export function ScrollReveal({
     () => {
       if (!containerRef.current) return;
 
-      gsap.from(containerRef.current, {
-        opacity: 0,
-        y: yOffset,
-        duration,
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start,
-          toggleActions: 'play none none none',
-        },
+      const mm = gsap.matchMedia();
+
+      mm.add('(prefers-reduced-motion: no-preference)', () => {
+        gsap.from(containerRef.current!, {
+          opacity: 0,
+          y: yOffset,
+          duration,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start,
+            toggleActions: 'play none none none',
+          },
+        });
+
+        // Refresh ScrollTrigger after fonts load to avoid off-position triggers.
+        // See RESEARCH.md Pitfall 3 for context.
+        const onLoad = (): void => {
+          ScrollTrigger.refresh();
+        };
+
+        if (document.readyState === 'complete') {
+          ScrollTrigger.refresh();
+        } else {
+          window.addEventListener('load', onLoad, { once: true });
+        }
+
+        return () => {
+          ScrollTrigger.getAll()
+            .filter((st) => st.trigger === containerRef.current)
+            .forEach((st) => st.kill());
+        };
       });
 
-      // Refresh ScrollTrigger after fonts load to avoid off-position triggers.
-      // See RESEARCH.md Pitfall 3 for context.
-      const onLoad = (): void => {
-        ScrollTrigger.refresh();
-      };
-
-      if (document.readyState === 'complete') {
-        ScrollTrigger.refresh();
-      } else {
-        window.addEventListener('load', onLoad, { once: true });
-      }
+      // Reduced motion: instant reveal (no animation)
+      mm.add('(prefers-reduced-motion: reduce)', () => {
+        gsap.set(containerRef.current!, { opacity: 1, y: 0 });
+      });
     },
     { scope: containerRef }
   );

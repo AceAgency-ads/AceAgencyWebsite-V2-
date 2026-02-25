@@ -171,12 +171,12 @@ Plans:
   3. Every key in `ro.json` has a corresponding key in `en.json` with non-placeholder content
   4. The custom 404 page renders with navigation back to the site when visiting a non-existent URL
   5. Security headers (HSTS, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) are present on all responses (verifiable via SecurityHeaders.com)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 08-01: Performance audit (PageSpeed Insights on mobile, 6x CPU throttle, GSAP memory leak heap snapshot after 10 navigations), fix regressions
-- [ ] 08-02: WCAG 2.1 AA audit (axe DevTools), reduced motion support verification, bilingual content completeness check
-- [ ] 08-03: Security headers in `next.config.ts`, HTTPS/301 redirect verification, custom 404 page, CMPL-06 redirect rules; final pre-launch checklist
+- [ ] 08-01-PLAN.md — Reduced-motion retrofit for ScrollReveal, SmoothScroll, and 5 service section components (WCAG 2.1 AA + performance foundation)
+- [ ] 08-02-PLAN.md — Security headers in next.config.ts, branded bilingual 404 page, Vercel HTTPS/redirect documentation
+- [ ] 08-03-PLAN.md — Production audits (Lighthouse, axe-core, security headers, i18n) with regression fixes and human verification
 
 ## Progress
 
