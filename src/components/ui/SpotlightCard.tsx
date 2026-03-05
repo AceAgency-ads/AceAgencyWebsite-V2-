@@ -17,7 +17,7 @@ interface SpotlightCardProps {
 export function SpotlightCard({
   children,
   className,
-  spotlightColor = 'rgba(86, 21, 26, 0.25)',
+  spotlightColor = 'rgba(101, 12, 190, 0.25)',
 }: SpotlightCardProps): React.JSX.Element {
   const cardRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });

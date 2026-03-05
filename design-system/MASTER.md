@@ -1,24 +1,24 @@
-# AceAgency Design System — MASTER
+# Laboratorul de Conversii Design System — MASTER
 
-> Complete visual language specification for aceagency.ro
-> Inspired by addifico.com design sensibility, applied with AceAgency brand identity.
+> Complete visual language specification for aceagency.ro (Laboratorul de Conversii)
+> Built and verified across Phases 1–4. This document reflects the actual codebase.
 
 ---
 
 ## 1. Design Philosophy
 
-**Core principle:** The website IS the proof of capability. Every pixel, animation, and interaction demonstrates what AceAgency can deliver for clients.
+**Core principle:** The website IS the proof of capability. Every pixel, animation, and interaction demonstrates what Laboratorul de Conversii can deliver for clients.
 
-**Aesthetic direction:** "Precision Elegance" — Clean, architectural layouts with bold typography, purposeful white space, and kinetic micro-interactions. Dark-dominant palette with electric color accents that feel premium without feeling cold. Component-driven design (no stock photos in main sections), line-art iconography, bento-grid compositions, and scroll-triggered choreography that rewards exploration.
+**Aesthetic direction:** "Precision Elegance" — Clean, architectural layouts with bold typography, purposeful white space, and kinetic micro-interactions. Dark-dominant palette with restrained Violet accents that feel premium without feeling cold. Component-driven design (no stock photos in main sections), icon-based service representation, bento-grid compositions, and scroll-triggered choreography that rewards exploration.
 
 **Anti-AI signals (distinctiveness):**
 1. Custom font pairing: Glacial Indifference + Red Hat Display (not a common AI default)
-2. Restrained monochrome palette with Burgundy accent — not the typical blue/purple/gradient AI look
+2. Restrained monochrome palette with Violet accent — not the typical blue/purple/gradient AI look
 3. Asymmetric bento layouts (not cookie-cutter grids)
-4. Character-level kinetic typography on hero headlines
-5. Mix-blend-mode cursor interaction on desktop
-6. Dark/light section transitions with scroll-driven opacity
-7. Line-art icon system (custom, not generic icon sets)
+4. Character-level and word-level kinetic typography on hero headlines (GSAP SplitText)
+5. Dark/light section transitions with scroll-driven opacity and floating rounded panels
+6. Brand logos (react-icons) for platform services instead of generic icons
+7. Scroll-scrubbed text reveal (ScrubReveal) for transition sections
 
 ---
 
@@ -28,39 +28,41 @@
 
 | Token | Hex | OKLCH | Usage |
 |-------|-----|-------|-------|
-| Burgundy | `#56151A` | `oklch(0.30 0.10 25)` | Primary actions, CTAs, links, accent highlights, brand signature |
+| Violet | `#650CBE` | `oklch(0.30 0.10 25)` | Primary actions, CTAs, links, accent highlights, brand signature |
 | Black | `#262523` | `oklch(0.19 0.005 80)` | Dark backgrounds, primary text on light |
 | White | `#FFFFFF` | `oklch(1.0 0 0)` | Light backgrounds, primary text on dark |
-| Grey | `#D9D9D9` | `oklch(0.88 0 0)` | Secondary text on dark, borders, muted elements, overlines on dark |
+| Grey | `#D9D9D9` | `oklch(0.88 0 0)` | Secondary text on dark, borders, muted elements, overlines |
 
 ### Extended Palette
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| `burgundy-light` | `oklch(0.38 0.10 25)` | Burgundy hover / lighter variant |
-| `burgundy-glow` | `oklch(0.30 0.10 25 / 0.15)` | Glow effects, box shadows |
-| `burgundy-soft` | `oklch(0.30 0.10 25 / 0.10)` | Subtle burgundy background tint |
-| `dark-elevated` | `oklch(0.22 0.005 80)` | Card surfaces on dark background |
-| `dark-border` | `oklch(0.28 0.005 80)` | Borders on dark background |
-| `light-muted` | `oklch(0.97 0 0)` | Light section backgrounds (off-white) |
+| `violet-light` | `oklch(0.38 0.10 25)` | Violet hover / lighter variant (`#7A1FD8`) |
+| `violet-glow` | `oklch(0.30 0.10 25 / 0.15)` | Glow effects, box shadows |
+| `violet-soft` | `oklch(0.30 0.10 25 / 0.10)` | Subtle violet background tint |
+| `dark-elevated` | `#3a3836` with 50% opacity | Card surfaces on dark background |
+| `dark-border` | `#4a4643` with 50% opacity | Borders on dark background |
+| `light-muted` | `#EBEBEB` | Light section CTA cards (off-white) |
 
 ### Gradients
 
 | Name | Value | Usage |
 |------|-------|-------|
-| `brand-primary` | `linear-gradient(135deg, #56151A, #3D0F13)` | Primary CTA buttons, hero accents |
-| `brand-glow` | `radial-gradient(circle, oklch(0.30 0.10 25 / 0.20), transparent 70%)` | Background glow effects |
+| `brand-primary` | `linear-gradient(135deg, #650CBE, #4A0A8F)` | Primary CTA buttons, hero accents |
+| `brand-glow` | `radial-gradient(circle, oklch(0.30 0.10 25 / 0.20), transparent 70%)` | Background glow effects (hero, decorative) |
 | `dark-fade` | `linear-gradient(180deg, #262523 0%, #1a1918 100%)` | Dark section depth |
-| `grey-highlight` | `linear-gradient(90deg, #D9D9D9, oklch(0.75 0 0))` | Accent underlines, progress bars |
 
-### Section Color Schemes
+### Section Color Schemes (data-theme)
 
-| Scheme | Background | Text | Accent | Border |
-|--------|-----------|------|--------|--------|
-| `dark` | Black #262523 | White #FFFFFF | Grey #D9D9D9 | dark-border |
-| `light` | White #FFFFFF | Black #262523 | Burgundy #56151A | Grey #D9D9D9 |
-| `light-muted` | light-muted | Black #262523 | Burgundy #56151A | Grey #D9D9D9 |
-| `burgundy` | Burgundy #56151A | White #FFFFFF | Grey #D9D9D9 | burgundy-light |
+Applied via `SectionWrapper` component's `data-theme` attribute. CSS custom properties auto-adapt text, accent, and border colors.
+
+| Scheme | Background | Text | Muted Text | Border | Card Bg |
+|--------|-----------|------|------------|--------|---------|
+| `dark` | Black #262523 | White #FFFFFF | Grey #D9D9D9 | dark-border | #3a3836 |
+| `light` | White #FFFFFF | Black #262523 | Grey #6b7280 | #e5e7eb | #FFFFFF |
+| `light-warm` | Warm Off-white #FAF9F7 | Black #262523 | Greige #71706E | #E8E6E3 | #FFFFFF |
+| `light-muted` | Light Grey #EBEBEB | Black #262523 | Grey #666666 | #c4c4c4 | #FFFFFF |
+| `accent` (violet) | Violet #650CBE | White #FFFFFF | Grey #d4d4d4 | violet-soft | #4A0A8F |
 
 ---
 
@@ -68,347 +70,277 @@
 
 ### Font Stack
 
-| Role | Font | Weights | Fallback |
-|------|------|---------|----------|
-| Headings | Glacial Indifference | Bold (700), Regular (400) | Arial, sans-serif |
-| Subheadings | Red Hat Display | Regular (400), Medium (500) | Arial, sans-serif |
-| Body | Inter | Regular (400), Medium (500), SemiBold (600) | system-ui, sans-serif |
+| Role | Font | Weights | CSS Variable | Fallback |
+|------|------|---------|-------------|----------|
+| Headings | Glacial Indifference | Bold (700), Regular (400) | `--font-heading` | Arial, sans-serif |
+| Subheadings | Red Hat Display | Regular (400), Medium (500) | `--font-subheading` | Arial, sans-serif |
+| Body | Inter | Regular (400), Medium (500), SemiBold (600) | `--font-body` | system-ui, sans-serif |
 
-### Type Scale
+Fonts loaded via `next/font/local` (Glacial Indifference, Red Hat Display) and `next/font/google` (Inter) with `adjustFontFallback: 'Arial'` for CLS = 0.
 
-Based on a 1.250 (major third) scale with 16px base.
+### Type Scale (as built)
 
-| Token | Size (desktop) | Size (mobile) | Line Height | Letter Spacing | Font | Weight |
-|-------|---------------|---------------|-------------|----------------|------|--------|
-| `display-xl` | 80px / 5rem | 44px / 2.75rem | 1.05 | -0.03em | Glacial Indifference | Bold |
-| `display-lg` | 64px / 4rem | 36px / 2.25rem | 1.1 | -0.02em | Glacial Indifference | Bold |
-| `h1` | 52px / 3.25rem | 32px / 2rem | 1.15 | -0.02em | Glacial Indifference | Bold |
-| `h2` | 40px / 2.5rem | 28px / 1.75rem | 1.2 | -0.015em | Glacial Indifference | Bold |
-| `h3` | 32px / 2rem | 24px / 1.5rem | 1.25 | -0.01em | Glacial Indifference | Regular |
-| `h4` | 24px / 1.5rem | 20px / 1.25rem | 1.3 | 0 | Red Hat Display | Medium |
-| `h5` | 20px / 1.25rem | 18px / 1.125rem | 1.4 | 0 | Red Hat Display | Regular |
-| `subtitle` | 20px / 1.25rem | 18px / 1.125rem | 1.5 | 0.02em | Red Hat Display | Regular |
-| `body-lg` | 18px / 1.125rem | 17px / 1.0625rem | 1.6 | 0 | Inter | Regular |
-| `body` | 16px / 1rem | 16px / 1rem | 1.6 | 0 | Inter | Regular |
-| `body-sm` | 14px / 0.875rem | 14px / 0.875rem | 1.5 | 0 | Inter | Regular |
-| `caption` | 12px / 0.75rem | 12px / 0.75rem | 1.4 | 0.03em | Inter | Medium |
-| `overline` | 12px / 0.75rem | 12px / 0.75rem | 1.4 | 0.12em | Inter | SemiBold |
+| Usage | Desktop | Mobile | Font | Weight |
+|-------|---------|--------|------|--------|
+| Hero headline | 4rem (64px) | 2.25rem (36px) | Glacial Indifference | Bold |
+| Section heading (h2) | 3.5rem (56px) | 2rem (32px) | Glacial Indifference | Bold |
+| Card heading (h3) | 1.25rem (20px) | 1.125rem (18px) | Glacial Indifference | Bold |
+| Subheading / description | 1.25rem (20px) | 1.125rem (18px) | Red Hat Display | Regular |
+| Body large | 1.125rem–1.5rem | 1rem–1.125rem | Inter | Regular |
+| Body | 1rem (16px) | 1rem (16px) | Inter | Regular |
+| Body small | 0.875rem (14px) | 0.875rem (14px) | Inter | Regular |
+| Overline | 0.75rem (12px) | 0.75rem (12px) | Inter | SemiBold, uppercase, `letter-spacing: 0.12em` |
+| Stat numbers | 3rem–4rem | 2rem–3rem | Glacial Indifference | Bold |
 
 ### Typography Rules
 
 - **Single H1 per page** with primary keyword (SEO requirement)
 - **Heading hierarchy:** H1 > H2 > H3 (no skipping levels)
-- **Minimum body text:** 16px (project rule, WCAG compliance)
+- **Minimum body text:** 16px (WCAG compliance)
 - **Overline text:** Always uppercase, used for section labels above headings
-- **Hero headlines:** Use `display-xl` or `display-lg` with character-level animation
-- **Paragraph max-width:** 65ch for optimal readability
+- **Hero headlines:** Use TextReveal with word or character stagger
+- **`style={{ fontFamily: 'var(--font-heading)' }}`** used on headings, `var(--font-subheading)` on descriptions
 
 ---
 
-## 4. Spacing System
-
-8px base unit, exponential scale for larger values.
-
-| Token | Value | Usage |
-|-------|-------|-------|
-| `space-0` | 0px | Reset |
-| `space-1` | 4px | Tight inline gaps |
-| `space-2` | 8px | Icon-to-text gaps, tight padding |
-| `space-3` | 12px | Small card padding |
-| `space-4` | 16px | Default element gap, input padding |
-| `space-5` | 20px | Card content padding |
-| `space-6` | 24px | Card padding, nav item gap |
-| `space-8` | 32px | Section content gaps |
-| `space-10` | 40px | Medium section padding |
-| `space-12` | 48px | Tap target minimum (48px) |
-| `space-16` | 64px | Section vertical padding (mobile) |
-| `space-20` | 80px | Section vertical padding (tablet) |
-| `space-24` | 96px | Section vertical padding (desktop) |
-| `space-32` | 128px | Hero vertical padding |
-| `space-40` | 160px | Extra-large section spacing |
+## 4. Spacing & Layout
 
 ### Container
 
-| Breakpoint | Max Width | Padding |
-|------------|-----------|---------|
-| `xs` (320px) | 100% | 16px |
-| `sm` (640px) | 100% | 24px |
-| `md` (768px) | 720px | 24px |
-| `lg` (1024px) | 960px | 32px |
-| `xl` (1280px) | 1200px | 32px |
-| `2xl` (1536px) | 1400px | 32px |
-| `3xl` (2560px) | 1600px | 32px |
+Implemented in `src/components/layout/Container.tsx`:
+- Max width: 1280px (`max-w-7xl`)
+- Padding: 16px mobile → 24px sm → 32px lg
+- Centered with `mx-auto`
 
 ### Section Rhythm
 
-Every full-width section follows this vertical padding pattern:
-- **Mobile:** `py-16` (64px top/bottom)
-- **Tablet:** `py-20` (80px)
-- **Desktop:** `py-24` (96px)
-- **Hero sections:** `py-32` (128px) on desktop, `py-20` (80px) on mobile
+Every section uses `SectionWrapper` which applies:
+- **Standard:** `py-16 md:py-20 lg:py-24` (64px → 80px → 96px)
+- **Hero sections:** `py-24 md:py-32` (96px → 128px)
+- **Floating panels:** `rounded={true}` adds `rounded-[2rem]` with `mx-4 md:mx-8` margin for visual separation
+
+### Grid Patterns
+
+- **Bento grid:** `BentoGrid` component with `columns={2|3|4}`, CSS Grid with auto-row masonry feel
+- **Service cards:** `grid-cols-1 md:grid-cols-2 lg:grid-cols-3` with `gap-6`
+- **Stats:** 4-card bento with alternating dark/violet themes, first 2 cards span 2 rows on desktop
+- **Testimonials:** Horizontal snap-scroll carousel
 
 ---
 
-## 5. Layout System
+## 5. Icon System
 
-### Grid
+### Libraries
 
-- **Base grid:** 12-column CSS Grid
-- **Gutter:** 24px (mobile), 32px (desktop)
-- **Bento grid:** Asymmetric grid compositions for featured sections (services, testimonials)
-- **Content grid:** max-width container with centered alignment
+| Library | Package | Usage |
+|---------|---------|-------|
+| Lucide React | `lucide-react` v0.575 | UI icons (arrows, navigation, generic service icons) |
+| React Icons | `react-icons` v5.5 | Brand logos (Google, Facebook, TikTok) |
 
-### Bento Grid Patterns
+### Icon Registry
 
-**Pattern A — 2+1 (featured left):**
-```
-┌────────────┬───────┐
-│            │       │
-│  Featured  │ Small │
-│            │       │
-│            ├───────┤
-│            │       │
-│            │ Small │
-│            │       │
-└────────────┴───────┘
-```
+Centralized in `src/lib/service-icons.ts`. Maps string names to icon components with a `kind` field (`'lucide'` or `'react-icons'`) for rendering logic.
 
-**Pattern B — Masonry 3-col:**
-```
-┌──────┬──────┬──────┐
-│      │      │      │
-│  Md  │  Lg  │  Md  │
-│      │      │      │
-├──────┤      ├──────┤
-│      │      │      │
-│  Lg  ├──────┤  Sm  │
-│      │      │      │
-│      │  Md  ├──────┤
-│      │      │      │
-└──────┴──────┤  Lg  │
-              │      │
-              └──────┘
+| Icon Name | Component | Kind | Service |
+|-----------|-----------|------|---------|
+| `FaGoogle` | FaGoogle | react-icons | Google Ads |
+| `FaFacebookF` | FaFacebookF | react-icons | Facebook Ads |
+| `FaTiktok` | FaTiktok | react-icons | TikTok Ads |
+| `Search` | Search | lucide | SEO |
+| `Mail` | Mail | lucide | Email Marketing |
+| `Lightbulb` | Lightbulb | lucide | Consultanta Marketing |
+| `Code` | Code | lucide | Web Development |
+| `Target` | Target | lucide | Fallback |
+
+### Rendering Pattern
+
+```tsx
+const { icon: Icon, kind: iconKind } = getServiceIcon(iconName);
+
+{iconKind === 'lucide' ? (
+  <Icon className="size-12" strokeWidth={1.5} />
+) : (
+  <Icon size={48} className="text-white" />
+)}
 ```
 
-**Pattern C — Stats row (4-col equal):**
-```
-┌──────┬──────┬──────┬──────┐
-│ Stat │ Stat │ Stat │ Stat │
-└──────┴──────┴──────┴──────┘
-```
+### Sizing Conventions
 
-**Responsive:** All bento grids collapse to single-column stack on mobile (<768px).
+- **Large decorative:** `size-16` to `size-24` (ServiceHero background)
+- **Card icons:** `size-10` to `size-12` or `size={48}` for react-icons
+- **Small UI:** `size-4` to `size-5` (breadcrumbs, buttons, arrows)
+- **Lucide strokeWidth:** `1.5` default, `1` for large decorative
 
 ---
 
-## 6. Component Patterns
+## 6. Animation System
 
-> Full component specifications in `components.md`. Summary here.
+### Stack
 
-### Buttons
+All animations use GSAP, imported exclusively from `src/lib/gsap.ts`:
+- `gsap` — core tweening
+- `useGSAP` — React hook (auto-cleanup)
+- `ScrollTrigger` — scroll-driven animations
+- `SplitText` — character/word splitting for kinetic typography
 
-| Variant | Background | Text | Border | Hover |
-|---------|-----------|------|--------|-------|
-| `primary` | brand-primary gradient | White | none | brightness(1.1), scale(1.02) |
-| `secondary` | transparent | Burgundy | 1px Burgundy | bg Burgundy, text White |
-| `ghost` | transparent | White/Black (contextual) | none | bg white/10 or black/5 |
-| `accent` | Grey #D9D9D9 | Black | none | brightness(0.95) |
+**Global defaults:** `ease: 'power2.out'`, `duration: 0.6`
 
-- **Size:** `sm` (36px h), `md` (44px h), `lg` (52px h)
-- **Border radius:** `--radius` (0.5rem) default, `full` for pill buttons
-- **Min tap target:** 48x48px on mobile
+### Animation Components
 
-### Cards
+| Component | File | Behavior |
+|-----------|------|----------|
+| **ScrollReveal** | `animations/ScrollReveal.tsx` | Fade-up on scroll (opacity + y). Props: `yOffset` (default 60), `duration`, `start` |
+| **TextReveal** | `animations/TextReveal.tsx` | SplitText stagger (char or word). Props: `variant`, `trigger` (scroll/load), `as` |
+| **ScrubReveal** | `animations/ScrubReveal.tsx` | Scroll-scrubbed opacity reveal tied to scroll position. Bidirectional. Props: `variant` (word/char), `startOpacity` |
+| **CountUp** | `animations/CountUp.tsx` | Number count-up on scroll. Props: `end`, `suffix`, `duration` |
+| **ParallaxLayer** | `animations/ParallaxLayer.tsx` | ScrollTrigger scrub parallax (desktop only). Props: `speed` |
 
-| Variant | Background | Border | Shadow | Hover |
-|---------|-----------|--------|--------|-------|
-| `default` | dark-elevated | 1px dark-border | none | border burgundy-light, translateY(-4px) |
-| `glass` | white/5 backdrop-blur-md | 1px white/10 | none | border white/20 |
-| `feature` | dark-elevated | none | burgundy-glow | scale(1.02), glow intensify |
-| `light` | White | 1px Grey | sm shadow | translateY(-4px), shadow-md |
+### Scroll-Triggered Patterns
 
-### Section Headers
+| Pattern | Trigger Start | Duration | Easing | Used In |
+|---------|--------------|----------|--------|---------|
+| Fade-up | `top 85%` | 0.5s | power2.out | ScrollReveal, most sections |
+| Stagger cards | `top 80%` | 0.6s, stagger 0.08s | power2.out | ServiceFeatures, ServicesGrid, BentoGrid |
+| Word reveal | `top 85%` | 0.6s, stagger per word | power2.out | TextReveal (scroll variant) |
+| Scrub opacity | `top bottom` to `bottom center` | scrub: true | none (linear) | ScrubReveal |
+| CountUp | `top 80%` | 2s | power1.out | StatsSection |
+| Hero exit | pinned, scrub | varies | none | HeroSection, AboutHero |
+| Horizontal scroll | pinned, scrub | scrollWidth | none | ServicesPreview (desktop) |
+| Entrance (label/heading) | `top 80%` | 0.6–0.7s | power2.out | HeroTransition |
 
-Every section uses this pattern:
-1. **Overline** — uppercase, caption size, Grey (dark sections) or Burgundy (light sections), letter-spacing 0.12em
-2. **Heading** — h2 size, bold, below overline with space-2 gap
-3. **Description** — body-lg, muted text, max-width 65ch, below heading with space-4 gap
+### Hero Animations (Pinned Scroll)
 
-### Navigation
-
-- **Desktop:** Horizontal nav links, locale switcher (RO/EN), primary CTA button
-- **Mobile:** Hamburger icon (right-aligned), fullscreen overlay menu
-- **Scroll behavior:** Header hides on scroll down, reveals on scroll up (60px threshold)
-
-### Form Elements
-
-- **Input:** 48px height, dark-elevated background, dark-border, focus: ring Burgundy
-- **Textarea:** Same styling, min-height 120px
-- **Select:** Same styling with custom chevron icon
-- **Label:** caption size, Inter SemiBold, above input with space-1 gap
-- **Error:** caption size, red (#DC2626), below input with space-1 gap
-
----
-
-## 7. Icon System
-
-- **Library:** Lucide React (primary), custom line-art SVGs for service icons
-- **Sizes:** `sm` (16px), `md` (20px), `lg` (24px), `xl` (32px), `2xl` (48px)
-- **Stroke width:** 1.5px (default), 1px (large sizes)
-- **Color:** Inherits current text color; accent icons use Grey (dark) or Burgundy (light)
-- **Service icons:** Custom line-art style, 48px canvas, 1.5px stroke, single-color (contextual)
-
-### Service Icon Set
-
-| Service | Icon Concept |
-|---------|-------------|
-| AceWeb | Browser window with code brackets |
-| AceAds | Target/bullseye with arrow |
-| AceAI | Neural network / brain circuit |
-| AceMedia | Camera aperture / play button |
-| Google Ads | Google "G" stylized |
-| Facebook Ads | Social network nodes |
-| TikTok Ads | Musical note with play |
-| SEO | Magnifying glass with chart |
-| Email Marketing | Envelope with send arrow |
-| Consultanta | Lightbulb with strategy lines |
-
----
-
-## 8. Animation System
-
-### Core Principles
-
-1. **Purposeful:** Every animation communicates something (entrance, feedback, hierarchy)
-2. **Subtle:** No flashy or distracting effects; elegant and controlled
-3. **Performant:** Use `transform` and `opacity` only (GPU-composited)
-4. **Accessible:** All animations respect `prefers-reduced-motion: reduce`
-
-### Timing
-
-| Token | Duration | Easing | Usage |
-|-------|----------|--------|-------|
-| `fast` | 200ms | `ease-out` | Button hover, toggle |
-| `normal` | 300ms | `cubic-bezier(0.16, 1, 0.3, 1)` | Card hover, fade |
-| `smooth` | 500ms | `cubic-bezier(0.16, 1, 0.3, 1)` | Section reveals, slides |
-| `slow` | 800ms | `cubic-bezier(0.16, 1, 0.3, 1)` | Hero entrance, page transitions |
-| `stagger-delay` | 50ms | — | Between staggered children |
-
-### Scroll-Triggered Animations
-
-**ScrollReveal (GSAP ScrollTrigger):**
-- **Default:** Fade up from 60px below, 500ms, stagger 50ms
-- **Trigger:** `start: "top 85%"` (fires when element top enters 85% of viewport)
-- **Once:** `once: true` (no reverse on scroll back)
-- **yOffset variants:** 60px (default), 100px (hero elements), 30px (small elements)
-
-**Parallax:**
-- **Background elements:** 0.3x scroll speed (subtle depth)
-- **Foreground accents:** 1.2x scroll speed (slight lead)
-- **Disabled on mobile** (performance)
-
-### Entrance Animations
-
-| Name | Transform | Opacity | Duration | Usage |
-|------|----------|---------|----------|-------|
-| `fade-up` | translateY(60px) -> 0 | 0 -> 1 | 500ms | Default section entrance |
-| `fade-up-lg` | translateY(100px) -> 0 | 0 -> 1 | 600ms | Hero elements |
-| `fade-in` | none | 0 -> 1 | 400ms | Overlays, modals |
-| `scale-in` | scale(0.95) -> 1 | 0 -> 1 | 400ms | Cards on hover focus |
-| `slide-left` | translateX(40px) -> 0 | 0 -> 1 | 500ms | Staggered list items |
-| `slide-right` | translateX(-40px) -> 0 | 0 -> 1 | 500ms | Alternating content |
-
-### Kinetic Typography (Hero Headlines)
-
-- **Method:** GSAP SplitText (if licensed) or Framer Motion staggerChildren
-- **Pattern:** Split headline into characters, stagger fade-up per character
-- **Duration:** 800ms total, 30ms stagger per character
-- **Trigger:** On page load (hero) or on scroll into view (section headers)
-- **Fallback (no SplitText license):** Split by words, stagger 80ms per word
-
-### Hover Micro-Interactions
-
-| Element | Effect | Duration |
-|---------|--------|----------|
-| Card | translateY(-4px) + border-color change | 300ms |
-| Button (primary) | brightness(1.1) + scale(1.02) | 200ms |
-| Button (secondary) | fill background + text color swap | 200ms |
-| Link | underline slide-in from left | 300ms |
-| Icon | rotate(5deg) + scale(1.1) | 200ms |
-| Nav link | color transition + dot indicator | 200ms |
-
-### Section Transitions (Dark/Light)
-
-Sections alternate between dark and light color schemes. The transition is achieved through:
-1. Each `<section>` has a `data-theme="dark|light"` attribute
-2. Background color transitions via CSS on scroll
-3. Text and accent colors adapt automatically via CSS custom properties scoped to `[data-theme]`
+Both `HeroSection` and `AboutHero` use a pinned scroll pattern:
+1. Section pins at `top top`
+2. Scroll drives exit animations (split text diverges left/right, opacity fades)
+3. Unpins when scroll range ends
+4. Uses `gsap.matchMedia()` for desktop-only pinning
 
 ### Reduced Motion
 
-When `prefers-reduced-motion: reduce`:
-- All scroll-triggered animations → instant (no transform, opacity: 1)
-- Hero text animation → no stagger, simple fade-in 300ms
-- Hover effects → color changes only, no transforms
+All animation components check `prefers-reduced-motion: reduce` via `gsap.matchMedia()`:
+- Animations → set final state instantly (`gsap.set()`)
 - Parallax → disabled
-- Custom cursor → disabled
+- CountUp → shows final number
+- Hover transforms → CSS-only color changes remain
 
 ---
 
-## 9. Image and Media
+## 7. Section Theming System
 
-### Image Rules
+### SectionWrapper
 
-- **Format:** WebP with JPEG/PNG fallback
-- **Loading:** Lazy (except hero/above-fold images)
-- **Responsive:** `srcSet` with 640w, 768w, 1024w, 1280w, 1920w
-- **Dimensions:** Always specify `width` and `height` (CLS prevention)
-- **Alt text:** Descriptive, max 125 characters, includes keyword naturally
-- **Component:** Always use `next/image` (never raw `<img>`)
+Every page section uses `SectionWrapper` (`src/components/sections/SectionWrapper.tsx`):
 
-### Photography Style (when used)
+```tsx
+<SectionWrapper theme="dark" id="section-id" rounded={true}>
+  {children}
+</SectionWrapper>
+```
 
-- Minimal use — component-driven design preferred
-- Natural lighting or high contrast
-- Neutral palette (black, white, grey) with brand color accents
-- No heavy filters, no saturated tones
-- Stock photos only temporarily for blog/services, replaced with originals
+- `theme`: `'dark'` | `'light'` | `'light-warm'` | `'light-muted'` | `'accent'` | `'violet'` — sets `data-theme` attribute
+- `rounded`: Creates floating panel effect with `rounded-[2rem]` and horizontal margin
+- `hero`: Applies hero-specific padding
+- Wraps children in `Container`
+- CSS custom properties scope all text/border/accent colors via `[data-theme]` selectors in `tokens.css`
+
+**Theme Guide:**
+- **`dark`** — Deep black (#262523) with white text. Technical/feature sections, client logos. Strong premium feel.
+- **`light-warm`** — NEW Phase 3. Warm off-white (#FAF9F7) with warm greige text (#71706E). Customer-facing sections (Services, Testimonials). Premium, inviting aesthetic.
+- **`light`** — Pure white with dark text. Clean, minimal sections.
+- **`accent` / `violet`** — Deep violet background (#650CBE) with white text. Sparingly used for premium CTAs.
+
+### SectionHeader
+
+Reusable header pattern (`src/components/sections/SectionHeader.tsx`):
+- `overline`: Uppercase label (ScrollReveal)
+- `heading`: h2 (TextReveal word variant)
+- `description`: Optional body text (ScrollReveal)
+- `align`: `'left'` (default) or `'center'`
 
 ---
 
-## 10. Responsive Breakpoints
+## 8. Page Architecture Patterns
 
-| Name | Width | Target |
-|------|-------|--------|
-| `xs` | 320px | Small phones |
-| `sm` | 640px | Large phones |
-| `md` | 768px | Tablets |
-| `lg` | 1024px | Small laptops |
-| `xl` | 1280px | Desktops |
-| `2xl` | 1536px | Large screens |
-| `3xl` | 2560px | Ultra-wide |
+### Service Pages Template
 
-### Mobile-First Approach
+All 6 service sub-pages follow this section sequence:
+1. **ServiceHero** — h1 with primary keyword, breadcrumb, brand/decorative icon
+2. **HeroTransition** — Label + heading (left) with ScrubReveal paragraph (right)
+3. **ServiceFeatures** — SpotlightCard grid (4-6 items)
+4. **ServiceProcess** — Vertical timeline with numbered steps
+5. **ServiceStats** — Bento grid with CountUp numbers
+6. **ServiceFAQ** — Accordion (Radix-based)
+7. **ServiceCTA** — Light card with dual CTAs
 
-- Base styles target mobile (320px+)
-- Progressive enhancement via `min-width` media queries
-- Touch targets: minimum 48x48px
-- No popup interstitials on mobile
-- Bento grids collapse to single-column below 768px
-- Typography scales down per type scale table
+Content comes from `messages/ro.json` and `messages/en.json` via `useTranslations('services')`.
+
+### Homepage Sections
+
+1. **HeroSection** — Pinned scroll exit, word-split headline (dark)
+2. **HeroTransition** — Scroll-scrubbed transition text (dark)
+3. **ServicesPreview** — Horizontal card carousel (GSAP pin desktop, CSS scroll mobile) - **light-warm** theme
+4. **StatsSection** — Bento 4-card with CountUp (dark)
+5. **ClientLogoBar** — Infinite CSS marquee of client logos - **dark** theme with grayscale hover-to-color transition
+6. **AboutPreview** — Full-width ScrubReveal (dark)
+7. **Testimonials** — Horizontal snap-scroll carousel with VideoTestimonialCard + text cards - **light-warm** theme
+8. **CTASection** — Reusable CTA card (violet accent)
+9. **Newsletter** — Split layout email form (dark)
+
+### About Page Sections
+
+1. **AboutHero** — Pinned scroll exit (same pattern as HeroSection) (dark)
+2. **HeroTransition** — Scroll-scrubbed transition (dark)
+3. **StorySection** — Company narrative with geometry decoration - **light-warm** theme
+4. **ValuesSection** — 6-value card grid with icons - **light-warm** theme
+5. **DivisionsSection** — REMOVED (single brand, no divisions)
+6. **MissionVision** — Split layout mission/vision (dark)
+7. **WhyChooseUs** — Differentiators list - **light-warm** theme
+8. **TeamSection** — Team member photo cards (3:4 aspect, GSAP stagger) - **dark** theme
+9. **CTASection** — Reused with about-specific content (violet)
+
+---
+
+## 9. Form Elements
+
+### Current Patterns (as built)
+
+- **Newsletter form** (Footer + Newsletter section): Email input with border-bottom style, submit button, GDPR checkbox. UI-only — server action wiring in Phase 5.
+- **Input styling:** `bg-transparent border-b border-white/30 focus:border-[#650CBE]` (dark sections)
+- **Button in forms:** `accent` variant or custom violet background
+
+### Phase 5 Contact Form (planned)
+
+- React Hook Form + Zod validation
+- Resend for email delivery
+- Server Actions for form submission
+- Field-level error messages
+- Honeypot spam protection
+
+---
+
+## 10. Responsive Strategy
+
+- **Mobile-first:** Base styles target 320px+
+- **Breakpoints:** `sm` 640px, `md` 768px, `lg` 1024px, `xl` 1280px
+- **Touch targets:** Minimum 48x48px
+- **Bento grids:** Collapse to single-column below 768px
+- **Horizontal carousels:** CSS snap-scroll on mobile, GSAP pin on desktop (lg+)
+- **Pinned hero animations:** Desktop only (via `gsap.matchMedia`)
+- **Typography:** Scales per type scale table above
 
 ---
 
 ## 11. Accessibility
 
 - **Standard:** WCAG 2.1 AA
-- **Color contrast:** Minimum 4.5:1 for body text, 3:1 for large text (18px+ bold or 24px+)
-- **Focus indicators:** 2px ring in Burgundy on all interactive elements
-- **Keyboard navigation:** Full support for all interactive elements
-- **ARIA labels:** On icon-only buttons, decorative images marked `aria-hidden`
-- **Skip navigation:** "Skip to main content" link as first focusable element
+- **Color contrast:** Violet on white passes 4.5:1 for body text
+- **Focus indicators:** Ring on all interactive elements
+- **Keyboard navigation:** Accordion, menu overlay, locale switcher all keyboard-accessible
+- **ARIA:** `aria-hidden="true"` on decorative icons, `aria-label` on icon-only buttons
 - **Heading hierarchy:** Strict H1 > H2 > H3, single H1 per page
-- **Motion:** All animations respect `prefers-reduced-motion`
+- **Motion:** All animations respect `prefers-reduced-motion: reduce`
+- **Semantic HTML:** Landmarks (`<main>`, `<nav>`, `<footer>`), proper heading levels
 
 ---
 
@@ -417,12 +349,15 @@ When `prefers-reduced-motion: reduce`:
 | File | Purpose |
 |------|---------|
 | `design-system/MASTER.md` | This file — complete visual language spec |
-| `design-system/tokens.css` | CSS custom properties for all design tokens |
 | `design-system/components.md` | Detailed component pattern specifications |
 | `design-system/moodboard.md` | Visual direction, mood references, inspiration |
 | `design-system/pages/home.md` | Homepage page spec |
 | `design-system/pages/despre-noi.md` | About page spec |
 | `design-system/pages/servicii.md` | Services index page spec |
 | `design-system/pages/contact.md` | Contact page spec |
+| `src/styles/globals.css` | Global styles + token imports |
+| `src/lib/gsap.ts` | Centralized GSAP with plugin registration |
+| `src/lib/service-icons.ts` | Icon registry (Lucide + react-icons) |
+| `src/lib/services.ts` | Service definitions (slug, i18n key, icon) |
 
-All page specs reference patterns defined in this MASTER document. Implementation uses `/frontend-design` skill against each page spec.
+All page specs reference patterns defined in this MASTER document.

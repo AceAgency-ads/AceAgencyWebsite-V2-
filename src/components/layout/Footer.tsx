@@ -8,9 +8,7 @@ import { Linkedin, Instagram, Facebook } from 'lucide-react';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 import { Container } from '@/components/layout/Container';
 import { submitNewsletter } from '@/lib/actions/newsletter';
-
-/** Division badge data */
-const DIVISIONS = ['web', 'ads', 'ai', 'media'] as const;
+import { trackEvent } from '@/lib/analytics';
 
 /** Navigation links (same as MenuOverlay) */
 const NAV_LINKS = [
@@ -18,6 +16,17 @@ const NAV_LINKS = [
   { key: 'about', href: '/despre-noi' as const },
   { key: 'services', href: '/servicii' as const },
   { key: 'contact', href: '/contact' as const },
+  { key: 'faq', href: '/intrebari-frecvente' as const },
+] as const;
+
+/** Service links for footer */
+const SERVICE_LINKS = [
+  { key: 'googleAds', href: '/servicii/google-ads' as const },
+  { key: 'facebookAds', href: '/servicii/facebook-ads' as const },
+  { key: 'tiktokAds', href: '/servicii/tiktok-ads' as const },
+  { key: 'seo', href: '/servicii/seo' as const },
+  { key: 'emailMarketing', href: '/servicii/email-marketing' as const },
+  { key: 'consultanta', href: '/servicii/consultanta-marketing' as const },
 ] as const;
 
 /** Social link data */
@@ -35,14 +44,15 @@ const LEGAL_LINKS = [
 ] as const;
 
 /**
- * Full-width footer — AceAgency burgundy palette.
- * Dark bg (#262523), burgundy accent highlights.
+ * Full-width footer — dark palette.
+ * Dark bg (#262523), accent highlights.
  */
 export function Footer(): React.JSX.Element {
   const locale = useLocale();
   const t = useTranslations('footer');
   const tNav = useTranslations('navigation');
   const tSocial = useTranslations('social');
+  const tServices = useTranslations('footer.services');
   const [newsletterState, newsletterAction, newsletterPending] = useActionState(
     submitNewsletter,
     { success: false }
@@ -54,26 +64,16 @@ export function Footer(): React.JSX.Element {
         {/* Row 1: Logo, tagline, division badges */}
         <ScrollReveal className="mb-12 lg:mb-16">
           <div className="flex flex-col gap-4">
-            <Link href="/" locale={locale} aria-label="AceAgency">
+            <Link href="/" locale={locale} aria-label="Laboratorul de Conversii">
               <Image
                 src="/ace-agency-logo.webp"
-                alt="AceAgency"
+                alt="Laboratorul de Conversii"
                 width={120}
                 height={38}
                 className="h-10 w-auto"
               />
             </Link>
             <p className="max-w-md text-sm text-[#a0a0a0]">{t('tagline')}</p>
-            <div className="flex flex-wrap gap-2">
-              {DIVISIONS.map((div) => (
-                <span
-                  key={div}
-                  className="rounded-full border border-[#4a464380] px-3 py-1 text-xs font-medium text-[#a0a0a0]"
-                >
-                  {t(`divisions.${div}`)}
-                </span>
-              ))}
-            </div>
           </div>
         </ScrollReveal>
 
@@ -90,22 +90,24 @@ export function Footer(): React.JSX.Element {
                 <a
                   href={`tel:${t('phone')}`}
                   className="transition-colors duration-200 hover:text-[#D9D9D9]"
+                  onClick={() => trackEvent('click_phone', { event_category: 'contact', event_label: 'footer' })}
                 >
                   {t('phone')}
                 </a>
                 <a
                   href={`mailto:${t('email')}`}
                   className="transition-colors duration-200 hover:text-[#D9D9D9]"
+                  onClick={() => trackEvent('click_email', { event_category: 'contact', event_label: 'footer' })}
                 >
                   {t('email')}
                 </a>
               </address>
             </div>
 
-            {/* Column 2: Quick nav */}
+            {/* Column 2: Quick nav + Services */}
             <div className="flex flex-col gap-3">
               <h3 className="font-heading text-sm font-bold uppercase tracking-[0.12em] text-[#a0a0a0]">
-                {tNav('home').charAt(0).toUpperCase() + tNav('home').slice(1) === tNav('home') ? 'Pagini' : 'Pages'}
+                {locale === 'ro' ? 'Pagini' : 'Pages'}
               </h3>
               <nav aria-label="Footer navigation" className="flex flex-col gap-2">
                 {NAV_LINKS.map((link) => (
@@ -116,6 +118,22 @@ export function Footer(): React.JSX.Element {
                     className="text-sm text-[#a0a0a0] transition-colors duration-200 hover:text-[#D9D9D9]"
                   >
                     {tNav(link.key)}
+                  </Link>
+                ))}
+              </nav>
+
+              <h3 className="mt-4 font-heading text-sm font-bold uppercase tracking-[0.12em] text-[#a0a0a0]">
+                {locale === 'ro' ? 'Servicii' : 'Services'}
+              </h3>
+              <nav aria-label="Footer services" className="flex flex-col gap-2">
+                {SERVICE_LINKS.map((link) => (
+                  <Link
+                    key={link.key}
+                    href={link.href}
+                    locale={locale}
+                    className="text-sm text-[#a0a0a0] transition-colors duration-200 hover:text-[#D9D9D9]"
+                  >
+                    {tServices(link.key)}
                   </Link>
                 ))}
               </nav>
@@ -133,7 +151,10 @@ export function Footer(): React.JSX.Element {
                 </p>
               ) : (
                 <form
-                  action={newsletterAction}
+                  action={(formData) => {
+                    trackEvent('newsletter_signup', { event_category: 'engagement', event_label: 'footer' });
+                    newsletterAction(formData);
+                  }}
                   className="flex flex-col gap-3"
                 >
                   {/* Honeypot — hidden from humans */}
@@ -153,13 +174,13 @@ export function Footer(): React.JSX.Element {
                       placeholder={t('newsletter.placeholder')}
                       required
                       disabled={newsletterPending}
-                      className="h-12 flex-1 rounded-l-md border border-[#4a464380] bg-[#3a3836] px-4 text-sm text-[#D9D9D9] placeholder:text-[#a0a0a0]/60 focus:outline-none focus:ring-1 focus:ring-[#56151A] disabled:opacity-50"
+                      className="h-12 flex-1 rounded-l-md border border-[#4a464380] bg-[#3a3836] px-4 text-sm text-[#D9D9D9] placeholder:text-[#a0a0a0]/60 focus:outline-none focus:ring-1 focus:ring-[#650CBE] disabled:opacity-50"
                       aria-label={t('newsletter.placeholder')}
                     />
                     <button
                       type="submit"
                       disabled={newsletterPending}
-                      className="h-12 rounded-r-md bg-[#56151A] px-4 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A2025] disabled:opacity-50"
+                      className="h-12 rounded-r-md bg-[#650CBE] px-4 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A1FD8] disabled:opacity-50"
                     >
                       {newsletterPending ? '...' : t('newsletter.submit')}
                     </button>
@@ -175,7 +196,7 @@ export function Footer(): React.JSX.Element {
                     <input
                       type="checkbox"
                       required
-                      className="mt-0.5 h-4 w-4 rounded border-[#4a464380] bg-transparent accent-[#56151A]"
+                      className="mt-0.5 h-4 w-4 rounded border-[#4a464380] bg-transparent accent-[#650CBE]"
                     />
                     <span>{t('newsletter.gdpr')}</span>
                   </label>
@@ -211,7 +232,7 @@ export function Footer(): React.JSX.Element {
           <div className="border-t border-[#4a464380] pt-6">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <p className="text-xs text-[#a0a0a0]">{t('copyright')}</p>
-              <nav aria-label="Legal links" className="flex gap-4">
+              <nav aria-label="Legal links" className="flex flex-wrap gap-4">
                 {LEGAL_LINKS.map((link) => (
                   <Link
                     key={link.key}
@@ -222,6 +243,17 @@ export function Footer(): React.JSX.Element {
                     {t(`legal.${link.key}`)}
                   </Link>
                 ))}
+                <button
+                  type="button"
+                  onClick={() => {
+                    // eslint-disable-next-line @typescript-eslint/no-require-imports
+                    const CC = require('vanilla-cookieconsent') as typeof import('vanilla-cookieconsent');
+                    CC.showPreferences();
+                  }}
+                  className="text-xs text-[#a0a0a0] transition-colors duration-200 hover:text-[#D9D9D9]"
+                >
+                  {t('legal.cookieSettings')}
+                </button>
               </nav>
             </div>
           </div>

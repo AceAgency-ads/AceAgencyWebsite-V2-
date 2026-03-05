@@ -1,8 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
+import { trackEvent } from '@/lib/analytics';
 
 /**
  * Contact info glass card with address, email, phone, hours, and social links.
@@ -40,26 +42,30 @@ export function ContactInfo(): React.JSX.Element {
 
   return (
     <ScrollReveal yOffset={0} duration={0.5} start="top 85%">
-      <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+      <div className="rounded-2xl border border-[var(--section-border)] bg-[var(--section-card-bg)] p-8 shadow-sm">
         <div className="space-y-6">
           {contactItems.map((item) => {
             const Icon = item.icon;
             return (
               <div key={item.label} className="flex items-start gap-4">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/5">
-                  <Icon className="size-5 text-gray-400" />
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[var(--section-bg)]">
+                  <Icon className="size-5 text-[var(--section-text-muted)]" />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-400">{item.label}</p>
+                  <p className="text-sm text-[var(--section-text-muted)]">{item.label}</p>
                   {item.href ? (
                     <a
                       href={item.href}
-                      className="text-white transition-colors hover:text-[var(--ds-color-burgundy)]"
+                      className="text-[var(--section-text)] transition-colors hover:text-[var(--ds-color-violet)]"
+                      onClick={() => {
+                        const type = item.href!.startsWith('mailto:') ? 'email' : 'phone';
+                        trackEvent(`click_${type}`, { event_category: 'contact', event_label: item.value });
+                      }}
                     >
                       {item.value}
                     </a>
                   ) : (
-                    <p className="text-white">{item.value}</p>
+                    <p className="text-[var(--section-text)]">{item.value}</p>
                   )}
                 </div>
               </div>
@@ -68,14 +74,14 @@ export function ContactInfo(): React.JSX.Element {
         </div>
 
         {/* Social links placeholder */}
-        <div className="mt-8 border-t border-white/10 pt-6">
-          <p className="mb-4 text-sm text-gray-400">{t('info.social')}</p>
+        <div className="mt-8 border-t border-[var(--section-border)] pt-6">
+          <p className="mb-4 text-sm text-[var(--section-text-muted)]">{t('info.social')}</p>
           <div className="flex gap-3">
             {(['linkedin', 'instagram', 'facebook'] as const).map((platform) => (
               <a
                 key={platform}
                 href="#"
-                className="flex size-10 items-center justify-center rounded-lg bg-white/5 text-gray-400 transition-colors hover:bg-white/10 hover:text-white"
+                className="flex size-10 items-center justify-center rounded-lg bg-[var(--section-bg)] text-[var(--section-text-muted)] transition-colors hover:bg-[var(--section-border)] hover:text-[var(--section-text)]"
                 aria-label={platform}
               >
                 <span className="text-xs font-medium uppercase">{platform.slice(0, 2)}</span>
@@ -83,6 +89,18 @@ export function ContactInfo(): React.JSX.Element {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Office location photo */}
+      <div className="mt-6 overflow-hidden rounded-xl">
+        <Image
+          src="/images/contact/office-location.webp"
+          alt="Locația biroului Laboratorul de Conversii din București"
+          width={1400}
+          height={500}
+          className="h-auto max-h-[300px] w-full object-cover"
+          sizes="(max-width: 1024px) 100vw, 40vw"
+        />
       </div>
     </ScrollReveal>
   );

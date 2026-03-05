@@ -60,14 +60,14 @@ export function ContactNewsletter(): React.JSX.Element {
                     placeholder={t('placeholder')}
                     required
                     disabled={pending}
-                    className="h-14 w-full rounded-l-xl border border-white/10 bg-white/5 pl-11 pr-4 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-[#56151A] disabled:opacity-50"
+                    className="h-14 w-full rounded-l-xl border border-white/10 bg-white/5 pl-11 pr-4 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-[#650CBE] disabled:opacity-50"
                     aria-label={t('placeholder')}
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={pending}
-                  className="h-14 rounded-r-xl bg-[#56151A] px-6 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A2025] disabled:opacity-50"
+                  className="h-14 rounded-r-xl bg-[#650CBE] px-6 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A1FD8] disabled:opacity-50"
                 >
                   {pending ? '...' : t('submit')}
                 </button>
@@ -81,7 +81,7 @@ export function ContactNewsletter(): React.JSX.Element {
                 <input
                   type="checkbox"
                   required
-                  className="mt-0.5 h-4 w-4 rounded border-white/10 bg-transparent accent-[#56151A]"
+                  className="mt-0.5 h-4 w-4 rounded border-white/10 bg-transparent accent-[#650CBE]"
                 />
                 <span>{tFooter('gdpr')}</span>
               </label>

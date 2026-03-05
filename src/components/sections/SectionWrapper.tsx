@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { Container } from '@/components/layout/Container';
 
-type SectionTheme = 'dark' | 'light' | 'light-muted' | 'accent' | 'burgundy';
+type SectionTheme = 'dark' | 'light' | 'light-warm' | 'light-muted' | 'accent' | 'violet';
 
 interface SectionWrapperProps {
   readonly children: React.ReactNode;

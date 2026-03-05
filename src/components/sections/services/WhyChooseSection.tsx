@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Check } from 'lucide-react';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
@@ -64,43 +65,75 @@ export function WhyChooseSection(): React.JSX.Element {
         heading={t('index.whyUs.heading')}
       />
 
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-        {/* Left column: 2x2 stat cards */}
-        <div className="grid grid-cols-2 gap-6">
-          {Array.from({ length: STAT_COUNT }, (_, i) => (
-            <div
-              key={i}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
-            >
-              <CountUp
-                end={Number(t(`index.whyUs.stats.${i}.value`))}
-                suffix={t(`index.whyUs.stats.${i}.suffix`)}
-                className="text-4xl font-bold text-white md:text-5xl"
-              />
-              <p className="mt-2 text-sm text-[var(--section-text-muted)]">
-                {t(`index.whyUs.stats.${i}.label`)}
-              </p>
-            </div>
-          ))}
-        </div>
+      {/* Mobile photo */}
+      <div className="mb-8 overflow-hidden rounded-xl lg:hidden">
+        <Image
+          src="/images/services/why-choose.webp"
+          alt=""
+          width={800}
+          height={1000}
+          className="h-auto max-h-[300px] w-full object-cover"
+          sizes="100vw"
+          aria-hidden="true"
+        />
+      </div>
 
-        {/* Right column: differentiators list */}
-        <div ref={diffRef} className="flex flex-col gap-6">
-          {Array.from({ length: DIFFERENTIATOR_COUNT }, (_, i) => (
-            <div key={i} data-diff className="flex items-start gap-4">
-              <div className="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#56151A]">
-                <Check className="size-3.5 text-white" strokeWidth={2.5} />
-              </div>
-              <div>
-                <h3 className="font-bold">
-                  {t(`index.whyUs.differentiators.${i}.title`)}
-                </h3>
-                <p className="mt-1 text-sm text-[var(--section-text-muted)]">
-                  {t(`index.whyUs.differentiators.${i}.description`)}
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
+        {/* Left: stats + differentiators */}
+        <div className="lg:col-span-3">
+          {/* 2x2 stat cards */}
+          <div className="mb-10 grid grid-cols-2 gap-6">
+            {Array.from({ length: STAT_COUNT }, (_, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
+              >
+                <CountUp
+                  end={Number(t(`index.whyUs.stats.${i}.value`))}
+                  suffix={t(`index.whyUs.stats.${i}.suffix`)}
+                  className="text-4xl font-bold text-white md:text-5xl"
+                />
+                <p className="mt-2 text-sm text-[var(--section-text-muted)]">
+                  {t(`index.whyUs.stats.${i}.label`)}
                 </p>
               </div>
+            ))}
+          </div>
+
+          {/* Differentiators list */}
+          <div ref={diffRef} className="flex flex-col gap-6">
+            {Array.from({ length: DIFFERENTIATOR_COUNT }, (_, i) => (
+              <div key={i} data-diff className="flex items-start gap-4">
+                <div className="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full bg-[#650CBE]">
+                  <Check className="size-3.5 text-white" strokeWidth={2.5} />
+                </div>
+                <div>
+                  <h3 className="font-bold">
+                    {t(`index.whyUs.differentiators.${i}.title`)}
+                  </h3>
+                  <p className="mt-1 text-sm text-[var(--section-text-muted)]">
+                    {t(`index.whyUs.differentiators.${i}.description`)}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Right: photo (desktop only) */}
+        <div className="hidden lg:col-span-2 lg:block">
+          <div className="sticky top-24">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
+              <Image
+                src="/images/services/why-choose.webp"
+                alt=""
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 0px, 40vw"
+                aria-hidden="true"
+              />
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </SectionWrapper>

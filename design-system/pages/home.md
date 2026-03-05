@@ -17,27 +17,35 @@
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 2: Services Preview        [dark]   │
+│  SECTION 2: HeroTransition          [dark]   │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 3: Stats / Track Record    [light]  │
+│  SECTION 3: Services Preview    [light-warm] │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 4: About Preview           [dark]   │
+│  SECTION 4: Stats / Track Record    [dark]   │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 5: Testimonials            [dark]   │
+│  SECTION 5: Client Logo Bar         [dark]   │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 6: CTA                     [burgundy] │
+│  SECTION 6: About Preview           [dark]   │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 7: Newsletter              [dark]   │
+│  SECTION 7: Testimonials        [light-warm] │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│  SECTION 8: CTA                     [violet] │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│  SECTION 9: Newsletter              [dark]   │
 │                                              │
 ├──────────────────────────────────────────────┤
 │  [Footer]                                    │
@@ -98,41 +106,61 @@
 
 ---
 
-## Section 2: Services Preview
+## Section 2: HeroTransition
 
 **Theme:** dark
-**Layout:** Bento grid Pattern B (masonry 3-col), SectionHeader left-aligned
+**Layout:** Split two-column (heading left, scrub-reveal paragraph right)
+
+### Content
+
+- **Label (overline):** "AGENTIE FULL-SERVICE"
+- **Heading:** "Web. Ads. AI. Media. Timp real."
+- **Paragraph (ScrubReveal):** Word-by-word opacity reveal tied to scroll position. Contains service definition.
+
+### Specifications
+
+- Left column: Overline + large heading (h2), enters with fade-up animation
+- Separator line: Animates scaleX from left
+- Right column: ScrubReveal paragraph that brightens as user scrolls
+- Reduces visual "landing" impact between hero and first content section
+
+---
+
+## Section 3: Services Preview
+
+**Theme:** light-warm (NEW Phase 3)
+**Layout:** SectionHeader + horizontal scroll carousel (desktop pin + scrub, mobile CSS snap)
 
 ### Content
 
 - **Overline:** "SERVICII"
 - **Heading:** "Solutii Complete pentru Afacerea Ta"
-- **Description:** "De la dezvoltare web la publicitate platita, de la inteligenta artificiala la productie media — acoperim tot ce ai nevoie."
 
-### Service Cards (Feature Card variant, 6 cards)
+### Service Cards (6 horizontal scroll cards)
 
-| Service | Icon | Description |
-|---------|------|-------------|
-| Dezvoltare Web | Browser code | Site-uri si aplicatii web performante, responsive si optimizate SEO |
-| Google Ads | Target bullseye | Campanii Google Ads optimizate pentru ROI maxim si cost pe conversie minim |
-| Facebook & Instagram Ads | Social nodes | Strategii de publicitate pe social media cu targetare precisa |
-| TikTok Ads | Play musical | Publicitate creativa pe TikTok pentru audienta noua generatie |
-| Optimizare SEO | Search chart | Pozitionare organica in Google prin strategii SEO avansate |
-| Consultanta Marketing | Lightbulb | Strategie digitala personalizata bazata pe date si experienta |
+| Service | Icon | Link |
+|---------|------|------|
+| Dezvoltare Web | Code lucide | /servicii |
+| Google Ads | Google FA icon | /servicii/google-ads |
+| Facebook & Instagram Ads | Facebook FA icon | /servicii/facebook-ads |
+| TikTok Ads | TikTok FA icon | /servicii/tiktok-ads |
+| Optimizare SEO | Search lucide | /servicii/seo |
+| Consultanta Marketing | Lightbulb lucide | /servicii/consultanta-marketing |
 
 ### Specifications
 
-- Each card: Feature Card component with icon (48px, Grey), heading (h4), description (body-sm, muted), and link arrow
-- Cards link to respective service pages
-- Grid: 3 columns on desktop (varied heights for bento feel), 2 on tablet, 1 on mobile
-- Animation: Cards fade up with 80ms stagger on scroll trigger
-- CTA below grid: "Vezi toate serviciile →" ghost button linking to `/servicii`
+- **Card style:** 260-280px width, 280-300px height, rounded-2xl border, white card on light-warm bg
+- **Layout:** Icon + arrow top, title + description bottom (hidden until hover)
+- **Desktop animation:** Section pins, scroll drives card row left horizontally
+- **Mobile animation:** CSS overflow-x snap scroll (touch-friendly)
+- **Description reveal:** Max-height 0 → 80px on hover with smooth transition
+- **CTA below:** Ghost button "Vezi toate serviciile →" linking to `/servicii`
 
 ---
 
-## Section 3: Stats / Track Record
+## Section 4: Stats / Track Record
 
-**Theme:** light
+**Theme:** dark
 **Layout:** 4-column equal grid (Pattern C), centered SectionHeader
 
 ### Content
@@ -152,7 +180,7 @@
 ### Specifications
 
 - Each stat: CountUp animation triggered on scroll
-- Numbers: `display-lg`, Glacial Indifference Bold, Burgundy
+- Numbers: `display-lg`, Glacial Indifference Bold, Violet
 - Labels: `body-sm`, muted text
 - Grid: 4 columns desktop, 2x2 tablet, 2x2 mobile
 - Dividers: Vertical 1px border between stats on desktop (optional)
@@ -160,7 +188,36 @@
 
 ---
 
-## Section 4: About Preview
+## Section 5: Client Logo Bar
+
+**Theme:** dark
+**Layout:** Marquee track with horizontal infinite scroll
+
+### Content
+
+- **Heading (overline):** "PARTENERI DIN INDUSTRIA ROMANEASCA"
+- **Logos:** 8 client company logos in infinite marquee loop
+
+### Specifications
+
+- **Desktop:** Logo width ~120px, gap 16px, marquee speed 20s
+- **Mobile:** Logo width 120px, gap 12px, marquee speed 20s
+- **Hover:** Logos transition from grayscale opacity-60 → full color opacity-100
+- **Reduced motion fallback:** Static 2-col (mobile) / 4-col (desktop) grid instead of marquee
+- **Duplicated logos:** Array duplicated for seamless infinite loop
+- **Implementation:** CSS `@keyframes marquee` with `animation: marquee 20s linear infinite`
+
+### Data Structure
+
+Replace placeholder SVG logos with real client logos:
+- Location: `/public/images/clients/`
+- Format: SVG or PNG (SVG preferred for crisp scaling)
+- Dimensions: Width ~120px, height ~40px max
+- Naming: `clientname.svg` (e.g., `techstart.svg`)
+
+---
+
+## Section 6: About Preview
 
 **Theme:** dark
 **Layout:** Two-column (text left, visual right)
@@ -169,7 +226,7 @@
 
 - **Overline:** "DESPRE NOI"
 - **Heading:** "Disciplina. Viziune. Rezultate."
-- **Description:** "Suntem o echipa de profesionisti care crede ca fiecare brand merita o prezenta digitala de exceptie. De la strategie la executie, de la idee la rezultat."
+- **Description:** "Suntem o echipa de profesionisti care crede ca fiecare brand merita o prezenta digitala de exceptie. De la strategie la executie, de la idea la rezultat."
 - **CTA:** "Afla mai multe →" secondary button → links to `/despre-noi`
 
 ### Right Column
@@ -187,41 +244,60 @@
 
 ---
 
-## Section 5: Testimonials
+## Section 7: Testimonials
 
-**Theme:** dark
-**Layout:** Bento grid (Pattern A or B), centered SectionHeader
+**Theme:** light-warm (NEW Phase 3)
+**Layout:** Horizontal snap-scroll carousel with mixed text + video cards, left-aligned SectionHeader
 
 ### Content
 
 - **Overline:** "TESTIMONIALE"
 - **Heading:** "Ce Spun Clientii Nostri"
 
-### Testimonials (minimum 5)
+### Testimonials (8 items, mix of text + video)
 
-| Quote | Author | Company | Rating |
-|-------|--------|---------|--------|
-| "AceAgency a transformat complet prezenta noastra online. Rezultatele au depasit asteptarile." | Maria Popescu | TechStart SRL | 5/5 |
-| "Profesionalism, creativitate si rezultate masurabile. Recomand cu incredere." | Alexandru Ionescu | Digital Commerce | 5/5 |
-| "Echipa AceAgency intelege nevoile de business si livreaza solutii care functioneaza." | Elena Dumitrescu | StartUp Hub | 5/5 |
-| "Campaniile Google Ads au generat un ROI de 340% in primele 3 luni." | Andrei Gheorghe | E-Shop Romania | 5/5 |
-| "Site-ul creat de AceAgency este cel mai bun investiment digital pe care l-am facut." | Ioana Marinescu | Beauty Brand | 5/5 |
-| "Suport excelent si comunicare transparenta pe tot parcursul proiectului." | Mihai Stanescu | Logistics Pro | 5/5 |
+| Type | Quote | Author | Company | Rating | Video? |
+|------|-------|--------|---------|--------|--------|
+| text | "AceAgency a transformat prezenta noastra online. Rezultatele au depasit asteptarile." | Maria Popescu | TechStart SRL | 5 | — |
+| text | "Profesionalism, creativitate si rezultate masurabile. Recomand cu incredere." | Alexandru Ionescu | Digital Commerce | 5 | — |
+| video | "Campaniile Google Ads au generat ROI de 340% in primele 3 luni." | Andrei Gheorghe | E-Shop Romania | 5 | /videos/client-testimonial-1.mp4 |
+| text | "Echipa intelege nevoile de business si livreaza solutii care functioneaza." | Elena Dumitrescu | StartUp Hub | 5 | — |
+| text | "Site-ul creat de AceAgency este cel mai bun investiment digital pe care l-am facut." | Ioana Marinescu | Beauty Brand | 5 | — |
+| video | "Suport excelent si comunicare transparenta pe tot parcursul." | Mihai Stanescu | Logistics Pro | 5 | /videos/client-testimonial-2.mp4 |
+| text | "Rezultate stabile. Echipa reactiva. Recomand cu incredere." | George Marius | Auto Service Pro | 5 | — |
+| video | "AceAgency a crescut ROI-ul nostru cu 280% in 6 luni." | Claudia Florescu | Fashion Romania | 5 | /videos/client-testimonial-3.mp4 |
+
+### Card Specifications
+
+**Text Testimonial Card:**
+- Rounded-3xl, white bg, border
+- 400px width (mobile: 85vw)
+- Decorative quote mark top-left
+- Quote text + star rating + author + company
+
+**Video Testimonial Card:** (NEW)
+- Rounded-3xl, white bg, border
+- 400px width, 16:9 video aspect
+- Thumbnail + play button overlay (violet circle with white play icon)
+- On click → video autoplays with controls
+- Bottom 40%: stars + quote + author info
+
+**Navigation:** Left/Right circular arrow buttons (prev/next card)
 
 ### Specifications
 
-- Testimonial Card components in bento grid (varied sizes)
-- 2-3 larger cards, 3-4 smaller cards for visual variety
-- No carousel — all visible simultaneously
-- Grid: 3 columns desktop (bento), 2 tablet, 1 mobile
-- Animation: Cards stagger fade-up on scroll, 80ms delay between cards
+- Carousel: Horizontal snap-scroll with CSS `snap-x snap-mandatory`
+- Desktop: GSAP smooth scroll support (optional)
+- Mobile: Native scroll + snap (smooth: true)
+- Cards: Mixed text + video (pull video type from i18n)
+- Animation: Cards fade-up on carousel entrance
 
 ---
 
-## Section 6: CTA
+## Section 8: CTA
 
-**Theme:** burgundy
-**Layout:** Centered content, full-width burgundy background
+**Theme:** violet
+**Layout:** Centered content, full-width violet background
 
 ### Content
 
@@ -240,14 +316,14 @@
 - Description: `body-lg`, White with slight opacity (0.9)
 - Primary CTA: accent variant (Grey bg, Black text) → `/contact`
 - Secondary CTA: ghost variant (White border) → `/portofoliu` (or disabled if V2)
-- Background: `--ds-gradient-brand-primary` (Burgundy gradient) or solid Burgundy
-- Optional: Subtle radial glow of Burgundy-light at center
+- Background: `--ds-gradient-brand-primary` (Violet gradient) or solid Violet
+- Optional: Subtle radial glow of Violet-light at center
 - Padding: `py-24` desktop, `py-16` mobile
 - Animation: Heading TextReveal on scroll, buttons fade up
 
 ---
 
-## Section 7: Newsletter
+## Section 9: Newsletter
 
 **Theme:** dark
 **Layout:** Centered content, narrow width (max 640px)
@@ -265,7 +341,7 @@
 - Form max-width: 480px, centered
 - Input: Email placeholder "Adresa ta de email"
 - Button: "Aboneaza-te" accent variant
-- Success: "Multumim! Te-ai abonat cu succes." in Burgundy
+- Success: "Multumim! Te-ai abonat cu succes." in Violet
 - Animation: Section fades up on scroll
 
 ---

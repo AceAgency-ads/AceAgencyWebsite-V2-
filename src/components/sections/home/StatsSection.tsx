@@ -32,12 +32,12 @@ const CARD_THEMES: readonly CardTheme[] = [
     bg: 'bg-white',
     text: 'text-[#262523]',
     muted: 'text-[#262523]/60',
-    countColor: 'text-[#56151A]',
+    countColor: 'text-[#650CBE]',
     icon: TrendingUp,
     span: 'sm:col-span-1 sm:row-span-1',
   },
   {
-    bg: 'bg-[#56151A]',
+    bg: 'bg-[#650CBE]',
     text: 'text-white',
     muted: 'text-white/70',
     countColor: 'text-white',
@@ -48,7 +48,7 @@ const CARD_THEMES: readonly CardTheme[] = [
     bg: 'bg-[#262523]',
     text: 'text-[#D9D9D9]',
     muted: 'text-[#a0a0a0]',
-    countColor: 'text-[#7A2025]',
+    countColor: 'text-[#7A1FD8]',
     icon: Award,
     span: 'sm:col-span-1 sm:row-span-1',
   },
@@ -56,7 +56,7 @@ const CARD_THEMES: readonly CardTheme[] = [
     bg: 'bg-black',
     text: 'text-white',
     muted: 'text-white/60',
-    countColor: 'text-[#7A2025]',
+    countColor: 'text-[#7A1FD8]',
     icon: Zap,
     span: 'sm:col-span-1 sm:row-span-1',
   },
@@ -67,7 +67,7 @@ const STAT_KEYS = ['0', '1', '2', '3'] as const;
 
 /**
  * Stats section — bento style.
- * Light bg (#F5F5F5), alternating card colors (white, burgundy, dark, black),
+ * Light bg (#F5F5F5), alternating card colors (white, violet, dark, black),
  * large animated counter numbers, decorative icons.
  */
 export function StatsSection(): React.JSX.Element {

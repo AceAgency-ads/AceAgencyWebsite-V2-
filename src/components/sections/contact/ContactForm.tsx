@@ -99,7 +99,7 @@ export function ContactForm(): React.JSX.Element {
   };
 
   const inputClasses =
-    'w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/40 transition-colors focus:border-[var(--ds-color-burgundy)] focus:outline-none focus:ring-1 focus:ring-[var(--ds-color-burgundy)] disabled:opacity-50';
+    'w-full rounded-xl border border-[var(--section-border)] bg-[var(--section-card-bg)] px-4 py-3 text-[var(--section-text)] placeholder:text-[var(--section-text-muted)]/60 transition-colors focus:border-[var(--ds-color-violet)] focus:outline-none focus:ring-1 focus:ring-[var(--ds-color-violet)] disabled:opacity-50';
 
   const errorClasses = 'mt-1.5 text-sm text-red-400';
 
@@ -124,6 +124,7 @@ export function ContactForm(): React.JSX.Element {
               name="name"
               type="text"
               required
+              autoComplete="name"
               placeholder={t('form.name.placeholder')}
               onBlur={handleBlur('name')}
               disabled={pending}
@@ -142,6 +143,7 @@ export function ContactForm(): React.JSX.Element {
               name="email"
               type="email"
               required
+              autoComplete="email"
               placeholder={t('form.email.placeholder')}
               onBlur={handleBlur('email')}
               disabled={pending}
@@ -159,6 +161,7 @@ export function ContactForm(): React.JSX.Element {
               id="contact-phone"
               name="phone"
               type="tel"
+              autoComplete="tel"
               placeholder={t('form.phone.placeholder')}
               onBlur={handleBlur('phone')}
               disabled={pending}
@@ -184,7 +187,7 @@ export function ContactForm(): React.JSX.Element {
                 {t('form.service.placeholder')}
               </option>
               {SERVICE_OPTIONS.map((option) => (
-                <option key={option} value={option} className="bg-[#262523] text-white">
+                <option key={option} value={option} className="bg-[var(--section-bg)] text-[var(--section-text)]">
                   {t(`form.service.options.${option}`)}
                 </option>
               ))}
@@ -230,7 +233,7 @@ export function ContactForm(): React.JSX.Element {
       <button
         type="submit"
         disabled={pending}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--ds-color-burgundy)] px-8 py-3.5 text-sm font-semibold text-white transition-all hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--ds-color-violet)] px-8 py-3.5 text-sm font-semibold text-white transition-all hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
       >
         {pending ? (
           <>

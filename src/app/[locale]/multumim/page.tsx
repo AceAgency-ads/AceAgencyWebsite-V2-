@@ -16,7 +16,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'thankYou' });
 
   return generatePageMetadata({
-    title: t('heading') + ' | AceAgency',
+    title: t('heading') + ' | Laboratorul de Conversii',
     description: t('description'),
     path: 'multumim',
     locale,

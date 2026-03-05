@@ -1,5 +1,6 @@
 import { Link } from '@/i18n/navigation';
 import { ChevronRight } from 'lucide-react';
+import { renderJsonLd } from '@/lib/seo/schemas';
 
 export interface BreadcrumbItem {
   readonly label: string;
@@ -8,6 +9,7 @@ export interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   readonly items: readonly BreadcrumbItem[];
+  readonly locale?: string;
 }
 
 /**
@@ -15,7 +17,7 @@ interface BreadcrumbProps {
  * Server component -- no 'use client' needed.
  * Renders inside SectionWrapper (inherits section theme colors).
  */
-export function Breadcrumb({ items }: BreadcrumbProps): React.JSX.Element {
+export function Breadcrumb({ items, locale = 'ro' }: BreadcrumbProps): React.JSX.Element {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -23,7 +25,7 @@ export function Breadcrumb({ items }: BreadcrumbProps): React.JSX.Element {
       '@type': 'ListItem',
       position: index + 1,
       name: item.label,
-      ...(item.href ? { item: `https://aceagency.ro${item.href}` } : {}),
+      ...(item.href ? { item: `https://aceagency.ro/${locale}${item.href}` } : {}),
     })),
   };
 
@@ -31,7 +33,7 @@ export function Breadcrumb({ items }: BreadcrumbProps): React.JSX.Element {
     <nav aria-label="Breadcrumb" className="mb-4">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: renderJsonLd(breadcrumbSchema) }}
       />
       <ol className="flex items-center gap-2 text-sm text-[var(--section-text-muted)]">
         {items.map((item, index) => (

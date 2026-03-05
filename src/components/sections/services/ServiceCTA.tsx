@@ -48,7 +48,7 @@ export function ServiceCTA({ serviceKey }: ServiceCTAProps): React.JSX.Element {
                 <Button
                   asChild
                   size="lg"
-                  className="min-h-[3rem] rounded-full bg-[#56151A] px-8 font-semibold text-white hover:bg-[#7A2025]"
+                  className="min-h-[3rem] rounded-full bg-[#650CBE] px-8 font-semibold text-white hover:bg-[#7A1FD8]"
                 >
                   <Link href="/contact">
                     {t(`${serviceKey}.cta.primary`)}

@@ -42,13 +42,14 @@ const redHatDisplay = localFont({
 
 const inter = Inter({
   subsets: ['latin'],
+  weight: ['400', '500', '600'],
   variable: '--font-inter',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'AceAgency',
-  description: 'Premium digital agency from Bucharest',
+  title: 'Laboratorul de Conversii',
+  description: 'Growth lab din Bucuresti specializat in sisteme de conversie',
 };
 
 export function generateStaticParams(): { locale: string }[] {
@@ -99,6 +100,17 @@ export default async function LocaleLayout({
         )}
       </head>
       <body>
+        {/* GTM noscript fallback for users with JavaScript disabled */}
+        {process.env.NEXT_PUBLIC_GTM_ID && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            />
+          </noscript>
+        )}
         <NextIntlClientProvider>
           <Header />
           <SmoothScroll>

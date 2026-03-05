@@ -107,12 +107,12 @@ export function ServicesGrid(): React.JSX.Element {
                 {/* Icon */}
                 {iconKind === 'lucide' ? (
                   <Icon
-                    className="mb-4 size-12 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#56151A]"
+                    className="mb-4 size-12 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#650CBE]"
                     strokeWidth={1.5}
                   />
                 ) : (
                   <Icon
-                    className="mb-4 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#56151A]"
+                    className="mb-4 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#650CBE]"
                     size={48}
                   />
                 )}
@@ -123,7 +123,7 @@ export function ServicesGrid(): React.JSX.Element {
                 </h3>
 
                 {/* Division badge */}
-                <span className="mb-3 inline-block rounded-full bg-[#56151A]/20 px-3 py-0.5 text-xs text-[#56151A]">
+                <span className="mb-3 inline-block rounded-full bg-[#650CBE]/20 px-3 py-0.5 text-xs text-[#650CBE]">
                   {t(`index.grid.items.${index}.division`)}
                 </span>
 
@@ -133,7 +133,7 @@ export function ServicesGrid(): React.JSX.Element {
                 </p>
 
                 {/* Arrow link indicator */}
-                <ArrowRight className="size-5 text-[var(--section-text-muted)] transition-transform duration-300 group-hover:translate-x-2 group-hover:text-[#56151A]" />
+                <ArrowRight className="size-5 text-[var(--section-text-muted)] transition-transform duration-300 group-hover:translate-x-2 group-hover:text-[#650CBE]" />
               </SpotlightCard>
             </Link>
           );

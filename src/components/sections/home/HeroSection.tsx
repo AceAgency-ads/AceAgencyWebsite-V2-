@@ -12,7 +12,7 @@ import { ParallaxLayer } from '@/components/animations/ParallaxLayer';
 
 /**
  * Homepage Hero section — addifico style.
- * Full viewport, dark bg with dramatic burgundy radial gradient glow (left side),
+ * Full viewport, dark bg with dramatic violet radial gradient glow (left side),
  * massive centered headline with accent-colored keywords, subtitle above.
  * Pinned for one viewport height with scroll-driven exit animations.
  *
@@ -223,20 +223,20 @@ export function HeroSection(): React.JSX.Element {
       className="relative min-h-screen overflow-hidden"
       ref={sectionRef}
     >
-      {/* Dramatic burgundy radial gradient glow — left side */}
+      {/* Dramatic violet radial gradient glow — left side */}
       <ParallaxLayer speed={0.3} className="absolute inset-0">
         <div
           ref={glowRef}
           className="absolute -left-[10%] top-1/4 h-[800px] w-[800px] rounded-full opacity-40"
           style={{
-            background: 'radial-gradient(circle, rgba(86, 21, 26, 0.40), rgba(86, 21, 26, 0.10) 40%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(101, 12, 190, 0.40), rgba(101, 12, 190, 0.10) 40%, transparent 70%)',
           }}
         />
         {/* Secondary subtle glow — right side */}
         <div
           className="absolute -right-[15%] bottom-[10%] h-[400px] w-[400px] rounded-full opacity-20"
           style={{
-            background: 'radial-gradient(circle, rgba(86, 21, 26, 0.30), transparent 70%)',
+            background: 'radial-gradient(circle, rgba(101, 12, 190, 0.30), transparent 70%)',
           }}
         />
       </ParallaxLayer>
@@ -261,7 +261,7 @@ export function HeroSection(): React.JSX.Element {
           >
             {t.rich('hero.headline', {
               accent: (chunks: ReactNode) => (
-                <span className="text-[#7A2025]">{chunks}</span>
+                <span className="text-[#7A1FD8]">{chunks}</span>
               ),
             })}
           </TextReveal>
@@ -284,7 +284,7 @@ export function HeroSection(): React.JSX.Element {
           <Button
             asChild
             size="lg"
-            className="min-h-[3rem] rounded-full bg-[#56151A] px-8 font-semibold text-white hover:bg-[#7A2025]"
+            className="min-h-[3rem] rounded-full bg-[#650CBE] px-8 font-semibold text-white hover:bg-[#7A1FD8]"
           >
             <Link href="/servicii">
               {t('hero.cta.primary')}

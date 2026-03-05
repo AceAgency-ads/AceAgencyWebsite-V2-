@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import {
   MessageSquare,
@@ -75,6 +76,19 @@ export function ProcessSteps(): React.JSX.Element {
         description={t('index.process.description')}
       />
 
+      {/* Process overview photo */}
+      <div className="mb-10 overflow-hidden rounded-xl">
+        <Image
+          src="/images/services/process-overview.webp"
+          alt=""
+          width={1400}
+          height={500}
+          className="h-auto max-h-[280px] w-full object-cover"
+          sizes="(max-width: 768px) 100vw, 90vw"
+          aria-hidden="true"
+        />
+      </div>
+
       <div
         ref={stepsRef}
         className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
@@ -103,13 +117,13 @@ export function ProcessSteps(): React.JSX.Element {
             )}
 
             {/* Large decorative number */}
-            <span className="text-6xl font-bold text-[#56151A]/20 transition-opacity duration-300 group-hover:text-[#56151A]/40 lg:text-7xl">
+            <span className="text-6xl font-bold text-[#650CBE]/20 transition-opacity duration-300 group-hover:text-[#650CBE]/40 lg:text-7xl">
               {String(index + 1).padStart(2, '0')}
             </span>
 
             {/* Icon */}
             <Icon
-              className="size-8 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#56151A]"
+              className="size-8 text-[var(--section-text-muted)] transition-colors duration-300 group-hover:text-[#650CBE]"
               strokeWidth={1.5}
             />
 

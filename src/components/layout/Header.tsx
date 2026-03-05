@@ -9,7 +9,7 @@ import { MenuOverlay } from '@/components/layout/MenuOverlay';
 
 /**
  * Fixed header — addifico style.
- * Logo left, "Get in touch" pill button right with burgundy accent.
+ * Logo left, "Get in touch" pill button right with violet accent.
  * 2-line hamburger. Transparent initially, backdrop blur on scroll.
  * Hides on scroll down, reveals on scroll up.
  */
@@ -56,7 +56,7 @@ export function Header(): React.JSX.Element {
 
       // Theme switching for light/accent sections
       const themeSections = document.querySelectorAll(
-        '[data-theme="light"], [data-theme="light-muted"], [data-theme="accent"], [data-theme="burgundy"]'
+        '[data-theme="light"], [data-theme="light-muted"], [data-theme="accent"], [data-theme="violet"]'
       );
 
       themeSections.forEach((section) => {
@@ -99,11 +99,11 @@ export function Header(): React.JSX.Element {
           href="/"
           locale={locale}
           className="relative block"
-          aria-label="AceAgency"
+          aria-label="Laboratorul de Conversii"
         >
           <Image
             src="/ace-agency-logo.webp"
-            alt="AceAgency"
+            alt="Laboratorul de Conversii"
             width={100}
             height={32}
             priority
@@ -132,11 +132,11 @@ export function Header(): React.JSX.Element {
             />
           </button>
 
-          {/* CTA pill button — burgundy accent with dot indicator */}
+          {/* CTA pill button — violet accent with dot indicator */}
           <Link
             href="/contact"
             locale={locale}
-            className="hidden items-center gap-2 rounded-full bg-[#56151A] px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A2025] sm:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-[#650CBE] px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#7A1FD8] sm:inline-flex"
           >
             <span className="h-2 w-2 rounded-full bg-white" />
             {t('cta')}

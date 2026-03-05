@@ -39,19 +39,19 @@ The primary visual inspiration for AceAgency's website. Key patterns to adapt:
 The site is dark-dominant. Most content sections use the dark scheme:
 - Background: Rich near-black (#262523) — warm, not cold
 - Text: Clean white with grey (#D9D9D9) for secondary content
-- Accents: Grey (#D9D9D9) for overlines, Burgundy (#56151A) for interactive elements
+- Accents: Grey (#D9D9D9) for overlines, Violet (#650CBE) for interactive elements
 - Cards: Slightly elevated dark (#2D2C2A approximate) with subtle borders
 
 ### Light Sections (Contrast)
 Select sections (usually About, some CTAs) use light for visual rhythm:
 - Background: Pure white or off-white
 - Text: Near-black for contrast
-- Accents: Burgundy (#56151A) for links, buttons, overlines
+- Accents: Violet (#650CBE) for links, buttons, overlines
 - Cards: White with light grey borders and subtle shadows
 
-### Burgundy Accent Sections
+### Violet Accent Sections
 Used sparingly (1-2 per page, typically CTA sections):
-- Background: Burgundy gradient (#56151A → #3D0F13)
+- Background: Violet gradient (#650CBE → #4A0A8F)
 - Text: White
 - Accent: Grey for buttons, highlights
 - Creates urgency and focus for conversion moments

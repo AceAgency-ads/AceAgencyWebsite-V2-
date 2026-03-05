@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
@@ -69,7 +70,7 @@ export function MissionVision(): React.JSX.Element {
   );
 
   return (
-    <SectionWrapper theme="light" id="mission-vision">
+    <SectionWrapper theme="dark" id="mission-vision">
       <div
         ref={sectionRef}
         className="grid grid-cols-1 gap-8 lg:grid-cols-2"
@@ -88,7 +89,7 @@ export function MissionVision(): React.JSX.Element {
           >
             {t('mission.overline')}
           </span>
-          <h3 className="mb-4 text-2xl font-bold">{t('mission.heading')}</h3>
+          <h2 className="mb-4 text-2xl font-bold">{t('mission.heading')}</h2>
           <p className="text-lg text-[var(--section-text-muted)]">
             {t('mission.description')}
           </p>
@@ -108,11 +109,23 @@ export function MissionVision(): React.JSX.Element {
           >
             {t('vision.overline')}
           </span>
-          <h3 className="mb-4 text-2xl font-bold">{t('vision.heading')}</h3>
+          <h2 className="mb-4 text-2xl font-bold">{t('vision.heading')}</h2>
           <p className="text-lg text-[var(--section-text-muted)]">
             {t('vision.description')}
           </p>
         </div>
+      </div>
+
+      {/* Team strategy photo */}
+      <div className="mt-12 overflow-hidden rounded-xl">
+        <Image
+          src="/images/about/mission-team.webp"
+          alt="Echipa Laboratorul de Conversii într-o ședință de strategie"
+          width={1400}
+          height={500}
+          className="h-auto max-h-[360px] w-full object-cover"
+          sizes="(max-width: 768px) 100vw, 90vw"
+        />
       </div>
     </SectionWrapper>
   );

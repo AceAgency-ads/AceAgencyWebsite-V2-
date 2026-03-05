@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
@@ -64,18 +65,7 @@ export function StorySection(): React.JSX.Element {
           },
         });
 
-        // Floating geometric shapes
-        const shapes =
-          visualRef.current!.querySelectorAll('[data-animate="shape"]');
-        shapes.forEach((shape, i) => {
-          gsap.to(shape, {
-            y: -10,
-            yoyo: true,
-            repeat: -1,
-            duration: 3 + i * 0.7,
-            ease: 'sine.inOut',
-          });
-        });
+        // Photo reveal animation is handled by the visual column fade-in above
 
         // Timeline items stagger in
         const timelineItems = visualRef.current!.querySelectorAll(
@@ -119,7 +109,7 @@ export function StorySection(): React.JSX.Element {
   );
 
   return (
-    <SectionWrapper theme="light" id="story">
+    <SectionWrapper theme="light-warm" id="story">
       <SectionHeader
         overline={t('story.overline')}
         heading={t('story.heading')}
@@ -141,34 +131,23 @@ export function StorySection(): React.JSX.Element {
           </div>
         </div>
 
-        {/* Right column — abstract geometry + timeline (40%) */}
+        {/* Right column — workspace photo + timeline overlay (40%) */}
         <div
           ref={visualRef}
-          className="relative hidden min-h-[400px] lg:block lg:w-[40%]"
+          className="relative hidden min-h-[400px] overflow-hidden rounded-2xl lg:block lg:w-[40%]"
         >
-          {/* Geometric shapes */}
-          <div
-            data-animate="shape"
-            className="absolute left-8 top-4 h-[180px] w-[180px] rounded-full opacity-20"
-            style={{ background: 'var(--ds-color-burgundy)' }}
-            aria-hidden="true"
+          {/* Workspace photo */}
+          <Image
+            src="/images/about/story-workspace.webp"
+            alt="Echipa Laboratorul de Conversii colaborând într-un spațiu de lucru creativ"
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 0px, 40vw"
           />
+
+          {/* Dark gradient overlay for timeline readability */}
           <div
-            data-animate="shape"
-            className="absolute right-4 top-24 h-[100px] w-[100px] rounded-lg opacity-30"
-            style={{ background: 'var(--ds-color-grey)' }}
-            aria-hidden="true"
-          />
-          <div
-            data-animate="shape"
-            className="absolute bottom-16 left-16 h-[80px] w-[80px] rounded-full opacity-25"
-            style={{ background: 'var(--ds-color-black)' }}
-            aria-hidden="true"
-          />
-          <div
-            data-animate="shape"
-            className="absolute bottom-32 right-12 h-[120px] w-[60px] rounded-lg opacity-15"
-            style={{ background: 'var(--ds-color-burgundy)' }}
+            className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
             aria-hidden="true"
           />
 
@@ -176,8 +155,7 @@ export function StorySection(): React.JSX.Element {
           <div className="absolute left-1/2 top-12 flex h-[calc(100%-3rem)] -translate-x-1/2 flex-col items-center">
             {/* Vertical line */}
             <div
-              className="absolute inset-y-0 w-px opacity-30"
-              style={{ background: 'var(--ds-color-grey)' }}
+              className="absolute inset-y-0 w-px bg-white/30"
               aria-hidden="true"
             />
 
@@ -191,15 +169,14 @@ export function StorySection(): React.JSX.Element {
                 >
                   {/* Dot */}
                   <div
-                    className="h-2 w-2 rounded-full"
-                    style={{ background: 'var(--ds-color-burgundy)' }}
+                    className="h-2 w-2 rounded-full bg-[var(--ds-color-accent)]"
                     aria-hidden="true"
                   />
                   <div className="whitespace-nowrap">
-                    <span className="text-xs font-bold text-[var(--section-text)]">
+                    <span className="text-xs font-bold text-white">
                       {milestone.year}
                     </span>
-                    <span className="ml-2 text-xs font-medium text-[var(--section-text-muted)]">
+                    <span className="ml-2 text-xs font-medium text-white/80">
                       {milestone.label}
                     </span>
                   </div>

@@ -56,7 +56,7 @@ export function Newsletter(): React.JSX.Element {
                   />
                   <button
                     type="submit"
-                    className="flex h-12 items-center gap-2 rounded-full bg-[#56151A] px-6 text-sm font-semibold text-white transition-colors hover:bg-[#7A2025]"
+                    className="flex h-12 items-center gap-2 rounded-full bg-[#650CBE] px-6 text-sm font-semibold text-white transition-colors hover:bg-[#7A1FD8]"
                   >
                     {t('newsletter.submit')}
                     <ArrowRight className="size-4" />
@@ -68,7 +68,7 @@ export function Newsletter(): React.JSX.Element {
                   <input
                     type="checkbox"
                     required
-                    className="mt-0.5 h-4 w-4 rounded border-[#262523]/30 bg-transparent accent-[#56151A]"
+                    className="mt-0.5 h-4 w-4 rounded border-[#262523]/30 bg-transparent accent-[#650CBE]"
                   />
                   <span>{t('newsletter.gdpr')}</span>
                 </label>

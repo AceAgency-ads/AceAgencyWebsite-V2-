@@ -8,10 +8,11 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "faq": "FAQ"
   },
   "footer": {
-    "tagline": "Your digital marketing agency from Bucharest",
+    "tagline": "Your conversion lab from Bucharest",
     "address": "Bucharest, Romania",
     "phone": "+40 XXX XXX XXX",
     "email": "contact@aceagency.ro",
@@ -23,17 +24,26 @@
       "success": "Thanks for subscribing!",
       "error": "Something went wrong. Please try again."
     },
-    "copyright": "\u00a9 2026 AceAgency. All rights reserved.",
+    "copyright": "© 2026 Conversion Lab. All rights reserved.",
     "divisions": {
-      "web": "AceWeb",
-      "ads": "AceAds",
-      "ai": "AceAI",
-      "media": "AceMedia"
+      "web": "Web Development",
+      "ads": "Digital Advertising",
+      "ai": "Artificial Intelligence",
+      "media": "Media Production"
+    },
+    "services": {
+      "googleAds": "Google Ads Conversions",
+      "facebookAds": "Facebook Ads Conversions",
+      "tiktokAds": "TikTok Ads Conversions",
+      "seo": "Organic Growth",
+      "emailMarketing": "Email Conversions",
+      "consultanta": "Growth Strategy"
     },
     "legal": {
       "privacy": "Privacy Policy",
       "cookies": "Cookie Policy",
-      "terms": "Terms of Service"
+      "terms": "Terms of Service",
+      "cookieSettings": "Cookie Settings"
     }
   },
   "social": {
@@ -43,8 +53,8 @@
   },
   "about": {
     "meta": {
-      "title": "About Us - Premium Marketing Agency - AceAgency",
-      "description": "Discover the AceAgency team - digital marketing agency from Bucharest. Our mission, values, and story."
+      "title": "About Us - Premium Conversion Lab - Conversion Lab",
+      "description": "Discover the Conversion Lab team - conversion lab from Bucharest. Our mission, values, and story."
     },
     "breadcrumb": {
       "home": "Home",
@@ -53,7 +63,7 @@
     "heroTransition": {
       "label": "WHO WE ARE",
       "heading": "Discipline. Vision. Results.",
-      "description": "AceAgency is the team of professionals from Bucharest that transforms brands through integrated digital strategies. We combine creativity with data to deliver measurable results and sustainable growth."
+      "description": "Conversion Lab is the team of professionals from Bucharest that transforms brands through integrated conversion systems. We combine creativity with data to deliver measurable conversions and sustainable growth."
     },
     "hero": {
       "overline": "ABOUT US",
@@ -64,60 +74,135 @@
       "overline": "OUR STORY",
       "heading": "From Passion to Performance",
       "paragraphs": [
-        "AceAgency was born from the conviction that every business in Romania deserves a digital presence at European standards. We started as a small team with a big vision: to transform the way Romanian brands communicate online.",
-        "Over the years, we grew from a web design studio to a full-service digital agency. We invested in people, technology, and processes that allow us to consistently deliver at the highest level of quality.",
-        "Today, with four specialized divisions — AceWeb, AceAds, AceAI, and AceMedia — we offer integrated solutions covering the entire digital spectrum. Every project is an opportunity to prove that excellence in digital marketing means measurable results."
+        "Conversion Lab was born from the conviction that every business in Romania deserves conversions at European standards. We started as a small team with a big vision: to transform the way Romanian brands generate results online.",
+        "Over the years, we grew from a web design studio to a full-service conversion lab. We invested in people, technology, and processes that allow us to consistently deliver measurable conversions at the highest level of quality.",
+        "Today, with expertise in web development, digital advertising, artificial intelligence, and media production — we offer integrated conversion systems covering the entire digital spectrum. Every project is an opportunity to prove that excellence in digital marketing means measurable conversions."
       ]
     },
     "values": {
       "overline": "OUR VALUES",
       "heading": "The Principles That Guide Us",
       "items": [
-        { "icon": "Target", "title": "Excellence", "description": "We dedicate ourselves to quality in every project, from concept to delivery" },
-        { "icon": "Shield", "title": "Integrity", "description": "Transparent and honest communication with every client and partner" },
-        { "icon": "Zap", "title": "Innovation", "description": "We adopt the latest technologies and strategies for superior results" },
-        { "icon": "Users", "title": "Collaboration", "description": "We work together with our clients as a united team" },
-        { "icon": "TrendingUp", "title": "Performance", "description": "Every action is measured and optimized for maximum results" },
-        { "icon": "Heart", "title": "Passion", "description": "We love what we do and it shows in every project delivered" }
+        {
+          "icon": "Target",
+          "title": "Excellence",
+          "description": "We dedicate ourselves to quality in every project, from concept to delivery"
+        },
+        {
+          "icon": "Shield",
+          "title": "Integrity",
+          "description": "Transparent and honest communication with every client and partner"
+        },
+        {
+          "icon": "Zap",
+          "title": "Innovation",
+          "description": "We adopt the latest technologies and strategies for superior results"
+        },
+        {
+          "icon": "Users",
+          "title": "Collaboration",
+          "description": "We work together with our clients as a united team"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Performance",
+          "description": "Every action is measured and optimized for maximum results"
+        },
+        {
+          "icon": "Heart",
+          "title": "Passion",
+          "description": "We love what we do and it shows in every project delivered"
+        }
       ]
     },
     "divisions": {
-      "overline": "OUR DIVISIONS",
+      "overline": "OUR EXPERTISE",
       "heading": "Expertise Under One Roof",
-      "description": "Four specialized divisions, one single objective: the digital success of our clients.",
+      "description": "Complete expertise, one single objective: our clients' conversions.",
       "items": [
-        { "icon": "Code", "name": "AceWeb", "focus": "Web Development", "description": "High-performance websites and web applications, from landing pages to complex platforms" },
-        { "icon": "Target", "name": "AceAds", "focus": "Digital Advertising", "description": "Google, Facebook, TikTok, and Instagram campaigns optimized for conversions" },
-        { "icon": "Brain", "name": "AceAI", "focus": "Artificial Intelligence", "description": "AI solutions for automation, chatbots, and predictive analytics" },
-        { "icon": "Camera", "name": "AceMedia", "focus": "Media Production", "description": "Video, photo, and graphic content for brands that want to stand out" }
+        {
+          "icon": "Code",
+          "name": "Web Development",
+          "focus": "Web & Technology",
+          "description": "High-performance websites and web applications, from landing pages to complex platforms"
+        },
+        {
+          "icon": "Target",
+          "name": "Digital Advertising",
+          "focus": "Conversion Systems",
+          "description": "Google, Facebook, TikTok, and Instagram campaigns optimized for conversions"
+        },
+        {
+          "icon": "Brain",
+          "name": "Artificial Intelligence",
+          "focus": "AI & Automation",
+          "description": "AI solutions for automation, chatbots, and predictive analytics"
+        },
+        {
+          "icon": "Camera",
+          "name": "Media Production",
+          "focus": "Content & Creative",
+          "description": "Video, photo, and graphic content for brands that want to stand out"
+        }
       ]
     },
     "mission": {
       "overline": "OUR MISSION",
       "heading": "Measurable Digital Results",
-      "description": "To help businesses in Romania grow through integrated, creative, and performance-oriented digital strategies. Every project is an opportunity to demonstrate that well-executed digital marketing generates real results."
+      "description": "To help businesses in Romania grow through integrated, creative, and performance-oriented conversion systems. Every project is an opportunity to demonstrate that well-executed digital marketing generates measurable conversions."
     },
     "vision": {
       "overline": "OUR VISION",
       "heading": "Digital Leader in Romania",
-      "description": "To become the reference digital agency in Romania, recognized for excellence in design, advertising, and technological innovation. A strategic partner for brands that want to lead in the digital era."
+      "description": "To become the reference conversion lab in Romania, recognized for excellence in design, advertising, and technological innovation. A strategic partner for brands that want to lead in the digital era."
     },
     "whyUs": {
       "overline": "WHY CHOOSE US",
-      "heading": "The AceAgency Advantage",
+      "heading": "The Conversion Lab Advantage",
       "items": [
-        { "number": "01", "title": "Full-Service Digital", "description": "Web, Ads, AI, Media — everything under one roof, one coherent strategy" },
-        { "number": "02", "title": "Premium-Level Design", "description": "Every pixel matters. Design inspired by the best European agencies" },
-        { "number": "03", "title": "Measurable Results", "description": "We don't promise — we deliver. Every campaign comes with clear reports and KPIs" },
-        { "number": "04", "title": "Partnerships, Not Projects", "description": "We build long-term relationships based on trust and transparency" },
-        { "number": "05", "title": "Cutting-Edge Technology", "description": "We adopt the latest tools and platforms for competitive advantage" }
+        {
+          "number": "01",
+          "title": "Full-Service Digital",
+          "description": "Web, Ads, AI, Media — everything under one roof, one coherent conversion system"
+        },
+        {
+          "number": "02",
+          "title": "Premium-Level Design",
+          "description": "Every pixel matters. Design inspired by the best European agencies"
+        },
+        {
+          "number": "03",
+          "title": "Measurable Results",
+          "description": "We don't promise — we deliver. Every campaign comes with clear reports and KPIs"
+        },
+        {
+          "number": "04",
+          "title": "Partnerships, Not Projects",
+          "description": "We build long-term relationships based on trust and transparency"
+        },
+        {
+          "number": "05",
+          "title": "Cutting-Edge Technology",
+          "description": "We adopt the latest tools and platforms for competitive advantage"
+        }
       ]
     },
     "cta": {
-      "heading": "Let's Build Together",
-      "description": "Ready to transform your brand's digital presence? Our team is waiting for you.",
+      "heading": "Let's Build Your Conversion System",
+      "description": "Ready to transform your brand's digital presence into measurable conversions? Our team is waiting for you.",
       "primary": "Contact Us",
       "secondary": "View Services"
+    },
+    "team": {
+      "overline": "OUR TEAM",
+      "heading": "The People Behind the Conversions",
+      "members": [
+        {
+          "name": "Team Member",
+          "role": "General Director",
+          "image": "/images/about/team-placeholder.webp"
+        }
+      ]
     }
   },
   "services": {
@@ -128,12 +213,12 @@
     "index": {
       "heroTransition": {
         "label": "OUR APPROACH",
-        "heading": "Complete digital solutions for every need",
-        "description": "From paid advertising to SEO optimization, from email marketing to strategic consulting — every service is built on data, experience and concrete results."
+        "heading": "Complete conversion systems for every need",
+        "description": "From paid advertising to SEO optimization, from email marketing to growth strategy — every conversion system is built on data, experience and measurable conversions."
       },
       "meta": {
-        "title": "Digital Marketing Services | AceAgency Bucharest",
-        "description": "Complete digital marketing services: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing and Consulting. Contact AceAgency today!"
+        "title": "Digital Conversion Systems | Conversion Lab Bucharest",
+        "description": "Complete digital conversion systems: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing and Growth Strategy. Contact Conversion Lab today!"
       },
       "hero": {
         "overline": "SERVICES",
@@ -144,13 +229,41 @@
         "overline": "WHAT WE OFFER",
         "heading": "Specialized Services for Every Need",
         "items": {
-          "0": { "title": "Web Development", "division": "AceWeb", "description": "High-performance, responsive and SEO-optimized websites and web applications, from landing pages to complex platforms." },
-          "1": { "title": "Google Ads", "division": "AceAds", "description": "Google Ads campaigns optimized for maximum ROI and minimum cost per conversion." },
-          "2": { "title": "Facebook & Instagram Ads", "division": "AceAds", "description": "Social media advertising strategies with precise and creative targeting." },
-          "3": { "title": "TikTok Ads", "division": "AceAds", "description": "Creative TikTok advertising for the next generation audience." },
-          "4": { "title": "SEO Optimization", "division": "AceWeb", "description": "Organic Google positioning through technical and content SEO strategies." },
-          "5": { "title": "Email Marketing", "division": "AceAds", "description": "Automated email campaigns that generate conversions and build customer loyalty." },
-          "6": { "title": "Marketing Consulting", "division": "AceAgency", "description": "Personalized digital strategy based on data, analysis and experience." }
+          "0": {
+            "title": "Web Development",
+            "division": "Web Development",
+            "description": "High-performance, responsive and SEO-optimized websites and web applications, from landing pages to complex platforms."
+          },
+          "1": {
+            "title": "Google Ads",
+            "division": "Digital Advertising",
+            "description": "Google Ads conversion systems optimized for maximum ROI and minimum cost per conversion."
+          },
+          "2": {
+            "title": "Facebook & Instagram Ads",
+            "division": "Digital Advertising",
+            "description": "Social media conversion systems with precise and creative targeting."
+          },
+          "3": {
+            "title": "TikTok Ads",
+            "division": "Digital Advertising",
+            "description": "Creative TikTok advertising for the next generation audience."
+          },
+          "4": {
+            "title": "SEO Optimization",
+            "division": "Organic Growth",
+            "description": "Organic Google positioning through technical and content SEO strategies."
+          },
+          "5": {
+            "title": "Email Marketing",
+            "division": "Email Conversions",
+            "description": "Automated email conversion systems that generate sales and build customer loyalty."
+          },
+          "6": {
+            "title": "Marketing Consulting",
+            "division": "Strategy",
+            "description": "Personalized growth strategy based on data, analysis and experience."
+          }
         }
       },
       "process": {
@@ -158,27 +271,70 @@
         "heading": "Our 4-Step Process",
         "description": "A structured approach that transforms your objectives into concrete results.",
         "steps": {
-          "0": { "title": "Analysis & Strategy", "description": "We understand your business, target audience and competition to build a personalized strategy." },
-          "1": { "title": "Design & Development", "description": "We create visual and technical solutions that reflect your brand and convert visitors." },
-          "2": { "title": "Implementation & Launch", "description": "We launch campaigns and projects with rigorous testing and real-time monitoring." },
-          "3": { "title": "Monitoring & Optimization", "description": "We continuously analyze performance and optimize for increasingly better results." }
+          "0": {
+            "title": "Analysis & Strategy",
+            "description": "We understand your business, target audience and competition to build a personalized strategy."
+          },
+          "1": {
+            "title": "Design & Development",
+            "description": "We create visual and technical solutions that reflect your brand and convert visitors."
+          },
+          "2": {
+            "title": "Implementation & Launch",
+            "description": "We launch campaigns and projects with rigorous testing and real-time monitoring."
+          },
+          "3": {
+            "title": "Monitoring & Optimization",
+            "description": "We continuously analyze performance and optimize for increasingly better results."
+          }
         }
       },
       "whyUs": {
         "overline": "WHY US",
         "heading": "Your Trusted Digital Partner",
         "stats": {
-          "0": { "value": "150", "suffix": "+", "label": "Projects Delivered" },
-          "1": { "value": "50", "suffix": "+", "label": "Active Clients" },
-          "2": { "value": "340", "suffix": "%", "label": "Average ROI" },
-          "3": { "value": "24", "suffix": "/7", "label": "Dedicated Support" }
+          "0": {
+            "value": "150",
+            "suffix": "+",
+            "label": "Projects Delivered"
+          },
+          "1": {
+            "value": "50",
+            "suffix": "+",
+            "label": "Active Clients"
+          },
+          "2": {
+            "value": "340",
+            "suffix": "%",
+            "label": "Average ROI"
+          },
+          "3": {
+            "value": "24",
+            "suffix": "/7",
+            "label": "Dedicated Support"
+          }
         },
         "differentiators": {
-          "0": { "title": "Dedicated Team", "description": "Each client has a dedicated account manager and direct access to specialists." },
-          "1": { "title": "Transparent Reports", "description": "Detailed monthly reports with clear metrics and actionable recommendations." },
-          "2": { "title": "Custom Strategies", "description": "We don't apply generic solutions — every strategy is built around your goals." },
-          "3": { "title": "Cutting-Edge Technology", "description": "We use the latest platforms and tools for real competitive advantage." },
-          "4": { "title": "Guaranteed Results", "description": "Clear KPIs established from the start, with continuous optimization for performance." }
+          "0": {
+            "title": "Dedicated Team",
+            "description": "Each client has a dedicated account manager and direct access to specialists."
+          },
+          "1": {
+            "title": "Transparent Reports",
+            "description": "Detailed monthly reports with clear metrics and actionable recommendations."
+          },
+          "2": {
+            "title": "Custom Strategies",
+            "description": "We don't apply generic solutions — every strategy is built around your goals."
+          },
+          "3": {
+            "title": "Cutting-Edge Technology",
+            "description": "We use the latest platforms and tools for real competitive advantage."
+          },
+          "4": {
+            "title": "Guaranteed Results",
+            "description": "Clear KPIs established from the start, with continuous optimization for performance."
+          }
         }
       }
     },
@@ -190,65 +346,129 @@
     },
     "googleAds": {
       "heroTransition": {
-        "label": "GOOGLE ADS",
-        "heading": "Campaigns that turn clicks into customers",
+        "label": "GOOGLE ADS CONVERSIONS",
+        "heading": "Conversion systems that turn clicks into customers",
         "description": "Every Google Ads campaign is built on real data, optimized daily and focused on a single goal: turning your advertising budget into new customers and measurable growth."
       },
       "meta": {
-        "title": "Google Ads Services | Google Ads Agency Romania",
-        "description": "Professional Google Ads campaigns with guaranteed ROI. Certified Google Ads agency from Bucharest. Contact AceAgency today!"
+        "title": "Google Ads Conversions | Conversion Lab Romania",
+        "description": "Google Ads conversion systems with guaranteed ROI. Certified conversion lab from Bucharest. Contact Conversion Lab today!"
       },
       "hero": {
         "overline": "GOOGLE ADS",
-        "headline": "Google Ads Campaigns That Drive Real Results",
-        "description": "We create and optimize Google Ads campaigns that bring new customers and maximize your return on advertising investment."
+        "headline": "Google Ads Conversions That Drive Real Results",
+        "description": "We create and optimize Google Ads conversion systems that bring new customers and maximize your return on advertising investment."
       },
       "features": {
         "overline": "GOOGLE ADS SERVICES",
         "heading": "Complete Google Advertising Solutions",
         "items": [
-          { "title": "Search Ads", "description": "Search network campaigns that position you in front of customers actively looking for your services." },
-          { "title": "Display Ads", "description": "Visual banners across millions of Google partner websites to increase brand awareness." },
-          { "title": "Shopping Ads", "description": "Optimized Google Shopping campaigns for online stores with product feeds and dynamic remarketing." },
-          { "title": "YouTube Ads", "description": "Video advertising on YouTube with demographic and interest-based targeting for maximum engagement." },
-          { "title": "Performance Max", "description": "AI-powered automated campaigns that optimize across all Google channels simultaneously." },
-          { "title": "Remarketing", "description": "Recapture visitors who left your site through personalized ads across the entire Google network." }
+          {
+            "title": "Search Ads",
+            "description": "Search network campaigns that position you in front of customers actively looking for your services."
+          },
+          {
+            "title": "Display Ads",
+            "description": "Visual banners across millions of Google partner websites to increase brand awareness."
+          },
+          {
+            "title": "Shopping Ads",
+            "description": "Optimized Google Shopping campaigns for online stores with product feeds and dynamic remarketing."
+          },
+          {
+            "title": "YouTube Ads",
+            "description": "Video advertising on YouTube with demographic and interest-based targeting for maximum engagement."
+          },
+          {
+            "title": "Performance Max",
+            "description": "AI-powered automated campaigns that optimize across all Google channels simultaneously."
+          },
+          {
+            "title": "Remarketing",
+            "description": "Recapture visitors who left your site through personalized ads across the entire Google network."
+          }
         ]
       },
       "process": {
         "overline": "OUR PROCESS",
         "heading": "How We Manage Your Google Ads Campaigns",
         "steps": [
-          { "title": "Audit & Analysis", "description": "We analyze your existing account, competition and market opportunities to identify the most profitable keywords." },
-          { "title": "Strategy & Setup", "description": "We build campaign structure, create persuasive ads and set optimal targeting for your audience." },
-          { "title": "Continuous Optimization", "description": "We monitor performance daily, adjust bids and test ad variations for increasingly better results." },
-          { "title": "Reporting & Scaling", "description": "Transparent monthly reports with clear metrics and scaling recommendations for continuous business growth." }
+          {
+            "title": "Audit & Analysis",
+            "description": "We analyze your existing account, competition and market opportunities to identify the most profitable keywords."
+          },
+          {
+            "title": "Strategy & Setup",
+            "description": "We build campaign structure, create persuasive ads and set optimal targeting for your audience."
+          },
+          {
+            "title": "Continuous Optimization",
+            "description": "We monitor performance daily, adjust bids and test ad variations for increasingly better results."
+          },
+          {
+            "title": "Reporting & Scaling",
+            "description": "Transparent monthly reports with clear metrics and scaling recommendations for continuous business growth."
+          }
         ]
       },
       "stats": {
         "overline": "RESULTS",
         "heading": "Our Google Ads Campaign Performance",
         "items": [
-          { "value": "340", "suffix": "%+", "label": "Average Campaign ROI" },
-          { "value": "150", "suffix": "+", "label": "Campaigns Managed" },
-          { "value": "50", "suffix": "+", "label": "Active Clients" },
-          { "value": "2", "suffix": "M+", "label": "Clicks Generated" }
+          {
+            "value": "340",
+            "suffix": "%+",
+            "label": "Average Campaign ROI"
+          },
+          {
+            "value": "150",
+            "suffix": "+",
+            "label": "Campaigns Managed"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Active Clients"
+          },
+          {
+            "value": "2",
+            "suffix": "M+",
+            "label": "Clicks Generated"
+          }
         ]
       },
       "faq": {
         "overline": "FAQ",
         "heading": "Questions About Google Ads Services",
         "items": [
-          { "question": "How much do Google Ads services cost?", "answer": "The cost depends on industry, competition and objectives. The minimum recommended budget for Google Ads is 500 EUR/month, plus management fee. Contact us for a personalized offer." },
-          { "question": "How long until I see results?", "answer": "First results are usually visible within 2-4 weeks. Full campaign optimization requires 2-3 months for maximum performance, as we accumulate data and adjust strategy." },
-          { "question": "Which Google Ads campaign type is right for my business?", "answer": "It depends on your goals. Search campaigns are ideal for lead generation, Shopping for e-commerce, Display for brand awareness and YouTube for engagement. We recommend a personalized mix." },
-          { "question": "Do you have Google Ads certification?", "answer": "Yes, our team holds up-to-date Google Ads certifications for Search, Display, Video and Shopping. We stay current with the latest features and best practices." },
-          { "question": "What reports do I receive?", "answer": "You receive detailed monthly reports including: impressions, clicks, conversions, cost per conversion, ROI, keyword analysis and optimization recommendations. You also have access to a real-time dashboard." },
-          { "question": "Can I stop campaigns at any time?", "answer": "Yes, you have full control. Campaigns can be stopped, modified or scaled at any time. There are no mandatory long-term contracts — we work based on performance and trust." }
+          {
+            "question": "How much do Google Ads services cost?",
+            "answer": "The cost depends on industry, competition and objectives. The minimum recommended budget for Google Ads is 500 EUR/month, plus management fee. Contact us for a personalized offer."
+          },
+          {
+            "question": "How long until I see results?",
+            "answer": "First results are usually visible within 2-4 weeks. Full campaign optimization requires 2-3 months for maximum performance, as we accumulate data and adjust strategy."
+          },
+          {
+            "question": "Which Google Ads campaign type is right for my business?",
+            "answer": "It depends on your goals. Search campaigns are ideal for lead generation, Shopping for e-commerce, Display for brand awareness and YouTube for engagement. We recommend a personalized mix."
+          },
+          {
+            "question": "Do you have Google Ads certification?",
+            "answer": "Yes, our team holds up-to-date Google Ads certifications for Search, Display, Video and Shopping. We stay current with the latest features and best practices."
+          },
+          {
+            "question": "What reports do I receive?",
+            "answer": "You receive detailed monthly reports including: impressions, clicks, conversions, cost per conversion, ROI, keyword analysis and optimization recommendations. You also have access to a real-time dashboard."
+          },
+          {
+            "question": "Can I stop campaigns at any time?",
+            "answer": "Yes, you have full control. Campaigns can be stopped, modified or scaled at any time. There are no mandatory long-term contracts — we work based on performance and trust."
+          }
         ]
       },
       "cta": {
-        "heading": "Grow Your Business with Google Ads",
+        "heading": "Grow Your Conversions with Google Ads",
         "description": "Schedule a free consultation and discover how Google Ads campaigns can transform your business.",
         "primary": "Request a Quote",
         "secondary": "Schedule a Consultation"
@@ -256,66 +476,133 @@
     },
     "facebookAds": {
       "heroTransition": {
-        "label": "FACEBOOK & INSTAGRAM ADS",
-        "heading": "Social advertising that drives real conversions",
+        "label": "FACEBOOK & INSTAGRAM ADS CONVERSIONS",
+        "heading": "Social conversion systems that drive real results",
         "description": "We create Facebook and Instagram advertising strategies that connect your brand with the right audience, generate qualified leads and maximize the return on every dollar invested."
       },
       "meta": {
-        "title": "Facebook Ads Services | Facebook Ads Agency - AceAgency",
-        "description": "Professional Facebook and Instagram Ads campaigns with precise targeting and measurable ROI. Facebook advertising agency in Bucharest. Request a quote!"
+        "title": "Facebook Ads Conversions | Conversion Lab",
+        "description": "Facebook and Instagram Ads conversion systems with precise targeting and measurable ROI. Conversion lab in Bucharest. Request a quote!"
       },
       "hero": {
         "overline": "FACEBOOK & INSTAGRAM ADS",
-        "headline": "Facebook Ads Campaigns That Drive Real Conversions",
-        "description": "We create Facebook and Instagram advertising strategies that generate qualified leads, increase sales and maximize your return on social media advertising investment."
+        "headline": "Facebook Ads Conversions That Drive Real Results",
+        "description": "We create Facebook and Instagram conversion systems that generate qualified leads, increase sales and maximize your return on social media advertising investment."
       },
       "features": {
         "overline": "FACEBOOK ADS SERVICES",
         "heading": "Complete Facebook and Instagram Advertising Solutions",
         "items": [
-          { "title": "Awareness Campaigns", "description": "We grow your brand recognition through reach and brand awareness campaigns targeted at your ideal audience on Facebook and Instagram." },
-          { "title": "Traffic Campaigns", "description": "We drive qualified visitors to your website through ads optimized for clicks and engagement across both platforms." },
-          { "title": "Conversion Campaigns", "description": "We generate leads and direct sales through campaigns optimized with Facebook Pixel and Conversions API for precise tracking." },
-          { "title": "Advanced Retargeting", "description": "We recapture website visitors and users who interacted with your brand through dynamic remarketing on Facebook and Instagram." },
-          { "title": "Custom & Lookalike Audiences", "description": "We build custom and lookalike audiences based on your existing customer data to find new high-potential customers." },
-          { "title": "Creative Optimization", "description": "We constantly test and optimize visuals, copy and ad formats — from carousels to Reels — for maximum performance." }
+          {
+            "title": "Awareness Campaigns",
+            "description": "We grow your brand recognition through reach and brand awareness campaigns targeted at your ideal audience on Facebook and Instagram."
+          },
+          {
+            "title": "Traffic Campaigns",
+            "description": "We drive qualified visitors to your website through ads optimized for clicks and engagement across both platforms."
+          },
+          {
+            "title": "Conversion Campaigns",
+            "description": "We generate leads and direct sales through campaigns optimized with Facebook Pixel and Conversions API for precise tracking."
+          },
+          {
+            "title": "Advanced Retargeting",
+            "description": "We recapture website visitors and users who interacted with your brand through dynamic remarketing on Facebook and Instagram."
+          },
+          {
+            "title": "Custom & Lookalike Audiences",
+            "description": "We build custom and lookalike audiences based on your existing customer data to find new high-potential customers."
+          },
+          {
+            "title": "Creative Optimization",
+            "description": "We constantly test and optimize visuals, copy and ad formats — from carousels to Reels — for maximum performance."
+          }
         ]
       },
       "process": {
         "overline": "OUR PROCESS",
         "heading": "How We Manage Your Facebook Ads Campaigns",
         "steps": [
-          { "title": "Account Audit & Pixel Setup", "description": "We analyze your existing account, verify Facebook Pixel and Conversions API configuration, and identify improvement opportunities." },
-          { "title": "Audience Strategy", "description": "We build your ideal audience using demographics, interests, behaviors and lookalike audiences based on your existing customers." },
-          { "title": "Campaign Creation & Ad Creatives", "description": "We develop campaign structure and create persuasive visuals and copy tailored to each audience segment and placement." },
-          { "title": "Optimization & Scaling", "description": "We monitor performance daily, A/B test ad variations and scale profitable campaigns for continuous growth." }
+          {
+            "title": "Account Audit & Pixel Setup",
+            "description": "We analyze your existing account, verify Facebook Pixel and Conversions API configuration, and identify improvement opportunities."
+          },
+          {
+            "title": "Audience Strategy",
+            "description": "We build your ideal audience using demographics, interests, behaviors and lookalike audiences based on your existing customers."
+          },
+          {
+            "title": "Campaign Creation & Ad Creatives",
+            "description": "We develop campaign structure and create persuasive visuals and copy tailored to each audience segment and placement."
+          },
+          {
+            "title": "Optimization & Scaling",
+            "description": "We monitor performance daily, A/B test ad variations and scale profitable campaigns for continuous growth."
+          }
         ]
       },
       "stats": {
         "overline": "RESULTS",
         "heading": "Facebook & Instagram Ads Campaign Performance",
         "items": [
-          { "value": "2", "suffix": "M+", "label": "Monthly Reach" },
-          { "value": "50", "suffix": "K+", "label": "Conversions Generated" },
-          { "value": "200", "suffix": "+", "label": "Campaigns Managed" },
-          { "value": "15", "suffix": "x", "label": "Average ROAS" }
+          {
+            "value": "2",
+            "suffix": "M+",
+            "label": "Monthly Reach"
+          },
+          {
+            "value": "50",
+            "suffix": "K+",
+            "label": "Conversions Generated"
+          },
+          {
+            "value": "200",
+            "suffix": "+",
+            "label": "Campaigns Managed"
+          },
+          {
+            "value": "15",
+            "suffix": "x",
+            "label": "Average ROAS"
+          }
         ]
       },
       "faq": {
         "overline": "FAQ",
         "heading": "Questions About Facebook & Instagram Ads",
         "items": [
-          { "question": "How much does Facebook and Instagram advertising cost?", "answer": "The minimum recommended budget for Facebook Ads is 300 EUR/month, plus management fee. Cost per lead varies by industry: from 2-5 EUR for B2C to 10-30 EUR for B2B. Contact us for a personalized estimate based on your goals." },
-          { "question": "How does Facebook Pixel work and why is it important?", "answer": "Facebook Pixel is a tracking code installed on your website that monitors visitor actions. It is essential for campaign optimization, custom audience creation and remarketing. We also configure Conversions API for precise tracking even with current privacy restrictions." },
-          { "question": "What types of audiences do you target?", "answer": "We use core audiences (demographics, interests, behaviors), custom audiences (website visitors, email lists, page interactions) and lookalike audiences (people similar to your existing customers). This combination ensures maximum reach with high relevance." },
-          { "question": "Facebook Ads or Instagram Ads — which is better?", "answer": "It depends on your goals and audience. Instagram excels for visual brands and 18-35 audiences, while Facebook offers more detailed targeting and better performance for B2B lead generation. We recommend a cross-platform strategy using both for optimal results, combined with Google Ads campaigns for complete coverage." },
-          { "question": "What ad formats do you use?", "answer": "We use all available formats: static images, carousels, video, Reels, Stories and collections. We choose the optimal format based on campaign objective and A/B test to identify what works best for your specific audience." },
-          { "question": "How long until I see results?", "answer": "First results appear within 1-2 weeks of launch. Optimal performance is reached after 4-6 weeks of continuous optimization, as Meta's algorithm learns and we accumulate enough data for informed decisions." },
-          { "question": "How do you measure campaign success?", "answer": "We track clear KPIs: cost per lead, cost per conversion, ROAS, reach, frequency and click-through rate. You receive detailed monthly reports with performance analysis and optimization recommendations. We combine Facebook Ads data with Google Ads for a complete cross-platform view." }
+          {
+            "question": "How much does Facebook and Instagram advertising cost?",
+            "answer": "The minimum recommended budget for Facebook Ads is 300 EUR/month, plus management fee. Cost per lead varies by industry: from 2-5 EUR for B2C to 10-30 EUR for B2B. Contact us for a personalized estimate based on your goals."
+          },
+          {
+            "question": "How does Facebook Pixel work and why is it important?",
+            "answer": "Facebook Pixel is a tracking code installed on your website that monitors visitor actions. It is essential for campaign optimization, custom audience creation and remarketing. We also configure Conversions API for precise tracking even with current privacy restrictions."
+          },
+          {
+            "question": "What types of audiences do you target?",
+            "answer": "We use core audiences (demographics, interests, behaviors), custom audiences (website visitors, email lists, page interactions) and lookalike audiences (people similar to your existing customers). This combination ensures maximum reach with high relevance."
+          },
+          {
+            "question": "Facebook Ads or Instagram Ads — which is better?",
+            "answer": "It depends on your goals and audience. Instagram excels for visual brands and 18-35 audiences, while Facebook offers more detailed targeting and better performance for B2B lead generation. We recommend a cross-platform strategy using both for optimal results, combined with Google Ads campaigns for complete coverage."
+          },
+          {
+            "question": "What ad formats do you use?",
+            "answer": "We use all available formats: static images, carousels, video, Reels, Stories and collections. We choose the optimal format based on campaign objective and A/B test to identify what works best for your specific audience."
+          },
+          {
+            "question": "How long until I see results?",
+            "answer": "First results appear within 1-2 weeks of launch. Optimal performance is reached after 4-6 weeks of continuous optimization, as Meta's algorithm learns and we accumulate enough data for informed decisions."
+          },
+          {
+            "question": "How do you measure campaign success?",
+            "answer": "We track clear KPIs: cost per lead, cost per conversion, ROAS, reach, frequency and click-through rate. You receive detailed monthly reports with performance analysis and optimization recommendations. We combine Facebook Ads data with Google Ads for a complete cross-platform view."
+          }
         ]
       },
       "cta": {
-        "heading": "Grow Your Business with Facebook & Instagram Ads",
+        "heading": "Grow Your Conversions with Facebook & Instagram Ads",
         "description": "Schedule a free consultation and discover how Facebook and Instagram advertising can generate leads and sales for your business.",
         "primary": "Request a Quote",
         "secondary": "Schedule a Call"
@@ -323,65 +610,129 @@
     },
     "tiktokAds": {
       "heroTransition": {
-        "label": "TIKTOK ADS",
-        "heading": "Viral content that turns audiences into customers",
+        "label": "TIKTOK ADS CONVERSIONS",
+        "heading": "Viral content that turns audiences into conversions",
         "description": "TikTok is the platform where authenticity wins. We create native campaigns that capture attention in the first seconds and turn views into concrete actions for your brand."
       },
       "meta": {
-        "title": "TikTok Ads Services | TikTok Advertising Romania - AceAgency",
-        "description": "Creative and high-performing TikTok Ads campaigns for audiences in Romania. TikTok video advertising with measurable results. Request a quote!"
+        "title": "TikTok Ads Conversions | TikTok Advertising Romania - Conversion Lab",
+        "description": "Creative and high-performing TikTok Ads conversion systems for audiences in Romania. TikTok video advertising with measurable conversions. Request a quote!"
       },
       "hero": {
         "overline": "TIKTOK ADS",
-        "headline": "TikTok Ads That Capture Attention and Drive Results",
-        "description": "We create creative and viral TikTok Ads campaigns that connect your brand with the next generation audience in Romania. From In-Feed Ads to Spark Ads, we maximize the impact of every investment."
+        "headline": "TikTok Ads Conversions That Capture Attention and Drive Results",
+        "description": "We create creative and viral TikTok Ads conversion systems that connect your brand with the next generation audience in Romania. From In-Feed Ads to Spark Ads, we maximize the conversions of every investment."
       },
       "features": {
         "overline": "TIKTOK ADS SERVICES",
         "heading": "TikTok Ad Formats for Every Objective",
         "items": [
-          { "title": "In-Feed Ads", "description": "Native ads in the For You feed that integrate organically with content and capture user attention naturally." },
-          { "title": "TopView Ads", "description": "Full-screen video ads that appear when opening the TikTok app, providing maximum visibility and guaranteed impact for your brand." },
-          { "title": "Spark Ads", "description": "We amplify high-performing organic posts from your brand or creators with advertising budget for extended reach and engagement." },
-          { "title": "Brand Effects", "description": "AR effects and branded filters on TikTok that encourage user-generated content and increase interaction with your brand." },
-          { "title": "TikTok Shopping", "description": "We integrate your product catalog directly into TikTok for a native shopping experience, combined with Facebook Ads campaigns for cross-platform conversions." },
-          { "title": "Audience Targeting", "description": "Advanced targeting by demographics, interests, behavior and custom audiences to reach users with the highest conversion potential." }
+          {
+            "title": "In-Feed Ads",
+            "description": "Native ads in the For You feed that integrate organically with content and capture user attention naturally."
+          },
+          {
+            "title": "TopView Ads",
+            "description": "Full-screen video ads that appear when opening the TikTok app, providing maximum visibility and guaranteed impact for your brand."
+          },
+          {
+            "title": "Spark Ads",
+            "description": "We amplify high-performing organic posts from your brand or creators with advertising budget for extended reach and engagement."
+          },
+          {
+            "title": "Brand Effects",
+            "description": "AR effects and branded filters on TikTok that encourage user-generated content and increase interaction with your brand."
+          },
+          {
+            "title": "TikTok Shopping",
+            "description": "We integrate your product catalog directly into TikTok for a native shopping experience, combined with Facebook Ads campaigns for cross-platform conversions."
+          },
+          {
+            "title": "Audience Targeting",
+            "description": "Advanced targeting by demographics, interests, behavior and custom audiences to reach users with the highest conversion potential."
+          }
         ]
       },
       "process": {
         "overline": "OUR PROCESS",
         "heading": "How We Create Successful TikTok Ads Campaigns",
         "steps": [
-          { "title": "TikTok Audience Analysis", "description": "We research your target audience on TikTok, analyze relevant trends and identify platform-specific opportunities for your brand." },
-          { "title": "Strategy & Creative Brief", "description": "We build the campaign strategy and develop the creative brief adapted to TikTok's format and culture, referencing current trends." },
-          { "title": "Campaign Setup & Launch", "description": "We configure campaigns in TikTok Ads Manager, set targeting and budget, and launch with real-time monitoring." },
-          { "title": "Monitoring & Optimization", "description": "We analyze performance daily, test creative variations and optimize for continuously improving CPV and ROAS." }
+          {
+            "title": "TikTok Audience Analysis",
+            "description": "We research your target audience on TikTok, analyze relevant trends and identify platform-specific opportunities for your brand."
+          },
+          {
+            "title": "Strategy & Creative Brief",
+            "description": "We build the campaign strategy and develop the creative brief adapted to TikTok's format and culture, referencing current trends."
+          },
+          {
+            "title": "Campaign Setup & Launch",
+            "description": "We configure campaigns in TikTok Ads Manager, set targeting and budget, and launch with real-time monitoring."
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "description": "We analyze performance daily, test creative variations and optimize for continuously improving CPV and ROAS."
+          }
         ]
       },
       "stats": {
         "overline": "RESULTS",
         "heading": "TikTok Ads Campaign Performance",
         "items": [
-          { "value": "500", "suffix": "K+", "label": "Monthly Views" },
-          { "value": "100", "suffix": "K+", "label": "Interactions" },
-          { "value": "50", "suffix": "+", "label": "TikTok Campaigns" },
-          { "value": "8", "suffix": "x", "label": "Average ROAS" }
+          {
+            "value": "500",
+            "suffix": "K+",
+            "label": "Monthly Views"
+          },
+          {
+            "value": "100",
+            "suffix": "K+",
+            "label": "Interactions"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "TikTok Campaigns"
+          },
+          {
+            "value": "8",
+            "suffix": "x",
+            "label": "Average ROAS"
+          }
         ]
       },
       "faq": {
         "overline": "FAQ",
         "heading": "Questions About TikTok Ads",
         "items": [
-          { "question": "How much does TikTok advertising cost?", "answer": "The minimum recommended budget for TikTok Ads is 300 EUR/month, plus management fee. TikTok has lower cost per view than other platforms, with CPMs starting from 2-5 EUR. Final cost depends on objectives, audience and chosen campaign type." },
-          { "question": "What type of content works on TikTok?", "answer": "Authentic, native content performs best. Vertical videos of 15-60 seconds with a strong hook in the first 3 seconds, trend sounds and natural storytelling generate the best results. We avoid classic ads — on TikTok, content needs to feel organic." },
-          { "question": "Are TikTok Ads right for my business?", "answer": "TikTok is ideal if your target audience is 18-45 years old. It works excellently for e-commerce, beauty, food, fitness, fashion and entertainment. However, even B2B brands find success on TikTok through educational content and creative thought leadership." },
-          { "question": "What TikTok ad formats are available?", "answer": "The main formats are: In-Feed Ads (feed ads), TopView (full-screen on app open), Spark Ads (amplifying organic posts), Brand Effects (AR filters) and TikTok Shopping (integrated commerce). Each format has specific advantages depending on campaign objective." },
-          { "question": "How long until I see results on TikTok?", "answer": "Initial results appear within the first 1-2 weeks. Full optimization takes 3-4 weeks as TikTok's algorithm learns and we identify the creative and audience combinations that perform best." },
-          { "question": "TikTok Ads vs Instagram Reels — which is better?", "answer": "TikTok excels at organic reach and engagement with younger audiences (18-30), while Instagram Reels benefits from Meta's ecosystem and advanced targeting. We recommend a multi-platform strategy that includes both, alongside Google Ads campaigns for complete coverage." }
+          {
+            "question": "How much does TikTok advertising cost?",
+            "answer": "The minimum recommended budget for TikTok Ads is 300 EUR/month, plus management fee. TikTok has lower cost per view than other platforms, with CPMs starting from 2-5 EUR. Final cost depends on objectives, audience and chosen campaign type."
+          },
+          {
+            "question": "What type of content works on TikTok?",
+            "answer": "Authentic, native content performs best. Vertical videos of 15-60 seconds with a strong hook in the first 3 seconds, trend sounds and natural storytelling generate the best results. We avoid classic ads — on TikTok, content needs to feel organic."
+          },
+          {
+            "question": "Are TikTok Ads right for my business?",
+            "answer": "TikTok is ideal if your target audience is 18-45 years old. It works excellently for e-commerce, beauty, food, fitness, fashion and entertainment. However, even B2B brands find success on TikTok through educational content and creative thought leadership."
+          },
+          {
+            "question": "What TikTok ad formats are available?",
+            "answer": "The main formats are: In-Feed Ads (feed ads), TopView (full-screen on app open), Spark Ads (amplifying organic posts), Brand Effects (AR filters) and TikTok Shopping (integrated commerce). Each format has specific advantages depending on campaign objective."
+          },
+          {
+            "question": "How long until I see results on TikTok?",
+            "answer": "Initial results appear within the first 1-2 weeks. Full optimization takes 3-4 weeks as TikTok's algorithm learns and we identify the creative and audience combinations that perform best."
+          },
+          {
+            "question": "TikTok Ads vs Instagram Reels — which is better?",
+            "answer": "TikTok excels at organic reach and engagement with younger audiences (18-30), while Instagram Reels benefits from Meta's ecosystem and advanced targeting. We recommend a multi-platform strategy that includes both, alongside Google Ads campaigns for complete coverage."
+          }
         ]
       },
       "cta": {
-        "heading": "Go Viral on TikTok with AceAgency",
+        "heading": "Go Viral on TikTok with Conversion Lab",
         "description": "Schedule a free consultation and discover how TikTok advertising can generate visibility and sales for your business.",
         "primary": "Request a Quote",
         "secondary": "Schedule a Call"
@@ -389,16 +740,16 @@
     },
     "seo": {
       "heroTransition": {
-        "label": "SEO OPTIMIZATION",
+        "label": "ORGANIC GROWTH",
         "heading": "Organic visibility that drives qualified traffic",
         "description": "SEO is not just about Google rankings — it is about qualified traffic, domain authority and long-term organic growth. We build complete SEO strategies that turn searches into customers."
       },
       "meta": {
-        "title": "SEO Services Romania | Professional SEO Optimization - AceAgency",
+        "title": "Organic Growth SEO Romania | Professional SEO Optimization - Conversion Lab",
         "description": "Professional SEO services for organic Google positioning. Complete SEO audit, technical and content optimization. Request a free SEO audit today!"
       },
       "hero": {
-        "overline": "SEO OPTIMIZATION",
+        "overline": "ORGANIC GROWTH",
         "headline": "SEO Services Romania — Professional Optimization for Top Google Rankings",
         "description": "We provide complete SEO services that increase your website's organic visibility on Google, drive qualified long-term traffic and convert visitors into customers. From technical SEO audits to content strategies and link building."
       },
@@ -406,46 +757,116 @@
         "overline": "SEO SERVICES",
         "heading": "Complete SEO Optimization Solutions for Your Business",
         "items": [
-          { "title": "Technical SEO", "description": "We optimize site speed, Core Web Vitals (LCP, INP, CLS), URL structure, XML sitemap, robots.txt and proper indexing in Google Search Console." },
-          { "title": "On-Page SEO", "description": "We optimize page content, titles and meta descriptions, heading hierarchy (H1-H6), images with alt text, internal links and JSON-LD schema markup." },
-          { "title": "Off-Page SEO", "description": "We build quality backlinks through ethical link building strategies: guest posting, digital PR, partnerships and mentions in relevant industry publications." },
-          { "title": "Local SEO", "description": "We optimize Google Business Profile, manage reviews, build consistent NAP citations and position your business in local Google Maps results." },
-          { "title": "Complete SEO Audit", "description": "We analyze your website in depth: technical performance, content structure, backlink profile, competition and untapped keyword opportunities." },
-          { "title": "SEO Content Strategy", "description": "We develop an SEO content strategy with keyword-optimized articles, cluster topics and pillar pages that build topical authority in your industry." }
+          {
+            "title": "Technical SEO",
+            "description": "We optimize site speed, Core Web Vitals (LCP, INP, CLS), URL structure, XML sitemap, robots.txt and proper indexing in Google Search Console."
+          },
+          {
+            "title": "On-Page SEO",
+            "description": "We optimize page content, titles and meta descriptions, heading hierarchy (H1-H6), images with alt text, internal links and JSON-LD schema markup."
+          },
+          {
+            "title": "Off-Page SEO",
+            "description": "We build quality backlinks through ethical link building strategies: guest posting, digital PR, partnerships and mentions in relevant industry publications."
+          },
+          {
+            "title": "Local SEO",
+            "description": "We optimize Google Business Profile, manage reviews, build consistent NAP citations and position your business in local Google Maps results."
+          },
+          {
+            "title": "Complete SEO Audit",
+            "description": "We analyze your website in depth: technical performance, content structure, backlink profile, competition and untapped keyword opportunities."
+          },
+          {
+            "title": "SEO Content Strategy",
+            "description": "We develop an SEO content strategy with keyword-optimized articles, cluster topics and pillar pages that build topical authority in your industry."
+          }
         ]
       },
       "process": {
         "overline": "OUR PROCESS",
         "heading": "How We Optimize Your Website for Google",
         "steps": [
-          { "title": "Complete SEO Audit", "description": "We fully audit your website: technical performance, content, backlinks and competition. We identify critical issues and keyword opportunities with the highest potential." },
-          { "title": "Keyword Strategy", "description": "We research and select keywords with the best volume-to-competition ratio. We build a keyword map aligned with site pages and search intent." },
-          { "title": "On-Page & Technical Optimization", "description": "We implement technical optimizations (speed, Core Web Vitals, structure) and on-page improvements (titles, meta, headings, content, internal links, schema markup)." },
-          { "title": "Link Building & Authority", "description": "We build quality backlinks through ethical link building strategies that increase domain authority and improve Google rankings." },
-          { "title": "Monitoring & Reporting", "description": "We track rankings, organic traffic, conversions and Core Web Vitals. Detailed monthly reports with performance analysis and continuous optimization recommendations." }
+          {
+            "title": "Complete SEO Audit",
+            "description": "We fully audit your website: technical performance, content, backlinks and competition. We identify critical issues and keyword opportunities with the highest potential."
+          },
+          {
+            "title": "Keyword Strategy",
+            "description": "We research and select keywords with the best volume-to-competition ratio. We build a keyword map aligned with site pages and search intent."
+          },
+          {
+            "title": "On-Page & Technical Optimization",
+            "description": "We implement technical optimizations (speed, Core Web Vitals, structure) and on-page improvements (titles, meta, headings, content, internal links, schema markup)."
+          },
+          {
+            "title": "Link Building & Authority",
+            "description": "We build quality backlinks through ethical link building strategies that increase domain authority and improve Google rankings."
+          },
+          {
+            "title": "Monitoring & Reporting",
+            "description": "We track rankings, organic traffic, conversions and Core Web Vitals. Detailed monthly reports with performance analysis and continuous optimization recommendations."
+          }
         ]
       },
       "stats": {
         "overline": "RESULTS",
         "heading": "Our SEO Services Performance",
         "items": [
-          { "value": "300", "suffix": "%+", "label": "Organic Traffic Growth" },
-          { "value": "500", "suffix": "+", "label": "Keywords in Top 10" },
-          { "value": "100", "suffix": "+", "label": "SEO Projects" },
-          { "value": "95", "suffix": "%", "label": "Retention Rate" }
+          {
+            "value": "300",
+            "suffix": "%+",
+            "label": "Organic Traffic Growth"
+          },
+          {
+            "value": "500",
+            "suffix": "+",
+            "label": "Keywords in Top 10"
+          },
+          {
+            "value": "100",
+            "suffix": "+",
+            "label": "SEO Projects"
+          },
+          {
+            "value": "95",
+            "suffix": "%",
+            "label": "Retention Rate"
+          }
         ]
       },
       "faq": {
         "overline": "FAQ",
         "heading": "Questions About SEO Optimization Services",
         "items": [
-          { "question": "How much do SEO services cost?", "answer": "SEO service prices start from 500 EUR/month for basic packages that include on-page optimization and monitoring. Complete packages with technical audit, content strategy and link building start from 1,000 EUR/month. The exact cost depends on industry competitiveness, website size and your goals. Contact us for a free evaluation." },
-          { "question": "How long does it take to see SEO results?", "answer": "SEO is a long-term investment. First ranking improvements are typically observed in 3-4 months, while significant results — consistent organic traffic growth and conversions — appear after 6-12 months of continuous optimization. This varies depending on keyword competitiveness and your website's current state." },
-          { "question": "What does an SEO audit include?", "answer": "A complete SEO audit includes: technical analysis (speed, Core Web Vitals, indexing, mobile-friendliness), on-page audit (titles, meta, headings, content, internal links), off-page audit (backlink profile, domain authority), competition analysis and keyword research. We deliver a detailed report with prioritized issues and an action plan." },
-          { "question": "What is the difference between On-Page and Off-Page SEO?", "answer": "On-Page SEO refers to optimizations made directly on your website: content, titles, meta descriptions, headings, images, internal links and URL structure. Off-Page SEO refers to actions outside your website that build authority: link building, guest posting, digital PR and mentions in relevant publications. Both are essential for ranking." },
-          { "question": "Do you offer Local SEO?", "answer": "Yes, we offer complete Local SEO services. We optimize Google Business Profile, manage online reviews, build consistent NAP (Name, Address, Phone) citations in relevant directories and implement LocalBusiness schema markup. Local SEO is essential for businesses serving customers in a specific geographic area — combined with local Google Ads campaigns, we ensure complete visibility." },
-          { "question": "How do you measure SEO results?", "answer": "We track clear metrics: target keyword rankings, organic traffic (Google Analytics + Search Console), click-through rate (CTR), conversions from organic traffic, Core Web Vitals and domain authority. Monthly reports include performance analysis, month-over-month comparisons and optimization recommendations. You also have access to a real-time dashboard." },
-          { "question": "Why choose AceAgency for SEO?", "answer": "We combine technical SEO expertise with deep understanding of businesses in Romania. We have over 100 successfully completed SEO projects, a 95% retention rate and a dedicated team that constantly follows the latest Google algorithm updates. Additionally, we integrate SEO services with Google Ads and Facebook Ads campaigns for a complete and coherent digital strategy." }
+          {
+            "question": "How much do SEO services cost?",
+            "answer": "SEO service prices start from 500 EUR/month for basic packages that include on-page optimization and monitoring. Complete packages with technical audit, content strategy and link building start from 1,000 EUR/month. The exact cost depends on industry competitiveness, website size and your goals. Contact us for a free evaluation."
+          },
+          {
+            "question": "How long does it take to see SEO results?",
+            "answer": "SEO is a long-term investment. First ranking improvements are typically observed in 3-4 months, while significant results — consistent organic traffic growth and conversions — appear after 6-12 months of continuous optimization. This varies depending on keyword competitiveness and your website's current state."
+          },
+          {
+            "question": "What does an SEO audit include?",
+            "answer": "A complete SEO audit includes: technical analysis (speed, Core Web Vitals, indexing, mobile-friendliness), on-page audit (titles, meta, headings, content, internal links), off-page audit (backlink profile, domain authority), competition analysis and keyword research. We deliver a detailed report with prioritized issues and an action plan."
+          },
+          {
+            "question": "What is the difference between On-Page and Off-Page SEO?",
+            "answer": "On-Page SEO refers to optimizations made directly on your website: content, titles, meta descriptions, headings, images, internal links and URL structure. Off-Page SEO refers to actions outside your website that build authority: link building, guest posting, digital PR and mentions in relevant publications. Both are essential for ranking."
+          },
+          {
+            "question": "Do you offer Local SEO?",
+            "answer": "Yes, we offer complete Local SEO services. We optimize Google Business Profile, manage online reviews, build consistent NAP (Name, Address, Phone) citations in relevant directories and implement LocalBusiness schema markup. Local SEO is essential for businesses serving customers in a specific geographic area — combined with local Google Ads campaigns, we ensure complete visibility."
+          },
+          {
+            "question": "How do you measure SEO results?",
+            "answer": "We track clear metrics: target keyword rankings, organic traffic (Google Analytics + Search Console), click-through rate (CTR), conversions from organic traffic, Core Web Vitals and domain authority. Monthly reports include performance analysis, month-over-month comparisons and optimization recommendations. You also have access to a real-time dashboard."
+          },
+          {
+            "question": "Why choose Conversion Lab for SEO?",
+            "answer": "We combine technical SEO expertise with deep understanding of businesses in Romania. We have over 100 successfully completed SEO projects, a 95% retention rate and a dedicated team that constantly follows the latest Google algorithm updates. Additionally, we integrate SEO services with Google Ads and Facebook Ads campaigns for a complete and coherent digital strategy."
+          }
         ]
       },
       "cta": {
@@ -457,62 +878,129 @@
     },
     "emailMarketing": {
       "heroTransition": {
-        "label": "EMAIL MARKETING",
+        "label": "EMAIL CONVERSIONS",
         "heading": "Direct communication that retains and converts",
         "description": "Email marketing remains the channel with the highest ROI in digital marketing. We build personalized campaigns and automations that work around the clock to generate recurring revenue."
       },
       "meta": {
-        "title": "Email Marketing Services | Email Campaigns - AceAgency",
+        "title": "Email Conversions | Email Marketing Systems - Conversion Lab",
         "description": "Professional email marketing campaigns with advanced automation and segmentation. Newsletter, drip campaigns and detailed reporting. Request a free quote!"
       },
       "hero": {
-        "overline": "EMAIL MARKETING",
-        "headline": "Email Marketing Services That Drive Real Conversions",
+        "overline": "EMAIL CONVERSIONS",
+        "headline": "Email Marketing Systems That Drive Real Conversions",
         "description": "We build personalized email marketing strategies that retain customers and generate repeat sales. Combined with Google Ads and Facebook Ads campaigns, email marketing becomes your most profitable digital channel."
       },
       "features": {
         "overline": "EMAIL MARKETING SERVICES",
         "heading": "Complete Email Marketing Solutions",
         "items": [
-          { "title": "Personalized Email Campaigns", "description": "We create targeted email campaigns for specific segments, with relevant content that generates above-industry open rates and clicks." },
-          { "title": "Email Automation", "description": "Automated welcome, nurture, abandoned cart and re-engagement sequences that work around the clock for your business." },
-          { "title": "Newsletter Design & Management", "description": "Professional, responsive email templates aligned with your brand, delivered on a consistent editorial calendar." },
-          { "title": "Audience Segmentation", "description": "We segment your database by behavior, demographics and purchase history for ultra-relevant messaging." },
-          { "title": "A/B Testing & Optimization", "description": "We test subject lines, content, design and timing to maximize open rates and conversions for every campaign." },
-          { "title": "Reporting & Analytics", "description": "Detailed dashboards with performance metrics: open rate, CTR, conversions, revenue per email and trends over time." }
+          {
+            "title": "Personalized Email Campaigns",
+            "description": "We create targeted email campaigns for specific segments, with relevant content that generates above-industry open rates and clicks."
+          },
+          {
+            "title": "Email Automation",
+            "description": "Automated welcome, nurture, abandoned cart and re-engagement sequences that work around the clock for your business."
+          },
+          {
+            "title": "Newsletter Design & Management",
+            "description": "Professional, responsive email templates aligned with your brand, delivered on a consistent editorial calendar."
+          },
+          {
+            "title": "Audience Segmentation",
+            "description": "We segment your database by behavior, demographics and purchase history for ultra-relevant messaging."
+          },
+          {
+            "title": "A/B Testing & Optimization",
+            "description": "We test subject lines, content, design and timing to maximize open rates and conversions for every campaign."
+          },
+          {
+            "title": "Reporting & Analytics",
+            "description": "Detailed dashboards with performance metrics: open rate, CTR, conversions, revenue per email and trends over time."
+          }
         ]
       },
       "process": {
         "overline": "OUR PROCESS",
         "heading": "How We Create Successful Email Campaigns",
         "steps": [
-          { "title": "Email Audit & Strategy", "description": "We analyze your existing list, open rates, segments and define an email strategy aligned with your business goals and active SEO campaigns." },
-          { "title": "Platform & List Setup", "description": "We configure the email marketing platform, import and clean lists, set up segments and basic automations." },
-          { "title": "Campaign & Automation Creation", "description": "We develop visual templates, write persuasive copy and build automated sequences that also integrate your Google Ads offers." },
-          { "title": "Monitoring & Optimization", "description": "We track each campaign's performance, continuously A/B test and optimize for ever-improving conversion rates." }
+          {
+            "title": "Email Audit & Strategy",
+            "description": "We analyze your existing list, open rates, segments and define an email strategy aligned with your business goals and active SEO campaigns."
+          },
+          {
+            "title": "Platform & List Setup",
+            "description": "We configure the email marketing platform, import and clean lists, set up segments and basic automations."
+          },
+          {
+            "title": "Campaign & Automation Creation",
+            "description": "We develop visual templates, write persuasive copy and build automated sequences that also integrate your Google Ads offers."
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "description": "We track each campaign's performance, continuously A/B test and optimize for ever-improving conversion rates."
+          }
         ]
       },
       "stats": {
         "overline": "RESULTS",
         "heading": "Our Email Campaign Performance",
         "items": [
-          { "value": "45", "suffix": "%+", "label": "Average Open Rate" },
-          { "value": "500", "suffix": "K+", "label": "Emails Sent" },
-          { "value": "30", "suffix": "+", "label": "Active Automations" },
-          { "value": "12", "suffix": "x", "label": "Average ROI" }
+          {
+            "value": "45",
+            "suffix": "%+",
+            "label": "Average Open Rate"
+          },
+          {
+            "value": "500",
+            "suffix": "K+",
+            "label": "Emails Sent"
+          },
+          {
+            "value": "30",
+            "suffix": "+",
+            "label": "Active Automations"
+          },
+          {
+            "value": "12",
+            "suffix": "x",
+            "label": "Average ROI"
+          }
         ]
       },
       "faq": {
         "overline": "FAQ",
         "heading": "Questions About Email Marketing Services",
         "items": [
-          { "question": "How much do email marketing services cost?", "answer": "Prices start from 300 EUR/month for basic packages including design, copywriting and sending. Packages with advanced automations start from 500 EUR/month. Contact us for a personalized quote." },
-          { "question": "Which email marketing platform do you use?", "answer": "We work with Mailchimp, Resend, SendGrid, ActiveCampaign and other professional platforms. We choose the right platform based on your needs, budget and required integrations." },
-          { "question": "How often should I send emails?", "answer": "We recommend 1-4 emails per month for newsletters, complemented by automated sequences (welcome, nurture, re-engagement). Optimal frequency depends on industry, audience and content type." },
-          { "question": "How do you build the subscriber list?", "answer": "We implement lead magnets, smart pop-ups, dedicated landing pages and optimized forms. Combined with Facebook Ads lead generation campaigns, list growth becomes accelerated and sustainable." },
-          { "question": "What open rate can I expect?", "answer": "The industry average is 20-25%. Our clients consistently achieve 35-45% rates thanks to advanced segmentation, A/B tested subjects and content personalized to each segment's interests." },
-          { "question": "Do you also design newsletters?", "answer": "Yes, we create professional, responsive email templates aligned with your brand's visual identity. Each template is optimized for all major email clients (Gmail, Outlook, Apple Mail)." },
-          { "question": "How do email automations help?", "answer": "Automations work 24/7: they send welcome emails to new subscribers, recover abandoned carts, re-activate inactive customers and nurture leads to conversion. The result: more sales with less manual effort." }
+          {
+            "question": "How much do email marketing services cost?",
+            "answer": "Prices start from 300 EUR/month for basic packages including design, copywriting and sending. Packages with advanced automations start from 500 EUR/month. Contact us for a personalized quote."
+          },
+          {
+            "question": "Which email marketing platform do you use?",
+            "answer": "We work with Mailchimp, Resend, SendGrid, ActiveCampaign and other professional platforms. We choose the right platform based on your needs, budget and required integrations."
+          },
+          {
+            "question": "How often should I send emails?",
+            "answer": "We recommend 1-4 emails per month for newsletters, complemented by automated sequences (welcome, nurture, re-engagement). Optimal frequency depends on industry, audience and content type."
+          },
+          {
+            "question": "How do you build the subscriber list?",
+            "answer": "We implement lead magnets, smart pop-ups, dedicated landing pages and optimized forms. Combined with Facebook Ads lead generation campaigns, list growth becomes accelerated and sustainable."
+          },
+          {
+            "question": "What open rate can I expect?",
+            "answer": "The industry average is 20-25%. Our clients consistently achieve 35-45% rates thanks to advanced segmentation, A/B tested subjects and content personalized to each segment's interests."
+          },
+          {
+            "question": "Do you also design newsletters?",
+            "answer": "Yes, we create professional, responsive email templates aligned with your brand's visual identity. Each template is optimized for all major email clients (Gmail, Outlook, Apple Mail)."
+          },
+          {
+            "question": "How do email automations help?",
+            "answer": "Automations work 24/7: they send welcome emails to new subscribers, recover abandoned carts, re-activate inactive customers and nurture leads to conversion. The result: more sales with less manual effort."
+          }
         ]
       },
       "cta": {
@@ -524,62 +1012,129 @@
     },
     "consultanta": {
       "heroTransition": {
-        "label": "MARKETING CONSULTING",
-        "heading": "Digital strategy built on data and experience",
+        "label": "GROWTH STRATEGY",
+        "heading": "Growth strategy built on data and experience",
         "description": "A good strategy starts with deep analysis. We audit your digital presence, identify opportunities and build a personalized action plan that integrates all digital channels."
       },
       "meta": {
-        "title": "Digital Marketing Consulting Romania - AceAgency",
-        "description": "Professional digital marketing consulting: complete audit, personalized strategy and action plan. Schedule a free consultation with AceAgency!"
+        "title": "Digital Growth Strategy Romania - Conversion Lab",
+        "description": "Professional digital growth strategy: complete audit, personalized strategy and action plan. Schedule a free consultation with Conversion Lab!"
       },
       "hero": {
-        "overline": "MARKETING CONSULTING",
-        "headline": "Digital Marketing Consulting for Sustainable Growth",
+        "overline": "GROWTH STRATEGY",
+        "headline": "Digital Growth Strategy for Sustainable Conversions",
         "description": "We analyze your business in depth and build a complete digital strategy integrating SEO, Google Ads, email marketing and social media for measurable long-term results."
       },
       "features": {
         "overline": "CONSULTING SERVICES",
         "heading": "What Our Marketing Consulting Includes",
         "items": [
-          { "title": "Digital Marketing Audit", "description": "Complete analysis of your digital presence: website, technical SEO, Google Ads campaigns, social media and email marketing — all evaluated with concrete metrics." },
-          { "title": "Marketing Strategy Development", "description": "Personalized strategic plan with SMART objectives, prioritized channels, clear KPIs and implementation timeline." },
-          { "title": "Digital Marketing Plan", "description": "Detailed roadmap with prioritized actions, estimated budget per channel, editorial calendar and content recommendations." },
-          { "title": "Competitive Analysis", "description": "In-depth study of direct and indirect competitors, identifying market gaps and positioning opportunities." },
-          { "title": "Brand Positioning Consulting", "description": "We define your brand identity, unique value proposition and positioning strategy that differentiates you in the market." },
-          { "title": "Team Training & Workshops", "description": "Hands-on workshops for your team on digital marketing, Google Ads, SEO, social media and email marketing." }
+          {
+            "title": "Digital Marketing Audit",
+            "description": "Complete analysis of your digital presence: website, technical SEO, Google Ads campaigns, social media and email marketing — all evaluated with concrete metrics."
+          },
+          {
+            "title": "Marketing Strategy Development",
+            "description": "Personalized strategic plan with SMART objectives, prioritized channels, clear KPIs and implementation timeline."
+          },
+          {
+            "title": "Digital Marketing Plan",
+            "description": "Detailed roadmap with prioritized actions, estimated budget per channel, editorial calendar and content recommendations."
+          },
+          {
+            "title": "Competitive Analysis",
+            "description": "In-depth study of direct and indirect competitors, identifying market gaps and positioning opportunities."
+          },
+          {
+            "title": "Brand Positioning Consulting",
+            "description": "We define your brand identity, unique value proposition and positioning strategy that differentiates you in the market."
+          },
+          {
+            "title": "Team Training & Workshops",
+            "description": "Hands-on workshops for your team on digital marketing, Google Ads, SEO, social media and email marketing."
+          }
         ]
       },
       "process": {
         "overline": "OUR PROCESS",
         "heading": "How Marketing Consulting Works",
         "steps": [
-          { "title": "Current Situation Analysis", "description": "We discuss your business, analyze your existing digital presence, active campaigns and identify challenges and opportunities." },
-          { "title": "Define Objectives & KPIs", "description": "Together we establish SMART objectives, measurable KPIs and success indicators for each digital channel." },
-          { "title": "Develop Strategy & Plan", "description": "We build the complete digital strategy with detailed recommendations for SEO, paid advertising, email marketing and content." },
-          { "title": "Implementation & Monitoring", "description": "We assist with implementation through AceWeb, AceAds and AceMedia teams, and monitor results for continuous adjustments." }
+          {
+            "title": "Current Situation Analysis",
+            "description": "We discuss your business, analyze your existing digital presence, active campaigns and identify challenges and opportunities."
+          },
+          {
+            "title": "Define Objectives & KPIs",
+            "description": "Together we establish SMART objectives, measurable KPIs and success indicators for each digital channel."
+          },
+          {
+            "title": "Develop Strategy & Plan",
+            "description": "We build the complete digital strategy with detailed recommendations for SEO, paid advertising, email marketing and content."
+          },
+          {
+            "title": "Implementation & Monitoring",
+            "description": "We assist with implementation through our specialized teams, and monitor results for continuous adjustments."
+          }
         ]
       },
       "stats": {
         "overline": "RESULTS",
         "heading": "Our Marketing Consulting Impact",
         "items": [
-          { "value": "100", "suffix": "+", "label": "Strategies Delivered" },
-          { "value": "50", "suffix": "+", "label": "Clients Consulted" },
-          { "value": "340", "suffix": "%", "label": "Average ROI" },
-          { "value": "98", "suffix": "%", "label": "Client Satisfaction" }
+          {
+            "value": "100",
+            "suffix": "+",
+            "label": "Strategies Delivered"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Clients Consulted"
+          },
+          {
+            "value": "340",
+            "suffix": "%",
+            "label": "Average ROI"
+          },
+          {
+            "value": "98",
+            "suffix": "%",
+            "label": "Client Satisfaction"
+          }
         ]
       },
       "faq": {
         "overline": "FAQ",
         "heading": "Questions About Digital Marketing Consulting",
         "items": [
-          { "question": "What does a marketing consulting session include?", "answer": "A session includes current situation analysis, business objectives discussion, digital opportunity identification and actionable recommendations. The first 30-minute session is free." },
-          { "question": "How much does digital marketing consulting cost?", "answer": "Individual sessions start from 200 EUR. Complete strategy packages (audit + plan + implementation) start from 1,500 EUR. Price depends on business complexity and digital channels involved." },
-          { "question": "How long does the consulting process take?", "answer": "A complete consulting project takes 2-4 weeks, from initial audit to final strategy delivery. Ongoing consulting is done on a monthly basis with follow-up sessions." },
-          { "question": "Who is consulting suitable for?", "answer": "For any business looking to grow digitally: startups that need direction, mature businesses looking to optimize, or companies wanting to enter new channels (Google Ads, TikTok Ads, SEO)." },
-          { "question": "What results can I expect after consulting?", "answer": "Our clients see an average 340% ROI growth in the first year after strategy implementation. Concrete results depend on industry, budget and implementation speed." },
-          { "question": "Do you offer implementation, not just strategy?", "answer": "Yes, AceAgency offers complete implementation services through AceWeb (web development), AceAds (Google Ads, Facebook Ads, TikTok Ads) and AceMedia (video and graphic content) divisions." },
-          { "question": "How do I start with marketing consulting?", "answer": "Simple: schedule a free 30-minute consultation. We discuss your business, identify the main challenges and propose a personalized action plan." }
+          {
+            "question": "What does a marketing consulting session include?",
+            "answer": "A session includes current situation analysis, business objectives discussion, digital opportunity identification and actionable recommendations. The first 30-minute session is free."
+          },
+          {
+            "question": "How much does digital marketing consulting cost?",
+            "answer": "Individual sessions start from 200 EUR. Complete strategy packages (audit + plan + implementation) start from 1,500 EUR. Price depends on business complexity and digital channels involved."
+          },
+          {
+            "question": "How long does the consulting process take?",
+            "answer": "A complete consulting project takes 2-4 weeks, from initial audit to final strategy delivery. Ongoing consulting is done on a monthly basis with follow-up sessions."
+          },
+          {
+            "question": "Who is consulting suitable for?",
+            "answer": "For any business looking to grow digitally: startups that need direction, mature businesses looking to optimize, or companies wanting to enter new channels (Google Ads, TikTok Ads, SEO)."
+          },
+          {
+            "question": "What results can I expect after consulting?",
+            "answer": "Our clients see an average 340% ROI growth in the first year after strategy implementation. Concrete results depend on industry, budget and implementation speed."
+          },
+          {
+            "question": "Do you offer implementation, not just strategy?",
+            "answer": "Yes, Conversion Lab offers complete implementation services: web development, Google Ads, Facebook Ads, TikTok Ads, and video and graphic content."
+          },
+          {
+            "question": "How do I start with marketing consulting?",
+            "answer": "Simple: schedule a free 30-minute consultation. We discuss your business, identify the main challenges and propose a personalized action plan."
+          }
         ]
       },
       "cta": {
@@ -592,18 +1147,18 @@
   },
   "home": {
     "meta": {
-      "title": "Digital Marketing Agency Bucharest - AceAgency",
-      "description": "AceAgency - digital marketing agency from Bucharest. Google Ads, Facebook Ads, SEO, Email Marketing services. Contact us today!"
+      "title": "Conversion Lab Bucharest - Conversion Lab",
+      "description": "Conversion Lab - conversion lab from Bucharest. Google Ads, Facebook Ads, SEO, Email Marketing conversion systems. Contact us today!"
     },
     "heroTransition": {
       "label": "WHY WE EXIST",
-      "heading": "We transform your vision into measurable digital results",
-      "description": "We are a full-service digital agency from Bucharest that combines web development, paid advertising, artificial intelligence and media production to deliver concrete results and sustainable growth."
+      "heading": "We transform your vision into measurable digital conversions",
+      "description": "We are a full-service conversion lab from Bucharest that combines web development, paid advertising, artificial intelligence and media production to deliver concrete conversions and sustainable growth."
     },
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
-      "headline": "<accent>Full-Service</accent> Digital Agency in Bucharest",
-      "subheading": "We transform your vision into measurable digital results. Web. Ads. AI. Media.",
+      "headline": "<accent>Conversion</accent> Lab in Bucharest",
+      "subheading": "We transform your vision into measurable digital conversions. Web. Ads. AI. Media.",
       "cta": {
         "primary": "Discover Our Services",
         "secondary": "Contact Us"
@@ -645,16 +1200,32 @@
       "overline": "RESULTS",
       "heading": "Proven Performance",
       "items": {
-        "0": { "value": "150", "suffix": "+", "label": "Projects Delivered" },
-        "1": { "value": "50", "suffix": "+", "label": "Happy Clients" },
-        "2": { "value": "98", "suffix": "%", "label": "Retention Rate" },
-        "3": { "value": "5", "suffix": "yrs", "label": "Experience" }
+        "0": {
+          "value": "150",
+          "suffix": "+",
+          "label": "Projects Delivered"
+        },
+        "1": {
+          "value": "50",
+          "suffix": "+",
+          "label": "Happy Clients"
+        },
+        "2": {
+          "value": "98",
+          "suffix": "%",
+          "label": "Retention Rate"
+        },
+        "3": {
+          "value": "5",
+          "suffix": "yrs",
+          "label": "Experience"
+        }
       }
     },
     "about": {
       "overline": "ABOUT US",
       "heading": "Discipline. Vision. <accent>Results.</accent>",
-      "description": "We are a team of professionals who believe every brand deserves an exceptional digital presence. From strategy to execution, from idea to result.",
+      "description": "We are a team of professionals who believe every brand deserves exceptional measurable conversions. From strategy to execution, from idea to conversion.",
       "cta": "Learn more"
     },
     "testimonials": {
@@ -662,7 +1233,7 @@
       "heading": "What Our Clients Say",
       "items": {
         "0": {
-          "quote": "AceAgency completely transformed our online presence. The results exceeded expectations.",
+          "quote": "Conversion Lab completely transformed our online presence. The results exceeded expectations.",
           "author": "Maria Popescu",
           "company": "TechStart SRL",
           "rating": "5"
@@ -674,7 +1245,7 @@
           "rating": "5"
         },
         "2": {
-          "quote": "The AceAgency team understands business needs and delivers solutions that work.",
+          "quote": "The Conversion Lab team understands business needs and delivers solutions that work.",
           "author": "Elena Dumitrescu",
           "company": "StartUp Hub",
           "rating": "5"
@@ -686,7 +1257,7 @@
           "rating": "5"
         },
         "4": {
-          "quote": "The website created by AceAgency is the best digital investment we have made.",
+          "quote": "The website created by Conversion Lab is the best digital investment we have made.",
           "author": "Ioana Marinescu",
           "company": "Beauty Brand",
           "rating": "5"
@@ -700,8 +1271,8 @@
       }
     },
     "cta": {
-      "heading": "Ready to Grow Digital?",
-      "description": "Let's discuss how we can transform your business into a digital success.",
+      "heading": "Ready for Measurable Conversions?",
+      "description": "Let's discuss how we can transform your business into a digital conversion system.",
       "primary": "Schedule a Consultation",
       "secondary": "View Portfolio"
     },
@@ -721,8 +1292,8 @@
       "contact": "Contact"
     },
     "meta": {
-      "title": "Contact | AceAgency - Digital Agency Bucharest",
-      "description": "Contact AceAgency for digital marketing services. Contact form, schedule a consultation, address and phone. We respond within 24 hours."
+      "title": "Contact | Conversion Lab - Digital Conversion Lab Bucharest",
+      "description": "Contact Conversion Lab for digital conversion systems. Contact form, schedule a consultation, address and phone. We respond within 24 hours."
     },
     "hero": {
       "overline": "CONTACT",
@@ -810,11 +1381,26 @@
       "overline": "FAQ",
       "heading": "Quick Answers",
       "items": [
-        { "question": "How long does a web project take?", "answer": "Duration varies by complexity. A standard corporate website takes 4-6 weeks, a complex project 8-12 weeks." },
-        { "question": "What are the service costs?", "answer": "Each project is unique. We offer free consultation to evaluate needs and propose a personalized budget." },
-        { "question": "Do you offer post-launch support?", "answer": "Yes, we offer maintenance and post-launch support packages. We stand by our clients for the long term." },
-        { "question": "How do you measure results?", "answer": "We use Google Analytics, Google Ads, Facebook Ads Manager and other platforms for detailed monthly reports with clear KPIs." },
-        { "question": "Do you work with small businesses?", "answer": "Absolutely! We work with businesses of all sizes, from startups to large companies. Our solutions are scalable." }
+        {
+          "question": "How long does a web project take?",
+          "answer": "Duration varies by complexity. A standard corporate website takes 4-6 weeks, a complex project 8-12 weeks."
+        },
+        {
+          "question": "What are the service costs?",
+          "answer": "Each project is unique. We offer free consultation to evaluate needs and propose a personalized budget."
+        },
+        {
+          "question": "Do you offer post-launch support?",
+          "answer": "Yes, we offer maintenance and post-launch support packages. We stand by our clients for the long term."
+        },
+        {
+          "question": "How do you measure results?",
+          "answer": "We use Google Analytics, Google Ads, Facebook Ads Manager and other platforms for detailed monthly reports with clear KPIs."
+        },
+        {
+          "question": "Do you work with small businesses?",
+          "answer": "Absolutely! We work with businesses of all sizes, from startups to large companies. Our solutions are scalable."
+        }
       ]
     },
     "newsletter": {
@@ -833,8 +1419,8 @@
   },
   "faq": {
     "meta": {
-      "title": "Frequently Asked Questions - AceAgency",
-      "description": "Find answers to the most common questions about AceAgency services. Learn about our process, pricing and collaboration."
+      "title": "Frequently Asked Questions - Conversion Lab",
+      "description": "Find answers to the most common questions about Conversion Lab services. Learn about our process, pricing and collaboration."
     },
     "breadcrumb": {
       "home": "Home",
@@ -843,15 +1429,15 @@
     "hero": {
       "overline": "FAQ",
       "heading": "Frequently Asked Questions",
-      "description": "Answers to the most important questions about our digital marketing services, collaboration process and the AceAgency team."
+      "description": "Answers to the most important questions about our digital conversion systems, collaboration process and the Conversion Lab team."
     },
     "categories": [
       {
-        "name": "About AceAgency",
+        "name": "About Conversion Lab",
         "items": [
           {
-            "question": "What is AceAgency?",
-            "answer": "AceAgency is a digital marketing agency based in Bucharest, Romania. We provide comprehensive online promotion services through our four divisions: AceWeb (web development), AceAds (paid advertising), AceAI (artificial intelligence in marketing) and AceMedia (media content). Our team combines technical expertise with creativity to deliver measurable results."
+            "question": "What is Conversion Lab?",
+            "answer": "Conversion Lab is a conversion lab based in Bucharest, Romania. We provide comprehensive online conversion systems: web development, paid advertising, artificial intelligence in marketing and media content. Our team combines technical expertise with creativity to deliver measurable conversions."
           },
           {
             "question": "What services do you offer?",
@@ -862,7 +1448,7 @@
             "answer": "Our headquarters are in Bucharest, at Bulevardul Aviatorilor 106, but we work with clients across Romania and internationally. Most collaborations are conducted online, allowing us to deliver the same quality of services regardless of the client's location. We schedule in-person or video meetings based on your preferences."
           },
           {
-            "question": "What is the experience of the AceAgency team?",
+            "question": "What is the experience of the Conversion Lab team?",
             "answer": "Our team consists of specialists with experience in digital marketing, paid advertising, SEO, web development and content strategy. Each team member is certified on the platforms they work with (Google Ads, Meta, TikTok) and constantly participates in training programs to stay up to date with the latest industry trends."
           }
         ]
@@ -871,7 +1457,7 @@
         "name": "Process and Collaboration",
         "items": [
           {
-            "question": "How does a collaboration with AceAgency begin?",
+            "question": "How does a collaboration with Conversion Lab begin?",
             "answer": "The process starts with a free consultation where we analyze your business needs and objectives. Fill out the contact form or schedule an online meeting, and our team will get back to you with a personalized proposal within 48 hours. After accepting the proposal, we establish the strategy, KPIs and begin implementation."
           },
           {
@@ -892,7 +1478,7 @@
         "name": "Pricing and Contracts",
         "items": [
           {
-            "question": "How much do AceAgency services cost?",
+            "question": "How much do Conversion Lab services cost?",
             "answer": "Prices vary depending on the service, complexity and advertising budget. We offer customized packages for each client, starting from the specific needs and goals of the business. Contact us for a free, no-obligation quote — our team will prepare a proposal tailored to your budget."
           },
           {
@@ -930,8 +1516,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy - AceAgency",
-      "description": "AceAgency Privacy Policy. Learn how we collect, use and protect your personal data in compliance with GDPR."
+      "title": "Privacy Policy - Conversion Lab",
+      "description": "Conversion Lab Privacy Policy. Learn how we collect, use and protect your personal data in compliance with GDPR."
     },
     "breadcrumb": {
       "home": "Home",
@@ -944,7 +1530,7 @@
     "sections": [
       {
         "heading": "1. Introduction",
-        "content": "AceAgency, located at Bulevardul Aviatorilor 106, Bucharest, Romania, is committed to protecting the privacy of your personal data. This policy describes how we collect, use, store and protect your personal information.\n\nThis policy applies to all visitors of the aceagency.ro website and all individuals who interact with our services. Please read this document carefully to understand our practices regarding personal data."
+        "content": "Conversion Lab, located at Bulevardul Aviatorilor 106, Bucharest, Romania, is committed to protecting the privacy of your personal data. This policy describes how we collect, use, store and protect your personal information.\n\nThis policy applies to all visitors of the aceagency.ro website and all individuals who interact with our services. Please read this document carefully to understand our practices regarding personal data."
       },
       {
         "heading": "2. Personal Data Collected",
@@ -984,14 +1570,14 @@
       },
       {
         "heading": "11. Contact",
-        "content": "For any questions or requests related to personal data protection, you can contact us at:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757\n\nYou also have the right to file a complaint with the National Supervisory Authority for Personal Data Processing (ANSPDCP) — www.dataprotection.ro."
+        "content": "For any questions or requests related to personal data protection, you can contact us at:\n\nConversion Lab\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757\n\nYou also have the right to file a complaint with the National Supervisory Authority for Personal Data Processing (ANSPDCP) — www.dataprotection.ro."
       }
     ]
   },
   "cookies": {
     "meta": {
-      "title": "Cookie Policy - AceAgency",
-      "description": "AceAgency Cookie Policy. Learn what cookies we use, why and how you can manage them. GDPR and ePrivacy Directive compliant."
+      "title": "Cookie Policy - Conversion Lab",
+      "description": "Conversion Lab Cookie Policy. Learn what cookies we use, why and how you can manage them. GDPR and ePrivacy Directive compliant."
     },
     "breadcrumb": {
       "home": "Home",
@@ -1028,14 +1614,14 @@
       },
       {
         "heading": "7. Contact",
-        "content": "For questions about the use of cookies on our website, you can contact us at:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757"
+        "content": "For questions about the use of cookies on our website, you can contact us at:\n\nConversion Lab\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757"
       }
     ]
   },
   "terms": {
     "meta": {
-      "title": "Terms and Conditions - AceAgency",
-      "description": "AceAgency Terms and Conditions. Information about services, rights, obligations and data protection."
+      "title": "Terms and Conditions - Conversion Lab",
+      "description": "Conversion Lab Terms and Conditions. Information about services, rights, obligations and data protection."
     },
     "breadcrumb": {
       "home": "Home",
@@ -1048,23 +1634,23 @@
     "sections": [
       {
         "heading": "1. Acceptance of Terms",
-        "content": "By accessing and using the aceagency.ro website, operated by AceAgency located at Bulevardul Aviatorilor 106, Bucharest, Romania, you fully accept these terms and conditions of use.\n\nIf you do not agree with any of these terms, please do not use our website. Continued browsing of the site constitutes implicit acceptance of the terms presented."
+        "content": "By accessing and using the aceagency.ro website, operated by Conversion Lab located at Bulevardul Aviatorilor 106, Bucharest, Romania, you fully accept these terms and conditions of use.\n\nIf you do not agree with any of these terms, please do not use our website. Continued browsing of the site constitutes implicit acceptance of the terms presented."
       },
       {
         "heading": "2. Description of Services",
-        "content": "AceAgency offers digital marketing services through its four divisions:\n\nAceWeb: web development, design and website maintenance.\nAceAds: paid advertising on Google Ads, Facebook Ads, Instagram Ads and TikTok Ads.\nAceAI: artificial intelligence solutions for marketing.\nAceMedia: video, photo and graphic content production.\n\nInformation presented on the website is for informational purposes and does not constitute a binding offer. Specific terms for each service are established through individual contracts."
+        "content": "Conversion Lab offers digital conversion systems through its complete expertise:\n\nWeb development, design and website maintenance.\nPaid advertising on Google Ads, Facebook Ads, Instagram Ads and TikTok Ads.\nArtificial intelligence solutions for marketing.\nVideo, photo and graphic content production.\n\nInformation presented on the website is for informational purposes and does not constitute a binding offer. Specific terms for each service are established through individual contracts."
       },
       {
         "heading": "3. Intellectual Property",
-        "content": "All content on the aceagency.ro website — including text, images, graphic elements, logos, icons, fonts, source code and overall design — is protected by copyright and intellectual property legislation.\n\nAceAgency owns or holds licenses for all materials published on the website. Reproduction, distribution, modification or commercial use of any content from the site without prior written consent from AceAgency is prohibited."
+        "content": "All content on the aceagency.ro website — including text, images, graphic elements, logos, icons, fonts, source code and overall design — is protected by copyright and intellectual property legislation.\n\nConversion Lab owns or holds licenses for all materials published on the website. Reproduction, distribution, modification or commercial use of any content from the site without prior written consent from Conversion Lab is prohibited."
       },
       {
         "heading": "4. Limitation of Liability",
-        "content": "AceAgency makes reasonable efforts to keep information on the website accurate and up-to-date, but does not guarantee its accuracy, completeness or timeliness.\n\nThe website is provided \"as is.\" AceAgency is not liable for:\n\nDirect or indirect losses resulting from the use or inability to use the website.\n\nTechnical errors, service interruptions or security issues caused by third parties.\n\nContent of third-party websites linked from our site."
+        "content": "Conversion Lab makes reasonable efforts to keep information on the website accurate and up-to-date, but does not guarantee its accuracy, completeness or timeliness.\n\nThe website is provided \"as is.\" Conversion Lab is not liable for:\n\nDirect or indirect losses resulting from the use or inability to use the website.\n\nTechnical errors, service interruptions or security issues caused by third parties.\n\nContent of third-party websites linked from our site."
       },
       {
         "heading": "5. User Obligations",
-        "content": "By using the website, you agree to:\n\nNot use the website for illegal or fraudulent purposes.\n\nNot attempt to gain unauthorized access to our systems.\n\nNot transmit malicious content (viruses, malware, spam).\n\nProvide accurate and complete information when filling out forms on the site.\n\nRespect AceAgency's intellectual property rights."
+        "content": "By using the website, you agree to:\n\nNot use the website for illegal or fraudulent purposes.\n\nNot attempt to gain unauthorized access to our systems.\n\nNot transmit malicious content (viruses, malware, spam).\n\nProvide accurate and complete information when filling out forms on the site.\n\nRespect Conversion Lab's intellectual property rights."
       },
       {
         "heading": "6. Personal Data Protection",
@@ -1076,7 +1662,7 @@
       },
       {
         "heading": "8. Modification of Terms",
-        "content": "AceAgency reserves the right to modify these terms and conditions at any time. Changes take effect upon publication on this page.\n\nWe recommend checking this page periodically. Continued use of the website after publication of changes constitutes acceptance of the new terms."
+        "content": "Conversion Lab reserves the right to modify these terms and conditions at any time. Changes take effect upon publication on this page.\n\nWe recommend checking this page periodically. Continued use of the website after publication of changes constitutes acceptance of the new terms."
       },
       {
         "heading": "9. Dispute Resolution",
@@ -1084,7 +1670,7 @@
       },
       {
         "heading": "10. Contact",
-        "content": "For any questions or clarifications regarding these terms and conditions, you can contact us at:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757"
+        "content": "For any questions or clarifications regarding these terms and conditions, you can contact us at:\n\nConversion Lab\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757"
       }
     ]
   },

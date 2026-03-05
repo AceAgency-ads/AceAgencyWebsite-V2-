@@ -97,11 +97,11 @@ export function ServicesPreview(): React.JSX.Element {
               key={key}
               href={href}
               data-animate="card"
-              className="group flex h-[280px] w-[260px] flex-shrink-0 snap-start flex-col justify-between rounded-2xl border border-[#4a464380] bg-[#3a383680] p-6 backdrop-blur-sm transition-all duration-300 hover:border-[#56151A]/40 hover:shadow-[0_4px_20px_rgba(86,21,26,0.12)] sm:h-[300px] sm:w-[280px] lg:snap-align-none md:p-8"
+              className="group flex h-[280px] w-[260px] flex-shrink-0 snap-start flex-col justify-between rounded-2xl border border-[#4a464380] bg-[#3a383680] p-6 backdrop-blur-sm transition-all duration-300 hover:border-[#650CBE]/40 hover:shadow-[0_4px_20px_rgba(101,12,190,0.12)] sm:h-[300px] sm:w-[280px] lg:snap-align-none md:p-8"
             >
               {/* Top row: icon left, arrow right */}
               <div className="flex items-start justify-between">
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-[#56151A] bg-[#56151A]">
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-[#650CBE] bg-[#650CBE]">
                   {iconKind === 'lucide' ? (
                     <Icon
                       className="size-8 text-white"
@@ -111,7 +111,7 @@ export function ServicesPreview(): React.JSX.Element {
                     <Icon size={28} className="text-white" />
                   )}
                 </div>
-                <ArrowUpRight className="size-5 text-[var(--section-text-muted)] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#56151A]" />
+                <ArrowUpRight className="size-5 text-[var(--section-text-muted)] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#650CBE]" />
               </div>
 
               {/* Title + description at bottom */}

@@ -40,8 +40,8 @@ export async function submitNewsletter(
 
   const fromAddress =
     process.env.NODE_ENV === 'production'
-      ? 'AceAgency Newsletter <noreply@aceagency.ro>'
-      : 'AceAgency Newsletter <onboarding@resend.dev>';
+      ? 'Laboratorul de Conversii Newsletter <noreply@aceagency.ro>'
+      : 'Laboratorul de Conversii Newsletter <onboarding@resend.dev>';
 
   try {
     const { error } = await resend.emails.send({
@@ -51,7 +51,7 @@ export async function submitNewsletter(
       html: `
         <h2>Nou abonat newsletter</h2>
         <p><strong>Email:</strong> ${email}</p>
-        <p>Adaugat de pe site-ul aceagency.ro</p>
+        <p>Adaugat de pe site</p>
       `,
     });
 

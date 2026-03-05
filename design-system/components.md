@@ -1,470 +1,522 @@
-# AceAgency Component Patterns
+# Laboratorul de Conversii Component Patterns
 
-> Detailed component specifications for implementation with `/frontend-design`.
-> All components reference tokens from `MASTER.md` and `tokens.css`.
+> Detailed component specifications reflecting the actual built codebase (Phases 1–4).
+> All components reference tokens from `MASTER.md`.
 
 ---
 
-## 1. Button
+## 1. Button (`src/components/ui/button.tsx`)
+
+shadcn/ui button built on Radix Slot. Polymorphic via `asChild`.
 
 ### Variants
 
-**Primary (CTA)**
-- Background: `--ds-gradient-brand-primary`
-- Text: White, Inter SemiBold, body size
-- Padding: `12px 32px` (md), `8px 24px` (sm), `16px 40px` (lg)
-- Border-radius: `--ds-radius-default`
-- Hover: `brightness(1.1)`, `scale(1.02)`, `box-shadow: --ds-shadow-burgundy`
-- Active: `scale(0.98)`
-- Transition: `--ds-duration-fast` `--ds-ease-out`
-
-**Secondary (Outline)**
-- Background: transparent
-- Text: Burgundy (dark theme: White)
-- Border: 1px Burgundy (dark theme: White)
-- Hover: Fill Burgundy, text White
-- Active: `scale(0.98)`
-
-**Ghost**
-- Background: transparent
-- Text: contextual (White on dark, Black on light)
-- Hover: `bg-white/10` (dark) or `bg-black/5` (light)
-
-**Accent**
-- Background: Grey #D9D9D9
-- Text: Black
-- Hover: `brightness(0.95)`
+| Variant | Background | Text | Border | Hover |
+|---------|-----------|------|--------|-------|
+| `default` | Primary (dark) | White | none | brightness change |
+| `destructive` | Red | White | none | darker red |
+| `outline` | transparent | contextual | 1px border | bg fill |
+| `secondary` | secondary bg | secondary text | none | darker |
+| `ghost` | transparent | contextual | none | bg-accent |
+| `link` | transparent | primary | none | underline |
 
 ### Sizes
 
-| Size | Height | Padding | Font Size | Icon Size |
-|------|--------|---------|-----------|-----------|
-| `sm` | 36px | 8px 24px | 14px | 16px |
-| `md` | 44px | 12px 32px | 16px | 20px |
-| `lg` | 52px | 16px 40px | 16px | 20px |
+| Size | Height | Padding | Usage |
+|------|--------|---------|-------|
+| `sm` | 36px | `h-9 px-3` | Header CTA, inline actions |
+| `default` | 40px | `h-10 px-4 py-2` | Standard buttons |
+| `lg` | 52px | `h-13 px-8` | Section CTAs, hero actions |
+| `icon` | 36px | `size-9` | Icon-only buttons |
 
-### States
+### Common Patterns
 
-- **Disabled:** opacity 0.5, cursor not-allowed, no hover effects
-- **Loading:** spinner icon replacing text/icon, same dimensions
-- **Focus:** 2px ring Burgundy with 2px offset
-
-### Icon Support
-
-- Icon-only: square button (same width as height), centered icon
-- Icon + text: icon before text with 8px gap
-- Text + icon: icon after text with 8px gap (arrow-right pattern for CTAs)
+- **CTA with arrow:** `<Button asChild><Link>Text <ArrowRight className="ml-2 size-4" /></Link></Button>`
+- **Violet CTA:** `className="bg-[#650CBE] hover:bg-[#7A1FD8] text-white rounded-full"`
+- **Ghost on dark:** `className="border border-[var(--section-border)] text-[var(--section-text-muted)]"`
+- **Disabled:** `aria-disabled="true"` + `pointer-events-none opacity-50`
 
 ---
 
-## 2. Card
+## 2. SpotlightCard (`src/components/ui/SpotlightCard.tsx`)
 
-### Default Card
+Card with cursor-tracking radial gradient spotlight effect.
 
-```
-┌─────────────────────────────────┐
-│  [Optional Icon/Badge]          │
-│                                 │
-│  Heading (h3/h4)               │
-│  Description text (body-sm,     │
-│  muted, 2-3 lines max)         │
-│                                 │
-│  [Optional CTA link →]         │
-└─────────────────────────────────┘
-```
-
-- Background: `--ds-color-dark-elevated` (dark) / White (light)
-- Border: 1px `--ds-color-dark-border` (dark) / 1px Grey (light)
-- Border-radius: `--ds-radius-lg`
-- Padding: `--ds-space-6`
-- Hover: `translateY(-4px)`, border-color transitions to `--ds-color-burgundy-light`
-- Transition: `--ds-duration-normal` `--ds-ease-smooth`
-
-### Glass Card
-
-- Background: `white/5`, `backdrop-blur-md`
-- Border: 1px `white/10`
-- Same hover as default but border transitions to `white/20`
-- Used in hero sections, overlaid on gradient backgrounds
-
-### Feature Card (Service Cards)
-
-- Background: `--ds-color-dark-elevated`
-- No border by default
-- Shadow: `--ds-shadow-burgundy` on hover
-- Hover: `scale(1.02)`, glow intensifies
-- Icon at top: 48px, Burgundy
-- Used for service previews on homepage
-
-### Stat Card
-
-```
-┌─────────────────────┐
-│  150+               │  ← display-lg, bold, Burgundy
-│  Proiecte Livrate   │  ← body-sm, muted
-└─────────────────────┘
-```
-
-- Background: transparent or dark-elevated
-- Border: 1px dark-border (optional)
-- Number: `display-lg` size, Glacial Indifference Bold, Burgundy or White
-- Label: `body-sm`, muted text
-- Animation: CountUp on scroll trigger (GSAP)
-
-### Testimonial Card
-
-```
-┌─────────────────────────────────┐
-│  "Quote text here, kept to      │
-│   2-4 lines for visual balance" │
-│                                 │
-│  ── Author Name                │
-│     Company / Role              │
-│     ★★★★★                      │
-└─────────────────────────────────┘
-```
-
-- Background: `--ds-color-dark-elevated`
-- Border: 1px `--ds-color-dark-border`
-- Border-radius: `--ds-radius-lg`
-- Padding: `--ds-space-6` to `--ds-space-8`
-- Quote: `body-lg`, White
-- Author: `body-sm`, Inter SemiBold
-- Role: `caption`, muted
-- Stars: Burgundy
-- Layout: Bento grid (varies sizes, not uniform)
-
----
-
-## 3. Section
-
-### SectionWrapper
-
-Every page section uses this wrapper:
+- **Background:** Transparent (parent provides bg via wrapper)
+- **Spotlight:** Radial gradient following mouse position, `spotlightColor` prop
+- **Used in:** ServiceFeatures, ServicesGrid
+- **Pattern:** Wrap content in SpotlightCard inside a themed container div
 
 ```tsx
-<section data-theme="dark|light" className="section-wrapper">
-  <Container>
-    <SectionHeader overline="" title="" description="" />
-    {children}
-  </Container>
-</section>
+<SpotlightCard className="h-full rounded-2xl border border-black/10 bg-white p-8">
+  <Icon className="mb-4 size-10 text-[#650CBE]" strokeWidth={1.5} />
+  <h3 className="mb-2 text-lg font-bold">{title}</h3>
+  <p className="text-sm text-[var(--section-text-muted)]">{description}</p>
+</SpotlightCard>
 ```
-
-- Padding: `py-16 md:py-20 lg:py-24` (standard), `py-20 md:py-32` (hero)
-- Background: set via `data-theme`
-- All children wrapped in `<Container>`
-
-### SectionHeader
-
-```
-SERVICII NOASTRE           ← overline (uppercase, letter-spacing 0.12em, accent color)
-Solutii Complete           ← heading (h2, bold)
-pentru Afacerea Ta
-
-Descriere text care        ← description (body-lg, muted, max-width 65ch)
-explica sectiunea.
-```
-
-- Overline: `caption` size, uppercase, `letter-spacing: 0.12em`, Grey (dark) or Burgundy (light)
-- Heading: `h2` size, `font-heading`, below overline with `space-2` gap
-- Description: `body-lg`, muted text, `max-width: 65ch`, below heading with `space-4` gap
-- Alignment: left (default), center (optional prop)
-- Animation: overline fades in, heading reveals (word-level stagger), description fades up
 
 ---
 
-## 4. Header
+## 3. Accordion (`src/components/ui/accordion.tsx`)
 
-### Layout
+Radix-based expandable accordion. Used for service FAQ sections.
 
+- **Trigger:** Full-width clickable, `py-4`, `font-medium`
+- **Icon:** ChevronDown with `rotate-180` on open (CSS transition)
+- **Content:** Collapsible with height animation
+- **Keyboard:** Enter/Space to toggle, full keyboard navigation
+
+### FAQ Pattern
+
+```tsx
+<Accordion type="single" collapsible>
+  {faqs.map((faq, index) => (
+    <AccordionItem key={index} value={`faq-${index}`}>
+      <AccordionTrigger>{faq.question}</AccordionTrigger>
+      <AccordionContent>{faq.answer}</AccordionContent>
+    </AccordionItem>
+  ))}
+</Accordion>
 ```
-┌──────────────────────────────────────────────┐
-│  [Logo]                    [☰] [CTA Button]  │
-└──────────────────────────────────────────────┘
-```
-
-- Position: `fixed top-0`, full width
-- Height: 72px (desktop), 64px (mobile)
-- Background: transparent initially, `--ds-color-black/80 backdrop-blur-md` after scroll
-- Z-index: `--ds-z-header`
-- Padding: horizontal matches Container padding per breakpoint
-
-### Logo
-
-- Left-aligned
-- SVG format, height 32px
-- Light version (for dark header backgrounds)
-
-### Desktop Navigation (hidden on mobile <1024px)
-
-- Horizontal links, `body-sm` Inter Medium
-- Gap: `--ds-space-6`
-- Hover: Burgundy color transition + dot indicator below
-- Active page: Burgundy text + dot indicator visible
-
-### Mobile Hamburger
-
-- Right-aligned, before CTA
-- Size: 48x48px tap target
-- Three horizontal lines, animated to X on open
-- Triggers MenuOverlay
-
-### CTA Button
-
-- `primary` button variant, `sm` size
-- Text: "Contacteaza-ne" / "Contact Us"
-- Right-most element
-
-### Scroll Behavior
-
-- **Show threshold:** User scrolls up by 10px+
-- **Hide threshold:** User scrolls down past 60px from current position
-- **Initial:** Visible (transparent background)
-- **After scroll past 100px:** Background becomes translucent with backdrop-blur
-- **Animation:** `translateY(-100%)` to hide, `translateY(0)` to show, `--ds-duration-normal`
-
-### MenuOverlay (Fullscreen Mobile Menu)
-
-```
-┌──────────────────────────────────────────────┐
-│  [Logo]                              [X]     │
-│                                              │
-│              Acasa                            │
-│              Despre Noi                       │
-│              Servicii                         │
-│              Contact                          │
-│                                              │
-│          [RO | EN]                           │
-│                                              │
-│  ── Social Links ──                          │
-│  LinkedIn  Instagram  Facebook               │
-└──────────────────────────────────────────────┘
-```
-
-- Background: `--ds-color-black` solid
-- Position: fixed, full viewport
-- Z-index: `--ds-z-overlay`
-- Nav links: `display-lg` size, Glacial Indifference Bold, centered
-- Entrance: links stagger slide-in from right (80ms delay each)
-- Exit: fade-out 200ms
-- Body scroll locked while open
-- SplitText animation on nav link hover (if licensed)
 
 ---
 
-## 5. Footer
+## 4. SectionWrapper (`src/components/sections/SectionWrapper.tsx`)
 
-### Layout (addifico-style, content-rich)
-
-```
-┌──────────────────────────────────────────────────────────┐
-│                                                          │
-│  [Logo]                                                  │
-│  Agentie digitala full-service din Bucuresti             │
-│                                                          │
-│  ┌──────────┬──────────┬──────────┬───────────────────┐  │
-│  │ Divizii  │ Pagini   │ Contact  │ Newsletter        │  │
-│  │          │          │          │                   │  │
-│  │ AceWeb   │ Acasa    │ Adresa   │ Primeste          │  │
-│  │ AceAds   │ Despre   │ Telefon  │ noutati           │  │
-│  │ AceAI    │ Servicii │ Email    │ saptamanale.      │  │
-│  │ AceMedia │ Contact  │ Program  │                   │  │
-│  │          │          │          │ [Email] [→]       │  │
-│  └──────────┴──────────┴──────────┴───────────────────┘  │
-│                                                          │
-│  ┌──────────────────────────────────────────────────────┐│
-│  │  Social: [Li] [Ig] [Fb] [Tw]   © 2026 AceAgency    ││
-│  └──────────────────────────────────────────────────────┘│
-│                                                          │
-└──────────────────────────────────────────────────────────┘
-```
-
-- Background: `--ds-color-black` (always dark)
-- Padding: `py-16 lg:py-24`
-- Grid: 4 columns on desktop, 2 on tablet, 1 on mobile
-- Links: `body-sm`, Grey, hover Burgundy
-- Social icons: 24px, Grey, hover White with scale(1.1)
-- Newsletter: inline form (email input + submit button)
-- Bottom bar: border-top 1px dark-border, `py-6`, flex between social and copyright
-- Copyright: `caption`, Grey
-
----
-
-## 6. TextReveal
-
-Animation wrapper for text that reveals on scroll.
+Core layout component wrapping every page section.
 
 ### Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `as` | string | `"div"` | HTML element to render |
-| `variant` | `"word" \| "char" \| "line"` | `"word"` | Split method |
-| `staggerDelay` | number | 50 | Delay between items (ms) |
-| `duration` | number | 500 | Total animation duration (ms) |
-| `yOffset` | number | 30 | Vertical offset for entrance |
-| `trigger` | `"scroll" \| "load"` | `"scroll"` | When to trigger |
+| `theme` | `'dark' \| 'light' \| 'light-warm' \| 'light-muted' \| 'accent' \| 'violet'` | `'dark'` | Sets `data-theme` for CSS variable scoping |
+| `rounded` | boolean | `true` | Floating panel with `rounded-[2rem]` and horizontal margin |
+| `hero` | boolean | `false` | Hero-specific padding |
+| `id` | string | — | Section anchor ID |
+| `className` | string | — | Additional classes |
+| `ref` | Ref | — | ForwardRef support (for GSAP pinning) |
 
-### Behavior
+### Theming
 
-- **Word variant:** Splits text at spaces, each word fades up with stagger
-- **Char variant:** Splits at characters (SplitText or manual split), each char fades up
-- **Line variant:** Splits at line breaks, each line fades up
-- **Scroll trigger:** Fires when element enters viewport at 85%
-- **Load trigger:** Fires immediately on mount (hero headlines)
-- **Reduced motion:** Single fade-in, no split animation
+CSS custom properties auto-set via `[data-theme]` selectors in `tokens.css`:
+- `--section-bg` — Section background color
+- `--section-text` — Primary text color
+- `--section-text-muted` — Secondary/muted text color
+- `--section-border` — Border color
+- `--section-card-bg` — Card background (typically white on light themes)
+- `--section-accent` — Accent/action color (violet #650CBE)
 
----
+Components use these variables: `text-[var(--section-text-muted)]`, `border-[var(--section-border)]`, `bg-[var(--section-card-bg)]`
 
-## 7. ScrollReveal
-
-Already implemented in Phase 1. Configuration per MASTER.md:
-
-- Default: `yOffset=60`, `duration=0.5s`, `start="top 85%"`
-- Stagger children: `stagger=0.05s`
-- Wraps any content for scroll-triggered entrance
+**New in Phase 3:** `'light-warm'` theme introduces warm off-white background (#FAF9F7) with warm greige text for premium customer-facing sections.
 
 ---
 
-## 8. CustomCursor
+## 5. SectionHeader (`src/components/sections/SectionHeader.tsx`)
 
-### Behavior
-
-- **Desktop only:** Hidden on touch devices (use media query `pointer: fine`)
-- **Default state:** 12px circle, White, `mix-blend-mode: difference`
-- **Link/button hover:** Scale to 48px, opacity 0.5
-- **Text hover:** Scale to 24px, vertical bar shape
-- **Position:** Follows pointer with slight lerp (0.15 factor for smoothness)
-- **Z-index:** `--ds-z-cursor`
-- **Reduced motion:** Hidden entirely
-
-### Implementation
-
-- Single `<div>` positioned fixed
-- GSAP or RAF for smooth position tracking
-- CSS `mix-blend-mode: difference` creates the inversion effect
-- Hide default cursor on body: `cursor: none` (desktop only)
-
----
-
-## 9. LocaleSwitcher
+Reusable section header pattern.
 
 ### Layout
 
 ```
-[RO | EN]
+OVERLINE TEXT              ← uppercase, 12px, letter-spacing 0.12em, muted (ScrollReveal)
+Heading Text Here          ← h2, bold, Glacial Indifference (TextReveal word variant)
+
+Optional description       ← body-lg, muted, max-width (ScrollReveal)
 ```
-
-- Two buttons side by side
-- Active locale: Burgundy text (or White on dark), SemiBold
-- Inactive locale: muted text, Regular
-- Separator: `|` character in muted color
-- Size: `body-sm`
-- In Header: right-aligned before CTA
-- In MenuOverlay: centered below nav links
-
----
-
-## 10. BentoGrid
 
 ### Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `pattern` | `"a" \| "b" \| "c"` | `"b"` | Grid pattern (see MASTER.md) |
-| `children` | ReactNode[] | — | Grid items |
-| `gap` | number | 24 | Gap in pixels |
-
-### Responsive
-
-- **Desktop (1024px+):** Multi-column layout per pattern
-- **Tablet (768px-1023px):** 2-column simplified grid
-- **Mobile (<768px):** Single column stack
-- **Animation:** Each cell fades up with stagger on scroll
+| `overline` | string | — | Uppercase label text |
+| `heading` | string | — | Section heading |
+| `description` | string | — | Optional body text below heading |
+| `align` | `'left' \| 'center'` | `'left'` | Text alignment |
+| `headingAs` | `'h2' \| 'h3'` | `'h2'` | Heading element |
 
 ---
 
-## 11. CountUp
+## 6. HeroTransition (`src/components/sections/HeroTransition.tsx`)
+
+Split section placed between hero and first content section. Creates visual continuity.
+
+### Layout
+
+```
+┌─────────────────────┬─────────────────────┐
+│ Label (overline)    │                     │
+│ Large Heading       │ ScrubReveal         │
+│                     │ paragraph text      │
+└─────────────────────┴─────────────────────┘
+```
+
+### Behavior
+
+- **Left column:** Label + heading with GSAP scroll-triggered entrance (fade-up + slide)
+- **Separator line:** Animates `scaleX` 0→1 from left
+- **Right column:** ScrubReveal word-by-word opacity tied to scroll position
+- **i18n:** Takes `namespace` and `i18nPrefix` props for flexible content sourcing
+
+---
+
+## 7. TextReveal (`src/components/animations/TextReveal.tsx`)
+
+GSAP SplitText animation wrapper for kinetic typography.
+
+### Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `as` | string | `'div'` | HTML element to render |
+| `variant` | `'word' \| 'char'` | `'word'` | Split method |
+| `trigger` | `'scroll' \| 'load'` | `'scroll'` | When to trigger |
+| `stagger` | number | 0.04 | Delay between items (seconds) |
+| `duration` | number | 0.6 | Animation duration (seconds) |
+| `triggerStart` | string | `'top 85%'` | ScrollTrigger start position |
+
+### Usage Patterns
+
+- **Hero headline (load):** `<TextReveal as="h1" variant="word" trigger="load">` — fires on mount
+- **Section heading (scroll):** `<TextReveal as="h2" variant="word">` — fires on scroll
+- **CTA heading:** `<TextReveal as="h2" variant="word" className="text-3xl font-bold">`
+
+---
+
+## 8. ScrollReveal (`src/components/animations/ScrollReveal.tsx`)
+
+Fade-up entrance animation triggered by scroll.
+
+### Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `yOffset` | number | 60 | Vertical offset in pixels |
+| `duration` | number | 0.5 | Animation duration (seconds) |
+| `start` | string | `'top 85%'` | ScrollTrigger start |
+| `className` | string | — | Wrapper classes |
+
+### Usage
+
+Wrap any content for scroll-triggered entrance:
+```tsx
+<ScrollReveal>
+  <p>This fades up when scrolled into view</p>
+</ScrollReveal>
+```
+
+---
+
+## 9. ScrubReveal (`src/components/animations/ScrubReveal.tsx`)
+
+Scroll-scrubbed text opacity reveal. Text starts dim, becomes fully opaque as user scrolls through.
+
+### Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `variant` | `'word' \| 'char'` | `'word'` | Split method |
+| `startOpacity` | number | 0.15 | Initial opacity of unrevealed text |
+| `as` | string | `'p'` | HTML element |
+
+### Behavior
+
+- Uses GSAP SplitText to split into words/chars
+- Each unit scrubs from `startOpacity` to `1` as scroll progresses
+- Fully bidirectional — reverses on scroll up
+- Trigger: `top bottom` → `bottom center`
+
+---
+
+## 10. CountUp (`src/components/animations/CountUp.tsx`)
+
+Animated number counter triggered on scroll.
 
 ### Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `end` | number | — | Target number |
-| `prefix` | string | `""` | Before number (e.g., "$") |
-| `suffix` | string | `""` | After number (e.g., "+", "%") |
-| `duration` | number | 2000 | Animation duration (ms) |
-| `trigger` | `"scroll"` | `"scroll"` | When to animate |
+| `suffix` | string | `''` | After number (e.g., "+", "%") |
+| `duration` | number | 2 | Duration in seconds |
 
 ### Behavior
 
-- Animates from 0 to `end` when scrolled into view
-- Uses GSAP or requestAnimationFrame
-- Easing: `--ds-ease-smooth`
-- Fires once (no reverse)
+- Counts from 0 to `end` using `gsap.to` with `snap`
+- Trigger: `top 80%`, fires once
 - Reduced motion: shows final number immediately
 
 ---
 
-## 12. Accordion (FAQ)
+## 11. Header (`src/components/layout/Header.tsx`)
+
+Fixed header with scroll-aware visibility.
+
+### Behavior
+
+- **Initial:** Visible, transparent background
+- **After scroll (50px+):** Translucent background + `backdrop-blur-md` (`.header-scrolled` class)
+- **Scroll down (60px threshold):** Hides with `translateY(-100%)`
+- **Scroll up:** Reveals with `translateY(0)`
+- **Implementation:** GSAP ScrollTrigger direction detection
 
 ### Layout
 
 ```
-┌──────────────────────────────────────────────┐
-│  Question text here?                    [+]  │
-├──────────────────────────────────────────────┤
-│  Answer text here, can be multiple lines     │
-│  with rich formatting support.               │
-└──────────────────────────────────────────────┘
+[Logo]                    [Hamburger ☰] [Contacteaza-ne CTA]
 ```
 
-- Based on shadcn/ui Accordion (Radix primitives)
-- Trigger: full-width clickable area, 48px min height
-- Question: `body-lg`, Inter SemiBold
-- Icon: Plus/Minus rotation on toggle
-- Answer: `body`, muted text, `max-width: 65ch`
-- Border: bottom border on each item
-- Animation: height transition `--ds-duration-normal`
-- Keyboard: Enter/Space to toggle, arrow keys to navigate
+- Logo: Left-aligned, links to homepage
+- Hamburger: Right-aligned, toggles MenuOverlay
+- CTA: Primary button, rightmost (desktop)
+- z-index: 50
 
 ---
 
-## 13. NewsletterForm
+## 12. MenuOverlay (`src/components/layout/MenuOverlay.tsx`)
+
+Fullscreen mobile menu with SplitText character stagger.
 
 ### Layout
 
 ```
-┌────────────────────────────────────────┐
-│  [Email address          ]  [Trimite]  │
-└────────────────────────────────────────┘
+[Logo]                              [X Close]
+
+              Acasa
+              Despre Noi
+              Servicii
+              Contact
+
+          [RO | EN]
+
+── Social Links ──
+LinkedIn  Instagram  Facebook
 ```
 
-- Inline form: email input + submit button on same row
-- Input: `--ds-radius-default` left, no right border-radius
-- Button: `accent` variant, `--ds-radius-default` right, no left border-radius
-- Validation: email format (Zod)
-- Success state: input replaced with "Multumim!" message
-- Error state: red border on input, error message below
-- Width: max 480px
+### Animation
+
+- **Enter:** Nav links stagger from right with SplitText character reveal (80ms per link)
+- **Exit:** Reverse timeline (play/reverse pattern via useRef timeline)
+- **Implementation:** GSAP timeline stored in `useRef`, controlled by React `isOpen` state
+- Body scroll locked while open
 
 ---
 
-## 14. SocialLinks
+## 13. Footer (`src/components/layout/Footer.tsx`)
+
+Full-width dark footer with 4-column layout.
+
+### Structure
+
+1. **Logo + description** — Top row
+2. **4-column grid:**
+   - Contact info (address, phone, email, hours)
+   - Navigation links (pages)
+   - Services links
+   - Newsletter form (email + GDPR checkbox)
+3. **Bottom bar:** Social icons (LinkedIn, Instagram, Facebook) + copyright + legal links
+4. **Brand signature** (single brand, no divisions)
+
+---
+
+## 14. Breadcrumb (`src/components/sections/Breadcrumb.tsx`)
+
+Navigation breadcrumb with JSON-LD schema.
+
+- Server component (no `'use client'`)
+- Renders `BreadcrumbList` JSON-LD for SEO
+- ChevronRight separator between items
+- Last item is current page (no link)
+- Used on: Service sub-pages, About page
+
+---
+
+## 15. Service Page Components
+
+All accept `serviceKey` prop, read from `services.{serviceKey}.*` i18n keys.
+
+### ServiceHero (`services/ServiceHero.tsx`)
+
+- h1 with primary keyword + TextReveal
+- Breadcrumb navigation
+- Decorative brand icon (top-right, 20% opacity)
+- Brand glow gradient (top-right decorative)
+- Overline + description with GSAP fade-up entrance
+
+### ServiceFeatures (`services/ServiceFeatures.tsx`)
+
+- SpotlightCard grid (1/2/3 columns responsive)
+- 4-6 feature items from i18n
+- Default Lucide icon fallback array (modulo index)
+- GSAP stagger entrance on scroll
+
+### ServiceProcess (`services/ServiceProcess.tsx`)
+
+- Vertical timeline with left border line
+- Large decorative step numbers (01, 02, 03...)
+- Timeline dots on the border
+- GSAP slide-from-left stagger entrance
+
+### ServiceStats (`services/ServiceStats.tsx`)
+
+- Bento-style stat cards with CountUp numbers
+- Alternating dark/violet card themes
+
+### ServiceFAQ (`services/ServiceFAQ.tsx`)
+
+- Radix Accordion with FAQ schema JSON-LD
+- 5-7 questions per service
+- Full keyboard navigation
+
+### ServiceCTA (`services/ServiceCTA.tsx`)
+
+- Light grey (`#EBEBEB`) rounded card
+- TextReveal heading + ScrollReveal description
+- Dual CTAs: Primary (violet) + Secondary (outline)
+- Links to `/contact`
+
+---
+
+## 16. BentoGrid (`src/components/sections/BentoGrid.tsx`)
+
+Asymmetric CSS Grid wrapper.
+
+### Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `columns` | 2 \| 3 \| 4 | 3 | Number of columns on desktop |
+| `className` | string | — | Additional classes |
+
+### Behavior
+
+- CSS Grid with `auto-rows-fr`
+- Collapses to 1 column on mobile, 2 on tablet
+- Children animate with fade-up stagger on scroll (GSAP)
+
+---
+
+## 17. LocaleSwitcher (`src/components/layout/LocaleSwitcher.tsx`)
+
+Language toggle between RO and EN.
+
+- Two buttons: active locale has Violet text + SemiBold
+- Inactive locale: muted text, Regular weight
+- Separator: `|` character
+- Used in: Header, MenuOverlay
+
+---
+
+## 18. SmoothScroll (`src/components/layout/SmoothScroll.tsx`)
+
+Lenis smooth scroll wrapper.
+
+- Wraps page content for smooth scroll behavior
+- Integrates with GSAP ScrollTrigger via `lenis.on('scroll', ScrollTrigger.update)`
+- Provides consistent scroll experience across browsers
+
+---
+
+## 19. VideoTestimonialCard (`src/components/sections/home/VideoTestimonialCard.tsx`)
+
+Click-to-play video testimonial card (NEW Phase 3).
+
+### Props
+
+| Prop | Type | Description |
+|------|------|-------------|
+| `quote` | string | Customer testimonial text |
+| `author` | string | Customer name |
+| `company` | string | Customer company |
+| `rating` | number | Star rating (1-5) |
+| `thumbnailSrc` | string | Video thumbnail image URL |
+| `videoSrc` | string | Video file URL (empty placeholder in Phase 3) |
 
 ### Layout
 
-Horizontal row of social media icon buttons.
+- **Top 60%:** 16:9 aspect ratio video area with thumbnail image + play button overlay
+- **Bottom 40%:** Star rating + quote + author info + company name
+- **Interactive:** Click to swap thumbnail for `<video autoplay controls>` element
+- **Styling:** Rounded-3xl card, uses section theme CSS variables for border/bg/text
+- **Hover effect:** Play button scales up, overlay opacity increases
 
-| Platform | Icon | URL |
-|----------|------|-----|
-| LinkedIn | Lucide `Linkedin` | TBD |
-| Instagram | Lucide `Instagram` | TBD |
-| Facebook | Lucide `Facebook` | TBD |
+### Usage
 
-- Size: 24px icons in 40px touch targets
-- Color: Grey default, White on hover (footer), Burgundy on hover (light sections)
-- Gap: `--ds-space-4`
-- Hover: `scale(1.1)` + color transition
-- `target="_blank"` + `rel="noopener noreferrer"` on all links
+Used in Testimonials carousel (mixed with text cards). Pulled into carousel via i18n with `type: 'video'` flag.
+
+---
+
+## 20. ClientLogoBar (`src/components/sections/home/ClientLogoBar.tsx`)
+
+Infinite CSS marquee of client logos (NEW Phase 3).
+
+### Structure
+
+- **Dark section** with small uppercase heading
+- **Marquee track:** Duplicated logo array for seamless infinite loop
+- **Logo styling:** Grayscale by default, full color on hover
+- **Responsive:** Gap scales (12px mobile → 16px tablet/desktop)
+- **Accessibility:** Duplicated logos marked `aria-hidden="true"`
+
+### Reduced Motion Fallback
+
+- Users with `prefers-reduced-motion: reduce` see static grid instead of marquee
+- Grid: 2 columns mobile → 4 columns desktop
+- Logos still respond to hover (grayscale-0)
+
+### Marquee Animation
+
+Uses `animate-marquee` CSS keyframe defined in `globals.css`:
+```css
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-width))); }
+}
+```
+
+Duration: 20s linear, infinite, respect prefers-reduced-motion.
+
+### Data Structure
+
+Currently uses placeholder SVG paths in `CLIENT_LOGOS` array. Replace with:
+- Real company logo SVGs in `/public/images/clients/`
+- Update `logo.src` paths and `logo.name` for alt text
+- Maintain consistent aspect ratio (logo height ~40px max)
+
+---
+
+## 21. TeamSection (`src/components/sections/about/TeamSection.tsx`)
+
+Team member photo card grid (NEW Phase 3).
+
+### Props
+
+Reads team members from i18n (`useTranslations('about')`) via `team.members` array with shape:
+
+```ts
+interface TeamMember {
+  readonly name: string;
+  readonly role: string;
+  readonly image: string;
+}
+```
+
+### Layout
+
+- **Grid:** 1 column mobile → 2 columns tablet → 4 columns desktop
+- **Card:** Rounded-2xl with 3:4 aspect ratio photo + name/role text
+- **Photo:** Responsive image with lazy loading, object-cover crop
+- **Info area:** Name (font-bold) + role (muted text)
+
+### Animation
+
+- **Scroll entrance:** GSAP from y:40 opacity:0 with 0.1s stagger
+- **Hover:** -translate-y-1 (slight lift) + shadow increase + image scale-105
+- **Reduced motion:** Instant entrance, no hover transforms
+
+### Data
+
+Currently uses placeholder Unsplash photos in i18n (`team.members[].image`). Replace with:
+- Real team member photos in `/public/images/team/`
+- Maintain 3:4 aspect ratio (e.g., 300x400px)
+- Update i18n translation keys

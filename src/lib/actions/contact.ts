@@ -46,8 +46,8 @@ export async function submitContactForm(
   // Use onboarding@resend.dev as fallback in dev (unverified domain)
   const fromAddress =
     process.env.NODE_ENV === 'production'
-      ? 'AceAgency Contact <noreply@aceagency.ro>'
-      : 'AceAgency Contact <onboarding@resend.dev>';
+      ? 'Laboratorul de Conversii <noreply@aceagency.ro>'
+      : 'Laboratorul de Conversii <onboarding@resend.dev>';
 
   try {
     const { error } = await resend.emails.send({
@@ -56,7 +56,7 @@ export async function submitContactForm(
       replyTo: email,
       subject: `Nou mesaj de contact - ${name}`,
       html: `
-        <h2>Mesaj nou de pe aceagency.ro</h2>
+        <h2>Mesaj nou de pe site</h2>
         <p><strong>Nume:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
@@ -64,7 +64,7 @@ export async function submitContactForm(
         <p><strong>Mesaj:</strong></p>
         <p>${message.replace(/\n/g, '<br />')}</p>
         <hr />
-        <p style="color: #666; font-size: 12px;">Trimis de pe formularul de contact aceagency.ro</p>
+        <p style="color: #666; font-size: 12px;">Trimis de pe formularul de contact laboratorul-de-conversii</p>
       `,
     });
 

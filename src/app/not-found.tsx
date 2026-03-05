@@ -2,7 +2,7 @@ import { headers } from 'next/headers';
 
 const translations = {
   en: {
-    title: '404 - Page not found | AceAgency',
+    title: '404 - Page not found | Conversion Lab',
     heading: 'Page not found',
     description:
       "Sorry, the page you're looking for doesn't exist or has been moved.",
@@ -10,7 +10,7 @@ const translations = {
     homeHref: '/en/',
   },
   ro: {
-    title: '404 - Pagina nu a fost gasita | AceAgency',
+    title: '404 - Pagina nu a fost gasita | Laboratorul de Conversii',
     heading: 'Pagina nu a fost gasita',
     description:
       'Ne pare rau, pagina pe care o cauti nu exista sau a fost mutata.',
@@ -55,7 +55,7 @@ export default async function GlobalNotFound() {
               fontSize: '8rem',
               fontWeight: 700,
               lineHeight: 1,
-              color: '#56151A',
+              color: '#650CBE',
               margin: 0,
             }}
           >
@@ -86,7 +86,7 @@ export default async function GlobalNotFound() {
               display: 'inline-block',
               marginTop: '2rem',
               padding: '0.75rem 2rem',
-              backgroundColor: '#56151A',
+              backgroundColor: '#650CBE',
               color: '#ffffff',
               textDecoration: 'none',
               borderRadius: '9999px',

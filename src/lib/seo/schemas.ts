@@ -4,7 +4,7 @@
  * Used across all pages via <script type="application/ld+json"> tags.
  */
 
-const SITE_URL = 'https://aceagency.ro';
+import { SITE_URL } from '@/lib/seo/constants';
 
 // ─── Organization ────────────────────────────────────────────────────────────
 
@@ -13,7 +13,7 @@ export function organizationSchema(): Record<string, unknown> {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': `${SITE_URL}/#organization`,
-    name: 'AceAgency',
+    name: 'Laboratorul de Conversii',
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
     email: 'cretualin@aceagency.ro',
@@ -37,9 +37,9 @@ export function organizationSchema(): Record<string, unknown> {
 export function localBusinessSchema(): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'ProfessionalService',
     '@id': `${SITE_URL}/#localbusiness`,
-    name: 'AceAgency',
+    name: 'Laboratorul de Conversii',
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
     email: 'cretualin@aceagency.ro',
@@ -88,7 +88,7 @@ export function serviceSchema({ name, description, url }: ServiceSchemaParams): 
     provider: {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
-      name: 'AceAgency',
+      name: 'Laboratorul de Conversii',
       url: SITE_URL,
     },
     areaServed: {
@@ -121,23 +121,22 @@ export function faqSchema(items: readonly FAQItem[]): Record<string, unknown> {
   } as const;
 }
 
-// ─── BreadcrumbList ──────────────────────────────────────────────────────────
+// ─── WebSite ────────────────────────────────────────────────────────────────
 
-interface BreadcrumbItem {
-  readonly name: string;
-  readonly url: string;
-}
-
-export function breadcrumbSchema(items: readonly BreadcrumbItem[]): Record<string, unknown> {
+export function webSiteSchema(): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: item.name,
-      item: item.url,
-    })),
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    name: 'Laboratorul de Conversii',
+    url: SITE_URL,
+    description:
+      'Laboratorul de Conversii — growth lab din Bucuresti specializat in sisteme de conversie. Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing si Consultanta.',
+    inLanguage: ['ro', 'en'],
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+    },
   } as const;
 }
 

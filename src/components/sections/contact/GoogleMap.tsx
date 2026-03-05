@@ -59,7 +59,7 @@ export function GoogleMap(): React.JSX.Element {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="invert grayscale-[0.8] contrast-[1.1] hue-rotate-[200deg] saturate-[0.3]"
-          title="AceAgency Office Location - Bulevardul Aviatorilor 106, Bucuresti"
+          title="Laboratorul de Conversii Office Location - Bulevardul Aviatorilor 106, Bucuresti"
         />
       </div>
     </section>

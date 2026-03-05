@@ -11,6 +11,7 @@ import {
   RotateCcw,
   type LucideIcon,
 } from 'lucide-react';
+import Image from 'next/image';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { SectionHeader } from '@/components/sections/SectionHeader';
@@ -31,13 +32,14 @@ const FEATURE_ICONS: readonly LucideIcon[] = [
 
 interface ServiceFeaturesProps {
   readonly serviceKey: string;
+  readonly featureImage?: string;
 }
 
 /**
  * Service benefits/features grid section.
  * Renders 4-6 feature items from i18n with SpotlightCard hover effect.
  */
-export function ServiceFeatures({ serviceKey }: ServiceFeaturesProps): React.JSX.Element {
+export function ServiceFeatures({ serviceKey, featureImage }: ServiceFeaturesProps): React.JSX.Element {
   const t = useTranslations('services');
   const gridRef = useRef<HTMLDivElement>(null);
 
@@ -85,11 +87,25 @@ export function ServiceFeatures({ serviceKey }: ServiceFeaturesProps): React.JSX
   );
 
   return (
-    <SectionWrapper theme="light" id="features">
+    <SectionWrapper theme="light-warm" id="features">
       <SectionHeader
         overline={t(`${serviceKey}.features.overline`)}
         heading={t(`${serviceKey}.features.heading`)}
       />
+
+      {featureImage && (
+        <div className="mb-10 overflow-hidden rounded-xl">
+          <Image
+            src={featureImage}
+            alt=""
+            width={1400}
+            height={500}
+            className="h-auto max-h-[280px] w-full object-cover"
+            sizes="(max-width: 768px) 100vw, 90vw"
+            aria-hidden="true"
+          />
+        </div>
+      )}
 
       <div
         ref={gridRef}
@@ -101,9 +117,9 @@ export function ServiceFeatures({ serviceKey }: ServiceFeaturesProps): React.JSX
 
           return (
             <div key={index} data-feature>
-              <SpotlightCard className="h-full rounded-2xl border border-black/10 bg-white p-8">
+              <SpotlightCard className="h-full rounded-2xl border border-[var(--section-border)] bg-[var(--section-card-bg)] p-8">
                 <Icon
-                  className="mb-4 size-10 text-[#56151A]"
+                  className="mb-4 size-10 text-[#650CBE]"
                   strokeWidth={1.5}
                 />
                 <h3 className="mb-2 text-lg font-bold">{item.title}</h3>

@@ -17,27 +17,35 @@
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 2: Story / About          [light]   │
+│  SECTION 2: HeroTransition          [dark]   │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 3: Values                  [dark]   │
+│  SECTION 3: Story / About       [light-warm] │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 4: Divisions              [dark]    │
+│  SECTION 4: Values              [light-warm] │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 5: Mission & Vision       [light]   │
+│  SECTION 5: Divisions               [light]  │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 6: Why Choose Us          [dark]    │
+│  SECTION 6: Mission & Vision       [dark]    │
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 7: CTA                    [burgundy]  │
+│  SECTION 7: Why Choose Us       [light-warm] │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│  SECTION 8: Team                    [dark]   │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│  SECTION 9: CTA                    [violet]  │
 │                                              │
 ├──────────────────────────────────────────────┤
 │  [Footer]                                    │
@@ -87,9 +95,29 @@ o prezenta digitala de exceptie.
 
 ---
 
-## Section 2: Story / About
+## Section 2: HeroTransition
 
-**Theme:** light
+**Theme:** dark
+**Layout:** Split two-column (heading left, scrub-reveal paragraph right)
+
+### Content
+
+- **Label (overline):** "AGENTIE FULL-SERVICE"
+- **Heading:** "Echipa. Experienta. Rezultate."
+- **Paragraph (ScrubReveal):** Word-by-word opacity reveal tied to scroll position. About mission definition.
+
+### Specifications
+
+- Left column: Overline + large heading (h2), enters with fade-up animation
+- Separator line: Animates scaleX from left
+- Right column: ScrubReveal paragraph that brightens as user scrolls
+- Creates bridge between hero and story section
+
+---
+
+## Section 3: Story / About
+
+**Theme:** light-warm (NEW Phase 3)
 **Layout:** Two-column (text left 60%, visual right 40%)
 
 ### Content
@@ -112,9 +140,9 @@ o prezenta digitala de exceptie.
 
 ---
 
-## Section 3: Values
+## Section 4: Values
 
-**Theme:** dark
+**Theme:** light-warm (NEW Phase 3)
 **Layout:** 3-column grid (equal), centered SectionHeader
 
 ### Content
@@ -135,13 +163,14 @@ o prezenta digitala de exceptie.
 
 ### Specifications
 
-- Default Card variant with icon (32px, Grey), heading (h4), description (body-sm, muted)
+- Default Card variant with icon (32px, Violet), heading (h4), description (body-sm, muted)
 - Grid: 3 columns desktop, 2 tablet, 1 mobile
+- Card bg: White on light-warm section
 - Animation: Cards stagger fade up, 80ms delay
 
 ---
 
-## Section 4: Divisions
+## Section 5: Divisions
 
 **Theme:** dark (slightly different shade — dark-elevated background)
 **Layout:** 4-column grid or 2x2 bento
@@ -163,17 +192,17 @@ o prezenta digitala de exceptie.
 
 ### Specifications
 
-- Feature Card variant: icon (48px, Grey), division name (h3), focus area (body-sm, Burgundy), description (body-sm, muted)
+- Feature Card variant: icon (48px, Grey), division name (h3), focus area (body-sm, Violet), description (body-sm, muted)
 - Grid: 4 columns desktop (equal width), 2x2 tablet, 1 mobile
-- Hover: Card lifts + burgundy glow shadow
+- Hover: Card lifts + violet glow shadow
 - Animation: Cards stagger fade up
 - Each card links to the respective services sub-page
 
 ---
 
-## Section 5: Mission & Vision
+## Section 6: Mission & Vision
 
-**Theme:** light
+**Theme:** dark
 **Layout:** Two-column side by side
 
 ### Content
@@ -192,7 +221,7 @@ o prezenta digitala de exceptie.
 
 - Two equal columns on desktop, stacked on mobile
 - Each column: Card-like container with light-muted background, padding `space-8`
-- Overline: Burgundy
+- Overline: Violet
 - Heading: h3 size
 - Description: body-lg, muted
 - Divider between columns: 1px vertical border on desktop
@@ -200,9 +229,9 @@ o prezenta digitala de exceptie.
 
 ---
 
-## Section 6: Why Choose Us
+## Section 7: Why Choose Us
 
-**Theme:** dark
+**Theme:** light-warm (NEW Phase 3)
 **Layout:** Left-aligned list with alternating icons
 
 ### Content
@@ -222,8 +251,8 @@ o prezenta digitala de exceptie.
 
 ### Specifications
 
-- Layout: Numbered list with large number (display-lg, Grey, opacity 0.3), title (h4, White), description (body, muted)
-- Each item separated by bottom border (dark-border)
+- Layout: Numbered list with large number (display-lg, muted), title (h4, dark text), description (body, muted)
+- Each item separated by bottom border (light-warm border color)
 - Padding: `space-6` vertical per item
 - Number: Left-aligned, large and faded as decorative element
 - Animation: Items stagger fade up from left, 100ms delay each
@@ -231,9 +260,45 @@ o prezenta digitala de exceptie.
 
 ---
 
-## Section 7: CTA
+## Section 8: Team
 
-**Theme:** burgundy
+**Theme:** dark (NEW Phase 3)
+**Layout:** 4-column grid of team member photo cards
+
+### Content
+
+- **Overline:** "ECHIPA NOASTRA"
+- **Heading:** "Oameni Pasionati de Digital"
+
+### Team Members
+
+Team member data pulled from i18n (`team.members` array):
+- Name (string)
+- Role (string, e.g., "Co-Founder & Creative Director")
+- Image (URL, 3:4 aspect ratio)
+
+### Specifications
+
+- Card layout: Rounded-2xl, 3:4 aspect ratio photo + name/role info below
+- Grid: 4 columns desktop, 2 tablet, 1 mobile
+- Photo: Responsive lazy loading, object-cover crop
+- Hover: Image scale-105 + card lift (-translate-y-1) + shadow increase
+- Info area: Name (font-bold, section-text) + role (muted text, smaller)
+- Animation: GSAP stagger fade-up on scroll (0.1s delay per card)
+- Reduced motion: No entrance animation, hover transforms disabled
+
+### Data
+
+Currently uses Unsplash placeholder images in i18n. Replace with:
+- Real team member photos in `/public/images/team/`
+- 3:4 aspect ratio (e.g., 300x400px per photo)
+- Update i18n `team.members` array with real names/roles
+
+---
+
+## Section 9: CTA
+
+**Theme:** violet
 **Layout:** Same as homepage CTA section
 
 ### Content

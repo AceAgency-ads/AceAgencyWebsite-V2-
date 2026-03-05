@@ -10,6 +10,7 @@ import { BookingSection } from '@/components/sections/contact/BookingSection';
 import { ContactNewsletter } from '@/components/sections/contact/ContactNewsletter';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { organizationSchema, renderJsonLd } from '@/lib/seo/schemas';
+import Image from 'next/image';
 
 interface ContactPageProps {
   params: Promise<{ locale: string }>;
@@ -51,9 +52,19 @@ export default async function ContactPage({
       />
 
       {/* Form + Info two-column section */}
-      <SectionWrapper theme="dark" id="contact-form">
+      <SectionWrapper theme="light-warm" id="contact-form">
         <div className="grid gap-12 lg:grid-cols-[1fr_0.65fr] lg:gap-16">
           <div>
+            <div className="mb-8 overflow-hidden rounded-xl">
+              <Image
+                src="/images/contact/contact-team.webp"
+                alt="Membrii echipei Laboratorul de Conversii gata să vă ajute"
+                width={800}
+                height={1000}
+                className="h-auto max-h-[300px] w-full object-cover"
+                sizes="(max-width: 1024px) 100vw, 60vw"
+              />
+            </div>
             <ContactForm />
           </div>
           <div>

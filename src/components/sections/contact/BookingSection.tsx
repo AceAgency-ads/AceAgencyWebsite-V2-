@@ -36,7 +36,7 @@ export function BookingSection(): React.JSX.Element {
     <SectionWrapper theme="light" id="booking">
       <ScrollReveal>
         <div className="mb-10 text-center">
-          <span className="mb-3 inline-block font-subheading text-xs font-medium uppercase tracking-[0.2em] text-[#56151A]">
+          <span className="mb-3 inline-block font-subheading text-xs font-medium uppercase tracking-[0.2em] text-[#650CBE]">
             {t('overline')}
           </span>
           <h2 className="font-heading text-3xl font-bold text-[#262523] md:text-4xl lg:text-5xl">

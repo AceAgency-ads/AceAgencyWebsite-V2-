@@ -1,9 +1,11 @@
 /* ============================================================
-   AceAgency Design Tokens — Burgundy Brand Palette
+   AceAgency Design Tokens — Violet Brand Palette
    ============================================================
    Generated from design-system/MASTER.md
    These tokens mirror and extend the brand variables in
    src/styles/globals.css for design-system reference.
+   Updated: 2024 Phase 3 — Added light-warm theme for
+   customer-facing sections (Services, Testimonials)
    ============================================================ */
 
 :root {
@@ -16,25 +18,25 @@
   --bg-3: #3a3836;
   --bg-4: #262523;
   --bg-5: #000000;
-  --bg-accent: #56151A;
+  --bg-accent: #650CBE;
 
   /* ──────────────────────────────────────────────────────────
-     Brand Colors (hex) — AceAgency burgundy palette
+     Brand Colors (hex) — AceAgency violet palette
      ────────────────────────────────────────────────────────── */
-  --ds-color-accent: #56151A;
+  --ds-color-accent: #650CBE;
   --ds-color-black: #262523;
   --ds-color-white: #FFFFFF;
   --ds-color-grey: #D9D9D9;
 
-  /* Legacy aliases (so existing bg-burgundy etc. still resolve) */
-  --ds-color-burgundy: #56151A;
+  /* Legacy aliases (so existing bg-violet etc. still resolve) */
+  --ds-color-violet: #650CBE;
 
   /* ──────────────────────────────────────────────────────────
      Extended Palette
      ────────────────────────────────────────────────────────── */
-  --ds-color-accent-light: #7A2025;
-  --ds-color-accent-glow: rgba(86, 21, 26, 0.15);
-  --ds-color-accent-soft: rgba(86, 21, 26, 0.10);
+  --ds-color-accent-light: #7A1FD8;
+  --ds-color-accent-glow: rgba(101, 12, 190, 0.15);
+  --ds-color-accent-soft: rgba(101, 12, 190, 0.10);
   --ds-color-dark-elevated: #3a3836;
   --ds-color-dark-border: #4a464380;
   --ds-color-light-muted: #EBEBEB;
@@ -42,8 +44,8 @@
   /* ──────────────────────────────────────────────────────────
      Gradients
      ────────────────────────────────────────────────────────── */
-  --ds-gradient-brand-primary: linear-gradient(135deg, #56151A, #4a1015);
-  --ds-gradient-brand-glow: radial-gradient(circle, rgba(86, 21, 26, 0.30), transparent 70%);
+  --ds-gradient-brand-primary: linear-gradient(135deg, #650CBE, #4A0A8F);
+  --ds-gradient-brand-glow: radial-gradient(circle, rgba(101, 12, 190, 0.30), transparent 70%);
   --ds-gradient-dark-fade: linear-gradient(180deg, #262523 0%, #1a1918 100%);
   --ds-gradient-grey-highlight: linear-gradient(90deg, #EBEBEB, #c4c4c4);
 
@@ -140,8 +142,8 @@
   --ds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --ds-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
   --ds-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.10), 0 4px 6px rgba(0, 0, 0, 0.05);
-  --ds-shadow-accent: 0 4px 20px rgba(86, 21, 26, 0.15);
-  --ds-shadow-accent-lg: 0 8px 40px rgba(86, 21, 26, 0.25);
+  --ds-shadow-accent: 0 4px 20px rgba(101, 12, 190, 0.15);
+  --ds-shadow-accent-lg: 0 8px 40px rgba(101, 12, 190, 0.25);
 
   /* ──────────────────────────────────────────────────────────
      Animation Timing
@@ -189,14 +191,14 @@
 }
 
 /* ============================================================
-   Section Theme Variants — AceAgency Burgundy Palette
+   Section Theme Variants — AceAgency Violet Palette
    ============================================================ */
 
 [data-theme="dark"] {
   --section-bg: #262523;
   --section-text: #D9D9D9;
   --section-text-muted: #a0a0a0;
-  --section-accent: #56151A;
+  --section-accent: #650CBE;
   --section-border: #4a464380;
   --section-card-bg: #3a3836;
 }
@@ -205,7 +207,7 @@
   --section-bg: #F5F5F5;
   --section-text: #262523;
   --section-text-muted: #666666;
-  --section-accent: #56151A;
+  --section-accent: #650CBE;
   --section-border: #d4d4d4;
   --section-card-bg: #fff;
 }
@@ -214,28 +216,37 @@
   --section-bg: #EBEBEB;
   --section-text: #262523;
   --section-text-muted: #666666;
-  --section-accent: #56151A;
+  --section-accent: #650CBE;
   --section-border: #c4c4c4;
   --section-card-bg: #fff;
 }
 
 [data-theme="accent"] {
-  --section-bg: #56151A;
+  --section-bg: #650CBE;
   --section-text: #FFFFFF;
   --section-text-muted: #d4d4d4;
   --section-accent: #FFFFFF;
-  --section-border: rgba(86, 21, 26, 0.5);
-  --section-card-bg: #4a1015;
+  --section-border: rgba(101, 12, 190, 0.5);
+  --section-card-bg: #4A0A8F;
 }
 
-/* Legacy: keep "burgundy" mapping for existing usage */
-[data-theme="burgundy"] {
-  --section-bg: #56151A;
+[data-theme="light-warm"] {
+  --section-bg: #FAF9F7;
+  --section-text: #262523;
+  --section-text-muted: #71706E;
+  --section-accent: #650CBE;
+  --section-border: #E8E6E3;
+  --section-card-bg: #FFFFFF;
+}
+
+/* Legacy: keep "violet" mapping for existing usage */
+[data-theme="violet"] {
+  --section-bg: #650CBE;
   --section-text: #FFFFFF;
   --section-text-muted: #d4d4d4;
   --section-accent: #FFFFFF;
-  --section-border: rgba(86, 21, 26, 0.5);
-  --section-card-bg: #4a1015;
+  --section-border: rgba(101, 12, 190, 0.5);
+  --section-card-bg: #4A0A8F;
 }
 
 /* ============================================================

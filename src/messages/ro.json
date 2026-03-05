@@ -8,10 +8,11 @@
     "home": "Acasa",
     "about": "Despre noi",
     "services": "Servicii",
-    "contact": "Contact"
+    "contact": "Contact",
+    "faq": "Intrebari frecvente"
   },
   "footer": {
-    "tagline": "Agentia ta de marketing digital din Bucuresti",
+    "tagline": "Laboratorul tau de conversii din Bucuresti",
     "address": "Bucuresti, Romania",
     "phone": "+40 XXX XXX XXX",
     "email": "contact@aceagency.ro",
@@ -23,17 +24,26 @@
       "success": "Multumim pentru abonare!",
       "error": "A aparut o eroare. Te rugam sa incerci din nou."
     },
-    "copyright": "\u00a9 2026 AceAgency. Toate drepturile rezervate.",
+    "copyright": "© 2026 Laboratorul de Conversii. Toate drepturile rezervate.",
     "divisions": {
-      "web": "AceWeb",
-      "ads": "AceAds",
-      "ai": "AceAI",
-      "media": "AceMedia"
+      "web": "Dezvoltare Web",
+      "ads": "Publicitate Digitala",
+      "ai": "Inteligenta Artificiala",
+      "media": "Productie Media"
+    },
+    "services": {
+      "googleAds": "Conversii prin Google Ads",
+      "facebookAds": "Conversii prin Facebook Ads",
+      "tiktokAds": "Conversii prin TikTok Ads",
+      "seo": "Crestere Organica",
+      "emailMarketing": "Conversii prin Email",
+      "consultanta": "Strategie de Crestere"
     },
     "legal": {
       "privacy": "Politica de confidentialitate",
       "cookies": "Politica de cookie-uri",
-      "terms": "Termeni si conditii"
+      "terms": "Termeni si conditii",
+      "cookieSettings": "Setari cookie-uri"
     }
   },
   "social": {
@@ -43,8 +53,8 @@
   },
   "about": {
     "meta": {
-      "title": "Despre Noi - Agentie Marketing Premium - AceAgency",
-      "description": "Descopera echipa AceAgency - agentie de marketing digital din Bucuresti. Misiunea, valorile si povestea noastra."
+      "title": "Despre Noi - Laborator de Conversii Premium - Laboratorul de Conversii",
+      "description": "Descopera echipa Laboratorul de Conversii - laborator de conversii din Bucuresti. Misiunea, valorile si povestea noastra."
     },
     "breadcrumb": {
       "home": "Acasa",
@@ -53,7 +63,7 @@
     "heroTransition": {
       "label": "CINE SUNTEM",
       "heading": "Disciplina. Viziune. Rezultate.",
-      "description": "AceAgency este echipa de profesionisti din Bucuresti care transforma branduri prin strategii digitale integrate. Combinam creativitatea cu datele pentru a livra rezultate masurabile si crestere sustenabila."
+      "description": "Laboratorul de Conversii este echipa de profesionisti din Bucuresti care transforma branduri prin sisteme de conversii integrate. Combinam creativitatea cu datele pentru a livra conversii masurabile si crestere sustenabila."
     },
     "hero": {
       "overline": "DESPRE NOI",
@@ -64,60 +74,135 @@
       "overline": "POVESTEA NOASTRA",
       "heading": "De la Pasiune la Performanta",
       "paragraphs": [
-        "AceAgency s-a nascut din convingerea ca fiecare afacere din Romania merita o prezenta digitala la standarde europene. Am pornit ca o echipa mica, cu o viziune mare: sa transformam modul in care brandurile romanesti comunica in mediul online.",
-        "Pe parcursul anilor, am crescut de la un studio de web design la o agentie digitala full-service. Am investit in oameni, tehnologie si procese care ne permit sa livram constant la cel mai inalt nivel de calitate.",
-        "Astazi, cu patru divizii specializate — AceWeb, AceAds, AceAI si AceMedia — oferim solutii integrate care acopera intregul spectru digital. Fiecare proiect este o oportunitate de a demonstra ca excelenta in marketing digital inseamna rezultate masurabile."
+        "Laboratorul de Conversii s-a nascut din convingerea ca fiecare afacere din Romania merita conversii la standarde europene. Am pornit ca o echipa mica, cu o viziune mare: sa transformam modul in care brandurile romanesti genereaza rezultate in mediul online.",
+        "Pe parcursul anilor, am crescut de la un studio de web design la un laborator de conversii full-service. Am investit in oameni, tehnologie si procese care ne permit sa livram constant conversii masurabile la cel mai inalt nivel de calitate.",
+        "Astazi, cu expertiza in dezvoltare web, publicitate digitala, inteligenta artificiala si productie media — oferim sisteme de conversii integrate care acopera intregul spectru digital. Fiecare proiect este o oportunitate de a demonstra ca excelenta in marketing digital inseamna conversii masurabile."
       ]
     },
     "values": {
       "overline": "VALORILE NOASTRE",
       "heading": "Principiile Care Ne Ghideaza",
       "items": [
-        { "icon": "Target", "title": "Excelenta", "description": "Ne dedicam calitatii in fiecare proiect, de la concept la livrare" },
-        { "icon": "Shield", "title": "Integritate", "description": "Comunicare transparenta si onesta cu fiecare client si partener" },
-        { "icon": "Zap", "title": "Inovatie", "description": "Adoptam cele mai noi tehnologii si strategii pentru rezultate superioare" },
-        { "icon": "Users", "title": "Colaborare", "description": "Lucram impreuna cu clientii nostri ca o echipa unita" },
-        { "icon": "TrendingUp", "title": "Performanta", "description": "Fiecare actiune este masurata si optimizata pentru rezultate maxime" },
-        { "icon": "Heart", "title": "Pasiune", "description": "Iubim ceea ce facem si asta se vede in fiecare proiect livrat" }
+        {
+          "icon": "Target",
+          "title": "Excelenta",
+          "description": "Ne dedicam calitatii in fiecare proiect, de la concept la livrare"
+        },
+        {
+          "icon": "Shield",
+          "title": "Integritate",
+          "description": "Comunicare transparenta si onesta cu fiecare client si partener"
+        },
+        {
+          "icon": "Zap",
+          "title": "Inovatie",
+          "description": "Adoptam cele mai noi tehnologii si strategii pentru rezultate superioare"
+        },
+        {
+          "icon": "Users",
+          "title": "Colaborare",
+          "description": "Lucram impreuna cu clientii nostri ca o echipa unita"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Performanta",
+          "description": "Fiecare actiune este masurata si optimizata pentru rezultate maxime"
+        },
+        {
+          "icon": "Heart",
+          "title": "Pasiune",
+          "description": "Iubim ceea ce facem si asta se vede in fiecare proiect livrat"
+        }
       ]
     },
     "divisions": {
-      "overline": "DIVIZIILE NOASTRE",
+      "overline": "EXPERTIZA NOASTRA",
       "heading": "Expertiza Sub Un Singur Acoperis",
-      "description": "Patru divizii specializate, un singur obiectiv: succesul digital al clientilor nostri.",
+      "description": "Expertiza completa, un singur obiectiv: conversiile clientilor nostri.",
       "items": [
-        { "icon": "Code", "name": "AceWeb", "focus": "Dezvoltare Web", "description": "Site-uri si aplicatii web performante, de la landing pages la platforme complexe" },
-        { "icon": "Target", "name": "AceAds", "focus": "Publicitate Digitala", "description": "Campanii Google, Facebook, TikTok si Instagram optimizate pentru conversii" },
-        { "icon": "Brain", "name": "AceAI", "focus": "Inteligenta Artificiala", "description": "Solutii AI pentru automatizare, chatbots si analiza predictiva" },
-        { "icon": "Camera", "name": "AceMedia", "focus": "Productie Media", "description": "Continut video, foto si grafic pentru branduri care vor sa iasa in evidenta" }
+        {
+          "icon": "Code",
+          "name": "Dezvoltare Web",
+          "focus": "Web & Tehnologie",
+          "description": "Site-uri si aplicatii web performante, de la landing pages la platforme complexe"
+        },
+        {
+          "icon": "Target",
+          "name": "Publicitate Digitala",
+          "focus": "Sisteme de Conversii",
+          "description": "Campanii Google, Facebook, TikTok si Instagram optimizate pentru conversii"
+        },
+        {
+          "icon": "Brain",
+          "name": "Inteligenta Artificiala",
+          "focus": "AI & Automatizare",
+          "description": "Solutii AI pentru automatizare, chatbots si analiza predictiva"
+        },
+        {
+          "icon": "Camera",
+          "name": "Productie Media",
+          "focus": "Continut & Creativ",
+          "description": "Continut video, foto si grafic pentru branduri care vor sa iasa in evidenta"
+        }
       ]
     },
     "mission": {
       "overline": "MISIUNEA NOASTRA",
       "heading": "Rezultate Digitale Masurabile",
-      "description": "Sa ajutam afacerile din Romania sa creasca prin strategii digitale integrate, creative si orientate catre performanta. Fiecare proiect este o oportunitate de a demonstra ca marketingul digital bine facut genereaza rezultate reale."
+      "description": "Sa ajutam afacerile din Romania sa creasca prin sisteme de conversii integrate, creative si orientate catre performanta. Fiecare proiect este o oportunitate de a demonstra ca marketingul digital bine facut genereaza conversii masurabile."
     },
     "vision": {
       "overline": "VIZIUNEA NOASTRA",
       "heading": "Lider in Digital din Romania",
-      "description": "Sa devenim agentia digitala de referinta din Romania, recunoscuta pentru excelenta in design, publicitate si inovatie tehnologica. Un partener strategic pentru branduri care vor sa conduca in era digitala."
+      "description": "Sa devenim laboratorul de conversii de referinta din Romania, recunoscuta pentru excelenta in design, publicitate si inovatie tehnologica. Un partener strategic pentru branduri care vor sa conduca in era digitala."
     },
     "whyUs": {
       "overline": "DE CE SA NE ALEGI",
-      "heading": "Avantajul AceAgency",
+      "heading": "Avantajul Laboratorului de Conversii",
       "items": [
-        { "number": "01", "title": "Full-Service Digital", "description": "Web, Ads, AI, Media — totul sub un singur acoperis, o singura strategie coerenta" },
-        { "number": "02", "title": "Design de Nivel Premium", "description": "Fiecare pixel conteaza. Design inspirat de cele mai bune agentii europene" },
-        { "number": "03", "title": "Rezultate Masurabile", "description": "Nu promitem — livram. Fiecare campanie vine cu rapoarte clare si KPI-uri" },
-        { "number": "04", "title": "Parteneriate, Nu Proiecte", "description": "Construim relatii pe termen lung bazate pe incredere si transparenta" },
-        { "number": "05", "title": "Tehnologie de Varf", "description": "Adoptam cele mai noi tools si platforme pentru avantaj competitiv" }
+        {
+          "number": "01",
+          "title": "Full-Service Digital",
+          "description": "Web, Ads, AI, Media — totul sub un singur acoperis, un singur sistem de conversii coerent"
+        },
+        {
+          "number": "02",
+          "title": "Design de Nivel Premium",
+          "description": "Fiecare pixel conteaza. Design inspirat de cele mai bune agentii europene"
+        },
+        {
+          "number": "03",
+          "title": "Rezultate Masurabile",
+          "description": "Nu promitem — livram. Fiecare campanie vine cu rapoarte clare si KPI-uri"
+        },
+        {
+          "number": "04",
+          "title": "Parteneriate, Nu Proiecte",
+          "description": "Construim relatii pe termen lung bazate pe incredere si transparenta"
+        },
+        {
+          "number": "05",
+          "title": "Tehnologie de Varf",
+          "description": "Adoptam cele mai noi tools si platforme pentru avantaj competitiv"
+        }
       ]
     },
     "cta": {
-      "heading": "Hai sa Construim Impreuna",
-      "description": "Esti gata sa transformi prezenta digitala a brandului tau? Echipa noastra te asteapta.",
+      "heading": "Hai sa Construim Sistemul Tau de Conversii",
+      "description": "Esti gata sa transformi prezenta digitala a brandului tau in conversii masurabile? Echipa noastra te asteapta.",
       "primary": "Contacteaza-ne",
       "secondary": "Vezi Serviciile"
+    },
+    "team": {
+      "overline": "ECHIPA NOASTRA",
+      "heading": "Oamenii din Spatele Conversiilor",
+      "members": [
+        {
+          "name": "Membru Echipa",
+          "role": "Director General",
+          "image": "/images/about/team-placeholder.webp"
+        }
+      ]
     }
   },
   "services": {
@@ -128,12 +213,12 @@
     "index": {
       "heroTransition": {
         "label": "ABORDAREA NOASTRA",
-        "heading": "Solutii digitale complete pentru fiecare nevoie",
-        "description": "De la publicitate platita la optimizare SEO, de la email marketing la consultanta strategica — fiecare serviciu este construit pe date, experienta si rezultate concrete."
+        "heading": "Sisteme de conversii complete pentru fiecare nevoie",
+        "description": "De la publicitate platita la optimizare SEO, de la email marketing la strategie de crestere — fiecare sistem de conversii este construit pe date, experienta si conversii masurabile."
       },
       "meta": {
-        "title": "Servicii Marketing Digital | AceAgency Bucuresti",
-        "description": "Servicii complete de marketing digital: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing si Consultanta. Contacteaza AceAgency!"
+        "title": "Sisteme de Conversii Digitale | Laboratorul de Conversii Bucuresti",
+        "description": "Sisteme complete de conversii digitale: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing si Strategie de Crestere. Contacteaza Laboratorul de Conversii!"
       },
       "hero": {
         "overline": "SERVICII",
@@ -144,13 +229,41 @@
         "overline": "CE OFERIM",
         "heading": "Servicii Specializate pentru Fiecare Nevoie",
         "items": {
-          "0": { "title": "Dezvoltare Web", "division": "AceWeb", "description": "Site-uri si aplicatii web performante, responsive si optimizate SEO, de la landing pages la platforme complexe." },
-          "1": { "title": "Google Ads", "division": "AceAds", "description": "Campanii Google Ads optimizate pentru ROI maxim si cost pe conversie minim." },
-          "2": { "title": "Facebook & Instagram Ads", "division": "AceAds", "description": "Strategii de publicitate pe social media cu targetare precisa si creativa." },
-          "3": { "title": "TikTok Ads", "division": "AceAds", "description": "Publicitate creativa pe TikTok pentru audienta noua generatie." },
-          "4": { "title": "Optimizare SEO", "division": "AceWeb", "description": "Pozitionare organica in Google prin strategii SEO tehnice si de continut." },
-          "5": { "title": "Email Marketing", "division": "AceAds", "description": "Campanii email automatizate care genereaza conversii si fidelizeaza clientii." },
-          "6": { "title": "Consultanta Marketing", "division": "AceAgency", "description": "Strategie digitala personalizata bazata pe date, analiza si experienta." }
+          "0": {
+            "title": "Dezvoltare Web",
+            "division": "Dezvoltare Web",
+            "description": "Site-uri si aplicatii web performante, responsive si optimizate SEO, de la landing pages la platforme complexe."
+          },
+          "1": {
+            "title": "Google Ads",
+            "division": "Publicitate Digitala",
+            "description": "Sisteme de conversii Google Ads optimizate pentru ROI maxim si cost pe conversie minim."
+          },
+          "2": {
+            "title": "Facebook & Instagram Ads",
+            "division": "Publicitate Digitala",
+            "description": "Sisteme de conversii pe social media cu targetare precisa si creativa."
+          },
+          "3": {
+            "title": "TikTok Ads",
+            "division": "Publicitate Digitala",
+            "description": "Publicitate creativa pe TikTok pentru audienta noua generatie."
+          },
+          "4": {
+            "title": "Optimizare SEO",
+            "division": "Crestere Organica",
+            "description": "Pozitionare organica in Google prin strategii SEO tehnice si de continut."
+          },
+          "5": {
+            "title": "Email Marketing",
+            "division": "Conversii Email",
+            "description": "Sisteme de conversii email automatizate care genereaza vanzari si fidelizeaza clientii."
+          },
+          "6": {
+            "title": "Consultanta Marketing",
+            "division": "Strategie",
+            "description": "Strategie de crestere personalizata bazata pe date, analiza si experienta."
+          }
         }
       },
       "process": {
@@ -158,27 +271,70 @@
         "heading": "Procesul Nostru in 4 Pasi",
         "description": "O abordare structurata care transforma obiectivele tale in rezultate concrete.",
         "steps": {
-          "0": { "title": "Analiza & Strategie", "description": "Intelegem afacerea ta, publicul tinta si competitia pentru a construi o strategie personalizata." },
-          "1": { "title": "Design & Dezvoltare", "description": "Cream solutii vizuale si tehnice care reflecta brandul tau si convertesc vizitatorii." },
-          "2": { "title": "Implementare & Lansare", "description": "Lansam campaniile si proiectele cu testare riguroasa si monitorizare in timp real." },
-          "3": { "title": "Monitorizare & Optimizare", "description": "Analizam performanta continuu si optimizam pentru rezultate tot mai bune." }
+          "0": {
+            "title": "Analiza & Strategie",
+            "description": "Intelegem afacerea ta, publicul tinta si competitia pentru a construi o strategie personalizata."
+          },
+          "1": {
+            "title": "Design & Dezvoltare",
+            "description": "Cream solutii vizuale si tehnice care reflecta brandul tau si convertesc vizitatorii."
+          },
+          "2": {
+            "title": "Implementare & Lansare",
+            "description": "Lansam campaniile si proiectele cu testare riguroasa si monitorizare in timp real."
+          },
+          "3": {
+            "title": "Monitorizare & Optimizare",
+            "description": "Analizam performanta continuu si optimizam pentru rezultate tot mai bune."
+          }
         }
       },
       "whyUs": {
         "overline": "DE CE NOI",
         "heading": "Partenerul Tau Digital de Incredere",
         "stats": {
-          "0": { "value": "150", "suffix": "+", "label": "Proiecte Livrate" },
-          "1": { "value": "50", "suffix": "+", "label": "Clienti Activi" },
-          "2": { "value": "340", "suffix": "%", "label": "ROI Mediu" },
-          "3": { "value": "24", "suffix": "/7", "label": "Suport Dedicat" }
+          "0": {
+            "value": "150",
+            "suffix": "+",
+            "label": "Proiecte Livrate"
+          },
+          "1": {
+            "value": "50",
+            "suffix": "+",
+            "label": "Clienti Activi"
+          },
+          "2": {
+            "value": "340",
+            "suffix": "%",
+            "label": "ROI Mediu"
+          },
+          "3": {
+            "value": "24",
+            "suffix": "/7",
+            "label": "Suport Dedicat"
+          }
         },
         "differentiators": {
-          "0": { "title": "Echipa Dedicata", "description": "Fiecare client are un manager de cont dedicat si acces direct la specialisti." },
-          "1": { "title": "Rapoarte Transparente", "description": "Rapoarte lunare detaliate cu metrici clare si recomandari actionale." },
-          "2": { "title": "Strategii Personalizate", "description": "Nu aplicam solutii generice — fiecare strategie e construita pe obiectivele tale." },
-          "3": { "title": "Tehnologie de Varf", "description": "Folosim cele mai noi platforme si unelte pentru avantaj competitiv real." },
-          "4": { "title": "Rezultate Garantate", "description": "KPI-uri clare stabilite de la inceput, cu optimizare continua pentru performanta." }
+          "0": {
+            "title": "Echipa Dedicata",
+            "description": "Fiecare client are un manager de cont dedicat si acces direct la specialisti."
+          },
+          "1": {
+            "title": "Rapoarte Transparente",
+            "description": "Rapoarte lunare detaliate cu metrici clare si recomandari actionale."
+          },
+          "2": {
+            "title": "Strategii Personalizate",
+            "description": "Nu aplicam solutii generice — fiecare strategie e construita pe obiectivele tale."
+          },
+          "3": {
+            "title": "Tehnologie de Varf",
+            "description": "Folosim cele mai noi platforme si unelte pentru avantaj competitiv real."
+          },
+          "4": {
+            "title": "Rezultate Garantate",
+            "description": "KPI-uri clare stabilite de la inceput, cu optimizare continua pentru performanta."
+          }
         }
       }
     },
@@ -190,65 +346,129 @@
     },
     "googleAds": {
       "heroTransition": {
-        "label": "GOOGLE ADS",
-        "heading": "Campanii care transforma click-uri in clienti",
+        "label": "CONVERSII PRIN GOOGLE ADS",
+        "heading": "Sisteme de conversii care transforma click-uri in clienti",
         "description": "Fiecare campanie Google Ads este construita pe date reale, optimizata zilnic si orientata catre un singur obiectiv: sa transforme bugetul tau de publicitate in clienti noi si crestere masurabile."
       },
       "meta": {
-        "title": "Servicii Google Ads | Agentie Google Ads Romania",
-        "description": "Campanii Google Ads profesionale cu ROI garantat. Agentie certificata Google Ads din Bucuresti. Contacteaza AceAgency!"
+        "title": "Conversii prin Google Ads | Laboratorul de Conversii Romania",
+        "description": "Sisteme de conversii Google Ads cu ROI garantat. Laborator de conversii certificat Google Ads din Bucuresti. Contacteaza Laboratorul de Conversii!"
       },
       "hero": {
         "overline": "GOOGLE ADS",
-        "headline": "Campanii Google Ads care Genereaza Rezultate Reale",
-        "description": "Cream si optimizam campanii Google Ads care aduc clienti noi si maximizeaza returnul investitiei tale in publicitate online."
+        "headline": "Conversii prin Google Ads care Genereaza Rezultate Reale",
+        "description": "Cream si optimizam sisteme de conversii Google Ads care aduc clienti noi si maximizeaza returnul investitiei tale in publicitate online."
       },
       "features": {
         "overline": "SERVICII GOOGLE ADS",
         "heading": "Solutii Complete de Publicitate Google",
         "items": [
-          { "title": "Search Ads", "description": "Campanii pe reteaua de cautare Google care te pozitioneaza in fata clientilor care cauta activ serviciile tale." },
-          { "title": "Display Ads", "description": "Bannere vizuale pe milioane de site-uri partenere Google pentru cresterea notorietatii brandului." },
-          { "title": "Shopping Ads", "description": "Campanii Google Shopping optimizate pentru magazine online cu feed de produse si remarketing dinamic." },
-          { "title": "YouTube Ads", "description": "Publicitate video pe YouTube cu targetare demografica si pe interese pentru engagement maxim." },
-          { "title": "Performance Max", "description": "Campanii automatizate cu inteligenta artificiala Google care optimizeaza pe toate canalele simultan." },
-          { "title": "Remarketing", "description": "Recapturam vizitatorii care au parasit site-ul tau prin reclame personalizate pe intreaga retea Google." }
+          {
+            "title": "Search Ads",
+            "description": "Campanii pe reteaua de cautare Google care te pozitioneaza in fata clientilor care cauta activ serviciile tale."
+          },
+          {
+            "title": "Display Ads",
+            "description": "Bannere vizuale pe milioane de site-uri partenere Google pentru cresterea notorietatii brandului."
+          },
+          {
+            "title": "Shopping Ads",
+            "description": "Campanii Google Shopping optimizate pentru magazine online cu feed de produse si remarketing dinamic."
+          },
+          {
+            "title": "YouTube Ads",
+            "description": "Publicitate video pe YouTube cu targetare demografica si pe interese pentru engagement maxim."
+          },
+          {
+            "title": "Performance Max",
+            "description": "Campanii automatizate cu inteligenta artificiala Google care optimizeaza pe toate canalele simultan."
+          },
+          {
+            "title": "Remarketing",
+            "description": "Recapturam vizitatorii care au parasit site-ul tau prin reclame personalizate pe intreaga retea Google."
+          }
         ]
       },
       "process": {
         "overline": "PROCESUL NOSTRU",
         "heading": "Cum Gestionam Campaniile Tale Google Ads",
         "steps": [
-          { "title": "Audit & Analiza", "description": "Analizam contul existent, competitia si oportunitatile de piata pentru a identifica cele mai profitabile cuvinte cheie." },
-          { "title": "Strategie & Setup", "description": "Construim structura campaniilor, cream reclame persuasive si setam targetarea optima pentru publicul tau." },
-          { "title": "Optimizare Continua", "description": "Monitorizam zilnic performanta, ajustam licitatiile si testam variante de reclame pentru rezultate tot mai bune." },
-          { "title": "Raportare & Scale", "description": "Rapoarte lunare transparente cu metrici clare si recomandari de scalare pentru cresterea continua a afacerii." }
+          {
+            "title": "Audit & Analiza",
+            "description": "Analizam contul existent, competitia si oportunitatile de piata pentru a identifica cele mai profitabile cuvinte cheie."
+          },
+          {
+            "title": "Strategie & Setup",
+            "description": "Construim structura campaniilor, cream reclame persuasive si setam targetarea optima pentru publicul tau."
+          },
+          {
+            "title": "Optimizare Continua",
+            "description": "Monitorizam zilnic performanta, ajustam licitatiile si testam variante de reclame pentru rezultate tot mai bune."
+          },
+          {
+            "title": "Raportare & Scale",
+            "description": "Rapoarte lunare transparente cu metrici clare si recomandari de scalare pentru cresterea continua a afacerii."
+          }
         ]
       },
       "stats": {
         "overline": "REZULTATE",
         "heading": "Performanta Campaniilor Noastre Google Ads",
         "items": [
-          { "value": "340", "suffix": "%+", "label": "ROI Mediu Campanii" },
-          { "value": "150", "suffix": "+", "label": "Campanii Gestionate" },
-          { "value": "50", "suffix": "+", "label": "Clienti Activi" },
-          { "value": "2", "suffix": "M+", "label": "Clicks Generate" }
+          {
+            "value": "340",
+            "suffix": "%+",
+            "label": "ROI Mediu Campanii"
+          },
+          {
+            "value": "150",
+            "suffix": "+",
+            "label": "Campanii Gestionate"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Clienti Activi"
+          },
+          {
+            "value": "2",
+            "suffix": "M+",
+            "label": "Clicks Generate"
+          }
         ]
       },
       "faq": {
         "overline": "INTREBARI FRECVENTE",
         "heading": "Intrebari despre Serviciile Google Ads",
         "items": [
-          { "question": "Cat costa serviciile de Google Ads?", "answer": "Costul depinde de industrie, competitie si obiective. Bugetul minim recomandat pentru Google Ads este de 500 EUR/luna, plus taxa de management. Contacteaza-ne pentru o oferta personalizata." },
-          { "question": "Cat dureaza pana vad rezultate?", "answer": "Primele rezultate se vad de obicei in primele 2-4 saptamani. Optimizarea completa a campaniilor necesita 2-3 luni pentru performanta maxima, pe masura ce acumulam date si ajustam strategia." },
-          { "question": "Ce tip de campanie Google Ads e potrivit pentru afacerea mea?", "answer": "Depinde de obiectivele tale. Campaniile Search sunt ideale pentru generarea de lead-uri, Shopping pentru e-commerce, Display pentru notorietate si YouTube pentru engagement. Recomandam un mix personalizat." },
-          { "question": "Aveti certificare Google Ads?", "answer": "Da, echipa noastra detine certificari Google Ads actualizate pentru Search, Display, Video si Shopping. Suntem la curent cu cele mai noi functionalitati si best practices." },
-          { "question": "Ce rapoarte primesc?", "answer": "Primesti rapoarte lunare detaliate care includ: impressions, clicks, conversii, cost pe conversie, ROI, analiza cuvintelor cheie si recomandari de optimizare. Ai si acces la un dashboard in timp real." },
-          { "question": "Pot sa opresc campaniile oricand?", "answer": "Da, ai control total. Campaniile pot fi oprite, modificate sau scalate oricand. Nu exista contracte pe termen lung obligatorii — lucram pe baza de performanta si incredere." }
+          {
+            "question": "Cat costa serviciile de Google Ads?",
+            "answer": "Costul depinde de industrie, competitie si obiective. Bugetul minim recomandat pentru Google Ads este de 500 EUR/luna, plus taxa de management. Contacteaza-ne pentru o oferta personalizata."
+          },
+          {
+            "question": "Cat dureaza pana vad rezultate?",
+            "answer": "Primele rezultate se vad de obicei in primele 2-4 saptamani. Optimizarea completa a campaniilor necesita 2-3 luni pentru performanta maxima, pe masura ce acumulam date si ajustam strategia."
+          },
+          {
+            "question": "Ce tip de campanie Google Ads e potrivit pentru afacerea mea?",
+            "answer": "Depinde de obiectivele tale. Campaniile Search sunt ideale pentru generarea de lead-uri, Shopping pentru e-commerce, Display pentru notorietate si YouTube pentru engagement. Recomandam un mix personalizat."
+          },
+          {
+            "question": "Aveti certificare Google Ads?",
+            "answer": "Da, echipa noastra detine certificari Google Ads actualizate pentru Search, Display, Video si Shopping. Suntem la curent cu cele mai noi functionalitati si best practices."
+          },
+          {
+            "question": "Ce rapoarte primesc?",
+            "answer": "Primesti rapoarte lunare detaliate care includ: impressions, clicks, conversii, cost pe conversie, ROI, analiza cuvintelor cheie si recomandari de optimizare. Ai si acces la un dashboard in timp real."
+          },
+          {
+            "question": "Pot sa opresc campaniile oricand?",
+            "answer": "Da, ai control total. Campaniile pot fi oprite, modificate sau scalate oricand. Nu exista contracte pe termen lung obligatorii — lucram pe baza de performanta si incredere."
+          }
         ]
       },
       "cta": {
-        "heading": "Creste-ti Afacerea cu Google Ads",
+        "heading": "Creste-ti Conversiile cu Google Ads",
         "description": "Programeaza o consultatie gratuita si descopera cum campaniile Google Ads iti pot transforma afacerea.",
         "primary": "Solicita o Oferta",
         "secondary": "Programeaza o Consultatie"
@@ -256,66 +476,133 @@
     },
     "facebookAds": {
       "heroTransition": {
-        "label": "FACEBOOK & INSTAGRAM ADS",
-        "heading": "Publicitate sociala care genereaza conversii reale",
+        "label": "CONVERSII PRIN FACEBOOK & INSTAGRAM ADS",
+        "heading": "Sisteme de conversii sociale care genereaza rezultate reale",
         "description": "Cream strategii de publicitate pe Facebook si Instagram care conecteaza brandul tau cu audienta potrivita, genereaza lead-uri calificate si maximizeaza returnul fiecarui leu investit."
       },
       "meta": {
-        "title": "Servicii Facebook Ads | Agentie Facebook Ads - AceAgency",
-        "description": "Campanii Facebook si Instagram Ads profesionale cu targetare precisa si ROI masurabil. Agentie publicitate Facebook Bucuresti. Solicita oferta!"
+        "title": "Conversii prin Facebook Ads | Laboratorul de Conversii",
+        "description": "Sisteme de conversii Facebook si Instagram Ads cu targetare precisa si ROI masurabil. Laborator de conversii Facebook Bucuresti. Solicita oferta!"
       },
       "hero": {
         "overline": "FACEBOOK & INSTAGRAM ADS",
-        "headline": "Campanii Facebook Ads care Genereaza Conversii Reale",
-        "description": "Cream strategii de publicitate pe Facebook si Instagram care aduc lead-uri calificate, cresc vanzarile si maximizeaza returnul investitiei tale in social media advertising."
+        "headline": "Conversii prin Facebook Ads care Genereaza Rezultate Reale",
+        "description": "Cream sisteme de conversii pe Facebook si Instagram care aduc lead-uri calificate, cresc vanzarile si maximizeaza returnul investitiei tale in social media advertising."
       },
       "features": {
         "overline": "SERVICII FACEBOOK ADS",
         "heading": "Solutii Complete de Publicitate Facebook si Instagram",
         "items": [
-          { "title": "Campanii de Awareness", "description": "Crestem notorietatea brandului tau prin campanii de reach si brand awareness targetate catre audienta ideala pe Facebook si Instagram." },
-          { "title": "Campanii de Trafic", "description": "Aducem vizitatori calificati pe site-ul tau prin reclame optimizate pentru click-uri si engagement pe ambele platforme." },
-          { "title": "Campanii de Conversie", "description": "Generam lead-uri si vanzari directe prin campanii optimizate cu Facebook Pixel si Conversions API pentru tracking precis." },
-          { "title": "Retargeting Avansat", "description": "Recapturam vizitatorii site-ului si utilizatorii care au interactionat cu brandul tau prin remarketing dinamic pe Facebook si Instagram." },
-          { "title": "Custom & Lookalike Audiences", "description": "Construim audiente personalizate si similare bazate pe datele clientilor tai existenti pentru a gasi noi clienti cu potential ridicat." },
-          { "title": "Optimizare Creativa", "description": "Testam si optimizam constant vizualuri, copy si formate publicitare — de la carusele la Reels — pentru performanta maxima." }
+          {
+            "title": "Campanii de Awareness",
+            "description": "Crestem notorietatea brandului tau prin campanii de reach si brand awareness targetate catre audienta ideala pe Facebook si Instagram."
+          },
+          {
+            "title": "Campanii de Trafic",
+            "description": "Aducem vizitatori calificati pe site-ul tau prin reclame optimizate pentru click-uri si engagement pe ambele platforme."
+          },
+          {
+            "title": "Campanii de Conversie",
+            "description": "Generam lead-uri si vanzari directe prin campanii optimizate cu Facebook Pixel si Conversions API pentru tracking precis."
+          },
+          {
+            "title": "Retargeting Avansat",
+            "description": "Recapturam vizitatorii site-ului si utilizatorii care au interactionat cu brandul tau prin remarketing dinamic pe Facebook si Instagram."
+          },
+          {
+            "title": "Custom & Lookalike Audiences",
+            "description": "Construim audiente personalizate si similare bazate pe datele clientilor tai existenti pentru a gasi noi clienti cu potential ridicat."
+          },
+          {
+            "title": "Optimizare Creativa",
+            "description": "Testam si optimizam constant vizualuri, copy si formate publicitare — de la carusele la Reels — pentru performanta maxima."
+          }
         ]
       },
       "process": {
         "overline": "PROCESUL NOSTRU",
         "heading": "Cum Gestionam Campaniile Tale Facebook Ads",
         "steps": [
-          { "title": "Audit Cont & Pixel Setup", "description": "Analizam contul existent, verificam configurarea Facebook Pixel si Conversions API, si identificam oportunitatile de imbunatatire." },
-          { "title": "Strategie de Audienta", "description": "Construim audienta ideala folosind date demografice, interese, comportamente si lookalike audiences bazate pe clientii tai existenti." },
-          { "title": "Creare Campanii & Ad Creatives", "description": "Dezvoltam structura campaniilor si cream vizualuri si copy persuasiv adaptat fiecarui segment de audienta si plasament." },
-          { "title": "Optimizare & Scalare", "description": "Monitorizam zilnic performanta, testam A/B variante de reclame si scalam campaniile profitabile pentru crestere continua." }
+          {
+            "title": "Audit Cont & Pixel Setup",
+            "description": "Analizam contul existent, verificam configurarea Facebook Pixel si Conversions API, si identificam oportunitatile de imbunatatire."
+          },
+          {
+            "title": "Strategie de Audienta",
+            "description": "Construim audienta ideala folosind date demografice, interese, comportamente si lookalike audiences bazate pe clientii tai existenti."
+          },
+          {
+            "title": "Creare Campanii & Ad Creatives",
+            "description": "Dezvoltam structura campaniilor si cream vizualuri si copy persuasiv adaptat fiecarui segment de audienta si plasament."
+          },
+          {
+            "title": "Optimizare & Scalare",
+            "description": "Monitorizam zilnic performanta, testam A/B variante de reclame si scalam campaniile profitabile pentru crestere continua."
+          }
         ]
       },
       "stats": {
         "overline": "REZULTATE",
         "heading": "Performanta Campaniilor Facebook & Instagram Ads",
         "items": [
-          { "value": "2", "suffix": "M+", "label": "Reach Lunar" },
-          { "value": "50", "suffix": "K+", "label": "Conversii Generate" },
-          { "value": "200", "suffix": "+", "label": "Campanii Gestionate" },
-          { "value": "15", "suffix": "x", "label": "ROAS Mediu" }
+          {
+            "value": "2",
+            "suffix": "M+",
+            "label": "Reach Lunar"
+          },
+          {
+            "value": "50",
+            "suffix": "K+",
+            "label": "Conversii Generate"
+          },
+          {
+            "value": "200",
+            "suffix": "+",
+            "label": "Campanii Gestionate"
+          },
+          {
+            "value": "15",
+            "suffix": "x",
+            "label": "ROAS Mediu"
+          }
         ]
       },
       "faq": {
         "overline": "INTREBARI FRECVENTE",
         "heading": "Intrebari despre Facebook & Instagram Ads",
         "items": [
-          { "question": "Cat costa publicitatea pe Facebook si Instagram?", "answer": "Bugetul minim recomandat pentru Facebook Ads este de 300 EUR/luna, plus taxa de management. Costul per lead variaza in functie de industrie: de la 2-5 EUR pentru B2C la 10-30 EUR pentru B2B. Contacteaza-ne pentru o estimare personalizata bazata pe obiectivele tale." },
-          { "question": "Cum functioneaza Facebook Pixel si de ce e important?", "answer": "Facebook Pixel este un cod de tracking instalat pe site-ul tau care monitorizeaza actiunile vizitatorilor. Este esential pentru optimizarea campaniilor, crearea de audiente custom si remarketing. Noi configuram si Conversions API pentru tracking precis chiar si cu restrictiile de confidentialitate actuale." },
-          { "question": "Ce tipuri de audienta targetam?", "answer": "Folosim audienta de baza (demografie, interese, comportamente), audienta custom (vizitatorii site-ului, lista de emailuri, interactiuni cu pagina) si audienta lookalike (persoane similare clientilor tai existenti). Combinatia acestora asigura acoperire maxima cu relevanta ridicata." },
-          { "question": "Facebook Ads sau Instagram Ads — care e mai bun?", "answer": "Depinde de obiectivele si audienta ta. Instagram exceleaza pentru branduri vizuale si audienta 18-35 ani, in timp ce Facebook ofera targetare mai detaliata si performanta mai buna pentru lead generation B2B. Recomandam o strategie cross-platform care utilizeaza ambele platforme pentru rezultate optime, combinata cu campanii Google Ads pentru acoperire completa." },
-          { "question": "Ce formate de reclame folositi?", "answer": "Utilizam toate formatele disponibile: imagini statice, carusele, video, Reels, Stories si colectii. Alegem formatul optim in functie de obiectivul campaniei si testam A/B pentru a identifica ce functioneaza cel mai bine pentru audienta ta specifica." },
-          { "question": "Cat dureaza pana vad rezultate?", "answer": "Primele rezultate apar in 1-2 saptamani de la lansare. Performanta optima se atinge dupa 4-6 saptamani de optimizare continua, pe masura ce algoritmul Meta invata si noi acumulam date suficiente pentru decizii informate." },
-          { "question": "Cum masurati succesul campaniilor?", "answer": "Urmarim KPI-uri clare: cost per lead, cost per conversie, ROAS, reach, frecventa si rata de click. Primesti rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare. Combinam datele din Facebook Ads cu Google Ads pentru o viziune completa cross-platform." }
+          {
+            "question": "Cat costa publicitatea pe Facebook si Instagram?",
+            "answer": "Bugetul minim recomandat pentru Facebook Ads este de 300 EUR/luna, plus taxa de management. Costul per lead variaza in functie de industrie: de la 2-5 EUR pentru B2C la 10-30 EUR pentru B2B. Contacteaza-ne pentru o estimare personalizata bazata pe obiectivele tale."
+          },
+          {
+            "question": "Cum functioneaza Facebook Pixel si de ce e important?",
+            "answer": "Facebook Pixel este un cod de tracking instalat pe site-ul tau care monitorizeaza actiunile vizitatorilor. Este esential pentru optimizarea campaniilor, crearea de audiente custom si remarketing. Noi configuram si Conversions API pentru tracking precis chiar si cu restrictiile de confidentialitate actuale."
+          },
+          {
+            "question": "Ce tipuri de audienta targetam?",
+            "answer": "Folosim audienta de baza (demografie, interese, comportamente), audienta custom (vizitatorii site-ului, lista de emailuri, interactiuni cu pagina) si audienta lookalike (persoane similare clientilor tai existenti). Combinatia acestora asigura acoperire maxima cu relevanta ridicata."
+          },
+          {
+            "question": "Facebook Ads sau Instagram Ads — care e mai bun?",
+            "answer": "Depinde de obiectivele si audienta ta. Instagram exceleaza pentru branduri vizuale si audienta 18-35 ani, in timp ce Facebook ofera targetare mai detaliata si performanta mai buna pentru lead generation B2B. Recomandam o strategie cross-platform care utilizeaza ambele platforme pentru rezultate optime, combinata cu campanii Google Ads pentru acoperire completa."
+          },
+          {
+            "question": "Ce formate de reclame folositi?",
+            "answer": "Utilizam toate formatele disponibile: imagini statice, carusele, video, Reels, Stories si colectii. Alegem formatul optim in functie de obiectivul campaniei si testam A/B pentru a identifica ce functioneaza cel mai bine pentru audienta ta specifica."
+          },
+          {
+            "question": "Cat dureaza pana vad rezultate?",
+            "answer": "Primele rezultate apar in 1-2 saptamani de la lansare. Performanta optima se atinge dupa 4-6 saptamani de optimizare continua, pe masura ce algoritmul Meta invata si noi acumulam date suficiente pentru decizii informate."
+          },
+          {
+            "question": "Cum masurati succesul campaniilor?",
+            "answer": "Urmarim KPI-uri clare: cost per lead, cost per conversie, ROAS, reach, frecventa si rata de click. Primesti rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare. Combinam datele din Facebook Ads cu Google Ads pentru o viziune completa cross-platform."
+          }
         ]
       },
       "cta": {
-        "heading": "Creste-ti Afacerea cu Facebook & Instagram Ads",
+        "heading": "Creste-ti Conversiile cu Facebook & Instagram Ads",
         "description": "Programeaza o consultatie gratuita si descopera cum publicitatea pe Facebook si Instagram poate genera lead-uri si vanzari pentru afacerea ta.",
         "primary": "Solicita o Oferta",
         "secondary": "Programeaza un Call"
@@ -323,65 +610,129 @@
     },
     "tiktokAds": {
       "heroTransition": {
-        "label": "TIKTOK ADS",
-        "heading": "Continut viral care transforma audienta in clienti",
+        "label": "CONVERSII PRIN TIKTOK ADS",
+        "heading": "Continut viral care transforma audienta in conversii",
         "description": "TikTok este platforma unde autenticitatea castiga. Cream campanii native care capteaza atentia in primele secunde si transforma vizualizarile in actiuni concrete pentru brandul tau."
       },
       "meta": {
-        "title": "Servicii TikTok Ads | Publicitate TikTok Romania - AceAgency",
-        "description": "Campanii TikTok Ads creative si performante pentru audienta din Romania. Publicitate video TikTok cu rezultate masurabile. Solicita oferta!"
+        "title": "Conversii prin TikTok Ads | Publicitate TikTok Romania - Laboratorul de Conversii",
+        "description": "Sisteme de conversii TikTok Ads creative si performante pentru audienta din Romania. Publicitate video TikTok cu conversii masurabile. Solicita oferta!"
       },
       "hero": {
         "overline": "TIKTOK ADS",
-        "headline": "Publicitate TikTok Ads care Capteaza Atentia si Genereaza Rezultate",
-        "description": "Cream campanii TikTok Ads creative si virale care conecteaza brandul tau cu audienta urmatoarei generatii din Romania. De la In-Feed Ads la Spark Ads, maximizam impactul fiecarei investitii."
+        "headline": "Conversii prin TikTok Ads care Capteaza Atentia si Genereaza Rezultate",
+        "description": "Cream sisteme de conversii TikTok Ads creative si virale care conecteaza brandul tau cu audienta urmatoarei generatii din Romania. De la In-Feed Ads la Spark Ads, maximizam conversiile fiecarei investitii."
       },
       "features": {
         "overline": "SERVICII TIKTOK ADS",
         "heading": "Formate Publicitare TikTok pentru Fiecare Obiectiv",
         "items": [
-          { "title": "In-Feed Ads", "description": "Reclame native in feed-ul For You care se integreaza organic cu continutul si capteaza atentia utilizatorilor in mod natural." },
-          { "title": "TopView Ads", "description": "Reclame video full-screen care apar la deschiderea aplicatiei TikTok, oferind vizibilitate maxima si impact garantat pentru brandul tau." },
-          { "title": "Spark Ads", "description": "Amplificam postarile organice performante ale brandului sau ale creatorilor cu buget publicitar pentru reach si engagement extins." },
-          { "title": "Brand Effects", "description": "Efecte AR si filtre branduite pe TikTok care incurajeaza user-generated content si cresc interactiunea cu brandul tau." },
-          { "title": "TikTok Shopping", "description": "Integram catalogul de produse direct in TikTok pentru experienta de cumparaturi nativa, combinata cu campanii Facebook Ads pentru conversii cross-platform." },
-          { "title": "Targetare Audienta", "description": "Targetare avansata pe demografie, interese, comportament si audienta custom pentru a ajunge la utilizatorii cu cel mai mare potential de conversie." }
+          {
+            "title": "In-Feed Ads",
+            "description": "Reclame native in feed-ul For You care se integreaza organic cu continutul si capteaza atentia utilizatorilor in mod natural."
+          },
+          {
+            "title": "TopView Ads",
+            "description": "Reclame video full-screen care apar la deschiderea aplicatiei TikTok, oferind vizibilitate maxima si impact garantat pentru brandul tau."
+          },
+          {
+            "title": "Spark Ads",
+            "description": "Amplificam postarile organice performante ale brandului sau ale creatorilor cu buget publicitar pentru reach si engagement extins."
+          },
+          {
+            "title": "Brand Effects",
+            "description": "Efecte AR si filtre branduite pe TikTok care incurajeaza user-generated content si cresc interactiunea cu brandul tau."
+          },
+          {
+            "title": "TikTok Shopping",
+            "description": "Integram catalogul de produse direct in TikTok pentru experienta de cumparaturi nativa, combinata cu campanii Facebook Ads pentru conversii cross-platform."
+          },
+          {
+            "title": "Targetare Audienta",
+            "description": "Targetare avansata pe demografie, interese, comportament si audienta custom pentru a ajunge la utilizatorii cu cel mai mare potential de conversie."
+          }
         ]
       },
       "process": {
         "overline": "PROCESUL NOSTRU",
         "heading": "Cum Cream Campanii TikTok Ads de Succes",
         "steps": [
-          { "title": "Analiza Audienta TikTok", "description": "Cercetam audienta ta tinta pe TikTok, analizam trendurile relevante si identificam oportunitatile specifice platformei pentru brandul tau." },
-          { "title": "Strategie & Creative Brief", "description": "Construim strategia campaniei si dezvoltam brief-ul creativ adaptat formatului si culturii TikTok, cu referinte la trenduri actuale." },
-          { "title": "Setup Campanie & Launch", "description": "Configuram campaniile in TikTok Ads Manager, setam targetarea si bugetul, si lansam cu monitorizare in timp real." },
-          { "title": "Monitorizare & Optimizare", "description": "Analizam performanta zilnic, testam variante de creative si optimizam pentru CPV si ROAS tot mai bune." }
+          {
+            "title": "Analiza Audienta TikTok",
+            "description": "Cercetam audienta ta tinta pe TikTok, analizam trendurile relevante si identificam oportunitatile specifice platformei pentru brandul tau."
+          },
+          {
+            "title": "Strategie & Creative Brief",
+            "description": "Construim strategia campaniei si dezvoltam brief-ul creativ adaptat formatului si culturii TikTok, cu referinte la trenduri actuale."
+          },
+          {
+            "title": "Setup Campanie & Launch",
+            "description": "Configuram campaniile in TikTok Ads Manager, setam targetarea si bugetul, si lansam cu monitorizare in timp real."
+          },
+          {
+            "title": "Monitorizare & Optimizare",
+            "description": "Analizam performanta zilnic, testam variante de creative si optimizam pentru CPV si ROAS tot mai bune."
+          }
         ]
       },
       "stats": {
         "overline": "REZULTATE",
         "heading": "Performanta Campaniilor TikTok Ads",
         "items": [
-          { "value": "500", "suffix": "K+", "label": "Views Lunare" },
-          { "value": "100", "suffix": "K+", "label": "Interactiuni" },
-          { "value": "50", "suffix": "+", "label": "Campanii TikTok" },
-          { "value": "8", "suffix": "x", "label": "ROAS Mediu" }
+          {
+            "value": "500",
+            "suffix": "K+",
+            "label": "Views Lunare"
+          },
+          {
+            "value": "100",
+            "suffix": "K+",
+            "label": "Interactiuni"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Campanii TikTok"
+          },
+          {
+            "value": "8",
+            "suffix": "x",
+            "label": "ROAS Mediu"
+          }
         ]
       },
       "faq": {
         "overline": "INTREBARI FRECVENTE",
         "heading": "Intrebari despre Publicitatea TikTok Ads",
         "items": [
-          { "question": "Cat costa publicitatea pe TikTok?", "answer": "Bugetul minim recomandat pentru TikTok Ads este de 300 EUR/luna, plus taxa de management. TikTok are costuri per view mai mici decat alte platforme, cu CPM-uri incepand de la 2-5 EUR. Costul final depinde de obiective, audienta si tipul de campanie ales." },
-          { "question": "Ce tip de continut functioneaza pe TikTok?", "answer": "Continutul autentic si nativ performeaza cel mai bine. Video-urile verticale de 15-60 secunde, cu hook puternic in primele 3 secunde, trend sounds si storytelling natural genereaza cele mai bune rezultate. Evitam reclamele clasice — pe TikTok, continutul trebuie sa se simta organic." },
-          { "question": "TikTok Ads e potrivit pentru afacerea mea?", "answer": "TikTok este ideal daca publicul tau tinta are 18-45 ani. Functioneaza excelent pentru e-commerce, beauty, food, fitness, fashion si entertainment. Insa chiar si brandurile B2B gasesc succes pe TikTok prin content educativ si thought leadership creativ." },
-          { "question": "Ce formate de reclame TikTok sunt disponibile?", "answer": "Principalele formate sunt: In-Feed Ads (reclame in feed), TopView (full-screen la deschidere), Spark Ads (amplificarea posturilor organice), Brand Effects (filtre AR) si TikTok Shopping (comert integrat). Fiecare format are avantaje specifice in functie de obiectivul campaniei." },
-          { "question": "Cat dureaza pana vad rezultate pe TikTok?", "answer": "Rezultatele initiale apar in primele 1-2 saptamani. Optimizarea completa necesita 3-4 saptamani pe masura ce algoritmul TikTok invata si noi identificam combinatiile de creative si audienta care performeaza cel mai bine." },
-          { "question": "TikTok Ads vs Instagram Reels — care e mai bun?", "answer": "TikTok exceleaza la reach organic si engagement cu audienta tanara (18-30 ani), in timp ce Instagram Reels beneficiaza de ecosistemul Meta si targetarea avansata. Recomandam o strategie multi-platform care include ambele, alaturi de campanii Google Ads pentru acoperire completa." }
+          {
+            "question": "Cat costa publicitatea pe TikTok?",
+            "answer": "Bugetul minim recomandat pentru TikTok Ads este de 300 EUR/luna, plus taxa de management. TikTok are costuri per view mai mici decat alte platforme, cu CPM-uri incepand de la 2-5 EUR. Costul final depinde de obiective, audienta si tipul de campanie ales."
+          },
+          {
+            "question": "Ce tip de continut functioneaza pe TikTok?",
+            "answer": "Continutul autentic si nativ performeaza cel mai bine. Video-urile verticale de 15-60 secunde, cu hook puternic in primele 3 secunde, trend sounds si storytelling natural genereaza cele mai bune rezultate. Evitam reclamele clasice — pe TikTok, continutul trebuie sa se simta organic."
+          },
+          {
+            "question": "TikTok Ads e potrivit pentru afacerea mea?",
+            "answer": "TikTok este ideal daca publicul tau tinta are 18-45 ani. Functioneaza excelent pentru e-commerce, beauty, food, fitness, fashion si entertainment. Insa chiar si brandurile B2B gasesc succes pe TikTok prin content educativ si thought leadership creativ."
+          },
+          {
+            "question": "Ce formate de reclame TikTok sunt disponibile?",
+            "answer": "Principalele formate sunt: In-Feed Ads (reclame in feed), TopView (full-screen la deschidere), Spark Ads (amplificarea posturilor organice), Brand Effects (filtre AR) si TikTok Shopping (comert integrat). Fiecare format are avantaje specifice in functie de obiectivul campaniei."
+          },
+          {
+            "question": "Cat dureaza pana vad rezultate pe TikTok?",
+            "answer": "Rezultatele initiale apar in primele 1-2 saptamani. Optimizarea completa necesita 3-4 saptamani pe masura ce algoritmul TikTok invata si noi identificam combinatiile de creative si audienta care performeaza cel mai bine."
+          },
+          {
+            "question": "TikTok Ads vs Instagram Reels — care e mai bun?",
+            "answer": "TikTok exceleaza la reach organic si engagement cu audienta tanara (18-30 ani), in timp ce Instagram Reels beneficiaza de ecosistemul Meta si targetarea avansata. Recomandam o strategie multi-platform care include ambele, alaturi de campanii Google Ads pentru acoperire completa."
+          }
         ]
       },
       "cta": {
-        "heading": "Devino Viral pe TikTok cu AceAgency",
+        "heading": "Devino Viral pe TikTok cu Laboratorul de Conversii",
         "description": "Programeaza o consultatie gratuita si descopera cum publicitatea TikTok poate genera vizibilitate si vanzari pentru afacerea ta.",
         "primary": "Solicita o Oferta",
         "secondary": "Programeaza un Call"
@@ -389,16 +740,16 @@
     },
     "seo": {
       "heroTransition": {
-        "label": "OPTIMIZARE SEO",
+        "label": "CRESTERE ORGANICA",
         "heading": "Vizibilitate organica care aduce trafic calificat",
         "description": "SEO nu inseamna doar pozitii in Google — inseamna trafic calificat, autoritate de domeniu si crestere organica pe termen lung. Construim strategii SEO complete care transforma cautarile in clienti."
       },
       "meta": {
-        "title": "Servicii SEO Romania | Optimizare SEO Profesionala - AceAgency",
+        "title": "Crestere Organica SEO Romania | Optimizare SEO Profesionala - Laboratorul de Conversii",
         "description": "Servicii SEO profesionale pentru pozitionare organica in Google. Audit SEO complet, optimizare tehnica si de continut. Solicita audit SEO gratuit!"
       },
       "hero": {
-        "overline": "OPTIMIZARE SEO",
+        "overline": "CRESTERE ORGANICA",
         "headline": "Servicii SEO Romania — Optimizare Profesionala pentru Pozitionare in Top Google",
         "description": "Oferim servicii SEO complete care cresc vizibilitatea organica a site-ului tau in Google, aduc trafic calificat pe termen lung si transforma vizitatorii in clienti. De la audit SEO tehnic la strategii de continut si link building."
       },
@@ -406,46 +757,116 @@
         "overline": "SERVICII SEO",
         "heading": "Solutii Complete de Optimizare SEO pentru Afacerea Ta",
         "items": [
-          { "title": "SEO Tehnic", "description": "Optimizam viteza site-ului, Core Web Vitals (LCP, INP, CLS), structura URL-urilor, sitemap XML, robots.txt si indexarea corecta in Google Search Console." },
-          { "title": "SEO On-Page", "description": "Optimizam continutul paginilor, titlurile si meta descrierile, ierarhia heading-urilor (H1-H6), imaginile cu alt text, linkurile interne si schema markup JSON-LD." },
-          { "title": "SEO Off-Page", "description": "Construim backlink-uri de calitate prin strategii de link building etice: guest posting, digital PR, parteneriate si mentiuni in publicatii relevante din industrie." },
-          { "title": "SEO Local", "description": "Optimizam Google Business Profile, gestionam recenziile, construim citatii NAP consistente si pozitionam afacerea ta in rezultatele locale din Google Maps." },
-          { "title": "Audit SEO Complet", "description": "Analizam in profunzime site-ul tau: performanta tehnica, structura continutului, profilul de backlink-uri, competitia si oportunitatile de cuvinte cheie neexploatate." },
-          { "title": "Content SEO", "description": "Dezvoltam o strategie de continut SEO cu articole optimizate pe cuvinte cheie, cluster topics si pillar pages care construiesc autoritate tematica in industria ta." }
+          {
+            "title": "SEO Tehnic",
+            "description": "Optimizam viteza site-ului, Core Web Vitals (LCP, INP, CLS), structura URL-urilor, sitemap XML, robots.txt si indexarea corecta in Google Search Console."
+          },
+          {
+            "title": "SEO On-Page",
+            "description": "Optimizam continutul paginilor, titlurile si meta descrierile, ierarhia heading-urilor (H1-H6), imaginile cu alt text, linkurile interne si schema markup JSON-LD."
+          },
+          {
+            "title": "SEO Off-Page",
+            "description": "Construim backlink-uri de calitate prin strategii de link building etice: guest posting, digital PR, parteneriate si mentiuni in publicatii relevante din industrie."
+          },
+          {
+            "title": "SEO Local",
+            "description": "Optimizam Google Business Profile, gestionam recenziile, construim citatii NAP consistente si pozitionam afacerea ta in rezultatele locale din Google Maps."
+          },
+          {
+            "title": "Audit SEO Complet",
+            "description": "Analizam in profunzime site-ul tau: performanta tehnica, structura continutului, profilul de backlink-uri, competitia si oportunitatile de cuvinte cheie neexploatate."
+          },
+          {
+            "title": "Content SEO",
+            "description": "Dezvoltam o strategie de continut SEO cu articole optimizate pe cuvinte cheie, cluster topics si pillar pages care construiesc autoritate tematica in industria ta."
+          }
         ]
       },
       "process": {
         "overline": "PROCESUL NOSTRU",
         "heading": "Cum Optimizam Site-ul Tau pentru Google",
         "steps": [
-          { "title": "Audit SEO Complet", "description": "Auditam complet site-ul: performanta tehnica, continut, backlink-uri si competitie. Identificam problemele critice si oportunitatile de cuvinte cheie cu cel mai mare potential." },
-          { "title": "Strategia de Cuvinte Cheie", "description": "Cercetam si selectam cuvintele cheie cu cel mai bun raport volum/competitie. Construim o harta de cuvinte cheie aliniata cu paginile site-ului si intentia de cautare." },
-          { "title": "Optimizare On-Page & Tehnica", "description": "Implementam optimizarile tehnice (viteza, Core Web Vitals, structura) si on-page (titluri, meta, heading-uri, continut, linkuri interne, schema markup)." },
-          { "title": "Link Building & Autoritate", "description": "Construim backlink-uri de calitate prin strategii etice de link building care cresc autoritatea domeniului si imbunatatesc pozitiile in Google." },
-          { "title": "Monitorizare & Raportare", "description": "Urmarim pozitiile, traficul organic, conversiile si Core Web Vitals. Rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare continua." }
+          {
+            "title": "Audit SEO Complet",
+            "description": "Auditam complet site-ul: performanta tehnica, continut, backlink-uri si competitie. Identificam problemele critice si oportunitatile de cuvinte cheie cu cel mai mare potential."
+          },
+          {
+            "title": "Strategia de Cuvinte Cheie",
+            "description": "Cercetam si selectam cuvintele cheie cu cel mai bun raport volum/competitie. Construim o harta de cuvinte cheie aliniata cu paginile site-ului si intentia de cautare."
+          },
+          {
+            "title": "Optimizare On-Page & Tehnica",
+            "description": "Implementam optimizarile tehnice (viteza, Core Web Vitals, structura) si on-page (titluri, meta, heading-uri, continut, linkuri interne, schema markup)."
+          },
+          {
+            "title": "Link Building & Autoritate",
+            "description": "Construim backlink-uri de calitate prin strategii etice de link building care cresc autoritatea domeniului si imbunatatesc pozitiile in Google."
+          },
+          {
+            "title": "Monitorizare & Raportare",
+            "description": "Urmarim pozitiile, traficul organic, conversiile si Core Web Vitals. Rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare continua."
+          }
         ]
       },
       "stats": {
         "overline": "REZULTATE",
         "heading": "Performanta Serviciilor Noastre SEO",
         "items": [
-          { "value": "300", "suffix": "%+", "label": "Crestere Trafic Organic" },
-          { "value": "500", "suffix": "+", "label": "Cuvinte Cheie in Top 10" },
-          { "value": "100", "suffix": "+", "label": "Proiecte SEO" },
-          { "value": "95", "suffix": "%", "label": "Rata de Retentie" }
+          {
+            "value": "300",
+            "suffix": "%+",
+            "label": "Crestere Trafic Organic"
+          },
+          {
+            "value": "500",
+            "suffix": "+",
+            "label": "Cuvinte Cheie in Top 10"
+          },
+          {
+            "value": "100",
+            "suffix": "+",
+            "label": "Proiecte SEO"
+          },
+          {
+            "value": "95",
+            "suffix": "%",
+            "label": "Rata de Retentie"
+          }
         ]
       },
       "faq": {
         "overline": "INTREBARI FRECVENTE",
         "heading": "Intrebari despre Serviciile de Optimizare SEO",
         "items": [
-          { "question": "Cat costa serviciile de SEO?", "answer": "Preturile pentru servicii SEO incep de la 500 EUR/luna pentru pachete de baza care includ optimizare on-page si monitorizare. Pachetele complete cu audit tehnic, strategie de continut si link building pornesc de la 1.000 EUR/luna. Costul exact depinde de competitivitatea industriei, dimensiunea site-ului si obiectivele tale. Contacteaza-ne pentru o evaluare gratuita." },
-          { "question": "Cat dureaza sa vezi rezultate SEO?", "answer": "SEO este o investitie pe termen lung. Primele imbunatatiri de pozitii se observa de obicei in 3-4 luni, iar rezultatele semnificative — crestere consistenta de trafic organic si conversii — apar dupa 6-12 luni de optimizare continua. Aceasta variaza in functie de competitivitatea cuvintelor cheie si starea actuala a site-ului." },
-          { "question": "Ce include un audit SEO?", "answer": "Un audit SEO complet include: analiza tehnica (viteza, Core Web Vitals, indexare, mobile-friendliness), audit on-page (titluri, meta, heading-uri, continut, linkuri interne), audit off-page (profilul de backlink-uri, autoritatea domeniului), analiza competitiei si cercetare de cuvinte cheie. Livram un raport detaliat cu probleme prioritizate si plan de actiune." },
-          { "question": "Care este diferenta intre SEO On-Page si Off-Page?", "answer": "SEO On-Page se refera la optimizarile pe care le facem direct pe site-ul tau: continut, titluri, meta descrieri, heading-uri, imagini, linkuri interne si structura URL-urilor. SEO Off-Page se refera la actiunile din afara site-ului care construiesc autoritate: link building, guest posting, digital PR si mentiuni in publicatii relevante. Ambele sunt esentiale pentru pozitionare." },
-          { "question": "Faceti si SEO Local?", "answer": "Da, oferim servicii complete de SEO Local. Optimizam Google Business Profile, gestionam recenziile online, construim citatii NAP (Nume, Adresa, Telefon) consistente in directoare relevante si implementam schema markup LocalBusiness. SEO Local este esential pentru afacerile care servesc clienti intr-o zona geografica specifica — combinat cu campanii Google Ads locale, asiguram vizibilitate completa." },
-          { "question": "Cum masurati rezultatele SEO?", "answer": "Urmarim metrici clare: pozitii pentru cuvinte cheie target, trafic organic (Google Analytics + Search Console), rata de click (CTR), conversii din trafic organic, Core Web Vitals si autoritatea domeniului. Rapoartele lunare includ analiza performantei, comparatii cu lunile anterioare si recomandari de optimizare. Ai acces si la un dashboard in timp real." },
-          { "question": "De ce sa alegeti AceAgency pentru SEO?", "answer": "Combinam expertiza SEO tehnica cu intelegerea afacerilor din Romania. Avem peste 100 de proiecte SEO finalizate cu succes, o rata de retentie de 95% si o echipa dedicata care urmareste constant cele mai noi actualizari de algoritm Google. In plus, integram serviciile SEO cu campaniile Google Ads si Facebook Ads pentru o strategie digitala completa si coerenta." }
+          {
+            "question": "Cat costa serviciile de SEO?",
+            "answer": "Preturile pentru servicii SEO incep de la 500 EUR/luna pentru pachete de baza care includ optimizare on-page si monitorizare. Pachetele complete cu audit tehnic, strategie de continut si link building pornesc de la 1.000 EUR/luna. Costul exact depinde de competitivitatea industriei, dimensiunea site-ului si obiectivele tale. Contacteaza-ne pentru o evaluare gratuita."
+          },
+          {
+            "question": "Cat dureaza sa vezi rezultate SEO?",
+            "answer": "SEO este o investitie pe termen lung. Primele imbunatatiri de pozitii se observa de obicei in 3-4 luni, iar rezultatele semnificative — crestere consistenta de trafic organic si conversii — apar dupa 6-12 luni de optimizare continua. Aceasta variaza in functie de competitivitatea cuvintelor cheie si starea actuala a site-ului."
+          },
+          {
+            "question": "Ce include un audit SEO?",
+            "answer": "Un audit SEO complet include: analiza tehnica (viteza, Core Web Vitals, indexare, mobile-friendliness), audit on-page (titluri, meta, heading-uri, continut, linkuri interne), audit off-page (profilul de backlink-uri, autoritatea domeniului), analiza competitiei si cercetare de cuvinte cheie. Livram un raport detaliat cu probleme prioritizate si plan de actiune."
+          },
+          {
+            "question": "Care este diferenta intre SEO On-Page si Off-Page?",
+            "answer": "SEO On-Page se refera la optimizarile pe care le facem direct pe site-ul tau: continut, titluri, meta descrieri, heading-uri, imagini, linkuri interne si structura URL-urilor. SEO Off-Page se refera la actiunile din afara site-ului care construiesc autoritate: link building, guest posting, digital PR si mentiuni in publicatii relevante. Ambele sunt esentiale pentru pozitionare."
+          },
+          {
+            "question": "Faceti si SEO Local?",
+            "answer": "Da, oferim servicii complete de SEO Local. Optimizam Google Business Profile, gestionam recenziile online, construim citatii NAP (Nume, Adresa, Telefon) consistente in directoare relevante si implementam schema markup LocalBusiness. SEO Local este esential pentru afacerile care servesc clienti intr-o zona geografica specifica — combinat cu campanii Google Ads locale, asiguram vizibilitate completa."
+          },
+          {
+            "question": "Cum masurati rezultatele SEO?",
+            "answer": "Urmarim metrici clare: pozitii pentru cuvinte cheie target, trafic organic (Google Analytics + Search Console), rata de click (CTR), conversii din trafic organic, Core Web Vitals si autoritatea domeniului. Rapoartele lunare includ analiza performantei, comparatii cu lunile anterioare si recomandari de optimizare. Ai acces si la un dashboard in timp real."
+          },
+          {
+            "question": "De ce sa alegeti Laboratorul de Conversii pentru SEO?",
+            "answer": "Combinam expertiza SEO tehnica cu intelegerea afacerilor din Romania. Avem peste 100 de proiecte SEO finalizate cu succes, o rata de retentie de 95% si o echipa dedicata care urmareste constant cele mai noi actualizari de algoritm Google. In plus, integram serviciile SEO cu campaniile Google Ads si Facebook Ads pentru o strategie digitala completa si coerenta."
+          }
         ]
       },
       "cta": {
@@ -457,16 +878,16 @@
     },
     "emailMarketing": {
       "heroTransition": {
-        "label": "EMAIL MARKETING",
+        "label": "CONVERSII PRIN EMAIL",
         "heading": "Comunicare directa care fidelizeaza si converteste",
         "description": "Email marketing-ul ramane canalul cu cel mai mare ROI din marketing digital. Construim campanii personalizate si automatizari care lucreaza non-stop pentru a genera venituri recurente."
       },
       "meta": {
-        "title": "Servicii Email Marketing | Campanii Email - AceAgency",
+        "title": "Conversii prin Email | Sisteme Email Marketing - Laboratorul de Conversii",
         "description": "Campanii email marketing profesionale cu automatizări avansate și segmentare. Newsletter, drip campaigns și raportare detaliată. Solicită ofertă gratuită!"
       },
       "hero": {
-        "overline": "EMAIL MARKETING",
+        "overline": "CONVERSII PRIN EMAIL",
         "headline": "Servicii Email Marketing care Generează Conversii Reale",
         "description": "Construim strategii de email marketing personalizate care fidelizează clienții și generează vânzări repetate. Combinat cu campanii Google Ads și Facebook Ads, email marketing-ul devine cel mai profitabil canal digital."
       },
@@ -474,45 +895,112 @@
         "overline": "SERVICII EMAIL MARKETING",
         "heading": "Soluții Complete de Email Marketing",
         "items": [
-          { "title": "Campanii Email Personalizate", "description": "Creăm campanii email targetate pe segmente specifice, cu conținut relevant care generează deschideri și click-uri peste media industriei." },
-          { "title": "Automatizări Email", "description": "Secvențe automatizate de welcome, nurture, abandoned cart și re-engagement care lucrează non-stop pentru afacerea ta." },
-          { "title": "Newsletter Design & Management", "description": "Template-uri email profesionale, responsive și aliniate cu brandul tău, livrate pe un calendar editorial consistent." },
-          { "title": "Segmentare Audiență", "description": "Segmentăm baza de date pe comportament, demografie și istoricul achizițiilor pentru mesaje ultra-relevante." },
-          { "title": "A/B Testing & Optimizare", "description": "Testăm subject lines, conținut, design și timing pentru a maximiza rata de deschidere și conversiile fiecărei campanii." },
-          { "title": "Raportare & Analytics", "description": "Dashboard-uri detaliate cu metrici de performanță: open rate, CTR, conversii, revenue per email și tendințe în timp." }
+          {
+            "title": "Campanii Email Personalizate",
+            "description": "Creăm campanii email targetate pe segmente specifice, cu conținut relevant care generează deschideri și click-uri peste media industriei."
+          },
+          {
+            "title": "Automatizări Email",
+            "description": "Secvențe automatizate de welcome, nurture, abandoned cart și re-engagement care lucrează non-stop pentru afacerea ta."
+          },
+          {
+            "title": "Newsletter Design & Management",
+            "description": "Template-uri email profesionale, responsive și aliniate cu brandul tău, livrate pe un calendar editorial consistent."
+          },
+          {
+            "title": "Segmentare Audiență",
+            "description": "Segmentăm baza de date pe comportament, demografie și istoricul achizițiilor pentru mesaje ultra-relevante."
+          },
+          {
+            "title": "A/B Testing & Optimizare",
+            "description": "Testăm subject lines, conținut, design și timing pentru a maximiza rata de deschidere și conversiile fiecărei campanii."
+          },
+          {
+            "title": "Raportare & Analytics",
+            "description": "Dashboard-uri detaliate cu metrici de performanță: open rate, CTR, conversii, revenue per email și tendințe în timp."
+          }
         ]
       },
       "process": {
         "overline": "PROCESUL NOSTRU",
         "heading": "Cum Creăm Campanii Email de Succes",
         "steps": [
-          { "title": "Audit & Strategie Email", "description": "Analizăm lista existentă, ratele de deschidere, segmentele și definim o strategie email aliniată cu obiectivele de business și campaniile SEO active." },
-          { "title": "Setup Platformă & Liste", "description": "Configurăm platforma de email marketing, importăm și curățăm listele, setăm segmentele și automatizările de bază." },
-          { "title": "Creare Campanii & Automatizări", "description": "Dezvoltăm template-uri vizuale, scriem copy persuasiv și construim secvențe automatizate care integrează și ofertele din Google Ads." },
-          { "title": "Monitorizare & Optimizare", "description": "Urmărim performanța fiecărei campanii, testăm A/B continuu și optimizăm pentru rate de conversie tot mai bune." }
+          {
+            "title": "Audit & Strategie Email",
+            "description": "Analizăm lista existentă, ratele de deschidere, segmentele și definim o strategie email aliniată cu obiectivele de business și campaniile SEO active."
+          },
+          {
+            "title": "Setup Platformă & Liste",
+            "description": "Configurăm platforma de email marketing, importăm și curățăm listele, setăm segmentele și automatizările de bază."
+          },
+          {
+            "title": "Creare Campanii & Automatizări",
+            "description": "Dezvoltăm template-uri vizuale, scriem copy persuasiv și construim secvențe automatizate care integrează și ofertele din Google Ads."
+          },
+          {
+            "title": "Monitorizare & Optimizare",
+            "description": "Urmărim performanța fiecărei campanii, testăm A/B continuu și optimizăm pentru rate de conversie tot mai bune."
+          }
         ]
       },
       "stats": {
         "overline": "REZULTATE",
         "heading": "Performanța Campaniilor Noastre Email",
         "items": [
-          { "value": "45", "suffix": "%+", "label": "Open Rate Mediu" },
-          { "value": "500", "suffix": "K+", "label": "Emailuri Trimise" },
-          { "value": "30", "suffix": "+", "label": "Automatizări Active" },
-          { "value": "12", "suffix": "x", "label": "ROI Mediu" }
+          {
+            "value": "45",
+            "suffix": "%+",
+            "label": "Open Rate Mediu"
+          },
+          {
+            "value": "500",
+            "suffix": "K+",
+            "label": "Emailuri Trimise"
+          },
+          {
+            "value": "30",
+            "suffix": "+",
+            "label": "Automatizări Active"
+          },
+          {
+            "value": "12",
+            "suffix": "x",
+            "label": "ROI Mediu"
+          }
         ]
       },
       "faq": {
         "overline": "ÎNTREBĂRI FRECVENTE",
         "heading": "Întrebări despre Serviciile de Email Marketing",
         "items": [
-          { "question": "Cât costă serviciile de email marketing?",  "answer": "Prețurile încep de la 300 EUR/lună pentru pachete de bază care includ design, copywriting și trimitere. Pachetele cu automatizări avansate pornesc de la 500 EUR/lună. Contactează-ne pentru o ofertă personalizată." },
-          { "question": "Ce platformă de email marketing folosiți?", "answer": "Lucrăm cu Mailchimp, Resend, SendGrid, ActiveCampaign și alte platforme profesionale. Alegem platforma potrivită în funcție de nevoile, bugetul și integrările necesare pentru afacerea ta." },
-          { "question": "Cât de des ar trebui să trimit emailuri?", "answer": "Recomandăm 1-4 emailuri pe lună pentru newsletter, completate de secvențe automatizate (welcome, nurture, re-engagement). Frecvența optimă depinde de industrie, audiență și tipul de conținut." },
-          { "question": "Cum construiți lista de abonați?", "answer": "Implementăm lead magnets, pop-up-uri inteligente, landing pages dedicate și formulare optimizate. Combinat cu campanii Facebook Ads pentru lead generation, creșterea listei devine accelerată și sustenabilă." },
-          { "question": "Ce rată de deschidere pot aștepta?", "answer": "Media industriei este 20-25%. Clienții noștri obțin constant rate de 35-45% datorită segmentării avansate, subiectelor testate A/B și conținutului personalizat pe interesele fiecărui segment." },
-          { "question": "Faceți și design de newsletter?", "answer": "Da, creăm template-uri email profesionale, responsive și aliniate cu identitatea vizuală a brandului tău. Fiecare template este optimizat pentru toate clienții email majori (Gmail, Outlook, Apple Mail)." },
-          { "question": "Cum ajută automatizările email?", "answer": "Automatizările lucrează 24/7: trimit welcome emails noilor abonați, recuperează coșuri abandonate, re-activează clienții inactivi și nurturează lead-urile până la conversie. Rezultatul: mai multe vânzări cu mai puțin efort manual." }
+          {
+            "question": "Cât costă serviciile de email marketing?",
+            "answer": "Prețurile încep de la 300 EUR/lună pentru pachete de bază care includ design, copywriting și trimitere. Pachetele cu automatizări avansate pornesc de la 500 EUR/lună. Contactează-ne pentru o ofertă personalizată."
+          },
+          {
+            "question": "Ce platformă de email marketing folosiți?",
+            "answer": "Lucrăm cu Mailchimp, Resend, SendGrid, ActiveCampaign și alte platforme profesionale. Alegem platforma potrivită în funcție de nevoile, bugetul și integrările necesare pentru afacerea ta."
+          },
+          {
+            "question": "Cât de des ar trebui să trimit emailuri?",
+            "answer": "Recomandăm 1-4 emailuri pe lună pentru newsletter, completate de secvențe automatizate (welcome, nurture, re-engagement). Frecvența optimă depinde de industrie, audiență și tipul de conținut."
+          },
+          {
+            "question": "Cum construiți lista de abonați?",
+            "answer": "Implementăm lead magnets, pop-up-uri inteligente, landing pages dedicate și formulare optimizate. Combinat cu campanii Facebook Ads pentru lead generation, creșterea listei devine accelerată și sustenabilă."
+          },
+          {
+            "question": "Ce rată de deschidere pot aștepta?",
+            "answer": "Media industriei este 20-25%. Clienții noștri obțin constant rate de 35-45% datorită segmentării avansate, subiectelor testate A/B și conținutului personalizat pe interesele fiecărui segment."
+          },
+          {
+            "question": "Faceți și design de newsletter?",
+            "answer": "Da, creăm template-uri email profesionale, responsive și aliniate cu identitatea vizuală a brandului tău. Fiecare template este optimizat pentru toate clienții email majori (Gmail, Outlook, Apple Mail)."
+          },
+          {
+            "question": "Cum ajută automatizările email?",
+            "answer": "Automatizările lucrează 24/7: trimit welcome emails noilor abonați, recuperează coșuri abandonate, re-activează clienții inactivi și nurturează lead-urile până la conversie. Rezultatul: mai multe vânzări cu mai puțin efort manual."
+          }
         ]
       },
       "cta": {
@@ -524,62 +1012,129 @@
     },
     "consultanta": {
       "heroTransition": {
-        "label": "CONSULTANTA MARKETING",
-        "heading": "Strategie digitala bazata pe date si experienta",
+        "label": "STRATEGIE DE CRESTERE",
+        "heading": "Strategie de crestere bazata pe date si experienta",
         "description": "O strategie buna incepe cu o analiza profunda. Auditem prezenta ta digitala, identificam oportunitatile si construim un plan de actiune personalizat care integreaza toate canalele digitale."
       },
       "meta": {
-        "title": "Consultanță Marketing Digital Romania - AceAgency",
-        "description": "Consultanță marketing digital profesională: audit complet, strategie personalizată și plan de acțiune. Programează o consultație gratuită cu AceAgency!"
+        "title": "Strategie de Crestere Digitala Romania - Laboratorul de Conversii",
+        "description": "Strategie de crestere digitala profesionala: audit complet, strategie personalizata si plan de actiune. Programeaza o consultatie gratuita cu Laboratorul de Conversii!"
       },
       "hero": {
-        "overline": "CONSULTANȚĂ MARKETING",
-        "headline": "Consultanță Marketing Digital pentru Creștere Sustenabilă",
+        "overline": "STRATEGIE DE CRESTERE",
+        "headline": "Strategie de Crestere Digitala pentru Conversii Sustenabile",
         "description": "Analizăm afacerea ta în profunzime și construim o strategie digitală completă care integrează SEO, Google Ads, email marketing și social media pentru rezultate măsurabile pe termen lung."
       },
       "features": {
         "overline": "SERVICII CONSULTANȚĂ",
         "heading": "Ce Include Consultanța Noastră de Marketing",
         "items": [
-          { "title": "Audit Marketing Digital", "description": "Analiză completă a prezenței digitale: site, SEO tehnic, campanii Google Ads, social media și email marketing — totul evaluat cu metrici concrete." },
-          { "title": "Strategie de Marketing", "description": "Plan strategic personalizat cu obiective SMART, canale prioritizate, KPI-uri clare și timeline de implementare." },
-          { "title": "Plan de Marketing Digital", "description": "Roadmap detaliat cu acțiuni prioritizate, buget estimat pe canal, calendar editorial și recomandări de conținut." },
-          { "title": "Analiză Competiție", "description": "Studiu detaliat al competitorilor direcți și indirecți, identificarea gap-urilor de piață și a oportunităților de poziționare." },
-          { "title": "Consultanță Branding & Poziționare", "description": "Definim identitatea de brand, propunerea unică de valoare și strategia de poziționare care te diferențiază pe piață." },
-          { "title": "Training Echipă", "description": "Workshop-uri practice pentru echipa ta pe teme de marketing digital, Google Ads, SEO, social media și email marketing." }
+          {
+            "title": "Audit Marketing Digital",
+            "description": "Analiză completă a prezenței digitale: site, SEO tehnic, campanii Google Ads, social media și email marketing — totul evaluat cu metrici concrete."
+          },
+          {
+            "title": "Strategie de Marketing",
+            "description": "Plan strategic personalizat cu obiective SMART, canale prioritizate, KPI-uri clare și timeline de implementare."
+          },
+          {
+            "title": "Plan de Marketing Digital",
+            "description": "Roadmap detaliat cu acțiuni prioritizate, buget estimat pe canal, calendar editorial și recomandări de conținut."
+          },
+          {
+            "title": "Analiză Competiție",
+            "description": "Studiu detaliat al competitorilor direcți și indirecți, identificarea gap-urilor de piață și a oportunităților de poziționare."
+          },
+          {
+            "title": "Consultanță Branding & Poziționare",
+            "description": "Definim identitatea de brand, propunerea unică de valoare și strategia de poziționare care te diferențiază pe piață."
+          },
+          {
+            "title": "Training Echipă",
+            "description": "Workshop-uri practice pentru echipa ta pe teme de marketing digital, Google Ads, SEO, social media și email marketing."
+          }
         ]
       },
       "process": {
         "overline": "PROCESUL NOSTRU",
         "heading": "Cum Funcționează Consultanța de Marketing",
         "steps": [
-          { "title": "Analiză Situație Curentă", "description": "Discutăm despre afacerea ta, analizăm prezența digitală existentă, campaniile active și identificăm provocările și oportunitățile." },
-          { "title": "Definire Obiective & KPI", "description": "Stabilim împreună obiective SMART, KPI-uri măsurabile și indicatorii de succes pentru fiecare canal digital." },
-          { "title": "Elaborare Strategie & Plan", "description": "Construim strategia digitală completă cu recomandări detaliate pentru SEO, publicitate plătită, email marketing și conținut." },
-          { "title": "Implementare & Monitorizare", "description": "Te asistăm în implementare prin echipele AceWeb, AceAds și AceMedia, și monitorizăm rezultatele pentru ajustări continue." }
+          {
+            "title": "Analiză Situație Curentă",
+            "description": "Discutăm despre afacerea ta, analizăm prezența digitală existentă, campaniile active și identificăm provocările și oportunitățile."
+          },
+          {
+            "title": "Definire Obiective & KPI",
+            "description": "Stabilim împreună obiective SMART, KPI-uri măsurabile și indicatorii de succes pentru fiecare canal digital."
+          },
+          {
+            "title": "Elaborare Strategie & Plan",
+            "description": "Construim strategia digitală completă cu recomandări detaliate pentru SEO, publicitate plătită, email marketing și conținut."
+          },
+          {
+            "title": "Implementare & Monitorizare",
+            "description": "Te asistam in implementare prin echipele noastre specializate, și monitorizăm rezultatele pentru ajustări continue."
+          }
         ]
       },
       "stats": {
         "overline": "REZULTATE",
         "heading": "Impactul Consultanței Noastre de Marketing",
         "items": [
-          { "value": "100", "suffix": "+", "label": "Strategii Livrate" },
-          { "value": "50", "suffix": "+", "label": "Clienți Consultați" },
-          { "value": "340", "suffix": "%", "label": "ROI Mediu" },
-          { "value": "98", "suffix": "%", "label": "Satisfacție Clienți" }
+          {
+            "value": "100",
+            "suffix": "+",
+            "label": "Strategii Livrate"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Clienți Consultați"
+          },
+          {
+            "value": "340",
+            "suffix": "%",
+            "label": "ROI Mediu"
+          },
+          {
+            "value": "98",
+            "suffix": "%",
+            "label": "Satisfacție Clienți"
+          }
         ]
       },
       "faq": {
         "overline": "ÎNTREBĂRI FRECVENTE",
         "heading": "Întrebări despre Consultanța de Marketing Digital",
         "items": [
-          { "question": "Ce include o sesiune de consultanță marketing?", "answer": "O sesiune include analiza situației curente, discutarea obiectivelor de business, identificarea oportunităților digitale și recomandări acționabile. Prima sesiune de 30 minute este gratuită." },
-          { "question": "Cât costă consultanța de marketing digital?", "answer": "Sesiunile individuale încep de la 200 EUR. Pachetele complete de strategie (audit + plan + implementare) pornesc de la 1.500 EUR. Prețul depinde de complexitatea afacerii și de canalele digitale implicate." },
-          { "question": "Cât durează procesul de consultanță?", "answer": "Un proiect complet de consultanță durează 2-4 săptămâni, de la auditul inițial la livrarea strategiei finale. Consultanța continuă se face pe bază lunară cu sesiuni de follow-up." },
-          { "question": "Pentru cine este potrivită consultanța?", "answer": "Pentru orice afacere care vrea să crească digital: start-up-uri care au nevoie de direcție, afaceri mature care vor să optimizeze, sau companii care vor să intre pe canale noi (Google Ads, TikTok Ads, SEO)." },
-          { "question": "Ce rezultate pot aștepta după consultanță?", "answer": "Clienții noștri văd în medie o creștere de 340% ROI în primul an după implementarea strategiei. Rezultatele concrete depind de industrie, buget și viteza de implementare." },
-          { "question": "Oferiți și implementare, nu doar strategie?", "answer": "Da, AceAgency oferă servicii complete de implementare prin diviziile AceWeb (dezvoltare web), AceAds (Google Ads, Facebook Ads, TikTok Ads) și AceMedia (conținut video și grafic)." },
-          { "question": "Cum încep cu consultanța de marketing?", "answer": "Simplu: programează o consultație gratuită de 30 minute. Discutăm despre afacerea ta, identificăm provocările principale și propunem un plan de acțiune personalizat." }
+          {
+            "question": "Ce include o sesiune de consultanță marketing?",
+            "answer": "O sesiune include analiza situației curente, discutarea obiectivelor de business, identificarea oportunităților digitale și recomandări acționabile. Prima sesiune de 30 minute este gratuită."
+          },
+          {
+            "question": "Cât costă consultanța de marketing digital?",
+            "answer": "Sesiunile individuale încep de la 200 EUR. Pachetele complete de strategie (audit + plan + implementare) pornesc de la 1.500 EUR. Prețul depinde de complexitatea afacerii și de canalele digitale implicate."
+          },
+          {
+            "question": "Cât durează procesul de consultanță?",
+            "answer": "Un proiect complet de consultanță durează 2-4 săptămâni, de la auditul inițial la livrarea strategiei finale. Consultanța continuă se face pe bază lunară cu sesiuni de follow-up."
+          },
+          {
+            "question": "Pentru cine este potrivită consultanța?",
+            "answer": "Pentru orice afacere care vrea să crească digital: start-up-uri care au nevoie de direcție, afaceri mature care vor să optimizeze, sau companii care vor să intre pe canale noi (Google Ads, TikTok Ads, SEO)."
+          },
+          {
+            "question": "Ce rezultate pot aștepta după consultanță?",
+            "answer": "Clienții noștri văd în medie o creștere de 340% ROI în primul an după implementarea strategiei. Rezultatele concrete depind de industrie, buget și viteza de implementare."
+          },
+          {
+            "question": "Oferiți și implementare, nu doar strategie?",
+            "answer": "Da, Laboratorul de Conversii ofera servicii complete de implementare: dezvoltare web, Google Ads, Facebook Ads, TikTok Ads si continut video si grafic."
+          },
+          {
+            "question": "Cum încep cu consultanța de marketing?",
+            "answer": "Simplu: programează o consultație gratuită de 30 minute. Discutăm despre afacerea ta, identificăm provocările principale și propunem un plan de acțiune personalizat."
+          }
         ]
       },
       "cta": {
@@ -592,18 +1147,18 @@
   },
   "home": {
     "meta": {
-      "title": "Agentie Marketing Digital Bucuresti - AceAgency",
-      "description": "AceAgency - agentie de marketing digital din Bucuresti. Servicii Google Ads, Facebook Ads, SEO, Email Marketing. Contacteaza-ne!"
+      "title": "Laborator de Conversii Bucuresti - Laboratorul de Conversii",
+      "description": "Laboratorul de Conversii - laborator de conversii din Bucuresti. Sisteme de conversii Google Ads, Facebook Ads, SEO, Email Marketing. Contacteaza-ne!"
     },
     "heroTransition": {
       "label": "DE CE EXISTAM",
-      "heading": "Transformam viziunea ta in rezultate digitale masurabile",
-      "description": "Suntem o agentie digitala full-service din Bucuresti care combina web development, publicitate platita, inteligenta artificiala si productie media pentru a livra rezultate concrete si crestere sustenabila."
+      "heading": "Transformam viziunea ta in conversii digitale masurabile",
+      "description": "Suntem un laborator de conversii full-service din Bucuresti care combina web development, publicitate platita, inteligenta artificiala si productie media pentru a livra conversii concrete si crestere sustenabila."
     },
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
-      "headline": "Agentie Digitala <accent>Full-Service</accent> din Bucuresti",
-      "subheading": "Transformam viziunea ta in rezultate digitale masurabile. Web. Ads. AI. Media.",
+      "headline": "Laborator de <accent>Conversii</accent> din Bucuresti",
+      "subheading": "Transformam viziunea ta in conversii digitale masurabile. Web. Ads. AI. Media.",
       "cta": {
         "primary": "Descopera Serviciile",
         "secondary": "Contacteaza-ne"
@@ -645,16 +1200,32 @@
       "overline": "REZULTATE",
       "heading": "Performanta Dovedita",
       "items": {
-        "0": { "value": "150", "suffix": "+", "label": "Proiecte Livrate" },
-        "1": { "value": "50", "suffix": "+", "label": "Clienti Multumiti" },
-        "2": { "value": "98", "suffix": "%", "label": "Rata de Retentie" },
-        "3": { "value": "5", "suffix": "ani", "label": "Experienta" }
+        "0": {
+          "value": "150",
+          "suffix": "+",
+          "label": "Proiecte Livrate"
+        },
+        "1": {
+          "value": "50",
+          "suffix": "+",
+          "label": "Clienti Multumiti"
+        },
+        "2": {
+          "value": "98",
+          "suffix": "%",
+          "label": "Rata de Retentie"
+        },
+        "3": {
+          "value": "5",
+          "suffix": "ani",
+          "label": "Experienta"
+        }
       }
     },
     "about": {
       "overline": "DESPRE NOI",
       "heading": "Disciplina. Viziune. <accent>Rezultate.</accent>",
-      "description": "Suntem o echipa de profesionisti care crede ca fiecare brand merita o prezenta digitala de exceptie. De la strategie la executie, de la idee la rezultat.",
+      "description": "Suntem o echipa de profesionisti care crede ca fiecare brand merita conversii masurabile de exceptie. De la strategie la executie, de la idee la conversie.",
       "cta": "Afla mai multe"
     },
     "testimonials": {
@@ -662,7 +1233,7 @@
       "heading": "Ce Spun Clientii Nostri",
       "items": {
         "0": {
-          "quote": "AceAgency a transformat complet prezenta noastra online. Rezultatele au depasit asteptarile.",
+          "quote": "Laboratorul de Conversii a transformat complet prezenta noastra online. Rezultatele au depasit asteptarile.",
           "author": "Maria Popescu",
           "company": "TechStart SRL",
           "rating": "5"
@@ -674,7 +1245,7 @@
           "rating": "5"
         },
         "2": {
-          "quote": "Echipa AceAgency intelege nevoile de business si livreaza solutii care functioneaza.",
+          "quote": "Echipa Laboratorului de Conversii intelege nevoile de business si livreaza solutii care functioneaza.",
           "author": "Elena Dumitrescu",
           "company": "StartUp Hub",
           "rating": "5"
@@ -686,7 +1257,7 @@
           "rating": "5"
         },
         "4": {
-          "quote": "Site-ul creat de AceAgency este cel mai bun investiment digital pe care l-am facut.",
+          "quote": "Site-ul creat de Laboratorul de Conversii este cel mai bun investiment digital pe care l-am facut.",
           "author": "Ioana Marinescu",
           "company": "Beauty Brand",
           "rating": "5"
@@ -700,8 +1271,8 @@
       }
     },
     "cta": {
-      "heading": "Gata sa Cresti Digital?",
-      "description": "Hai sa discutam despre cum putem transforma afacerea ta intr-un succes digital.",
+      "heading": "Gata pentru Conversii Masurabile?",
+      "description": "Hai sa discutam despre cum putem transforma afacerea ta intr-un sistem de conversii digital.",
       "primary": "Programeaza o Consultatie",
       "secondary": "Vezi Portofoliul"
     },
@@ -721,8 +1292,8 @@
       "contact": "Contact"
     },
     "meta": {
-      "title": "Contact | AceAgency - Agentie Digitala Bucuresti",
-      "description": "Contacteaza AceAgency pentru servicii de marketing digital. Formular contact, programare consultatie, adresa si telefon. Raspundem in 24 de ore."
+      "title": "Contact | Laboratorul de Conversii - Laborator Digital Bucuresti",
+      "description": "Contacteaza Laboratorul de Conversii pentru sisteme de conversii digitale. Formular contact, programare consultatie, adresa si telefon. Raspundem in 24 de ore."
     },
     "hero": {
       "overline": "CONTACT",
@@ -810,11 +1381,26 @@
       "overline": "INTREBARI FRECVENTE",
       "heading": "Raspunsuri Rapide",
       "items": [
-        { "question": "Cat dureaza un proiect web?", "answer": "Durata variaza in functie de complexitate. Un site corporate standard dureaza 4-6 saptamani, un proiect complex 8-12 saptamani." },
-        { "question": "Care sunt costurile serviciilor?", "answer": "Fiecare proiect este unic. Oferim consultatie gratuita pentru a evalua nevoile si a propune un buget personalizat." },
-        { "question": "Oferiti suport dupa lansare?", "answer": "Da, oferim pachete de mentenanta si suport post-lansare. Suntem alaturi de clientii nostri pe termen lung." },
-        { "question": "Cum masurati rezultatele?", "answer": "Folosim Google Analytics, Google Ads, Facebook Ads Manager si alte platforme pentru rapoarte lunare detaliate cu KPI-uri clare." },
-        { "question": "Lucrati cu companii mici?", "answer": "Absolut! Lucram cu afaceri de toate dimensiunile, de la startup-uri la companii mari. Solutiile noastre sunt scalabile." }
+        {
+          "question": "Cat dureaza un proiect web?",
+          "answer": "Durata variaza in functie de complexitate. Un site corporate standard dureaza 4-6 saptamani, un proiect complex 8-12 saptamani."
+        },
+        {
+          "question": "Care sunt costurile serviciilor?",
+          "answer": "Fiecare proiect este unic. Oferim consultatie gratuita pentru a evalua nevoile si a propune un buget personalizat."
+        },
+        {
+          "question": "Oferiti suport dupa lansare?",
+          "answer": "Da, oferim pachete de mentenanta si suport post-lansare. Suntem alaturi de clientii nostri pe termen lung."
+        },
+        {
+          "question": "Cum masurati rezultatele?",
+          "answer": "Folosim Google Analytics, Google Ads, Facebook Ads Manager si alte platforme pentru rapoarte lunare detaliate cu KPI-uri clare."
+        },
+        {
+          "question": "Lucrati cu companii mici?",
+          "answer": "Absolut! Lucram cu afaceri de toate dimensiunile, de la startup-uri la companii mari. Solutiile noastre sunt scalabile."
+        }
       ]
     },
     "newsletter": {
@@ -833,8 +1419,8 @@
   },
   "faq": {
     "meta": {
-      "title": "Intrebari Frecvente - AceAgency",
-      "description": "Gaseste raspunsuri la cele mai frecvente intrebari despre serviciile AceAgency. Afla despre proces, preturi si colaborare."
+      "title": "Intrebari Frecvente - Laboratorul de Conversii",
+      "description": "Gaseste raspunsuri la cele mai frecvente intrebari despre sistemele de conversii Laboratorul de Conversii. Afla despre proces, preturi si colaborare."
     },
     "breadcrumb": {
       "home": "Acasa",
@@ -843,15 +1429,15 @@
     "hero": {
       "overline": "FAQ",
       "heading": "Intrebari Frecvente",
-      "description": "Raspunsuri la cele mai importante intrebari despre serviciile noastre de marketing digital, procesul de colaborare si echipa AceAgency."
+      "description": "Raspunsuri la cele mai importante intrebari despre sistemele noastre de conversii digitale, procesul de colaborare si echipa Laboratorul de Conversii."
     },
     "categories": [
       {
-        "name": "Despre AceAgency",
+        "name": "Despre Laboratorul de Conversii",
         "items": [
           {
-            "question": "Ce este AceAgency?",
-            "answer": "AceAgency este o agentie de marketing digital cu sediul in Bucuresti, Romania. Oferim servicii complete de promovare online prin cele patru divizii ale noastre: AceWeb (dezvoltare web), AceAds (publicitate platita), AceAI (inteligenta artificiala in marketing) si AceMedia (continut media). Echipa noastra combina expertiza tehnica cu creativitatea pentru a livra rezultate masurabile."
+            "question": "Ce este Laboratorul de Conversii?",
+            "answer": "Laboratorul de Conversii este un laborator de conversii cu sediul in Bucuresti, Romania. Oferim sisteme complete de conversii online: dezvoltare web, publicitate platita, inteligenta artificiala in marketing si continut media. Echipa noastra combina expertiza tehnica cu creativitatea pentru a livra conversii masurabile."
           },
           {
             "question": "Ce servicii oferiti?",
@@ -862,7 +1448,7 @@
             "answer": "Sediul nostru este in Bucuresti, pe Bulevardul Aviatorilor 106, dar lucram cu clienti din toata Romania si din strainatate. Majoritatea colaborarilor se desfasoara online, ceea ce ne permite sa oferim aceeasi calitate a serviciilor indiferent de locatia clientului. Programam intalniri fizice sau video in functie de preferintele dumneavoastra."
           },
           {
-            "question": "Care este experienta echipei AceAgency?",
+            "question": "Care este experienta echipei Laboratorul de Conversii?",
             "answer": "Echipa noastra este formata din specialisti cu experienta in marketing digital, publicitate platita, SEO, dezvoltare web si strategie de continut. Fiecare membru al echipei este certificat in platformele cu care lucreaza (Google Ads, Meta, TikTok) si participa constant la programe de formare pentru a ramane la curent cu cele mai noi tendinte din industrie."
           }
         ]
@@ -871,7 +1457,7 @@
         "name": "Proces si Colaborare",
         "items": [
           {
-            "question": "Cum incepe o colaborare cu AceAgency?",
+            "question": "Cum incepe o colaborare cu Laboratorul de Conversii?",
             "answer": "Procesul incepe cu o consultatie gratuita in care analizam nevoile si obiectivele afacerii dumneavoastra. Completati formularul de contact sau programati o intalnire online, iar echipa noastra va reveni cu o propunere personalizata in maxim 48 de ore. Dupa acceptarea propunerii, stabilim strategia, KPI-urile si incepem implementarea."
           },
           {
@@ -892,7 +1478,7 @@
         "name": "Preturi si Contracte",
         "items": [
           {
-            "question": "Cat costa serviciile AceAgency?",
+            "question": "Cat costa sistemele de conversii Laboratorul de Conversii?",
             "answer": "Preturile variaza in functie de serviciu, complexitate si bugetul de publicitate. Oferim pachete personalizate pentru fiecare client, pornind de la nevoile si obiectivele specifice ale afacerii. Contactati-ne pentru o oferta gratuita si fara obligatii — echipa noastra va pregati o propunere adaptata bugetului dumneavoastra."
           },
           {
@@ -930,8 +1516,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Politica de Confidentialitate - AceAgency",
-      "description": "Politica de confidentialitate AceAgency. Afla cum colectam, folosim si protejam datele tale personale conform GDPR."
+      "title": "Politica de Confidentialitate - Laboratorul de Conversii",
+      "description": "Politica de confidentialitate Laboratorul de Conversii. Afla cum colectam, folosim si protejam datele tale personale conform GDPR."
     },
     "breadcrumb": {
       "home": "Acasa",
@@ -944,7 +1530,7 @@
     "sections": [
       {
         "heading": "1. Introducere",
-        "content": "AceAgency, cu sediul in Bulevardul Aviatorilor 106, Bucuresti, Romania, se angajeaza sa protejeze confidentialitatea datelor dumneavoastra personale. Aceasta politica descrie modul in care colectam, utilizam, stocam si protejam informatiile dumneavoastra personale.\n\nAceasta politica se aplica tuturor vizitatorilor site-ului aceagency.ro si tuturor persoanelor care interactioneaza cu serviciile noastre. Va rugam sa cititi cu atentie acest document pentru a intelege practicile noastre privind datele personale."
+        "content": "Laboratorul de Conversii, cu sediul in Bulevardul Aviatorilor 106, Bucuresti, Romania, se angajeaza sa protejeze confidentialitatea datelor dumneavoastra personale. Aceasta politica descrie modul in care colectam, utilizam, stocam si protejam informatiile dumneavoastra personale.\n\nAceasta politica se aplica tuturor vizitatorilor site-ului aceagency.ro si tuturor persoanelor care interactioneaza cu serviciile noastre. Va rugam sa cititi cu atentie acest document pentru a intelege practicile noastre privind datele personale."
       },
       {
         "heading": "2. Date Personale Colectate",
@@ -984,14 +1570,14 @@
       },
       {
         "heading": "11. Contact",
-        "content": "Pentru orice intrebari sau solicitari legate de protectia datelor personale, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757\n\nDe asemenea, aveti dreptul de a depune o plangere la Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP) — www.dataprotection.ro."
+        "content": "Pentru orice intrebari sau solicitari legate de protectia datelor personale, ne puteti contacta la:\n\nLaboratorul de Conversii\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757\n\nDe asemenea, aveti dreptul de a depune o plangere la Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP) — www.dataprotection.ro."
       }
     ]
   },
   "cookies": {
     "meta": {
-      "title": "Politica de Cookies - AceAgency",
-      "description": "Politica de cookies AceAgency. Afla ce cookies folosim, de ce si cum le poti gestiona. Conform GDPR si Directiva ePrivacy."
+      "title": "Politica de Cookies - Laboratorul de Conversii",
+      "description": "Politica de cookies Laboratorul de Conversii. Afla ce cookies folosim, de ce si cum le poti gestiona. Conform GDPR si Directiva ePrivacy."
     },
     "breadcrumb": {
       "home": "Acasa",
@@ -1028,14 +1614,14 @@
       },
       {
         "heading": "7. Contact",
-        "content": "Pentru intrebari legate de utilizarea cookies pe site-ul nostru, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
+        "content": "Pentru intrebari legate de utilizarea cookies pe site-ul nostru, ne puteti contacta la:\n\nLaboratorul de Conversii\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
       }
     ]
   },
   "terms": {
     "meta": {
-      "title": "Termeni si Conditii - AceAgency",
-      "description": "Termenii si conditiile de utilizare a site-ului AceAgency. Informatii despre servicii, drepturi, obligatii si protectia datelor."
+      "title": "Termeni si Conditii - Laboratorul de Conversii",
+      "description": "Termenii si conditiile de utilizare a site-ului Laboratorul de Conversii. Informatii despre servicii, drepturi, obligatii si protectia datelor."
     },
     "breadcrumb": {
       "home": "Acasa",
@@ -1048,23 +1634,23 @@
     "sections": [
       {
         "heading": "1. Acceptarea Termenilor",
-        "content": "Prin accesarea si utilizarea site-ului aceagency.ro, operati de AceAgency cu sediul in Bulevardul Aviatorilor 106, Bucuresti, Romania, acceptati in totalitate acesti termeni si conditii de utilizare.\n\nDaca nu sunteti de acord cu oricare dintre acesti termeni, va rugam sa nu utilizati site-ul nostru. Continuarea navigarii pe site echivaleaza cu acceptarea implicita a termenilor prezentati."
+        "content": "Prin accesarea si utilizarea site-ului aceagency.ro, operati de Laboratorul de Conversii cu sediul in Bulevardul Aviatorilor 106, Bucuresti, Romania, acceptati in totalitate acesti termeni si conditii de utilizare.\n\nDaca nu sunteti de acord cu oricare dintre acesti termeni, va rugam sa nu utilizati site-ul nostru. Continuarea navigarii pe site echivaleaza cu acceptarea implicita a termenilor prezentati."
       },
       {
         "heading": "2. Descrierea Serviciilor",
-        "content": "AceAgency ofera servicii de marketing digital prin cele patru divizii ale sale:\n\nAceWeb: dezvoltare web, design si mentenanta site-uri.\nAceAds: publicitate platita pe Google Ads, Facebook Ads, Instagram Ads si TikTok Ads.\nAceAI: solutii de inteligenta artificiala pentru marketing.\nAceMedia: productie de continut video, foto si grafic.\n\nInformatiile prezentate pe site au caracter informativ si nu constituie o oferta ferma. Termenii specifici fiecarui serviciu sunt stabiliti prin contract individual."
+        "content": "Laboratorul de Conversii ofera sisteme de conversii digitale prin expertiza sa completa:\n\nDezvoltare web, design si mentenanta site-uri.\nPublicitate platita pe Google Ads, Facebook Ads, Instagram Ads si TikTok Ads.\nSolutii de inteligenta artificiala pentru marketing.\nProductie de continut video, foto si grafic.\n\nInformatiile prezentate pe site au caracter informativ si nu constituie o oferta ferma. Termenii specifici fiecarui serviciu sunt stabiliti prin contract individual."
       },
       {
         "heading": "3. Proprietate Intelectuala",
-        "content": "Intregul continut al site-ului aceagency.ro — inclusiv texte, imagini, elemente grafice, logo-uri, iconuri, fonturi, cod sursa si designul general — este protejat de legislatia privind drepturile de autor si proprietatea intelectuala.\n\nAceAgency detine sau are licenta pentru toate materialele publicate pe site. Reproducerea, distribuirea, modificarea sau utilizarea in scopuri comerciale a oricarui continut de pe site fara acordul prealabil scris al AceAgency este interzisa."
+        "content": "Intregul continut al site-ului aceagency.ro — inclusiv texte, imagini, elemente grafice, logo-uri, iconuri, fonturi, cod sursa si designul general — este protejat de legislatia privind drepturile de autor si proprietatea intelectuala.\n\nLaboratorul de Conversii detine sau are licenta pentru toate materialele publicate pe site. Reproducerea, distribuirea, modificarea sau utilizarea in scopuri comerciale a oricarui continut de pe site fara acordul prealabil scris al Laboratorul de Conversii este interzisa."
       },
       {
         "heading": "4. Limitarea Raspunderii",
-        "content": "AceAgency depune eforturi rezonabile pentru a mentine informatiile de pe site corecte si actualizate, insa nu garanteaza exactitatea, completitudinea sau actualitatea acestora.\n\nSite-ul este furnizat \"asa cum este\" (as is). AceAgency nu este responsabila pentru:\n\nPierderile directe sau indirecte rezultate din utilizarea sau imposibilitatea de a utiliza site-ul.\n\nErori tehnice, intreruperi ale serviciului sau probleme de securitate cauzate de terti.\n\nContinutul site-urilor terte catre care exista link-uri pe site-ul nostru."
+        "content": "Laboratorul de Conversii depune eforturi rezonabile pentru a mentine informatiile de pe site corecte si actualizate, insa nu garanteaza exactitatea, completitudinea sau actualitatea acestora.\n\nSite-ul este furnizat \"asa cum este\" (as is). Laboratorul de Conversii nu este responsabila pentru:\n\nPierderile directe sau indirecte rezultate din utilizarea sau imposibilitatea de a utiliza site-ul.\n\nErori tehnice, intreruperi ale serviciului sau probleme de securitate cauzate de terti.\n\nContinutul site-urilor terte catre care exista link-uri pe site-ul nostru."
       },
       {
         "heading": "5. Obligatiile Utilizatorilor",
-        "content": "Prin utilizarea site-ului, va angajati sa:\n\nNu utilizati site-ul in scopuri ilegale sau frauduloase.\n\nNu incercati sa obtineti acces neautorizat la sistemele noastre.\n\nNu transmiteti continut malitios (virusi, malware, spam).\n\nFurnizati informatii corecte si complete atunci cand completati formularele de pe site.\n\nRespectati drepturile de proprietate intelectuala ale AceAgency."
+        "content": "Prin utilizarea site-ului, va angajati sa:\n\nNu utilizati site-ul in scopuri ilegale sau frauduloase.\n\nNu incercati sa obtineti acces neautorizat la sistemele noastre.\n\nNu transmiteti continut malitios (virusi, malware, spam).\n\nFurnizati informatii corecte si complete atunci cand completati formularele de pe site.\n\nRespectati drepturile de proprietate intelectuala ale Laboratorul de Conversii."
       },
       {
         "heading": "6. Protectia Datelor Personale",
@@ -1076,7 +1662,7 @@
       },
       {
         "heading": "8. Modificarea Termenilor",
-        "content": "AceAgency isi rezerva dreptul de a modifica acesti termeni si conditii in orice moment. Modificarile intra in vigoare la data publicarii pe aceasta pagina.\n\nVa recomandam sa verificati periodic aceasta pagina. Utilizarea continua a site-ului dupa publicarea modificarilor constituie acceptarea noilor termeni."
+        "content": "Laboratorul de Conversii isi rezerva dreptul de a modifica acesti termeni si conditii in orice moment. Modificarile intra in vigoare la data publicarii pe aceasta pagina.\n\nVa recomandam sa verificati periodic aceasta pagina. Utilizarea continua a site-ului dupa publicarea modificarilor constituie acceptarea noilor termeni."
       },
       {
         "heading": "9. Rezolvarea Disputelor",
@@ -1084,7 +1670,7 @@
       },
       {
         "heading": "10. Contact",
-        "content": "Pentru orice intrebari sau clarificari legate de acesti termeni si conditii, ne puteti contacta la:\n\nAceAgency\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
+        "content": "Pentru orice intrebari sau clarificari legate de acesti termeni si conditii, ne puteti contacta la:\n\nLaboratorul de Conversii\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
       }
     ]
   },

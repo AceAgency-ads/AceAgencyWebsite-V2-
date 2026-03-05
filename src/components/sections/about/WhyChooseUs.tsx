@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { gsap, useGSAP, ScrollTrigger } from '@/lib/gsap';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
@@ -63,39 +64,65 @@ export function WhyChooseUs(): React.JSX.Element {
   );
 
   return (
-    <SectionWrapper theme="dark" id="why-choose-us">
+    <SectionWrapper theme="light-warm" id="why-choose-us">
       <SectionHeader
         overline={t('whyUs.overline')}
         heading={t('whyUs.heading')}
       />
 
-      <div ref={listRef} className="max-w-3xl">
-        {items.map((item) => (
-          <div
-            key={item.number}
-            data-animate="item"
-            className="flex flex-col gap-4 border-b border-[var(--section-border)] py-6 md:flex-row md:items-start md:gap-8"
-          >
-            {/* Decorative number */}
-            <span
-              className="shrink-0 text-5xl font-bold opacity-30 md:text-6xl"
-              style={{ color: 'var(--ds-color-grey)' }}
-              aria-hidden="true"
+      <div ref={listRef} className="grid grid-cols-1 gap-8 lg:grid-cols-5">
+        <div className="lg:col-span-3">
+          <div className="mb-8 overflow-hidden rounded-xl lg:hidden">
+            <Image
+              src="/images/about/why-choose-us.webp"
+              alt="Profesioniști creativi analizând rezultate pe ecran"
+              width={800}
+              height={1000}
+              className="h-auto max-h-[300px] w-full object-cover"
+              sizes="100vw"
+            />
+          </div>
+          {items.map((item) => (
+            <div
+              key={item.number}
+              data-animate="item"
+              className="flex flex-col gap-4 border-b border-[var(--section-border)] py-6 md:flex-row md:items-start md:gap-8"
             >
-              {item.number}
-            </span>
+              {/* Decorative number */}
+              <span
+                className="shrink-0 text-5xl font-bold opacity-30 md:text-6xl"
+                style={{ color: 'var(--section-text-muted)' }}
+                aria-hidden="true"
+              >
+                {item.number}
+              </span>
 
-            {/* Content */}
-            <div>
-              <h4 className="mb-2 text-lg font-bold text-white">
-                {item.title}
-              </h4>
-              <p className="text-[var(--section-text-muted)]">
-                {item.description}
-              </p>
+              {/* Content */}
+              <div>
+                <h3 className="mb-2 text-lg font-bold text-[var(--section-text)]">
+                  {item.title}
+                </h3>
+                <p className="text-[var(--section-text-muted)]">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="hidden lg:col-span-2 lg:block">
+          <div className="sticky top-24">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
+              <Image
+                src="/images/about/why-choose-us.webp"
+                alt="Profesioniști creativi analizând rezultate pe ecran"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 0px, 40vw"
+              />
             </div>
           </div>
-        ))}
+        </div>
       </div>
     </SectionWrapper>
   );

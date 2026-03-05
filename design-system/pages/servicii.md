@@ -29,7 +29,7 @@
 │                                              │
 ├──────────────────────────────────────────────┤
 │                                              │
-│  SECTION 5: CTA                     [burgundy] │
+│  SECTION 5: CTA                     [violet] │
 │                                              │
 ├──────────────────────────────────────────────┤
 │  [Footer]                                    │
@@ -100,9 +100,9 @@ tot spectrul marketing-ului digital.
 
 ### Specifications
 
-- Feature Card: icon (48px, Grey), service name (h3), division badge (caption, Burgundy bg pill), description (body-sm, muted), arrow link
+- Feature Card: icon (48px, Grey), service name (h3), division badge (caption, Violet bg pill), description (body-sm, muted), arrow link
 - Bento grid: First 2 cards larger (span 2 rows), remaining cards standard size
-- Hover: Card lifts + burgundy glow + arrow slides right
+- Hover: Card lifts + violet glow + arrow slides right
 - Mobile: Single column stack
 - Animation: Cards stagger fade up, 80ms delay
 
@@ -131,11 +131,11 @@ tot spectrul marketing-ului digital.
 ### Specifications
 
 - Desktop: 4 steps in horizontal row connected by lines/arrows
-- Each step: Number (display-lg, Burgundy, opacity 0.2), icon (32px), title (h4), description (body-sm, muted)
+- Each step: Number (display-lg, Violet, opacity 0.2), icon (32px), title (h4), description (body-sm, muted)
 - Connecting line: 1px dotted border between steps on desktop
 - Mobile: Vertical timeline (line on left, content on right)
 - Animation: Steps stagger slide-in from left, 150ms delay each
-- Active/hover: Step number opacity increases, icon color shifts to Burgundy
+- Active/hover: Step number opacity increases, icon color shifts to Violet
 
 ---
 
@@ -177,7 +177,7 @@ tot spectrul marketing-ului digital.
 
 ## Section 5: CTA
 
-**Theme:** burgundy
+**Theme:** violet
 **Layout:** Same CTA section pattern (reusable)
 
 ### Content
@@ -219,7 +219,7 @@ All 6 individual service pages follow the same template structure:
 │  SECTION 5: ServiceFAQ               [light] │
 │  (5-8 FAQ items in Accordion)                │
 ├──────────────────────────────────────────────┤
-│  SECTION 6: ServiceCTA               [burgundy]│
+│  SECTION 6: ServiceCTA               [violet]│
 │  (Service-specific CTA)                      │
 ├──────────────────────────────────────────────┤
 │  [Footer]                                    │

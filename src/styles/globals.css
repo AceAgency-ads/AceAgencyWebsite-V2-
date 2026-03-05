@@ -6,28 +6,28 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================================
-   AceAgency Brand — Burgundy Palette
+   Laboratorul de Conversii Brand — Violet Palette
    ============================================================ */
 :root {
-  /* Brand Colors — AceAgency Burgundy */
-  --color-accent: #56151A;
-  --color-accent-light: #7A2025;
+  /* Brand Colors — Laboratorul de Conversii Violet */
+  --color-accent: #650CBE;
+  --color-accent-light: #7A1FD8;
   --color-black: #262523;
   --color-white: #FFFFFF;
   --color-grey: #D9D9D9;
 
   /* Legacy aliases for existing Tailwind utilities */
-  --color-burgundy: #56151A;
-  --color-burgundy-light: #7A2025;
+  --color-violet: #650CBE;
+  --color-violet-light: #7A1FD8;
 
-  /* shadcn/ui semantic tokens — mapped to burgundy palette */
+  /* shadcn/ui semantic tokens — mapped to violet palette */
   --background: #262523;
   --foreground: #D9D9D9;
   --card: #3a3836;
   --card-foreground: #D9D9D9;
   --popover: #3a3836;
   --popover-foreground: #D9D9D9;
-  --primary: #56151A;
+  --primary: #650CBE;
   --primary-foreground: #FFFFFF;
   --secondary: #3a3836;
   --secondary-foreground: #D9D9D9;
@@ -38,23 +38,23 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: #4a464380;
   --input: #4a464380;
-  --ring: #56151A;
+  --ring: #650CBE;
   --radius: 0.5rem;
 
   /* Chart and sidebar tokens */
   --sidebar: #1a1918;
   --sidebar-foreground: #D9D9D9;
-  --sidebar-primary: #56151A;
+  --sidebar-primary: #650CBE;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #333130;
   --sidebar-accent-foreground: #D9D9D9;
   --sidebar-border: #4a464380;
-  --sidebar-ring: #56151A;
-  --chart-1: #56151A;
+  --sidebar-ring: #650CBE;
+  --chart-1: #650CBE;
   --chart-2: #3a3836;
   --chart-3: #F5F5F5;
   --chart-4: #EBEBEB;
-  --chart-5: #4a1015;
+  --chart-5: #4A0A8F;
 }
 
 /* ============================================================
@@ -68,9 +68,9 @@
   --color-white: var(--color-white);
   --color-grey: var(--color-grey);
 
-  /* Legacy utilities (burgundy) */
-  --color-burgundy: var(--color-burgundy);
-  --color-burgundy-light: var(--color-burgundy-light);
+  /* Legacy utilities (violet) */
+  --color-violet: var(--color-violet);
+  --color-violet-light: var(--color-violet-light);
 
   /* shadcn semantic color utilities */
   --color-background: var(--background);
@@ -194,6 +194,11 @@
   background-color: rgba(245, 245, 245, 0.85);
 }
 
+/* Header over light-warm sections */
+.header-over-light-warm.header-scrolled {
+  background-color: rgba(250, 249, 247, 0.85);
+}
+
 /* Lenis smooth scroll base styles */
 html.lenis,
 html.lenis body {
@@ -237,15 +242,15 @@ main > section + section {
 :root {
   --cc-bg: #262523;
   --cc-text: #D9D9D9;
-  --cc-btn-primary-bg: #56151A;
+  --cc-btn-primary-bg: #650CBE;
   --cc-btn-primary-text: #FFFFFF;
-  --cc-btn-primary-hover-bg: #7A2025;
+  --cc-btn-primary-hover-bg: #7A1FD8;
   --cc-btn-primary-hover-text: #FFFFFF;
   --cc-btn-secondary-bg: #3a3836;
   --cc-btn-secondary-text: #D9D9D9;
   --cc-btn-secondary-hover-bg: #4a4643;
   --cc-btn-secondary-hover-text: #FFFFFF;
-  --cc-toggle-on-bg: #56151A;
+  --cc-toggle-on-bg: #650CBE;
   --cc-toggle-off-bg: #4a4643;
   --cc-toggle-readonly-bg: #3a3836;
   --cc-cookie-category-block-bg: #3a3836;
@@ -258,4 +263,22 @@ main > section + section {
 /* Ensure consent banner sits above header and other fixed elements */
 #cc-main {
   z-index: 10000;
+}
+
+/* ============================================================
+   Marquee animation for logo bars
+   ============================================================ */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
 }

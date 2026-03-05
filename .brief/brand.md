@@ -1,10 +1,15 @@
 # Brand si Identitate Vizuala
 
+## Brand
+
+- **Nume (RO)**: Laboratorul de Conversii
+- **Nume (EN)**: Conversion Lab
+- **Pozitionare**: Growth lab specializat in sisteme de conversie
+- **Domeniu**: aceagency.ro (in curs de migrare)
+
 ## Logo
 
-- **Status**: Existent
-- **Simbol**: Simbolul "As" - expresie a strategiei si performantei
-- **Tagline**: Web . ADS . AI . Media
+- **Status**: De actualizat cu noul brand
 - **Font logo**: Glacial Indifference (principal) + Red Hat Display (tagline)
 - **Fisiere**: De furnizat de client (SVG + PNG)
 
@@ -21,8 +26,8 @@
 
 ## Tone of Voice
 
-- **Stil**: Profesional & Corporativ + Elegant & Premium
-- **Descriere**: Comunicare eleganta, directa si ancorata in performanta reala. Nu promitem - livram. Accent pe profesionalism, calitate vizuala si performanta constanta. Disciplina, viziune si orientare catre rezultate.
+- **Stil**: Profesional & Stiintific + Elegant & Premium
+- **Descriere**: Comunicare precisa, orientata pe conversii si rezultate masurabile. Nu facem marketing generic — construim sisteme care transforma vizitatorii in clienti. Accent pe date, experimente si optimizare continua.
 
 ## Typography
 
@@ -44,4 +49,4 @@
 ## Inspiratie
 
 - addifico.com - Referinta principala: layout bento-grid, animatii scroll-triggered, servicii ca carduri cu iconite, testimoniale carousel, section transitions dark/light, zero fotografii in sectiuni principale
-- creativelabs.art - Proiect propriu AceAgency, referinta de calitate
+- creativelabs.art - Proiect propriu, referinta de calitate

@@ -15,13 +15,14 @@ interface MenuOverlayProps {
 /** Navigation link definition */
 interface NavLink {
   readonly key: string;
-  readonly href: '/' | '/despre-noi' | '/servicii' | '/contact';
+  readonly href: '/' | '/despre-noi' | '/servicii' | '/intrebari-frecvente' | '/contact';
 }
 
 const NAV_LINKS: readonly NavLink[] = [
   { key: 'home', href: '/' },
   { key: 'about', href: '/despre-noi' },
   { key: 'services', href: '/servicii' },
+  { key: 'faq', href: '/intrebari-frecvente' },
   { key: 'contact', href: '/contact' },
 ] as const;
 
@@ -138,7 +139,7 @@ export function MenuOverlay({
       {/* Logo */}
       <Image
         src="/ace-agency-logo.webp"
-        alt="AceAgency"
+        alt="Laboratorul de Conversii"
         width={120}
         height={38}
         className="mb-8 h-10 w-auto"

@@ -4,5 +4,5 @@
  */
 
 export const SITE_URL = 'https://aceagency.ro' as const;
-export const ORG_NAME = 'AceAgency' as const;
-export const DEFAULT_OG_IMAGE = '/images/og-default.jpg' as const;
+export const ORG_NAME = 'Laboratorul de Conversii' as const;
+export const DEFAULT_OG_IMAGE = '/api/og' as const;

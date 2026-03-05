@@ -18,7 +18,7 @@ interface CTASectionProps {
 /**
  * CTA section — addifico style.
  * Light grey bg card (#EBEBEB), rounded-[36px], large heading,
- * description, and burgundy accent CTA button.
+ * description, and violet accent CTA button.
  */
 export function CTASection({ namespace = 'home', secondaryHref }: CTASectionProps): React.JSX.Element {
   const t = useTranslations(namespace);
@@ -52,7 +52,7 @@ export function CTASection({ namespace = 'home', secondaryHref }: CTASectionProp
                 <Button
                   asChild
                   size="lg"
-                  className="min-h-[3rem] rounded-full bg-[#56151A] px-8 font-semibold text-white hover:bg-[#7A2025]"
+                  className="min-h-[3rem] rounded-full bg-[#650CBE] px-8 font-semibold text-white hover:bg-[#7A1FD8]"
                 >
                   <Link href="/contact">
                     {t('cta.primary')}
