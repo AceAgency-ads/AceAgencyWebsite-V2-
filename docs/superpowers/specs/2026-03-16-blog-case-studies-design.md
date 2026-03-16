@@ -27,6 +27,50 @@ content/
 
 MDX provides: static generation (SSG), proper SEO, markdown authoring, embedded React components, and git-based workflow. Future automation pipeline writes MDX files directly.
 
+### Dependencies
+
+Install:
+```bash
+npm install next-mdx-remote gray-matter reading-time
+```
+
+- `next-mdx-remote` (v5+) — MDX rendering in App Router Server Components via `compileMDX()`
+- `gray-matter` — frontmatter parsing for index pages and `generateStaticParams`
+- `reading-time` — auto-calculate reading time from word count
+
+No `next.config.ts` changes required. `next-mdx-remote` v5 uses `compileMDX()` (async, no webpack plugin). Import pattern: `import { compileMDX } from 'next-mdx-remote/rsc'`.
+
+### Data Access Layer: `lib/content.ts`
+
+Shared utility for reading MDX content at build time:
+
+```typescript
+// lib/content.ts
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import readingTime from 'reading-time';
+
+const CONTENT_DIR = path.join(process.cwd(), 'content');
+
+interface ContentMeta {
+  slug: string;
+  readingTime: number; // minutes, auto-calculated from word count
+  [key: string]: unknown; // frontmatter fields
+}
+
+// Get all content items for a section (blog | studii-de-caz) and locale
+function getContentBySection(section: string, locale: string): ContentMeta[];
+
+// Get single content item by slug and locale
+function getContentBySlug(section: string, slug: string, locale: string): { meta: ContentMeta; content: string };
+
+// Used by generateStaticParams — returns all slugs for a section across locales
+function getAllSlugs(section: string): { slug: string; locale: string }[];
+```
+
+`readingTime` is always computed at read time from word count (~200 wpm). The frontmatter `readingTime` field is optional and only used to override the calculated value.
+
 ### URL Structure
 
 | Route | Purpose |
@@ -37,6 +81,8 @@ MDX provides: static generation (SSG), proper SEO, markdown authoring, embedded 
 | `/studii-de-caz/[slug]` | Individual case study |
 
 Flat URL structure (no `/blog/category/slug`) — shorter URLs, no thin category index pages.
+
+**i18n routing:** Both locales use the same path segments (`/ro/blog`, `/en/blog`, `/ro/studii-de-caz`, `/en/studii-de-caz`). No `pathnames` config needed in `routing.ts`. Content is locale-separated by the `locale` field in MDX frontmatter, with `translationSlug` linking corresponding translations.
 
 ### MDX Frontmatter Schemas
 
@@ -55,7 +101,7 @@ featuredImage: "/images/blog/performance-max-2026.webp"
 featuredImageAlt: "Dashboard Google Ads cu campanie Performance Max"
 locale: "ro"  # ro | en
 translationSlug: "performance-max-complete-guide-2026"  # slug of translated version
-readingTime: 8  # minutes, auto-calculated or manual
+readingTime: 8  # optional override; auto-calculated from word count if omitted
 ---
 ```
 
@@ -153,8 +199,8 @@ interface PortfolioItem {
 - Two CTAs per slide:
   - "Vezi studiul de caz" → links to `/studii-de-caz/[slug]`
   - "Programeaza un apel" → links to `/contact`
-- Shows all case studies on every service page (cross-service, only 3 total)
-- Data source: reads MDX frontmatter from `content/studii-de-caz/`
+- Shows all case studies on every service page (cross-service)
+- Data source: calls `getContentBySection('studii-de-caz', locale)` from `lib/content.ts` to load all case study frontmatter at build time. No filtering by service — all case studies shown. Slider auto-grows as new case studies are added (no cap).
 
 ### New Component: ServiceTestimonials
 
@@ -187,6 +233,8 @@ Add `services` array to existing testimonial items in `ro.json` / `en.json`:
 
 Existing homepage Testimonials component continues to show all (ignores the `services` field).
 
+**Filtering pattern for ServiceTestimonials:** Since testimonials are keyed by string index (`"0"`, `"1"`, etc.), the component iterates over `TESTIMONIAL_KEYS` array, reads each item via `t.raw()`, and filters by checking if `item.services` includes the current service slug. Falls back to showing all if no matches. This avoids refactoring the existing i18n structure.
+
 ## Pages
 
 ### `/blog` — Articles Index
@@ -195,7 +243,7 @@ Existing homepage Testimonials component continues to show all (ignores the `ser
 - Category filter bar (horizontal pills, "Toate" selected by default)
 - Blog post grid (2 columns desktop, 1 mobile)
 - Each card: featured image + category badge + title + excerpt + date + reading time
-- Pagination (6-9 posts per page, or load more)
+- Pagination: 6 posts per page. Hidden when `totalPages === 1` (at launch with 3 articles, no pagination controls rendered)
 - SEO: `Blog` breadcrumb, Article list schema
 
 ### `/blog/[slug]` — Article Detail
@@ -231,7 +279,16 @@ Existing homepage Testimonials component continues to show all (ignores the `ser
 ### Homepage
 
 - `CaseStudyPreview`: change CTA link from `/portofoliu` to `/studii-de-caz`
-- No other homepage changes needed
+
+### Header Navigation
+
+- Add `blog` and `studii-de-caz` entries to `navigation` keys in `ro.json` / `en.json`
+- Update Header component to render the new nav items
+
+### CLAUDE.md Pages Table
+
+- Add `/studii-de-caz` (Must-have) and update `/blog` status from V2 to Must-have
+- Remove `/portofoliu` row (replaced by `/studii-de-caz`)
 
 ### Sitemap & Robots
 
@@ -242,8 +299,8 @@ Existing homepage Testimonials component continues to show all (ignores the `ser
 
 ### Schema Markup
 
-- **Blog articles:** `Article` schema with `author`, `datePublished`, `dateModified`, `image`
-- **Case studies:** `Article` schema + `Organization` mention, metrics in description
+- **Blog articles:** `BlogPosting` schema — field mapping: `publishedAt` → `datePublished`, `updatedAt` → `dateModified`, `featuredImage` → `image`, `author` → `author.name`, `description` → `description`
+- **Case studies:** `Article` schema + `Organization` mention — same field mapping as above, plus metrics included in `description`
 - **Blog index:** `CollectionPage` schema
 - **Case studies index:** `CollectionPage` schema
 - **Service pages:** existing schemas unchanged, new sections are presentational
