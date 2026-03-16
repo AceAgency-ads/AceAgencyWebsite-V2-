@@ -1923,5 +1923,38 @@
     "heading": "Pagina nu a fost gasita",
     "description": "Ne pare rau, pagina pe care o cauti nu exista sau a fost mutata.",
     "backHome": "Inapoi acasa"
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog | Laboratorul de Conversii",
+      "description": "Articole despre marketing digital, optimizare conversii, Google Ads, SEO si AI in marketing. Strategii testate pentru cresterea afacerii tale."
+    },
+    "hero": {
+      "overline": "BLOG",
+      "heading": "Strategii de Marketing care Functioneaza",
+      "description": "Ghiduri practice, studii de caz si insight-uri din experienta noastra cu peste 50 de clienti."
+    },
+    "categories": {
+      "all": "Toate",
+      "optimizare-conversii": "Optimizare Conversii",
+      "google-ads": "Google Ads",
+      "meta-ads": "Meta Ads",
+      "tiktok-ads": "TikTok Ads",
+      "seo": "SEO",
+      "email-marketing": "Email Marketing",
+      "ai-marketing": "AI in Marketing"
+    },
+    "card": {
+      "readingTime": "{minutes} min citire"
+    },
+    "article": {
+      "breadcrumbHome": "Acasa",
+      "breadcrumbBlog": "Blog",
+      "relatedHeading": "Articole similare",
+      "ctaHeading": "Vrei rezultate similare?",
+      "ctaDescription": "Programeaza o consultatie gratuita si discutam despre obiectivele tale de crestere.",
+      "ctaPrimary": "Programeaza un apel",
+      "ctaSecondary": "Contacteaza-ne"
+    }
   }
 }

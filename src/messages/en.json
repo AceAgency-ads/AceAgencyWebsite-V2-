@@ -1923,5 +1923,38 @@
     "heading": "Page not found",
     "description": "Sorry, the page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to home"
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog | Conversion Lab",
+      "description": "Articles about digital marketing, conversion optimization, Google Ads, SEO, and AI in marketing. Tested strategies for growing your business."
+    },
+    "hero": {
+      "overline": "BLOG",
+      "heading": "Marketing Strategies that Work",
+      "description": "Practical guides, case studies, and insights from our experience with over 50 clients."
+    },
+    "categories": {
+      "all": "All",
+      "optimizare-conversii": "Conversion Optimization",
+      "google-ads": "Google Ads",
+      "meta-ads": "Meta Ads",
+      "tiktok-ads": "TikTok Ads",
+      "seo": "SEO",
+      "email-marketing": "Email Marketing",
+      "ai-marketing": "AI in Marketing"
+    },
+    "card": {
+      "readingTime": "{minutes} min read"
+    },
+    "article": {
+      "breadcrumbHome": "Home",
+      "breadcrumbBlog": "Blog",
+      "relatedHeading": "Related articles",
+      "ctaHeading": "Want similar results?",
+      "ctaDescription": "Schedule a free consultation and let's discuss your growth goals.",
+      "ctaPrimary": "Book a call",
+      "ctaSecondary": "Contact us"
+    }
   }
 }
