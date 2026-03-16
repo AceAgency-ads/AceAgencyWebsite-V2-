@@ -1956,5 +1956,26 @@
       "ctaPrimary": "Programeaza un apel",
       "ctaSecondary": "Contacteaza-ne"
     }
+  },
+  "caseStudies": {
+    "meta": {
+      "title": "Studii de Caz | Laboratorul de Conversii",
+      "description": "Rezultate concrete obtinute pentru clientii nostri. Studii de caz cu metrici reale din campanii Google Ads, Facebook Ads, SEO si Email Marketing."
+    },
+    "hero": {
+      "overline": "STUDII DE CAZ",
+      "heading": "Rezultate care Vorbesc de la Sine",
+      "description": "Descoperiti cum am ajutat afaceri din Romania sa creasca prin sisteme de conversie testate si optimizate."
+    },
+    "detail": {
+      "breadcrumbHome": "Acasa",
+      "breadcrumbIndex": "Studii de Caz",
+      "servicesUsed": "Servicii utilizate",
+      "ctaHeading": "Vrei rezultate similare?",
+      "ctaDescription": "Programeaza o consultatie gratuita si hai sa discutam cum putem creste si afacerea ta.",
+      "ctaPrimary": "Programeaza un apel",
+      "ctaSecondary": "Contacteaza-ne",
+      "screenshotsHeading": "Rezultate vizuale"
+    }
   }
 }

@@ -1956,5 +1956,26 @@
       "ctaPrimary": "Book a call",
       "ctaSecondary": "Contact us"
     }
+  },
+  "caseStudies": {
+    "meta": {
+      "title": "Case Studies | Conversion Lab",
+      "description": "Concrete results achieved for our clients. Case studies with real metrics from Google Ads, Facebook Ads, SEO, and Email Marketing campaigns."
+    },
+    "hero": {
+      "overline": "CASE STUDIES",
+      "heading": "Results that Speak for Themselves",
+      "description": "Discover how we helped Romanian businesses grow through tested and optimized conversion systems."
+    },
+    "detail": {
+      "breadcrumbHome": "Home",
+      "breadcrumbIndex": "Case Studies",
+      "servicesUsed": "Services used",
+      "ctaHeading": "Want similar results?",
+      "ctaDescription": "Schedule a free consultation and let's discuss how we can grow your business too.",
+      "ctaPrimary": "Book a call",
+      "ctaSecondary": "Contact us",
+      "screenshotsHeading": "Visual results"
+    }
   }
 }
