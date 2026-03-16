@@ -1143,6 +1143,53 @@
         "primary": "Solicită o Consultație",
         "secondary": "Află Mai Multe"
       }
+    },
+    "portfolio": {
+      "overline": "PORTOFOLIU",
+      "heading": "Proiecte Realizate",
+      "visitSite": "Viziteaza site-ul",
+      "items": {
+        "0": {
+          "src": "/images/portfolio/placeholder-1.webp",
+          "alt": "Proiect client 1",
+          "client": "Client Demo 1",
+          "url": "",
+          "services": [
+            "google-ads",
+            "seo"
+          ]
+        },
+        "1": {
+          "src": "/images/portfolio/placeholder-2.webp",
+          "alt": "Proiect client 2",
+          "client": "Client Demo 2",
+          "url": "",
+          "services": [
+            "facebook-ads",
+            "email-marketing"
+          ]
+        },
+        "2": {
+          "src": "/images/portfolio/placeholder-3.webp",
+          "alt": "Proiect client 3",
+          "client": "Client Demo 3",
+          "url": "",
+          "services": [
+            "tiktok-ads",
+            "google-ads"
+          ]
+        }
+      }
+    },
+    "caseStudyResults": {
+      "overline": "REZULTATE REALE",
+      "heading": "Ce am Obtinut pentru Clientii Nostri",
+      "viewCaseStudy": "Vezi studiul de caz",
+      "bookCall": "Programeaza un apel"
+    },
+    "serviceTestimonials": {
+      "overline": "CLIENTI MULTUMITI",
+      "heading": "Ce Spun Clientii Nostri"
     }
   },
   "home": {
@@ -1343,37 +1390,60 @@
           "quote": "Laboratorul de Conversii a transformat complet prezenta noastra online. Rezultatele au depasit asteptarile.",
           "author": "Maria Popescu",
           "company": "TechStart SRL",
-          "rating": "5"
+          "rating": "5",
+          "services": [
+            "google-ads",
+            "seo"
+          ]
         },
         "1": {
           "quote": "Profesionalism, creativitate si rezultate masurabile. Recomand cu incredere.",
           "author": "Alexandru Ionescu",
           "company": "Digital Commerce",
-          "rating": "5"
+          "rating": "5",
+          "services": [
+            "facebook-ads",
+            "email-marketing"
+          ]
         },
         "2": {
           "quote": "Echipa Laboratorului de Conversii intelege nevoile de business si livreaza solutii care functioneaza.",
           "author": "Elena Dumitrescu",
           "company": "StartUp Hub",
-          "rating": "5"
+          "rating": "5",
+          "services": [
+            "tiktok-ads"
+          ]
         },
         "3": {
           "quote": "Campaniile Google Ads au generat un ROI de 340% in primele 3 luni.",
           "author": "Andrei Gheorghe",
           "company": "E-Shop Romania",
-          "rating": "5"
+          "rating": "5",
+          "services": [
+            "google-ads",
+            "consultanta-marketing"
+          ]
         },
         "4": {
           "quote": "Site-ul creat de Laboratorul de Conversii este cel mai bun investiment digital pe care l-am facut.",
           "author": "Ioana Marinescu",
           "company": "Beauty Brand",
-          "rating": "5"
+          "rating": "5",
+          "services": [
+            "seo",
+            "email-marketing"
+          ]
         },
         "5": {
           "quote": "Suport excelent si comunicare transparenta pe tot parcursul proiectului.",
           "author": "Mihai Stanescu",
           "company": "Logistics Pro",
-          "rating": "5"
+          "rating": "5",
+          "services": [
+            "facebook-ads",
+            "tiktok-ads"
+          ]
         }
       }
     },
