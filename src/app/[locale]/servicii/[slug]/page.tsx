@@ -11,7 +11,12 @@ import { ServiceProcess } from '@/components/sections/services/ServiceProcess';
 import { ServiceStats } from '@/components/sections/services/ServiceStats';
 import { ServiceFAQ } from '@/components/sections/services/ServiceFAQ';
 import { ServiceCTA } from '@/components/sections/services/ServiceCTA';
+import { PortfolioSlider } from '@/components/sections/services/PortfolioSlider';
+import { CaseStudyResults } from '@/components/sections/services/CaseStudyResults';
+import { ServiceTestimonials } from '@/components/sections/services/ServiceTestimonials';
+import { getContentBySection } from '@/lib/content';
 import { serviceSchema, renderJsonLd } from '@/lib/seo/schemas';
+import type { CaseStudyMeta } from '@/types/content';
 
 interface ServicePageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -57,6 +62,7 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const t = await getTranslations({ locale, namespace: 'services' });
+  const caseStudies = getContentBySection<CaseStudyMeta>('studii-de-caz', locale);
 
   return (
     <>
@@ -83,8 +89,11 @@ export default async function ServicePage({
       />
       <HeroTransition namespace="services" i18nPrefix={`${service.i18nKey}.heroTransition`} />
       <ServiceFeatures serviceKey={service.i18nKey} featureImage={service.featureImage} />
+      <PortfolioSlider serviceSlug={service.slug} />
       <ServiceProcess serviceKey={service.i18nKey} processImage={service.processImage} />
+      <CaseStudyResults caseStudies={caseStudies} />
       <ServiceStats serviceKey={service.i18nKey} />
+      <ServiceTestimonials serviceSlug={service.slug} />
       <ServiceFAQ serviceKey={service.i18nKey} />
       <ServiceCTA serviceKey={service.i18nKey} />
     </>
