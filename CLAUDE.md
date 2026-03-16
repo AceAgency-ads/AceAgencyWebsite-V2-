@@ -64,8 +64,10 @@ public/
 | `/contact` | Contact | Must-have |
 | `/adpilot/privacy` | AdPilot Privacy Policy | Must-have |
 | `/adpilot/terms` | AdPilot Terms of Service | Must-have |
-| `/portofoliu` | Portfolio | V2 |
-| `/blog` | Blog | V2 |
+| `/blog` | Blog index | Must-have |
+| `/blog/[slug]` | Blog article detail | Must-have |
+| `/studii-de-caz` | Case Studies index | Must-have |
+| `/studii-de-caz/[slug]` | Case study detail | Must-have |
 | `/echipa` | Team | V2 |
 
 ## Brand & Design

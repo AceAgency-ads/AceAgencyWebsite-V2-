@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 
 import { SERVICE_DEFINITIONS } from '@/lib/services';
 import { SITE_URL } from '@/lib/seo/constants';
+import { getAllSlugs } from '@/lib/content';
 
 const LOCALES = ['ro', 'en'] as const;
 
@@ -9,6 +10,8 @@ const STATIC_PAGES = [
   '',
   '/despre-noi',
   '/servicii',
+  '/blog',
+  '/studii-de-caz',
   '/contact',
   '/intrebari-frecvente',
   '/politica-confidentialitate',
@@ -49,6 +52,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
       });
     }
+  }
+
+  // Blog article pages
+  const blogSlugs = getAllSlugs('blog');
+  for (const { slug, locale } of blogSlugs) {
+    entries.push({
+      url: `${SITE_URL}/${locale}/blog/${slug}`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    });
+  }
+
+  // Case study pages
+  const caseStudySlugs = getAllSlugs('studii-de-caz');
+  for (const { slug, locale } of caseStudySlugs) {
+    entries.push({
+      url: `${SITE_URL}/${locale}/studii-de-caz/${slug}`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    });
   }
 
   return entries;

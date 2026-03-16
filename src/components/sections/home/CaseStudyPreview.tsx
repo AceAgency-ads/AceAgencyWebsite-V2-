@@ -87,7 +87,7 @@ export function CaseStudyPreview(): React.JSX.Element {
       {/* CTA link */}
       <ScrollReveal className="mt-12 text-center">
         <Link
-          href="/portofoliu"
+          href="/studii-de-caz"
           className="inline-flex items-center gap-2 text-lg font-semibold text-[#650CBE] transition-colors hover:text-[#7A1FD8]"
         >
           {t('caseStudies.cta')}

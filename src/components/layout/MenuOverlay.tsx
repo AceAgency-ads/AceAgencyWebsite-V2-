@@ -15,13 +15,15 @@ interface MenuOverlayProps {
 /** Navigation link definition */
 interface NavLink {
   readonly key: string;
-  readonly href: '/' | '/despre-noi' | '/servicii' | '/intrebari-frecvente' | '/contact';
+  readonly href: '/' | '/despre-noi' | '/servicii' | '/blog' | '/studii-de-caz' | '/intrebari-frecvente' | '/contact';
 }
 
 const NAV_LINKS: readonly NavLink[] = [
   { key: 'home', href: '/' },
   { key: 'about', href: '/despre-noi' },
   { key: 'services', href: '/servicii' },
+  { key: 'blog', href: '/blog' },
+  { key: 'caseStudies', href: '/studii-de-caz' },
   { key: 'faq', href: '/intrebari-frecvente' },
   { key: 'contact', href: '/contact' },
 ] as const;
