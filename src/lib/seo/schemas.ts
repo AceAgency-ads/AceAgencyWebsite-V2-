@@ -140,6 +140,74 @@ export function webSiteSchema(): Record<string, unknown> {
   } as const;
 }
 
+// ─── BlogPosting ─────────────────────────────────────────────────────────────
+
+interface BlogPostingSchemaParams {
+  readonly title: string;
+  readonly description: string;
+  readonly url: string;
+  readonly datePublished: string;
+  readonly dateModified: string;
+  readonly image?: string;
+  readonly authorName: string;
+}
+
+export function blogPostingSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  image,
+  authorName,
+}: BlogPostingSchemaParams): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description,
+    url,
+    datePublished,
+    dateModified,
+    ...(image ? { image: `${SITE_URL}${image}` } : {}),
+    author: {
+      '@type': 'Organization',
+      name: authorName,
+      url: SITE_URL,
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+    },
+  } as const;
+}
+
+// ─── CollectionPage ──────────────────────────────────────────────────────────
+
+interface CollectionPageSchemaParams {
+  readonly name: string;
+  readonly description: string;
+  readonly url: string;
+}
+
+export function collectionPageSchema({
+  name,
+  description,
+  url,
+}: CollectionPageSchemaParams): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    description,
+    url,
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+    },
+  } as const;
+}
+
 // ─── Render Helper ───────────────────────────────────────────────────────────
 
 /**

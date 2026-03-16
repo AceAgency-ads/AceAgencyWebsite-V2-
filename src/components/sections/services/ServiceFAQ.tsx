@@ -29,7 +29,7 @@ export function ServiceFAQ({ serviceKey }: ServiceFAQProps): React.JSX.Element {
   }>;
 
   return (
-    <SectionWrapper theme="light" id="faq">
+    <SectionWrapper theme="dark" id="faq">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: renderJsonLd(faqSchema(faqItems)) }}

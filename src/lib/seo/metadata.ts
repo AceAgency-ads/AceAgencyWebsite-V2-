@@ -38,13 +38,18 @@ export function generatePageMetadata({
   path,
   locale,
   noIndex = false,
-  ogImage = DEFAULT_OG_IMAGE,
+  ogImage,
 }: PageMetadataParams): Metadata {
   const pagePath = path ? `/${path}` : '';
   const canonicalUrl = `${SITE_URL}/${locale}${pagePath}`;
   const roUrl = `${SITE_URL}/ro${pagePath}`;
   const enUrl = `${SITE_URL}/en${pagePath}`;
   const ogLocale = locale === 'ro' ? 'ro_RO' : 'en_US';
+
+  // Build page-specific OG image URL with title/subtitle params
+  const ogImageUrl = ogImage
+    ? `${SITE_URL}${ogImage}`
+    : `${SITE_URL}${DEFAULT_OG_IMAGE}?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(description)}`;
 
   const metadata: Metadata = {
     title,
@@ -66,7 +71,7 @@ export function generatePageMetadata({
       type: 'website',
       images: [
         {
-          url: `${SITE_URL}${ogImage}`,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: title,
@@ -77,6 +82,7 @@ export function generatePageMetadata({
       card: 'summary_large_image',
       title,
       description,
+      images: [ogImageUrl],
     },
   };
 

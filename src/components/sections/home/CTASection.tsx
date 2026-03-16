@@ -69,18 +69,7 @@ export function CTASection({ namespace = 'home', secondaryHref }: CTASectionProp
                   >
                     <Link href={secondaryHref}>{t('cta.secondary')}</Link>
                   </Button>
-                ) : (
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="min-h-[3rem] rounded-full border-[#262523]/30 px-8 text-[#262523] opacity-50"
-                    aria-disabled="true"
-                    tabIndex={-1}
-                    style={{ pointerEvents: 'none' }}
-                  >
-                    {t('cta.secondary')}
-                  </Button>
-                )}
+                ) : null}
               </div>
             </ScrollReveal>
           </div>

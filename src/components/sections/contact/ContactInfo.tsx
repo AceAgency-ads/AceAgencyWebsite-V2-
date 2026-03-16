@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { MapPin, Mail, Phone, Clock } from 'lucide-react';
+import { MapPin, Mail, Phone, Clock, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 import { trackEvent } from '@/lib/analytics';
 
@@ -73,18 +73,24 @@ export function ContactInfo(): React.JSX.Element {
           })}
         </div>
 
-        {/* Social links placeholder */}
+        {/* Social links */}
         <div className="mt-8 border-t border-[var(--section-border)] pt-6">
           <p className="mb-4 text-sm text-[var(--section-text-muted)]">{t('info.social')}</p>
           <div className="flex gap-3">
-            {(['linkedin', 'instagram', 'facebook'] as const).map((platform) => (
+            {([
+              { key: 'linkedin', Icon: Linkedin, url: 'https://linkedin.com/company/aceagency' },
+              { key: 'instagram', Icon: Instagram, url: 'https://instagram.com/aceagency' },
+              { key: 'facebook', Icon: Facebook, url: 'https://facebook.com/aceagency' },
+            ] as const).map(({ key, Icon, url }) => (
               <a
-                key={platform}
-                href="#"
+                key={key}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex size-10 items-center justify-center rounded-lg bg-[var(--section-bg)] text-[var(--section-text-muted)] transition-colors hover:bg-[var(--section-border)] hover:text-[var(--section-text)]"
-                aria-label={platform}
+                aria-label={key}
               >
-                <span className="text-xs font-medium uppercase">{platform.slice(0, 2)}</span>
+                <Icon className="size-5" />
               </a>
             ))}
           </div>

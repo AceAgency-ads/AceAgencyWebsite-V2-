@@ -16,6 +16,13 @@ const STATIC_PAGES = [
   '/termeni-si-conditii',
 ] as const;
 
+/**
+ * Static last-modified date for stable pages.
+ * Updated manually when content actually changes, avoiding false
+ * freshness signals from `new Date()` on every build.
+ */
+const LAST_MODIFIED = new Date('2026-03-03');
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
@@ -25,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const isHomepage = page === '';
       entries.push({
         url: `${SITE_URL}/${locale}${page}`,
-        lastModified: new Date(),
+        lastModified: LAST_MODIFIED,
         changeFrequency: isHomepage ? 'weekly' : 'monthly',
         priority: isHomepage ? 1.0 : 0.8,
       });
@@ -37,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of LOCALES) {
       entries.push({
         url: `${SITE_URL}/${locale}/servicii/${service.slug}`,
-        lastModified: new Date(),
+        lastModified: LAST_MODIFIED,
         changeFrequency: 'monthly',
         priority: 0.7,
       });

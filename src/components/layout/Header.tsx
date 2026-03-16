@@ -118,7 +118,7 @@ export function Header(): React.JSX.Element {
             onClick={handleToggle}
             aria-expanded={isOpen}
             aria-label={isOpen ? t('menuClose') : t('menuOpen')}
-            className="relative z-50 flex h-12 w-12 flex-col items-center justify-center gap-2"
+            className="relative z-[60] flex h-12 w-12 flex-col items-center justify-center gap-2"
           >
             <span
               className={`block h-0.5 w-6 bg-[#D9D9D9] transition-all duration-300 [.header-over-light_&]:bg-[#262523] ${

@@ -53,7 +53,7 @@
   },
   "about": {
     "meta": {
-      "title": "Despre Noi - Laborator de Conversii Premium - Laboratorul de Conversii",
+      "title": "Despre Noi | Laboratorul de Conversii",
       "description": "Descopera echipa Laboratorul de Conversii - laborator de conversii din Bucuresti. Misiunea, valorile si povestea noastra."
     },
     "breadcrumb": {
@@ -217,7 +217,7 @@
         "description": "De la publicitate platita la optimizare SEO, de la email marketing la strategie de crestere — fiecare sistem de conversii este construit pe date, experienta si conversii masurabile."
       },
       "meta": {
-        "title": "Sisteme de Conversii Digitale | Laboratorul de Conversii Bucuresti",
+        "title": "Conversii Digitale | Laboratorul de Conversii",
         "description": "Sisteme complete de conversii digitale: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing si Strategie de Crestere. Contacteaza Laboratorul de Conversii!"
       },
       "hero": {
@@ -615,7 +615,7 @@
         "description": "TikTok este platforma unde autenticitatea castiga. Cream campanii native care capteaza atentia in primele secunde si transforma vizualizarile in actiuni concrete pentru brandul tau."
       },
       "meta": {
-        "title": "Conversii prin TikTok Ads | Publicitate TikTok Romania - Laboratorul de Conversii",
+        "title": "Conversii TikTok Ads | Laboratorul de Conversii",
         "description": "Sisteme de conversii TikTok Ads creative si performante pentru audienta din Romania. Publicitate video TikTok cu conversii masurabile. Solicita oferta!"
       },
       "hero": {
@@ -745,7 +745,7 @@
         "description": "SEO nu inseamna doar pozitii in Google — inseamna trafic calificat, autoritate de domeniu si crestere organica pe termen lung. Construim strategii SEO complete care transforma cautarile in clienti."
       },
       "meta": {
-        "title": "Crestere Organica SEO Romania | Optimizare SEO Profesionala - Laboratorul de Conversii",
+        "title": "Crestere Organica SEO | Laboratorul de Conversii",
         "description": "Servicii SEO profesionale pentru pozitionare organica in Google. Audit SEO complet, optimizare tehnica si de continut. Solicita audit SEO gratuit!"
       },
       "hero": {
@@ -883,7 +883,7 @@
         "description": "Email marketing-ul ramane canalul cu cel mai mare ROI din marketing digital. Construim campanii personalizate si automatizari care lucreaza non-stop pentru a genera venituri recurente."
       },
       "meta": {
-        "title": "Conversii prin Email | Sisteme Email Marketing - Laboratorul de Conversii",
+        "title": "Email Marketing | Laboratorul de Conversii",
         "description": "Campanii email marketing profesionale cu automatizări avansate și segmentare. Newsletter, drip campaigns și raportare detaliată. Solicită ofertă gratuită!"
       },
       "hero": {
@@ -1017,7 +1017,7 @@
         "description": "O strategie buna incepe cu o analiza profunda. Auditem prezenta ta digitala, identificam oportunitatile si construim un plan de actiune personalizat care integreaza toate canalele digitale."
       },
       "meta": {
-        "title": "Strategie de Crestere Digitala Romania - Laboratorul de Conversii",
+        "title": "Strategie de Crestere | Laboratorul de Conversii",
         "description": "Strategie de crestere digitala profesionala: audit complet, strategie personalizata si plan de actiune. Programeaza o consultatie gratuita cu Laboratorul de Conversii!"
       },
       "hero": {
@@ -1155,6 +1155,33 @@
       "heading": "Transformam viziunea ta in conversii digitale masurabile",
       "description": "Suntem un laborator de conversii full-service din Bucuresti care combina web development, publicitate platita, inteligenta artificiala si productie media pentru a livra conversii concrete si crestere sustenabila."
     },
+    "conversionProcess": {
+      "overline": "METODA LAB",
+      "heading": "Metoda LAB: 5 Pasi catre Conversii Masurabile",
+      "description": "Un proces testat si repetat care transforma traficul in clienti si clientii in ambasadori ai brandului tau.",
+      "steps": {
+        "0": {
+          "title": "Audit",
+          "description": "Analizam prezenta digitala actuala, datele existente si palniile de conversie pentru a identifica oportunitatile de crestere."
+        },
+        "1": {
+          "title": "Strategie",
+          "description": "Construim un plan de crestere personalizat bazat pe datele din audit, cu obiective clare si KPI-uri masurabile."
+        },
+        "2": {
+          "title": "Implementare",
+          "description": "Executam strategia pe toate canalele relevante — ads, SEO, email marketing, web — cu precizie si coerenta."
+        },
+        "3": {
+          "title": "Optimizare",
+          "description": "Testam A/B, iteram si imbunatatim continuu fiecare element al sistemului pentru conversii mai bune."
+        },
+        "4": {
+          "title": "Scalare",
+          "description": "Scalam ce functioneaza, extindem pe canale noi si crestem bugetele acolo unde ROI-ul este dovedit."
+        }
+      }
+    },
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
       "headline": "Laborator de <accent>Conversii</accent> din Bucuresti",
@@ -1228,9 +1255,89 @@
       "description": "Suntem o echipa de profesionisti care crede ca fiecare brand merita conversii masurabile de exceptie. De la strategie la executie, de la idee la conversie.",
       "cta": "Afla mai multe"
     },
+    "videoTestimonials": {
+      "overline": "REZULTATE REALE",
+      "heading": "Asculta Povestile Clientilor",
+      "items": {
+        "0": {
+          "quote": "Sincer, nu ma asteptam sa vad diferenta asa repede. In prima luna deja aveam comenzi de pe Google pe care inainte nu le prindeam deloc. Baietii chiar stiu ce fac.",
+          "author": "Alex",
+          "company": "Trady.ro",
+          "rating": "5",
+          "thumbnailSrc": "/images/testimonials/video-thumb-1.webp",
+          "videoSrc": ""
+        },
+        "1": {
+          "quote": "Aveam restaurantul plin doar de localnici. Dupa campaniile cu ei, au inceput sa vina oameni din tot Bucurestiul — unii imi ziceau ca ne-au gasit pe Google. Investitia s-a meritat din prima luna.",
+          "author": "Anca",
+          "company": "Gyros Thessalonikis",
+          "rating": "5",
+          "thumbnailSrc": "/images/testimonials/video-thumb-2.webp",
+          "videoSrc": ""
+        },
+        "2": {
+          "quote": "Am lucrat cu alte agentii inainte si aruncam bani fara sa inteleg pe ce. Aici totul e pe cifre, imi explica tot, si cel mai important — vand mai mult decat vindeam singura.",
+          "author": "Renata",
+          "company": "Amora.ro",
+          "rating": "5",
+          "thumbnailSrc": "/images/testimonials/video-thumb-3.webp",
+          "videoSrc": ""
+        }
+      }
+    },
+    "caseStudies": {
+      "overline": "STUDII DE CAZ",
+      "heading": "Rezultate Concrete, Nu Promisiuni",
+      "description": "Fiecare proiect incepe cu un obiectiv clar si se termina cu rezultate masurabile.",
+      "items": {
+        "0": {
+          "client": "E-Shop Romania",
+          "industry": "E-commerce",
+          "metric": "340",
+          "metricPrefix": "+",
+          "metricSuffix": "%",
+          "metricLabel": "crestere ROAS",
+          "summary": "De la ROAS 2.1 la ROAS 9.3 in 90 de zile prin optimizarea campaniilor Google Ads."
+        },
+        "1": {
+          "client": "TechStart SRL",
+          "industry": "SaaS B2B",
+          "metric": "185",
+          "metricPrefix": "+",
+          "metricSuffix": "%",
+          "metricLabel": "lead-uri calificate",
+          "summary": "Sistem de lead generation prin LinkedIn Ads si landing page optimization."
+        },
+        "2": {
+          "client": "Beauty Brand",
+          "industry": "Beauty & Wellness",
+          "metric": "62",
+          "metricPrefix": "-",
+          "metricSuffix": "%",
+          "metricLabel": "cost per achizitie",
+          "summary": "Reducerea CPA de la 45 RON la 17 RON prin testare A/B si optimizare funnel."
+        }
+      },
+      "cta": "Vezi Toate Studiile de Caz"
+    },
+    "leadMagnet": {
+      "overline": "GHID GRATUIT",
+      "heading": "27 Tactici Testate pentru Cresterea Ratei de Conversie",
+      "description": "Descarca ghidul folosit de echipa noastra pentru clientii cu cele mai bune rezultate.",
+      "bullets": {
+        "0": "Cum sa reduci CPA cu 40% fara sa cresti bugetul",
+        "1": "Checklistul de optimizare a landing page-urilor",
+        "2": "Cele mai frecvente greseli in campaniile Google Ads",
+        "3": "Template-ul de audit al palniei de conversie"
+      },
+      "placeholder": "Adresa ta de email",
+      "submit": "Descarca Gratuit",
+      "gdpr": "Sunt de acord cu prelucrarea datelor personale",
+      "success": "Ghidul a fost trimis pe email!"
+    },
     "testimonials": {
-      "overline": "TESTIMONIALE",
-      "heading": "Ce Spun Clientii Nostri",
+      "overline": "MAI MULTE OPINII",
+      "heading": "Clienti Care Au Crescut cu Noi",
       "items": {
         "0": {
           "quote": "Laboratorul de Conversii a transformat complet prezenta noastra online. Rezultatele au depasit asteptarile.",
@@ -1270,6 +1377,9 @@
         }
       }
     },
+    "clientLogos": {
+      "heading": "PARTENERI DE INCREDERE"
+    },
     "cta": {
       "heading": "Gata pentru Conversii Masurabile?",
       "description": "Hai sa discutam despre cum putem transforma afacerea ta intr-un sistem de conversii digital.",
@@ -1292,7 +1402,7 @@
       "contact": "Contact"
     },
     "meta": {
-      "title": "Contact | Laboratorul de Conversii - Laborator Digital Bucuresti",
+      "title": "Contact | Laboratorul de Conversii",
       "description": "Contacteaza Laboratorul de Conversii pentru sisteme de conversii digitale. Formular contact, programare consultatie, adresa si telefon. Raspundem in 24 de ore."
     },
     "hero": {
@@ -1671,6 +1781,140 @@
       {
         "heading": "10. Contact",
         "content": "Pentru orice intrebari sau clarificari legate de acesti termeni si conditii, ne puteti contacta la:\n\nLaboratorul de Conversii\nBulevardul Aviatorilor 106, Bucuresti, Romania\nEmail: cretualin@aceagency.ro\nTelefon: 0750 465 757"
+      }
+    ]
+  },
+  "adpilotPrivacy": {
+    "meta": {
+      "title": "Politica de Confidentialitate AdPilot - Laboratorul de Conversii",
+      "description": "Politica de confidentialitate pentru AdPilot, platforma de gestionare automata a campaniilor Meta Ads. Afla cum colectam si protejam datele conform GDPR."
+    },
+    "breadcrumb": {
+      "home": "Acasa",
+      "adpilot": "AdPilot",
+      "current": "Politica de Confidentialitate"
+    },
+    "hero": {
+      "heading": "Politica de Confidentialitate — AdPilot"
+    },
+    "lastUpdated": "Ultima actualizare: 15 martie 2026",
+    "sections": [
+      {
+        "heading": "1. Introducere",
+        "content": "AdPilot este un serviciu operat de AceAgency SRL, cu sediul in Bucuresti, Romania.\n\nAceasta politica descrie cum colectam, utilizam si protejam datele dumneavoastra in cadrul platformei AdPilot de gestionare automata a campaniilor publicitare Meta (Facebook, Instagram)."
+      },
+      {
+        "heading": "2. Date Colectate",
+        "content": "Date de cont: nume, adresa de email, informatii de facturare.\n\nDate din contul Meta Ads: ID cont publicitar, performanta campaniilor (impresii, click-uri, conversii, costuri), configurari de audienta, creative publicitare.\n\nDate de utilizare: loguri de acces, actiuni efectuate in platforma.\n\nNU colectam date personale ale utilizatorilor finali care vad reclamele dumneavoastra."
+      },
+      {
+        "heading": "3. Scopul Prelucrarii Datelor",
+        "content": "Gestionarea si optimizarea campaniilor publicitare Meta prin intermediul platformei AdPilot.\n\nGenerarea de rapoarte de performanta pentru campaniile dumneavoastra.\n\nAnaliza AI pentru optimizarea automata a campaniilor (texte publicitare, audienta, buget).\n\nComunicari privind serviciul: email-uri tranzactionale, rapoarte saptamanale de performanta."
+      },
+      {
+        "heading": "4. Temeiuri Legale (GDPR Art. 6)",
+        "content": "Consimtamant explicit la conectarea contului Meta la platforma AdPilot.\n\nExecutarea contractului de servicii incheiat intre dumneavoastra si AceAgency SRL.\n\nInteres legitim pentru imbunatatirea calitatii serviciului si a algoritmilor de optimizare."
+      },
+      {
+        "heading": "5. Partajarea Datelor cu Terti",
+        "content": "Anthropic (Claude API): datele de performanta ale campaniilor sunt trimise anonim (fara date personale) pentru analiza AI si generarea de recomandari de optimizare.\n\nStripe: procesarea platilor pentru abonamente. Nu stocam date de card de credit.\n\nSupabase: stocarea datelor aplicatiei pe servere din Uniunea Europeana.\n\nResend: trimiterea email-urilor tranzactionale si a rapoartelor.\n\nVercel: hosting-ul aplicatiei web.\n\nNU vindem si NU partajam datele dumneavoastra cu terti in scopuri publicitare."
+      },
+      {
+        "heading": "6. Stocarea si Securitatea Datelor",
+        "content": "Datele sunt stocate pe servere din Uniunea Europeana.\n\nCriptare in tranzit (TLS 1.3) si in repaus pentru toate datele sensibile.\n\nAcces restrictionat pe baza de rol — doar personalul autorizat are acces la date.\n\nAudituri periodice de securitate ale infrastructurii si codului."
+      },
+      {
+        "heading": "7. Perioada de Retentie",
+        "content": "Datele contului: pe durata utilizarii serviciului + 30 de zile dupa stergerea contului.\n\nDatele de performanta ale campaniilor: 24 de luni de la colectare.\n\nLoguri de acces: 12 luni.\n\nDupa expirarea perioadelor mentionate, datele sunt sterse definitiv si irecuperabil."
+      },
+      {
+        "heading": "8. Drepturile Dumneavoastra (GDPR)",
+        "content": "Conform Regulamentului General privind Protectia Datelor (GDPR), aveti urmatoarele drepturi:\n\nDreptul de acces la datele personale prelucrate.\n\nDreptul la rectificarea datelor inexacte sau incomplete.\n\nDreptul la stergere (\"dreptul de a fi uitat\").\n\nDreptul la restrictionarea prelucrarii datelor.\n\nDreptul la portabilitatea datelor intr-un format structurat.\n\nDreptul de a va retrage consimtamantul in orice moment.\n\nDreptul de a depune plangere la ANSPDCP (Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal)."
+      },
+      {
+        "heading": "9. Stergerea Datelor",
+        "content": "Puteti solicita stergerea completa a datelor dumneavoastra trimitand un email la: privacy@aceagency.ro\n\nDatele vor fi sterse in maxim 30 de zile lucratoare de la primirea solicitarii.\n\nLa deconectarea contului Meta din AdPilot, token-urile de acces sunt revocate imediat, iar campaniile create prin platforma sunt puse pe pauza."
+      },
+      {
+        "heading": "10. Cookies",
+        "content": "Cookie-uri esentiale: sesiune, autentificare, preferinte de limba.\n\nCookie-uri analitice: Vercel Analytics si Google Analytics 4 (doar cu consimtamantul dumneavoastra explicit).\n\nPuteti gestiona preferintele de cookies din banner-ul afisat la prima vizita sau din setarile platformei."
+      },
+      {
+        "heading": "11. Modificari ale Politicii",
+        "content": "Va vom notifica prin email cu 30 de zile inainte de orice modificare semnificativa a acestei politici.\n\nData ultimei actualizari va fi afisata permanent in partea de sus a acestei pagini."
+      },
+      {
+        "heading": "12. Contact",
+        "content": "AceAgency SRL\nBucuresti, Romania\nEmail: privacy@aceagency.ro\n\nPentru orice intrebari legate de prelucrarea datelor dumneavoastra personale, va rugam sa ne contactati la adresa de email de mai sus."
+      }
+    ]
+  },
+  "adpilotTerms": {
+    "meta": {
+      "title": "Termeni si Conditii AdPilot - Laboratorul de Conversii",
+      "description": "Termenii si conditiile de utilizare a platformei AdPilot de gestionare automata a campaniilor Meta Ads, operata de AceAgency SRL."
+    },
+    "breadcrumb": {
+      "home": "Acasa",
+      "adpilot": "AdPilot",
+      "current": "Termeni si Conditii"
+    },
+    "hero": {
+      "heading": "Termeni si Conditii — AdPilot"
+    },
+    "lastUpdated": "Ultima actualizare: 15 martie 2026",
+    "sections": [
+      {
+        "heading": "1. Definitii",
+        "content": "\"AdPilot\" sau \"Serviciul\": platforma SaaS de gestionare automata a campaniilor publicitare Meta, operata de AceAgency SRL.\n\n\"Operator\": AceAgency SRL, cu sediul in Bucuresti, Romania.\n\n\"Utilizator\": persoana fizica sau juridica care utilizeaza Serviciul.\n\n\"Cont Meta Ads\": contul publicitar Meta conectat la platforma AdPilot."
+      },
+      {
+        "heading": "2. Descrierea Serviciului",
+        "content": "AdPilot este o platforma bazata pe inteligenta artificiala care automatizeaza crearea, gestionarea si optimizarea campaniilor publicitare pe Meta (Facebook, Instagram).\n\nServiciul include: onboarding ghidat, generare de strategie AI, creare de continut publicitar, lansare de campanii, monitorizare si optimizare continua, rapoarte de performanta."
+      },
+      {
+        "heading": "3. Conditii de Utilizare",
+        "content": "Pentru a utiliza AdPilot trebuie sa aveti varsta minima de 18 ani.\n\nTrebuie sa detineti un cont Meta Business valid si un cont publicitar Meta activ cu o metoda de plata configurata.\n\nSunteti responsabil pentru bugetul publicitar alocat campaniilor (platit direct catre Meta).\n\nTrebuie sa respectati Politicile de publicitate Meta in vigoare."
+      },
+      {
+        "heading": "4. Planuri si Preturi",
+        "content": "Planurile sunt disponibile pe baza de abonament lunar.\n\nPreturile sunt afisate in EUR si includ TVA unde este cazul.\n\nBugetul publicitar platit catre Meta NU este inclus in costul abonamentului AdPilot.\n\nModificarile de pret vor fi comunicate cu minimum 30 de zile inainte de aplicare."
+      },
+      {
+        "heading": "5. Plati si Facturare",
+        "content": "Platile se proceseaza prin Stripe, un procesator de plati certificat PCI DSS.\n\nFacturarea se face lunar, la data aniversarii abonamentului.\n\nFacturile sunt disponibile in format electronic in contul dumneavoastra din platforma."
+      },
+      {
+        "heading": "6. Conectarea Contului Meta",
+        "content": "La conectarea contului Meta, acordati AdPilot permisiunea de a gestiona campaniile publicitare din contul dumneavoastra.\n\nPuteti revoca accesul oricand din setarile Meta Business.\n\nAdPilot nu va accesa si nu va modifica campanii care nu au fost create prin platforma, cu exceptia cazului in care solicitati explicit acest lucru."
+      },
+      {
+        "heading": "7. Limitarea Responsabilitatii",
+        "content": "AdPilot NU garanteaza rezultate specifice ale campaniilor publicitare (click-uri, conversii, vanzari). Performanta campaniilor depinde de multi factori externi: audienta, piata, buget, calitatea produsului sau serviciului promovat.\n\nNU suntem responsabili pentru: modificari ale algoritmului sau politicilor Meta, suspendarea contului Meta din motive independente de AdPilot, pierderi financiare rezultate din campaniile publicitare, intreruperi ale serviciilor Meta.\n\nResponsabilitatea maxima a AceAgency SRL este limitata la valoarea abonamentului platit in ultimele 3 luni."
+      },
+      {
+        "heading": "8. Proprietate Intelectuala",
+        "content": "Continutul publicitar generat de AdPilot (texte, imagini, strategii) va apartine integral.\n\nPlatforma AdPilot, algoritmii AI si tehnologia subiacenta raman proprietatea exclusiva a AceAgency SRL.\n\nNu aveti dreptul de a copia, modifica, redistribui sau decomanda platforma sau parti ale acesteia."
+      },
+      {
+        "heading": "9. Incetarea Serviciului",
+        "content": "Puteti anula abonamentul oricand din contul dumneavoastra.\n\nLa anulare: campaniile active vor fi puse pe pauza, iar accesul la platforma se pastreaza pana la finalul perioadei platite.\n\nAceAgency SRL poate suspenda contul in caz de: incalcarea acestor termeni, activitate frauduloasa, neplata abonamentului.\n\nLa incetarea definitiva, datele vor fi pastrate 30 de zile, apoi sterse definitiv."
+      },
+      {
+        "heading": "10. Disponibilitatea Serviciului",
+        "content": "Tintim o disponibilitate a platformei de 99.5%.\n\nIntretinerea planificata va fi comunicata cu minimum 48 de ore inainte.\n\nNu garantam functionare neintrerupta a serviciului. Intreruperile pot fi cauzate de factori externi (furnizori cloud, Meta, retea)."
+      },
+      {
+        "heading": "11. Modificarea Termenilor",
+        "content": "Ne rezervam dreptul de a modifica acesti termeni.\n\nModificarile semnificative vor fi comunicate prin email cu 30 de zile inainte de intrarea in vigoare.\n\nContinuarea utilizarii serviciului dupa data de intrare in vigoare constituie acceptarea noilor termeni."
+      },
+      {
+        "heading": "12. Legislatia Aplicabila",
+        "content": "Acesti termeni sunt guvernati de legislatia din Romania.\n\nOrice disputa rezultata din sau in legatura cu acesti termeni va fi solutionata de instantele competente din Bucuresti, Romania."
+      },
+      {
+        "heading": "13. Contact",
+        "content": "AceAgency SRL\nBucuresti, Romania\nEmail: contact@aceagency.ro\n\nPentru orice intrebari legate de acesti termeni, va rugam sa ne contactati la adresa de email de mai sus."
       }
     ]
   },

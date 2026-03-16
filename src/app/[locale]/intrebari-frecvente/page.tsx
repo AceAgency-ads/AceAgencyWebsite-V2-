@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { generatePageMetadata } from '@/lib/seo/metadata';
+import { organizationSchema, renderJsonLd } from '@/lib/seo/schemas';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { Breadcrumb } from '@/components/sections/Breadcrumb';
 import { FAQPageContent } from '@/components/sections/faq/FAQPageContent';
@@ -33,6 +34,11 @@ export default async function FAQPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: renderJsonLd(organizationSchema()) }}
+      />
+
       {/* Hero section with breadcrumb */}
       <SectionWrapper theme="dark" id="faq-hero" className="py-16 md:py-24">
         <div className="max-w-3xl">
@@ -41,6 +47,7 @@ export default async function FAQPage({
               { label: t('breadcrumb.home'), href: '/' },
               { label: t('breadcrumb.current') },
             ]}
+            locale={locale}
           />
 
           <span

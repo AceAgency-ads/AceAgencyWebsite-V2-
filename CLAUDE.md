@@ -62,6 +62,8 @@ public/
 | `/servicii/email-marketing` | Email Marketing | Must-have |
 | `/servicii/consultanta-marketing` | Consultanta | Must-have |
 | `/contact` | Contact | Must-have |
+| `/adpilot/privacy` | AdPilot Privacy Policy | Must-have |
+| `/adpilot/terms` | AdPilot Terms of Service | Must-have |
 | `/portofoliu` | Portfolio | V2 |
 | `/blog` | Blog | V2 |
 | `/echipa` | Team | V2 |

@@ -233,7 +233,7 @@ export function ContactForm(): React.JSX.Element {
       <button
         type="submit"
         disabled={pending}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--ds-color-violet)] px-8 py-3.5 text-sm font-semibold text-white transition-all hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+        className="relative z-10 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--ds-color-violet)] px-8 py-3.5 text-sm font-semibold text-white transition-all hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
       >
         {pending ? (
           <>

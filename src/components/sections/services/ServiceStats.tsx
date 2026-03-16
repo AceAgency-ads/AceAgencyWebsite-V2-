@@ -23,7 +23,7 @@ export function ServiceStats({ serviceKey }: ServiceStatsProps): React.JSX.Eleme
   }>;
 
   return (
-    <SectionWrapper theme="dark" id="service-stats">
+    <SectionWrapper theme="light-warm" id="service-stats">
       <SectionHeader
         overline={t(`${serviceKey}.stats.overline`)}
         heading={t(`${serviceKey}.stats.heading`)}
@@ -33,12 +33,12 @@ export function ServiceStats({ serviceKey }: ServiceStatsProps): React.JSX.Eleme
         {items.map((item, index) => (
           <div
             key={index}
-            className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center"
+            className="rounded-2xl border border-[var(--section-border)] bg-[var(--section-card-bg)] p-8 text-center shadow-sm"
           >
             <CountUp
               end={Number(item.value)}
               suffix={item.suffix}
-              className="text-4xl font-bold text-white md:text-5xl"
+              className="text-4xl font-bold text-[var(--section-accent)] md:text-5xl"
             />
             <p className="mt-3 text-sm text-[var(--section-text-muted)]">
               {item.label}

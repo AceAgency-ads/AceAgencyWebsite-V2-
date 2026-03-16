@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { generatePageMetadata } from '@/lib/seo/metadata';
+import { organizationSchema, renderJsonLd } from '@/lib/seo/schemas';
 import { LegalHero } from '@/components/sections/legal/LegalHero';
 import { LegalContent } from '@/components/sections/legal/LegalContent';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
@@ -33,12 +34,18 @@ export default async function PrivacyPolicyPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: renderJsonLd(organizationSchema()) }}
+      />
+
       <LegalHero
         breadcrumbItems={[
           { label: t('breadcrumb.home'), href: '/' },
           { label: t('breadcrumb.current') },
         ]}
         heading={t('hero.heading')}
+        locale={locale}
       />
 
       <SectionWrapper theme="light" id="privacy-content">

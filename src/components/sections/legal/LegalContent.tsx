@@ -8,7 +8,7 @@ interface LegalSection {
 }
 
 interface LegalContentProps {
-  readonly namespace: 'privacy' | 'cookies' | 'terms';
+  readonly namespace: 'privacy' | 'cookies' | 'terms' | 'adpilotPrivacy' | 'adpilotTerms';
 }
 
 /**

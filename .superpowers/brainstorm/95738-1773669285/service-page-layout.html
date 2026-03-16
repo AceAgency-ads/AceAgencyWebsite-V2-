@@ -1,0 +1,76 @@
+<h2>Service Detail Page — Section Order</h2>
+<p class="subtitle">How should the new sections (testimonials, portfolio, case studies) fit into the existing service page layout?</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Social Proof After Features</h3>
+      <p>Group all trust signals together in the middle of the page, before the process section.</p>
+      <div style="font-family: monospace; font-size: 13px; background: #1a1a2e; padding: 16px; border-radius: 8px; margin-top: 12px; line-height: 2;">
+        <span style="color: #888;">1.</span> <span style="color: #fff;">ServiceHero</span> <span style="color: #555;">— breadcrumbs, icon, title</span><br>
+        <span style="color: #888;">2.</span> <span style="color: #fff;">HeroTransition</span> <span style="color: #555;">— definition paragraph</span><br>
+        <span style="color: #888;">3.</span> <span style="color: #fff;">ServiceFeatures</span> <span style="color: #555;">— benefits grid</span><br>
+        <span style="color: #e0a0ff;">4.</span> <span style="color: #e0a0ff; font-weight: bold;">📸 Portfolio Slider</span> <span style="color: #9a6fbf;">— screenshot gallery + visit site</span><br>
+        <span style="color: #e0a0ff;">5.</span> <span style="color: #e0a0ff; font-weight: bold;">⭐ Testimonials</span> <span style="color: #9a6fbf;">— tagged testimonials slider</span><br>
+        <span style="color: #e0a0ff;">6.</span> <span style="color: #e0a0ff; font-weight: bold;">📊 Case Study Results</span> <span style="color: #9a6fbf;">— photo + metric + 2 CTAs slider</span><br>
+        <span style="color: #888;">7.</span> <span style="color: #fff;">ServiceProcess</span> <span style="color: #555;">— methodology steps</span><br>
+        <span style="color: #888;">8.</span> <span style="color: #fff;">ServiceStats</span> <span style="color: #555;">— key metrics</span><br>
+        <span style="color: #888;">9.</span> <span style="color: #fff;">ServiceFAQ</span> <span style="color: #555;">— accordion</span><br>
+        <span style="color: #888;">10.</span> <span style="color: #fff;">ServiceCTA</span> <span style="color: #555;">— call to action</span>
+      </div>
+      <div class="pros-cons" style="margin-top: 12px;">
+        <div class="pros"><h4>Pros</h4><ul><li>Social proof grouped = strong trust block</li><li>User sees proof before committing to read process</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>3 sliders back-to-back could feel repetitive</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Interleaved — Proof Between Logic</h3>
+      <p>Spread social proof across the page so each logical section is followed by evidence.</p>
+      <div style="font-family: monospace; font-size: 13px; background: #1a1a2e; padding: 16px; border-radius: 8px; margin-top: 12px; line-height: 2;">
+        <span style="color: #888;">1.</span> <span style="color: #fff;">ServiceHero</span> <span style="color: #555;">— breadcrumbs, icon, title</span><br>
+        <span style="color: #888;">2.</span> <span style="color: #fff;">HeroTransition</span> <span style="color: #555;">— definition paragraph</span><br>
+        <span style="color: #888;">3.</span> <span style="color: #fff;">ServiceFeatures</span> <span style="color: #555;">— benefits grid</span><br>
+        <span style="color: #e0a0ff;">4.</span> <span style="color: #e0a0ff; font-weight: bold;">📸 Portfolio Slider</span> <span style="color: #9a6fbf;">— "see what we've built"</span><br>
+        <span style="color: #888;">5.</span> <span style="color: #fff;">ServiceProcess</span> <span style="color: #555;">— methodology steps</span><br>
+        <span style="color: #e0a0ff;">6.</span> <span style="color: #e0a0ff; font-weight: bold;">📊 Case Study Results</span> <span style="color: #9a6fbf;">— "here's what happened"</span><br>
+        <span style="color: #888;">7.</span> <span style="color: #fff;">ServiceStats</span> <span style="color: #555;">— key metrics</span><br>
+        <span style="color: #e0a0ff;">8.</span> <span style="color: #e0a0ff; font-weight: bold;">⭐ Testimonials</span> <span style="color: #9a6fbf;">— "hear from clients"</span><br>
+        <span style="color: #888;">9.</span> <span style="color: #fff;">ServiceFAQ</span> <span style="color: #555;">— accordion</span><br>
+        <span style="color: #888;">10.</span> <span style="color: #fff;">ServiceCTA</span> <span style="color: #555;">— call to action</span>
+      </div>
+      <div class="pros-cons" style="margin-top: 12px;">
+        <div class="pros"><h4>Pros</h4><ul><li>Narrative flow: features → portfolio → process → results → testimonials</li><li>Each proof type reinforces the section before it</li><li>No slider fatigue</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Page gets longer</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Bottom Proof Stack</h3>
+      <p>Keep existing page untouched, add all new sections before FAQ/CTA at the bottom.</p>
+      <div style="font-family: monospace; font-size: 13px; background: #1a1a2e; padding: 16px; border-radius: 8px; margin-top: 12px; line-height: 2;">
+        <span style="color: #888;">1.</span> <span style="color: #fff;">ServiceHero</span> <span style="color: #555;">— breadcrumbs, icon, title</span><br>
+        <span style="color: #888;">2.</span> <span style="color: #fff;">HeroTransition</span> <span style="color: #555;">— definition paragraph</span><br>
+        <span style="color: #888;">3.</span> <span style="color: #fff;">ServiceFeatures</span> <span style="color: #555;">— benefits grid</span><br>
+        <span style="color: #888;">4.</span> <span style="color: #fff;">ServiceProcess</span> <span style="color: #555;">— methodology steps</span><br>
+        <span style="color: #888;">5.</span> <span style="color: #fff;">ServiceStats</span> <span style="color: #555;">— key metrics</span><br>
+        <span style="color: #e0a0ff;">6.</span> <span style="color: #e0a0ff; font-weight: bold;">📸 Portfolio Slider</span> <span style="color: #9a6fbf;">— screenshot gallery</span><br>
+        <span style="color: #e0a0ff;">7.</span> <span style="color: #e0a0ff; font-weight: bold;">📊 Case Study Results</span> <span style="color: #9a6fbf;">— results slider</span><br>
+        <span style="color: #e0a0ff;">8.</span> <span style="color: #e0a0ff; font-weight: bold;">⭐ Testimonials</span> <span style="color: #9a6fbf;">— tagged testimonials</span><br>
+        <span style="color: #888;">9.</span> <span style="color: #fff;">ServiceFAQ</span> <span style="color: #555;">— accordion</span><br>
+        <span style="color: #888;">10.</span> <span style="color: #fff;">ServiceCTA</span> <span style="color: #555;">— call to action</span>
+      </div>
+      <div class="pros-cons" style="margin-top: 12px;">
+        <div class="pros"><h4>Pros</h4><ul><li>Minimal disruption to existing page</li><li>Proof stacks before CTA = conversion push</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>User has to scroll far to see any social proof</li><li>May bounce before reaching it</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>

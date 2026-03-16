@@ -82,8 +82,8 @@ export default async function ServicePage({
         ]}
       />
       <HeroTransition namespace="services" i18nPrefix={`${service.i18nKey}.heroTransition`} />
-      <ServiceFeatures serviceKey={service.i18nKey} />
-      <ServiceProcess serviceKey={service.i18nKey} />
+      <ServiceFeatures serviceKey={service.i18nKey} featureImage={service.featureImage} />
+      <ServiceProcess serviceKey={service.i18nKey} processImage={service.processImage} />
       <ServiceStats serviceKey={service.i18nKey} />
       <ServiceFAQ serviceKey={service.i18nKey} />
       <ServiceCTA serviceKey={service.i18nKey} />

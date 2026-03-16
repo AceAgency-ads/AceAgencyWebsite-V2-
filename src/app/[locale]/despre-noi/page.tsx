@@ -4,8 +4,8 @@ import { generatePageMetadata } from '@/lib/seo/metadata';
 import { AboutHero } from '@/components/sections/about/AboutHero';
 import { HeroTransition } from '@/components/sections/HeroTransition';
 import { StorySection } from '@/components/sections/about/StorySection';
+import { TeamSection } from '@/components/sections/about/TeamSection';
 import { ValuesSection } from '@/components/sections/about/ValuesSection';
-import { DivisionsSection } from '@/components/sections/about/DivisionsSection';
 import { MissionVision } from '@/components/sections/about/MissionVision';
 import { WhyChooseUs } from '@/components/sections/about/WhyChooseUs';
 import { CTASection } from '@/components/sections/home/CTASection';
@@ -51,8 +51,8 @@ export default async function AboutPage({
       />
       <HeroTransition namespace="about" i18nPrefix="heroTransition" />
       <StorySection />
+      <TeamSection />
       <ValuesSection />
-      <DivisionsSection />
       <MissionVision />
       <WhyChooseUs />
       <CTASection namespace="about" secondaryHref="/servicii" />

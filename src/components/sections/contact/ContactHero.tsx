@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { gsap, useGSAP } from '@/lib/gsap';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { TextReveal } from '@/components/animations/TextReveal';
@@ -17,6 +17,7 @@ interface ContactHeroProps {
  * Left-aligned layout, shorter than homepage hero.
  */
 export function ContactHero({ breadcrumbItems }: ContactHeroProps): React.JSX.Element {
+  const locale = useLocale();
   const t = useTranslations('contact');
   const overlineRef = useRef<HTMLSpanElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
@@ -54,7 +55,7 @@ export function ContactHero({ breadcrumbItems }: ContactHeroProps): React.JSX.El
   return (
     <SectionWrapper theme="dark" id="contact-hero" className="py-16 md:py-24">
       <div className="max-w-3xl">
-        <Breadcrumb items={breadcrumbItems} />
+        <Breadcrumb items={breadcrumbItems} locale={locale} />
 
         <span
           ref={overlineRef}

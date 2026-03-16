@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { gsap, useGSAP } from '@/lib/gsap';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { TextReveal } from '@/components/animations/TextReveal';
@@ -17,6 +17,7 @@ interface ServicesHeroProps {
  * This renders the ONLY h1 on the services index page.
  */
 export function ServicesHero({ breadcrumbItems }: ServicesHeroProps): React.JSX.Element {
+  const locale = useLocale();
   const t = useTranslations('services');
   const overlineRef = useRef<HTMLSpanElement>(null);
   const subheadingRef = useRef<HTMLParagraphElement>(null);
@@ -67,7 +68,7 @@ export function ServicesHero({ breadcrumbItems }: ServicesHeroProps): React.JSX.
       />
 
       <div className="relative z-10 max-w-3xl">
-        {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}
+        {breadcrumbItems && <Breadcrumb items={breadcrumbItems} locale={locale} />}
 
         {/* Overline */}
         <span

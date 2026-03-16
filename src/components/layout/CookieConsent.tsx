@@ -40,8 +40,8 @@ export function CookieConsentBanner({ locale }: CookieConsentBannerProps): null 
 
       guiOptions: {
         consentModal: {
-          layout: 'box',
-          position: 'bottom right',
+          layout: 'bar',
+          position: 'bottom',
         },
       },
 

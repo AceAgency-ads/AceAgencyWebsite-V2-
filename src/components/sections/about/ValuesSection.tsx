@@ -39,7 +39,7 @@ export function ValuesSection(): React.JSX.Element {
   const items = t.raw('values.items') as readonly ValueItem[];
 
   return (
-    <SectionWrapper theme="dark" id="values">
+    <SectionWrapper theme="light-warm" id="values">
       <SectionHeader
         overline={t('values.overline')}
         heading={t('values.heading')}
@@ -63,7 +63,7 @@ export function ValuesSection(): React.JSX.Element {
                   aria-hidden="true"
                 />
               )}
-              <h4 className="mb-2 text-lg font-bold">{item.title}</h4>
+              <h3 className="mb-2 text-lg font-bold">{item.title}</h3>
               <p className="text-sm text-[var(--section-text-muted)]">
                 {item.description}
               </p>

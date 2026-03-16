@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/accordion';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import { SectionHeader } from '@/components/sections/SectionHeader';
+import { renderJsonLd } from '@/lib/seo/schemas';
 
 /**
  * Contact page FAQ accordion section.
@@ -37,10 +38,10 @@ export function ContactFAQ(): React.JSX.Element {
   };
 
   return (
-    <SectionWrapper theme="dark" id="faq">
+    <SectionWrapper theme="light-warm" id="faq">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: renderJsonLd(faqSchema) }}
       />
 
       <SectionHeader

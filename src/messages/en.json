@@ -53,7 +53,7 @@
   },
   "about": {
     "meta": {
-      "title": "About Us - Premium Conversion Lab - Conversion Lab",
+      "title": "About Us | Conversion Lab",
       "description": "Discover the Conversion Lab team - conversion lab from Bucharest. Our mission, values, and story."
     },
     "breadcrumb": {
@@ -615,7 +615,7 @@
         "description": "TikTok is the platform where authenticity wins. We create native campaigns that capture attention in the first seconds and turn views into concrete actions for your brand."
       },
       "meta": {
-        "title": "TikTok Ads Conversions | TikTok Advertising Romania - Conversion Lab",
+        "title": "TikTok Ads Conversions | Conversion Lab",
         "description": "Creative and high-performing TikTok Ads conversion systems for audiences in Romania. TikTok video advertising with measurable conversions. Request a quote!"
       },
       "hero": {
@@ -745,7 +745,7 @@
         "description": "SEO is not just about Google rankings — it is about qualified traffic, domain authority and long-term organic growth. We build complete SEO strategies that turn searches into customers."
       },
       "meta": {
-        "title": "Organic Growth SEO Romania | Professional SEO Optimization - Conversion Lab",
+        "title": "Organic SEO Growth | Conversion Lab",
         "description": "Professional SEO services for organic Google positioning. Complete SEO audit, technical and content optimization. Request a free SEO audit today!"
       },
       "hero": {
@@ -883,7 +883,7 @@
         "description": "Email marketing remains the channel with the highest ROI in digital marketing. We build personalized campaigns and automations that work around the clock to generate recurring revenue."
       },
       "meta": {
-        "title": "Email Conversions | Email Marketing Systems - Conversion Lab",
+        "title": "Email Marketing | Conversion Lab",
         "description": "Professional email marketing campaigns with advanced automation and segmentation. Newsletter, drip campaigns and detailed reporting. Request a free quote!"
       },
       "hero": {
@@ -1155,6 +1155,33 @@
       "heading": "We transform your vision into measurable digital conversions",
       "description": "We are a full-service conversion lab from Bucharest that combines web development, paid advertising, artificial intelligence and media production to deliver concrete conversions and sustainable growth."
     },
+    "conversionProcess": {
+      "overline": "THE LAB METHOD",
+      "heading": "The LAB Method: 5 Steps to Measurable Conversions",
+      "description": "A tested, repeatable process that turns traffic into customers and customers into brand ambassadors.",
+      "steps": {
+        "0": {
+          "title": "Audit",
+          "description": "We analyze your current digital presence, existing data, and conversion funnels to identify growth opportunities."
+        },
+        "1": {
+          "title": "Strategy",
+          "description": "We build a custom growth plan based on audit findings, with clear objectives and measurable KPIs."
+        },
+        "2": {
+          "title": "Implementation",
+          "description": "We execute the strategy across all relevant channels — ads, SEO, email marketing, web — with precision and consistency."
+        },
+        "3": {
+          "title": "Optimization",
+          "description": "We A/B test, iterate, and continuously improve every element of the system for better conversions."
+        },
+        "4": {
+          "title": "Scaling",
+          "description": "We scale what works, expand to new channels, and increase budgets where ROI is proven."
+        }
+      }
+    },
     "hero": {
       "overline": "WEB . ADS . AI . MEDIA",
       "headline": "<accent>Conversion</accent> Lab in Bucharest",
@@ -1228,9 +1255,89 @@
       "description": "We are a team of professionals who believe every brand deserves exceptional measurable conversions. From strategy to execution, from idea to conversion.",
       "cta": "Learn more"
     },
+    "videoTestimonials": {
+      "overline": "REAL RESULTS",
+      "heading": "Hear Our Clients' Stories",
+      "items": {
+        "0": {
+          "quote": "Honestly, I didn't expect to see results this fast. In the first month I was already getting orders from Google that I never used to get. These guys really know what they're doing.",
+          "author": "Alex",
+          "company": "Trady.ro",
+          "rating": "5",
+          "thumbnailSrc": "/images/testimonials/video-thumb-1.webp",
+          "videoSrc": ""
+        },
+        "1": {
+          "quote": "My restaurant was only busy with locals. After their campaigns, people started coming from all over Bucharest — some told me they found us on Google. The investment paid off from the first month.",
+          "author": "Anca",
+          "company": "Gyros Thessalonikis",
+          "rating": "5",
+          "thumbnailSrc": "/images/testimonials/video-thumb-2.webp",
+          "videoSrc": ""
+        },
+        "2": {
+          "quote": "I worked with other agencies before and was throwing money away without understanding where it went. Here everything is data-driven, they explain everything, and most importantly — I sell more than I ever did on my own.",
+          "author": "Renata",
+          "company": "Amora.ro",
+          "rating": "5",
+          "thumbnailSrc": "/images/testimonials/video-thumb-3.webp",
+          "videoSrc": ""
+        }
+      }
+    },
+    "caseStudies": {
+      "overline": "CASE STUDIES",
+      "heading": "Concrete Results, Not Promises",
+      "description": "Every project starts with a clear objective and ends with measurable results.",
+      "items": {
+        "0": {
+          "client": "E-Shop Romania",
+          "industry": "E-commerce",
+          "metric": "340",
+          "metricPrefix": "+",
+          "metricSuffix": "%",
+          "metricLabel": "ROAS growth",
+          "summary": "From ROAS 2.1 to ROAS 9.3 in 90 days through Google Ads campaign optimization."
+        },
+        "1": {
+          "client": "TechStart SRL",
+          "industry": "SaaS B2B",
+          "metric": "185",
+          "metricPrefix": "+",
+          "metricSuffix": "%",
+          "metricLabel": "qualified leads",
+          "summary": "Lead generation system through LinkedIn Ads and landing page optimization."
+        },
+        "2": {
+          "client": "Beauty Brand",
+          "industry": "Beauty & Wellness",
+          "metric": "62",
+          "metricPrefix": "-",
+          "metricSuffix": "%",
+          "metricLabel": "cost per acquisition",
+          "summary": "CPA reduced from 45 RON to 17 RON through A/B testing and funnel optimization."
+        }
+      },
+      "cta": "View All Case Studies"
+    },
+    "leadMagnet": {
+      "overline": "FREE GUIDE",
+      "heading": "27 Tested Tactics to Increase Your Conversion Rate",
+      "description": "Download the guide used by our team for clients with the best results.",
+      "bullets": {
+        "0": "How to reduce CPA by 40% without increasing your budget",
+        "1": "The landing page optimization checklist",
+        "2": "The most common mistakes in Google Ads campaigns",
+        "3": "The conversion funnel audit template"
+      },
+      "placeholder": "Your email address",
+      "submit": "Download Free",
+      "gdpr": "I agree to the processing of personal data",
+      "success": "The guide has been sent to your email!"
+    },
     "testimonials": {
-      "overline": "TESTIMONIALS",
-      "heading": "What Our Clients Say",
+      "overline": "MORE TESTIMONIALS",
+      "heading": "Clients Who Grew with Us",
       "items": {
         "0": {
           "quote": "Conversion Lab completely transformed our online presence. The results exceeded expectations.",
@@ -1269,6 +1376,9 @@
           "rating": "5"
         }
       }
+    },
+    "clientLogos": {
+      "heading": "TRUSTED PARTNERS"
     },
     "cta": {
       "heading": "Ready for Measurable Conversions?",
@@ -1671,6 +1781,140 @@
       {
         "heading": "10. Contact",
         "content": "For any questions or clarifications regarding these terms and conditions, you can contact us at:\n\nConversion Lab\nBulevardul Aviatorilor 106, Bucharest, Romania\nEmail: cretualin@aceagency.ro\nPhone: 0750 465 757"
+      }
+    ]
+  },
+  "adpilotPrivacy": {
+    "meta": {
+      "title": "Privacy Policy AdPilot - Conversion Lab",
+      "description": "Privacy policy for AdPilot, the automated Meta Ads campaign management platform. Learn how we collect and protect your data under GDPR."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "adpilot": "AdPilot",
+      "current": "Privacy Policy"
+    },
+    "hero": {
+      "heading": "Privacy Policy — AdPilot"
+    },
+    "lastUpdated": "Last updated: March 15, 2026",
+    "sections": [
+      {
+        "heading": "1. Introduction",
+        "content": "AdPilot is a service operated by AceAgency SRL, headquartered in Bucharest, Romania.\n\nThis policy describes how we collect, use, and protect your data within the AdPilot platform for automated Meta (Facebook, Instagram) advertising campaign management."
+      },
+      {
+        "heading": "2. Data Collected",
+        "content": "Account data: name, email address, billing information.\n\nMeta Ads account data: advertising account ID, campaign performance (impressions, clicks, conversions, costs), audience configurations, ad creatives.\n\nUsage data: access logs, actions performed within the platform.\n\nWe do NOT collect personal data of end users who see your advertisements."
+      },
+      {
+        "heading": "3. Purpose of Data Processing",
+        "content": "Managing and optimizing Meta advertising campaigns through the AdPilot platform.\n\nGenerating performance reports for your campaigns.\n\nAI analysis for automatic campaign optimization (ad copy, audience, budget).\n\nService communications: transactional emails, weekly performance reports."
+      },
+      {
+        "heading": "4. Legal Basis (GDPR Art. 6)",
+        "content": "Explicit consent when connecting your Meta account to the AdPilot platform.\n\nPerformance of the service contract between you and AceAgency SRL.\n\nLegitimate interest in improving service quality and optimization algorithms."
+      },
+      {
+        "heading": "5. Data Sharing with Third Parties",
+        "content": "Anthropic (Claude API): campaign performance data is sent anonymously (without personal data) for AI analysis and optimization recommendations.\n\nStripe: payment processing for subscriptions. We do not store credit card data.\n\nSupabase: application data storage on European Union servers.\n\nResend: sending transactional emails and reports.\n\nVercel: web application hosting.\n\nWe do NOT sell and do NOT share your data with third parties for advertising purposes."
+      },
+      {
+        "heading": "6. Data Storage and Security",
+        "content": "Data is stored on servers within the European Union.\n\nEncryption in transit (TLS 1.3) and at rest for all sensitive data.\n\nRole-based access restrictions — only authorized personnel have access to data.\n\nPeriodic security audits of infrastructure and code."
+      },
+      {
+        "heading": "7. Retention Period",
+        "content": "Account data: for the duration of service use + 30 days after account deletion.\n\nCampaign performance data: 24 months from collection.\n\nAccess logs: 12 months.\n\nAfter the mentioned periods expire, data is permanently and irreversibly deleted."
+      },
+      {
+        "heading": "8. Your Rights (GDPR)",
+        "content": "Under the General Data Protection Regulation (GDPR), you have the following rights:\n\nRight of access to processed personal data.\n\nRight to rectification of inaccurate or incomplete data.\n\nRight to erasure (\"right to be forgotten\").\n\nRight to restriction of data processing.\n\nRight to data portability in a structured format.\n\nRight to withdraw consent at any time.\n\nRight to lodge a complaint with ANSPDCP (the Romanian National Supervisory Authority for Personal Data Processing)."
+      },
+      {
+        "heading": "9. Data Deletion",
+        "content": "You can request complete deletion of your data by sending an email to: privacy@aceagency.ro\n\nData will be deleted within a maximum of 30 business days from receiving the request.\n\nWhen disconnecting your Meta account from AdPilot, access tokens are revoked immediately, and campaigns created through the platform are paused."
+      },
+      {
+        "heading": "10. Cookies",
+        "content": "Essential cookies: session, authentication, language preferences.\n\nAnalytics cookies: Vercel Analytics and Google Analytics 4 (only with your explicit consent).\n\nYou can manage your cookie preferences from the banner displayed on your first visit or from the platform settings."
+      },
+      {
+        "heading": "11. Policy Changes",
+        "content": "We will notify you by email 30 days before any significant changes to this policy.\n\nThe date of the last update will be permanently displayed at the top of this page."
+      },
+      {
+        "heading": "12. Contact",
+        "content": "AceAgency SRL\nBucharest, Romania\nEmail: privacy@aceagency.ro\n\nFor any questions regarding the processing of your personal data, please contact us at the email address above."
+      }
+    ]
+  },
+  "adpilotTerms": {
+    "meta": {
+      "title": "Terms and Conditions AdPilot - Conversion Lab",
+      "description": "Terms and conditions for using the AdPilot automated Meta Ads campaign management platform, operated by AceAgency SRL."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "adpilot": "AdPilot",
+      "current": "Terms and Conditions"
+    },
+    "hero": {
+      "heading": "Terms and Conditions — AdPilot"
+    },
+    "lastUpdated": "Last updated: March 15, 2026",
+    "sections": [
+      {
+        "heading": "1. Definitions",
+        "content": "\"AdPilot\" or \"the Service\": the SaaS platform for automated Meta advertising campaign management, operated by AceAgency SRL.\n\n\"Operator\": AceAgency SRL, headquartered in Bucharest, Romania.\n\n\"User\": the individual or legal entity using the Service.\n\n\"Meta Ads Account\": the Meta advertising account connected to the AdPilot platform."
+      },
+      {
+        "heading": "2. Service Description",
+        "content": "AdPilot is an artificial intelligence-powered platform that automates the creation, management, and optimization of advertising campaigns on Meta (Facebook, Instagram).\n\nThe Service includes: guided onboarding, AI strategy generation, ad content creation, campaign launch, continuous monitoring and optimization, performance reports."
+      },
+      {
+        "heading": "3. Terms of Use",
+        "content": "To use AdPilot you must be at least 18 years old.\n\nYou must have a valid Meta Business account and an active Meta advertising account with a payment method configured.\n\nYou are responsible for the advertising budget allocated to campaigns (paid directly to Meta).\n\nYou must comply with Meta's advertising policies in effect."
+      },
+      {
+        "heading": "4. Plans and Pricing",
+        "content": "Plans are available on a monthly subscription basis.\n\nPrices are displayed in EUR and include VAT where applicable.\n\nThe advertising budget paid to Meta is NOT included in the AdPilot subscription cost.\n\nPrice changes will be communicated at least 30 days before taking effect."
+      },
+      {
+        "heading": "5. Payments and Billing",
+        "content": "Payments are processed through Stripe, a PCI DSS certified payment processor.\n\nBilling is done monthly, on the subscription anniversary date.\n\nInvoices are available in electronic format in your platform account."
+      },
+      {
+        "heading": "6. Meta Account Connection",
+        "content": "By connecting your Meta account, you grant AdPilot permission to manage advertising campaigns in your account.\n\nYou can revoke access at any time from your Meta Business settings.\n\nAdPilot will not access or modify campaigns that were not created through the platform, unless you explicitly request this."
+      },
+      {
+        "heading": "7. Limitation of Liability",
+        "content": "AdPilot does NOT guarantee specific advertising campaign results (clicks, conversions, sales). Campaign performance depends on many external factors: audience, market, budget, product or service quality.\n\nWe are NOT responsible for: changes to Meta's algorithm or policies, Meta account suspension for reasons independent of AdPilot, financial losses resulting from advertising campaigns, interruptions to Meta services.\n\nThe maximum liability of AceAgency SRL is limited to the subscription value paid in the last 3 months."
+      },
+      {
+        "heading": "8. Intellectual Property",
+        "content": "Advertising content generated by AdPilot (texts, images, strategies) belongs entirely to you.\n\nThe AdPilot platform, AI algorithms, and underlying technology remain the exclusive property of AceAgency SRL.\n\nYou do not have the right to copy, modify, redistribute, or reverse-engineer the platform or parts thereof."
+      },
+      {
+        "heading": "9. Service Termination",
+        "content": "You can cancel your subscription at any time from your account.\n\nUpon cancellation: active campaigns will be paused, and platform access is maintained until the end of the paid period.\n\nAceAgency SRL may suspend the account in case of: violation of these terms, fraudulent activity, non-payment of subscription.\n\nUpon definitive termination, data will be kept for 30 days, then permanently deleted."
+      },
+      {
+        "heading": "10. Service Availability",
+        "content": "We target a platform availability of 99.5%.\n\nPlanned maintenance will be communicated at least 48 hours in advance.\n\nWe do not guarantee uninterrupted service operation. Interruptions may be caused by external factors (cloud providers, Meta, network)."
+      },
+      {
+        "heading": "11. Terms Modification",
+        "content": "We reserve the right to modify these terms.\n\nSignificant changes will be communicated by email 30 days before taking effect.\n\nContinued use of the service after the effective date constitutes acceptance of the new terms."
+      },
+      {
+        "heading": "12. Applicable Law",
+        "content": "These terms are governed by the laws of Romania.\n\nAny dispute arising from or in connection with these terms will be resolved by the competent courts in Bucharest, Romania."
+      },
+      {
+        "heading": "13. Contact",
+        "content": "AceAgency SRL\nBucharest, Romania\nEmail: contact@aceagency.ro\n\nFor any questions regarding these terms, please contact us at the email address above."
       }
     ]
   },

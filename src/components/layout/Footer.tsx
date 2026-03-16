@@ -109,13 +109,13 @@ export function Footer(): React.JSX.Element {
               <h3 className="font-heading text-sm font-bold uppercase tracking-[0.12em] text-[#a0a0a0]">
                 {locale === 'ro' ? 'Pagini' : 'Pages'}
               </h3>
-              <nav aria-label="Footer navigation" className="flex flex-col gap-2">
+              <nav aria-label="Footer navigation" className="flex flex-col gap-0.5">
                 {NAV_LINKS.map((link) => (
                   <Link
                     key={link.key}
                     href={link.href}
                     locale={locale}
-                    className="text-sm text-[#a0a0a0] transition-colors duration-200 hover:text-[#D9D9D9]"
+                    className="py-1.5 text-sm text-[#a0a0a0] transition-colors duration-200 hover:text-[#D9D9D9]"
                   >
                     {tNav(link.key)}
                   </Link>
@@ -125,13 +125,13 @@ export function Footer(): React.JSX.Element {
               <h3 className="mt-4 font-heading text-sm font-bold uppercase tracking-[0.12em] text-[#a0a0a0]">
                 {locale === 'ro' ? 'Servicii' : 'Services'}
               </h3>
-              <nav aria-label="Footer services" className="flex flex-col gap-2">
+              <nav aria-label="Footer services" className="flex flex-col gap-0.5">
                 {SERVICE_LINKS.map((link) => (
                   <Link
                     key={link.key}
                     href={link.href}
                     locale={locale}
-                    className="text-sm text-[#a0a0a0] transition-colors duration-200 hover:text-[#D9D9D9]"
+                    className="py-1.5 text-sm text-[#a0a0a0] transition-colors duration-200 hover:text-[#D9D9D9]"
                   >
                     {tServices(link.key)}
                   </Link>
@@ -192,11 +192,13 @@ export function Footer(): React.JSX.Element {
                     </p>
                   )}
 
-                  <label className="flex items-start gap-2 text-xs text-[#a0a0a0]/80">
+                  <label className="flex min-h-[44px] cursor-pointer items-start gap-2 py-1 text-xs text-[#a0a0a0]/80">
                     <input
                       type="checkbox"
+                      id="newsletter-gdpr"
+                      name="gdpr-consent"
                       required
-                      className="mt-0.5 h-4 w-4 rounded border-[#4a464380] bg-transparent accent-[#650CBE]"
+                      className="mt-0.5 h-5 w-5 shrink-0 rounded border-[#4a464380] bg-transparent accent-[#650CBE]"
                     />
                     <span>{t('newsletter.gdpr')}</span>
                   </label>

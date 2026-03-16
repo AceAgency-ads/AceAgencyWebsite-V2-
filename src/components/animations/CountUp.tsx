@@ -34,22 +34,36 @@ export function CountUp({
         // Reset counter for re-entry
         counterRef.current = { value: 0 };
 
-        gsap.to(counterRef.current, {
-          value: end,
-          duration,
-          ease: 'power2.out',
-          snap: { value: 1 },
-          scrollTrigger: {
-            trigger: spanRef.current,
-            start: 'top 85%',
-            toggleActions: 'play none none none',
-          },
-          onUpdate() {
-            if (spanRef.current) {
-              spanRef.current.textContent = `${counterRef.current.value}${suffix}`;
-            }
-          },
+        const trigger = ScrollTrigger.create({
+          trigger: spanRef.current,
+          start: 'top 85%',
         });
+
+        // If element is already past the trigger point on load, show final value immediately
+        if (trigger.isActive || (spanRef.current && spanRef.current.getBoundingClientRect().top < window.innerHeight * 0.85)) {
+          counterRef.current.value = end;
+          if (spanRef.current) {
+            spanRef.current.textContent = `${end}${suffix}`;
+          }
+          trigger.kill();
+        } else {
+          gsap.to(counterRef.current, {
+            value: end,
+            duration,
+            ease: 'power2.out',
+            snap: { value: 1 },
+            scrollTrigger: {
+              trigger: spanRef.current,
+              start: 'top 85%',
+              toggleActions: 'play none none none',
+            },
+            onUpdate() {
+              if (spanRef.current) {
+                spanRef.current.textContent = `${counterRef.current.value}${suffix}`;
+              }
+            },
+          });
+        }
 
         return () => {
           ScrollTrigger.getAll()
