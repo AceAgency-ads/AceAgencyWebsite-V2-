@@ -16,9 +16,9 @@ interface RelatedArticlesProps {
  * Light theme.
  */
 export function RelatedArticles({ articles }: RelatedArticlesProps): React.JSX.Element | null {
-  if (articles.length === 0) return null;
-
   const t = useTranslations('blog.article');
+
+  if (articles.length === 0) return null;
   const displayed = articles.slice(0, 3);
 
   return (
