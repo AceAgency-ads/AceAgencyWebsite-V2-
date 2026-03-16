@@ -33,6 +33,7 @@
 | `src/components/sections/blog/ArticleHeader.tsx` | Article detail header (image, title, meta) |
 | `src/components/sections/blog/ArticleCTA.tsx` | Bottom CTA banner on articles |
 | `src/components/sections/blog/RelatedArticles.tsx` | Related articles (same category, max 3) |
+| `src/components/sections/blog/BlogList.tsx` | Client component wrapping category filter + article grid |
 | `src/lib/mdx-components.tsx` | Custom MDX component mapping (callouts, images) |
 
 ### New Files — Case Study Pages
@@ -781,6 +782,7 @@ export function BlogCategoryFilter({
 // src/components/sections/blog/ArticleHeader.tsx
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { Calendar, Clock } from 'lucide-react';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 import type { BlogArticleMeta } from '@/types/content';
@@ -797,18 +799,19 @@ export function ArticleHeader({
   return (
     <SectionWrapper theme="dark" hero>
       {/* Breadcrumbs */}
+      {/* Breadcrumbs — use Link from next-intl for locale-aware routing */}
       <nav aria-label="Breadcrumb" className="mb-8">
         <ol className="flex items-center gap-2 text-sm text-[var(--section-text-muted)]">
           <li>
-            <a href="/" className="hover:text-white">
+            <Link href="/" className="hover:text-white">
               {t('article.breadcrumbHome')}
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <a href="/blog" className="hover:text-white">
+            <Link href="/blog" className="hover:text-white">
               {t('article.breadcrumbBlog')}
-            </a>
+            </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li className="text-white">{article.title}</li>
@@ -1097,11 +1100,8 @@ interface ArticlePageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
 
-export function generateStaticParams(): { slug: string }[] {
-  const slugs = getAllSlugs('blog');
-  // Deduplicate slugs (same slug may appear for multiple locales)
-  const unique = [...new Set(slugs.map((s) => s.slug))];
-  return unique.map((slug) => ({ slug }));
+export function generateStaticParams(): { slug: string; locale: string }[] {
+  return getAllSlugs('blog');
 }
 
 export async function generateMetadata({
@@ -1400,13 +1400,18 @@ git commit -m "feat: add PortfolioSlider component for service pages"
 
 - [ ] **Step 1: Create CaseStudyResults**
 
-Server component that reads case study frontmatter via `getContentBySection('studii-de-caz', locale)`. Passes data to a client slider sub-component.
+Client component that receives `caseStudies` array as a prop (loaded by parent server component in Task 17). This is a prop-driven component — it does NOT self-fetch from the filesystem.
+
+Props interface:
+```typescript
+interface CaseStudyResultsProps {
+  readonly caseStudies: readonly (CaseStudyMeta & { readonly readingTime: number })[];
+}
+```
 
 Each slide: hero image (left) + client name + industry badge + primary metric (CountUp) + two CTAs ("Vezi studiul de caz" → `/studii-de-caz/[slug]`, "Programeaza un apel" → `/contact`).
 
-Same slider navigation pattern as PortfolioSlider.
-
-Note: since this reads from the filesystem, the parent service page (server component) should call `getContentBySection` and pass the data as props to a client wrapper.
+Same slider navigation pattern as PortfolioSlider (CSS scroll-snap + prev/next buttons).
 
 - [ ] **Step 2: Commit**
 
