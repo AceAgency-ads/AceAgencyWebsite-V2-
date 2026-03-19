@@ -4,15 +4,17 @@ import { generatePageMetadata } from '@/lib/seo/metadata';
 import { HeroSection } from '@/components/sections/home/HeroSection';
 import { HeroTransition } from '@/components/sections/HeroTransition';
 import { ClientLogoBar } from '@/components/sections/home/ClientLogoBar';
-import { VideoTestimonials } from '@/components/sections/home/VideoTestimonials';
+import { CertificationBadges } from '@/components/sections/home/CertificationBadges';
 import { ConversionProcess } from '@/components/sections/home/ConversionProcess';
 import { ServicesPreview } from '@/components/sections/home/ServicesPreview';
 import { StatsSection } from '@/components/sections/home/StatsSection';
+import { BeforeAfterPreview } from '@/components/sections/home/BeforeAfterPreview';
 import { CaseStudyPreview } from '@/components/sections/home/CaseStudyPreview';
 import { AboutPreview } from '@/components/sections/home/AboutPreview';
-import { LeadMagnet } from '@/components/sections/home/LeadMagnet';
 import { Testimonials } from '@/components/sections/home/Testimonials';
+import { HomeFAQ } from '@/components/sections/home/HomeFAQ';
 import { CTASection } from '@/components/sections/home/CTASection';
+import { ExitIntentPopup } from '@/components/sections/home/ExitIntentPopup';
 import {
   organizationSchema,
   localBusinessSchema,
@@ -61,15 +63,17 @@ export default async function HomePage({
       <HeroSection />
       <HeroTransition namespace="home" i18nPrefix="heroTransition" />
       <ClientLogoBar />
-      <VideoTestimonials />
+      <CertificationBadges />
       <ConversionProcess />
       <ServicesPreview />
       <StatsSection />
+      <BeforeAfterPreview />
       <CaseStudyPreview />
       <AboutPreview />
-      <LeadMagnet />
       <Testimonials />
-      <CTASection />
+      <HomeFAQ />
+      <CTASection secondaryHref="/studii-de-caz" />
+      <ExitIntentPopup />
     </>
   );
 }

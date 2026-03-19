@@ -4,7 +4,7 @@ import { useActionState } from 'react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Linkedin, Instagram, Facebook, Youtube } from 'lucide-react';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 import { Container } from '@/components/layout/Container';
 import { submitNewsletter } from '@/lib/actions/newsletter';
@@ -31,12 +31,13 @@ const SERVICE_LINKS = [
 
 /** Social link data */
 const SOCIAL_LINKS = [
-  { key: 'linkedin', Icon: Linkedin, url: 'https://linkedin.com/company/aceagency' },
-  { key: 'instagram', Icon: Instagram, url: 'https://instagram.com/aceagency' },
-  { key: 'facebook', Icon: Facebook, url: 'https://facebook.com/aceagency' },
+  { key: 'linkedin', Icon: Linkedin, url: 'https://www.linkedin.com/in/alin-cretu-8649a1225/' },
+  { key: 'instagram', Icon: Instagram, url: 'https://www.instagram.com/aceagency.ro' },
+  { key: 'youtube', Icon: Youtube, url: 'https://www.youtube.com/@AceAgency-ro' },
+  { key: 'facebook', Icon: Facebook, url: 'https://www.facebook.com/aceadsco/' },
 ] as const;
 
-/** Legal page links (placeholder hrefs for now — actual pages built in Phase 6) */
+/** Legal page links */
 const LEGAL_LINKS = [
   { key: 'privacy', href: '/politica-confidentialitate' },
   { key: 'cookies', href: '/politica-cookies' },

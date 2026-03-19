@@ -1,7 +1,7 @@
 # Laboratorul de Conversii Documentation Index
 
-**Last Updated:** March 16, 2026
-**Status:** Phase 4 Complete — Homepage UX Redesign + AdPilot Legal Pages + Rebrand Complete
+**Last Updated:** March 18, 2026
+**Status:** Phase 4 Complete (Updated) — Homepage Redesign v2 with Certification Badges, Before/After Preview, FAQ & Exit Intent
 
 ---
 
@@ -61,35 +61,33 @@
 
 ---
 
-## What Changed in Phase 4 (Completed)
+## What Changed in Phase 4 (Latest Update — March 18, 2026)
 
-### Homepage UX Redesign — Trust-First Flow
-Restructured homepage section order to prioritize social proof and concrete results:
+### Homepage Redesign v2 — Enhanced Trust Flow with Concrete Proof
+Original Phase 4 redesign (trust-first flow) now enhanced with additional conversion-focused components:
 
-1. **New Section Order:**
-   - Hero → HeroTransition (unchanged)
-   - **ClientLogoBar** (moved up — after HeroTransition)
-   - **VideoTestimonials** (new — dark theme, 3 video testimonial cards)
-   - ConversionProcess (renamed to "Metoda LAB" in i18n)
-   - ServicesPreview (unchanged)
-   - StatsSection (unchanged)
-   - **CaseStudyPreview** (new — light theme, 3 cards with animated CountUp metrics)
-   - AboutPreview (unchanged)
-   - **LeadMagnet** (new — ebook download with email capture, replaces Newsletter)
-   - Testimonials (updated heading structure)
-   - CTASection (unchanged)
+1. **Previous Phase 4 Sections (March 16):**
+   - Hero → HeroTransition → ClientLogoBar → VideoTestimonials → ConversionProcess → ServicesPreview → StatsSection → CaseStudyPreview → AboutPreview → LeadMagnet → Testimonials → CTASection
 
-2. **Removed:**
-   - Newsletter section from homepage (functionality moved to LeadMagnet)
+2. **New Phase 4 Sections Added (March 18):**
+   - **CertificationBadges** (Section 4A — after ClientLogoBar)
+   - **BeforeAfterPreview** (Section 6A — after ServicesPreview, before StatsSection)
+   - **HomeFAQ** (Section 11A — after Testimonials, before CTASection)
+   - **ExitIntentPopup** (Desktop overlay — triggered on exit intent, 30s delay, once per session)
 
-3. **New Components (3):**
-   - **VideoTestimonials** — Carousel of video testimonials (dark theme, featured grid on desktop)
-   - **CaseStudyPreview** — 3-card grid with industry pills and animated metrics
-   - **LeadMagnet** — Ebook download form with email capture (dark outer + light card inner)
+3. **Removed Sections:**
+   - VideoTestimonials (REMOVED as of March 18)
+   - LeadMagnet (REMOVED as of March 18)
+   - Newsletter (removed in Phase 4 initial)
 
-4. **Updated Components:**
-   - **VideoTestimonialCard** — Added gradient fallback for missing thumbnails
-   - **Testimonials** — Updated heading i18n keys
+4. **New Components (4):**
+   - **CertificationBadges** — Grid of partner certifications (grayscale → color on hover, dark theme)
+   - **BeforeAfterPreview** — 3-card grid showing before/after metrics with improvement badges and animated CountUp
+   - **HomeFAQ** — Accordion FAQ section with FAQPage JSON-LD schema, links to full FAQ page
+   - **ExitIntentPopup** — Premium exit-intent modal with dark card, violet gradient glow, CTA to contact
+
+5. **New Hook (1):**
+   - **useExitIntent** — Detects desktop exit intent (mouseleave at top), respects dismiss/localStorage cache, desktop-only
 
 ### AdPilot Legal Pages (New)
 - **`/adpilot/privacy`** — Privacy policy for Meta app review
@@ -224,69 +222,68 @@ All animations built with GSAP. Key patterns:
 </SectionWrapper>
 ```
 
-### VideoTestimonials
+### CertificationBadges
 ```tsx
-<VideoTestimonials />
-// Renders 3 video testimonial cards from i18n
-// Desktop: 3-column featured grid layout
-// Mobile/Tablet: Horizontal scroll carousel with navigation arrows
+<CertificationBadges />
+// Renders 5 certification badge logos from i18n
+// Dark theme, grayscale → color on hover transition
+// Layout: 2-col mobile, 3-col tablet, 5-col desktop
 // i18n keys:
-//   home.videoTestimonials.overline
-//   home.videoTestimonials.heading
-//   home.videoTestimonials.items[0-2].quote
-//   home.videoTestimonials.items[0-2].author
-//   home.videoTestimonials.items[0-2].company
-//   home.videoTestimonials.items[0-2].rating
-//   home.videoTestimonials.items[0-2].thumbnailSrc
-//   home.videoTestimonials.items[0-2].videoSrc
+//   home.certifications.overline
+//   home.certifications.heading
+//   home.certifications.badges[0-4].name
+//   home.certifications.badges[0-4].src
 ```
 
-### VideoTestimonialCard
+### BeforeAfterPreview
 ```tsx
-<VideoTestimonialCard
-  quote="Customer testimonial text"
-  author="John Doe"
-  company="Company Name"
-  rating={5}
-  thumbnailSrc="/images/testimonials/thumb.jpg"
-  videoSrc="/videos/testimonial.mp4"
-/>
-// Features: Click-to-play video overlay, gradient fallback for missing thumbnails
+<BeforeAfterPreview />
+// Renders 3 before/after metric cards with improvement badges
+// Light theme, CountUp animations triggered at scroll 80%
+// Shows before (muted strikethrough) → after (violet + animated)
+// i18n keys:
+//   home.beforeAfter.overline
+//   home.beforeAfter.heading
+//   home.beforeAfter.labelBefore
+//   home.beforeAfter.labelAfter
+//   home.beforeAfter.items[0-2].client
+//   home.beforeAfter.items[0-2].industry
+//   home.beforeAfter.items[0-2].metricBefore
+//   home.beforeAfter.items[0-2].metricAfter
+//   home.beforeAfter.items[0-2].metricSuffix
+//   home.beforeAfter.items[0-2].metricLabel
+//   home.beforeAfter.items[0-2].improvement
+//   home.beforeAfter.items[0-2].summary
+//   home.beforeAfter.cta
 ```
 
-### CaseStudyPreview
+### HomeFAQ
 ```tsx
-<CaseStudyPreview />
-// Renders 3 case study cards with animated metrics from i18n
-// Light theme with CountUp animations
+<HomeFAQ />
+// Accordion FAQ section with FAQPage JSON-LD schema
+// Light theme, using shadcn Accordion (Radix UI)
+// Links to full FAQ page (/intrebari-frecvente)
 // i18n keys:
-//   home.caseStudies.overline
-//   home.caseStudies.heading
-//   home.caseStudies.description
-//   home.caseStudies.items[0-2].client
-//   home.caseStudies.items[0-2].industry
-//   home.caseStudies.items[0-2].metric
-//   home.caseStudies.items[0-2].metricPrefix
-//   home.caseStudies.items[0-2].metricSuffix
-//   home.caseStudies.items[0-2].metricLabel
-//   home.caseStudies.items[0-2].summary
-//   home.caseStudies.cta
+//   home.faq.overline
+//   home.faq.heading
+//   home.faq.items[].question
+//   home.faq.items[].answer
+//   home.faq.cta
 ```
 
-### LeadMagnet
+### ExitIntentPopup
 ```tsx
-<LeadMagnet />
-// Ebook download with email capture form (dark outer + light card inner)
-// Reuses submitNewsletter server action
+<ExitIntentPopup />
+// Desktop-only exit-intent modal triggered by mouseleave at viewport top
+// Uses useExitIntent hook for state management
+// Full-screen backdrop with dark card, violet gradient glow
+// Features: 30s delay, once per session, 7-day dismiss cache
 // i18n keys:
-//   home.leadMagnet.overline
-//   home.leadMagnet.heading
-//   home.leadMagnet.description
-//   home.leadMagnet.bullets[0-3]
-//   home.leadMagnet.placeholder
-//   home.leadMagnet.submit
-//   home.leadMagnet.gdpr
-//   home.leadMagnet.success
+//   home.exitIntent.overline
+//   home.exitIntent.heading
+//   home.exitIntent.description
+//   home.exitIntent.cta
+//   home.exitIntent.dismiss
 ```
 
 ### ClientLogoBar
@@ -413,14 +410,17 @@ Before committing:
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/design-system/pages/contact.md`
 
 ### Components
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/VideoTestimonials.tsx` (NEW)
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/VideoTestimonialCard.tsx`
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/CaseStudyPreview.tsx` (NEW)
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/LeadMagnet.tsx` (NEW)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/CertificationBadges.tsx` (NEW Mar 18)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/BeforeAfterPreview.tsx` (NEW Mar 18)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/HomeFAQ.tsx` (NEW Mar 18)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ExitIntentPopup.tsx` (NEW Mar 18)
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ConversionProcess.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ClientLogoBar.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/about/TeamSection.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/SectionWrapper.tsx`
+
+### Hooks
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/lib/hooks/useExitIntent.ts` (NEW Mar 18)
 
 ### Global Styles
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/styles/globals.css`

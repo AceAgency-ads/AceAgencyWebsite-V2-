@@ -1,8 +1,8 @@
 # Laboratorul de Conversii Codemaps Index
 
-**Last Updated:** March 16, 2026
-**Status:** Phase 4 Documentation Complete + Rebrand to Laboratorul de Conversii
-**Scope:** Homepage UX redesign + AdPilot legal pages + Brand repositioning
+**Last Updated:** March 18, 2026
+**Status:** Phase 4 Documentation Updated — Homepage Redesign v2 with Certifications, Before/After, FAQ & Exit Intent
+**Scope:** Enhanced homepage with new conversion-focused sections + improved trust flow
 
 ---
 
@@ -33,7 +33,7 @@
 
 ---
 
-## Homepage Architecture (Phase 4)
+## Homepage Architecture (Phase 4 — Latest March 18, 2026)
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -47,14 +47,14 @@
 └─────────────────────────────────────────────────┘
         ↓
 ┌─────────────────────────────────────────────────┐
-│ ClientLogoBar (dark) [MOVED UP - Phase 4]       │
+│ ClientLogoBar (dark) [SECTION 3]                │
 │ └─ Infinite marquee of client logos             │
 └─────────────────────────────────────────────────┘
-        ↓ [TRUST FOUNDATION]
+        ↓ [EARLY SOCIAL PROOF]
 ┌─────────────────────────────────────────────────┐
-│ VideoTestimonials (dark) [NEW - Phase 4]        │
-│ ├─ Desktop: 3-col grid layout                   │
-│ └─ Mobile: Carousel with nav arrows             │
+│ CertificationBadges (dark) [NEW - Mar 18]       │
+│ └─ 5 partner certs: 2-col → 3-col → 5-col      │
+│    (Grayscale → color on hover)                 │
 └─────────────────────────────────────────────────┘
         ↓
 ┌─────────────────────────────────────────────────┐
@@ -66,65 +66,75 @@
 │ ServicesPreview (light-warm)                    │
 │ └─ 6-card horizontal scroll carousel            │
 └─────────────────────────────────────────────────┘
+        ↓ [RESULTS PROOF]
+┌─────────────────────────────────────────────────┐
+│ BeforeAfterPreview (light) [NEW - Mar 18]       │
+│ ├─ 3-card grid: before (strikethrough muted)    │
+│ ├─ Arrow → after (violet animated CountUp)      │
+│ ├─ Industry pill + improvement badge            │
+│ └─ CTA link to case studies                     │
+└─────────────────────────────────────────────────┘
         ↓
 ┌─────────────────────────────────────────────────┐
 │ StatsSection (dark)                             │
-│ └─ 4 stats with CountUp animations              │
-└─────────────────────────────────────────────────┘
-        ↓ [SOCIAL PROOF CRESCENDO]
-┌─────────────────────────────────────────────────┐
-│ CaseStudyPreview (light) [NEW - Phase 4]        │
-│ ├─ 3-card grid with industry pills              │
-│ ├─ CountUp animated metrics                     │
-│ └─ Link to portfolio (/portofoliu)              │
+│ └─ 4 aggregate stats with CountUp animations    │
 └─────────────────────────────────────────────────┘
         ↓
 ┌─────────────────────────────────────────────────┐
 │ AboutPreview (dark)                             │
 │ └─ Brand mission + visual element               │
 └─────────────────────────────────────────────────┘
-        ↓ [ENGAGEMENT HOOK]
-┌─────────────────────────────────────────────────┐
-│ LeadMagnet (dark outer + light inner) [NEW 4]   │
-│ ├─ Left: Ebook cover placeholder (violet)      │
-│ ├─ Right: Content + email form                  │
-│ ├─ GDPR consent + honeypot spam prevention      │
-│ └─ Reuses submitNewsletter server action        │
-└─────────────────────────────────────────────────┘
-        ↓
+        ↓ [FINAL ENGAGEMENT]
 ┌─────────────────────────────────────────────────┐
 │ Testimonials (light-warm)                       │
 │ └─ Text testimonial cards, snap-scroll          │
+└─────────────────────────────────────────────────┘
+        ↓
+┌─────────────────────────────────────────────────┐
+│ HomeFAQ (light) [NEW - Mar 18]                  │
+│ ├─ Accordion with 8-10 FAQ items                │
+│ ├─ FAQPage JSON-LD schema for AI crawlers       │
+│ └─ CTA link to full FAQ page                    │
 └─────────────────────────────────────────────────┘
         ↓ [FINAL CONVERSION]
 ┌─────────────────────────────────────────────────┐
 │ CTASection (violet)                             │
 │ └─ "Gata sa Cresti Digital?" + 2 CTAs           │
 └─────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────┐
+│ ExitIntentPopup (overlay) [NEW - Mar 18]        │
+│ ├─ Desktop only (touch device detection)        │
+│ ├─ Triggers on mouseleave at top, 30s delay     │
+│ ├─ Dark card with violet gradient glow          │
+│ ├─ Once per session + 7-day dismiss cache       │
+│ └─ CTA to contact form                          │
+└─────────────────────────────────────────────────┘
 ```
 
-**Design Principle:** Trust-first flow positions social proof (logos, videos, stats, case studies) before asking for engagement or lead capture.
+**Design Principle:** Enhanced trust-first flow with concrete before/after results proof + FAQ for engagement + exit-intent recovery. Total 13 sections + overlay.
 
 ---
 
 ## Component Registry
 
-### Home Sections
+### Home Sections (13 total)
 
 | Component | File Path | Theme | Responsive | Animations |
 |-----------|-----------|-------|-----------|------------|
 | HeroSection | `src/components/sections/home/HeroSection.tsx` | dark | Yes | Character stagger + fade-up |
 | HeroTransition | `src/components/sections/HeroTransition.tsx` | dark | Yes | ScrubReveal paragraph |
 | ClientLogoBar | `src/components/sections/home/ClientLogoBar.tsx` | dark | Yes | Marquee 20s infinite |
-| VideoTestimonials | `src/components/sections/home/VideoTestimonials.tsx` | dark | Yes | Carousel + fade-up |
+| CertificationBadges | `src/components/sections/home/CertificationBadges.tsx` | dark | Yes | Grayscale → color hover |
 | ConversionProcess | `src/components/sections/home/ConversionProcess.tsx` | dark | Yes | Step stagger + hover |
 | ServicesPreview | `src/components/sections/home/ServicesPreview.tsx` | light-warm | Yes | Pin + scrub scroll |
+| BeforeAfterPreview | `src/components/sections/home/BeforeAfterPreview.tsx` | light | Yes | CountUp + fade-up |
 | StatsSection | `src/components/sections/home/StatsSection.tsx` | dark | Yes | CountUp 2s |
-| CaseStudyPreview | `src/components/sections/home/CaseStudyPreview.tsx` | light | Yes | CountUp + fade-up |
 | AboutPreview | `src/components/sections/home/AboutPreview.tsx` | dark | Yes | Fade-up directional |
-| LeadMagnet | `src/components/sections/home/LeadMagnet.tsx` | dark+light | Yes | Fade-up staggered |
 | Testimonials | `src/components/sections/home/Testimonials.tsx` | light-warm | Yes | Snap-scroll carousel |
+| HomeFAQ | `src/components/sections/home/HomeFAQ.tsx` | light | Yes | Accordion (no scroll animation) |
 | CTASection | `src/components/sections/home/CTASection.tsx` | violet | Yes | TextReveal + buttons |
+| ExitIntentPopup | `src/components/sections/home/ExitIntentPopup.tsx` | dark overlay | Desktop | Backdrop blur + scale-up |
 
 ### Shared Components
 
@@ -147,19 +157,20 @@
 - `home.hero.*` — Hero section content
 - `home.heroTransition.*` — HeroTransition section
 - `home.clientLogos.*` — ClientLogoBar section
-- `home.videoTestimonials.*` — VideoTestimonials section (NEW Phase 4)
+- `home.certifications.*` — CertificationBadges section (NEW Mar 18)
 - `home.conversionProcess.*` — ConversionProcess / "Metoda LAB"
 - `home.services.*` — ServicesPreview section
+- `home.beforeAfter.*` — BeforeAfterPreview section (NEW Mar 18)
 - `home.stats.*` — StatsSection
-- `home.caseStudies.*` — CaseStudyPreview section (NEW Phase 4)
 - `home.about.*` — AboutPreview section
-- `home.leadMagnet.*` — LeadMagnet section (NEW Phase 4)
 - `home.testimonials.*` — Testimonials section
+- `home.faq.*` — HomeFAQ section (NEW Mar 18)
+- `home.exitIntent.*` — ExitIntentPopup overlay (NEW Mar 18)
 - `home.cta.*` — CTASection
 
-### AdPilot Namespaces (NEW Phase 4)
-- `adpilotPrivacy.*` — Privacy policy page
-- `adpilotTerms.*` — Terms of service page
+### Other Namespaces
+- `adpilotPrivacy.*` — Privacy policy page (AdPilot legal)
+- `adpilotTerms.*` — Terms of service page (AdPilot legal)
 
 ### Layout Namespaces
 - `header.*` — Header navigation
@@ -284,23 +295,24 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 
 ### Homepage Components
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/HeroSection.tsx`
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ConversionProcess.tsx`
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/VideoTestimonials.tsx`
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/VideoTestimonialCard.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ClientLogoBar.tsx`
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/CaseStudyPreview.tsx`
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/LeadMagnet.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/CertificationBadges.tsx` (NEW Mar 18)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ConversionProcess.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ServicesPreview.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/BeforeAfterPreview.tsx` (NEW Mar 18)
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/StatsSection.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/AboutPreview.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/Testimonials.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/HomeFAQ.tsx` (NEW Mar 18)
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/CTASection.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ExitIntentPopup.tsx` (NEW Mar 18)
 
-### Shared Components
+### Shared Components & Hooks
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/SectionWrapper.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/SectionHeader.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/animations/ScrollReveal.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/animations/CountUp.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/lib/hooks/useExitIntent.ts` (NEW Mar 18)
 
 ### Legal Components
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/legal/LegalHero.tsx`
@@ -326,6 +338,7 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 
 | Date | Phase | Changes | Files Modified |
 |------|-------|---------|-----------------|
+| Mar 18, 2026 | 4 (v2) | Added Certifications, BeforeAfter, FAQ, ExitIntent | CODEMAPS-INDEX, DOCUMENTATION-INDEX, design-system/pages/home.md |
 | Mar 16, 2026 | 4 | Homepage redesign + AdPilot legal | 4 doc files |
 | Mar 6, 2026 | 3 | Warm light theme + new components | Phase-3 doc |
 | Earlier | 1-2 | Initial architecture + pages | Master + index |
@@ -355,15 +368,17 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 
 ## Next Documentation Updates
 
-- [ ] Portfolio page spec (`design-system/pages/portofoliu.md`) — Referenced by CaseStudyPreview
+- [ ] Update design-system/pages/home.md with full section-by-section specs (Mar 18 sections)
+- [ ] Create FAQ page spec (`design-system/pages/intrebari-frecvente.md`) — Referenced by HomeFAQ
+- [ ] Create case studies page spec (`design-system/pages/studii-de-caz.md`) — Referenced by BeforeAfterPreview
+- [ ] Portfolio page spec (`design-system/pages/portofoliu.md`) — Full page (referenced by CaseStudyPreview)
 - [ ] Blog page spec (`design-system/pages/blog.md`) — V2 feature
 - [ ] Team page spec (`design-system/pages/echipa.md`) — V2 feature
-- [ ] Service page architecture — Cross-reference with homepage
-- [ ] Email template documentation — For LeadMagnet + Newsletter
-- [ ] Analytics tracking plan — GEO performance monitoring
+- [ ] Update PHASE-4-HOMEPAGE-REDESIGN.md with v2 changes (Certifications, BeforeAfter, FAQ, ExitIntent)
+- [ ] Analytics tracking plan — Exit intent + FAQ engagement + BeforeAfter click-through
 
 ---
 
-**Last Updated:** March 16, 2026
+**Last Updated:** March 18, 2026
 **Maintained By:** Documentation & Codemap Specialist
-**Status:** Phase 4 Documentation Complete — Ready for Phase 5 Planning
+**Status:** Phase 4 v2 Documentation Complete — Homepage structure finalized with 13 sections + exit-intent overlay

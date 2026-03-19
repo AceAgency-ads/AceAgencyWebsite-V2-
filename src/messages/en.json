@@ -1,6 +1,6 @@
 {
   "header": {
-    "cta": "Contact us",
+    "cta": "Request Analysis",
     "menuOpen": "Open menu",
     "menuClose": "Close menu"
   },
@@ -51,6 +51,7 @@
   "social": {
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
+    "youtube": "YouTube",
     "facebook": "Facebook"
   },
   "about": {
@@ -1236,8 +1237,8 @@
       "headline": "<accent>Conversion</accent> Lab in Bucharest",
       "subheading": "We transform your vision into measurable digital conversions. Web. Ads. AI. Media.",
       "cta": {
-        "primary": "Discover Our Services",
-        "secondary": "Contact Us"
+        "primary": "See How It Works",
+        "secondary": "Request an Analysis"
       }
     },
     "services": {
@@ -1452,11 +1453,99 @@
     "clientLogos": {
       "heading": "TRUSTED PARTNERS"
     },
+    "certifications": {
+      "overline": "CERTIFICATIONS",
+      "heading": "Certified Partners",
+      "badges": {
+        "0": { "name": "Google Partner", "src": "/images/certifications/google-partner.png" },
+        "1": { "name": "Meta Business Partner", "src": "/images/certifications/meta-business-partner.png" },
+        "2": { "name": "TikTok Marketing Partner", "src": "/images/certifications/tiktok-marketing-partner.png" },
+        "3": { "name": "Google Analytics Certified", "src": "/images/certifications/google-analytics-certified.png" },
+        "4": { "name": "Google Ads Certified", "src": "/images/certifications/google-ads-certified.png" }
+      }
+    },
+    "beforeAfter": {
+      "overline": "CONCRETE RESULTS",
+      "heading": "Before and After the Conversion System",
+      "labelBefore": "Before",
+      "labelAfter": "After",
+      "items": {
+        "0": {
+          "client": "E-Shop Romania",
+          "industry": "E-Commerce",
+          "metricBefore": "1.2",
+          "metricAfter": "4.8",
+          "metricSuffix": "%",
+          "metricLabel": "Conversion Rate",
+          "improvement": "+300%",
+          "summary": "From 1.2% to 4.8% conversion rate in 90 days"
+        },
+        "1": {
+          "client": "TechStart SRL",
+          "industry": "SaaS B2B",
+          "metricBefore": "12",
+          "metricAfter": "34",
+          "metricSuffix": "",
+          "metricLabel": "Leads / Month",
+          "improvement": "+183%",
+          "summary": "From 12 to 34 qualified leads per month in 60 days"
+        },
+        "2": {
+          "client": "Beauty Brand",
+          "industry": "Beauty & Wellness",
+          "metricBefore": "45",
+          "metricAfter": "17",
+          "metricSuffix": " RON",
+          "metricLabel": "Cost per Acquisition",
+          "improvement": "-62%",
+          "summary": "CPA reduced from 45 RON to 17 RON through funnel optimization"
+        }
+      },
+      "cta": "View All Case Studies"
+    },
+    "faq": {
+      "overline": "FREQUENTLY ASKED QUESTIONS",
+      "heading": "What Do You Want to Know?",
+      "items": [
+        {
+          "question": "What is Conversion Lab?",
+          "answer": "Conversion Lab is a digital marketing agency based in Bucharest specialized in conversion systems. We combine paid advertising (Google Ads, Facebook Ads, TikTok Ads), SEO, email marketing and strategic consulting into an integrated system that turns visitors into customers."
+        },
+        {
+          "question": "What services do you offer?",
+          "answer": "We offer complete digital marketing services: Google Ads campaigns, Facebook & Instagram Ads, TikTok Ads, SEO optimization, email marketing and marketing consulting. Each service is part of a conversion system built on data and measurable results."
+        },
+        {
+          "question": "How does a collaboration start?",
+          "answer": "Everything starts with an initial discussion where we understand your business objectives. This is followed by an audit of your current digital presence, a personalized strategy with clear KPIs, then implementation and continuous optimization."
+        },
+        {
+          "question": "How long does a typical project take?",
+          "answer": "It depends on complexity. An initial audit and strategy takes 1-2 weeks. Ad campaign results are visible within the first 30-60 days. SEO requires 3-6 months for significant results. We work on long-term partnerships, not one-off projects."
+        },
+        {
+          "question": "Do you provide performance reports?",
+          "answer": "Yes, transparency is fundamental. Every client receives detailed monthly reports with performance metrics, ROI analysis and optimization recommendations. You have real-time access to dashboards with campaign data."
+        },
+        {
+          "question": "How much do conversion systems cost?",
+          "answer": "Costs vary depending on the services chosen, advertising budget and business objectives. We offer customized packages starting from your specific needs. Contact us for a free analysis and detailed estimate."
+        }
+      ],
+      "cta": "View all questions"
+    },
+    "exitIntent": {
+      "overline": "BEFORE YOU GO",
+      "heading": "Conversions Don't Happen by Accident",
+      "description": "Every conversion is the result of a well-designed system. Let's talk about yours.",
+      "cta": "Schedule a Discussion",
+      "dismiss": "Not now, thanks"
+    },
     "cta": {
-      "heading": "Ready for Measurable Conversions?",
-      "description": "Let's discuss how we can transform your business into a digital conversion system.",
-      "primary": "Schedule a Consultation",
-      "secondary": "View Portfolio"
+      "heading": "Your Conversion System Starts Here",
+      "description": "Every business deserves a digital system that turns visitors into customers. Talk to our team about the right solution.",
+      "primary": "Start a Conversation",
+      "secondary": "Explore Case Studies"
     },
     "newsletter": {
       "overline": "NEWSLETTER",

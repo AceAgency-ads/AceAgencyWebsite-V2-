@@ -1,6 +1,6 @@
 {
   "header": {
-    "cta": "Contacteaza-ne",
+    "cta": "Cere o Analiza",
     "menuOpen": "Deschide meniul",
     "menuClose": "Inchide meniul"
   },
@@ -51,6 +51,7 @@
   "social": {
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
+    "youtube": "YouTube",
     "facebook": "Facebook"
   },
   "about": {
@@ -1236,8 +1237,8 @@
       "headline": "Laborator de <accent>Conversii</accent> din Bucuresti",
       "subheading": "Transformam viziunea ta in conversii digitale masurabile. Web. Ads. AI. Media.",
       "cta": {
-        "primary": "Descopera Serviciile",
-        "secondary": "Contacteaza-ne"
+        "primary": "Vezi Cum Functioneaza",
+        "secondary": "Solicita o Analiza"
       }
     },
     "services": {
@@ -1452,11 +1453,99 @@
     "clientLogos": {
       "heading": "PARTENERI DE INCREDERE"
     },
+    "certifications": {
+      "overline": "CERTIFICARI",
+      "heading": "Parteneri Certificati",
+      "badges": {
+        "0": { "name": "Google Partner", "src": "/images/certifications/google-partner.png" },
+        "1": { "name": "Meta Business Partner", "src": "/images/certifications/meta-business-partner.png" },
+        "2": { "name": "TikTok Marketing Partner", "src": "/images/certifications/tiktok-marketing-partner.png" },
+        "3": { "name": "Google Analytics Certified", "src": "/images/certifications/google-analytics-certified.png" },
+        "4": { "name": "Google Ads Certified", "src": "/images/certifications/google-ads-certified.png" }
+      }
+    },
+    "beforeAfter": {
+      "overline": "REZULTATE CONCRETE",
+      "heading": "Inainte si Dupa Sistemul de Conversii",
+      "labelBefore": "Inainte",
+      "labelAfter": "Dupa",
+      "items": {
+        "0": {
+          "client": "E-Shop Romania",
+          "industry": "E-Commerce",
+          "metricBefore": "1.2",
+          "metricAfter": "4.8",
+          "metricSuffix": "%",
+          "metricLabel": "Rata de Conversie",
+          "improvement": "+300%",
+          "summary": "De la 1.2% la 4.8% rata de conversie in 90 de zile"
+        },
+        "1": {
+          "client": "TechStart SRL",
+          "industry": "SaaS B2B",
+          "metricBefore": "12",
+          "metricAfter": "34",
+          "metricSuffix": "",
+          "metricLabel": "Lead-uri / Luna",
+          "improvement": "+183%",
+          "summary": "De la 12 la 34 lead-uri calificate pe luna in 60 de zile"
+        },
+        "2": {
+          "client": "Beauty Brand",
+          "industry": "Beauty & Wellness",
+          "metricBefore": "45",
+          "metricAfter": "17",
+          "metricSuffix": " RON",
+          "metricLabel": "Cost per Achizitie",
+          "improvement": "-62%",
+          "summary": "CPA redus de la 45 RON la 17 RON prin optimizare funnel"
+        }
+      },
+      "cta": "Vezi Toate Studiile de Caz"
+    },
+    "faq": {
+      "overline": "INTREBARI FRECVENTE",
+      "heading": "Ce Vrei Sa Stii?",
+      "items": [
+        {
+          "question": "Ce este Laboratorul de Conversii?",
+          "answer": "Laboratorul de Conversii este o agentie de marketing digital din Bucuresti specializata in sisteme de conversii. Combinam publicitatea platita (Google Ads, Facebook Ads, TikTok Ads), SEO, email marketing si consultanta strategica intr-un sistem integrat care transforma vizitatorii in clienti."
+        },
+        {
+          "question": "Ce servicii oferiti?",
+          "answer": "Oferim servicii complete de marketing digital: campanii Google Ads, Facebook & Instagram Ads, TikTok Ads, optimizare SEO, email marketing si consultanta de marketing. Fiecare serviciu este parte dintr-un sistem de conversii construit pe date si rezultate masurabile."
+        },
+        {
+          "question": "Cum incepe o colaborare?",
+          "answer": "Totul porneste de la o discutie initiala in care intelegem obiectivele tale de business. Urmeaza un audit al prezentei digitale actuale, o strategie personalizata cu KPI-uri clare, apoi implementarea si optimizarea continua."
+        },
+        {
+          "question": "Cat dureaza un proiect tipic?",
+          "answer": "Depinde de complexitate. Un audit si o strategie initiala dureaza 1-2 saptamani. Rezultatele campaniilor de ads se vad in primele 30-60 de zile. SEO necesita 3-6 luni pentru rezultate semnificative. Lucram pe baza de parteneriate pe termen lung, nu proiecte punctuale."
+        },
+        {
+          "question": "Oferiti rapoarte de performanta?",
+          "answer": "Da, transparenta este fundamentala. Fiecare client primeste rapoarte lunare detaliate cu metrici de performanta, analiza ROI si recomandari de optimizare. Ai acces in timp real la dashboard-uri cu datele campaniilor."
+        },
+        {
+          "question": "Cat costa sistemele de conversii?",
+          "answer": "Costurile variaza in functie de serviciile alese, bugetul de publicitate si obiectivele de business. Oferim pachete personalizate pornind de la nevoile tale specifice. Contacteaza-ne pentru o analiza gratuita si o estimare detaliata."
+        }
+      ],
+      "cta": "Vezi toate intrebarile"
+    },
+    "exitIntent": {
+      "overline": "INAINTE SA PLECI",
+      "heading": "Conversiile Nu Se Intampla Din Intamplare",
+      "description": "Fiecare conversie este rezultatul unui sistem bine pus la punct. Hai sa discutam despre al tau.",
+      "cta": "Programeaza o Discutie",
+      "dismiss": "Nu acum, multumesc"
+    },
     "cta": {
-      "heading": "Gata pentru Conversii Masurabile?",
-      "description": "Hai sa discutam despre cum putem transforma afacerea ta intr-un sistem de conversii digital.",
-      "primary": "Programeaza o Consultatie",
-      "secondary": "Vezi Portofoliul"
+      "heading": "Sistemul Tau de Conversii Incepe Aici",
+      "description": "Fiecare afacere merita un sistem digital care transforma vizitatori in clienti. Discuta cu echipa noastra despre solutia potrivita.",
+      "primary": "Incepe o Conversatie",
+      "secondary": "Exploreaza Studiile de Caz"
     },
     "newsletter": {
       "overline": "NEWSLETTER",

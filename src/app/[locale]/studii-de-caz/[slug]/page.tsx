@@ -14,6 +14,15 @@ import { CaseStudyMetrics } from '@/components/sections/case-studies/CaseStudyMe
 import { CaseStudyDetailCTA } from '@/components/sections/case-studies/CaseStudyDetailCTA';
 import type { CaseStudyMeta } from '@/types/content';
 
+const SERVICE_NAMES: Record<string, string> = {
+  'google-ads': 'Google Ads',
+  'facebook-ads': 'Meta Ads',
+  'tiktok-ads': 'TikTok Ads',
+  'seo': 'SEO',
+  'email-marketing': 'Email Marketing',
+  'consultanta-marketing': 'Consultanta Marketing',
+};
+
 interface CaseStudyPageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
@@ -145,7 +154,7 @@ export default async function CaseStudyPage({
                   href={`/servicii/${serviceSlug}`}
                   className="rounded-full border border-[#650CBE] px-4 py-1.5 text-sm font-medium text-[#650CBE] transition-colors hover:bg-[#650CBE] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#650CBE]"
                 >
-                  {serviceSlug}
+                  {SERVICE_NAMES[serviceSlug] ?? serviceSlug}
                 </Link>
               ))}
             </div>
