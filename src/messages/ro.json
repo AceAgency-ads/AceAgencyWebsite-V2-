@@ -1154,32 +1154,31 @@
       "items": {
         "0": {
           "src": "/images/portfolio/placeholder-1.webp",
-          "alt": "Proiect client 1",
-          "client": "Client Demo 1",
-          "url": "",
+          "alt": "Amora - magazin online fashion",
+          "client": "Amora.ro",
+          "url": "https://amora.ro",
           "services": [
-            "google-ads",
-            "seo"
+            "facebook-ads"
           ]
         },
         "1": {
           "src": "/images/portfolio/placeholder-2.webp",
-          "alt": "Proiect client 2",
-          "client": "Client Demo 2",
-          "url": "",
+          "alt": "Trady - e-commerce materiale",
+          "client": "Trady.ro",
+          "url": "https://trady.ro",
           "services": [
-            "facebook-ads",
-            "email-marketing"
+            "google-ads",
+            "facebook-ads"
           ]
         },
         "2": {
           "src": "/images/portfolio/placeholder-3.webp",
-          "alt": "Proiect client 3",
-          "client": "Client Demo 3",
-          "url": "",
+          "alt": "ITMAR - materiale de constructii",
+          "client": "ITMAR.ro",
+          "url": "https://itmar.ro",
           "services": [
-            "tiktok-ads",
-            "google-ads"
+            "google-ads",
+            "tiktok-ads"
           ]
         }
       }
@@ -1311,7 +1310,7 @@
       "items": {
         "0": {
           "quote": "Sincer, nu ma asteptam sa vad diferenta asa repede. In prima luna deja aveam comenzi de pe Google pe care inainte nu le prindeam deloc. Baietii chiar stiu ce fac.",
-          "author": "Alex",
+          "author": "Director Comercial",
           "company": "Trady.ro",
           "rating": "5",
           "thumbnailSrc": "/images/testimonials/video-thumb-1.webp",
@@ -1319,7 +1318,7 @@
         },
         "1": {
           "quote": "Aveam restaurantul plin doar de localnici. Dupa campaniile cu ei, au inceput sa vina oameni din tot Bucurestiul — unii imi ziceau ca ne-au gasit pe Google. Investitia s-a meritat din prima luna.",
-          "author": "Anca",
+          "author": "Owner",
           "company": "Gyros Thessalonikis",
           "rating": "5",
           "thumbnailSrc": "/images/testimonials/video-thumb-2.webp",
@@ -1327,7 +1326,7 @@
         },
         "2": {
           "quote": "Am lucrat cu alte agentii inainte si aruncam bani fara sa inteleg pe ce. Aici totul e pe cifre, imi explica tot, si cel mai important — vand mai mult decat vindeam singura.",
-          "author": "Renata",
+          "author": "CEO",
           "company": "Amora.ro",
           "rating": "5",
           "thumbnailSrc": "/images/testimonials/video-thumb-3.webp",
@@ -1341,111 +1340,108 @@
       "description": "Fiecare proiect incepe cu un obiectiv clar si se termina cu rezultate masurabile.",
       "items": {
         "0": {
-          "client": "E-Shop Romania",
-          "industry": "E-commerce",
-          "metric": "340",
+          "client": "Amora",
+          "industry": "E-commerce Fashion",
+          "metric": "487",
           "metricPrefix": "+",
           "metricSuffix": "%",
-          "metricLabel": "crestere ROAS",
-          "summary": "De la ROAS 2.1 la ROAS 9.3 in 90 de zile prin optimizarea campaniilor Google Ads."
+          "metricLabel": "crestere venituri",
+          "summary": "De la 3.30x la 7.96x ROAS prin optimizarea campaniilor Facebook Ads si a palniei de conversie."
         },
         "1": {
-          "client": "TechStart SRL",
-          "industry": "SaaS B2B",
-          "metric": "185",
+          "client": "ITMAR",
+          "industry": "Materiale de Constructii",
+          "metric": "276",
           "metricPrefix": "+",
           "metricSuffix": "%",
-          "metricLabel": "lead-uri calificate",
-          "summary": "Sistem de lead generation prin LinkedIn Ads si landing page optimization."
+          "metricLabel": "crestere venituri",
+          "summary": "Crestere venituri cu 276% prin campanii Google Ads si TikTok Ads integrate."
         },
         "2": {
-          "client": "Beauty Brand",
-          "industry": "Beauty & Wellness",
-          "metric": "62",
-          "metricPrefix": "-",
+          "client": "DoSense",
+          "industry": "Servicii B2B",
+          "metric": "531",
+          "metricPrefix": "+",
           "metricSuffix": "%",
-          "metricLabel": "cost per achizitie",
-          "summary": "Reducerea CPA de la 45 RON la 17 RON prin testare A/B si optimizare funnel."
+          "metricLabel": "crestere lead-uri",
+          "summary": "De la 48 la 303 lead-uri pe luna prin campanii Facebook Ads optimizate."
         }
       },
       "cta": "Vezi Toate Studiile de Caz"
     },
     "leadMagnet": {
       "overline": "GHID GRATUIT",
-      "heading": "27 Tactici Testate pentru Cresterea Ratei de Conversie",
-      "description": "Descarca ghidul folosit de echipa noastra pentru clientii cu cele mai bune rezultate.",
+      "heading": "De la Primele Vanzari la 6 Cifre/Luna",
+      "description": "Ghidul de scalare pentru magazine online — bazat pe ce a functionat la clientii nostri, nu pe teorie.",
       "bullets": {
-        "0": "Cum sa reduci CPA cu 40% fara sa cresti bugetul",
-        "1": "Checklistul de optimizare a landing page-urilor",
-        "2": "Cele mai frecvente greseli in campaniile Google Ads",
-        "3": "Template-ul de audit al palniei de conversie"
+        "0": "Ce am facut concret ca sa ducem Amora de la ROAS 3x la 8x in 4 luni",
+        "1": "Strategia de TikTok Ads care a scazut CPA-ul cu 36% la ITMAR",
+        "2": "Cum am crescut revenue-ul Trady cu 691% fara sa dublam bugetul",
+        "3": "Greselile pe care le vedem la 9 din 10 magazine (si cum le eviti)"
       },
       "placeholder": "Adresa ta de email",
-      "submit": "Descarca Gratuit",
+      "submit": "Vreau ghidul gratuit",
       "gdpr": "Sunt de acord cu prelucrarea datelor personale",
-      "success": "Ghidul a fost trimis pe email!"
+      "success": "Gata, ti-am trimis ghidul pe email. Verifica si in spam, doar in caz."
     },
     "testimonials": {
       "overline": "MAI MULTE OPINII",
       "heading": "Clienti Care Au Crescut cu Noi",
       "items": {
         "0": {
-          "quote": "Laboratorul de Conversii a transformat complet prezenta noastra online. Rezultatele au depasit asteptarile.",
-          "author": "Maria Popescu",
-          "company": "TechStart SRL",
+          "quote": "Vanzarile au crescut cu aproape 500% dupa ce am inceput sa lucram cu Laboratorul de Conversii. Totul e transparent, pe cifre, si vad exact unde se duc banii si ce rezultate aduc.",
+          "author": "CEO",
+          "company": "Amora",
           "rating": "5",
           "services": [
-            "google-ads",
-            "seo"
+            "facebook-ads"
           ]
         },
         "1": {
-          "quote": "Profesionalism, creativitate si rezultate masurabile. Recomand cu incredere.",
-          "author": "Alexandru Ionescu",
-          "company": "Digital Commerce",
-          "rating": "5",
-          "services": [
-            "facebook-ads",
-            "email-marketing"
-          ]
-        },
-        "2": {
-          "quote": "Echipa Laboratorului de Conversii intelege nevoile de business si livreaza solutii care functioneaza.",
-          "author": "Elena Dumitrescu",
-          "company": "StartUp Hub",
-          "rating": "5",
-          "services": [
-            "tiktok-ads"
-          ]
-        },
-        "3": {
-          "quote": "Campaniile Google Ads au generat un ROI de 340% in primele 3 luni.",
-          "author": "Andrei Gheorghe",
-          "company": "E-Shop Romania",
+          "quote": "Am trecut de la campanii care nu aduceau nimic la un ROAS de 4.40x. Echipa stie sa optimizeze fiecare leu investit si comunica totul clar.",
+          "author": "Director Comercial",
+          "company": "Trady",
           "rating": "5",
           "services": [
             "google-ads",
-            "consultanta-marketing"
+            "facebook-ads"
+          ]
+        },
+        "2": {
+          "quote": "Lead-urile au crescut de 6 ori in doua luni. Nu am mai vazut asa rezultate la nicio alta agentie cu care am lucrat pana acum.",
+          "author": "Manager",
+          "company": "DoSense",
+          "rating": "5",
+          "services": [
+            "facebook-ads"
+          ]
+        },
+        "3": {
+          "quote": "Campaniile Google Ads si TikTok Ads au adus o crestere de 276% la venituri. Echipa intelege piata si stie sa targeteze exact unde trebuie.",
+          "author": "Director General",
+          "company": "ITMAR",
+          "rating": "5",
+          "services": [
+            "google-ads",
+            "tiktok-ads"
           ]
         },
         "4": {
-          "quote": "Site-ul creat de Laboratorul de Conversii este cel mai bun investiment digital pe care l-am facut.",
-          "author": "Ioana Marinescu",
-          "company": "Beauty Brand",
+          "quote": "Colaborarea cu Laboratorul de Conversii a adus clienti noi constant. Campaniile sunt bine gandite si rezultatele se vad rapid.",
+          "author": "Director",
+          "company": "Leonor Institute",
           "rating": "5",
           "services": [
-            "seo",
-            "email-marketing"
+            "facebook-ads"
           ]
         },
         "5": {
-          "quote": "Suport excelent si comunicare transparenta pe tot parcursul proiectului.",
-          "author": "Mihai Stanescu",
-          "company": "Logistics Pro",
+          "quote": "De cand lucram cu ei, rezervarile online s-au dublat. Comunicarea e excelenta si mereu vin cu idei noi de optimizare.",
+          "author": "Manager Marketing",
+          "company": "Tutti Brasserie",
           "rating": "5",
           "services": [
-            "facebook-ads",
-            "tiktok-ads"
+            "facebook-ads"
           ]
         }
       }
@@ -1457,11 +1453,18 @@
       "overline": "CERTIFICARI",
       "heading": "Parteneri Certificati",
       "badges": {
-        "0": { "name": "Google Partner", "src": "/images/certifications/google-partner.png" },
-        "1": { "name": "Meta Business Partner", "src": "/images/certifications/meta-business-partner.png" },
-        "2": { "name": "TikTok Marketing Partner", "src": "/images/certifications/tiktok-marketing-partner.png" },
-        "3": { "name": "Google Analytics Certified", "src": "/images/certifications/google-analytics-certified.png" },
-        "4": { "name": "Google Ads Certified", "src": "/images/certifications/google-ads-certified.png" }
+        "0": {
+          "name": "Google Partner",
+          "src": "/images/certifications/google-partner-v2.png"
+        },
+        "1": {
+          "name": "Meta Business Partner",
+          "src": "/images/certifications/meta-business-partner-v2.png"
+        },
+        "2": {
+          "name": "TikTok Marketing Partner",
+          "src": "/images/certifications/tiktok-marketing-partner-v3.png"
+        }
       }
     },
     "beforeAfter": {
@@ -1471,34 +1474,34 @@
       "labelAfter": "Dupa",
       "items": {
         "0": {
-          "client": "E-Shop Romania",
-          "industry": "E-Commerce",
-          "metricBefore": "1.2",
-          "metricAfter": "4.8",
-          "metricSuffix": "%",
-          "metricLabel": "Rata de Conversie",
-          "improvement": "+300%",
-          "summary": "De la 1.2% la 4.8% rata de conversie in 90 de zile"
+          "client": "Amora",
+          "industry": "E-commerce Fashion",
+          "metricBefore": "3.30",
+          "metricAfter": "7.96",
+          "metricSuffix": "x",
+          "metricLabel": "ROAS",
+          "improvement": "+141%",
+          "summary": "De la 3.30x la 7.96x ROAS prin optimizarea campaniilor Facebook Ads"
         },
         "1": {
-          "client": "TechStart SRL",
-          "industry": "SaaS B2B",
-          "metricBefore": "12",
-          "metricAfter": "34",
+          "client": "DoSense",
+          "industry": "Servicii B2B",
+          "metricBefore": "48",
+          "metricAfter": "303",
           "metricSuffix": "",
           "metricLabel": "Lead-uri / Luna",
-          "improvement": "+183%",
-          "summary": "De la 12 la 34 lead-uri calificate pe luna in 60 de zile"
+          "improvement": "+531%",
+          "summary": "De la 48 la 303 lead-uri pe luna prin campanii Facebook Ads"
         },
         "2": {
-          "client": "Beauty Brand",
-          "industry": "Beauty & Wellness",
-          "metricBefore": "45",
-          "metricAfter": "17",
-          "metricSuffix": " RON",
-          "metricLabel": "Cost per Achizitie",
-          "improvement": "-62%",
-          "summary": "CPA redus de la 45 RON la 17 RON prin optimizare funnel"
+          "client": "Trady",
+          "industry": "E-commerce",
+          "metricBefore": "2.64",
+          "metricAfter": "4.40",
+          "metricSuffix": "x",
+          "metricLabel": "ROAS",
+          "improvement": "+67%",
+          "summary": "De la 2.64x la 4.40x ROAS prin optimizare Google Ads"
         }
       },
       "cta": "Vezi Toate Studiile de Caz"
@@ -2137,6 +2140,292 @@
       "ctaPrimary": "Programeaza un apel",
       "ctaSecondary": "Contacteaza-ne",
       "screenshotsHeading": "Rezultate vizuale"
+    }
+  },
+  "growth": {
+    "meta": {
+      "title": "ACE Growth Engine — Sistem complet de crestere pentru magazine online",
+      "description": "Reclame pe Meta, TikTok si Google + creative incluse + CRO + email marketing — totul gestionat de o singura echipa, monitorizat de AI, cu rezultate masurabile din prima luna."
+    },
+    "hero": {
+      "headline": "Magazinul tau online merita mai mult decat reclame care nu vand.",
+      "subheadline": "ACE Growth Engine este sistemul complet de crestere pentru magazine online: reclame pe Meta, TikTok si Google + video-uri si creative incluse + CRO + email marketing — totul gestionat de o singura echipa, monitorizat de AI, cu rezultate masurabile din prima luna.",
+      "cta": "Vezi cum functioneaza"
+    },
+    "proofBar": {
+      "items": {
+        "0": {
+          "value": "10",
+          "prefix": "+",
+          "suffix": "x",
+          "label": "ROAS IT Mar"
+        },
+        "1": {
+          "value": "5",
+          "suffix": "x",
+          "label": "ROAS in 60 zile — Amora"
+        },
+        "2": {
+          "value": "19",
+          "label": "luni colaborare"
+        },
+        "3": {
+          "value": "12",
+          "suffix": "x",
+          "label": "buget scalat — Amora"
+        }
+      }
+    },
+    "clientLogos": {
+      "label": "Au crescut cu noi"
+    },
+    "vsl": {
+      "heading": "Vezi sistemul in actiune",
+      "cta": "Aplica pentru audit gratuit"
+    },
+    "services": {
+      "heading": "Ce include ACE Growth Engine",
+      "subheading": "Tot ce ai nevoie ca sa cresti — intr-un singur sistem, o singura echipa.",
+      "items": {
+        "0": {
+          "title": "Meta Ads",
+          "description": "Campanii pe Facebook si Instagram optimizate pentru conversii, cu audienta precisa si retargeting avansat."
+        },
+        "1": {
+          "title": "TikTok Ads",
+          "description": "Video ads native pentru TikTok care genereaza awareness si vanzari la costuri sub piata."
+        },
+        "2": {
+          "title": "Google Ads",
+          "description": "Search, Shopping si Performance Max — capturati clientii exact cand cauta produsele tale."
+        },
+        "3": {
+          "title": "Creative Production",
+          "description": "Video-uri, bannere si creative realizate intern — fara costuri extra, fara intarzieri."
+        },
+        "4": {
+          "title": "Email Marketing",
+          "description": "Secvente automate, campanii de re-engagement si recuperare cosuri abandonate."
+        },
+        "5": {
+          "title": "CRO",
+          "description": "Optimizarea ratei de conversie: teste A/B, landing pages si UX improvements bazate pe date."
+        },
+        "6": {
+          "title": "AdPilot AI",
+          "description": "Sistemul nostru AI monitorizeaza conturile 24/7 si detecteaza anomalii inainte sa pierzi buget.",
+          "highlighted": true
+        },
+        "7": {
+          "title": "Raportare Transparenta",
+          "description": "Dashboard live cu toate metricile importante. Stii exact ce se intampla cu fiecare leu investit."
+        }
+      }
+    },
+    "caseStudies": {
+      "heading": "Studii de caz",
+      "subheading": "Rezultate reale, magazine reale.",
+      "items": {
+        "0": {
+          "client": "IT Mar",
+          "metric": "2.38M RON",
+          "period": "Aug 2024 – Prezent",
+          "description": "Revenue Google Ads de 2.38M RON, 5372 conversii totale pe 3 canale (Google + Meta + TikTok), CPA de doar 67 lei.",
+          "slug": "itmar-calculatoare-refurbished"
+        },
+        "1": {
+          "client": "Amora",
+          "metric": "ROAS 8.11x",
+          "period": "Dec 2025 – Mar 2026",
+          "description": "ROAS crescut de la 3.04x la 8.11x, revenue +544%, conversii +288%. In post-Black Friday, nu in sezon.",
+          "slug": "amora-extensii-par"
+        },
+        "2": {
+          "client": "Trady",
+          "metric": "ROAS 6.05x",
+          "period": "Ian – Mar 2026",
+          "description": "Meta Ads ROAS de la 1.02x la 6.05x prin eliminarea campaniilor fara ROI. Google Ads ROAS +67% cu -45% buget. 139 leaduri B2B noi.",
+          "slug": "trady-mobilier-scule"
+        }
+      }
+    },
+    "process": {
+      "heading": "Cum functioneaza",
+      "subheading": "3 pasi simpli de la prima conversatie la rezultate masurabile.",
+      "steps": {
+        "0": {
+          "number": "01",
+          "title": "Audit Gratuit",
+          "description": "Analizam magazinul tau, conturile de ads si datele existente. Identificam oportunitatile si estimam potentialul de crestere."
+        },
+        "1": {
+          "number": "02",
+          "title": "Strategie Personalizata",
+          "description": "Construim un plan de actiune pe 90 de zile cu canale, bugete, KPI-uri si timeline clar. Stii exact ce facem si de ce."
+        },
+        "2": {
+          "number": "03",
+          "title": "Executie si Optimizare",
+          "description": "Lansam campaniile, cream creative-urile, optimizam continuu si raportam saptamanal. Tu te concentrezi pe business, noi pe crestere."
+        }
+      },
+      "cta": "Incepe cu un audit gratuit",
+      "overline": "PROCESUL NOSTRU",
+      "description": "Trei pași simpli spre creștere reală."
+    },
+    "guarantee": {
+      "overline": "GARANȚIA NOASTRĂ",
+      "heading": "Garanție 100% Money-Back",
+      "description": "Dacă nu vezi rezultate măsurabile în primele 30 de zile, îți returnăm investiția. Fără întrebări, fără bătăi de cap.",
+      "reinforcement": "Am lucrat cu peste 50 de magazine online. Știm ce funcționează.",
+      "cta": "Aplică pentru audit gratuit →"
+    },
+    "faq": {
+      "heading": "Intrebari frecvente",
+      "items": {
+        "0": {
+          "question": "Cat costa ACE Growth Engine?",
+          "answer": "Investitia depinde de complexitatea magazinului si de canalele active. Lucram cu un fee lunar fix care include toate serviciile — fara costuri ascunse. In cadrul auditului gratuit, iti dam o estimare personalizata bazata pe obiectivele tale de crestere si bugetul de ads disponibil."
+        },
+        "1": {
+          "question": "In cat timp vad primele rezultate?",
+          "answer": "Majoritatea clientilor vad imbunatatiri masurabile in primele 30 de zile. Rezultatele depind de punctul de plecare — daca ai deja trafic si un produs validat, putem accelera semnificativ. Daca pornesti de la zero, primele 60-90 de zile sunt de constructie si testare, cu crestere accelerata dupa."
+        },
+        "2": {
+          "question": "Lucrati doar cu magazine online?",
+          "answer": "ACE Growth Engine este optimizat pentru magazine online (e-commerce). Daca ai un business de servicii sau SaaS, putem discuta in cadrul auditului daca sistemul se potriveste nevoilor tale sau daca recomandam o abordare diferita."
+        },
+        "3": {
+          "question": "Ce se intampla daca nu sunt multumit de rezultate?",
+          "answer": "Nu avem contracte pe termen lung obligatorii. Lucram pe baza de performanta si transparenta totala. Daca dupa 90 de zile nu vezi crestere masurabile, poti opri colaborarea fara penalitati. In practica, rata de retentie este de peste 85% tocmai pentru ca rezultatele vorbesc."
+        },
+        "4": {
+          "question": "Ce inseamna AdPilot AI? Cum ma ajuta?",
+          "answer": "AdPilot este sistemul nostru proprietar de monitorizare bazat pe AI. Analizeaza conturile de ads 24/7 si te alerteaza cand detecteaza anomalii: costuri care cresc brusc, audienta care se epuizeaza, creative-uri care obosesc. Previne pierderile de buget inainte sa le observi tu."
+        },
+        "5": {
+          "question": "Trebuie sa am deja un buget mare de ads?",
+          "answer": "Nu neaparat. Lucram cu bugete incepand de la 1,000 EUR/luna pe ads. Important este sa ai un produs validat si un magazin functional. In cadrul auditului, iti recomandam bugetul optim pentru obiectivele tale si cum sa il scalezi progresiv pe masura ce cresc rezultatele."
+        },
+        "6": {
+          "question": "Cum difera ACE Growth Engine de o agentie clasica de PPC?",
+          "answer": "O agentie clasica gestioneaza un canal (de obicei Google sau Facebook) si raporteaza lunar. ACE Growth Engine este un sistem integrat: gestionam toate canalele paid, cream creative-urile intern, optimizam CRO-ul site-ului, automatizam email marketing-ul si monitorizam totul cu AI. E diferenta dintre a angaja un sofer si a avea o echipa de Formula 1."
+        }
+      },
+      "overline": "ÎNTREBĂRI FRECVENTE"
+    },
+    "auditForm": {
+      "heading": "Aplica pentru un audit gratuit",
+      "subheading": "Completeaza formularul si iti programam un call de 30 minute in care analizam potentialul magazinului tau.",
+      "fields": {
+        "name": "Numele tau",
+        "namePlaceholder": "ex: Ion Popescu",
+        "storeUrl": "URL magazin online",
+        "storeUrlPlaceholder": "ex: https://magazinul-meu.ro",
+        "revenue": "Revenue lunar estimat",
+        "revenueOptions": {
+          "sub-5000": "Sub 5,000 EUR",
+          "5000-10000": "5,000 — 10,000 EUR",
+          "10000-30000": "10,000 — 30,000 EUR",
+          "30000-100000": "30,000 — 100,000 EUR",
+          "peste-100000": "Peste 100,000 EUR"
+        },
+        "adsBudget": "Buget lunar ads",
+        "adsBudgetOptions": {
+          "sub-1000": "Sub 1,000 EUR",
+          "1000-3000": "1,000 — 3,000 EUR",
+          "3000-10000": "3,000 — 10,000 EUR",
+          "10000-30000": "10,000 — 30,000 EUR",
+          "peste-30000": "Peste 30,000 EUR"
+        },
+        "triedBefore": "Ce ai incercat pana acum?",
+        "triedBeforeOptions": {
+          "nimic": "Nimic — sunt la inceput",
+          "facebook-ads": "Facebook / Instagram Ads",
+          "google-ads": "Google Ads",
+          "tiktok-ads": "TikTok Ads",
+          "seo": "SEO",
+          "email-marketing": "Email Marketing",
+          "agentie": "Am lucrat cu o agentie",
+          "freelancer": "Am lucrat cu un freelancer",
+          "in-house": "Am echipa in-house"
+        },
+        "blocaj": "Care e blocajul principal acum? (optional)",
+        "blocajPlaceholder": "Spune-ne ce te impiedica sa cresti...",
+        "revenuePlaceholder": "Selecteaza revenue-ul lunar",
+        "adsBudgetPlaceholder": "Selecteaza bugetul de ads",
+        "triedBeforePlaceholder": "Selecteaza ce ai incercat"
+      },
+      "submit": "Programeaza audit gratuit",
+      "submitting": "Se trimite...",
+      "validation": {
+        "nameMinLength": "Numele trebuie sa aiba cel putin 2 caractere",
+        "nameMaxLength": "Numele nu poate depasi 100 caractere",
+        "storeUrlRequired": "URL-ul magazinului este obligatoriu",
+        "storeUrlInvalid": "Introdu un URL valid (ex: https://magazinul-meu.ro)",
+        "revenueRequired": "Selecteaza revenue-ul estimat",
+        "adsBudgetRequired": "Selecteaza bugetul de ads",
+        "triedBeforeRequired": "Selecteaza ce ai incercat",
+        "blocajMaxLength": "Blocajul nu poate depasi 1000 caractere",
+        "emailSendFailed": "A aparut o eroare. Te rugam sa incerci din nou."
+      },
+      "overline": "PASUL URMĂTOR",
+      "description": "Completează formularul și programăm un call de 30 de minute."
+    },
+    "leadMagnet": {
+      "heading": "Lasa-ne sa-ti trimitem ghidul pe email",
+      "subheading": "E gratuit. Fara obligatii. Fara spam.",
+      "title": "De la Primele Vanzari la 6 Cifre/Luna — Ghidul de Scalare pentru Magazine Online",
+      "fields": {
+        "name": "Numele tau",
+        "namePlaceholder": "ex: Ion Popescu",
+        "email": "Email",
+        "emailPlaceholder": "ex: ion@magazin.ro",
+        "phone": "Numar de telefon",
+        "phonePlaceholder": "ex: 0722 123 456"
+      },
+      "gdprConsent": "Sunt de acord sa primesc ghidul si comunicari utile pe email. Pot sa ma dezabonez oricand.",
+      "submit": "Vreau ghidul gratuit",
+      "submitting": "Se trimite...",
+      "success": "Gata, ti-am trimis ghidul pe email. Verifica si in spam, doar in caz.",
+      "validation": {
+        "nameMinLength": "Numele trebuie sa aiba cel putin 2 caractere",
+        "nameMaxLength": "Numele nu poate depasi 100 caractere",
+        "emailRequired": "Email-ul este obligatoriu",
+        "emailInvalid": "Introdu o adresa de email valida",
+        "phoneRequired": "Numarul de telefon este obligatoriu",
+        "phoneInvalid": "Introdu un numar de telefon valid (ex: 0722 123 456)",
+        "gdprRequired": "Trebuie sa fii de acord ca sa primesti ghidul",
+        "emailSendFailed": "A aparut o eroare. Te rugam sa incerci din nou."
+      }
+    },
+    "growthFooter": {
+      "text": "ACE Agency | aceagency.ro | © 2026"
+    },
+    "checklist": {
+      "meta": {
+        "title": "Ghidul de Scalare pentru Magazine Online | ACE Growth Engine",
+        "description": "Ce am invatat din 150+ proiecte si 5 ani de campanii pentru magazine online. Cifre reale de la Amora, ITMAR, Trady. Descarca gratuit."
+      },
+      "headline": "Ce-ar fi daca ai sti exact ce sa faci ca sa vinzi mai mult?",
+      "subheadline": "Am pus intr-un singur ghid tot ce am invatat din 150+ proiecte si 5 ani de campanii pentru magazine online. Cifre reale, strategii testate, zero teorie.",
+      "bullets": {
+        "0": "Cum am dus Amora de la ROAS 3x la 8x in 4 luni (pas cu pas)",
+        "1": "Strategia de TikTok Ads care a scazut CPA-ul cu 36% la ITMAR",
+        "2": "Cum a crescut revenue-ul Trady cu 691% fara sa dublam bugetul"
+      },
+      "submit": "Vreau ghidul gratuit"
+    },
+    "thankYou": {
+      "meta": {
+        "title": "Gata, e in inbox-ul tau | ACE Growth Engine"
+      },
+      "heading": "Gata, e in inbox-ul tau.",
+      "description": "Verifica si in spam sau promotions — uneori ajunge acolo.",
+      "downloadTitle": "Ghidul de Scalare pentru Magazine Online",
+      "downloadCta": "Descarca PDF-ul",
+      "caseStudyCta": "Vrei sa vezi cum arata in practica? Citeste studiul de caz ITMAR — 2.38M RON revenue din Google Ads.",
+      "caseStudyLink": "Vezi studiul de caz"
     }
   }
 }
