@@ -33,10 +33,7 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps): React.JSX.Elem
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          {/* Industry badge */}
-          <span className="absolute left-3 top-3 rounded-full bg-[#650CBE]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#650CBE] backdrop-blur-sm">
-            {caseStudy.industry}
-          </span>
+{/* Industry badge removed — screenshots serve as visual context */}
         </div>
 
         {/* Card body */}
