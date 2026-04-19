@@ -4,26 +4,36 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 
-/** Client logo definitions. Replace placeholder SVGs with real logos. */
+/** Real client logos. */
 const CLIENT_LOGOS = [
-  { name: 'TechStart', src: '/images/clients/techstart.svg' },
-  { name: 'Digital Commerce', src: '/images/clients/digitalcommerce.svg' },
-  { name: 'StartUp Hub', src: '/images/clients/startup-hub.svg' },
-  { name: 'FashionRo', src: '/images/clients/fashionro.svg' },
-  { name: 'AutoService Pro', src: '/images/clients/autoservice-pro.svg' },
-  { name: 'E-Shop Romania', src: '/images/clients/eshop-romania.svg' },
-  { name: 'Beauty Brand', src: '/images/clients/beauty-brand.svg' },
-  { name: 'Logistics Pro', src: '/images/clients/logistics-pro.svg' },
+  { name: 'Amora', src: '/images/clients/amora.png' },
+  { name: 'Trady', src: '/images/clients/trady.png' },
+  { name: 'DoSense', src: '/images/clients/dosense.svg' },
+  { name: 'ITMAR', src: '/images/clients/itmar.webp' },
+  { name: 'Leonor Institute', src: '/images/clients/leonor.png' },
+  { name: 'Tutti Brasserie', src: '/images/clients/tutti.svg' },
 ] as const;
 
 /**
  * Client logo marquee bar.
  * Dark section with infinite CSS marquee of client logos.
  * Logos are grayscale by default, color on hover.
+ * Uses fixed-size containers with object-contain for uniform display.
  * Respects prefers-reduced-motion: shows static grid instead of marquee.
  */
 export function ClientLogoBar(): React.JSX.Element {
   const t = useTranslations('home');
+
+  const logoImage = (logo: (typeof CLIENT_LOGOS)[number], hideAlt?: boolean) => (
+    <div className="relative h-14 w-40 flex-shrink-0 md:h-16 md:w-48">
+      <Image
+        src={logo.src}
+        alt={hideAlt ? '' : logo.name}
+        fill
+        className="object-contain grayscale opacity-60 transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+      />
+    </div>
+  );
 
   return (
     <SectionWrapper theme="dark" id="client-logos" className="overflow-hidden">
@@ -36,52 +46,25 @@ export function ClientLogoBar(): React.JSX.Element {
         <div className="animate-marquee flex w-max items-center gap-12 md:gap-16">
           {/* First set */}
           {CLIENT_LOGOS.map((logo) => (
-            <div
-              key={logo.name}
-              className="flex-shrink-0 grayscale opacity-60 transition-all duration-300 hover:opacity-100 hover:grayscale-0"
-            >
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={120}
-                height={40}
-                className="h-8 w-auto md:h-10"
-              />
-            </div>
+            <div key={logo.name}>{logoImage(logo)}</div>
           ))}
           {/* Duplicated set for seamless loop */}
           {CLIENT_LOGOS.map((logo) => (
-            <div
-              key={`dup-${logo.name}`}
-              className="flex-shrink-0 grayscale opacity-60 transition-all duration-300 hover:opacity-100 hover:grayscale-0"
-              aria-hidden="true"
-            >
-              <Image
-                src={logo.src}
-                alt=""
-                width={120}
-                height={40}
-                className="h-8 w-auto md:h-10"
-              />
+            <div key={`dup-${logo.name}`} aria-hidden="true">
+              {logoImage(logo, true)}
             </div>
           ))}
         </div>
       </div>
 
       {/* Static grid fallback for reduced motion — hidden by default, shown via CSS */}
-      <div className="hidden motion-reduce:grid motion-reduce:grid-cols-2 motion-reduce:gap-6 sm:motion-reduce:grid-cols-4">
+      <div className="hidden motion-reduce:grid motion-reduce:grid-cols-2 motion-reduce:gap-6 sm:motion-reduce:grid-cols-3">
         {CLIENT_LOGOS.map((logo) => (
           <div
             key={`static-${logo.name}`}
-            className="flex items-center justify-center grayscale opacity-60 transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+            className="flex items-center justify-center"
           >
-            <Image
-              src={logo.src}
-              alt={logo.name}
-              width={120}
-              height={40}
-              className="h-8 w-auto md:h-10"
-            />
+            {logoImage(logo)}
           </div>
         ))}
       </div>
