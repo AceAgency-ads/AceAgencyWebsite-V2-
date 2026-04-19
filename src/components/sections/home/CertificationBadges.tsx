@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { SectionWrapper } from '@/components/sections/SectionWrapper';
 
-const BADGE_KEYS = ['0', '1', '2', '3', '4'] as const;
+const BADGE_KEYS = ['0', '1', '2'] as const;
 
 /**
  * Certification badges grid — dark section with grayscale → color on hover.
@@ -27,7 +27,7 @@ export function CertificationBadges(): React.JSX.Element {
         </h2>
       </div>
 
-      <div className="mx-auto grid max-w-4xl grid-cols-2 items-center justify-items-center gap-8 sm:grid-cols-3 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-3xl grid-cols-3 items-center justify-items-center gap-10">
         {BADGE_KEYS.map((key) => {
           const badge = t.raw(`certifications.badges.${key}`) as {
             name: string;
@@ -42,9 +42,9 @@ export function CertificationBadges(): React.JSX.Element {
               <Image
                 src={badge.src}
                 alt={badge.name}
-                width={140}
-                height={60}
-                className="h-12 w-auto md:h-14"
+                width={300}
+                height={300}
+                className="h-24 w-auto md:h-32"
               />
             </div>
           );
