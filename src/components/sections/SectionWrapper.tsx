@@ -10,6 +10,8 @@ interface SectionWrapperProps {
   readonly id?: string;
   /** Use larger padding for hero sections. Default: false */
   readonly hero?: boolean;
+  /** Use tighter padding for compact layouts (e.g. growth funnel). Default: false */
+  readonly compact?: boolean;
   /**
    * Wrap children in a rounded container that floats on the dark body.
    * Creates the addifico-style "floating panel" look. Default: true.
@@ -34,12 +36,15 @@ export function SectionWrapper({
   className,
   id,
   hero = false,
+  compact = false,
   rounded = true,
   ref,
 }: SectionWrapperProps): React.JSX.Element {
   const paddingClasses = hero
     ? 'py-20 md:py-32'
-    : 'py-20 md:py-28 lg:py-32';
+    : compact
+      ? 'py-10 md:py-14'
+      : 'py-20 md:py-28 lg:py-32';
 
   if (!rounded) {
     return (

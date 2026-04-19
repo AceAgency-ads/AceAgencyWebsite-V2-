@@ -68,6 +68,9 @@ public/
 | `/blog/[slug]` | Blog article detail | Must-have |
 | `/studii-de-caz` | Case Studies index | Must-have |
 | `/studii-de-caz/[slug]` | Case study detail | Must-have |
+| `/growth` | ACE Growth Engine (funnel, 10 sections) | Production (Visual Redesign Mar 26) |
+| `/growth/checklist` | 12-Point Checklist (lead magnet) | Production (Poster Added Mar 26) |
+| `/growth/multumesc` | Thank You (post-conversion) | Production |
 | `/echipa` | Team | V2 |
 
 ## Brand & Design
