@@ -1,8 +1,8 @@
 # Laboratorul de Conversii Codemaps Index
 
-**Last Updated:** March 18, 2026
-**Status:** Phase 4 Documentation Updated — Homepage Redesign v2 with Certifications, Before/After, FAQ & Exit Intent
-**Scope:** Enhanced homepage with new conversion-focused sections + improved trust flow
+**Last Updated:** March 26, 2026
+**Status:** Growth Funnel Production Added — ACE Growth Engine (/growth) + Audit & Lead Magnet Forms
+**Scope:** Enhanced homepage + complete growth funnel conversion system
 
 ---
 
@@ -13,6 +13,7 @@
 | Document | Scope | Purpose | Last Updated |
 |----------|-------|---------|--------------|
 | `design-system/pages/home.md` | Homepage | Complete page structure, sections, animations, i18n | Mar 16, 2026 |
+| `docs/GROWTH-FUNNEL-CODEMAP.md` | Growth Funnel | ACE Growth Engine funnel architecture, forms, flows, schemas | Mar 26, 2026 |
 | `design-system/MASTER.md` | Design System | Visual language, colors, typography, themes, components | Reference |
 | `docs/DOCUMENTATION-INDEX.md` | Full Project | Master index with all documentation links and APIs | Mar 16, 2026 |
 
@@ -22,6 +23,15 @@
 |----------|-------|-------|--------|
 | `docs/PHASE-4-HOMEPAGE-REDESIGN.md` | 4 | Trust-first flow + AdPilot legal pages | Complete |
 | `docs/PHASE-3-WARM-LIGHT-REFRESH.md` | 3 | Warm light theme + new components | Reference |
+
+### Growth Funnel Documentation
+
+| Document | Scope | Purpose | Status |
+|----------|-------|---------|--------|
+| `docs/GROWTH-FUNNEL-CODEMAP.md` | Growth Funnel | ACE Growth Engine /growth pages, 10 components, forms, schemas, i18n | Updated Mar 26 |
+| Funnel Pages | `/growth`, `/growth/checklist`, `/growth/multumesc` | 3-page conversion system (landing, lead magnet, thank you) | Updated Mar 26 |
+| Form Actions | `src/lib/actions/growth.ts` | submitAuditForm, submitLeadMagnet server actions | Production |
+| Validation | `src/lib/validations/growth-schema.ts` | Zod schemas + dropdown options | Production |
 
 ### GEO & SEO Documentation
 
@@ -286,6 +296,7 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/design-system/pages/home.md`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/docs/DOCUMENTATION-INDEX.md`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/docs/PHASE-4-HOMEPAGE-REDESIGN.md`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/docs/GROWTH-FUNNEL-CODEMAP.md` (NEW Mar 26)
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/CLAUDE.md`
 
 ### Design System
@@ -308,11 +319,27 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/home/ExitIntentPopup.tsx` (NEW Mar 18)
 
 ### Shared Components & Hooks
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/SectionWrapper.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/SectionWrapper.tsx` (updated Mar 26: added compact prop)
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/SectionHeader.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/animations/ScrollReveal.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/animations/CountUp.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/lib/hooks/useExitIntent.ts` (NEW Mar 18)
+
+### Growth Funnel Components (Updated Mar 26)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthHero.tsx` (merged with VSL, includes video thumbnail)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthClientLogos.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthServices.tsx` (visual redesign)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthCaseStudies.tsx` (visual redesign + CTA)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthProcess.tsx` (visual redesign, gradient numbers)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthGuarantee.tsx` (NEW Mar 26)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthFAQ.tsx` (visual redesign + CTA)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthAuditForm.tsx` (visual redesign)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthLeadMagnetCTA.tsx` (two-column layout)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/growth/GrowthFooter.tsx`
+
+**Removed from page (still exist as components):**
+- `GrowthProofBar.tsx` (not imported in /growth page)
+- `GrowthVSL.tsx` (merged into GrowthHero)
 
 ### Legal Components
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/components/sections/legal/LegalHero.tsx`
@@ -322,10 +349,15 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/app/[locale]/page.tsx` (Homepage)
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/app/[locale]/adpilot/privacy/page.tsx`
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/app/[locale]/adpilot/terms/page.tsx`
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/app/[locale]/growth/page.tsx` (NEW Mar 26)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/app/[locale]/growth/checklist/page.tsx` (NEW Mar 26)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/app/[locale]/growth/multumesc/page.tsx` (NEW Mar 26)
 
-### i18n Files
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/messages/ro.json`
-- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/messages/en.json`
+### i18n Files & Server Actions
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/messages/ro.json` (updated Mar 26: added growth namespace)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/messages/en.json` (updated Mar 26: added growth namespace)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/lib/actions/growth.ts` (NEW Mar 26: submitAuditForm, submitLeadMagnet)
+- `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/src/lib/validations/growth-schema.ts` (NEW Mar 26: Zod schemas + options)
 
 ### Configuration
 - `/Users/mihaigrigore/workspace/AceAgencyWebsite-V2-/CLAUDE.md`
@@ -338,6 +370,8 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 
 | Date | Phase | Changes | Files Modified |
 |------|-------|---------|-----------------|
+| Mar 26, 2026 | Growth | Updated ACE Growth Engine funnel (hero merged with VSL, guarantee added, visual redesign) | CODEMAPS-INDEX, GROWTH-FUNNEL-CODEMAP (updated), CLAUDE.md, GrowthHero/Services/CaseStudies/Process/FAQ/AuditForm/LeadMagnetCTA/Guarantee + i18n |
+| Mar 26, 2026 | Growth | Initial funnel | Growth added (/growth pages, 11 components, forms, schemas) |
 | Mar 18, 2026 | 4 (v2) | Added Certifications, BeforeAfter, FAQ, ExitIntent | CODEMAPS-INDEX, DOCUMENTATION-INDEX, design-system/pages/home.md |
 | Mar 16, 2026 | 4 | Homepage redesign + AdPilot legal | 4 doc files |
 | Mar 6, 2026 | 3 | Warm light theme + new components | Phase-3 doc |
@@ -368,6 +402,9 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 
 ## Next Documentation Updates
 
+- [ ] Create growth funnel analytics tracking plan (form conversions, Calendly redirects, email events)
+- [ ] Add TheMarketer integration documentation for growth leads (nurture sequences, email campaigns)
+- [ ] Create /growth/checklist and /growth/multumesc page design specs
 - [ ] Update design-system/pages/home.md with full section-by-section specs (Mar 18 sections)
 - [ ] Create FAQ page spec (`design-system/pages/intrebari-frecvente.md`) — Referenced by HomeFAQ
 - [ ] Create case studies page spec (`design-system/pages/studii-de-caz.md`) — Referenced by BeforeAfterPreview
@@ -375,10 +412,34 @@ Average ROI: 340% (range 250-480%), based on ad spend vs attributed revenue."
 - [ ] Blog page spec (`design-system/pages/blog.md`) — V2 feature
 - [ ] Team page spec (`design-system/pages/echipa.md`) — V2 feature
 - [ ] Update PHASE-4-HOMEPAGE-REDESIGN.md with v2 changes (Certifications, BeforeAfter, FAQ, ExitIntent)
-- [ ] Analytics tracking plan — Exit intent + FAQ engagement + BeforeAfter click-through
 
 ---
 
-**Last Updated:** March 18, 2026
+---
+
+## Growth Funnel Visual Design Notes (Mar 26)
+
+All inspired by vladpuscas.ro premium design patterns:
+
+```
+┌─ Hero (full viewport)
+│  └─ Radial violet glow + grid pattern overlay
+│  └─ VSL video thumbnail integrated (16:9)
+│  └─ Pulsing glow on video facade
+│
+├─ Services/CaseStudies/Process/FAQ/AuditForm
+│  └─ Shine effect on all CTAs (animated gradient sweep)
+│  └─ Deep box shadows for layering
+│  └─ Repeated CTAs after major sections
+│  └─ Gradient step numbers in Process (violet→mint)
+│
+└─ LeadMagnetCTA
+   └─ Two-column layout (ebook cover left, form right)
+   └─ Radial glow background
+```
+
+---
+
+**Last Updated:** March 26, 2026
 **Maintained By:** Documentation & Codemap Specialist
-**Status:** Phase 4 v2 Documentation Complete — Homepage structure finalized with 13 sections + exit-intent overlay
+**Status:** Growth Funnel Visual Redesign Complete — 10 components, merged hero+VSL, guarantee added, vladpuscas.ro-inspired visual upgrades

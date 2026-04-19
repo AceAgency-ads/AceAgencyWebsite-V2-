@@ -42,3 +42,16 @@ Thumbs.db
 
 # Testing
 coverage/
+test-results/
+playwright-report/
+.playwright-mcp/
+
+# Screenshot / visual-debug scratch (root-level)
+/cert-*.png
+/certifications*.png
+/client-logos*.png
+/logos-*.png
+
+# Drop folders (raw screenshots / pre-processing assets with spaces in names)
+/public/images/poze screenshot website-uri/
+/public/images/logo clients/

@@ -1,13 +1,26 @@
 # Laboratorul de Conversii Documentation
 
-**Last Updated:** March 18, 2026
-**Status:** Phase 4 v2 Complete — Homepage with 13 sections + 1 overlay
+**Last Updated:** March 26, 2026
+**Status:** Phase 4 v2 Complete + Growth Funnel Production Ready
 
 ---
 
 ## Quick Navigation
 
-### For a Quick Overview (5 min read)
+### For Growth Funnel Overview (10 min read)
+Start here: `/docs/GROWTH-FUNNEL-CODEMAP.md`
+- Architecture diagrams
+- 11 components + 3 pages
+- Forms, validation, i18n
+
+### For Developers Working on Growth (Quick Ref)
+Jump to: `/docs/GROWTH-QUICK-REFERENCE.md`
+- Component imports
+- Form server actions
+- i18n keys and error messages
+- Dropdown options and values
+
+### For Homepage Overview (5 min read)
 Start here: `/docs/PHASE-4-V2-DOCUMENTATION-SUMMARY.md`
 
 ### For Developers (10 min reference)
@@ -18,7 +31,7 @@ Jump to: `/docs/HOMEPAGE-QUICK-REFERENCE.md`
 
 ### For Architects/Tech Leads (15 min)
 Read: `/docs/CODEMAPS-INDEX.md`
-- Homepage architecture diagram
+- Homepage + Growth funnel architecture
 - Component registry
 - Data flow
 
@@ -47,14 +60,29 @@ See: `/docs/PHASE-4-V2-CHANGELOG.md`
 
 ## Documentation Files
 
+### Growth Funnel (NEW — March 26)
+
+| File | Audience | Purpose | Last Updated |
+|------|----------|---------|--------------|
+| `GROWTH-FUNNEL-CODEMAP.md` | Architects | ACE Growth Engine architecture + 11 components + forms | Mar 26, 2026 |
+| `GROWTH-QUICK-REFERENCE.md` | Developers | Growth component imports, forms, i18n, common tasks | Mar 26, 2026 |
+| `GROWTH-FUNNEL-UPDATE-SUMMARY.md` | Tech Leads | What changed, files updated, integration points | Mar 26, 2026 |
+
+### Homepage (Phase 4 v2 — March 18)
+
 | File | Audience | Purpose | Last Updated |
 |------|----------|---------|--------------|
 | `PHASE-4-V2-DOCUMENTATION-SUMMARY.md` | Everyone | Overview of all changes + next steps | Mar 18, 2026 |
 | `HOMEPAGE-QUICK-REFERENCE.md` | Developers | Quick API reference + troubleshooting | Mar 18, 2026 |
-| `CODEMAPS-INDEX.md` | Architects | Architecture diagrams + component registry | Mar 18, 2026 |
-| `DOCUMENTATION-INDEX.md` | Developers | Comprehensive API reference | Mar 18, 2026 |
 | `PHASE-4-V2-CHANGELOG.md` | Tech Leads | Detailed changelog + design decisions | Mar 18, 2026 |
 | `PHASE-4-HOMEPAGE-REDESIGN.md` | Reference | Original Phase 4 v1 documentation | Mar 16, 2026 |
+
+### Comprehensive References
+
+| File | Audience | Purpose | Last Updated |
+|------|----------|---------|--------------|
+| `CODEMAPS-INDEX.md` | Architects | All architecture diagrams + component registry | Mar 26, 2026 |
+| `DOCUMENTATION-INDEX.md` | Developers | Comprehensive API reference | Mar 18, 2026 |
 | `design-system/pages/home.md` | Designers | Complete page specification | Mar 18, 2026 |
 | `design-system/MASTER.md` | Everyone | Design tokens + visual language | Reference |
 | `design-system/components.md` | Designers | Component patterns + API | Reference |
@@ -174,27 +202,65 @@ docs/PHASE-4-V2-CHANGELOG.md
 
 ## Key Files at a Glance
 
-### Components
+### Growth Funnel (Updated Mar 26)
+
+**Pages:**
+- `src/app/[locale]/growth/page.tsx` — Main funnel (10 sections, hero merged with VSL)
+- `src/app/[locale]/growth/checklist/page.tsx` — Lead magnet landing + poster image
+- `src/app/[locale]/growth/multumesc/page.tsx` — Thank you page
+
+**Components (10 total, visual redesigned):**
+- `src/components/sections/growth/GrowthHero.tsx` — Hero + VSL merged (video thumbnail integrated)
+- `src/components/sections/growth/GrowthClientLogos.tsx` — Client marquee
+- `src/components/sections/growth/GrowthServices.tsx` — 8-card service grid (visual redesign, shine effect)
+- `src/components/sections/growth/GrowthCaseStudies.tsx` — 3-card case studies (visual redesign, CTA)
+- `src/components/sections/growth/GrowthProcess.tsx` — 3-step process (gradient step numbers)
+- `src/components/sections/growth/GrowthGuarantee.tsx` — Money-back guarantee card (NEW)
+- `src/components/sections/growth/GrowthFAQ.tsx` — 7-item FAQ (visual redesign, CTA)
+- `src/components/sections/growth/GrowthAuditForm.tsx` — Main form (6 fields, visual redesign)
+- `src/components/sections/growth/GrowthLeadMagnetCTA.tsx` — Two-column: ebook cover + form
+- `src/components/sections/growth/GrowthFooter.tsx` — Dark footer
+
+**Server Actions & Validation:**
+- `src/lib/actions/growth.ts` — submitAuditForm, submitLeadMagnet
+- `src/lib/validations/growth-schema.ts` — Zod schemas + dropdown options
+
+**Translations:**
+- `src/messages/ro.json` — Growth namespace + new guarantee/process/faq keys
+- `src/messages/en.json` — Growth namespace + new guarantee/process/faq keys
+
+**Assets (Canva integrated):**
+- `public/images/growth/vsl-thumb.webp` — YouTube thumbnail (hero)
+- `public/images/growth/ebook-cover.webp` — Ebook cover (lead magnet CTA)
+- `public/images/growth/og-image.webp` — Open Graph image
+- `public/images/growth/checklist-poster.webp` — Poster on /growth/checklist
+
+### Homepage (Phase 4 v2)
+
+**Components:**
 - `src/components/sections/home/CertificationBadges.tsx` — 5 partner badges
 - `src/components/sections/home/BeforeAfterPreview.tsx` — Before/after metrics
 - `src/components/sections/home/HomeFAQ.tsx` — FAQ accordion
 - `src/components/sections/home/ExitIntentPopup.tsx` — Exit modal
 
-### Hook
+**Hook:**
 - `src/lib/hooks/useExitIntent.ts` — Exit intent detection
 
-### Page
+**Page:**
 - `src/app/[locale]/page.tsx` — 12-section homepage + overlay
 
-### Translations
+**Translations:**
 - `src/messages/ro.json` — 60+ new i18n keys
 - `src/messages/en.json` — 60+ new i18n keys
 
-### Design System
+**Design System:**
 - `design-system/pages/home.md` — Complete page spec
 
-### Assets
+**Assets:**
 - `public/images/certifications/` — 5 badge placeholder images
+
+**Enhanced:**
+- `src/components/sections/SectionWrapper.tsx` — Added compact prop
 
 ---
 
@@ -268,7 +334,9 @@ A: See `docs/HOMEPAGE-QUICK-REFERENCE.md` "Troubleshooting" section
 |------|-------|
 | March 16, 2026 | Phase 4 v1: Homepage redesign + AdPilot legal pages |
 | March 18, 2026 | Phase 4 v2: CertificationBadges, BeforeAfter, FAQ, ExitIntent |
-| Today | Documentation complete + verified |
+| March 26, 2026 (Initial) | Growth Funnel: /growth + /growth/checklist + /growth/multumesc (11 components, 2 forms, dual server actions) |
+| March 26, 2026 (Updated) | Growth Visual Redesign: hero+VSL merged, guarantee added, 10 components, vladpuscas.ro-inspired effects |
+| Today | All documentation complete + verified |
 
 ---
 
@@ -296,6 +364,26 @@ A: See `docs/HOMEPAGE-QUICK-REFERENCE.md` "Troubleshooting" section
 
 ---
 
-**Created:** March 18, 2026
-**Status:** Complete and Ready
-**Questions?** Start with `HOMEPAGE-QUICK-REFERENCE.md`
+---
+
+## Growth Funnel Design Upgrades (Mar 26)
+
+Visual design inspired by vladpuscas.ro:
+
+- **Shine effect** on all CTA buttons (animated gradient sweep)
+- **Radial violet glows** in backgrounds
+- **Grid pattern overlay** for depth (hero section)
+- **Pulsing glow effects** on key elements (video, buttons)
+- **Deep box shadows** for visual layering
+- **Repeated CTAs** at stopping points (after case studies, process, FAQ)
+- **Gradient step numbers** in Process section (violet→mint)
+- **Two-column layout** for LeadMagnetCTA (ebook cover + form)
+
+---
+
+**Last Updated:** March 26, 2026
+**Status:** Complete and Ready — Homepage Phase 4 v2 + Growth Funnel Visual Redesign Complete
+**Questions?** Start with appropriate quick reference:
+- Growth: `GROWTH-QUICK-REFERENCE.md` or `GROWTH-FUNNEL-CODEMAP.md`
+- Homepage: `HOMEPAGE-QUICK-REFERENCE.md`
+- Architecture: `CODEMAPS-INDEX.md`

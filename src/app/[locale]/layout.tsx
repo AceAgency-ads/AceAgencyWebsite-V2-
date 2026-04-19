@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import { headers } from 'next/headers';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { SmoothScroll } from '@/components/layout/SmoothScroll';
@@ -73,6 +74,9 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
+  const pathname = (await headers()).get('x-pathname') ?? '';
+  const isGrowthFunnel = pathname.includes('/growth');
+
   return (
     <html
       lang={locale}
@@ -112,10 +116,10 @@ export default async function LocaleLayout({
           </noscript>
         )}
         <NextIntlClientProvider>
-          <Header />
+          {!isGrowthFunnel && <Header />}
           <SmoothScroll>
             <main>{children}</main>
-            <Footer />
+            {!isGrowthFunnel && <Footer />}
           </SmoothScroll>
           <CookieConsentBanner locale={locale} />
         </NextIntlClientProvider>
