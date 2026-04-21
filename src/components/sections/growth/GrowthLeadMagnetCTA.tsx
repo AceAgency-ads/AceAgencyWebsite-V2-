@@ -1,6 +1,6 @@
 'use client';
 
-import { useActionState, useEffect, useState, useCallback } from 'react';
+import { useActionState, useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { Loader2 } from 'lucide-react';
 import Image from 'next/image';
@@ -26,13 +26,7 @@ export function GrowthLeadMagnetCTA(): React.JSX.Element {
   const t = useTranslations('growth');
   const [state, formAction, pending] = useActionState(submitLeadMagnet, initialState);
   const [clientErrors, setClientErrors] = useState<Record<string, string>>({});
-  const [showSuccess, setShowSuccess] = useState(false);
-
-  useEffect(() => {
-    if (state.success) {
-      setShowSuccess(true);
-    }
-  }, [state.success]);
+  const showSuccess = state.success;
 
   // On-blur field validation
   const validateField = useCallback(

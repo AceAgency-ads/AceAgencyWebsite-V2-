@@ -41,10 +41,10 @@ export function GrowthHero(): React.JSX.Element {
         }}
       />
 
-      {/* ACE Agency logo */}
+      {/* Brand wordmark */}
       <div className="absolute left-6 top-6 z-10">
         <span className="font-[family-name:var(--font-glacial)] text-sm font-bold tracking-widest text-white/60 uppercase">
-          ACE Agency
+          Laboratorul de Conversii
         </span>
       </div>
 
@@ -100,9 +100,7 @@ export function GrowthHero(): React.JSX.Element {
               </span>
             </a>
             <span className="relative text-sm text-[#66F3A6]/80">
-              {t.has('hero.guarantee')
-                ? t('hero.guarantee')
-                : '✓ Garanție 30 de zile money-back'}
+              {t('hero.guarantee')}
             </span>
           </div>
         </ScrollReveal>

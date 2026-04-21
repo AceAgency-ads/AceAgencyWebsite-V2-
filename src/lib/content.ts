@@ -33,6 +33,7 @@ export function getContentBySection<T extends BlogArticleMeta | CaseStudyMeta>(
       const meta = data as T;
 
       if (meta.locale !== locale) return null;
+      if (meta.draft === true) return null;
 
       const computedReadingTime =
         'readingTime' in meta && typeof meta.readingTime === 'number'
@@ -72,7 +73,7 @@ export function getContentBySlug<T extends BlogArticleMeta | CaseStudyMeta>(
     const { data, content } = matter(raw);
     const meta = data as T;
 
-    if (meta.slug === slug && meta.locale === locale) {
+    if (meta.slug === slug && meta.locale === locale && meta.draft !== true) {
       const computedReadingTime =
         'readingTime' in meta && typeof meta.readingTime === 'number'
           ? meta.readingTime
@@ -103,10 +104,13 @@ export function getAllSlugs(
 
   const files = fs.readdirSync(dir).filter((f) => f.endsWith('.mdx'));
 
-  return files.map((filename) => {
-    const filePath = path.join(dir, filename);
-    const raw = fs.readFileSync(filePath, 'utf-8');
-    const { data } = matter(raw);
-    return { slug: data.slug as string, locale: data.locale as string };
-  });
+  return files
+    .map((filename) => {
+      const filePath = path.join(dir, filename);
+      const raw = fs.readFileSync(filePath, 'utf-8');
+      const { data } = matter(raw);
+      if (data.draft === true) return null;
+      return { slug: data.slug as string, locale: data.locale as string };
+    })
+    .filter((item): item is { slug: string; locale: string } => item !== null);
 }

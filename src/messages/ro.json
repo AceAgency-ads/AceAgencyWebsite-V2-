@@ -2150,7 +2150,8 @@
     "hero": {
       "headline": "Magazinul tau online merita mai mult decat reclame care nu vand.",
       "subheadline": "ACE Growth Engine este sistemul complet de crestere pentru magazine online: reclame pe Meta, TikTok si Google + video-uri si creative incluse + CRO + email marketing — totul gestionat de o singura echipa, monitorizat de AI, cu rezultate masurabile din prima luna.",
-      "cta": "Vezi cum functioneaza"
+      "cta": "Vezi cum functioneaza",
+      "guarantee": "✓ Garantie 30 de zile money-back"
     },
     "proofBar": {
       "items": {
@@ -2400,7 +2401,7 @@
       }
     },
     "growthFooter": {
-      "text": "ACE Agency | aceagency.ro | © 2026"
+      "text": "Laboratorul de Conversii | aceagency.ro | © 2026"
     },
     "checklist": {
       "meta": {

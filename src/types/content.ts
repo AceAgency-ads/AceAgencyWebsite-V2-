@@ -8,6 +8,7 @@ interface BaseContentMeta {
   readonly publishedAt: string;
   readonly locale: 'ro' | 'en';
   readonly translationSlug?: string;
+  readonly draft?: boolean;
 }
 
 /** Blog article frontmatter. */

@@ -2150,7 +2150,8 @@
     "hero": {
       "headline": "Your online store deserves more than ads that don't sell.",
       "subheadline": "ACE Growth Engine is the complete growth system for online stores: ads on Meta, TikTok & Google + videos and creatives included + CRO + email marketing — all managed by one team, monitored by AI, with measurable results from month one.",
-      "cta": "See how it works"
+      "cta": "See how it works",
+      "guarantee": "✓ 30-day money-back guarantee"
     },
     "proofBar": {
       "items": {
@@ -2400,7 +2401,7 @@
       }
     },
     "growthFooter": {
-      "text": "ACE Agency | aceagency.ro | © 2026"
+      "text": "Laboratorul de Conversii | aceagency.ro | © 2026"
     },
     "checklist": {
       "meta": {
