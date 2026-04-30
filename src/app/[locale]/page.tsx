@@ -1,12 +1,12 @@
 import { setRequestLocale } from 'next-intl/server';
 import { HeroSection } from '@/components/sections/home/HeroSection';
-import { HeroTransition } from '@/components/sections/HeroTransition';
-import { ServicesPreview } from '@/components/sections/home/ServicesPreview';
-import { StatsSection } from '@/components/sections/home/StatsSection';
-import { AboutPreview } from '@/components/sections/home/AboutPreview';
-import { Testimonials } from '@/components/sections/home/Testimonials';
-import { CTASection } from '@/components/sections/home/CTASection';
-import { Newsletter } from '@/components/sections/home/Newsletter';
+import { ProblemSection } from '@/components/sections/home/ProblemSection';
+import { ServicesROI } from '@/components/sections/home/ServicesROI';
+import { ResultsTable } from '@/components/sections/home/ResultsTable';
+import { TestimonialsBig } from '@/components/sections/home/TestimonialsBig';
+import { HomeFAQ } from '@/components/sections/home/HomeFAQ';
+import { FinalCTAUrgency } from '@/components/sections/home/FinalCTAUrgency';
+import { LogoStrip, DEFAULT_CLIENTS } from '@/components/sections/LogoStrip';
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;
@@ -21,13 +21,20 @@ export default async function HomePage({
   return (
     <>
       <HeroSection />
-      <HeroTransition namespace="home" i18nPrefix="heroTransition" />
-      <ServicesPreview />
-      <StatsSection />
-      <AboutPreview />
-      <Testimonials />
-      <CTASection />
-      <Newsletter />
+
+      {/* Logo proof strip — sits between hero and problem framing */}
+      <section className="bg-[#262523] px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1280px]">
+          <LogoStrip dark clients={DEFAULT_CLIENTS} />
+        </div>
+      </section>
+
+      <ProblemSection />
+      <ServicesROI />
+      <ResultsTable />
+      <TestimonialsBig />
+      <HomeFAQ />
+      <FinalCTAUrgency />
     </>
   );
 }

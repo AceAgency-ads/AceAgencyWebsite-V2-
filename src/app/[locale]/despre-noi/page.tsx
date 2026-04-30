@@ -1,12 +1,9 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { AboutHero } from '@/components/sections/about/AboutHero';
-import { HeroTransition } from '@/components/sections/HeroTransition';
-import { StorySection } from '@/components/sections/about/StorySection';
+import { HeroDespre } from '@/components/sections/about/HeroDespre';
 import { ValuesSection } from '@/components/sections/about/ValuesSection';
-import { DivisionsSection } from '@/components/sections/about/DivisionsSection';
-import { MissionVision } from '@/components/sections/about/MissionVision';
-import { WhyChooseUs } from '@/components/sections/about/WhyChooseUs';
-import { CTASection } from '@/components/sections/home/CTASection';
+import { TeamSection } from '@/components/sections/about/TeamSection';
+import { SubBrandsSection } from '@/components/sections/about/SubBrandsSection';
+import { AboutFinalCTA } from '@/components/sections/about/AboutFinalCTA';
 
 interface AboutPageProps {
   params: Promise<{ locale: string }>;
@@ -22,19 +19,16 @@ export default async function AboutPage({
 
   return (
     <>
-      <AboutHero
+      <HeroDespre
         breadcrumbItems={[
           { label: t('breadcrumb.home'), href: '/' },
           { label: t('breadcrumb.about') },
         ]}
       />
-      <HeroTransition namespace="about" i18nPrefix="heroTransition" />
-      <StorySection />
       <ValuesSection />
-      <DivisionsSection />
-      <MissionVision />
-      <WhyChooseUs />
-      <CTASection namespace="about" secondaryHref="/servicii" />
+      <TeamSection />
+      <SubBrandsSection />
+      <AboutFinalCTA />
     </>
   );
 }

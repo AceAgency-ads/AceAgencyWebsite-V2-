@@ -7,14 +7,16 @@ import { Linkedin, Instagram, Facebook } from 'lucide-react';
 import { ScrollReveal } from '@/components/animations/ScrollReveal';
 import { Container } from '@/components/layout/Container';
 
-/** Division badge data */
-const DIVISIONS = ['web', 'ads', 'ai', 'media'] as const;
+/** Sub-brand badge data — order matches addifico-style left-to-right reading */
+const SUB_BRANDS = ['ads', 'ai', 'web', 'media'] as const;
 
 /** Navigation links (same as MenuOverlay) */
 const NAV_LINKS = [
   { key: 'home', href: '/' as const },
   { key: 'about', href: '/despre-noi' as const },
   { key: 'services', href: '/servicii' as const },
+  { key: 'caseStudies', href: '/studii-de-caz' as const },
+  { key: 'blog', href: '/blog' as const },
   { key: 'contact', href: '/contact' as const },
 ] as const;
 
@@ -59,12 +61,12 @@ export function Footer(): React.JSX.Element {
             </Link>
             <p className="max-w-md text-sm text-[#a0a0a0]">{t('tagline')}</p>
             <div className="flex flex-wrap gap-2">
-              {DIVISIONS.map((div) => (
+              {SUB_BRANDS.map((sb) => (
                 <span
-                  key={div}
+                  key={sb}
                   className="rounded-full border border-[#4a464380] px-3 py-1 text-xs font-medium text-[#a0a0a0]"
                 >
-                  {t(`divisions.${div}`)}
+                  {t(`subBrands.${sb}`)}
                 </span>
               ))}
             </div>

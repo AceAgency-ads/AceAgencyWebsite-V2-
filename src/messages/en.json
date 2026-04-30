@@ -1,708 +1,2470 @@
 {
   "header": {
-    "cta": "Contact us",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu"
+    "cta": "Contactează-ne",
+    "menuOpen": "Deschide meniul",
+    "menuClose": "Închide meniul",
+    "skipToContent": "Sari la conținut"
   },
   "navigation": {
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
+    "home": "Acasă",
+    "about": "Despre noi",
+    "services": "Servicii",
+    "caseStudies": "Studii de caz",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "footer": {
-    "tagline": "Your digital marketing agency from Bucharest",
-    "address": "Bucharest, Romania",
-    "phone": "+40 XXX XXX XXX",
-    "email": "contact@aceagency.ro",
+    "tagline": "Agenție de performance marketing din București — Google Ads, Meta, TikTok, SEO. ROAS țintă contractual.",
+    "address": "București, România",
+    "phone": "",
+    "email": "office@aceads.co",
     "newsletter": {
-      "title": "Newsletter",
-      "placeholder": "Your email address",
-      "submit": "Subscribe",
-      "gdpr": "I agree to the processing of personal data"
+      "title": "Primești cazurile noi pe email",
+      "subtitle": "Câte un studiu de caz scurt pe lună — ce a funcționat, ce nu, cu cifre reale. Fără spam.",
+      "placeholder": "Adresa ta de email",
+      "submit": "Abonează-mă",
+      "gdpr": "Sunt de acord cu prelucrarea datelor personale conform politicii.",
+      "successTitle": "Te-ai abonat.",
+      "successBody": "Verifică inboxul pentru confirmare."
     },
-    "copyright": "\u00a9 2026 AceAgency. All rights reserved.",
-    "divisions": {
-      "web": "AceWeb",
-      "ads": "AceAds",
-      "ai": "AceAI",
-      "media": "AceMedia"
+    "copyright": "© 2026 ACE Agency · INNOSERV SRL · CUI 47715516",
+    "subBrands": {
+      "title": "Sub-branduri",
+      "ads": "AceAds — Performance Marketing",
+      "ai": "AceAI — Automatizări & AI",
+      "web": "AceWeb — Dezvoltare Web",
+      "media": "AceMedia — Producție Video"
     },
     "legal": {
-      "privacy": "Privacy Policy",
-      "cookies": "Cookie Policy",
-      "terms": "Terms of Service"
+      "title": "Legal",
+      "privacy": "Politica de confidențialitate",
+      "cookies": "Politica de cookie-uri",
+      "terms": "Termeni și condiții"
+    },
+    "explore": {
+      "title": "Explorează",
+      "caseStudies": "Studii de caz",
+      "blog": "Blog",
+      "about": "Despre noi",
+      "contact": "Contact"
     }
   },
   "social": {
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
-    "facebook": "Facebook"
+    "facebook": "Facebook",
+    "tiktok": "TikTok"
   },
-  "about": {
-    "breadcrumb": {
-      "home": "Home",
-      "about": "About Us"
+  "common": {
+    "back": "Înapoi",
+    "next": "Înainte",
+    "close": "Închide",
+    "open": "Deschide",
+    "readMore": "Citește mai mult",
+    "loading": "Se încarcă…",
+    "error": "Ceva nu a funcționat. Reîncearcă.",
+    "retry": "Reîncearcă",
+    "soon": "În curând",
+    "minRead": "{minutes} min de citit",
+    "publishedOn": "Publicat pe {date}",
+    "category": "Categorie"
+  },
+  "contact": {
+    "metaTitle": "Contact — Programează analiza gratuită | ACE Agency",
+    "metaDescription": "Programează analiza gratuită de 30 de minute cu un strategist senior. Răspundem în 24h lucrătoare. office@aceads.co.",
+    "hero": {
+      "overline": "CONTACT · BUCUREȘTI",
+      "h1": "Hai să vedem dacă suntem <accent>potriviți</accent>.",
+      "body": "Analiza gratuită durează 30 de minute. Pleci cu 3 recomandări scrise pe email — ce să oprești, ce să scalezi, ce să măsori diferit. Indiferent dacă semnezi."
+    },
+    "channels": {
+      "overline": "MAI MULTE CANALE",
+      "email": {
+        "label": "Email direct",
+        "value": "office@aceads.co",
+        "note": "Răspundem în 24h lucrătoare."
+      },
+      "calendar": {
+        "label": "Calendar",
+        "value": "Programează 30 minute",
+        "note": "Discovery call cu un senior, fără pitch."
+      },
+      "office": {
+        "label": "Birou",
+        "value": "București, România",
+        "note": "Întâlniri în persoană pe bază de programare."
+      }
+    },
+    "form": {
+      "overline": "FORMULAR",
+      "h2": "Spune-ne pe scurt despre proiect.",
+      "fields": {
+        "name": "Nume",
+        "namePlaceholder": "Numele tău",
+        "email": "Email business",
+        "emailPlaceholder": "tu@firma.ro",
+        "company": "Compania",
+        "companyPlaceholder": "Nume companie",
+        "website": "Site",
+        "websitePlaceholder": "https://...",
+        "budget": "Buget media lunar (orientativ)",
+        "budgetPlaceholder": "Selectează…",
+        "budgetOptions": {
+          "u3k": "sub 3.000 €",
+          "3k10k": "3.000 – 10.000 €",
+          "10k25k": "10.000 – 25.000 €",
+          "25kp": "peste 25.000 €",
+          "audit": "Doar audit / consultanță"
+        },
+        "channels": "Canalele care te interesează",
+        "channelsOptions": {
+          "google": "Google Ads",
+          "meta": "Meta Ads",
+          "tiktok": "TikTok Ads",
+          "leadgen": "Lead Gen",
+          "seo": "SEO & Content",
+          "consult": "Consultanță"
+        },
+        "message": "Mesaj",
+        "messagePlaceholder": "Pe scurt: produs/serviciu, ce ai încercat până acum, ce te blochează.",
+        "gdpr": "Sunt de acord cu prelucrarea datelor personale pentru a fi contactat conform politicii de confidențialitate.",
+        "submit": "Trimite mesajul →",
+        "submitting": "Se trimite…"
+      },
+      "validation": {
+        "required": "Câmp obligatoriu",
+        "email": "Adresă de email invalidă",
+        "url": "Link invalid (folosește https://)",
+        "gdpr": "Trebuie să accepți politica de confidențialitate"
+      },
+      "success": {
+        "title": "Mesajul a plecat.",
+        "body": "Răspundem în 24h lucrătoare la {email}."
+      },
+      "error": {
+        "title": "Ceva nu a funcționat.",
+        "body": "Reîncearcă sau scrie-ne direct la office@aceads.co."
+      }
+    },
+    "finalCta": {
+      "h2": "Acceptăm 3 clienți noi pe lună.",
+      "body": "Dacă ești în această lună, hai să vorbim înainte să se ocupe locurile.",
+      "primaryCta": "Programează analiza →"
+    }
+  },
+  "blogIndex": {
+    "metaTitle": "Blog — Studii de caz, ghiduri performance marketing | ACE Agency",
+    "metaDescription": "Articole despre Google Ads, Meta Ads, TikTok și SEO. Studii de caz cu cifre reale, ghiduri tactice, audit-uri.",
+    "hero": {
+      "overline": "BLOG · ACE AGENCY",
+      "h1": "Tactici scrise după ce <accent>au funcționat</accent>.",
+      "body": "Studii de caz cu cifre verificabile, ghiduri pentru Google Ads / Meta / TikTok și opinii despre măsurarea reală a campaniilor. Fără tutoriale generice de internet."
+    },
+    "filterAll": "Toate",
+    "readMinutes": "{minutes} min",
+    "emptyState": "Niciun articol în această categorie încă.",
+    "comingSoon": "Articole noi în curând.",
+    "newsletter": {
+      "title": "Cazurile noi pe email",
+      "body": "Câte un studiu de caz scurt pe lună. Fără spam, fără pitch.",
+      "placeholder": "tu@firma.ro",
+      "submit": "Abonează-mă"
+    }
+  },
+  "caseStudiesIndex": {
+    "metaTitle": "Studii de caz — Cifre reale, nu storytelling | ACE Agency",
+    "metaDescription": "4 studii de caz reale cu cifre verificabile: Amora 8.11× ROAS, ITMAR 13.34× ROAS, Trady -60% CPA, doSense -87% CPL. Audit gratuit.",
+    "hero": {
+      "overline": "STUDII DE CAZ",
+      "h1": "Rezultate cu <accent>cifre auditabile</accent>.",
+      "body": "4 cazuri reale, fiecare cu metrici verificabile în GA4 și platformele de ads. Nu poveste — număr și perioadă."
+    },
+    "tableOverline": "TOATE CAZURILE",
+    "tableHeading": "Sumar — toate rezultatele într-un singur tabel.",
+    "tableHeaders": {
+      "client": "Client",
+      "channel": "Canal",
+      "kpi": "KPI cheie",
+      "change": "Variație",
+      "period": "Perioadă",
+      "view": "Vezi"
+    },
+    "view": "Vezi cazul →",
+    "available": {
+      "badge": "3 LOCURI DISPONIBILE LUNA ACEASTA",
+      "h2": "Vrei să fii următorul caz?",
+      "body": "Acceptăm 3 clienți noi pe lună. Analiza gratuită de 30 de minute include 3 recomandări scrise — indiferent dacă semnezi.",
+      "primaryCta": "Programează analiza →"
+    }
+  },
+  "home": {
+    "hero": {
+      "overline": "AGENȚIE DE PERFORMANCE MARKETING · BUCUREȘTI",
+      "h1": "Transformăm bugetul de ads în <accent>revenue măsurabil</accent> — pentru magazine online și branduri B2B.",
+      "subline": "Cel mai bun caz: 13.34× ROAS · 2.38M RON revenue generat · 16 luni de scalare continuă — de la 632k la 2.38M RON fără să dublăm bugetul.",
+      "sublineHighlight": "13.34× ROAS · 2.38M RON revenue generat · 16 luni de scalare continuă",
+      "body": "Google Ads, Meta, TikTok — optimizate săptămânal pe vânzări reale, nu pe CTR raportat de platformă. ROAS țintă contractual. Raport săptămânal. Un senior dedicat.",
+      "bodyMobile": "Google Ads, Meta, TikTok — optimizate pe vânzări reale. ROAS țintă contractual. Un senior dedicat.",
+      "primaryCta": "Rezervă analiza gratuită →",
+      "secondaryCta": "Vezi rezultatele",
+      "trustBadges": [
+        "✓ Google Partner",
+        "✓ Meta Business Partner",
+        "✓ Contract min. 90 zile",
+        "✓ Audit gratuit"
+      ],
+      "trustBadgesMobile": [
+        "✓ Google Partner",
+        "✓ Meta Business Partner",
+        "✓ Audit gratuit"
+      ],
+      "stats": [
+        {
+          "value": "13.34×",
+          "label": "ROAS maxim · portofoliu activ"
+        },
+        {
+          "value": "5.4M+ RON",
+          "label": "revenue total atribuit"
+        },
+        {
+          "value": "-87%",
+          "label": "reducere CPL · cel mai bun caz"
+        },
+        {
+          "value": "6",
+          "label": "industrii · 7+ clienți activi"
+        }
+      ]
+    },
+    "vsl": {
+      "playLabel": "Play video case study",
+      "duration": "▶ 2:47 min",
+      "badge": "Cazul Amora · +544% revenue",
+      "headline": "Cum am urcat un magazin de la 3× la 8× ROAS în afara sezonului.",
+      "subline": "Fără pitch. Doar procesul, ecranele și datele.",
+      "modalTitle": "Video case study în curând.",
+      "modalBody": "Studiul complet Amora — 3× → 8.11× ROAS în afara sezonului de vârf. Publicăm în curând.",
+      "modalClose": "Închide",
+      "closeLabel": "×"
+    },
+    "problem": {
+      "overline": "PROBLEMA",
+      "h2": "De ce majoritatea <accent>agențiilor</accent> nu livrează.",
+      "body": "Dacă ai lucrat deja cu 2+ agenții, probabil le-ai văzut pe toate. Noi lucrăm exact invers.",
+      "items": [
+        {
+          "n": "01",
+          "title": "Raportare lunară cu metrici vanity",
+          "desc": "Impresii, CTR, reach — nimic despre venit real. Pleci de la raport întrebându-te ce s-a întâmplat cu banii."
+        },
+        {
+          "n": "02",
+          "title": "Contracte de 12 luni obligatorii",
+          "desc": "Blocat cu o agenție care nu livrează. Fără ieșire, fără renegociere, fără clauză de performanță."
+        },
+        {
+          "n": "03",
+          "title": "Account manager junior care rotește la 3 luni",
+          "desc": "De fiecare dată când începi să lucrezi cu cineva, pleacă. Nimic nu se acumulează, totul se resetează."
+        },
+        {
+          "n": "04",
+          "title": "Tracking rupt după iOS 14.5 + GA4",
+          "desc": "Conturi în care datele nu se leagă. Nu știi ce campanie vinde și care arde bugetul."
+        }
+      ]
+    },
+    "services": {
+      "overline": "SERVICII",
+      "h2": "Fiecare canal, legat de venit.",
+      "items": [
+        {
+          "title": "Google Ads",
+          "description": "Search · Shopping · Performance Max. ROAS țintă contractual, Smart Bidding cu date reale.",
+          "metric": "13.34×",
+          "metricLabel": "ROAS ITMAR"
+        },
+        {
+          "title": "Meta Ads",
+          "description": "Facebook · Instagram. Creative iterativ + tracking server-side + funnel cu retargeting.",
+          "metric": "8.11×",
+          "metricLabel": "ROAS Amora"
+        },
+        {
+          "title": "TikTok Ads",
+          "description": "Spark Ads + UGC autentic. Pentru DTC și branduri care vor audiențe sub 35 ani.",
+          "metric": "+433%",
+          "metricLabel": "conversii ITMAR"
+        },
+        {
+          "title": "Lead Generation",
+          "description": "Instant Forms Meta cu întrebări de calificare. Lead-uri reale, nu click-baiters.",
+          "metric": "lei 17",
+          "metricLabel": "CPL HoReCa"
+        },
+        {
+          "title": "SEO & Content",
+          "description": "Tehnic + editorial + link building. Pentru creștere organică durabilă, AEO și local SEO.",
+          "metric": "+91%",
+          "metricLabel": "conversii GA4"
+        },
+        {
+          "title": "Consultanță",
+          "description": "Audit, strategie paid, implementare in-house. Setup complet în 48h.",
+          "metric": "48h",
+          "metricLabel": "livrare audit"
+        }
+      ]
+    },
+    "results": {
+      "overline": "REZULTATE MĂSURABILE",
+      "h2": "Cifre auditabile. Nu storytelling.",
+      "headers": {
+        "client": "Client",
+        "channel": "Canal",
+        "kpi": "KPI cheie",
+        "change": "Variație",
+        "period": "Perioadă"
+      },
+      "rows": [
+        {
+          "client": "Amora",
+          "channel": "Meta Ads",
+          "kpi": "8.11× ROAS",
+          "change": "+544% revenue",
+          "period": "3 luni"
+        },
+        {
+          "client": "Trady",
+          "channel": "Meta + Google",
+          "kpi": "6.05× ROAS",
+          "change": "-60% CPA Meta",
+          "period": "2.5 luni"
+        },
+        {
+          "client": "ITMAR",
+          "channel": "Google + Meta + TT",
+          "kpi": "13.34× ROAS",
+          "change": "+276% revenue",
+          "period": "16 luni"
+        },
+        {
+          "client": "doSense",
+          "channel": "Meta Lead Gen",
+          "kpi": "lei 52 CPL",
+          "change": "-87% CPL",
+          "period": "3 luni"
+        },
+        {
+          "client": "Tutti",
+          "channel": "Meta Lead Gen",
+          "kpi": "lei 17 CPL",
+          "change": "-36% CPL",
+          "period": "2 camp."
+        },
+        {
+          "client": "Leonor",
+          "channel": "Meta Lead Gen",
+          "kpi": "lei 43 CPL",
+          "change": "sub target 50",
+          "period": "2025"
+        }
+      ]
+    },
+    "testimonials": {
+      "overline": "TESTIMONIALE",
+      "items": [
+        {
+          "quote": "ROAS Meta a sărit de la 3× la 8.11× într-un sezon mai slab decât Black Friday-ul anterior. Nu sezonul a făcut diferența — strategia a făcut-o.",
+          "author": "Echipa Amora",
+          "role": "E-commerce · Beauty",
+          "company": "amora.ro",
+          "metric": "+544% revenue · 8.11× ROAS"
+        },
+        {
+          "quote": "Am redus bugetul Google cu 45% și am crescut ROAS-ul cu 67%. Pe Meta am trecut de la 1× la 6× ROAS. Altă agenție mi-ar fi cerut să cheltui mai mult.",
+          "author": "Echipa Trady",
+          "role": "E-commerce · Home",
+          "company": "trady.ro",
+          "metric": "6.05× ROAS · -60% CPA"
+        },
+        {
+          "quote": "Am trecut de la 15 programări în 3 luni la 304 lead-uri cu același tip de cont. Costul per lead a scăzut de la 394 lei la 52 lei.",
+          "author": "Echipa doSense",
+          "role": "Servicii · Wellness",
+          "company": "dosense.ro",
+          "metric": "20× leads · -87% CPL"
+        },
+        {
+          "quote": "Revenue Google Ads a urcat de la 632k la 2.38M RON în 16 luni. Am scalat progresiv, n-am sărit în gol.",
+          "author": "Echipa ITMAR",
+          "role": "IT Refurbished",
+          "company": "itmar.ro",
+          "metric": "2.38M RON · 13.34× ROAS"
+        },
+        {
+          "quote": "114 rezervări din două campanii. Cost per lead de lei 17 — imposibil pe piața HoReCa bucureșteană pentru mall.",
+          "author": "Tutti Brasserie",
+          "role": "HoReCa · Sun Plaza",
+          "company": "Tutti",
+          "metric": "114 leads · lei 17 CPL"
+        },
+        {
+          "quote": "83 lead-uri calificate prin formular nativ Meta, sub target-ul de 50 lei/lead. Nu volum brut — oameni pregătiți de conversație.",
+          "author": "Leonor Institute",
+          "role": "Educație Profesională",
+          "company": "Leonor",
+          "metric": "83 leads · lei 43 CPL"
+        }
+      ]
+    },
+    "faq": {
+      "overline": "ÎNTREBĂRI FRECVENTE",
+      "h2": "Înainte să ne <accent>contactezi.</accent>",
+      "body": "Cele mai comune întrebări de la prospecți. Dacă nu găsești răspunsul, scrie-ne direct.",
+      "items": [
+        {
+          "q": "Ce este ACE Agency și ce face?",
+          "a": "ACE Agency este o agenție de performance marketing din București care gestionează campanii Google Ads, Meta Ads, TikTok Ads și SEO pentru magazine online și branduri B2B din România. Scopul este creșterea revenue-ului măsurabil, nu a metricilor vanity. Fiecare client primește un senior dedicat, raport săptămânal și ROAS țintă contractual."
+        },
+        {
+          "q": "Ce rezultate concrete a obținut ACE Agency?",
+          "a": "Peste 5,4 milioane RON revenue atribuit din 6 industrii. Rezultate notabile: 8.11× ROAS Meta și +544% revenue pentru Amora, 13.34× ROAS Google și 2.38M RON revenue pentru ITMAR pe 16 luni, 6.05× ROAS Meta și -60% CPA pentru Trady, CPL de 52 lei (-87%) pentru doSense."
+        },
+        {
+          "q": "Cum funcționează contractul? Există clauze de 12 luni?",
+          "a": "Contracte flexibile de minimum 90 de zile, cu ROAS sau KPI țintă specificat contractual. Nu există contracte de 12 luni obligatorii. Fiecare client primește un senior dedicat, raport săptămânal pe venit real și audit gratuit înainte de semnare. Dacă nu livrăm, nu suntem blocați împreună."
+        },
+        {
+          "q": "Cum arată analiza gratuită de 30 de minute?",
+          "a": "Discovery call cu un strategist senior — zero pitch, doar întrebări despre business-ul tău. Pleci cu 3 recomandări scrise pe email: ce să oprești, ce să scalezi și ce să măsori diferit. Recomandările sunt trimise indiferent dacă semnezi sau nu."
+        },
+        {
+          "q": "Ce industrii și tipuri de business servește ACE Agency?",
+          "a": "Focus pe e-commerce cu tracțiune (beauty, home, IT, fashion) și servicii B2B cu ciclu de vânzare mediu-lung (wellness, HoReCa, educație profesională). Nu lucrăm cu business-uri la început de drum fără date sau fără buget media serios — nu putem garanta KPI-uri fără date reale."
+        }
+      ]
+    },
+    "finalCta": {
+      "badge": "3 LOCURI DISPONIBILE LUNA ACEASTA",
+      "h2": "Acceptăm 3 clienți noi pe lună.",
+      "body": "Analiza durează 30 de minute. Pleci cu 3 recomandări scrise pe email: ce să oprești, ce să scalezi, ce să măsori diferit. Indiferent dacă semnezi.",
+      "primaryCta": "Programează analiza gratuită →",
+      "secondaryCta": "office@aceads.co",
+      "email": "office@aceads.co"
     },
     "heroTransition": {
-      "label": "WHO WE ARE",
-      "heading": "Discipline. Vision. Results.",
-      "description": "AceAgency is the team of professionals from Bucharest that transforms brands through integrated digital strategies. We combine creativity with data to deliver measurable results and sustainable growth."
-    },
+      "label": "CINE SUNTEM",
+      "heading": "Performance marketing pentru branduri care vor cifre, nu povești.",
+      "description": "ACE Agency gestionează Google Ads, Meta, TikTok și SEO pentru e-commerce și B2B din România. Senior dedicat, raport săptămânal, ROAS țintă contractual."
+    }
+  },
+  "about": {
     "hero": {
-      "overline": "ABOUT US",
-      "headline": "Discipline. Vision. Results.",
-      "subheading": "We are a team that believes every brand deserves an exceptional digital presence."
-    },
-    "story": {
-      "overline": "OUR STORY",
-      "heading": "From Passion to Performance",
-      "paragraphs": [
-        "AceAgency was born from the conviction that every business in Romania deserves a digital presence at European standards. We started as a small team with a big vision: to transform the way Romanian brands communicate online.",
-        "Over the years, we grew from a web design studio to a full-service digital agency. We invested in people, technology, and processes that allow us to consistently deliver at the highest level of quality.",
-        "Today, with four specialized divisions — AceWeb, AceAds, AceAI, and AceMedia — we offer integrated solutions covering the entire digital spectrum. Every project is an opportunity to prove that excellence in digital marketing means measurable results."
+      "overline": "DESPRE NOI",
+      "h1": "O agenție construită pe date reale, nu pe promisiuni.",
+      "body": "ACE Agency a fost fondată în 2020 cu o convingere simplă: o agenție de marketing trebuie să fie responsabilă pentru revenue-ul clientului, nu pentru impresii sau CTR.",
+      "bodySecondary": "Din 2020 până azi, am generat peste 5,4 milioane RON revenue atribuit pentru clienți din 6 industrii — e-commerce, wellness, HoReCa, IT, servicii B2B și retail. Fiecare rezultat e verificabil în GA4 și în platformele de ads.",
+      "stats": [
+        {
+          "value": "2020",
+          "label": "Fondată"
+        },
+        {
+          "value": "40+",
+          "label": "Clienți serviți"
+        },
+        {
+          "value": "5.4M",
+          "label": "RON revenue atribuit"
+        },
+        {
+          "value": "4",
+          "label": "Sub-branduri"
+        }
       ]
     },
     "values": {
-      "overline": "OUR VALUES",
-      "heading": "The Principles That Guide Us",
+      "overline": "VALORILE NOASTRE",
+      "h2": "Cum lucrăm, <accent>de ce funcționează.</accent>",
       "items": [
-        { "icon": "Target", "title": "Excellence", "description": "We dedicate ourselves to quality in every project, from concept to delivery" },
-        { "icon": "Shield", "title": "Integrity", "description": "Transparent and honest communication with every client and partner" },
-        { "icon": "Zap", "title": "Innovation", "description": "We adopt the latest technologies and strategies for superior results" },
-        { "icon": "Users", "title": "Collaboration", "description": "We work together with our clients as a united team" },
-        { "icon": "TrendingUp", "title": "Performance", "description": "Every action is measured and optimized for maximum results" },
-        { "icon": "Heart", "title": "Passion", "description": "We love what we do and it shows in every project delivered" }
+        {
+          "n": "01",
+          "title": "Profit înainte de metrici",
+          "desc": "Fiecare decizie trece prin filtrul: îmbunătățește profitul clientului? ROAS, CPL, revenue atribuit — nu impresii sau reach."
+        },
+        {
+          "n": "02",
+          "title": "Senior dedicat, nu junior rotativ",
+          "desc": "Fiecare cont e gestionat de un senior care rămâne pe acel cont. Cunoașterea se acumulează, nu se resetează la 3 luni."
+        },
+        {
+          "n": "03",
+          "title": "Transparență totală",
+          "desc": "Raport săptămânal cu date reale din GA4 și platformele de ads. Accesezi conturile direct, vedem aceleași cifre."
+        },
+        {
+          "n": "04",
+          "title": "Contracte flexibile cu KPI contractual",
+          "desc": "Minim 90 zile, cu ROAS sau CPL țintă specificat contractual. Dacă nu livrăm, nu suntem blocați împreună."
+        }
       ]
     },
-    "divisions": {
-      "overline": "OUR DIVISIONS",
-      "heading": "Expertise Under One Roof",
-      "description": "Four specialized divisions, one single objective: the digital success of our clients.",
-      "items": [
-        { "icon": "Code", "name": "AceWeb", "focus": "Web Development", "description": "High-performance websites and web applications, from landing pages to complex platforms" },
-        { "icon": "Target", "name": "AceAds", "focus": "Digital Advertising", "description": "Google, Facebook, TikTok, and Instagram campaigns optimized for conversions" },
-        { "icon": "Brain", "name": "AceAI", "focus": "Artificial Intelligence", "description": "AI solutions for automation, chatbots, and predictive analytics" },
-        { "icon": "Camera", "name": "AceMedia", "focus": "Media Production", "description": "Video, photo, and graphic content for brands that want to stand out" }
+    "team": {
+      "overline": "ECHIPA",
+      "h2": "Oamenii din spatele rezultatelor.",
+      "members": [
+        {
+          "name": "Alin Ciobanu",
+          "role": "Fondator & CEO",
+          "bio": "Fondator ACE Agency din 2020. Profesor Cybermarketing la ASE București și doctorand în comportamentul utilizatorilor în rețele sociale. Execută orice serviciu din agenție: Meta Ads, Google Ads, TikTok Ads, web dev React, AI automations, video production.",
+          "stats": [
+            {
+              "value": "2020",
+              "label": "Fondat"
+            },
+            {
+              "value": "6+",
+              "label": "Ani experiență"
+            },
+            {
+              "value": "40+",
+              "label": "Clienți serviți"
+            }
+          ]
+        },
+        {
+          "name": "Alex Discovan",
+          "role": "Specialist Google Ads",
+          "bio": "Specialist Google Ads part-time cu focus pe Search, Shopping și Performance Max. Gestionează conturi cu bugete medii și mari, optimizare Smart Bidding cu date reale.",
+          "stats": []
+        },
+        {
+          "name": "Alex Dorobantu",
+          "role": "Junior Marketing & AI",
+          "bio": "Suport execuție campanii, content social media, editare video și automatizări AI. În training activ pentru account management nivel 1.",
+          "stats": []
+        },
+        {
+          "name": "Tudor",
+          "role": "Comunicare Clienți",
+          "bio": "Comunicare zilnică cu clienții, execuție campanii și suport operațional. Interfața directă pentru clienții activi ai agenției.",
+          "stats": []
+        },
+        {
+          "name": "Mihai Grigore",
+          "role": "Partener Tehnic",
+          "bio": "Automatizări complexe și web development. Partener independent apelat per proiect pe soluții tehnice: n8n, React, Next.js, API integrations.",
+          "stats": []
+        }
       ]
     },
-    "mission": {
-      "overline": "OUR MISSION",
-      "heading": "Measurable Digital Results",
-      "description": "To help businesses in Romania grow through integrated, creative, and performance-oriented digital strategies. Every project is an opportunity to demonstrate that well-executed digital marketing generates real results."
-    },
-    "vision": {
-      "overline": "OUR VISION",
-      "heading": "Digital Leader in Romania",
-      "description": "To become the reference digital agency in Romania, recognized for excellence in design, advertising, and technological innovation. A strategic partner for brands that want to lead in the digital era."
-    },
-    "whyUs": {
-      "overline": "WHY CHOOSE US",
-      "heading": "The AceAgency Advantage",
+    "subBrands": {
+      "overline": "SUB-BRANDURI",
+      "h2": "4 specializări. Un sistem integrat.",
       "items": [
-        { "number": "01", "title": "Full-Service Digital", "description": "Web, Ads, AI, Media — everything under one roof, one coherent strategy" },
-        { "number": "02", "title": "Premium-Level Design", "description": "Every pixel matters. Design inspired by the best European agencies" },
-        { "number": "03", "title": "Measurable Results", "description": "We don't promise — we deliver. Every campaign comes with clear reports and KPIs" },
-        { "number": "04", "title": "Partnerships, Not Projects", "description": "We build long-term relationships based on trust and transparency" },
-        { "number": "05", "title": "Cutting-Edge Technology", "description": "We adopt the latest tools and platforms for competitive advantage" }
+        {
+          "name": "AceAds",
+          "title": "AceAds",
+          "desc": "Publicitate plătită — Meta, Google, TikTok. Performance cu ROAS contractual."
+        },
+        {
+          "name": "AceAI",
+          "title": "AceAI",
+          "desc": "Automatizări și soluții AI — lead scoring, raportare automată, CRM sync."
+        },
+        {
+          "name": "AceWeb",
+          "title": "AceWeb",
+          "desc": "Web development React/Next.js — landing pages, magazine, site-uri instituționale."
+        },
+        {
+          "name": "AceMedia",
+          "title": "AceMedia",
+          "desc": "Video production — Spark Ads TikTok, Meta Reels, YouTube pre-roll."
+        }
       ]
     },
-    "cta": {
-      "heading": "Let's Build Together",
-      "description": "Ready to transform your brand's digital presence? Our team is waiting for you.",
-      "primary": "Contact Us",
-      "secondary": "View Services"
+    "finalCta": {
+      "overline": "LUCRĂM ÎMPREUNĂ?",
+      "h2": "Acceptăm 3 clienți noi pe lună.",
+      "body": "Analiza de 30 minute e gratuită. Pleci cu 3 recomandări scrise indiferent dacă semnezi.",
+      "primaryCta": "Programează analiza gratuită →",
+      "secondaryCta": "office@aceads.co",
+      "email": "office@aceads.co"
+    },
+    "breadcrumb": {
+      "home": "Acasă",
+      "about": "Despre noi"
+    }
+  },
+  "caseStudies": {
+    "amora": {
+      "slug": "amora",
+      "breadcrumbLabel": "Amora",
+      "metaTitle": "Amora — De la 3.04× la 8.11× ROAS în 3 luni | ACE Agency",
+      "metaDescription": "Cum am crescut ROAS Meta de la 3.04× la 8.11×, +544% revenue și +288% conversii pentru Amora (beauty e-commerce) în 3 luni prin funnel complet și creative iterat.",
+      "hero": {
+        "overline": "E-COMMERCE · BEAUTY · META ADS",
+        "h1": "De la <muted>3.04×</muted> la <accent>8.11× ROAS</accent> în 3 luni",
+        "body": "Funnel complet cold + retargeting, audiențe stratificate și creative iterat săptămânal. Scalare +141% spend cu CPM -8% — în afara sezonului de vârf.",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "stats": [
+          {
+            "value": "8.11×",
+            "label": "ROAS Meta atins"
+          },
+          {
+            "value": "+544%",
+            "label": "Revenue generat"
+          },
+          {
+            "value": "+288%",
+            "label": "Conversii Meta"
+          },
+          {
+            "value": "3 luni",
+            "label": "Dec 2025 – Mar 2026"
+          }
+        ]
+      },
+      "context": {
+        "problem": {
+          "overline": "PROBLEMA INIȚIALĂ",
+          "h2": "ROAS blocat la 3× și scalare imposibilă",
+          "body": "Bugetul Meta aloca masiv pe audiențe generice broad. ROAS 3.04× chiar și în perioadele de Black Friday — un semn clar că eficiența nu venea din strategie, ci din sezon.\n\nOrice încercare de scalare a bugetului spărgea ROAS-ul — pentru că audiențele suprapuse se canibalizam reciproc și CPM-ul exploda fără creștere proporțională în conversii.",
+          "card": {
+            "label": "SITUAȚIE ÎNAINTE",
+            "value": "3.04×",
+            "note": "ROAS Meta · peak Black Friday"
+          }
+        },
+        "solution": {
+          "overline": "SOLUȚIA APLICATĂ",
+          "h2": "Funnel stratificat + creative system",
+          "body": "Am restructurat complet arhitectura campaniilor pe funnel: cold (audiențe noi), warm (engagement recente) și hot (retargeting vizitatori + cumpărători anteriori) — cu mesaj și creative adaptat fiecărui strat.\n\nSistemul de creative iterativ săptămânal a produs semnalele de conversie necesare algoritmului Meta să optimizeze eficient la scară mai mare.",
+          "card": {
+            "value": "8.11×",
+            "label": "ROAS Meta atins",
+            "note": "Dec 2025 – Mar 2026 · 3 luni"
+          }
+        }
+      },
+      "results": {
+        "overline": "REZULTATE MĂSURABILE",
+        "h2": "Cifre auditabile. <accent>Nu storytelling.</accent>",
+        "items": [
+          {
+            "before": "3.04×",
+            "after": "8.11×",
+            "label": "ROAS Meta",
+            "delta": "+167%"
+          },
+          {
+            "before": "Baseline",
+            "after": "+544%",
+            "label": "Revenue total",
+            "delta": "creștere"
+          },
+          {
+            "before": "Baseline",
+            "after": "+288%",
+            "label": "Conversii",
+            "delta": "creștere"
+          },
+          {
+            "before": "Baseline",
+            "after": "-8%",
+            "label": "CPM",
+            "delta": "eficiență mai mare"
+          }
+        ],
+        "chart": {
+          "label": "EVOLUȚIE ROAS META · DEC 2025 – MAR 2026",
+          "bars": [
+            {
+              "month": "Dec",
+              "roas": "3.04×"
+            },
+            {
+              "month": "Ian",
+              "roas": "4.2×"
+            },
+            {
+              "month": "Feb",
+              "roas": "6.3×"
+            },
+            {
+              "month": "Mar",
+              "roas": "8.11×"
+            }
+          ]
+        }
+      },
+      "process": {
+        "overline": "CE AM FĂCUT",
+        "h2": "Procesul în 4 pași",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Audit & restructurare audiențe",
+            "desc": "Am identificat că toate campaniile targetau aceleași audiențe broad, canibalizând reach-ul. Am stratificat pe 4 niveluri: cold (lookalike 1-2%), warm (engagement 30-90 zile), hot (vizitatori site 7-30 zile), conversii (cumpărători anteriori)."
+          },
+          {
+            "n": "02",
+            "title": "Funnel complet cold + retargeting",
+            "desc": "Am separat campaniile pe obiective clare: Awareness / Traffic pentru cold, Conversions pentru warm, DPA (Dynamic Product Ads) pentru hot. Fiecare strat cu mesaj și creative adaptat nivelului de awareness."
+          },
+          {
+            "n": "03",
+            "title": "Creative iterat săptămânal",
+            "desc": "Ciclu săptămânal de testare: 3 creative noi pe săptămână, kill la 72h dacă CTR <1% sau CPC >obiectiv. Am testat format (carousel vs. single image vs. reel), unghi mesaj (beneficiu vs. dovadă socială vs. urgență) și hook vizual."
+          },
+          {
+            "n": "04",
+            "title": "Scalare +141% spend cu CPM -8%",
+            "desc": "Creșterea bugetului s-a făcut gradual (+20%/săptămână pe campaniile cu ROAS >target), evitând resetul algoritmului. Concurența în licitație a scăzut prin audiențe mai precise, deci CPM a scăzut deși spend-ul a crescut semnificativ."
+          }
+        ]
+      },
+      "testimonial": {
+        "quote": "ROAS Meta a sărit de la 3× la 8.11× într-un sezon mai slab decât Black Friday-ul anterior. Nu sezonul a făcut diferența — strategia a făcut-o.",
+        "author": "Echipa Amora",
+        "role": "E-commerce · Beauty · amora.ro",
+        "metrics": [
+          "+544% revenue",
+          "8.11× ROAS",
+          "3 luni"
+        ]
+      },
+      "finalCta": {
+        "overline": "PASUL URMĂTOR",
+        "h2": "Vrei rezultate similare pentru brandul tău?",
+        "body": "Analiza gratuită de 30 de minute include un audit al campaniilor tale actuale și 3 recomandări scrise — indiferent dacă semnezi.",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "secondaryCta": "Toate studiile de caz",
+        "email": "office@aceads.co"
+      }
+    },
+    "itmar": {
+      "slug": "itmar",
+      "breadcrumbLabel": "ITMAR",
+      "metaTitle": "ITMAR — De la 632k la 2.38M RON în 16 luni | ACE Agency",
+      "hero": {
+        "overline": "E-COMMERCE · IT REFURBISHED · GOOGLE + META + TIKTOK",
+        "h1": "De la <muted>632k RON</muted> la <accent>2.38M RON</accent> în 16 luni",
+        "body": "Restructurare Google Shopping + Performance Max, adăugat Meta și TikTok ca canale complementare. 13.34× ROAS Google, +433% conversii TikTok, fără să dublăm bugetul.",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "stats": [
+          {
+            "value": "13.34×",
+            "label": "ROAS Google Ads"
+          },
+          {
+            "value": "2.38M",
+            "label": "RON revenue total"
+          },
+          {
+            "value": "+276%",
+            "label": "față de baseline"
+          },
+          {
+            "value": "16 luni",
+            "label": "Iun 2024 – Oct 2025"
+          }
+        ]
+      },
+      "context": {
+        "problem": {
+          "overline": "PROBLEMA INIȚIALĂ",
+          "h2": "Revenue blocat, fără cale de scalare",
+          "body": "Google Ads genera 632k RON/an, dar orice creștere a bugetului ducea la ROAS mai mic. Contul era configurat cu toate produsele într-o singură campanie fără segmentare, lăsând algoritmul să aloce bugetul fără logică de marjă.\n\nZero prezență pe Meta sau TikTok — canale unde competiția pentru IT refurbished era mult mai scăzută și costul per achiziție putea fi semnificativ mai mic.",
+          "card": {
+            "label": "REVENUE BASELINE",
+            "value": "632k RON",
+            "note": "revenue anual Google Ads · Iun 2024"
+          }
+        },
+        "solution": {
+          "overline": "SOLUȚIA APLICATĂ",
+          "h2": "Full-channel cu structură de cont pe marjă",
+          "body": "Restructurare completă Google Shopping pe categorii cu marjă diferită, Performance Max cu semnale de audiență calificate, plus construirea de la zero a prezenței pe Meta și TikTok.\n\nCanalele noi nu au canibalizat Google — au creat cerere nouă și au scurtat ciclul de cumpărare prin retargeting cross-channel.",
+          "channels": [
+            {
+              "channel": "Google Shopping",
+              "roas": "13.34×",
+              "note": "Restructurare completă + Performance Max"
+            },
+            {
+              "channel": "Meta Ads",
+              "roas": "Canal nou",
+              "note": "Adăugat din luna 3, audience building"
+            },
+            {
+              "channel": "TikTok Ads",
+              "roas": "+433%",
+              "note": "Conversii față de baseline, audiențe sub 35 ani"
+            }
+          ]
+        }
+      },
+      "results": {
+        "overline": "REZULTATE MĂSURABILE",
+        "h2": "16 luni. <accent>Scalare continuă.</accent>",
+        "items": [
+          {
+            "label": "ROAS Google Ads",
+            "before": "~4×",
+            "after": "13.34×",
+            "delta": "+233%"
+          },
+          {
+            "label": "Revenue total",
+            "before": "632k RON",
+            "after": "2.38M RON",
+            "delta": "+276%"
+          },
+          {
+            "label": "Conversii TikTok",
+            "before": "0",
+            "after": "+433%",
+            "delta": "canal nou"
+          },
+          {
+            "label": "Perioadă scalare",
+            "before": "1 canal",
+            "after": "3 canale",
+            "delta": "Google + Meta + TikTok"
+          }
+        ],
+        "chart": {
+          "label": "TIMELINE SCALARE · IUN 2024 – OCT 2025",
+          "bars": [
+            {
+              "label": "Iun",
+              "value": "632k"
+            },
+            {
+              "label": "Sep",
+              "value": "850k"
+            },
+            {
+              "label": "Dec",
+              "value": "1.1M"
+            },
+            {
+              "label": "Mar",
+              "value": "1.5M"
+            },
+            {
+              "label": "Iun",
+              "value": "1.9M"
+            },
+            {
+              "label": "Oct",
+              "value": "2.38M"
+            }
+          ]
+        }
+      },
+      "process": {
+        "overline": "CE AM FĂCUT",
+        "h2": "Procesul în 4 pași",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Restructurare Google Shopping",
+            "desc": "Contul existent avea toate produsele într-o singură campanie fără segmentare. Am restructurat pe categorii de produs (laptopuri, telefoane, tablete, accesorii), cu Smart Bidding calibrat separat pe fiecare categorie și marjă de profit diferită."
+          },
+          {
+            "n": "02",
+            "title": "Performance Max cu feed optimizat",
+            "desc": "Am creat campanii Performance Max cu asset groups segmentate pe audiențe de intenție (in-market IT), feed de produse curățat (titluri optimizate, prețuri competitive evidențiate, badge-uri Reconditioned) și semnale de audiență din datele primare ale contului."
+          },
+          {
+            "n": "03",
+            "title": "Canale complementare Meta + TikTok",
+            "desc": "Google capturase cererea existentă. Meta și TikTok au creat cerere nouă — audiențe care nu căutau activ IT refurbished dar au fost convinse de mesajul corect (economie + calitate certificată). Retargetingul cross-channel a închis loop-ul."
+          },
+          {
+            "n": "04",
+            "title": "Scalare progresivă cu Smart Bidding",
+            "desc": "Creșteri de buget de 15-25% la intervale de 7-10 zile, doar după ce ROAS s-a stabilizat la target. Am evitat resetul algoritmului Google prin modificări graduale. 16 luni de scalare continuă fără perioadă de instabilitate majoră."
+          }
+        ]
+      },
+      "testimonial": {
+        "quote": "Revenue Google Ads a urcat de la 632k la 2.38M RON în 16 luni. Am scalat progresiv, n-am sărit în gol.",
+        "author": "Echipa ITMAR",
+        "role": "E-commerce · IT Refurbished · itmar.ro",
+        "metrics": [
+          "2.38M RON",
+          "13.34× ROAS",
+          "16 luni"
+        ]
+      },
+      "finalCta": {
+        "overline": "PASUL URMĂTOR",
+        "h2": "Vrei rezultate similare pentru brandul tău?",
+        "body": "Analiza gratuită de 30 de minute include un audit al campaniilor tale actuale și 3 recomandări scrise — indiferent dacă semnezi.",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "secondaryCta": "Toate studiile de caz",
+        "email": "office@aceads.co"
+      }
+    },
+    "trady": {
+      "slug": "trady",
+      "breadcrumbLabel": "Trady",
+      "metaTitle": "Trady — De la 1.02× la 6.05× ROAS în 2.5 luni | ACE Agency",
+      "hero": {
+        "overline": "E-COMMERCE · HOME DECOR · META ADS + GOOGLE ADS",
+        "h1": "De la <muted>1.02× ROAS</muted> la <accent>6.05× ROAS</accent> în 2.5 luni",
+        "body": "Eliminat campanii vanity, restructurat Meta pe 7 categorii, tăiat 45% din bugetul Google și păstrat doar ce convertea. ROAS Google a crescut simultan de la 2.64× la 4.40×.",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "stats": [
+          {
+            "value": "6.05×",
+            "label": "ROAS Meta atins"
+          },
+          {
+            "value": "4.40×",
+            "label": "ROAS Google atins"
+          },
+          {
+            "value": "-60%",
+            "label": "CPA reducere"
+          },
+          {
+            "value": "2.5 luni",
+            "label": "Ian – Mar 2026"
+          }
+        ]
+      },
+      "context": {
+        "problem": {
+          "overline": "PROBLEMA INIȚIALĂ",
+          "h2": "Buget masiv pe campanii care nu vindeau",
+          "body": "ROAS Meta era 1.02× — fiecare leu cheltuit genera 1.02 lei revenue. Practic, campania nu genera niciun profit. Contul era dominat de campanii de Awareness și Engagement cu sute de mii de impresii și zero conversii directe.\n\nGoogle Ads la 2.64× ROAS era \"mai bun\" dar tot sub target — și era ineficient pentru că 45% din buget se ducea pe trafic necalificat.",
+          "cards": [
+            {
+              "label": "ROAS META",
+              "value": "1.02×",
+              "note": "Înainte · pierdere pe fiecare leu"
+            },
+            {
+              "label": "ROAS GOOGLE",
+              "value": "2.64×",
+              "note": "Înainte · sub target"
+            }
+          ]
+        },
+        "solution": {
+          "overline": "SOLUȚIA APLICATĂ",
+          "h2": "Cut cheltuieli vanity, focus pe conversii",
+          "body": "Nu am crescut bugetul — l-am redistribuit. Campaniile care nu generau conversii au fost oprite imediat, bugetul realocate pe campaniile cu dovadă de ROAS pozitiv și restructurate pe segmente de produs cu marjă clară.\n\nAdăugarea canalului B2B a deschis un segment nou de comenzi cu valoare medie mult mai mare — fără cost suplimentar semnificativ.",
+          "cards": [
+            {
+              "label": "ROAS META",
+              "value": "6.05×",
+              "note": "+493% față de start"
+            },
+            {
+              "label": "ROAS GOOGLE",
+              "value": "4.40×",
+              "note": "+67% față de start"
+            }
+          ]
+        }
+      },
+      "results": {
+        "overline": "REZULTATE MĂSURABILE",
+        "h2": "Ambele canale. <accent>Ambele în creștere.</accent>",
+        "items": [
+          {
+            "label": "ROAS Meta",
+            "before": "1.02×",
+            "after": "6.05×",
+            "delta": "+493%",
+            "note": "de la pierdere la profitabilitate"
+          },
+          {
+            "label": "ROAS Google",
+            "before": "2.64×",
+            "after": "4.40×",
+            "delta": "+67%",
+            "note": "cu 45% buget tăiat"
+          },
+          {
+            "label": "CPA total",
+            "before": "Baseline",
+            "after": "-60%",
+            "delta": "cost per achiziție",
+            "note": "în 2.5 luni"
+          }
+        ],
+        "comparison": {
+          "before": {
+            "label": "ÎNAINTE — Ian 2026",
+            "rows": [
+              {
+                "metric": "ROAS Meta",
+                "value": "1.02×"
+              },
+              {
+                "metric": "ROAS Google",
+                "value": "2.64×"
+              },
+              {
+                "metric": "CPA",
+                "value": "Baseline"
+              },
+              {
+                "metric": "Campanii vanity",
+                "value": "Activ"
+              }
+            ]
+          },
+          "after": {
+            "label": "DUPĂ — Mar 2026",
+            "rows": [
+              {
+                "metric": "ROAS Meta",
+                "value": "6.05× ↑"
+              },
+              {
+                "metric": "ROAS Google",
+                "value": "4.40× ↑"
+              },
+              {
+                "metric": "CPA",
+                "value": "-60% ↓"
+              },
+              {
+                "metric": "Campanii vanity",
+                "value": "Oprit"
+              }
+            ]
+          }
+        }
+      },
+      "process": {
+        "overline": "CE AM FĂCUT",
+        "h2": "Procesul în 4 pași",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Eliminat campaniile vanity Meta",
+            "desc": "Contul Meta era plin de campanii de Awareness, Reach și Engagement — metrici fără legătură cu vânzările. Am oprit tot ce nu genera conversii sau nu alimenta funnel-ul cu semnale de cumpărare. Bugetul eliberat a fost realocate direct pe conversii."
+          },
+          {
+            "n": "02",
+            "title": "Restructurare Meta pe 7 categorii de produs",
+            "desc": "Home decor are un spectru larg de intenție de cumpărare. Am separat campaniile pe 7 categorii (mobilier living, dormitor, decor, outdoor, textile, iluminat, depozitare) cu audiențe și creative diferite — fiecare categorie cu ROAS target propriu în funcție de marjă."
+          },
+          {
+            "n": "03",
+            "title": "Google: tăiat 45% buget, păstrat ce convertea",
+            "desc": "Auditul Google a arătat că 45% din buget mergea pe termeni prea broad care nu generau conversii. Am tăiat agresiv, am mutat bugetul pe campaniile de Brand + Competitor + categoria de produs cu intenție ridicată. ROAS a crescut imediat."
+          },
+          {
+            "n": "04",
+            "title": "Adăugat canal B2B pentru comenzi en-gros",
+            "desc": "Trady vindea exclusiv B2C, dar comanda medie era deja ridicată. Am testat un canal B2B (hotele, pensiuni, birouri) prin Meta cu audiențe de business — comenzi de 10-50× mai mari per tranzacție, fără a canibaliza canalul B2C."
+          }
+        ]
+      },
+      "testimonial": {
+        "quote": "Am redus bugetul Google cu 45% și am crescut ROAS-ul cu 67%. Pe Meta am trecut de la 1× la 6× ROAS. Altă agenție mi-ar fi cerut să cheltui mai mult.",
+        "author": "Echipa Trady",
+        "role": "E-commerce · Home Decor · trady.ro",
+        "metrics": [
+          "6.05× ROAS",
+          "-60% CPA",
+          "2.5 luni"
+        ]
+      },
+      "finalCta": {
+        "overline": "PASUL URMĂTOR",
+        "h2": "Vrei rezultate similare pentru brandul tău?",
+        "body": "Analiza gratuită de 30 de minute include un audit al campaniilor tale actuale și 3 recomandări scrise — indiferent dacă semnezi.",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "secondaryCta": "Toate studiile de caz",
+        "email": "office@aceads.co"
+      }
+    },
+    "dosense": {
+      "slug": "dosense",
+      "breadcrumbLabel": "doSense",
+      "metaTitle": "doSense — De la 15 programări la 304 lead-uri | ACE Agency",
+      "hero": {
+        "overline": "SERVICII · WELLNESS · META ADS LEAD GENERATION",
+        "h1": "De la <muted>15 programări</muted> la <accent>304 lead-uri</accent> în 3 luni",
+        "body": "O schimbare de obiectiv — de la Website Schedules (fricțiune maximă) la Lead Gen cu Instant Form (micro-angajament) — a înmulțit volumul de 20× și a redus CPL de la 394 RON la 52 RON (-87%).",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "stats": [
+          {
+            "value": "304",
+            "label": "Lead-uri generate"
+          },
+          {
+            "value": "20×",
+            "label": "Volum față de înainte"
+          },
+          {
+            "value": "-87%",
+            "label": "Reducere CPL"
+          },
+          {
+            "value": "3 luni",
+            "label": "Oct 2025 – Ian 2026"
+          }
+        ]
+      },
+      "context": {
+        "problem": {
+          "overline": "PROBLEMA INIȚIALĂ",
+          "h2": "15 programări în 3 luni la 394 RON/bucată",
+          "body": "Obiectivul campaniei Meta era Website Schedules — utilizatorul trebuia să iasă din Meta, să navigheze pe site, să caute pagina de programare, să completeze un formular complet și să aleagă data și ora. O decizie completă din primul contact cu brandul.\n\nRezultatul: 15 programări în 3 luni la 394 RON/programare. Rata de abandon era de 96%+. Nu era o problemă de audiență — era o problemă de fricțiune în funnel.",
+          "card": {
+            "label": "SITUAȚIE ÎNAINTE",
+            "stats": [
+              {
+                "value": "15",
+                "note": "programări / 3 luni"
+              },
+              {
+                "value": "394 RON",
+                "note": "cost per programare"
+              }
+            ]
+          }
+        },
+        "solution": {
+          "overline": "SOLUȚIA APLICATĂ",
+          "h2": "Micro-angajament în loc de decizie completă",
+          "body": "Am schimbat obiectivul la Lead Generation cu Instant Form. Utilizatorul rămâne în Meta, completează 3 câmpuri în 30 de secunde, iar datele sunt pre-populate. Echipa doSense contactează lead-ul și programează în 24h — mai eficient decât orice booking tool.\n\nInsight-ul cheie: nu trebuia să schimbăm audiența sau creative-ul. Trebuia să eliminăm fricțiunea din momentul deciziei inițiale.",
+          "card": {
+            "label": "SITUAȚIE DUPĂ",
+            "stats": [
+              {
+                "value": "304",
+                "note": "lead-uri / 3 luni"
+              },
+              {
+                "value": "52 RON",
+                "note": "cost per lead"
+              }
+            ]
+          }
+        }
+      },
+      "results": {
+        "overline": "REZULTATE MĂSURABILE",
+        "h2": "O schimbare de obiectiv. <accent>20× volum.</accent>",
+        "items": [
+          {
+            "label": "Lead-uri / 3 luni",
+            "before": "15",
+            "after": "304",
+            "delta": "20× volum"
+          },
+          {
+            "label": "CPL (cost per lead)",
+            "before": "394 RON",
+            "after": "52 RON",
+            "delta": "-87%"
+          },
+          {
+            "label": "Scalare buget",
+            "before": "1×",
+            "after": "2.7×",
+            "delta": "CPL stabil"
+          },
+          {
+            "label": "Obiectiv campanie",
+            "before": "Website Schedules",
+            "after": "Instant Form",
+            "delta": "schimbare critică"
+          }
+        ],
+        "journeyComparison": {
+          "before": {
+            "label": "ÎNAINTE — Website Schedules · 7 pași",
+            "steps": [
+              "Click pe ad",
+              "Redirect pe site",
+              "Caută pagina de programare",
+              "Completează formular lung",
+              "Alege dată/oră",
+              "Confirmare email",
+              "★ Programare"
+            ],
+            "summary": "Abandon 96%+ între pas 1 și pas 7"
+          },
+          "after": {
+            "label": "DUPĂ — Instant Form · 3 pași",
+            "steps": [
+              "Click pe ad",
+              "Instant Form (3 câmpuri)",
+              "★ Lead capturat"
+            ],
+            "summary": "Rată de conversie ×20 față de obiectivul anterior"
+          }
+        }
+      },
+      "process": {
+        "overline": "CE AM FĂCUT",
+        "h2": "Procesul în 4 pași",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Diagnoza problemei reale",
+            "desc": "Obiectivul inițial era Website Schedules — oamenii trebuiau să completeze un formular lung pe site, să aleagă data și ora, să confirme. Fricțiune maximă într-o singură sesiune. Am calculat că rata de abandon între click și programare era de 96%+ — o problemă de obiectiv, nu de audiență sau creative."
+          },
+          {
+            "n": "02",
+            "title": "Schimbarea obiectivului la Meta Lead Gen",
+            "desc": "Am schimbat obiectivul campaniei la Lead Generation cu Instant Form. Utilizatorul dă click și completează 3 câmpuri (nume, telefon, tipul de serviciu dorit) direct în Meta — fără să iasă din aplicație. Micro-angajament în loc de decizie completă. Datele sunt pre-populate din profilul Meta."
+          },
+          {
+            "n": "03",
+            "title": "Instant Form optimizat pentru calitate",
+            "desc": "Nu toate lead-urile sunt egale. Am adăugat o întrebare de calificare (ce serviciu ești interesat?) și un disclaimer (vei fi contactat în 24h). Aceasta a redus lead-urile complet necalificate și a pregătit urmarea de vânzare — echipa știa exact la ce să răspundă."
+          },
+          {
+            "n": "04",
+            "title": "Scalare de 2.7× cu CPL stabil",
+            "desc": "Odată ce am validat modelul și CPL-ul s-a stabilizat la 52 RON, am crescut bugetul de 2.7× fără degradarea CPL. Algoritmul Meta are semnale de calitate clare (Instant Forms cu engajament ridicat) și optimizează eficient la scară. Volumul a crescut proporțional cu bugetul."
+          }
+        ]
+      },
+      "testimonial": {
+        "quote": "Am trecut de la 15 programări în 3 luni la 304 lead-uri cu același tip de cont. Costul per lead a scăzut de la 394 lei la 52 lei.",
+        "author": "Echipa doSense",
+        "role": "Servicii · Wellness · dosense.ro",
+        "metrics": [
+          "20× leads",
+          "-87% CPL",
+          "3 luni"
+        ]
+      },
+      "finalCta": {
+        "overline": "PASUL URMĂTOR",
+        "h2": "Vrei rezultate similare pentru brandul tău?",
+        "body": "Analiza gratuită de 30 de minute include un audit al campaniilor tale actuale și 3 recomandări scrise — indiferent dacă semnezi.",
+        "primaryCta": "Rezervă analiza gratuită →",
+        "secondaryCta": "Toate studiile de caz",
+        "email": "office@aceads.co"
+      }
+    }
+  },
+  "blog": {
+    "categories": [
+      "Toate",
+      "Google Ads",
+      "Meta Ads",
+      "TikTok Ads",
+      "Lead Generation",
+      "SEO",
+      "Automatizări AI",
+      "Outbound"
+    ],
+    "posts": [
+      {
+        "slug": "roas-8x-meta-ads-ecommerce",
+        "category": "Meta Ads",
+        "title": "Cum am urcat un magazin de la 3× la 8.11× ROAS în afara sezonului",
+        "excerpt": "Strategia de funnel complet cu audiențe stratificate și creative iterate săptămânal care a dus ROAS-ul la 8.11× pentru un magazin de beauty e-commerce — în perioada de cerere scăzută.",
+        "readMinutes": 8,
+        "date": "15 mar 2026",
+        "featured": true
+      },
+      {
+        "slug": "buget-google-ads-risipit",
+        "category": "Google Ads",
+        "title": "De ce 45% din bugetul tău Google Ads arde degeaba (și cum să-l recuperezi)",
+        "excerpt": "Analiza costurilor irosite din 12 conturi de clienți și restructurarea campaniilor pentru ROI real. Cele 4 erori care apar în 90% din conturi.",
+        "readMinutes": 6,
+        "date": "8 mar 2026"
+      },
+      {
+        "slug": "meta-instant-forms-vs-website-cpl",
+        "category": "Lead Generation",
+        "title": "Lead Gen cu Meta Instant Forms vs. Website: -87% CPL în practică",
+        "excerpt": "Studiu comparat cu date reale din 3 campanii similare. Când Instant Forms câștigă, când pierde și de ce calitatea lead-urilor contează mai mult decât volumul.",
+        "readMinutes": 5,
+        "date": "28 feb 2026"
+      },
+      {
+        "slug": "tiktok-ads-ecommerce-2026",
+        "category": "TikTok Ads",
+        "title": "TikTok Ads pentru e-commerce în 2026: ce funcționează, ce nu",
+        "excerpt": "Date reale din 6+ luni de campanii Spark Ads și UGC. Formatele câștigătoare, structura de campanie și de ce bid strategy contează mai mult decât creative-ul.",
+        "readMinutes": 7,
+        "date": "14 feb 2026"
+      },
+      {
+        "slug": "tracking-ios-ga4-server-side",
+        "category": "Google Ads",
+        "title": "Cum tracking-ul rupt îți sabotează campaniile (iOS 14.5 + GA4 guide)",
+        "excerpt": "Setup complet server-side tracking și GA4 corect pentru e-commerce. Pas cu pas, de la Conversion API Meta la Google Tag Server Container.",
+        "readMinutes": 10,
+        "date": "1 feb 2026"
+      },
+      {
+        "slug": "automatizari-ai-agenti-imobiliari",
+        "category": "Automatizări AI",
+        "title": "Automatizări AI pentru agenți imobiliari: -30h/săptămână, +150% leads calificați",
+        "excerpt": "Case study complet: workflow n8n + WhatsApp Business care califică lead-urile automat, programează vizionări și trimite follow-up-uri fără intervenție umană.",
+        "readMinutes": 6,
+        "date": "20 ian 2026"
+      },
+      {
+        "slug": "cold-email-b2b-reply-rate",
+        "category": "Outbound",
+        "title": "Cold email B2B cu 8.5% reply rate: cum am construit infrastructura ClientiB2B",
+        "excerpt": "Setup tehnic complet: DMARC/SPF/DKIM, warmup progresiv și copywriting personalizat pe ICP. Cum am ajuns la 8.5% reply rate pe nișe competitive.",
+        "readMinutes": 8,
+        "date": "8 ian 2026"
+      },
+      {
+        "slug": "performance-max-2026-ghid-romania",
+        "category": "Google Ads",
+        "title": "Performance Max în 2026: ghid complet pentru magazine online din România",
+        "excerpt": "Feed optimization, structura asset groups, budget allocation și cum să interpretezi semnalele de audiență pentru magazine românești. Date din 8 conturi active.",
+        "readMinutes": 12,
+        "date": "20 dec 2025"
+      }
+    ]
+  },
+  "legal": {
+    "_entity": {
+      "name": "INNOSERV SRL",
+      "cui": "47715516",
+      "regCom": null,
+      "address": "București, România",
+      "email": "office@aceads.co",
+      "phone": null,
+      "brand": "ACE Agency / ACE Ads",
+      "site": "aceads.co"
+    },
+    "privacy": {
+      "title": "Politica de Confidențialitate",
+      "lastUpdated": "1 ianuarie 2026",
+      "intro": "Data intrării în vigoare: 1 ianuarie 2026 · Operator: INNOSERV SRL · CUI 47715516",
+      "tocLabel": "Cuprins",
+      "footer": "Ultima actualizare: 1 ianuarie 2026 · INNOSERV SRL · CUI 47715516",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "1. Operatorul datelor",
+          "body": "Identitate operator:\nINNOSERV SRL\nCUI: 47715516\nSediu: București, România\nEmail: office@aceads.co\nSite: aceads.co\n\nINNOSERV SRL, în calitate de operator, prelucrează datele tale cu caracter personal în conformitate cu Regulamentul (UE) 2016/679 (GDPR) și Legea nr. 190/2018 privind măsurile de punere în aplicare a GDPR în România."
+        },
+        {
+          "id": "s2",
+          "heading": "2. Date colectate",
+          "body": "Date furnizate direct de tine (formulare de contact):\n- Nume și prenume\n- Adresă de email\n- Număr de telefon (dacă este furnizat)\n- URL site / magazin online\n- Buget media lunar (dacă este selectat)\n- Mesaj / descriere obiective\n\nDate colectate automat (tehnice și analitice):\n- Adresă IP\n- Tip browser și versiune\n- Sistem de operare\n- Pagini vizitate și timp petrecut pe site\n- Sursă de trafic (referrer, parametri UTM)\n- Cookie-uri analitice (Google Analytics 4, Vercel Analytics)\n- Cookie-uri de marketing/remarketing (Google Ads, Meta Pixel) — cu consimțământul tău"
+        },
+        {
+          "id": "s3",
+          "heading": "3. Scopul colectării",
+          "body": "- Furnizarea serviciilor solicitate și comunicarea cu tine privind cererea ta\n- Transmiterea analizei gratuite și a recomandărilor promise\n- Comunicare comercială și marketing (newsletter, oferte) — exclusiv cu consimțământul tău explicit\n- Îmbunătățirea calității site-ului și a serviciilor noastre prin analiză statistică\n- Raportare internă și audit de calitate\n- Respectarea obligațiilor legale aplicabile"
+        },
+        {
+          "id": "s4",
+          "heading": "4. Baza legală",
+          "body": "Prelucrăm datele tale în temeiul unuia sau mai multor temeiuri legale, în funcție de scopul prelucrării:\n\nConsimțământ (art. 6(1)(a) GDPR): Pentru comunicări de marketing, cookie-uri non-esențiale și orice prelucrare pentru care ai bifat acordul explicit în formulare.\n\nExecutarea unui contract (art. 6(1)(b) GDPR): Prelucrarea necesară pentru furnizarea serviciilor agreate cu tine și gestionarea relației contractuale.\n\nInteres legitim (art. 6(1)(f) GDPR): Analiza traficului site-ului, securitatea informatică și îmbunătățirea continuă a serviciilor — în limita în care nu prevalează drepturile tale fundamentale."
+        },
+        {
+          "id": "s5",
+          "heading": "5. Destinatari",
+          "body": "Nu vindem și nu partajăm datele tale cu terți în scop comercial.\n\nDatele pot fi accesate de terți numai în următoarele situații excepționale:\n- Furnizori tehnici — Supabase (stocare date formular, SUA, cu garanții adecvate GDPR — SCCs), Google Analytics 4, Vercel Analytics (date anonimizate)\n- Obligații legale — dacă suntem obligați prin lege, hotărâre judecătorească sau autoritate publică competentă\n- Protejarea drepturilor — în cazul disputelor contractuale sau al urmăririi penale a unor fapte ilicite\n\nToți furnizorii tehnici sunt aleși pe baza conformității cu GDPR și sunt obligați contractual să protejeze datele tale."
+        },
+        {
+          "id": "s6",
+          "heading": "6. Durata stocării",
+          "body": "Datele tale sunt păstrate pe o perioadă maximă de 3 ani de la ultima interacțiune cu site-ul sau cu echipa noastră, după care sunt șterse sau anonimizate irevocabil.\n\nDatele necesare pentru obligații legale (facturi, contracte) sunt păstrate conform termenelor impuse de legislația financiar-fiscală română (minimum 10 ani).\n\nCookie-urile au propriile durate de viață, descrise în Politica Cookies."
+        },
+        {
+          "id": "s7",
+          "heading": "7. Drepturile persoanei vizate",
+          "body": "În calitate de persoană vizată, ai următoarele drepturi garantate de GDPR:\n\n- Dreptul de acces — Poți solicita o copie a datelor pe care le deținem despre tine.\n- Dreptul la rectificare — Poți corecta datele inexacte sau incomplete.\n- Dreptul la ștergere — Poți solicita ștergerea datelor, în limitele prevăzute de lege.\n- Dreptul la restricționare — Poți limita prelucrarea datelor în anumite circumstanțe.\n- Dreptul la portabilitate — Poți primi datele tale într-un format structurat, lizibil electronic.\n- Dreptul de opoziție — Te poți opune prelucrării bazate pe interes legitim sau în scop de marketing.\n\nPentru exercitarea oricărui drept, trimite un email la office@aceads.co cu subiectul \"Exercitare drepturi GDPR\". Vei primi răspuns în maximum 30 de zile calendaristice."
+        },
+        {
+          "id": "s8",
+          "heading": "8. Cookie-uri",
+          "body": "Site-ul aceads.co utilizează cookie-uri pentru funcționare, analiză și marketing. Detalii complete privind tipurile de cookie-uri utilizate, duratele acestora și modul de control sunt disponibile în Politica Cookies.\n\nCookie-urile non-esențiale (analitice, de marketing) sunt activate numai cu consimțământul tău explicit, exprimat prin bannerul de cookie-uri afișat la prima vizită."
+        },
+        {
+          "id": "s9",
+          "heading": "9. Modificări ale politicii",
+          "body": "INNOSERV SRL poate actualiza periodic această Politică de Confidențialitate pentru a reflecta schimbări legislative sau operaționale. Versiunea actualizată va fi publicată pe această pagină cu o nouă dată de intrare în vigoare.\n\nTe încurajăm să consulți periodic această pagină. Modificările substanțiale vor fi comunicate prin email dacă deținem adresa ta de contact."
+        },
+        {
+          "id": "s10",
+          "heading": "10. Contact și autoritate de supraveghere",
+          "body": "Pentru orice întrebare privind prelucrarea datelor tale personale:\n\nContact INNOSERV SRL:\nEmail: office@aceads.co\nSubiect recomandat: \"Confidențialitate date\" sau \"Exercitare drepturi GDPR\"\nTermen de răspuns: 30 de zile calendaristice\n\nDacă nu ești mulțumit de răspunsul primit sau consideră că drepturile tale au fost încălcate, ai dreptul de a depune o plângere la autoritatea română de supraveghere:\n\nANSPDCP — Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal:\nSite: anspdcp.eu\nAdresă: Bd. G-ral. Gheorghe Magheru 28-30, sector 1, 010336, București\nEmail: anspdcp@dataprotection.ro"
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Politica Cookies",
+      "lastUpdated": "1 ianuarie 2026",
+      "intro": "Data intrării în vigoare: 1 ianuarie 2026 · Operator: INNOSERV SRL · Site: aceads.co",
+      "tocLabel": "Cuprins",
+      "footer": "Ultima actualizare: 1 ianuarie 2026 · INNOSERV SRL · CUI 47715516",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "1. Ce sunt cookie-urile",
+          "body": "Cookie-urile sunt fișiere text mici stocate pe dispozitivul tău (computer, telefon, tabletă) de către browser-ul web atunci când vizitezi un site. Ele permit site-ului să îți recunoască dispozitivul și să rețină anumite informații despre vizita ta.\n\nCookie-urile nu conțin date personale de identificare directă și nu pot executa programe sau transmite viruși. Ele servesc exclusiv scopurilor descrise în această politică.\n\nExistă două tipuri principale: cookie-uri de sesiune (șterse automat când închizi browser-ul) și cookie-uri persistente (rămân pe dispozitiv pentru o perioadă determinată sau până le ștergi manual)."
+        },
+        {
+          "id": "s2",
+          "heading": "2. Cookie-uri necesare",
+          "body": "Cookie-uri esențiale de funcționare (Necesare, obligatorii):\nAceste cookie-uri sunt indispensabile pentru funcționarea corectă a site-ului. Fără ele, servicii de bază precum securitatea sesiunii, navigarea și formularele nu ar funcționa corect.\nInstrumente: Sesiune browser nativă, protecție CSRF, Vercel infrastructure.\nDurată: Sesiune (se șterg la închiderea browser-ului) sau maxim 1 an pentru preferințe UI.\n\nAceste cookie-uri nu pot fi dezactivate din setările de consimțământ, deoarece dezactivarea lor ar face site-ul nefuncțional. Baza legală: interes legitim / executarea contractului."
+        },
+        {
+          "id": "s3",
+          "heading": "3. Cookie-uri analitice",
+          "body": "Analiză trafic și comportament (Analitice, opționale):\nFolosim aceste cookie-uri pentru a înțelege cum interacționează vizitatorii cu site-ul: ce pagini sunt vizitate cel mai des, de unde vin vizitatorii, cât timp petrec pe site. Datele sunt agregate și anonimizate — nu identificăm utilizatori individuali.\nInstrumente: Google Analytics 4 (GA4), Vercel Analytics.\nDurată: Google Analytics: până la 2 ani (cookie _ga). Vercel Analytics: anonimizat, fără cookie persistent pe dispozitiv.\n\nDatele analitice sunt transferate și stocate pe serverele Google (SUA) în baza mecanismelor de transfer GDPR (Standard Contractual Clauses). Poți opta pentru excludere prin Google Analytics Opt-out Browser Add-on: tools.google.com/dlpage/gaoptout."
+        },
+        {
+          "id": "s4",
+          "heading": "4. Cookie-uri marketing/remarketing",
+          "body": "Targetare publicitate și remarketing (Marketing, opționale):\nAceste cookie-uri sunt utilizate pentru a-ți afișa reclame relevante pe alte platforme (Google, Facebook/Instagram) după ce ai vizitat aceads.co. Permit și măsurarea eficienței campaniilor noastre publicitare.\nInstrumente: Google Ads (cookie _gcl_au, _gads), Meta Pixel (cookie _fbp, _fbc).\nDurată: Google Ads: până la 90 de zile. Meta Pixel: până la 90 de zile (_fbp), 28 de zile (_fbc).\n\nAceste cookie-uri sunt activate numai dacă îți exprimi consimțământul explicit. Le poți dezactiva oricând din setările de cookie-uri sau prin:\n- Google: myaccount.google.com/data-and-privacy → Personalizare reclame\n- Meta/Facebook: facebook.com/settings → Reclame\n- Inițiativa de publicitate comportamentală online: youronlinechoices.com"
+        },
+        {
+          "id": "s5",
+          "heading": "5. Cookie-uri preferințe",
+          "body": "Setări și preferințe utilizator (Preferințe, opționale):\nAceste cookie-uri rețin alegerile tale pentru a personaliza experiența: limba preferată, modul dark/light, dacă ai acceptat bannerul de cookie-uri.\nInstrumente: Cookie-uri proprii aceads.co (cookie_consent, ui_theme, ui_lang).\nDurată: Persistente: 12 luni."
+        },
+        {
+          "id": "s6",
+          "heading": "6. Tabel sumar durate",
+          "body": "Tabel cookie-uri utilizate (Cookie | Furnizor | Tip | Durată):\n_ga | Google Analytics | Analitic | 2 ani\n_ga_* | Google Analytics 4 | Analitic | 2 ani\n_gcl_au | Google Ads | Marketing | 90 zile\n_gads | Google Ads | Marketing | 13 luni\n_fbp | Meta Pixel | Marketing | 90 zile\n_fbc | Meta Pixel | Marketing | 28 zile\ncookie_consent | aceads.co | Preferințe | 12 luni\nui_theme | aceads.co | Preferințe | 12 luni\nNEXT_LOCALE | aceads.co | Preferințe | 12 luni\n__vercel_live_token | Vercel | Necesar | Sesiune"
+        },
+        {
+          "id": "s7",
+          "heading": "7. Cum controlezi cookie-urile",
+          "body": "Pe lângă setările de consimțământ disponibile pe site-ul nostru, poți gestiona sau șterge cookie-urile direct din browser-ul tău. Instrucțiuni pentru cele mai populare browsere:\n\nGoogle Chrome:\n1. Meniu (⋮) → Setări\n2. Confidențialitate și securitate\n3. Cookie-uri și alte date ale site-urilor\n4. Gestionați și ștergeți cookie-urile\n\nMozilla Firefox:\n1. Meniu (☰) → Setări\n2. Confidențialitate și securitate\n3. Cookie-uri și date de site\n4. Gestionați datele / Ștergeți datele\n\nSafari (macOS / iOS):\n1. Safari → Preferințe (⌘,)\n2. Fila Confidențialitate\n3. Gestionați datele site-ului\n4. Ștergeți datele selectate sau Ștergeți tot\n\nMicrosoft Edge:\n1. Meniu (⋯) → Setări\n2. Cookie-uri și permisiuni site\n3. Cookie-uri și date de site stocate\n4. Vedeți toate cookie-urile și datele site-urilor\n\nAtenție: ștergerea sau blocarea cookie-urilor necesare poate afecta funcționalitatea site-ului. Cookie-urile analitice și de marketing pot fi blocate fără impact asupra navigării de bază."
+        },
+        {
+          "id": "s8",
+          "heading": "8. Consimțământ și retragere",
+          "body": "La prima ta vizită pe aceads.co, îți este afișat un banner de cookie-uri prin care poți accepta sau refuza cookie-urile non-esențiale (analitice, marketing, preferințe). Alegerea ta este stocată în cookie-ul cookie_consent pentru 12 luni.\n\nPoți retrage sau modifica consimțământul oricând prin:\n- Ștergerea cookie-urilor din browser — bannerul va reapărea la următoarea vizită\n- Contactarea noastră la office@aceads.co cu subiectul \"Retragere consimțământ cookies\"\n- Utilizarea instrumentelor de opt-out ale furnizorilor individuali (Google, Meta) — detalii în secțiunile de mai sus\n\nRetragerea consimțământului nu afectează legalitatea prelucrărilor efectuate înainte de retragere."
+        },
+        {
+          "id": "s9",
+          "heading": "9. Contact",
+          "body": "Pentru orice întrebare privind utilizarea cookie-urilor pe aceads.co:\n- Email: office@aceads.co\n- Companie: INNOSERV SRL, CUI 47715516, București, România\n- Program: Luni – Vineri, 09:00 – 18:00"
+        }
+      ]
+    },
+    "terms": {
+      "title": "Termeni și Condiții",
+      "lastUpdated": "1 ianuarie 2026",
+      "intro": "Data intrării în vigoare: 1 ianuarie 2026 · Companie: INNOSERV SRL · Site: aceads.co",
+      "tocLabel": "Cuprins",
+      "footer": "Ultima actualizare: 1 ianuarie 2026 · INNOSERV SRL · CUI 47715516",
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "1. Identificarea societății",
+          "body": "Prezentul site (aceads.co) este operat de:\n- Denumire: INNOSERV SRL\n- CUI: 47715516\n- Sediu social: București, România\n- Email: office@aceads.co\n- Brand comercial: ACE Agency / ACE Ads\n\nINNOSERV SRL este înregistrată conform legislației române și îți oferă servicii de marketing digital prin intermediul platformei aceads.co."
+        },
+        {
+          "id": "s2",
+          "heading": "2. Acceptarea termenilor",
+          "body": "Prin accesarea și utilizarea site-ului aceads.co, confirmi că ai citit, înțeles și acceptat în totalitate prezenții Termeni și Condiții. Dacă nu ești de acord cu oricare dintre prevederi, te rugăm să nu folosești acest site sau serviciile noastre.\n\nINNOSERV SRL își rezervă dreptul de a modifica oricând acești termeni. Modificările vor fi publicate pe această pagină cu o nouă dată de intrare în vigoare. Continuarea utilizării site-ului după publicarea modificărilor constituie acceptul implicit al noilor termeni."
+        },
+        {
+          "id": "s3",
+          "heading": "3. Descrierea serviciilor",
+          "body": "ACE Agency, prin INNOSERV SRL, furnizează servicii profesionale de marketing digital, inclusiv (fără a se limita la):\n- Google Ads — campanii Search, Shopping, Performance Max, Display și YouTube\n- Meta Ads — campanii Facebook și Instagram, inclusiv retargeting și lead generation\n- TikTok Ads — campanii Spark Ads, In-Feed și UGC pentru audiențe tinere\n- SEO — optimizare tehnică, editorială, link building și local SEO\n- Web Development — site-uri și aplicații web în React/Next.js\n- AI Automations — fluxuri automate de lucru cu integrări AI și no-code/low-code\n- Video Production — producție video pentru publicitate și social media\n- Lead Generation — campanii outbound și inbound pentru generare de lead-uri calificate\n\nServiciile sunt descrise în detaliu în ofertele comerciale transmise fiecărui client și în contractele individuale. Orice discrepanță între prezentele condiții generale și contractul individual semnat va fi rezolvată în favoarea prevederilor contractuale specifice."
+        },
+        {
+          "id": "s4",
+          "heading": "4. Drepturi și obligații utilizator",
+          "body": "Ai dreptul să:\n- Accesezi conținutul public al site-ului aceads.co în scop informațional\n- Soliciți o analiză gratuită și să primești recomandări scrise pe email\n- Contactezi echipa pentru clarificări privind serviciile oferite\n- Exerciți drepturile GDPR conform Politicii de Confidențialitate\n\nEști obligat să:\n- Furnizezi informații corecte și complete în formularul de contact\n- Nu utilizezi site-ul sau serviciile în scopuri ilegale sau frauduloase\n- Nu reproduci, copiezi sau distribui conținutul site-ului fără acordul scris al INNOSERV SRL\n- Respecți drepturile de proprietate intelectuală ale INNOSERV SRL și ale terților\n- Nu interferezi cu infrastructura tehnică a site-ului (atacuri, scraping automatizat, injecție de cod)"
+        },
+        {
+          "id": "s5",
+          "heading": "5. Proprietate intelectuală",
+          "body": "Întregul conținut al site-ului aceads.co — inclusiv texte, grafică, logo-uri, videoclipuri, studii de caz, structuri de pagini, cod sursă și orice alt material — este proprietatea exclusivă a INNOSERV SRL sau este utilizat cu permisiunea deținătorilor de drepturi.\n\nEste strict interzisă:\n- Copierea sau reproducerea parțială/totală a conținutului fără acordul scris prealabil\n- Utilizarea logo-urilor, denumirilor comerciale sau materialelor vizuale ale ACE Agency în scopuri comerciale\n- Crearea de lucrări derivate sau prelucrarea oricăror materiale de pe site\n\nOrice încălcare a drepturilor de proprietate intelectuală va fi urmărită conform legislației române și internaționale aplicabile."
+        },
+        {
+          "id": "s6",
+          "heading": "6. Răspundere limitată",
+          "body": "INNOSERV SRL depune eforturi rezonabile pentru a menține acuratețea informațiilor de pe site, dar nu garantează că acestea sunt complete, corecte sau actuale în orice moment.\n\nINNOSERV SRL nu este răspunzătoare pentru:\n- Pierderi indirecte, incidentale sau consecvente rezultate din utilizarea site-ului\n- Întreruperi temporare ale accesului la site cauzate de mentenanță sau forță majoră\n- Conținutul site-urilor terțe la care se face referire sau care sunt accesate prin link-uri\n- Rezultatele obținute din campaniile de marketing în limitele declarate în contractul individual\n- Decizii comerciale luate exclusiv pe baza informațiilor publicate pe site\n\nRăspunderea INNOSERV SRL față de orice client, în temeiul sau în legătură cu un contract de servicii, este limitată la valoarea totală a serviciilor facturate în ultimele 3 luni calendaristice anterioare evenimentului generator de prejudiciu."
+        },
+        {
+          "id": "s7",
+          "heading": "7. Politica de returnare și reziliere",
+          "body": "Natura serviciilor de marketing digital (configurare campanii, creație, strategie) face imposibilă restituirea prestațiilor deja executate. Prin urmare:\n- Serviciile prestate și livrate nu sunt rambursabile\n- Plata lunară acoperă efortul de configurare, optimizare și raportare din luna respectivă\n- Sumele plătite anticipat pentru luni viitoare pot fi compensate, la cerere, prin servicii echivalente\n\nRezilierea contractului poate fi solicitată de oricare parte cu un preaviz de minimum 30 de zile calendaristice, transmis în scris la office@aceads.co. Rezilierea nu exonerează clientul de plata serviciilor prestate până la data efectivă a încetării contractului.\n\nÎn cazul rezilierii înainte de expirarea perioadei minime contractuale (90 de zile), clientul datorează o penalitate de 20% din valoarea lunară înmulțită cu numărul de luni rămase până la împlinirea perioadei minime."
+        },
+        {
+          "id": "s8",
+          "heading": "8. Durata contractului și performanță",
+          "body": "Contractele de servicii se încheie pentru o perioadă minimă de 90 de zile calendaristice, termen considerat suficient pentru optimizarea și obținerea de rezultate măsurabile în campaniile paid media.\n\nClauze de performanță:\n- KPI-urile și ROAS-ul țintă sunt definite explicit în contractul individual, pe baza istoricului și obiectivelor clientului\n- În cazul neatingerii KPI-urilor agreate pe o perioadă de 2 luni consecutive din motive imputabile exclusiv ACE Agency, clientul poate solicita renegocierea tarifelor sau rezilierea fără penalitate\n- ACE Agency nu poate fi ținută răspunzătoare pentru neatingerea KPI-urilor cauzată de factori externi (modificări ale algoritmilor platformelor, schimbări legislative, condiții de piață, buget insuficient sau informații incorecte furnizate de client)\n- Raportarea rezultatelor se face săptămânal, prin dashboard live sau raport email, conform specificațiilor contractuale"
+        },
+        {
+          "id": "s9",
+          "heading": "9. Confidențialitate și GDPR",
+          "body": "INNOSERV SRL prelucrează datele cu caracter personal în conformitate cu Regulamentul (UE) 2016/679 (GDPR) și legislația română în vigoare.\n\nDetaliile complete privind datele colectate, scopul prelucrării, drepturile tale și modalitățile de exercitare a acestora sunt disponibile în Politica de Confidențialitate.\n\nPrin utilizarea site-ului și a formularelor de contact, îți exprimi consimțământul pentru prelucrarea datelor în scopurile descrise în politica menționată. Poți retrage consimțământul oricând, contactând office@aceads.co."
+        },
+        {
+          "id": "s10",
+          "heading": "10. Legea aplicabilă",
+          "body": "Prezenții Termeni și Condiții sunt guvernați de legislația României. Orice litigiu izvorât din sau în legătură cu aceștia va fi soluționat de instanțele judecătorești competente din București, România.\n\nÎnainte de a recurge la instanță, părțile vor depune eforturi rezonabile pentru soluționarea amiabilă a oricăror neînțelegeri, prin negociere directă sau mediere."
+        },
+        {
+          "id": "s11",
+          "heading": "11. Contact",
+          "body": "Pentru orice întrebări sau clarificări privind prezenții Termeni și Condiții, ne poți contacta:\n- Email: office@aceads.co\n- Companie: INNOSERV SRL, CUI 47715516\n- Adresă: București, România\n- Program: Luni – Vineri, 09:00 – 18:00"
+        }
+      ]
     }
   },
   "services": {
     "breadcrumb": {
-      "home": "Home",
-      "services": "Services"
+      "home": "Acasa",
+      "services": "Servicii"
     },
     "index": {
       "heroTransition": {
-        "label": "OUR APPROACH",
-        "heading": "Complete digital solutions for every need",
-        "description": "From paid advertising to SEO optimization, from email marketing to strategic consulting — every service is built on data, experience and concrete results."
+        "label": "ABORDAREA NOASTRA",
+        "heading": "Solutii digitale complete pentru fiecare nevoie",
+        "description": "De la publicitate platita la optimizare SEO, de la email marketing la consultanta strategica — fiecare serviciu este construit pe date, experienta si rezultate concrete."
       },
       "meta": {
-        "title": "Digital Marketing Services | AceAgency Bucharest",
-        "description": "Complete digital marketing services: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing and Consulting. Contact AceAgency today!"
+        "title": "Servicii Marketing Digital | AceAgency Bucuresti",
+        "description": "Servicii complete de marketing digital: Google Ads, Facebook Ads, TikTok Ads, SEO, Email Marketing si Consultanta. Contacteaza AceAgency!"
       },
       "hero": {
-        "overline": "SERVICES",
-        "headline": "Complete Digital Solutions for Your Business",
-        "subheading": "From paid advertising to SEO optimization, our team delivers measurable results through integrated digital strategies."
+        "overline": "SERVICII",
+        "headline": "Solutii Digitale Complete pentru Afacerea Ta",
+        "subheading": "De la publicitate platita la optimizare SEO, echipa noastra livreaza rezultate masurabile prin strategii digitale integrate."
       },
       "grid": {
-        "overline": "WHAT WE OFFER",
-        "heading": "Specialized Services for Every Need",
+        "overline": "CE OFERIM",
+        "heading": "Servicii Specializate pentru Fiecare Nevoie",
         "items": {
-          "0": { "title": "Web Development", "division": "AceWeb", "description": "High-performance, responsive and SEO-optimized websites and web applications, from landing pages to complex platforms." },
-          "1": { "title": "Google Ads", "division": "AceAds", "description": "Google Ads campaigns optimized for maximum ROI and minimum cost per conversion." },
-          "2": { "title": "Facebook & Instagram Ads", "division": "AceAds", "description": "Social media advertising strategies with precise and creative targeting." },
-          "3": { "title": "TikTok Ads", "division": "AceAds", "description": "Creative TikTok advertising for the next generation audience." },
-          "4": { "title": "SEO Optimization", "division": "AceWeb", "description": "Organic Google positioning through technical and content SEO strategies." },
-          "5": { "title": "Email Marketing", "division": "AceAds", "description": "Automated email campaigns that generate conversions and build customer loyalty." },
-          "6": { "title": "Marketing Consulting", "division": "AceAgency", "description": "Personalized digital strategy based on data, analysis and experience." }
+          "0": {
+            "title": "Dezvoltare Web",
+            "division": "AceWeb",
+            "description": "Site-uri si aplicatii web performante, responsive si optimizate SEO, de la landing pages la platforme complexe."
+          },
+          "1": {
+            "title": "Google Ads",
+            "division": "AceAds",
+            "description": "Campanii Google Ads optimizate pentru ROI maxim si cost pe conversie minim."
+          },
+          "2": {
+            "title": "Facebook & Instagram Ads",
+            "division": "AceAds",
+            "description": "Strategii de publicitate pe social media cu targetare precisa si creativa."
+          },
+          "3": {
+            "title": "TikTok Ads",
+            "division": "AceAds",
+            "description": "Publicitate creativa pe TikTok pentru audienta noua generatie."
+          },
+          "4": {
+            "title": "Optimizare SEO",
+            "division": "AceWeb",
+            "description": "Pozitionare organica in Google prin strategii SEO tehnice si de continut."
+          },
+          "5": {
+            "title": "Email Marketing",
+            "division": "AceAds",
+            "description": "Campanii email automatizate care genereaza conversii si fidelizeaza clientii."
+          },
+          "6": {
+            "title": "Consultanta Marketing",
+            "division": "AceAgency",
+            "description": "Strategie digitala personalizata bazata pe date, analiza si experienta."
+          }
         }
       },
       "process": {
-        "overline": "HOW WE WORK",
-        "heading": "Our 4-Step Process",
-        "description": "A structured approach that transforms your objectives into concrete results.",
+        "overline": "CUM LUCRAM",
+        "heading": "Procesul Nostru in 4 Pasi",
+        "description": "O abordare structurata care transforma obiectivele tale in rezultate concrete.",
         "steps": {
-          "0": { "title": "Analysis & Strategy", "description": "We understand your business, target audience and competition to build a personalized strategy." },
-          "1": { "title": "Design & Development", "description": "We create visual and technical solutions that reflect your brand and convert visitors." },
-          "2": { "title": "Implementation & Launch", "description": "We launch campaigns and projects with rigorous testing and real-time monitoring." },
-          "3": { "title": "Monitoring & Optimization", "description": "We continuously analyze performance and optimize for increasingly better results." }
+          "0": {
+            "title": "Analiza & Strategie",
+            "description": "Intelegem afacerea ta, publicul tinta si competitia pentru a construi o strategie personalizata."
+          },
+          "1": {
+            "title": "Design & Dezvoltare",
+            "description": "Cream solutii vizuale si tehnice care reflecta brandul tau si convertesc vizitatorii."
+          },
+          "2": {
+            "title": "Implementare & Lansare",
+            "description": "Lansam campaniile si proiectele cu testare riguroasa si monitorizare in timp real."
+          },
+          "3": {
+            "title": "Monitorizare & Optimizare",
+            "description": "Analizam performanta continuu si optimizam pentru rezultate tot mai bune."
+          }
         }
       },
       "whyUs": {
-        "overline": "WHY US",
-        "heading": "Your Trusted Digital Partner",
+        "overline": "DE CE NOI",
+        "heading": "Partenerul Tau Digital de Incredere",
         "stats": {
-          "0": { "value": "150", "suffix": "+", "label": "Projects Delivered" },
-          "1": { "value": "50", "suffix": "+", "label": "Active Clients" },
-          "2": { "value": "340", "suffix": "%", "label": "Average ROI" },
-          "3": { "value": "24", "suffix": "/7", "label": "Dedicated Support" }
+          "0": {
+            "value": "150",
+            "suffix": "+",
+            "label": "Proiecte Livrate"
+          },
+          "1": {
+            "value": "50",
+            "suffix": "+",
+            "label": "Clienti Activi"
+          },
+          "2": {
+            "value": "340",
+            "suffix": "%",
+            "label": "ROI Mediu"
+          },
+          "3": {
+            "value": "24",
+            "suffix": "/7",
+            "label": "Suport Dedicat"
+          }
         },
         "differentiators": {
-          "0": { "title": "Dedicated Team", "description": "Each client has a dedicated account manager and direct access to specialists." },
-          "1": { "title": "Transparent Reports", "description": "Detailed monthly reports with clear metrics and actionable recommendations." },
-          "2": { "title": "Custom Strategies", "description": "We don't apply generic solutions — every strategy is built around your goals." },
-          "3": { "title": "Cutting-Edge Technology", "description": "We use the latest platforms and tools for real competitive advantage." },
-          "4": { "title": "Guaranteed Results", "description": "Clear KPIs established from the start, with continuous optimization for performance." }
+          "0": {
+            "title": "Echipa Dedicata",
+            "description": "Fiecare client are un manager de cont dedicat si acces direct la specialisti."
+          },
+          "1": {
+            "title": "Rapoarte Transparente",
+            "description": "Rapoarte lunare detaliate cu metrici clare si recomandari actionale."
+          },
+          "2": {
+            "title": "Strategii Personalizate",
+            "description": "Nu aplicam solutii generice — fiecare strategie e construita pe obiectivele tale."
+          },
+          "3": {
+            "title": "Tehnologie de Varf",
+            "description": "Folosim cele mai noi platforme si unelte pentru avantaj competitiv real."
+          },
+          "4": {
+            "title": "Rezultate Garantate",
+            "description": "KPI-uri clare stabilite de la inceput, cu optimizare continua pentru performanta."
+          }
         }
       }
     },
     "cta": {
-      "heading": "Let's Start a Project",
-      "description": "Ready to transform your business's digital presence? Schedule a free consultation.",
-      "primary": "Contact Us",
-      "secondary": "Schedule a Meeting"
+      "heading": "Hai sa Incepem un Proiect",
+      "description": "Esti gata sa transformi prezenta digitala a afacerii tale? Programeaza o consultatie gratuita.",
+      "primary": "Contacteaza-ne",
+      "secondary": "Programeaza o Intalnire"
     },
     "googleAds": {
       "heroTransition": {
         "label": "GOOGLE ADS",
-        "heading": "Campaigns that turn clicks into customers",
-        "description": "Every Google Ads campaign is built on real data, optimized daily and focused on a single goal: turning your advertising budget into new customers and measurable growth."
+        "heading": "Campanii care transforma click-uri in clienti",
+        "description": "Fiecare campanie Google Ads este construita pe date reale, optimizata zilnic si orientata catre un singur obiectiv: sa transforme bugetul tau de publicitate in clienti noi si crestere masurabile."
       },
       "meta": {
-        "title": "Google Ads Services | Google Ads Agency Romania",
-        "description": "Professional Google Ads campaigns with guaranteed ROI. Certified Google Ads agency from Bucharest. Contact AceAgency today!"
+        "title": "Servicii Google Ads | Agentie Google Ads Romania",
+        "description": "Campanii Google Ads profesionale cu ROI garantat. Agentie certificata Google Ads din Bucuresti. Contacteaza AceAgency!"
       },
       "hero": {
         "overline": "GOOGLE ADS",
-        "headline": "Google Ads Campaigns That Drive Real Results",
-        "description": "We create and optimize Google Ads campaigns that bring new customers and maximize your return on advertising investment."
+        "headline": "Campanii Google Ads care Genereaza Rezultate Reale",
+        "description": "Cream si optimizam campanii Google Ads care aduc clienti noi si maximizeaza returnul investitiei tale in publicitate online."
       },
       "features": {
-        "overline": "GOOGLE ADS SERVICES",
-        "heading": "Complete Google Advertising Solutions",
+        "overline": "SERVICII GOOGLE ADS",
+        "heading": "Solutii Complete de Publicitate Google",
         "items": [
-          { "title": "Search Ads", "description": "Search network campaigns that position you in front of customers actively looking for your services." },
-          { "title": "Display Ads", "description": "Visual banners across millions of Google partner websites to increase brand awareness." },
-          { "title": "Shopping Ads", "description": "Optimized Google Shopping campaigns for online stores with product feeds and dynamic remarketing." },
-          { "title": "YouTube Ads", "description": "Video advertising on YouTube with demographic and interest-based targeting for maximum engagement." },
-          { "title": "Performance Max", "description": "AI-powered automated campaigns that optimize across all Google channels simultaneously." },
-          { "title": "Remarketing", "description": "Recapture visitors who left your site through personalized ads across the entire Google network." }
+          {
+            "title": "Search Ads",
+            "description": "Campanii pe reteaua de cautare Google care te pozitioneaza in fata clientilor care cauta activ serviciile tale."
+          },
+          {
+            "title": "Display Ads",
+            "description": "Bannere vizuale pe milioane de site-uri partenere Google pentru cresterea notorietatii brandului."
+          },
+          {
+            "title": "Shopping Ads",
+            "description": "Campanii Google Shopping optimizate pentru magazine online cu feed de produse si remarketing dinamic."
+          },
+          {
+            "title": "YouTube Ads",
+            "description": "Publicitate video pe YouTube cu targetare demografica si pe interese pentru engagement maxim."
+          },
+          {
+            "title": "Performance Max",
+            "description": "Campanii automatizate cu inteligenta artificiala Google care optimizeaza pe toate canalele simultan."
+          },
+          {
+            "title": "Remarketing",
+            "description": "Recapturam vizitatorii care au parasit site-ul tau prin reclame personalizate pe intreaga retea Google."
+          }
         ]
       },
       "process": {
-        "overline": "OUR PROCESS",
-        "heading": "How We Manage Your Google Ads Campaigns",
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Gestionam Campaniile Tale Google Ads",
         "steps": [
-          { "title": "Audit & Analysis", "description": "We analyze your existing account, competition and market opportunities to identify the most profitable keywords." },
-          { "title": "Strategy & Setup", "description": "We build campaign structure, create persuasive ads and set optimal targeting for your audience." },
-          { "title": "Continuous Optimization", "description": "We monitor performance daily, adjust bids and test ad variations for increasingly better results." },
-          { "title": "Reporting & Scaling", "description": "Transparent monthly reports with clear metrics and scaling recommendations for continuous business growth." }
+          {
+            "title": "Audit & Analiza",
+            "description": "Analizam contul existent, competitia si oportunitatile de piata pentru a identifica cele mai profitabile cuvinte cheie."
+          },
+          {
+            "title": "Strategie & Setup",
+            "description": "Construim structura campaniilor, cream reclame persuasive si setam targetarea optima pentru publicul tau."
+          },
+          {
+            "title": "Optimizare Continua",
+            "description": "Monitorizam zilnic performanta, ajustam licitatiile si testam variante de reclame pentru rezultate tot mai bune."
+          },
+          {
+            "title": "Raportare & Scale",
+            "description": "Rapoarte lunare transparente cu metrici clare si recomandari de scalare pentru cresterea continua a afacerii."
+          }
         ]
       },
       "stats": {
-        "overline": "RESULTS",
-        "heading": "Our Google Ads Campaign Performance",
+        "overline": "REZULTATE",
+        "heading": "Performanta Campaniilor Noastre Google Ads",
         "items": [
-          { "value": "340", "suffix": "%+", "label": "Average Campaign ROI" },
-          { "value": "150", "suffix": "+", "label": "Campaigns Managed" },
-          { "value": "50", "suffix": "+", "label": "Active Clients" },
-          { "value": "2", "suffix": "M+", "label": "Clicks Generated" }
+          {
+            "value": "340",
+            "suffix": "%+",
+            "label": "ROI Mediu Campanii"
+          },
+          {
+            "value": "150",
+            "suffix": "+",
+            "label": "Campanii Gestionate"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Clienti Activi"
+          },
+          {
+            "value": "2",
+            "suffix": "M+",
+            "label": "Clicks Generate"
+          }
         ]
       },
       "faq": {
-        "overline": "FAQ",
-        "heading": "Questions About Google Ads Services",
+        "overline": "INTREBARI FRECVENTE",
+        "heading": "Intrebari despre Serviciile Google Ads",
         "items": [
-          { "question": "How much do Google Ads services cost?", "answer": "The cost depends on industry, competition and objectives. The minimum recommended budget for Google Ads is 500 EUR/month, plus management fee. Contact us for a personalized offer." },
-          { "question": "How long until I see results?", "answer": "First results are usually visible within 2-4 weeks. Full campaign optimization requires 2-3 months for maximum performance, as we accumulate data and adjust strategy." },
-          { "question": "Which Google Ads campaign type is right for my business?", "answer": "It depends on your goals. Search campaigns are ideal for lead generation, Shopping for e-commerce, Display for brand awareness and YouTube for engagement. We recommend a personalized mix." },
-          { "question": "Do you have Google Ads certification?", "answer": "Yes, our team holds up-to-date Google Ads certifications for Search, Display, Video and Shopping. We stay current with the latest features and best practices." },
-          { "question": "What reports do I receive?", "answer": "You receive detailed monthly reports including: impressions, clicks, conversions, cost per conversion, ROI, keyword analysis and optimization recommendations. You also have access to a real-time dashboard." },
-          { "question": "Can I stop campaigns at any time?", "answer": "Yes, you have full control. Campaigns can be stopped, modified or scaled at any time. There are no mandatory long-term contracts — we work based on performance and trust." }
+          {
+            "question": "Cat costa serviciile de Google Ads?",
+            "answer": "Costul depinde de industrie, competitie si obiective. Bugetul minim recomandat pentru Google Ads este de 500 EUR/luna, plus taxa de management. Contacteaza-ne pentru o oferta personalizata."
+          },
+          {
+            "question": "Cat dureaza pana vad rezultate?",
+            "answer": "Primele rezultate se vad de obicei in primele 2-4 saptamani. Optimizarea completa a campaniilor necesita 2-3 luni pentru performanta maxima, pe masura ce acumulam date si ajustam strategia."
+          },
+          {
+            "question": "Ce tip de campanie Google Ads e potrivit pentru afacerea mea?",
+            "answer": "Depinde de obiectivele tale. Campaniile Search sunt ideale pentru generarea de lead-uri, Shopping pentru e-commerce, Display pentru notorietate si YouTube pentru engagement. Recomandam un mix personalizat."
+          },
+          {
+            "question": "Aveti certificare Google Ads?",
+            "answer": "Da, echipa noastra detine certificari Google Ads actualizate pentru Search, Display, Video si Shopping. Suntem la curent cu cele mai noi functionalitati si best practices."
+          },
+          {
+            "question": "Ce rapoarte primesc?",
+            "answer": "Primesti rapoarte lunare detaliate care includ: impressions, clicks, conversii, cost pe conversie, ROI, analiza cuvintelor cheie si recomandari de optimizare. Ai si acces la un dashboard in timp real."
+          },
+          {
+            "question": "Pot sa opresc campaniile oricand?",
+            "answer": "Da, ai control total. Campaniile pot fi oprite, modificate sau scalate oricand. Nu exista contracte pe termen lung obligatorii — lucram pe baza de performanta si incredere."
+          }
         ]
       },
       "cta": {
-        "heading": "Grow Your Business with Google Ads",
-        "description": "Schedule a free consultation and discover how Google Ads campaigns can transform your business.",
-        "primary": "Request a Quote",
-        "secondary": "Schedule a Consultation"
+        "heading": "Creste-ti Afacerea cu Google Ads",
+        "description": "Programeaza o consultatie gratuita si descopera cum campaniile Google Ads iti pot transforma afacerea.",
+        "primary": "Solicita o Oferta",
+        "secondary": "Programeaza o Consultatie"
       }
     },
     "facebookAds": {
       "heroTransition": {
         "label": "FACEBOOK & INSTAGRAM ADS",
-        "heading": "Social advertising that drives real conversions",
-        "description": "We create Facebook and Instagram advertising strategies that connect your brand with the right audience, generate qualified leads and maximize the return on every dollar invested."
+        "heading": "Publicitate sociala care genereaza conversii reale",
+        "description": "Cream strategii de publicitate pe Facebook si Instagram care conecteaza brandul tau cu audienta potrivita, genereaza lead-uri calificate si maximizeaza returnul fiecarui leu investit."
       },
       "meta": {
-        "title": "Facebook Ads Services | Facebook Ads Agency - AceAgency",
-        "description": "Professional Facebook and Instagram Ads campaigns with precise targeting and measurable ROI. Facebook advertising agency in Bucharest. Request a quote!"
+        "title": "Servicii Facebook Ads | Agentie Facebook Ads - AceAgency",
+        "description": "Campanii Facebook si Instagram Ads profesionale cu targetare precisa si ROI masurabil. Agentie publicitate Facebook Bucuresti. Solicita oferta!"
       },
       "hero": {
         "overline": "FACEBOOK & INSTAGRAM ADS",
-        "headline": "Facebook Ads Campaigns That Drive Real Conversions",
-        "description": "We create Facebook and Instagram advertising strategies that generate qualified leads, increase sales and maximize your return on social media advertising investment."
+        "headline": "Campanii Facebook Ads care Genereaza Conversii Reale",
+        "description": "Cream strategii de publicitate pe Facebook si Instagram care aduc lead-uri calificate, cresc vanzarile si maximizeaza returnul investitiei tale in social media advertising."
       },
       "features": {
-        "overline": "FACEBOOK ADS SERVICES",
-        "heading": "Complete Facebook and Instagram Advertising Solutions",
+        "overline": "SERVICII FACEBOOK ADS",
+        "heading": "Solutii Complete de Publicitate Facebook si Instagram",
         "items": [
-          { "title": "Awareness Campaigns", "description": "We grow your brand recognition through reach and brand awareness campaigns targeted at your ideal audience on Facebook and Instagram." },
-          { "title": "Traffic Campaigns", "description": "We drive qualified visitors to your website through ads optimized for clicks and engagement across both platforms." },
-          { "title": "Conversion Campaigns", "description": "We generate leads and direct sales through campaigns optimized with Facebook Pixel and Conversions API for precise tracking." },
-          { "title": "Advanced Retargeting", "description": "We recapture website visitors and users who interacted with your brand through dynamic remarketing on Facebook and Instagram." },
-          { "title": "Custom & Lookalike Audiences", "description": "We build custom and lookalike audiences based on your existing customer data to find new high-potential customers." },
-          { "title": "Creative Optimization", "description": "We constantly test and optimize visuals, copy and ad formats — from carousels to Reels — for maximum performance." }
+          {
+            "title": "Campanii de Awareness",
+            "description": "Crestem notorietatea brandului tau prin campanii de reach si brand awareness targetate catre audienta ideala pe Facebook si Instagram."
+          },
+          {
+            "title": "Campanii de Trafic",
+            "description": "Aducem vizitatori calificati pe site-ul tau prin reclame optimizate pentru click-uri si engagement pe ambele platforme."
+          },
+          {
+            "title": "Campanii de Conversie",
+            "description": "Generam lead-uri si vanzari directe prin campanii optimizate cu Facebook Pixel si Conversions API pentru tracking precis."
+          },
+          {
+            "title": "Retargeting Avansat",
+            "description": "Recapturam vizitatorii site-ului si utilizatorii care au interactionat cu brandul tau prin remarketing dinamic pe Facebook si Instagram."
+          },
+          {
+            "title": "Custom & Lookalike Audiences",
+            "description": "Construim audiente personalizate si similare bazate pe datele clientilor tai existenti pentru a gasi noi clienti cu potential ridicat."
+          },
+          {
+            "title": "Optimizare Creativa",
+            "description": "Testam si optimizam constant vizualuri, copy si formate publicitare — de la carusele la Reels — pentru performanta maxima."
+          }
         ]
       },
       "process": {
-        "overline": "OUR PROCESS",
-        "heading": "How We Manage Your Facebook Ads Campaigns",
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Gestionam Campaniile Tale Facebook Ads",
         "steps": [
-          { "title": "Account Audit & Pixel Setup", "description": "We analyze your existing account, verify Facebook Pixel and Conversions API configuration, and identify improvement opportunities." },
-          { "title": "Audience Strategy", "description": "We build your ideal audience using demographics, interests, behaviors and lookalike audiences based on your existing customers." },
-          { "title": "Campaign Creation & Ad Creatives", "description": "We develop campaign structure and create persuasive visuals and copy tailored to each audience segment and placement." },
-          { "title": "Optimization & Scaling", "description": "We monitor performance daily, A/B test ad variations and scale profitable campaigns for continuous growth." }
+          {
+            "title": "Audit Cont & Pixel Setup",
+            "description": "Analizam contul existent, verificam configurarea Facebook Pixel si Conversions API, si identificam oportunitatile de imbunatatire."
+          },
+          {
+            "title": "Strategie de Audienta",
+            "description": "Construim audienta ideala folosind date demografice, interese, comportamente si lookalike audiences bazate pe clientii tai existenti."
+          },
+          {
+            "title": "Creare Campanii & Ad Creatives",
+            "description": "Dezvoltam structura campaniilor si cream vizualuri si copy persuasiv adaptat fiecarui segment de audienta si plasament."
+          },
+          {
+            "title": "Optimizare & Scalare",
+            "description": "Monitorizam zilnic performanta, testam A/B variante de reclame si scalam campaniile profitabile pentru crestere continua."
+          }
         ]
       },
       "stats": {
-        "overline": "RESULTS",
-        "heading": "Facebook & Instagram Ads Campaign Performance",
+        "overline": "REZULTATE",
+        "heading": "Performanta Campaniilor Facebook & Instagram Ads",
         "items": [
-          { "value": "2", "suffix": "M+", "label": "Monthly Reach" },
-          { "value": "50", "suffix": "K+", "label": "Conversions Generated" },
-          { "value": "200", "suffix": "+", "label": "Campaigns Managed" },
-          { "value": "15", "suffix": "x", "label": "Average ROAS" }
+          {
+            "value": "2",
+            "suffix": "M+",
+            "label": "Reach Lunar"
+          },
+          {
+            "value": "50",
+            "suffix": "K+",
+            "label": "Conversii Generate"
+          },
+          {
+            "value": "200",
+            "suffix": "+",
+            "label": "Campanii Gestionate"
+          },
+          {
+            "value": "15",
+            "suffix": "x",
+            "label": "ROAS Mediu"
+          }
         ]
       },
       "faq": {
-        "overline": "FAQ",
-        "heading": "Questions About Facebook & Instagram Ads",
+        "overline": "INTREBARI FRECVENTE",
+        "heading": "Intrebari despre Facebook & Instagram Ads",
         "items": [
-          { "question": "How much does Facebook and Instagram advertising cost?", "answer": "The minimum recommended budget for Facebook Ads is 300 EUR/month, plus management fee. Cost per lead varies by industry: from 2-5 EUR for B2C to 10-30 EUR for B2B. Contact us for a personalized estimate based on your goals." },
-          { "question": "How does Facebook Pixel work and why is it important?", "answer": "Facebook Pixel is a tracking code installed on your website that monitors visitor actions. It is essential for campaign optimization, custom audience creation and remarketing. We also configure Conversions API for precise tracking even with current privacy restrictions." },
-          { "question": "What types of audiences do you target?", "answer": "We use core audiences (demographics, interests, behaviors), custom audiences (website visitors, email lists, page interactions) and lookalike audiences (people similar to your existing customers). This combination ensures maximum reach with high relevance." },
-          { "question": "Facebook Ads or Instagram Ads — which is better?", "answer": "It depends on your goals and audience. Instagram excels for visual brands and 18-35 audiences, while Facebook offers more detailed targeting and better performance for B2B lead generation. We recommend a cross-platform strategy using both for optimal results, combined with Google Ads campaigns for complete coverage." },
-          { "question": "What ad formats do you use?", "answer": "We use all available formats: static images, carousels, video, Reels, Stories and collections. We choose the optimal format based on campaign objective and A/B test to identify what works best for your specific audience." },
-          { "question": "How long until I see results?", "answer": "First results appear within 1-2 weeks of launch. Optimal performance is reached after 4-6 weeks of continuous optimization, as Meta's algorithm learns and we accumulate enough data for informed decisions." },
-          { "question": "How do you measure campaign success?", "answer": "We track clear KPIs: cost per lead, cost per conversion, ROAS, reach, frequency and click-through rate. You receive detailed monthly reports with performance analysis and optimization recommendations. We combine Facebook Ads data with Google Ads for a complete cross-platform view." }
+          {
+            "question": "Cat costa publicitatea pe Facebook si Instagram?",
+            "answer": "Bugetul minim recomandat pentru Facebook Ads este de 300 EUR/luna, plus taxa de management. Costul per lead variaza in functie de industrie: de la 2-5 EUR pentru B2C la 10-30 EUR pentru B2B. Contacteaza-ne pentru o estimare personalizata bazata pe obiectivele tale."
+          },
+          {
+            "question": "Cum functioneaza Facebook Pixel si de ce e important?",
+            "answer": "Facebook Pixel este un cod de tracking instalat pe site-ul tau care monitorizeaza actiunile vizitatorilor. Este esential pentru optimizarea campaniilor, crearea de audiente custom si remarketing. Noi configuram si Conversions API pentru tracking precis chiar si cu restrictiile de confidentialitate actuale."
+          },
+          {
+            "question": "Ce tipuri de audienta targetam?",
+            "answer": "Folosim audienta de baza (demografie, interese, comportamente), audienta custom (vizitatorii site-ului, lista de emailuri, interactiuni cu pagina) si audienta lookalike (persoane similare clientilor tai existenti). Combinatia acestora asigura acoperire maxima cu relevanta ridicata."
+          },
+          {
+            "question": "Facebook Ads sau Instagram Ads — care e mai bun?",
+            "answer": "Depinde de obiectivele si audienta ta. Instagram exceleaza pentru branduri vizuale si audienta 18-35 ani, in timp ce Facebook ofera targetare mai detaliata si performanta mai buna pentru lead generation B2B. Recomandam o strategie cross-platform care utilizeaza ambele platforme pentru rezultate optime, combinata cu campanii Google Ads pentru acoperire completa."
+          },
+          {
+            "question": "Ce formate de reclame folositi?",
+            "answer": "Utilizam toate formatele disponibile: imagini statice, carusele, video, Reels, Stories si colectii. Alegem formatul optim in functie de obiectivul campaniei si testam A/B pentru a identifica ce functioneaza cel mai bine pentru audienta ta specifica."
+          },
+          {
+            "question": "Cat dureaza pana vad rezultate?",
+            "answer": "Primele rezultate apar in 1-2 saptamani de la lansare. Performanta optima se atinge dupa 4-6 saptamani de optimizare continua, pe masura ce algoritmul Meta invata si noi acumulam date suficiente pentru decizii informate."
+          },
+          {
+            "question": "Cum masurati succesul campaniilor?",
+            "answer": "Urmarim KPI-uri clare: cost per lead, cost per conversie, ROAS, reach, frecventa si rata de click. Primesti rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare. Combinam datele din Facebook Ads cu Google Ads pentru o viziune completa cross-platform."
+          }
         ]
       },
       "cta": {
-        "heading": "Grow Your Business with Facebook & Instagram Ads",
-        "description": "Schedule a free consultation and discover how Facebook and Instagram advertising can generate leads and sales for your business.",
-        "primary": "Request a Quote",
-        "secondary": "Schedule a Call"
+        "heading": "Creste-ti Afacerea cu Facebook & Instagram Ads",
+        "description": "Programeaza o consultatie gratuita si descopera cum publicitatea pe Facebook si Instagram poate genera lead-uri si vanzari pentru afacerea ta.",
+        "primary": "Solicita o Oferta",
+        "secondary": "Programeaza un Call"
       }
     },
     "tiktokAds": {
       "heroTransition": {
         "label": "TIKTOK ADS",
-        "heading": "Viral content that turns audiences into customers",
-        "description": "TikTok is the platform where authenticity wins. We create native campaigns that capture attention in the first seconds and turn views into concrete actions for your brand."
+        "heading": "Continut viral care transforma audienta in clienti",
+        "description": "TikTok este platforma unde autenticitatea castiga. Cream campanii native care capteaza atentia in primele secunde si transforma vizualizarile in actiuni concrete pentru brandul tau."
       },
       "meta": {
-        "title": "TikTok Ads Services | TikTok Advertising Romania - AceAgency",
-        "description": "Creative and high-performing TikTok Ads campaigns for audiences in Romania. TikTok video advertising with measurable results. Request a quote!"
+        "title": "Servicii TikTok Ads | Publicitate TikTok Romania - AceAgency",
+        "description": "Campanii TikTok Ads creative si performante pentru audienta din Romania. Publicitate video TikTok cu rezultate masurabile. Solicita oferta!"
       },
       "hero": {
         "overline": "TIKTOK ADS",
-        "headline": "TikTok Ads That Capture Attention and Drive Results",
-        "description": "We create creative and viral TikTok Ads campaigns that connect your brand with the next generation audience in Romania. From In-Feed Ads to Spark Ads, we maximize the impact of every investment."
+        "headline": "Publicitate TikTok Ads care Capteaza Atentia si Genereaza Rezultate",
+        "description": "Cream campanii TikTok Ads creative si virale care conecteaza brandul tau cu audienta urmatoarei generatii din Romania. De la In-Feed Ads la Spark Ads, maximizam impactul fiecarei investitii."
       },
       "features": {
-        "overline": "TIKTOK ADS SERVICES",
-        "heading": "TikTok Ad Formats for Every Objective",
+        "overline": "SERVICII TIKTOK ADS",
+        "heading": "Formate Publicitare TikTok pentru Fiecare Obiectiv",
         "items": [
-          { "title": "In-Feed Ads", "description": "Native ads in the For You feed that integrate organically with content and capture user attention naturally." },
-          { "title": "TopView Ads", "description": "Full-screen video ads that appear when opening the TikTok app, providing maximum visibility and guaranteed impact for your brand." },
-          { "title": "Spark Ads", "description": "We amplify high-performing organic posts from your brand or creators with advertising budget for extended reach and engagement." },
-          { "title": "Brand Effects", "description": "AR effects and branded filters on TikTok that encourage user-generated content and increase interaction with your brand." },
-          { "title": "TikTok Shopping", "description": "We integrate your product catalog directly into TikTok for a native shopping experience, combined with Facebook Ads campaigns for cross-platform conversions." },
-          { "title": "Audience Targeting", "description": "Advanced targeting by demographics, interests, behavior and custom audiences to reach users with the highest conversion potential." }
+          {
+            "title": "In-Feed Ads",
+            "description": "Reclame native in feed-ul For You care se integreaza organic cu continutul si capteaza atentia utilizatorilor in mod natural."
+          },
+          {
+            "title": "TopView Ads",
+            "description": "Reclame video full-screen care apar la deschiderea aplicatiei TikTok, oferind vizibilitate maxima si impact garantat pentru brandul tau."
+          },
+          {
+            "title": "Spark Ads",
+            "description": "Amplificam postarile organice performante ale brandului sau ale creatorilor cu buget publicitar pentru reach si engagement extins."
+          },
+          {
+            "title": "Brand Effects",
+            "description": "Efecte AR si filtre branduite pe TikTok care incurajeaza user-generated content si cresc interactiunea cu brandul tau."
+          },
+          {
+            "title": "TikTok Shopping",
+            "description": "Integram catalogul de produse direct in TikTok pentru experienta de cumparaturi nativa, combinata cu campanii Facebook Ads pentru conversii cross-platform."
+          },
+          {
+            "title": "Targetare Audienta",
+            "description": "Targetare avansata pe demografie, interese, comportament si audienta custom pentru a ajunge la utilizatorii cu cel mai mare potential de conversie."
+          }
         ]
       },
       "process": {
-        "overline": "OUR PROCESS",
-        "heading": "How We Create Successful TikTok Ads Campaigns",
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Cream Campanii TikTok Ads de Succes",
         "steps": [
-          { "title": "TikTok Audience Analysis", "description": "We research your target audience on TikTok, analyze relevant trends and identify platform-specific opportunities for your brand." },
-          { "title": "Strategy & Creative Brief", "description": "We build the campaign strategy and develop the creative brief adapted to TikTok's format and culture, referencing current trends." },
-          { "title": "Campaign Setup & Launch", "description": "We configure campaigns in TikTok Ads Manager, set targeting and budget, and launch with real-time monitoring." },
-          { "title": "Monitoring & Optimization", "description": "We analyze performance daily, test creative variations and optimize for continuously improving CPV and ROAS." }
+          {
+            "title": "Analiza Audienta TikTok",
+            "description": "Cercetam audienta ta tinta pe TikTok, analizam trendurile relevante si identificam oportunitatile specifice platformei pentru brandul tau."
+          },
+          {
+            "title": "Strategie & Creative Brief",
+            "description": "Construim strategia campaniei si dezvoltam brief-ul creativ adaptat formatului si culturii TikTok, cu referinte la trenduri actuale."
+          },
+          {
+            "title": "Setup Campanie & Launch",
+            "description": "Configuram campaniile in TikTok Ads Manager, setam targetarea si bugetul, si lansam cu monitorizare in timp real."
+          },
+          {
+            "title": "Monitorizare & Optimizare",
+            "description": "Analizam performanta zilnic, testam variante de creative si optimizam pentru CPV si ROAS tot mai bune."
+          }
         ]
       },
       "stats": {
-        "overline": "RESULTS",
-        "heading": "TikTok Ads Campaign Performance",
+        "overline": "REZULTATE",
+        "heading": "Performanta Campaniilor TikTok Ads",
         "items": [
-          { "value": "500", "suffix": "K+", "label": "Monthly Views" },
-          { "value": "100", "suffix": "K+", "label": "Interactions" },
-          { "value": "50", "suffix": "+", "label": "TikTok Campaigns" },
-          { "value": "8", "suffix": "x", "label": "Average ROAS" }
+          {
+            "value": "500",
+            "suffix": "K+",
+            "label": "Views Lunare"
+          },
+          {
+            "value": "100",
+            "suffix": "K+",
+            "label": "Interactiuni"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Campanii TikTok"
+          },
+          {
+            "value": "8",
+            "suffix": "x",
+            "label": "ROAS Mediu"
+          }
         ]
       },
       "faq": {
-        "overline": "FAQ",
-        "heading": "Questions About TikTok Ads",
+        "overline": "INTREBARI FRECVENTE",
+        "heading": "Intrebari despre Publicitatea TikTok Ads",
         "items": [
-          { "question": "How much does TikTok advertising cost?", "answer": "The minimum recommended budget for TikTok Ads is 300 EUR/month, plus management fee. TikTok has lower cost per view than other platforms, with CPMs starting from 2-5 EUR. Final cost depends on objectives, audience and chosen campaign type." },
-          { "question": "What type of content works on TikTok?", "answer": "Authentic, native content performs best. Vertical videos of 15-60 seconds with a strong hook in the first 3 seconds, trend sounds and natural storytelling generate the best results. We avoid classic ads — on TikTok, content needs to feel organic." },
-          { "question": "Are TikTok Ads right for my business?", "answer": "TikTok is ideal if your target audience is 18-45 years old. It works excellently for e-commerce, beauty, food, fitness, fashion and entertainment. However, even B2B brands find success on TikTok through educational content and creative thought leadership." },
-          { "question": "What TikTok ad formats are available?", "answer": "The main formats are: In-Feed Ads (feed ads), TopView (full-screen on app open), Spark Ads (amplifying organic posts), Brand Effects (AR filters) and TikTok Shopping (integrated commerce). Each format has specific advantages depending on campaign objective." },
-          { "question": "How long until I see results on TikTok?", "answer": "Initial results appear within the first 1-2 weeks. Full optimization takes 3-4 weeks as TikTok's algorithm learns and we identify the creative and audience combinations that perform best." },
-          { "question": "TikTok Ads vs Instagram Reels — which is better?", "answer": "TikTok excels at organic reach and engagement with younger audiences (18-30), while Instagram Reels benefits from Meta's ecosystem and advanced targeting. We recommend a multi-platform strategy that includes both, alongside Google Ads campaigns for complete coverage." }
+          {
+            "question": "Cat costa publicitatea pe TikTok?",
+            "answer": "Bugetul minim recomandat pentru TikTok Ads este de 300 EUR/luna, plus taxa de management. TikTok are costuri per view mai mici decat alte platforme, cu CPM-uri incepand de la 2-5 EUR. Costul final depinde de obiective, audienta si tipul de campanie ales."
+          },
+          {
+            "question": "Ce tip de continut functioneaza pe TikTok?",
+            "answer": "Continutul autentic si nativ performeaza cel mai bine. Video-urile verticale de 15-60 secunde, cu hook puternic in primele 3 secunde, trend sounds si storytelling natural genereaza cele mai bune rezultate. Evitam reclamele clasice — pe TikTok, continutul trebuie sa se simta organic."
+          },
+          {
+            "question": "TikTok Ads e potrivit pentru afacerea mea?",
+            "answer": "TikTok este ideal daca publicul tau tinta are 18-45 ani. Functioneaza excelent pentru e-commerce, beauty, food, fitness, fashion si entertainment. Insa chiar si brandurile B2B gasesc succes pe TikTok prin content educativ si thought leadership creativ."
+          },
+          {
+            "question": "Ce formate de reclame TikTok sunt disponibile?",
+            "answer": "Principalele formate sunt: In-Feed Ads (reclame in feed), TopView (full-screen la deschidere), Spark Ads (amplificarea posturilor organice), Brand Effects (filtre AR) si TikTok Shopping (comert integrat). Fiecare format are avantaje specifice in functie de obiectivul campaniei."
+          },
+          {
+            "question": "Cat dureaza pana vad rezultate pe TikTok?",
+            "answer": "Rezultatele initiale apar in primele 1-2 saptamani. Optimizarea completa necesita 3-4 saptamani pe masura ce algoritmul TikTok invata si noi identificam combinatiile de creative si audienta care performeaza cel mai bine."
+          },
+          {
+            "question": "TikTok Ads vs Instagram Reels — care e mai bun?",
+            "answer": "TikTok exceleaza la reach organic si engagement cu audienta tanara (18-30 ani), in timp ce Instagram Reels beneficiaza de ecosistemul Meta si targetarea avansata. Recomandam o strategie multi-platform care include ambele, alaturi de campanii Google Ads pentru acoperire completa."
+          }
         ]
       },
       "cta": {
-        "heading": "Go Viral on TikTok with AceAgency",
-        "description": "Schedule a free consultation and discover how TikTok advertising can generate visibility and sales for your business.",
-        "primary": "Request a Quote",
-        "secondary": "Schedule a Call"
+        "heading": "Devino Viral pe TikTok cu AceAgency",
+        "description": "Programeaza o consultatie gratuita si descopera cum publicitatea TikTok poate genera vizibilitate si vanzari pentru afacerea ta.",
+        "primary": "Solicita o Oferta",
+        "secondary": "Programeaza un Call"
       }
     },
     "seo": {
       "heroTransition": {
-        "label": "SEO OPTIMIZATION",
-        "heading": "Organic visibility that drives qualified traffic",
-        "description": "SEO is not just about Google rankings — it is about qualified traffic, domain authority and long-term organic growth. We build complete SEO strategies that turn searches into customers."
+        "label": "OPTIMIZARE SEO",
+        "heading": "Vizibilitate organica care aduce trafic calificat",
+        "description": "SEO nu inseamna doar pozitii in Google — inseamna trafic calificat, autoritate de domeniu si crestere organica pe termen lung. Construim strategii SEO complete care transforma cautarile in clienti."
       },
       "meta": {
-        "title": "SEO Services Romania | Professional SEO Optimization - AceAgency",
-        "description": "Professional SEO services for organic Google positioning. Complete SEO audit, technical and content optimization. Request a free SEO audit today!"
+        "title": "Servicii SEO Romania | Optimizare SEO Profesionala - AceAgency",
+        "description": "Servicii SEO profesionale pentru pozitionare organica in Google. Audit SEO complet, optimizare tehnica si de continut. Solicita audit SEO gratuit!"
       },
       "hero": {
-        "overline": "SEO OPTIMIZATION",
-        "headline": "SEO Services Romania — Professional Optimization for Top Google Rankings",
-        "description": "We provide complete SEO services that increase your website's organic visibility on Google, drive qualified long-term traffic and convert visitors into customers. From technical SEO audits to content strategies and link building."
+        "overline": "OPTIMIZARE SEO",
+        "headline": "Servicii SEO Romania — Optimizare Profesionala pentru Pozitionare in Top Google",
+        "description": "Oferim servicii SEO complete care cresc vizibilitatea organica a site-ului tau in Google, aduc trafic calificat pe termen lung si transforma vizitatorii in clienti. De la audit SEO tehnic la strategii de continut si link building."
       },
       "features": {
-        "overline": "SEO SERVICES",
-        "heading": "Complete SEO Optimization Solutions for Your Business",
+        "overline": "SERVICII SEO",
+        "heading": "Solutii Complete de Optimizare SEO pentru Afacerea Ta",
         "items": [
-          { "title": "Technical SEO", "description": "We optimize site speed, Core Web Vitals (LCP, INP, CLS), URL structure, XML sitemap, robots.txt and proper indexing in Google Search Console." },
-          { "title": "On-Page SEO", "description": "We optimize page content, titles and meta descriptions, heading hierarchy (H1-H6), images with alt text, internal links and JSON-LD schema markup." },
-          { "title": "Off-Page SEO", "description": "We build quality backlinks through ethical link building strategies: guest posting, digital PR, partnerships and mentions in relevant industry publications." },
-          { "title": "Local SEO", "description": "We optimize Google Business Profile, manage reviews, build consistent NAP citations and position your business in local Google Maps results." },
-          { "title": "Complete SEO Audit", "description": "We analyze your website in depth: technical performance, content structure, backlink profile, competition and untapped keyword opportunities." },
-          { "title": "SEO Content Strategy", "description": "We develop an SEO content strategy with keyword-optimized articles, cluster topics and pillar pages that build topical authority in your industry." }
+          {
+            "title": "SEO Tehnic",
+            "description": "Optimizam viteza site-ului, Core Web Vitals (LCP, INP, CLS), structura URL-urilor, sitemap XML, robots.txt si indexarea corecta in Google Search Console."
+          },
+          {
+            "title": "SEO On-Page",
+            "description": "Optimizam continutul paginilor, titlurile si meta descrierile, ierarhia heading-urilor (H1-H6), imaginile cu alt text, linkurile interne si schema markup JSON-LD."
+          },
+          {
+            "title": "SEO Off-Page",
+            "description": "Construim backlink-uri de calitate prin strategii de link building etice: guest posting, digital PR, parteneriate si mentiuni in publicatii relevante din industrie."
+          },
+          {
+            "title": "SEO Local",
+            "description": "Optimizam Google Business Profile, gestionam recenziile, construim citatii NAP consistente si pozitionam afacerea ta in rezultatele locale din Google Maps."
+          },
+          {
+            "title": "Audit SEO Complet",
+            "description": "Analizam in profunzime site-ul tau: performanta tehnica, structura continutului, profilul de backlink-uri, competitia si oportunitatile de cuvinte cheie neexploatate."
+          },
+          {
+            "title": "Content SEO",
+            "description": "Dezvoltam o strategie de continut SEO cu articole optimizate pe cuvinte cheie, cluster topics si pillar pages care construiesc autoritate tematica in industria ta."
+          }
         ]
       },
       "process": {
-        "overline": "OUR PROCESS",
-        "heading": "How We Optimize Your Website for Google",
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Optimizam Site-ul Tau pentru Google",
         "steps": [
-          { "title": "Complete SEO Audit", "description": "We fully audit your website: technical performance, content, backlinks and competition. We identify critical issues and keyword opportunities with the highest potential." },
-          { "title": "Keyword Strategy", "description": "We research and select keywords with the best volume-to-competition ratio. We build a keyword map aligned with site pages and search intent." },
-          { "title": "On-Page & Technical Optimization", "description": "We implement technical optimizations (speed, Core Web Vitals, structure) and on-page improvements (titles, meta, headings, content, internal links, schema markup)." },
-          { "title": "Link Building & Authority", "description": "We build quality backlinks through ethical link building strategies that increase domain authority and improve Google rankings." },
-          { "title": "Monitoring & Reporting", "description": "We track rankings, organic traffic, conversions and Core Web Vitals. Detailed monthly reports with performance analysis and continuous optimization recommendations." }
+          {
+            "title": "Audit SEO Complet",
+            "description": "Auditam complet site-ul: performanta tehnica, continut, backlink-uri si competitie. Identificam problemele critice si oportunitatile de cuvinte cheie cu cel mai mare potential."
+          },
+          {
+            "title": "Strategia de Cuvinte Cheie",
+            "description": "Cercetam si selectam cuvintele cheie cu cel mai bun raport volum/competitie. Construim o harta de cuvinte cheie aliniata cu paginile site-ului si intentia de cautare."
+          },
+          {
+            "title": "Optimizare On-Page & Tehnica",
+            "description": "Implementam optimizarile tehnice (viteza, Core Web Vitals, structura) si on-page (titluri, meta, heading-uri, continut, linkuri interne, schema markup)."
+          },
+          {
+            "title": "Link Building & Autoritate",
+            "description": "Construim backlink-uri de calitate prin strategii etice de link building care cresc autoritatea domeniului si imbunatatesc pozitiile in Google."
+          },
+          {
+            "title": "Monitorizare & Raportare",
+            "description": "Urmarim pozitiile, traficul organic, conversiile si Core Web Vitals. Rapoarte lunare detaliate cu analiza performantei si recomandari de optimizare continua."
+          }
         ]
       },
       "stats": {
-        "overline": "RESULTS",
-        "heading": "Our SEO Services Performance",
+        "overline": "REZULTATE",
+        "heading": "Performanta Serviciilor Noastre SEO",
         "items": [
-          { "value": "300", "suffix": "%+", "label": "Organic Traffic Growth" },
-          { "value": "500", "suffix": "+", "label": "Keywords in Top 10" },
-          { "value": "100", "suffix": "+", "label": "SEO Projects" },
-          { "value": "95", "suffix": "%", "label": "Retention Rate" }
+          {
+            "value": "300",
+            "suffix": "%+",
+            "label": "Crestere Trafic Organic"
+          },
+          {
+            "value": "500",
+            "suffix": "+",
+            "label": "Cuvinte Cheie in Top 10"
+          },
+          {
+            "value": "100",
+            "suffix": "+",
+            "label": "Proiecte SEO"
+          },
+          {
+            "value": "95",
+            "suffix": "%",
+            "label": "Rata de Retentie"
+          }
         ]
       },
       "faq": {
-        "overline": "FAQ",
-        "heading": "Questions About SEO Optimization Services",
+        "overline": "INTREBARI FRECVENTE",
+        "heading": "Intrebari despre Serviciile de Optimizare SEO",
         "items": [
-          { "question": "How much do SEO services cost?", "answer": "SEO service prices start from 500 EUR/month for basic packages that include on-page optimization and monitoring. Complete packages with technical audit, content strategy and link building start from 1,000 EUR/month. The exact cost depends on industry competitiveness, website size and your goals. Contact us for a free evaluation." },
-          { "question": "How long does it take to see SEO results?", "answer": "SEO is a long-term investment. First ranking improvements are typically observed in 3-4 months, while significant results — consistent organic traffic growth and conversions — appear after 6-12 months of continuous optimization. This varies depending on keyword competitiveness and your website's current state." },
-          { "question": "What does an SEO audit include?", "answer": "A complete SEO audit includes: technical analysis (speed, Core Web Vitals, indexing, mobile-friendliness), on-page audit (titles, meta, headings, content, internal links), off-page audit (backlink profile, domain authority), competition analysis and keyword research. We deliver a detailed report with prioritized issues and an action plan." },
-          { "question": "What is the difference between On-Page and Off-Page SEO?", "answer": "On-Page SEO refers to optimizations made directly on your website: content, titles, meta descriptions, headings, images, internal links and URL structure. Off-Page SEO refers to actions outside your website that build authority: link building, guest posting, digital PR and mentions in relevant publications. Both are essential for ranking." },
-          { "question": "Do you offer Local SEO?", "answer": "Yes, we offer complete Local SEO services. We optimize Google Business Profile, manage online reviews, build consistent NAP (Name, Address, Phone) citations in relevant directories and implement LocalBusiness schema markup. Local SEO is essential for businesses serving customers in a specific geographic area — combined with local Google Ads campaigns, we ensure complete visibility." },
-          { "question": "How do you measure SEO results?", "answer": "We track clear metrics: target keyword rankings, organic traffic (Google Analytics + Search Console), click-through rate (CTR), conversions from organic traffic, Core Web Vitals and domain authority. Monthly reports include performance analysis, month-over-month comparisons and optimization recommendations. You also have access to a real-time dashboard." },
-          { "question": "Why choose AceAgency for SEO?", "answer": "We combine technical SEO expertise with deep understanding of businesses in Romania. We have over 100 successfully completed SEO projects, a 95% retention rate and a dedicated team that constantly follows the latest Google algorithm updates. Additionally, we integrate SEO services with Google Ads and Facebook Ads campaigns for a complete and coherent digital strategy." }
+          {
+            "question": "Cat costa serviciile de SEO?",
+            "answer": "Preturile pentru servicii SEO incep de la 500 EUR/luna pentru pachete de baza care includ optimizare on-page si monitorizare. Pachetele complete cu audit tehnic, strategie de continut si link building pornesc de la 1.000 EUR/luna. Costul exact depinde de competitivitatea industriei, dimensiunea site-ului si obiectivele tale. Contacteaza-ne pentru o evaluare gratuita."
+          },
+          {
+            "question": "Cat dureaza sa vezi rezultate SEO?",
+            "answer": "SEO este o investitie pe termen lung. Primele imbunatatiri de pozitii se observa de obicei in 3-4 luni, iar rezultatele semnificative — crestere consistenta de trafic organic si conversii — apar dupa 6-12 luni de optimizare continua. Aceasta variaza in functie de competitivitatea cuvintelor cheie si starea actuala a site-ului."
+          },
+          {
+            "question": "Ce include un audit SEO?",
+            "answer": "Un audit SEO complet include: analiza tehnica (viteza, Core Web Vitals, indexare, mobile-friendliness), audit on-page (titluri, meta, heading-uri, continut, linkuri interne), audit off-page (profilul de backlink-uri, autoritatea domeniului), analiza competitiei si cercetare de cuvinte cheie. Livram un raport detaliat cu probleme prioritizate si plan de actiune."
+          },
+          {
+            "question": "Care este diferenta intre SEO On-Page si Off-Page?",
+            "answer": "SEO On-Page se refera la optimizarile pe care le facem direct pe site-ul tau: continut, titluri, meta descrieri, heading-uri, imagini, linkuri interne si structura URL-urilor. SEO Off-Page se refera la actiunile din afara site-ului care construiesc autoritate: link building, guest posting, digital PR si mentiuni in publicatii relevante. Ambele sunt esentiale pentru pozitionare."
+          },
+          {
+            "question": "Faceti si SEO Local?",
+            "answer": "Da, oferim servicii complete de SEO Local. Optimizam Google Business Profile, gestionam recenziile online, construim citatii NAP (Nume, Adresa, Telefon) consistente in directoare relevante si implementam schema markup LocalBusiness. SEO Local este esential pentru afacerile care servesc clienti intr-o zona geografica specifica — combinat cu campanii Google Ads locale, asiguram vizibilitate completa."
+          },
+          {
+            "question": "Cum masurati rezultatele SEO?",
+            "answer": "Urmarim metrici clare: pozitii pentru cuvinte cheie target, trafic organic (Google Analytics + Search Console), rata de click (CTR), conversii din trafic organic, Core Web Vitals si autoritatea domeniului. Rapoartele lunare includ analiza performantei, comparatii cu lunile anterioare si recomandari de optimizare. Ai acces si la un dashboard in timp real."
+          },
+          {
+            "question": "De ce sa alegeti AceAgency pentru SEO?",
+            "answer": "Combinam expertiza SEO tehnica cu intelegerea afacerilor din Romania. Avem peste 100 de proiecte SEO finalizate cu succes, o rata de retentie de 95% si o echipa dedicata care urmareste constant cele mai noi actualizari de algoritm Google. In plus, integram serviciile SEO cu campaniile Google Ads si Facebook Ads pentru o strategie digitala completa si coerenta."
+          }
         ]
       },
       "cta": {
-        "heading": "Grow Organically with Professional SEO Services",
-        "description": "Schedule a free SEO audit and discover how we can improve your website's Google positioning for qualified organic traffic.",
-        "primary": "Request Free SEO Audit",
-        "secondary": "Schedule a Consultation"
+        "heading": "Creste Organic cu Servicii SEO Profesionale",
+        "description": "Programeaza un audit SEO gratuit si descopera cum putem imbunatati pozitionarea site-ului tau in Google pentru trafic organic calificat.",
+        "primary": "Solicita Audit SEO Gratuit",
+        "secondary": "Programeaza o Consultatie"
       }
     },
     "emailMarketing": {
       "heroTransition": {
         "label": "EMAIL MARKETING",
-        "heading": "Direct communication that retains and converts",
-        "description": "Email marketing remains the channel with the highest ROI in digital marketing. We build personalized campaigns and automations that work around the clock to generate recurring revenue."
+        "heading": "Comunicare directa care fidelizeaza si converteste",
+        "description": "Email marketing-ul ramane canalul cu cel mai mare ROI din marketing digital. Construim campanii personalizate si automatizari care lucreaza non-stop pentru a genera venituri recurente."
       },
       "meta": {
-        "title": "Email Marketing Services | Email Campaigns - AceAgency",
-        "description": "Professional email marketing campaigns with advanced automation and segmentation. Newsletter, drip campaigns and detailed reporting. Request a free quote!"
+        "title": "Servicii Email Marketing | Campanii Email - AceAgency",
+        "description": "Campanii email marketing profesionale cu automatizări avansate și segmentare. Newsletter, drip campaigns și raportare detaliată. Solicită ofertă gratuită!"
       },
       "hero": {
         "overline": "EMAIL MARKETING",
-        "headline": "Email Marketing Services That Drive Real Conversions",
-        "description": "We build personalized email marketing strategies that retain customers and generate repeat sales. Combined with Google Ads and Facebook Ads campaigns, email marketing becomes your most profitable digital channel."
+        "headline": "Servicii Email Marketing care Generează Conversii Reale",
+        "description": "Construim strategii de email marketing personalizate care fidelizează clienții și generează vânzări repetate. Combinat cu campanii Google Ads și Facebook Ads, email marketing-ul devine cel mai profitabil canal digital."
       },
       "features": {
-        "overline": "EMAIL MARKETING SERVICES",
-        "heading": "Complete Email Marketing Solutions",
+        "overline": "SERVICII EMAIL MARKETING",
+        "heading": "Soluții Complete de Email Marketing",
         "items": [
-          { "title": "Personalized Email Campaigns", "description": "We create targeted email campaigns for specific segments, with relevant content that generates above-industry open rates and clicks." },
-          { "title": "Email Automation", "description": "Automated welcome, nurture, abandoned cart and re-engagement sequences that work around the clock for your business." },
-          { "title": "Newsletter Design & Management", "description": "Professional, responsive email templates aligned with your brand, delivered on a consistent editorial calendar." },
-          { "title": "Audience Segmentation", "description": "We segment your database by behavior, demographics and purchase history for ultra-relevant messaging." },
-          { "title": "A/B Testing & Optimization", "description": "We test subject lines, content, design and timing to maximize open rates and conversions for every campaign." },
-          { "title": "Reporting & Analytics", "description": "Detailed dashboards with performance metrics: open rate, CTR, conversions, revenue per email and trends over time." }
+          {
+            "title": "Campanii Email Personalizate",
+            "description": "Creăm campanii email targetate pe segmente specifice, cu conținut relevant care generează deschideri și click-uri peste media industriei."
+          },
+          {
+            "title": "Automatizări Email",
+            "description": "Secvențe automatizate de welcome, nurture, abandoned cart și re-engagement care lucrează non-stop pentru afacerea ta."
+          },
+          {
+            "title": "Newsletter Design & Management",
+            "description": "Template-uri email profesionale, responsive și aliniate cu brandul tău, livrate pe un calendar editorial consistent."
+          },
+          {
+            "title": "Segmentare Audiență",
+            "description": "Segmentăm baza de date pe comportament, demografie și istoricul achizițiilor pentru mesaje ultra-relevante."
+          },
+          {
+            "title": "A/B Testing & Optimizare",
+            "description": "Testăm subject lines, conținut, design și timing pentru a maximiza rata de deschidere și conversiile fiecărei campanii."
+          },
+          {
+            "title": "Raportare & Analytics",
+            "description": "Dashboard-uri detaliate cu metrici de performanță: open rate, CTR, conversii, revenue per email și tendințe în timp."
+          }
         ]
       },
       "process": {
-        "overline": "OUR PROCESS",
-        "heading": "How We Create Successful Email Campaigns",
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Creăm Campanii Email de Succes",
         "steps": [
-          { "title": "Email Audit & Strategy", "description": "We analyze your existing list, open rates, segments and define an email strategy aligned with your business goals and active SEO campaigns." },
-          { "title": "Platform & List Setup", "description": "We configure the email marketing platform, import and clean lists, set up segments and basic automations." },
-          { "title": "Campaign & Automation Creation", "description": "We develop visual templates, write persuasive copy and build automated sequences that also integrate your Google Ads offers." },
-          { "title": "Monitoring & Optimization", "description": "We track each campaign's performance, continuously A/B test and optimize for ever-improving conversion rates." }
+          {
+            "title": "Audit & Strategie Email",
+            "description": "Analizăm lista existentă, ratele de deschidere, segmentele și definim o strategie email aliniată cu obiectivele de business și campaniile SEO active."
+          },
+          {
+            "title": "Setup Platformă & Liste",
+            "description": "Configurăm platforma de email marketing, importăm și curățăm listele, setăm segmentele și automatizările de bază."
+          },
+          {
+            "title": "Creare Campanii & Automatizări",
+            "description": "Dezvoltăm template-uri vizuale, scriem copy persuasiv și construim secvențe automatizate care integrează și ofertele din Google Ads."
+          },
+          {
+            "title": "Monitorizare & Optimizare",
+            "description": "Urmărim performanța fiecărei campanii, testăm A/B continuu și optimizăm pentru rate de conversie tot mai bune."
+          }
         ]
       },
       "stats": {
-        "overline": "RESULTS",
-        "heading": "Our Email Campaign Performance",
+        "overline": "REZULTATE",
+        "heading": "Performanța Campaniilor Noastre Email",
         "items": [
-          { "value": "45", "suffix": "%+", "label": "Average Open Rate" },
-          { "value": "500", "suffix": "K+", "label": "Emails Sent" },
-          { "value": "30", "suffix": "+", "label": "Active Automations" },
-          { "value": "12", "suffix": "x", "label": "Average ROI" }
+          {
+            "value": "45",
+            "suffix": "%+",
+            "label": "Open Rate Mediu"
+          },
+          {
+            "value": "500",
+            "suffix": "K+",
+            "label": "Emailuri Trimise"
+          },
+          {
+            "value": "30",
+            "suffix": "+",
+            "label": "Automatizări Active"
+          },
+          {
+            "value": "12",
+            "suffix": "x",
+            "label": "ROI Mediu"
+          }
         ]
       },
       "faq": {
-        "overline": "FAQ",
-        "heading": "Questions About Email Marketing Services",
+        "overline": "ÎNTREBĂRI FRECVENTE",
+        "heading": "Întrebări despre Serviciile de Email Marketing",
         "items": [
-          { "question": "How much do email marketing services cost?", "answer": "Prices start from 300 EUR/month for basic packages including design, copywriting and sending. Packages with advanced automations start from 500 EUR/month. Contact us for a personalized quote." },
-          { "question": "Which email marketing platform do you use?", "answer": "We work with Mailchimp, Resend, SendGrid, ActiveCampaign and other professional platforms. We choose the right platform based on your needs, budget and required integrations." },
-          { "question": "How often should I send emails?", "answer": "We recommend 1-4 emails per month for newsletters, complemented by automated sequences (welcome, nurture, re-engagement). Optimal frequency depends on industry, audience and content type." },
-          { "question": "How do you build the subscriber list?", "answer": "We implement lead magnets, smart pop-ups, dedicated landing pages and optimized forms. Combined with Facebook Ads lead generation campaigns, list growth becomes accelerated and sustainable." },
-          { "question": "What open rate can I expect?", "answer": "The industry average is 20-25%. Our clients consistently achieve 35-45% rates thanks to advanced segmentation, A/B tested subjects and content personalized to each segment's interests." },
-          { "question": "Do you also design newsletters?", "answer": "Yes, we create professional, responsive email templates aligned with your brand's visual identity. Each template is optimized for all major email clients (Gmail, Outlook, Apple Mail)." },
-          { "question": "How do email automations help?", "answer": "Automations work 24/7: they send welcome emails to new subscribers, recover abandoned carts, re-activate inactive customers and nurture leads to conversion. The result: more sales with less manual effort." }
+          {
+            "question": "Cât costă serviciile de email marketing?",
+            "answer": "Prețurile încep de la 300 EUR/lună pentru pachete de bază care includ design, copywriting și trimitere. Pachetele cu automatizări avansate pornesc de la 500 EUR/lună. Contactează-ne pentru o ofertă personalizată."
+          },
+          {
+            "question": "Ce platformă de email marketing folosiți?",
+            "answer": "Lucrăm cu Mailchimp, Resend, SendGrid, ActiveCampaign și alte platforme profesionale. Alegem platforma potrivită în funcție de nevoile, bugetul și integrările necesare pentru afacerea ta."
+          },
+          {
+            "question": "Cât de des ar trebui să trimit emailuri?",
+            "answer": "Recomandăm 1-4 emailuri pe lună pentru newsletter, completate de secvențe automatizate (welcome, nurture, re-engagement). Frecvența optimă depinde de industrie, audiență și tipul de conținut."
+          },
+          {
+            "question": "Cum construiți lista de abonați?",
+            "answer": "Implementăm lead magnets, pop-up-uri inteligente, landing pages dedicate și formulare optimizate. Combinat cu campanii Facebook Ads pentru lead generation, creșterea listei devine accelerată și sustenabilă."
+          },
+          {
+            "question": "Ce rată de deschidere pot aștepta?",
+            "answer": "Media industriei este 20-25%. Clienții noștri obțin constant rate de 35-45% datorită segmentării avansate, subiectelor testate A/B și conținutului personalizat pe interesele fiecărui segment."
+          },
+          {
+            "question": "Faceți și design de newsletter?",
+            "answer": "Da, creăm template-uri email profesionale, responsive și aliniate cu identitatea vizuală a brandului tău. Fiecare template este optimizat pentru toate clienții email majori (Gmail, Outlook, Apple Mail)."
+          },
+          {
+            "question": "Cum ajută automatizările email?",
+            "answer": "Automatizările lucrează 24/7: trimit welcome emails noilor abonați, recuperează coșuri abandonate, re-activează clienții inactivi și nurturează lead-urile până la conversie. Rezultatul: mai multe vânzări cu mai puțin efort manual."
+          }
         ]
       },
       "cta": {
-        "heading": "Boost Sales with Email Marketing",
-        "description": "Schedule a free consultation and discover how email campaigns can generate recurring revenue for your business.",
-        "primary": "Request a Quote",
-        "secondary": "Schedule a Consultation"
+        "heading": "Crește Vânzările cu Email Marketing",
+        "description": "Programează o consultație gratuită și descoperă cum campaniile email pot genera venituri recurente pentru afacerea ta.",
+        "primary": "Solicită o Ofertă",
+        "secondary": "Programează o Consultație"
       }
     },
     "consultanta": {
       "heroTransition": {
-        "label": "MARKETING CONSULTING",
-        "heading": "Digital strategy built on data and experience",
-        "description": "A good strategy starts with deep analysis. We audit your digital presence, identify opportunities and build a personalized action plan that integrates all digital channels."
+        "label": "CONSULTANTA MARKETING",
+        "heading": "Strategie digitala bazata pe date si experienta",
+        "description": "O strategie buna incepe cu o analiza profunda. Auditem prezenta ta digitala, identificam oportunitatile si construim un plan de actiune personalizat care integreaza toate canalele digitale."
       },
       "meta": {
-        "title": "Digital Marketing Consulting Romania - AceAgency",
-        "description": "Professional digital marketing consulting: complete audit, personalized strategy and action plan. Schedule a free consultation with AceAgency!"
+        "title": "Consultanță Marketing Digital Romania - AceAgency",
+        "description": "Consultanță marketing digital profesională: audit complet, strategie personalizată și plan de acțiune. Programează o consultație gratuită cu AceAgency!"
       },
       "hero": {
-        "overline": "MARKETING CONSULTING",
-        "headline": "Digital Marketing Consulting for Sustainable Growth",
-        "description": "We analyze your business in depth and build a complete digital strategy integrating SEO, Google Ads, email marketing and social media for measurable long-term results."
+        "overline": "CONSULTANȚĂ MARKETING",
+        "headline": "Consultanță Marketing Digital pentru Creștere Sustenabilă",
+        "description": "Analizăm afacerea ta în profunzime și construim o strategie digitală completă care integrează SEO, Google Ads, email marketing și social media pentru rezultate măsurabile pe termen lung."
       },
       "features": {
-        "overline": "CONSULTING SERVICES",
-        "heading": "What Our Marketing Consulting Includes",
+        "overline": "SERVICII CONSULTANȚĂ",
+        "heading": "Ce Include Consultanța Noastră de Marketing",
         "items": [
-          { "title": "Digital Marketing Audit", "description": "Complete analysis of your digital presence: website, technical SEO, Google Ads campaigns, social media and email marketing — all evaluated with concrete metrics." },
-          { "title": "Marketing Strategy Development", "description": "Personalized strategic plan with SMART objectives, prioritized channels, clear KPIs and implementation timeline." },
-          { "title": "Digital Marketing Plan", "description": "Detailed roadmap with prioritized actions, estimated budget per channel, editorial calendar and content recommendations." },
-          { "title": "Competitive Analysis", "description": "In-depth study of direct and indirect competitors, identifying market gaps and positioning opportunities." },
-          { "title": "Brand Positioning Consulting", "description": "We define your brand identity, unique value proposition and positioning strategy that differentiates you in the market." },
-          { "title": "Team Training & Workshops", "description": "Hands-on workshops for your team on digital marketing, Google Ads, SEO, social media and email marketing." }
+          {
+            "title": "Audit Marketing Digital",
+            "description": "Analiză completă a prezenței digitale: site, SEO tehnic, campanii Google Ads, social media și email marketing — totul evaluat cu metrici concrete."
+          },
+          {
+            "title": "Strategie de Marketing",
+            "description": "Plan strategic personalizat cu obiective SMART, canale prioritizate, KPI-uri clare și timeline de implementare."
+          },
+          {
+            "title": "Plan de Marketing Digital",
+            "description": "Roadmap detaliat cu acțiuni prioritizate, buget estimat pe canal, calendar editorial și recomandări de conținut."
+          },
+          {
+            "title": "Analiză Competiție",
+            "description": "Studiu detaliat al competitorilor direcți și indirecți, identificarea gap-urilor de piață și a oportunităților de poziționare."
+          },
+          {
+            "title": "Consultanță Branding & Poziționare",
+            "description": "Definim identitatea de brand, propunerea unică de valoare și strategia de poziționare care te diferențiază pe piață."
+          },
+          {
+            "title": "Training Echipă",
+            "description": "Workshop-uri practice pentru echipa ta pe teme de marketing digital, Google Ads, SEO, social media și email marketing."
+          }
         ]
       },
       "process": {
-        "overline": "OUR PROCESS",
-        "heading": "How Marketing Consulting Works",
+        "overline": "PROCESUL NOSTRU",
+        "heading": "Cum Funcționează Consultanța de Marketing",
         "steps": [
-          { "title": "Current Situation Analysis", "description": "We discuss your business, analyze your existing digital presence, active campaigns and identify challenges and opportunities." },
-          { "title": "Define Objectives & KPIs", "description": "Together we establish SMART objectives, measurable KPIs and success indicators for each digital channel." },
-          { "title": "Develop Strategy & Plan", "description": "We build the complete digital strategy with detailed recommendations for SEO, paid advertising, email marketing and content." },
-          { "title": "Implementation & Monitoring", "description": "We assist with implementation through AceWeb, AceAds and AceMedia teams, and monitor results for continuous adjustments." }
+          {
+            "title": "Analiză Situație Curentă",
+            "description": "Discutăm despre afacerea ta, analizăm prezența digitală existentă, campaniile active și identificăm provocările și oportunitățile."
+          },
+          {
+            "title": "Definire Obiective & KPI",
+            "description": "Stabilim împreună obiective SMART, KPI-uri măsurabile și indicatorii de succes pentru fiecare canal digital."
+          },
+          {
+            "title": "Elaborare Strategie & Plan",
+            "description": "Construim strategia digitală completă cu recomandări detaliate pentru SEO, publicitate plătită, email marketing și conținut."
+          },
+          {
+            "title": "Implementare & Monitorizare",
+            "description": "Te asistăm în implementare prin echipele AceWeb, AceAds și AceMedia, și monitorizăm rezultatele pentru ajustări continue."
+          }
         ]
       },
       "stats": {
-        "overline": "RESULTS",
-        "heading": "Our Marketing Consulting Impact",
+        "overline": "REZULTATE",
+        "heading": "Impactul Consultanței Noastre de Marketing",
         "items": [
-          { "value": "100", "suffix": "+", "label": "Strategies Delivered" },
-          { "value": "50", "suffix": "+", "label": "Clients Consulted" },
-          { "value": "340", "suffix": "%", "label": "Average ROI" },
-          { "value": "98", "suffix": "%", "label": "Client Satisfaction" }
+          {
+            "value": "100",
+            "suffix": "+",
+            "label": "Strategii Livrate"
+          },
+          {
+            "value": "50",
+            "suffix": "+",
+            "label": "Clienți Consultați"
+          },
+          {
+            "value": "340",
+            "suffix": "%",
+            "label": "ROI Mediu"
+          },
+          {
+            "value": "98",
+            "suffix": "%",
+            "label": "Satisfacție Clienți"
+          }
         ]
       },
       "faq": {
-        "overline": "FAQ",
-        "heading": "Questions About Digital Marketing Consulting",
+        "overline": "ÎNTREBĂRI FRECVENTE",
+        "heading": "Întrebări despre Consultanța de Marketing Digital",
         "items": [
-          { "question": "What does a marketing consulting session include?", "answer": "A session includes current situation analysis, business objectives discussion, digital opportunity identification and actionable recommendations. The first 30-minute session is free." },
-          { "question": "How much does digital marketing consulting cost?", "answer": "Individual sessions start from 200 EUR. Complete strategy packages (audit + plan + implementation) start from 1,500 EUR. Price depends on business complexity and digital channels involved." },
-          { "question": "How long does the consulting process take?", "answer": "A complete consulting project takes 2-4 weeks, from initial audit to final strategy delivery. Ongoing consulting is done on a monthly basis with follow-up sessions." },
-          { "question": "Who is consulting suitable for?", "answer": "For any business looking to grow digitally: startups that need direction, mature businesses looking to optimize, or companies wanting to enter new channels (Google Ads, TikTok Ads, SEO)." },
-          { "question": "What results can I expect after consulting?", "answer": "Our clients see an average 340% ROI growth in the first year after strategy implementation. Concrete results depend on industry, budget and implementation speed." },
-          { "question": "Do you offer implementation, not just strategy?", "answer": "Yes, AceAgency offers complete implementation services through AceWeb (web development), AceAds (Google Ads, Facebook Ads, TikTok Ads) and AceMedia (video and graphic content) divisions." },
-          { "question": "How do I start with marketing consulting?", "answer": "Simple: schedule a free 30-minute consultation. We discuss your business, identify the main challenges and propose a personalized action plan." }
+          {
+            "question": "Ce include o sesiune de consultanță marketing?",
+            "answer": "O sesiune include analiza situației curente, discutarea obiectivelor de business, identificarea oportunităților digitale și recomandări acționabile. Prima sesiune de 30 minute este gratuită."
+          },
+          {
+            "question": "Cât costă consultanța de marketing digital?",
+            "answer": "Sesiunile individuale încep de la 200 EUR. Pachetele complete de strategie (audit + plan + implementare) pornesc de la 1.500 EUR. Prețul depinde de complexitatea afacerii și de canalele digitale implicate."
+          },
+          {
+            "question": "Cât durează procesul de consultanță?",
+            "answer": "Un proiect complet de consultanță durează 2-4 săptămâni, de la auditul inițial la livrarea strategiei finale. Consultanța continuă se face pe bază lunară cu sesiuni de follow-up."
+          },
+          {
+            "question": "Pentru cine este potrivită consultanța?",
+            "answer": "Pentru orice afacere care vrea să crească digital: start-up-uri care au nevoie de direcție, afaceri mature care vor să optimizeze, sau companii care vor să intre pe canale noi (Google Ads, TikTok Ads, SEO)."
+          },
+          {
+            "question": "Ce rezultate pot aștepta după consultanță?",
+            "answer": "Clienții noștri văd în medie o creștere de 340% ROI în primul an după implementarea strategiei. Rezultatele concrete depind de industrie, buget și viteza de implementare."
+          },
+          {
+            "question": "Oferiți și implementare, nu doar strategie?",
+            "answer": "Da, AceAgency oferă servicii complete de implementare prin diviziile AceWeb (dezvoltare web), AceAds (Google Ads, Facebook Ads, TikTok Ads) și AceMedia (conținut video și grafic)."
+          },
+          {
+            "question": "Cum încep cu consultanța de marketing?",
+            "answer": "Simplu: programează o consultație gratuită de 30 minute. Discutăm despre afacerea ta, identificăm provocările principale și propunem un plan de acțiune personalizat."
+          }
         ]
       },
       "cta": {
-        "heading": "Schedule a Free Consultation",
-        "description": "Discover how a professional digital strategy can transform your business. The first 30-minute consultation is free.",
-        "primary": "Request a Consultation",
-        "secondary": "Learn More"
+        "heading": "Programează o Consultație Gratuită",
+        "description": "Descoperă cum o strategie digitală profesională îți poate transforma afacerea. Prima consultație de 30 minute este gratuită.",
+        "primary": "Solicită o Consultație",
+        "secondary": "Află Mai Multe"
       }
-    }
-  },
-  "home": {
-    "heroTransition": {
-      "label": "WHY WE EXIST",
-      "heading": "We transform your vision into measurable digital results",
-      "description": "We are a full-service digital agency from Bucharest that combines web development, paid advertising, artificial intelligence and media production to deliver concrete results and sustainable growth."
-    },
-    "hero": {
-      "overline": "WEB . ADS . AI . MEDIA",
-      "headline": "<accent>Full-Service</accent> Digital Agency in Bucharest",
-      "subheading": "We transform your vision into measurable digital results. Web. Ads. AI. Media.",
-      "cta": {
-        "primary": "Discover Our Services",
-        "secondary": "Contact Us"
-      }
-    },
-    "services": {
-      "overline": "SERVICES",
-      "heading": "Complete Solutions for Your Business",
-      "description": "From web development to paid advertising, from artificial intelligence to media production — we cover everything you need.",
-      "items": {
-        "0": {
-          "title": "Web Development",
-          "description": "High-performance, responsive, and SEO-optimized websites and web applications"
-        },
-        "1": {
-          "title": "Google Ads",
-          "description": "Google Ads campaigns optimized for maximum ROI and minimum cost per conversion"
-        },
-        "2": {
-          "title": "Facebook & Instagram Ads",
-          "description": "Social media advertising strategies with precise targeting"
-        },
-        "3": {
-          "title": "TikTok Ads",
-          "description": "Creative TikTok advertising for the next generation audience"
-        },
-        "4": {
-          "title": "SEO Optimization",
-          "description": "Organic Google positioning through advanced SEO strategies"
-        },
-        "5": {
-          "title": "Marketing Consulting",
-          "description": "Personalized digital strategy based on data and experience"
-        }
-      },
-      "cta": "View all services"
-    },
-    "stats": {
-      "overline": "RESULTS",
-      "heading": "Proven Performance",
-      "items": {
-        "0": { "value": "150", "suffix": "+", "label": "Projects Delivered" },
-        "1": { "value": "50", "suffix": "+", "label": "Happy Clients" },
-        "2": { "value": "98", "suffix": "%", "label": "Retention Rate" },
-        "3": { "value": "5", "suffix": "yrs", "label": "Experience" }
-      }
-    },
-    "about": {
-      "overline": "ABOUT US",
-      "heading": "Discipline. Vision. <accent>Results.</accent>",
-      "description": "We are a team of professionals who believe every brand deserves an exceptional digital presence. From strategy to execution, from idea to result.",
-      "cta": "Learn more"
-    },
-    "testimonials": {
-      "overline": "TESTIMONIALS",
-      "heading": "What Our Clients Say",
-      "items": {
-        "0": {
-          "quote": "AceAgency completely transformed our online presence. The results exceeded expectations.",
-          "author": "Maria Popescu",
-          "company": "TechStart SRL",
-          "rating": "5"
-        },
-        "1": {
-          "quote": "Professionalism, creativity, and measurable results. Highly recommended.",
-          "author": "Alexandru Ionescu",
-          "company": "Digital Commerce",
-          "rating": "5"
-        },
-        "2": {
-          "quote": "The AceAgency team understands business needs and delivers solutions that work.",
-          "author": "Elena Dumitrescu",
-          "company": "StartUp Hub",
-          "rating": "5"
-        },
-        "3": {
-          "quote": "Google Ads campaigns generated a 340% ROI in the first 3 months.",
-          "author": "Andrei Gheorghe",
-          "company": "E-Shop Romania",
-          "rating": "5"
-        },
-        "4": {
-          "quote": "The website created by AceAgency is the best digital investment we have made.",
-          "author": "Ioana Marinescu",
-          "company": "Beauty Brand",
-          "rating": "5"
-        },
-        "5": {
-          "quote": "Excellent support and transparent communication throughout the entire project.",
-          "author": "Mihai Stanescu",
-          "company": "Logistics Pro",
-          "rating": "5"
-        }
-      }
-    },
-    "cta": {
-      "heading": "Ready to Grow Digital?",
-      "description": "Let's discuss how we can transform your business into a digital success.",
-      "primary": "Schedule a Consultation",
-      "secondary": "View Portfolio"
-    },
-    "newsletter": {
-      "overline": "NEWSLETTER",
-      "heading": "Stay Updated",
-      "description": "Receive digital marketing tips, case studies, and news directly in your inbox.",
-      "placeholder": "Your email address",
-      "submit": "Subscribe",
-      "gdpr": "I agree to the processing of personal data",
-      "success": "Thank you! You have successfully subscribed."
     }
   }
 }
