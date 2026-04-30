@@ -33,15 +33,15 @@ export function ResultsSection({
 }: ResultsSectionProps): React.JSX.Element {
   const t = useTranslations(`${namespace}.results`);
   const items = t.raw('items') as readonly ResultItem[];
-  let chartLabel: string | undefined;
-  let bars: readonly ChartBar[] | undefined;
-  try {
-    const chart = t.raw('chart') as { label: string; bars: readonly ChartBar[] };
-    chartLabel = chart?.label;
-    bars = chart?.bars;
-  } catch {
-    // Some case studies omit the chart — that's fine, just skip.
-  }
+  // `t.raw('chart')` throws on missing — we want to silently skip the chart
+  // for case studies that don't ship one. Read the parent and pluck instead.
+  const tParent = useTranslations(namespace);
+  const resultsRaw = tParent.raw('results') as
+    | { chart?: { label: string; bars: readonly ChartBar[] } | null }
+    | undefined;
+  const chart = resultsRaw?.chart ?? undefined;
+  const chartLabel = chart?.label;
+  const bars = chart?.bars;
 
   const numericValues = (bars ?? []).map((b) => parseFloat(b.roas) || 0);
   const max = numericValues.length ? Math.max(...numericValues) : 1;

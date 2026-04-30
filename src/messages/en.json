@@ -806,7 +806,12 @@
               "roas": "+433%",
               "note": "Conversions vs. baseline, under-35 audiences"
             }
-          ]
+          ],
+          "card": {
+            "value": "13.34×",
+            "label": "Google Shopping",
+            "note": "Full restructure + Performance Max"
+          }
         }
       },
       "results": {
@@ -911,7 +916,8 @@
         "primaryCta": "Book your free analysis →",
         "secondaryCta": "All case studies",
         "email": "office@aceads.co"
-      }
+      },
+      "metaDescription": "Restructured Google Shopping + Performance Max, added Meta and TikTok as complementary channels. 13.34× ROAS on Google, +433% TikTok conversions, without d"
     },
     "trady": {
       "slug": "trady",
@@ -957,7 +963,12 @@
               "value": "2.64×",
               "note": "Before · under target"
             }
-          ]
+          ],
+          "card": {
+            "label": "META ROAS",
+            "value": "1.02×",
+            "note": "Before · losing money on every leu"
+          }
         },
         "solution": {
           "overline": "THE SOLUTION",
@@ -974,7 +985,12 @@
               "value": "4.40×",
               "note": "+67% vs. start"
             }
-          ]
+          ],
+          "card": {
+            "value": "6.05×",
+            "label": "Meta ROAS reached",
+            "note": "Cut vanity spend, focus on conversions"
+          }
         }
       },
       "results": {
@@ -1046,7 +1062,8 @@
               }
             ]
           }
-        }
+        },
+        "chart": null
       },
       "process": {
         "overline": "WHAT WE DID",
@@ -1091,7 +1108,8 @@
         "primaryCta": "Book your free analysis →",
         "secondaryCta": "All case studies",
         "email": "office@aceads.co"
-      }
+      },
+      "metaDescription": "Killed vanity campaigns, restructured Meta on 7 categories, cut 45% of the Google budget and kept only what converted. Google ROAS simultaneously climbed f"
     },
     "dosense": {
       "slug": "dosense",
@@ -1211,7 +1229,8 @@
             ],
             "summary": "Conversion rate ×20 vs. the previous objective"
           }
-        }
+        },
+        "chart": null
       },
       "process": {
         "overline": "WHAT WE DID",
@@ -1256,7 +1275,8 @@
         "primaryCta": "Book your free analysis →",
         "secondaryCta": "All case studies",
         "email": "office@aceads.co"
-      }
+      },
+      "metaDescription": "One change of objective — from Website Schedules (maximum friction) to Lead Gen with Instant Form (micro-commitment) — multiplied volume 20× and dropped CP"
     }
   },
   "blog": {

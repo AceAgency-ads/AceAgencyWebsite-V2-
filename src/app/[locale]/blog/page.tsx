@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useMemo, type ReactNode } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 import { Overline } from '@/components/ui/Overline';
 import { CTAButton } from '@/components/ui/CTAButton';
 import { BurgundyGlow } from '@/components/ui/BurgundyGlow';
@@ -24,8 +23,6 @@ interface BlogPost {
  * and labeled `comingSoon`. When detail pages ship, swap divs for Links.
  */
 export default function BlogIndexPage(): React.JSX.Element {
-  const locale = useLocale();
-  void locale;
   const t = useTranslations('blogIndex');
   const tBlog = useTranslations('blog');
   const tCommon = useTranslations('common');

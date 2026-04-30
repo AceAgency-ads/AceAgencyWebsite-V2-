@@ -1,0 +1,54 @@
+# ACE Agency robots.txt
+# Per project GEO rules: allow search-time AI crawlers, block training-time
+# crawlers. Update sitemap host below to the production domain.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.well-known/
+
+# --- Search-time AI crawlers (allowed) ----------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# --- Training-time crawlers (blocked) -----------------------------------
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+Sitemap: https://aceads.co/sitemap.xml

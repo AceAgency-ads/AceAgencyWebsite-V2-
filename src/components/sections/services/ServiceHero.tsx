@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { createElement, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { gsap, useGSAP } from '@/lib/gsap';
 import { getServiceIcon } from '@/lib/service-icons';
@@ -20,7 +20,7 @@ interface ServiceHeroProps {
  * Follows AboutHero pattern with service icon decorative element.
  */
 export function ServiceHero({ serviceKey, iconName, breadcrumbItems }: ServiceHeroProps): React.JSX.Element {
-  const Icon = getServiceIcon(iconName);
+  const iconComponent = getServiceIcon(iconName);
   const t = useTranslations('services');
   const overlineRef = useRef<HTMLSpanElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
@@ -69,11 +69,12 @@ export function ServiceHero({ serviceKey, iconName, breadcrumbItems }: ServiceHe
       />
 
       {/* Service icon -- top-right decorative */}
-      <Icon
-        className="pointer-events-none absolute right-8 top-8 size-16 text-[var(--section-text-muted)] opacity-20 md:right-16 md:top-16 md:size-24"
-        strokeWidth={1}
-        aria-hidden="true"
-      />
+      {createElement(iconComponent, {
+        className:
+          'pointer-events-none absolute right-8 top-8 size-16 text-[var(--section-text-muted)] opacity-20 md:right-16 md:top-16 md:size-24',
+        strokeWidth: 1,
+        'aria-hidden': 'true',
+      })}
 
       <div className="relative z-10 max-w-3xl">
         {breadcrumbItems && <Breadcrumb items={breadcrumbItems} />}

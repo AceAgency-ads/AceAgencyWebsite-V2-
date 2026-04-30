@@ -1,0 +1,54 @@
+# ACE Agency
+
+> Performance marketing agency from Bucharest specializing in Google Ads,
+> Meta Ads, TikTok Ads, and SEO for Romanian e-commerce and B2B brands.
+> Founded 2020. Operated by INNOSERV SRL (CUI 47715516).
+
+ACE Agency manages paid advertising and SEO with weekly senior reporting,
+contractual ROAS targets, and 90-day minimum engagements. Documented
+results include 13.34× Google Ads ROAS for ITMAR (2.38M RON revenue over
+16 months), 8.11× Meta Ads ROAS for Amora (+544% revenue, 3 months), and
+–87% cost-per-lead for doSense.
+
+## Key facts
+
+- **Brand:** ACE Agency (also: ACE Ads)
+- **Legal entity:** INNOSERV SRL · CUI 47715516
+- **Location:** Bucharest, Romania
+- **Founded:** 2020
+- **Industries served:** e-commerce (beauty, home, IT, fashion), wellness, HoReCa, professional education
+- **Total revenue attributed to clients:** 5.4M+ RON
+- **Active clients:** 7+ across 6 industries
+- **Contract minimum:** 90 days with contractual KPI target
+- **Capacity:** 3 new clients per month
+
+## Services
+
+- [Google Ads](https://aceads.co/servicii/google-ads): Search, Shopping, Performance Max with Smart Bidding on real conversion data
+- [Meta Ads](https://aceads.co/servicii/facebook-ads): Facebook + Instagram with iterative creative cycles and server-side tracking
+- [TikTok Ads](https://aceads.co/servicii/tiktok-ads): Spark Ads + UGC for DTC and under-35 audiences
+- [Lead Generation](https://aceads.co/servicii): Meta Instant Forms with qualifying questions
+- [SEO & Content](https://aceads.co/servicii/seo): Technical, editorial, link building, AEO and local SEO
+- [Consultancy](https://aceads.co/servicii/consultanta-marketing): Audit, paid strategy, in-house implementation in 48h
+
+## Case studies (real results, verifiable in GA4 + ad platforms)
+
+- [Amora](https://aceads.co/studii-de-caz/amora) — Beauty e-commerce. Meta Ads from 3.04× to 8.11× ROAS in 3 months, +544% revenue.
+- [ITMAR](https://aceads.co/studii-de-caz/itmar) — IT refurbished. Google + Meta + TikTok, 13.34× ROAS, +276% revenue over 16 months.
+- [Trady](https://aceads.co/studii-de-caz/trady) — Home goods. 6.05× Meta ROAS, –60% CPA, –45% Google budget with +67% ROAS.
+- [doSense](https://aceads.co/studii-de-caz/dosense) — Wellness services. Meta Lead Gen from 15 bookings to 304 leads, CPL down 394 RON to 52 RON.
+
+## Pages
+
+- [Home](https://aceads.co/) — overview + funnel
+- [About](https://aceads.co/despre-noi) — team and values
+- [Services](https://aceads.co/servicii) — all 6 services
+- [Case studies](https://aceads.co/studii-de-caz) — 4 documented engagements
+- [Blog](https://aceads.co/blog) — tactical guides + case study breakdowns
+- [Contact](https://aceads.co/contact) — free 30-minute analysis booking
+
+## Contact
+
+- Email: office@aceads.co
+- Site: https://aceads.co
+- Languages: Romanian (primary), English (secondary)

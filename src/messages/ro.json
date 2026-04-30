@@ -806,7 +806,12 @@
               "roas": "+433%",
               "note": "Conversii față de baseline, audiențe sub 35 ani"
             }
-          ]
+          ],
+          "card": {
+            "value": "13.34×",
+            "label": "Google Shopping",
+            "note": "Restructurare completă + Performance Max"
+          }
         }
       },
       "results": {
@@ -911,7 +916,8 @@
         "primaryCta": "Rezervă analiza gratuită →",
         "secondaryCta": "Toate studiile de caz",
         "email": "office@aceads.co"
-      }
+      },
+      "metaDescription": "Restructurare Google Shopping + Performance Max, adăugat Meta și TikTok ca canale complementare. 13.34× ROAS Google, +433% conversii TikTok, fără să dublăm"
     },
     "trady": {
       "slug": "trady",
@@ -957,7 +963,12 @@
               "value": "2.64×",
               "note": "Înainte · sub target"
             }
-          ]
+          ],
+          "card": {
+            "label": "ROAS META",
+            "value": "1.02×",
+            "note": "Înainte · pierdere pe fiecare leu"
+          }
         },
         "solution": {
           "overline": "SOLUȚIA APLICATĂ",
@@ -974,7 +985,12 @@
               "value": "4.40×",
               "note": "+67% față de start"
             }
-          ]
+          ],
+          "card": {
+            "value": "6.05×",
+            "label": "ROAS Meta atins",
+            "note": "Cut cheltuieli vanity, focus pe conversii"
+          }
         }
       },
       "results": {
@@ -1046,7 +1062,8 @@
               }
             ]
           }
-        }
+        },
+        "chart": null
       },
       "process": {
         "overline": "CE AM FĂCUT",
@@ -1091,7 +1108,8 @@
         "primaryCta": "Rezervă analiza gratuită →",
         "secondaryCta": "Toate studiile de caz",
         "email": "office@aceads.co"
-      }
+      },
+      "metaDescription": "Eliminat campanii vanity, restructurat Meta pe 7 categorii, tăiat 45% din bugetul Google și păstrat doar ce convertea. ROAS Google a crescut simultan de la"
     },
     "dosense": {
       "slug": "dosense",
@@ -1211,7 +1229,8 @@
             ],
             "summary": "Rată de conversie ×20 față de obiectivul anterior"
           }
-        }
+        },
+        "chart": null
       },
       "process": {
         "overline": "CE AM FĂCUT",
@@ -1256,7 +1275,8 @@
         "primaryCta": "Rezervă analiza gratuită →",
         "secondaryCta": "Toate studiile de caz",
         "email": "office@aceads.co"
-      }
+      },
+      "metaDescription": "O schimbare de obiectiv — de la Website Schedules (fricțiune maximă) la Lead Gen cu Instant Form (micro-angajament) — a înmulțit volumul de 20× și a redus "
     }
   },
   "blog": {

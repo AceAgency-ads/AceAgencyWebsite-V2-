@@ -5,7 +5,7 @@ import { HeroTransition } from '@/components/sections/HeroTransition';
 import { ServicesGrid } from '@/components/sections/services/ServicesGrid';
 import { ProcessSteps } from '@/components/sections/services/ProcessSteps';
 import { WhyChooseSection } from '@/components/sections/services/WhyChooseSection';
-import { CTASection } from '@/components/sections/home/CTASection';
+import { CTASection } from '@/components/sections/CTASection';
 
 interface ServicesPageProps {
   params: Promise<{ locale: string }>;

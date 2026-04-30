@@ -13,6 +13,13 @@ import {
   type CaseStudySlug,
 } from '@/lib/case-studies';
 import { routing } from '@/i18n/routing';
+import { JsonLd } from '@/components/seo/JsonLd';
+import {
+  graph,
+  caseStudySchema,
+  breadcrumbListSchema,
+  organizationSchema,
+} from '@/lib/seo/schemas';
 
 interface CaseStudyPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -59,8 +66,25 @@ export default async function CaseStudyPage({
     { label: t('breadcrumbLabel') },
   ];
 
+  const ld = graph(
+    organizationSchema(),
+    caseStudySchema({
+      slug,
+      name: t('metaTitle'),
+      description: t('metaDescription'),
+      datePublished: '2026-04-01',
+      about: t('hero.overline'),
+    }),
+    breadcrumbListSchema([
+      { name: 'Home', url: 'https://aceads.co/' },
+      { name: 'Studii de caz', url: 'https://aceads.co/studii-de-caz' },
+      { name: t('breadcrumbLabel'), url: `https://aceads.co/studii-de-caz/${slug}` },
+    ]),
+  );
+
   return (
     <>
+      <JsonLd data={ld} />
       <CaseStudyHero namespace={namespace} breadcrumbItems={breadcrumb} />
       <ContextSplit namespace={namespace} />
       <ResultsSection namespace={namespace} />
