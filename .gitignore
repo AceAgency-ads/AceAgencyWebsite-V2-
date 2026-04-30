@@ -42,3 +42,12 @@ Thumbs.db
 
 # Testing
 coverage/
+/test-results/
+/playwright-report/
+/.playwright-mcp/
+
+# Local screenshot scratchpad (dev verification)
+/cert-*.png
+/certifications*.png
+/client-logos*.png
+/logos-*.png

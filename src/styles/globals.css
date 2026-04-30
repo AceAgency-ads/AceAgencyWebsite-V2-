@@ -7,18 +7,31 @@
 
 /* ============================================================
    AceAgency Brand — Burgundy Palette
+   ============================================================
+   Primary       #56151A — CTAs, brand strips, links on light bg
+   Hover         #6E1A22 — interactive hover state (light bg)
+   Dark          #3F0E12 — pressed / gradient-end / deep accent
+   Bright        #C4394A — accents on DARK bg (low contrast vs #56151A)
+   Light alias   #7A2025 — legacy hover token, kept for backwards compat
    ============================================================ */
 :root {
   /* Brand Colors — AceAgency Burgundy */
   --color-accent: #56151A;
   --color-accent-light: #7A2025;
+  --color-accent-bright: #C4394A;
+  --color-accent-hover: #6E1A22;
+  --color-accent-dark: #3F0E12;
   --color-black: #262523;
   --color-white: #FFFFFF;
   --color-grey: #D9D9D9;
 
-  /* Legacy aliases for existing Tailwind utilities */
+  /* Named burgundy aliases (preferred for new components) */
   --color-burgundy: #56151A;
   --color-burgundy-light: #7A2025;
+  --color-burgundy-bright: #C4394A;
+  --color-burgundy-hover: #6E1A22;
+  --color-burgundy-dark: #3F0E12;
+  --color-burgundy-glow: rgba(86, 21, 26, 0.40);
 
   /* shadcn/ui semantic tokens — mapped to burgundy palette */
   --background: #262523;
@@ -64,13 +77,19 @@
   /* Brand color utilities */
   --color-accent: var(--color-accent);
   --color-accent-light: var(--color-accent-light);
+  --color-accent-bright: var(--color-accent-bright);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-dark: var(--color-accent-dark);
   --color-black: var(--color-black);
   --color-white: var(--color-white);
   --color-grey: var(--color-grey);
 
-  /* Legacy utilities (burgundy) */
+  /* Burgundy utilities (preferred for new components) */
   --color-burgundy: var(--color-burgundy);
   --color-burgundy-light: var(--color-burgundy-light);
+  --color-burgundy-bright: var(--color-burgundy-bright);
+  --color-burgundy-hover: var(--color-burgundy-hover);
+  --color-burgundy-dark: var(--color-burgundy-dark);
 
   /* shadcn semantic color utilities */
   --color-background: var(--background);
